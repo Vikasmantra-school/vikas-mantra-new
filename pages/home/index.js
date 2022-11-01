@@ -256,8 +256,8 @@ function Home() {
         </div>
       </section>
 
-      <section className={styles.testimonials + ' ' + 'pt60' + ' ' + 'pb60'}>
-        <div className='container'>
+      <section className={styles.testimonials}>
+        <div className='container testimonialSplide'>
           <div className='row'>
             <div className='col-md-12'>
               <Splide
