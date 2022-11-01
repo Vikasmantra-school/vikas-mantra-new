@@ -536,7 +536,7 @@ p {
 }
 
 .dividerActivated .divider {
-  background-color: rgba(92, 184, 92, 1);
+  background-color: #842029;
 }
 
 #progress li {
@@ -555,7 +555,7 @@ p {
 }
 
 .green {
-  background-color: rgba(92, 184, 92, 1)
+  background-color: #842029;
 }
 
 .red {
@@ -596,7 +596,7 @@ p {
 }
 
 .green {
-  background-color: rgba(92, 184, 92, 1)
+  background-color: #842029;
 }
 
 .red {

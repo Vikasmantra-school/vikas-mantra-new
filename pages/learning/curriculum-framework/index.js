@@ -316,7 +316,7 @@ function CurriculumFrameWork() {
                   className='img-fluid'
                 />
               </div>
-              <div className={'sticky-sidebar' + ' ' + 'pt60'}>
+              <div className={'sticky-sidebar VectorSpiralBlue' + ' ' + 'pt60'}>
                 <ul id='progress'>
 
                   <li className={'node' + ' ' + 'green'}>
