@@ -25,7 +25,7 @@ const Library = () => {
 
             </section>
 
-            <section className='greybg py-5'>
+            <section className={'greybg py-5 position-relative ' + ' ' + styles.vectorImg10}>
 
                 <div className="container">
 
@@ -60,11 +60,11 @@ const Library = () => {
 
                         </div>
 
-                        <div className='col-md-7 position-relative'>
+                        <div className={'col-md-7 position-relative ' + styles.vectorImg5}>
 
                             <img src='/assets/campus/library.png' alt="image" className={styles.libraryImg} />
 
-                            <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} />
+                            {/* <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} /> */}
 
                         </div>
 
@@ -102,7 +102,7 @@ const Library = () => {
 
                             </ul>
 
-                            <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} />
+                            {/* <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} /> */}
 
                         </div>
 

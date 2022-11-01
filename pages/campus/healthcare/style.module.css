@@ -9,16 +9,6 @@
     width: 70px;
 }
 
-.vectorImg1 {
-    width: auto;
-    height: 280px;
-    position: absolute;
-    right: -104px;
-    top: -30px;
-    padding: 0px;
-    z-index: 1;
-}
-
 .securityImg {
     width: 100%;
     position: absolute;
@@ -26,18 +16,31 @@
     right: -58px;
 }
 
-.vectorImg10 {
+.vectorImg10::after {
+    content: '';
     position: absolute;
-    height: 160px;
-    right: -715px;
-    bottom: 0;
+    background-image: url(/assets/vectors/Vector10.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 0;
+    background-size: 140px;
+    height: 227px;
+    right: 0;
+    width: 247px;
+    bottom: 0px;
 }
 
-.vectorImg12 {
+.vectorImg12::before {
+    content: '';
     position: absolute;
-    height: 140px;
-    left: -110px;
-    top: 48px;
+    background-image: url(/assets/vectors/vector12.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: 88px;
+    height: 228px;
+    width: 114px;
+    left: 0;
 }
 
 .sectionPdng {
@@ -63,7 +66,7 @@
         position: unset;
     }
 
-    .vectorImg10{
+    .vectorImg10 {
         position: absolute;
         height: 60px;
         right: 0px;

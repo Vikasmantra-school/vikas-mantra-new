@@ -24,7 +24,7 @@ const Security = () => {
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg'}>
+            <section className={styles.sectionPdng + ' greybg position-relative ' + ' ' + styles.vectorImg10 + ' ' + styles.vectorImg11}>
 
                 <div className="container">
 
@@ -32,7 +32,7 @@ const Security = () => {
 
                         <div className='col-md-5 position-relative'>
 
-                            <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} />
+                            {/* <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} /> */}
 
                             <h3>Security at VIKAS MANTRA
                                 PUBLIC SCHOOL</h3>
@@ -55,7 +55,7 @@ const Security = () => {
 
                             <img src='/assets/campus/security.png' alt="image" className={styles.securityImg} />
 
-                            <img src='/assets/vectors/Vector11.png' alt="image" className={styles.vectorImg11} />
+                            {/* <img src='/assets/vectors/Vector11.png' alt="image" className={styles.vectorImg11} /> */}
 
                         </div>
 

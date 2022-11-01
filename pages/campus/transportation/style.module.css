@@ -9,16 +9,6 @@
     width: 70px;
 }
 
-.vectorImg1 {
-    width: auto;
-    height: 280px;
-    position: absolute;
-    right: -104px;
-    top: -30px;
-    padding: 0px;
-    z-index: 1;
-}
-
 .schlBusImg {
     width: 100%;
     position: absolute;
@@ -26,11 +16,16 @@
     right: -58px;
 }
 
-.vectorImg11 {
+.vectorImg11::before {
+    content: '';
     position: absolute;
-    height: 150px;
-    left: -130px;
-    bottom: -160px;
+    background-image: url(/assets/vectors/vector15.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 1;
+    background-size: 110px;
+    height: 228px;
+    width: 114px;
 }
 
 .sectionPdng {

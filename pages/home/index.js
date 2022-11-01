@@ -9,19 +9,19 @@ function Home() {
   const title = useRef()
 
   useEffect(() => {
-    // let ctx = gsap.context(() => {
-    //   gsap.from('.box', {
-    //     duration: 1,
-    //     // scale: 0.1,
-    //     y: 40,
-    //     ease: 'power1.inOut',
-    //     stagger: {
-    //       from: 'left',
-    //       amount: 1.5,
-    //     },
-    //   })
-    // }, title)
-    // return () => ctx.revert()
+    let ctx = gsap.context(() => {
+      gsap.from('.box', {
+        duration: 1,
+        // scale: 0.1,
+        y: 40,
+        ease: 'power1.inOut',
+        stagger: {
+          from: 'left',
+          amount: 1.5,
+        },
+      })
+    }, title)
+    return () => ctx.revert()
   }, [])
 
   return (

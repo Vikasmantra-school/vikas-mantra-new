@@ -9,6 +9,7 @@ const Transportation = () => {
 
         <>
 
+
             <Breadcrumb pageName={pageTitle} />
 
             <section className='pt-4'>
@@ -25,7 +26,7 @@ const Transportation = () => {
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg'}>
+            <section className={styles.sectionPdng + ' greybg position-relative ' + ' ' + styles.vectorImg11}>
 
                 <div className="container">
 
@@ -45,7 +46,7 @@ const Transportation = () => {
                                 on distances between the school and the student’s pick-up/drop-off point.
                             </p>
 
-                            <img src='/assets/vectors/Vector11.png' alt="image" className={styles.vectorImg11} />
+                            {/* <img src='/assets/vectors/Vector11.png' alt="image" className={styles.vectorImg11} /> */}
 
                         </div>
 

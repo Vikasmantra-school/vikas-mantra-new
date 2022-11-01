@@ -8,6 +8,7 @@
     height: 2px;
     width: 70px;
 }
+
 .vectorImg1 {
     width: auto;
     height: 280px;
@@ -17,36 +18,56 @@
     padding: 0px;
     z-index: 1;
 }
-.labImg1{
+
+.labImg1 {
     height: 407px;
     position: absolute;
     top: -260px;
 }
-.labImg2{
+
+.labImg2 {
     height: 407px;
     right: 212px;
     position: relative;
 }
-.labImg3{
+
+.labImg3 {
     height: 407px;
     right: -2px;
     position: relative;
 }
-.sectionPdng{
+
+.sectionPdng {
     padding-top: 5rem;
     padding-bottom: 3rem;
 }
-.vectorImg5{
+
+.vectorImg5::before {
+    content: '';
     position: absolute;
-    height: 150px;
-    right: -91px;
-    top: 80px;
+    background-image: url(/assets/vectors/Vector5.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 1;
+    background-size: 110px;
+    height: 210px;
+    right: 40px;
+    width: 190px;
+    top: 255px;
 }
-.vectorImg10{
+
+.vectorImg10::after{
+    content: '';
     position: absolute;
-    height: 150px;
-    left: -135px;
-    bottom: 253px;
+    background-image: url(/assets/vectors/Vector10.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 0;
+    background-size: 140px;
+    height: 227px;
+    left: 0;
+    width: 247px;
+    bottom: 200px;
 }
 
 
@@ -62,31 +83,39 @@
         padding: 0px;
         z-index: 1;
     }
-    .vectorImg5{
+
+    .vectorImg5 {
         position: absolute;
         height: 90px;
         right: 3px;
         top: 206px;
     }
+
     .vectorImg10 {
         position: absolute;
         height: 60px;
         left: 0;
         bottom: 440px;
     }
-    .labImg1, .labImg2, .labImg3{
+
+    .labImg1,
+    .labImg2,
+    .labImg3 {
         position: unset;
         width: 100%;
         height: 100%;
     }
+
     .sectionPdng {
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
-    .order1{
+
+    .order1 {
         order: 1;
     }
-    .order2{
+
+    .order2 {
         order: 2;
     }
 }

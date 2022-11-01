@@ -25,7 +25,7 @@ const Technology = () => {
 
             </section>
 
-            <section className='greybg py-5'>
+            <section className={'greybg py-5 VectorSpiral position-relative ' + styles.vectorImg8}>
 
                 <div className="container">
 
@@ -33,7 +33,7 @@ const Technology = () => {
 
                         <div className='col-md-5 position-relative'>
 
-                            <img src='/assets/vectors/Vector12.png' alt="image" className={styles.vectorImg12} />
+                            {/* <img src='/assets/vectors/Vector12.png' alt="image" className={styles.vectorImg12} /> */}
 
                             <h3>Interweaving technology
                                 with traditional learning
@@ -100,7 +100,7 @@ const Technology = () => {
                                 protected from inappropriate content on the internet.
                             </p>
 
-                            <img src='/assets/vectors/Vector8.png' alt="image" className={styles.vectorImg8} />
+                            {/* <img src='/assets/vectors/Vector8.png' alt="image" className={styles.vectorImg8} /> */}
 
                         </div>
 

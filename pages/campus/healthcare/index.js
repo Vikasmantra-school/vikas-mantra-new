@@ -25,7 +25,7 @@ const Healthcare = () => {
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg'}>
+            <section className={styles.sectionPdng + ' greybg position-relative ' + ' ' + styles.vectorImg12 + ' ' + styles.vectorImg10}>
 
                 <div className="container">
 
@@ -33,7 +33,7 @@ const Healthcare = () => {
 
                         <div className='col-md-5 position-relative'>
 
-                            <img src='/assets/vectors/Vector12.png' alt="image" className={styles.vectorImg12} />
+                            {/* <img src='/assets/vectors/Vector12.png' alt="image" className={styles.vectorImg12} /> */}
 
                             <h3>Security at VIKAS MANTRA
                                 PUBLIC SCHOOL   </h3>
@@ -79,7 +79,7 @@ const Healthcare = () => {
 
                                 </ul>
 
-                                <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} />
+                                {/* <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} /> */}
 
                             </div>
 
