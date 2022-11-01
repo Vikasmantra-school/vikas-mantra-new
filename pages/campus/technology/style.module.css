@@ -34,11 +34,19 @@
     left: -114px;
 }
 
-.vectorImg8 {
-    bottom: 145px;
+.vectorImg8::after {
+
+    content: '';
     position: absolute;
-    height: 170px;
-    right: -484px;
+    background-image: url(/assets/vectors/Vector10.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 0;
+    background-size: 110px;
+    height: 227px;
+    width: 247px;
+    bottom: 0;
+    right: 0;
 }
 
 .sectionPdng {

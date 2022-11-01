@@ -10,7 +10,7 @@ const Classrooms = () => {
 
             <Breadcrumb pageName={pageTitle} />
 
-            <section className='pt-4'>
+            <section className='pt-4 '>
 
                 <div className='container position-relative'>
 
@@ -24,15 +24,13 @@ const Classrooms = () => {
 
             </section>
 
-            <section className='greybg py-5'>
+            <section className={'greybg py-5 VectorDot position-relative ' + styles.vectorImg9 + ' ' + styles.vectorImg10  }>
 
                 <div className="container">
 
                     <div className='row'>
 
                         <div className='col-md-5 position-relative'>
-
-                            <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} />
 
                             <h3>Spacious, vibrant, well-lit
                                 and contemporary
@@ -179,7 +177,7 @@ const Classrooms = () => {
 
                         <div className='col-md-3 position-relative'>
 
-                            <img src='/assets/vectors/Vector9.png' alt="image" className={styles.vectorImg9} />
+                            {/* <img src='/assets/vectors/Vector9.png' alt="image" className={styles.vectorImg9} /> */}
 
                         </div>
 

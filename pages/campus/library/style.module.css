@@ -26,18 +26,32 @@
     right: -58px;
 }
 
-.vectorImg5 {
+.vectorImg5::before {
+    content: '';
     position: absolute;
-    height: 150px;
-    top: 296px;
+    background-image: url(/assets/vectors/Vector5.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 1;
+    background-size: 110px;
+    height: 210px;
     right: 0px;
+    width: 190px;
+    bottom: 25px;
 }
 
-.vectorImg10 {
-    bottom: -25px;
+.vectorImg10::after {
+    content: '';
     position: absolute;
-    height: 170px;
-    left: -175px;
+    background-image: url(/assets/vectors/Vector10.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 0;
+    background-size: 110px;
+    height: 227px;
+    left: 0;
+    width: 247px;
+    bottom: 0px;
 }
 
 .sectionPdng {
