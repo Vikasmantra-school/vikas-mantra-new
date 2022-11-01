@@ -256,8 +256,8 @@ function Home() {
         </div>
       </section>
 
-      <section className={styles.testimonials + ' ' + 'pt60' + ' ' + 'pb60'}>
-        <div className='container'>
+      <section className={styles.testimonials}>
+        <div className='container testimonialSplide'>
           <div className='row'>
             <div className='col-md-12'>
               <Splide
@@ -269,6 +269,27 @@ function Home() {
                   arrows: false,
                 }}
               >
+                <SplideSlide>
+                  <div className={styles.testimonialcard}>
+                    <div>
+                      <img src='/assets/rectangle.png' alt='image' />
+                    </div>
+
+                    <div className={styles.testimonialcontent}>
+                      <h4>
+                        Parent of <br /> <span>Kavitha (SR.KG)</span>
+                      </h4>
+
+                      <p>
+                        The event is very nice to bring up hidden talents of the
+                        kids and also helps to shed their shyness and
+                        inhibitions to face number of people. Keep up the good
+                        work.
+                      </p>
+                    </div>
+                  </div>
+                </SplideSlide>
+
                 <SplideSlide>
                   <div className={styles.testimonialcard}>
                     <div>

@@ -783,6 +783,30 @@ p {
   padding: 10px 0;
 }
 
+.testimonialSplide .splide__pagination{bottom: -4rem;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;}
+
+.testimonialSplide .splide__pagination{justify-content: right;}
+
+.testimonialSplide .splide__pagination__page{background: #E3E3F2;border-radius: 10px;height:4px;width:25px;}
+
+.testimonialSplide .splide__pagination li{margin-right:6px;}
+
+.testimonialSplide .splide__pagination__page.is-active{background:#9B9BBE;}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 660px) {
 
   .m-pb40 {
