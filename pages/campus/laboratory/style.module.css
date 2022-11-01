@@ -56,7 +56,7 @@
     top: 255px;
 }
 
-.vectorImg10::after{
+.vectorImg10::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector10.png);
@@ -74,29 +74,6 @@
 
 @media only screen and (max-width: 600px) {
 
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 157px;
-        padding: 0px;
-        z-index: 1;
-    }
-
-    .vectorImg5 {
-        position: absolute;
-        height: 90px;
-        right: 3px;
-        top: 206px;
-    }
-
-    .vectorImg10 {
-        position: absolute;
-        height: 60px;
-        left: 0;
-        bottom: 440px;
-    }
 
     .labImg1,
     .labImg2,
@@ -117,5 +94,33 @@
 
     .order2 {
         order: 2;
+    }
+
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 0;
+        background-size: 111px;
+        height: 227px;
+        left: 0;
+        width: 247px;
+        bottom: 15px;
+    }
+
+    .vectorImg5::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector5.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        z-index: 1;
+        background-size: 50px;
+        height: 210px;
+        right: 65px;
+        width: 190px;
+        top: 200px;
     }
 }

@@ -56,25 +56,36 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .vectorImg10 {
-        position: absolute;
-        height: 70px;
-        right: 15px;
-        bottom: -183px;
-    }
+
 
     .schlBuildingImg {
         width: 100%;
         position: unset;
     }
-
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
+    .vectorImg10::after {
+        content: '';
         position: absolute;
-        right: 0px;
-        top: 157px;
-        padding: 0px;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 100px;
+        height: 227px;
+        right: 0;
+        width: 247px;
+        bottom: 20px;
+    }
+    .vectorImg5::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector14.png);
+        background-repeat: no-repeat;
+        background-position: top left;
         z-index: 1;
+        background-size: 40px;
+        height: 210px;
+        left: 0;
+        width: 190px;
+        top: 117px;
     }
 }

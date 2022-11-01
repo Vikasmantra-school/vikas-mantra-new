@@ -48,23 +48,6 @@
 
 @media only screen and (max-width: 600px) {
 
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 157px;
-        padding: 0px;
-        z-index: 1;
-    }
-
-    .vectorImg9 {
-        bottom: -67px;
-        position: absolute;
-        height: 70px;
-        right: 0px;
-    }
-
     .pdngZero {
         padding: 0px 12px !important;
     }
@@ -73,6 +56,33 @@
         height: 100%;
         position: unset;
         padding: 20px 0px;
+    }
+    .vectorImg9::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector9.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 75px;
+        height: 227px;
+        width: 247px;
+        right: 0;
+        bottom: 0;
+    }
+    .vectorImg10::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        z-index: 0;
+        background-size: 110px;
+        height: 227px;
+        left: 0;
+        width: 247px;
+        top: 18%;
+        z-index: 1;
     }
 
 }

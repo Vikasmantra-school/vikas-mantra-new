@@ -58,23 +58,6 @@
 
 @media only screen and (max-width: 600px) {
 
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 157px;
-        padding: 0px;
-        z-index: 1;
-    }
-
-    .vectorImg8 {
-        bottom: -45px;
-        position: absolute;
-        height: 75px;
-        right: 0px;
-    }
-
     .libraryImg {
         width: 100%;
         position: unset;
@@ -83,6 +66,32 @@
     .sectionPdng {
         padding-top: 50px;
         padding-bottom: 0px;
+    }
+    .VectorSpiral::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/vector12.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 35px;
+        height: 228px;
+        width: 114px;
+        left: 0;
+        top: 90px;
+    }
+    .vectorImg8::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 90px;
+        height: 227px;
+        width: 247px;
+        bottom: 0px;
+        right: 0;
     }
 
 }

@@ -61,31 +61,23 @@
 
 @media only screen and (max-width: 600px) {
 
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 157px;
-        padding: 0px;
-        z-index: 1;
-    }
-    .vectorImg5 {
-        position: absolute;
-        height: 70px;
-        top: 400px;
-        right: 0px;
-    }
 
     .libraryImg{
         width: 100%;
         position: unset;
     }
-    .vectorImg10 {
-        bottom: -60px;
+    .vectorImg5::before {
+        content: '';
         position: absolute;
-        height: 70px;
-        left: 0px;
+        background-image: url(/assets/vectors/Vector5.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        z-index: 1;
+        background-size: 70px;
+        height: 210px;
+        right: 12px;
+        width: 190px;
+        bottom: 248px;
     }
 
 }
