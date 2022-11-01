@@ -290,7 +290,7 @@ const Nav = () => {
                     </li>
 
                     <li>
-                      <Link href='#' legacyBehavior>
+                      <Link href='/learning/pre-primary-years' legacyBehavior>
                         <a className='dropdown-item'>Pre-Primary Years</a>
                       </Link>
                     </li>
@@ -299,7 +299,7 @@ const Nav = () => {
                     </li>
 
                     <li>
-                      <Link href='#' legacyBehavior>
+                      <Link href='/learning/curriculum-framework' legacyBehavior>
                         <a className='dropdown-item'>Curriculum Framework</a>
                       </Link>
                     </li>
