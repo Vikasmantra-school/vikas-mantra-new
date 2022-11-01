@@ -64,7 +64,7 @@ function MandatoryScreen() {
 
                         <div className='col-md-5'>
 
-                            <h2>Mandatory<br /> Public Disclosures</h2>
+                            <h2 className='ulineRed'>Mandatory<br /> Public Disclosures</h2>
 
                         </div>
 
