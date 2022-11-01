@@ -29,7 +29,7 @@ const MessageFromChairMan = () => {
             </section>
 
 
-            <section className={styles.sectionContainer + ' greybg'}>
+            <section className={styles.sectionContainer + ' greybg position-relative ' + ' ' + styles.vectorImg2 + ' ' + styles.vectorImg7}>
 
                 <div className='container'>
 
@@ -37,7 +37,7 @@ const MessageFromChairMan = () => {
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
 
-                            <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg2} />
+                            {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg2} /> */}
 
                             <h3>Dear stake holders,</h3>
 
@@ -87,7 +87,7 @@ const MessageFromChairMan = () => {
 
                             <img src='/assets/banners/chairman.png' alt="image" className={styles.ChairmanImg} />
 
-                            <img src='/assets/vectors/Vector7.png' alt="image" className={styles.vectorImg7} />
+                            {/* <img src='/assets/vectors/Vector7.png' alt="image" className={styles.vectorImg7} /> */}
 
                         </div>
 

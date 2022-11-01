@@ -46,25 +46,40 @@
     height: 60px;
 }
 
-.vectorImg10 {
+.vectorImg10::after{
+    content: '';
     position: absolute;
-    height: 140px;
-    right: -104px;
-    bottom: -58px;
+    background-image: url(/assets/vectors/Vector10.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 0;
+    background-size: 150px;
+    height: 227px;
+    width: 247px;
+    bottom: 0;
+    right: 0;
 }
 
-.vectorImg13 {
+.vectorImg13::before{
+    content: '';
     position: absolute;
-    height: 145px;
-    left: -120px;
-    top: -193px;
+    background-image: url(/assets/vectors/Vector13.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 0;
+    background-size: 100px;
+    height: 227px;
+    width: 247px;
+    top: 55px;
+    left: 0;
 }
 
 .paraAlign {
     text-align: start;
     padding-left: 95px;
 }
-.paraAlign3{
+
+.paraAlign3 {
     text-align: start;
     padding-left: 111px;
 }
@@ -72,46 +87,27 @@
 
 
 @media only screen and (max-width: 600px) {
-    .vectorImg1{
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 158px;
-        padding: 0px;
-        z-index: 1;
-    }
-    .schlBusImg{
+
+    .schlBusImg {
         width: 100%;
-        position: absolute;
-        top: -138px;
-        right: 0px;
+        position: unset;
     }
-    .rowPdng{
-        padding-top: 150px;
+
+    .rowPdng {
+        padding-top: 70px;
     }
-    .vectorImg10{
-        position: absolute;
-        height: 90px;
-        right: 0px;
-        bottom: -127px;
-    }
-    .paraAlign{
+
+    .paraAlign {
         text-align: start;
         padding: 20px 104px;
     }
-    .paraAlign3{
+
+    .paraAlign3 {
         text-align: start;
         padding: 0px 112px;
     }
-    .vectorImg13{
-        position: absolute;
-        height: 65px;
-        left: -15px;
-        top: -76px;
-    }
+
     .sectionPdng {
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding: 50px 0px;
     }
-  }
+}

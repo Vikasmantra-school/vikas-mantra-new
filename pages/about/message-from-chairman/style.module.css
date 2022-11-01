@@ -9,25 +9,38 @@
     width: 70px;
 }
 
-.vectorImg1 {
-    width: auto;
-    height: 322px;
-    position: absolute;
-    right: -104px;
-    top: -24px;
-    z-index: 99;
-}
-
 .sectionContainer {
     padding: 50px 0px;
 }
 
-.vectorImg2 {
-    width: auto;
+.vectorImg2::before {
+    content: '';
     position: absolute;
-    left: -8px;
-    top: 300px;
-    height: 150px;
+    background-image: url(/assets/vectors/Vector10.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: 140px;
+    height: 210px;
+    left: -1%;
+    width: 190px;
+    top: -3%;
+}
+
+.vectorImg7::after {
+
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector7.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    z-index: 1;
+    background-size: 110px;
+    height: 210px;
+    right: 0%;
+    width: 190px;
+    top: 20%;
+    
 }
 
 .ChairmanImg {
@@ -36,13 +49,6 @@
     right: -104px;
     z-index: 1;
     position: relative;
-}
-
-.vectorImg7 {
-    right: -54px;
-    position: absolute;
-    bottom: 5px;
-    height: 160px;
 }
 
 @media only screen and (max-width: 600px) {

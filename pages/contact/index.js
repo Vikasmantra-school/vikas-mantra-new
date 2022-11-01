@@ -19,15 +19,13 @@ const Contact = () => {
 
                         <h2 className={styles.headingPdng}>Contact</h2>
 
-                
-
                     </div>
 
                 </div>
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg'}>
+            <section className={styles.sectionPdng + ' greybg position-relative ' + styles.vectorImg10 + ' ' + styles.vectorImg13}>
 
                 <div className="container">
 
@@ -105,7 +103,7 @@ const Contact = () => {
 
                             </div>
 
-                            <img src='/assets/vectors/vector10.png' alt="image" className={styles.vectorImg10} />
+                            {/* <img src='/assets/vectors/vector10.png' alt="image" className={styles.vectorImg10} /> */}
 
                         </div>
 

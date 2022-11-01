@@ -20,20 +20,34 @@
     width: 100%;
 }
 
-.vectorImg1 {
-    width: auto;
-    height: 322px;
+
+
+.vectorImg2::before {
+    content: '';
     position: absolute;
-    right: -104px;
-    top: -24px;
+    background-image: url(/assets/vectors/Vector1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: 160px;
+    height: 210px;
+    left: 0%;
+    width: 190px;
+    top: -4%;
 }
 
-.vectorImg2 {
-    width: auto;
+.vectorImg3::after {
+    content: '';
     position: absolute;
-    left: -10px;
-    top: 316px;
-
+    background-image: url(/assets/vectors/Vector2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 1;
+    background-size: 160px;
+    height: 210px;
+    right: 0%;
+    width: 190px;
+    bottom: 3%;
 }
 
 .BlogvectorImg2 {
@@ -41,12 +55,6 @@
     position: absolute;
     left: -27px;
     top: 333px;
-}
-
-.vectorImg3 {
-    width: auto;
-    position: absolute;
-    right: 0;
 }
 
 .BlogvectorImg3 {

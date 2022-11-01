@@ -28,7 +28,7 @@ const VisionAndPhilosophy = () => {
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg'}>
+            <section className={styles.sectionPdng + ' greybg position-relative ' + ' ' + styles.vectorImg5}>
 
                 <div className='container'>
 
@@ -92,7 +92,7 @@ const VisionAndPhilosophy = () => {
 
                             <div className='pt-5 position-relative'>
 
-                                <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} />
+                                {/* <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} /> */}
 
                             </div>
                         </div>
@@ -104,7 +104,7 @@ const VisionAndPhilosophy = () => {
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg'}>
+            <section className={styles.sectionPdng + ' greybg position-relative' + ' ' + styles.vectorImg3 + ' ' + styles.vectorImg6}>
 
                 <div className='container'>
 
@@ -120,7 +120,7 @@ const VisionAndPhilosophy = () => {
 
                         <div className={styles.colpdngRt + ' col-md-6 position-relative'}>
 
-                            <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg3} />
+                            {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg3} /> */}
 
                             <div className='d-flex align-items-start text-justify'>
 
@@ -353,7 +353,7 @@ const VisionAndPhilosophy = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <img src='/assets/vectors/Vector6.png' alt="image" className={styles.vectorImg6} />
+                            {/* <img src='/assets/vectors/Vector6.png' alt="image" className={styles.vectorImg6} /> */}
 
                         </div>
 
