@@ -11,7 +11,6 @@ const Nav = () => {
   var pageName = asPath.replace('/', '')
 
   function hamburgerMenu(e) {
-    // e.target.classList.toggle('is-active')
     let menu = document.getElementById('mobMenu')
     let hamburgerMenu = document.getElementById('hamburger')
     console.log(menu)
@@ -24,15 +23,14 @@ const Nav = () => {
       <header className={styles.homeheader + ' ' + pageName}>
         <nav className={styles.navTransparent + ' navbar-expand-lg navbar'}>
           <div className='container'>
-            
-          <Link href='/home' legacyBehavior>
-            <a className={styles.mainLogo + ' ' + 'navbar-brand'} >
-              {pageName === 'home' ? (
-                <img src='/assets/vmps-white-logo.png' alt='image' />
-              ) : (
-                <img src='/assets/vmps-color.png' alt='image' />
-              )}
-            </a>
+            <Link href='/home' legacyBehavior>
+              <a className={styles.mainLogo + ' ' + 'navbar-brand'}>
+                {pageName === 'home' ? (
+                  <img src='/assets/vmps-white-logo.png' alt='image' />
+                ) : (
+                  <img src='/assets/vmps-color.png' alt='image' />
+                )}
+              </a>
             </Link>
             <ul className='m-hide navbar-nav ms-auto mb-2 mb-lg-0'>
               <Button className={styles.firstbtn}>70924 50450</Button>
@@ -47,17 +45,6 @@ const Nav = () => {
               <span className='line'></span>
               <span className='line'></span>
             </div>
-            {/* <button
-              className='navbar-toggler'
-              type='button'
-              data-bs-toggle='collapse'
-              data-bs-target='#navbarSupportedContent'
-              aria-controls='navbarSupportedContent'
-              aria-expanded='false'
-              aria-label='Toggle navigation'
-            >
-              <span className='navbar-toggler-icon'></span>
-            </button> */}
           </div>
         </nav>
 
@@ -65,18 +52,6 @@ const Nav = () => {
           className={styles.navTransparent + ' ' + 'navbar navbar-expand-lg'}
         >
           <div className='container'>
-            {/* <button
-              className='navbar-toggler'
-              type='button'
-              data-bs-toggle='collapse'
-              data-bs-target='#navbarSupportedContent'
-              aria-controls='navbarSupportedContent'
-              aria-expanded='false'
-              aria-label='Toggle navigation'
-            >
-              <span className='navbar-toggler-icon'></span>
-            </button> */}
-
             <div className='collapse navbar-collapse desktop-menu' id=''>
               <ul className='navbar-nav mb-2 mb-lg-0'>
                 <li className='nav-item active'>
@@ -299,7 +274,10 @@ const Nav = () => {
                     </li>
 
                     <li>
-                      <Link href='/learning/curriculum-framework' legacyBehavior>
+                      <Link
+                        href='/learning/curriculum-framework'
+                        legacyBehavior
+                      >
                         <a className='dropdown-item'>Curriculum Framework</a>
                       </Link>
                     </li>
