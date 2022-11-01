@@ -41,14 +41,13 @@ export default function index() {
           <div className='row'>
             <div className={'col-md-10 col-xs-12 col-sm-12' + ' ' + styles.formCenter}>
               <div className={styles.enquiryForm}>
+              <Form>
                 <div className={'row' + ' ' + styles.form}>
                   <div className='col-md-5'>
                     <h5 className='mb-5'>Child Information</h5>
 
-                    <Form>
-
                       <Form.Group className='mb-5' controlId="formBasicEmail">
-                        <Form.Label Name of the Child />
+                        <Form.Label>Name of the Child</Form.Label>
                         <Form.Control className={styles.formText} type='text' />
                       </Form.Group>
 
@@ -71,8 +70,6 @@ export default function index() {
                         <Form.Label>Admission seeking for</Form.Label>
                         <Form.Control className={styles.formText} type='text' />
                       </Form.Group>
-
-                    </Form>
                   </div>
 
                   <div className='col-md-5 offset-md-1'>
@@ -81,8 +78,6 @@ export default function index() {
 
                       <h5 className='mb-5'>Parent Information : Father</h5>
 
-                      <Form>
-
                         <Form.Group className='mb-5'>
                           <Form.Label>Name</Form.Label>
                           <Form.Control className={styles.formText} type='text' />
@@ -104,17 +99,12 @@ export default function index() {
                           </div>
 
                         </div>
-
-                      </Form>
 
                     </div>
 
                     <div>
 
                       <h5 className='mb-5'>Parent Information : Mother</h5>
-
-                      <Form>
-
                         <Form.Group className='mb-5'>
                           <Form.Label>Name</Form.Label>
                           <Form.Control className={styles.formText} type='text' />
@@ -137,29 +127,31 @@ export default function index() {
 
                         </div>
 
-                      </Form>
-
                     </div>
 
                   </div>
 
                   <div className='col-md-11'>
-                    <Form>
+                   
                       <Form.Group className='mb-5'>
                         <Form.Label className='mb-5'> Admission of Communication </Form.Label>
                         <Form.Control className={styles.formText} type='text' />
                       </Form.Group>
-                    </Form>
-
+                
                     <a href='#'>
-                      <Button className={'brownBtn'}>View All</Button>
+                      <Button className={'brownBtn'}>Submit</Button>
                     </a>
                   </div>
+
+                  </div>
+
+                  </Form>
                 </div>
+
               </div>
             </div>
           </div>
-        </div>
+      
       </section>
     </>
   )
