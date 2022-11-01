@@ -12,6 +12,8 @@
     background-repeat: no-repeat;
     z-index: 1;}
 
+.tilteSpace{padding-bottom: 120px;}
+
 @media only screen and (max-width: 660px) {
 
     .classContent::after{left:0;}

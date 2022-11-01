@@ -108,11 +108,11 @@ h4,
 h5,
 h6 {
   color: #222;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 40px;
 }
 
 .outlineBtn {
@@ -234,6 +234,19 @@ p {
   width: 190px;
   bottom: 50px;
 }
+
+.VectorSpiralPink::before {
+  content: '';
+  position: absolute;
+  background-image: url(/assets/vectors/pinkspiral.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 1;
+  background-size: 110px;
+  height: 210px;
+  right: 0;
+  width: 190px;
+  bottom: 50px;}
 
 .VectorStarGreen::after {
 

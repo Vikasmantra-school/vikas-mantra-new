@@ -192,7 +192,7 @@ function Curriculum() {
             <div className={'col-md-6'}>
               <div className='imgUp'>
                 <img
-                  src='/assets/school-building.png'
+                  src='/assets/banners/learning-banner-1.png'
                   alt='image'
                   className='img-fluid'
                 />

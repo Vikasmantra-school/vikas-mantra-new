@@ -103,7 +103,7 @@ function index() {
 
                 </section>
 
-                <section className={'greybg VectorSpiralBlue' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + styles.eventGallery}>
+                <section className={'greybg VectorSpiralPink' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + styles.eventGallery}>
 
                 <div className='container'>
 

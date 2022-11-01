@@ -139,7 +139,7 @@ function Learning() {
               </div>
             </div>
 
-            <div className={'col-md-6 learningLogo'}>
+            <div className={'col-md-6 learningLogo' + ' ' + styles.vectorSpiral}>
               <div className='imgUp'>
                 <img
                   src='/assets/school-building.png'

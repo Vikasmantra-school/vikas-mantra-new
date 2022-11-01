@@ -11,7 +11,7 @@ function OnlineClasses() {
 
 <Breadcrumb pageName={pageTitle} />
 
-<section className={'pt60' + ' ' + 'pb60'}>
+<section className={'pt60' + ' ' + 'pb60' + ' ' + styles.tilteSpace}>
 
     <div className='container'>
 
@@ -36,9 +36,9 @@ function OnlineClasses() {
 
         <div className='row'>
 
-            <div className={'col-md-4'}></div>
+            <div className={'col-md-2'}></div>
 
-            <div className={'col-md-8'}>
+            <div className={'col-md-10'}>
 
                 <div className='imgUp'>
 

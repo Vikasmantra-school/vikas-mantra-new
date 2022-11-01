@@ -32,3 +32,22 @@
 .green{ background-color: rgba(92, 184, 92, 1) }
 .red { background-color: rgba(255, 148, 148, 1); }
 .grey { background-color: rgba(201, 201, 201, 1); } */
+
+.vectorSpiral{position: relative;}
+
+
+.vectorSpiral::before{
+
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 110px;
+    background-image: url(/assets/vectors/Vector5.png);
+    background-position: top right;
+    z-index: 1;
+    height: 210px;
+    right: 0;
+    width: 190px;
+    top: 28%;
+
+}
