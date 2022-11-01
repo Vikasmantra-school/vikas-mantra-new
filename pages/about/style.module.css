@@ -6,24 +6,41 @@
     top: -24px;
 }
 
-.vectorImg2 {
+.vectorImg2::before {
+    content: '';
     position: absolute;
-    bottom: -95px;
-    left: -154px;
-    height: 165px;
+    background-image: url(/assets/vectors/Vector10.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 1;
+    background-size: 140px;
+    height: 227px;
+    left: 0;
+    width: 247px;
+    bottom: -58%;
 }
 
-.vectorImg4 {
+.vectorImg4::before{
+
+    content: '';
     position: absolute;
-    right: -104px;
-    bottom: 210px;
-    height: 150px;
+    background-image: url(/assets/vectors/Vector4.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    z-index: 1;
+    background-size: 85px;
+    height: 227px;
+    right: 0;
+    width: 247px;
+
 }
 
 .vmpsImg {
     position: absolute;
-    right: 40px;
-    bottom: -350px;
+    right: 28px;
+    bottom: 0px;
+    width: auto;
+    height: 54px;
 }
 
 

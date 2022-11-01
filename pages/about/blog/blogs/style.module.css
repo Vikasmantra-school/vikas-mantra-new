@@ -36,24 +36,38 @@
 
 }
 
-.BlogvectorImg2 {
-    width: auto;
+.BlogvectorImg2::before {
+    content: '';
     position: absolute;
-    left: -27px;
-    top: 333px;
+    background-image: url(/assets/vectors/Vector1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: 160px;
+    height: 210px;
+    left: 0%;
+    width: 190px;
+    top: -2%;
+}
+
+.BlogvectorImg3::after {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 1;
+    background-size: 160px;
+    height: 210px;
+    right: 0%;
+    width: 190px;
+    bottom: 3%;
 }
 
 .vectorImg3 {
     width: auto;
     position: absolute;
     right: 0;
-}
-
-.BlogvectorImg3 {
-    width: auto;
-    position: absolute;
-    right: 0;
-    bottom: -800px;
 }
 
 .sectionContainer {

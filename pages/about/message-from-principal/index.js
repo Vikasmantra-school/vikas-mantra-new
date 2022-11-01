@@ -30,7 +30,7 @@ const MessageFromPrincipal = () => {
             </section>
 
 
-            <section className={styles.sectionContainer + ' greybg'}>
+            <section className={styles.sectionContainer + ' greybg position-relative ' + ' ' + styles.vectorImg1 + ' ' + styles.vectorImg2}>
 
                 <div className='container'>
 
@@ -38,7 +38,7 @@ const MessageFromPrincipal = () => {
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
 
-                            <img src='/assets/vectors/Vector1.png' alt="image" className={styles.vectorImg1} />
+                            {/* <img src='/assets/vectors/Vector1.png' alt="image" className={styles.vectorImg1} /> */}
 
                             <h3>Dear all,</h3>
 
@@ -80,7 +80,7 @@ const MessageFromPrincipal = () => {
 
                             <img src='/assets/banners/principal.png' alt="image" className={styles.PrincipalImg} />
 
-                            <img src='/assets/vectors/Vector2.png' alt="image" className={styles.vectorImg2} />
+                            {/* <img src='/assets/vectors/Vector2.png' alt="image" className={styles.vectorImg2} /> */}
 
                         </div>
 

@@ -25,7 +25,7 @@ const About = () => {
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg'}>
+            <section className={styles.sectionPdng + ' greybg' + ' ' + styles.vectorImg2}>
 
                 <div className='container'>
 
@@ -34,13 +34,14 @@ const About = () => {
                         <div className='col-md-6 position-relative'>
 
                             <img src='/assets/banners/school-building.png' alt="image" className={styles.schoolBuildingImg} />
-                            <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg2} />
+                            {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg2} /> */}
 
                         </div>
 
-                        <div className='col-md-6'>
+                        <div className='col-md-6 position-relative '>
 
-                            <div className={styles.margin + ' py-5'}>
+                            <div className={styles.margin + ' py-5 '}>
+
                                 <h2>About VMPS</h2>
                                 <hr className={styles.hrLine} />
                                 <p>VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu Kanchipuram
@@ -59,6 +60,7 @@ const About = () => {
                                 </p>
 
                             </div>
+
                             <img src='/assets/VMPS.png' alt="image" className={styles.vmpsImg} />
 
                         </div>
@@ -70,8 +72,9 @@ const About = () => {
 
             </section>
 
-            <section className={styles.bannerSection + ' py-5 d-none d-lg-flex'}>
+            <section className={styles.bannerSection + ' py-5 d-none d-lg-flex' + ' ' + styles.vectorImg4}>
 
+    
                 <div className='container'>
 
                     <div className='row position-relative'>
@@ -119,7 +122,7 @@ const About = () => {
                                 needs and areas of interest.
                             </p>
 
-                            <img src='/assets/vectors/Vector4.png' alt="image" className={styles.vectorImg4} />
+                            {/* <img src='/assets/vectors/Vector4.png' alt="image" className={styles.vectorImg4} /> */}
 
                         </div>
 

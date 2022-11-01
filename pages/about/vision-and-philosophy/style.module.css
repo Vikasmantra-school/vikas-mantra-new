@@ -3,14 +3,6 @@
     margin-right: 10px;
 }
 
-.vectorImg1 {
-    width: auto;
-    height: 322px;
-    position: absolute;
-    right: -104px;
-    top: -24px;
-}
-
 .sectionPdng {
     padding: 75px 0px;
 }
@@ -22,30 +14,61 @@
     top: -190px;
 }
 
+.vectorImg5::after {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector5.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    z-index: 1;
+    background-size: 110px;
+    height: 210px;
+    right: 40%;
+    width: 190px;
+}
+
 .vectorImg2 {
     position: absolute;
     bottom: -94px;
     left: -186px;
 }
 
-.vectorImg3 {
+.vectorImg3::before{
+
+    content: '';
     position: absolute;
-    left: -112px;
-    top: 130px;
-    height: 180px;
+    background-image: url(/assets/vectors/Vector3.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: 110px;
+    height: 210px;
+    left: 0%;
+    width: 190px;
+    top: 20%;
+
 }
 
-.vectorImg6 {
+.vectorImg6::after{
+    
+    content: '';
     position: absolute;
-    right: 60px;
-    bottom: -100px;
-    height: 200px;
+    background-image: url(/assets/vectors/Vector6.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 1;
+    background-size: 150px;
+    height: 210px;
+    right: 10%;
+    width: 190px;
+    bottom: 4%;
 }
 
 .vmpsImg {
     position: absolute;
-    right: 40px;
-    bottom: -105px;
+    bottom: -145px;
+    right: -550px;
+    height: 55px;
 }
 
 .hrLine {
@@ -81,12 +104,6 @@
 .numberStyle {
     font-size: 95px;
     opacity: 0.1;
-}
-
-.vmpsImg {
-    position: absolute;
-    bottom: 0;
-    right: -600px;
 }
 
 .sectionPdng {
@@ -192,24 +209,30 @@
         position: unset;
         padding-bottom: 60px;
     }
-    .sectionPdng{
+
+    .sectionPdng {
         padding-bottom: 0px;
     }
-    .vectorImg5{
+
+    .vectorImg5 {
         position: absolute;
         height: 90px;
         bottom: -45px;
         left: -55px;
     }
+
     .vectorImg3 {
         position: absolute;
         left: -48px;
         top: 475px;
         height: 100px;
     }
-    .colpdngRt , .colpdngLt {
+
+    .colpdngRt,
+    .colpdngLt {
         padding: 20px 20px;
     }
+
     .vectorImg6 {
         position: absolute;
         right: 0px;

@@ -26,17 +26,32 @@
     height: 150px;
 }
 
-.vectorImg6 {
-    bottom: 888px;
+.vectorImg6::before{
+    content: '';
     position: absolute;
-    left: -156px;
-    height: 130px;
+    background-image: url(/assets/vectors/Vector12.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: 70px;
+    height: 210px;
+    left: 0%;
+    width: 190px;
+    top: 47%;
 }
 
-.vectorImg8 {
+.vectorImg8::after{
+    content: '';
     position: absolute;
-    right: -104px;
-    bottom: 0;
+    background-image: url(/assets/vectors/Vector8.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 1;
+    background-size: 160px;
+    height: 210px;
+    right: 0%;
+    width: 190px;
+    bottom: 3%;
 }
 
 
