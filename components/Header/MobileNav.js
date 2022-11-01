@@ -12,7 +12,6 @@ const MobileNav = () => {
     sibling.classList.add('is-active')
     const navSub = document.getElementsByClassName('nav__sub')
     navSub[0].innerHTML += li
-    console.log(navSub)
     s()
   }
 
@@ -20,7 +19,7 @@ const MobileNav = () => {
     const x = document.querySelector('.sub__close')
     x.addEventListener('click', function () {
       this.parentElement.parentElement.classList.remove('is-active')
-      console.log(this.parentElement.parentElement)
+      this.parentElement.remove()
     })
   }
 

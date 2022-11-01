@@ -51,26 +51,9 @@
 
 @media only screen and (max-width: 600px) {
 
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 157px;
-        padding: 0px;
-        z-index: 1;
-    }
-
     .securityImg {
         width: 100%;
         position: unset;
-    }
-
-    .vectorImg10 {
-        position: absolute;
-        height: 60px;
-        right: 0px;
-        bottom: -20px;
     }
 
     .sectionPdng {
@@ -81,6 +64,32 @@
     .schlBusImg {
         width: 100%;
         position: unset;
+    }
+    .vectorImg12::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/vector12.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 50px;
+        height: 228px;
+        width: 114px;
+        left: 0;
+        top: 80px;
+    }
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 111px;
+        height: 227px;
+        right: 0;
+        width: 247px;
+        bottom: 15px;
     }
 
 }

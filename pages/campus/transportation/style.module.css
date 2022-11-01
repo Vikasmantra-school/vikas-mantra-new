@@ -37,16 +37,6 @@
 
 @media only screen and (max-width: 600px) {
 
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 157px;
-        padding: 0px;
-        z-index: 1;
-    }
-
     .sectionPdng {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -56,12 +46,17 @@
         width: 100%;
         position: unset;
     }
-
-    .vectorImg11 {
+    .vectorImg11::before {
+        content: '';
         position: absolute;
-        height: 50px;
-        left: 0px;
-        bottom: -335px;
+        background-image: url(/assets/vectors/vector15.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 62px;
+        height: 228px;
+        width: 114px;
+        top: 40%;
     }
 
 }
