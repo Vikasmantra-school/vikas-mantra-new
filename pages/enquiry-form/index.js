@@ -19,7 +19,7 @@ export default function index() {
 
       <Breadcrumb pageName={pageTitle} />
 
-      <section className={'pt60' + ' ' + 'pb60' + ' ' + styles.eqBg}>
+      <section className={'pt60' + ' ' + ' ' + styles.eqBg}>
         <div className='container'>
           <div className='row'>
             <div className='col-md-5'>
