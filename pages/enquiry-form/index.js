@@ -39,12 +39,12 @@ export default function index() {
         </div>
       </section>
 
-      <section className='VectorDot'>
+      <section className={'VectorDot position-relative' + ' ' + styles.formTop}>
         <div className='container'>
           <div className='row'>
             <div
               className={
-                'col-xl-10 col-lg-11 col-md-12 col-sm-12' +
+                'col-xl-10 col-lg-11 col-md-12 col-sm-12 mt-xs-5' +
                 ' ' +
                 styles.formCenter
               }
