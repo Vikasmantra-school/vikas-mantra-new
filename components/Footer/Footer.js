@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
+import Link from 'next/link'
 
 
 const Footer = () => {
@@ -30,7 +31,7 @@ const Footer = () => {
                                 <input type="number" className={styles.formInput + " form-control"} placeholder='Number' />
                             </div>
 
-                            <button type="submit" className= {styles.sendBtn + " btn btn-light mt-4"}>Send</button>
+                            <button type="submit" className={styles.sendBtn + " btn btn-light mt-4"}>Send</button>
                         </form>
 
                         <p className='mt-4'>Our admission officer will contact you shortly</p>
@@ -76,26 +77,45 @@ const Footer = () => {
                                 <div className={styles.quickLink + ' row'}>
 
                                     <div className='col-md-4'>
+                                        <Link href='/about' legacyBehavior>
+                                            <a className='nav-link'>About Us</a>
+                                        </Link>
 
-                                        <a href="/about" className='nav-link'>About Us</a>
-                                        <a href="/campus" className='nav-link'>Campus</a>
-                                        <a href="/learning" className='nav-link'>Learning</a>
+                                        <Link href='/campus' legacyBehavior>
+                                            <a className='nav-link'>Campus</a>
+                                        </Link>
+
+                                        <Link href="/learning" legacyBehavior>
+                                            <a className='nav-link'>Learning</a>
+                                        </Link>
 
                                     </div>
 
                                     <div className='col-md-4'>
 
-                                        <a href="/events" className='nav-link'>Events</a>
-                                        <a href="/admissions" className='nav-link'>Admissions</a>
-                                        <a href="/mandatory-public-disclosures" className='nav-link'>Faculty</a>
+                                        <Link href="/events" legacyBehavior>
+                                            <a className='nav-link'>Events</a>
+                                        </Link>
+
+                                        <Link href="/admissions" legacyBehavior>
+                                            <a className='nav-link'>Admissions</a>
+                                        </Link>
+
+                                        <Link href="/mandatory-public-disclosures" legacyBehavior>
+                                            <a className='nav-link'>Faculty</a>
+                                        </Link>
 
                                     </div>
 
                                     <div className='col-md-4'>
 
-                                        <a href="/careers" className='nav-link'>Careers</a>
-                                        <a href="/contact" className='nav-link'>Contact</a>
+                                        <Link href="/careers" legacyBehavior>
+                                            <a className='nav-link'>Careers</a>
+                                        </Link>
 
+                                        <Link href="/contact"  legacyBehavior>
+                                        <a className='nav-link'>Contact</a>
+                                        </Link>
 
                                     </div>
 
