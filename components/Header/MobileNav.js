@@ -1,26 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 
 const MobileNav = () => {
-  const [li, setLi] = [
-    '<li class="nav__item"><a class="nav__link sub__close hasDropdown" href="#">Back<svg width="29px" height="27px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg></a></li>',
-  ]
-
   function navLink(e) {
-    e.preventDefault()
-    const sibling = e.target.nextElementSibling
+    const sibling = e.target.nextSibling
     sibling.classList.add('is-active')
-    const navSub = document.getElementsByClassName('nav__sub')
-    navSub[0].innerHTML += li
-    s()
   }
 
-  function s() {
-    const x = document.querySelector('.sub__close')
-    x.addEventListener('click', function () {
-      this.parentElement.parentElement.classList.remove('is-active')
-      this.parentElement.remove()
-    })
+  function subClose(e) {
+    e.target.parentElement.parentElement.classList.remove('is-active')
   }
 
   return (
@@ -57,6 +45,31 @@ const MobileNav = () => {
               </a>
             </Link>
             <ul className='nav__sub'>
+              <li className='nav__item'>
+                <a
+                  onClick={(e) => subClose(e)}
+                  className='nav__link sub__close hasDropdown'
+                  href='#'
+                >
+                  Back
+                  <svg
+                    width='29px'
+                    height='27px'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={1.5}
+                    stroke='currentColor'
+                    className='w-6 h-6'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
+                    />
+                  </svg>
+                </a>
+              </li>
               <li className='nav__item'>
                 <Link href='/about' legacyBehavior>
                   <a className='nav__link'>About Vikas Mantra</a>
@@ -123,6 +136,31 @@ const MobileNav = () => {
               </a>
             </Link>
             <ul className='nav__sub'>
+              <li className='nav__item'>
+                <a
+                  onClick={(e) => subClose(e)}
+                  className='nav__link sub__close hasDropdown'
+                  href='#'
+                >
+                  Back
+                  <svg
+                    width='29px'
+                    height='27px'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={1.5}
+                    stroke='currentColor'
+                    className='w-6 h-6'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
+                    />
+                  </svg>
+                </a>
+              </li>
               <li className='nav__item'>
                 <Link href='/campus/classrooms' legacyBehavior>
                   <a className='nav__link'>Classrooms</a>
@@ -200,6 +238,31 @@ const MobileNav = () => {
               </a>
             </Link>
             <ul className='nav__sub'>
+              <li className='nav__item'>
+                <a
+                  onClick={(e) => subClose(e)}
+                  className='nav__link sub__close hasDropdown'
+                  href='#'
+                >
+                  Back
+                  <svg
+                    width='29px'
+                    height='27px'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={1.5}
+                    stroke='currentColor'
+                    className='w-6 h-6'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
+                    />
+                  </svg>
+                </a>
+              </li>
               <li className='nav__item'>
                 <Link href='/learning' legacyBehavior>
                   <a className='nav__link'>Why VIKAS MANTRA PUBLIC SCHOOL</a>
