@@ -405,6 +405,10 @@ p {
   padding-top: 15px;
 }
 
+.nav-link{
+  font-size: 1rem;
+}
+
 .dropdown-menu .dropdown-item:last-child{
   border-bottom: unset;
   padding-bottom: 15px;
