@@ -3,9 +3,7 @@ import styles from './style.module.css'
 import Link from 'next/link'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 
-
 function Learning() {
-
   const pageTitle = 'Learning'
 
   function progressClick(e) {
@@ -61,23 +59,30 @@ function Learning() {
   }, [])
   return (
     <>
-      
       <Breadcrumb pageName={pageTitle} />
 
       <section className={'pt60' + ' ' + 'pb60'}>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-5'>
+            <div className='col-xl-5 col-lg-6 col-md-7 col-sm-12'>
               <h2>Why VIKAS MANTRA PUBLIC SCHOOL</h2>
             </div>
           </div>
         </div>
       </section>
-      <section className={'greybg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo VectorDot VectorSpiralCenter'}
+      <section
+        className={
+          'greybg' +
+          ' ' +
+          'pt60' +
+          ' ' +
+          'pb60' +
+          ' ' +
+          'bglogo VectorDot VectorSpiralCenter'
+        }
       >
         <div className='container'>
           <div className='row'>
-
             <div className='col-md-6'>
               <div className='mb-5' id='holistic-approach'>
                 <h4 className='ulineRed'>Holistic Approach</h4>
@@ -139,7 +144,9 @@ function Learning() {
               </div>
             </div>
 
-            <div className={'col-md-6 learningLogo' + ' ' + styles.vectorSpiral}>
+            <div
+              className={'col-md-6 learningLogo' + ' ' + styles.vectorSpiral}
+            >
               <div className='imgUp'>
                 <img
                   src='/assets/school-building.png'
@@ -149,9 +156,12 @@ function Learning() {
               </div>
               <div className={'sticky-sidebar' + ' ' + 'pt60'}>
                 <ul id='progress'>
-
                   <li className={'node' + ' ' + 'green'}>
-                    <Link href='#holistic-approach' legacyBehavior><a><p> Holistic Approach</p></a></Link>
+                    <Link href='#holistic-approach' legacyBehavior>
+                      <a>
+                        <p> Holistic Approach</p>
+                      </a>
+                    </Link>
                   </li>
 
                   <li>
@@ -273,7 +283,6 @@ function Learning() {
                       </li>
                     </a>
                   </Link>
-
                 </ul>
                 <input
                   type='button'

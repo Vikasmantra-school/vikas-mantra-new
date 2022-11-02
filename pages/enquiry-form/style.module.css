@@ -21,7 +21,7 @@
     background-size: 142px;
     background-position: bottom right;
     background-repeat: no-repeat;
-    z-index: 1;}
+    z-index: -1;}
 
 
 @media only screen and (max-width: 660px){
