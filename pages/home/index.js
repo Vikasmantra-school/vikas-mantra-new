@@ -262,7 +262,13 @@ function Home() {
       <section className={styles.videoSection}>
         <div className='container'>
           <div className='row'>
-            <div className={styles.bannercontent + ' ' + 'col-md-6'}>
+            <div
+              className={
+                styles.bannercontent +
+                ' ' +
+                'col-xl-6 col-lg-8 col-md-10 col-sm-12'
+              }
+            >
               <h1>Inside the World of Vikas Mantra Public School</h1>
               <p>
                 Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

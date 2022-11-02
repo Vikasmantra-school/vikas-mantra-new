@@ -54,6 +54,11 @@ h2 {
   border-radius: 0px;
 }
 
+.outlineBtn:hover{
+  background: linear-gradient(85.31deg, #A11D2A -39.85%, #E02D53 44.76%, #F27D49 117.87%);
+  color: #fff;
+}
+
 li {
   font-size: 15px;
   font-weight: 500;
@@ -64,7 +69,9 @@ p {
   font-weight: 500;
 }
 
-.whiteoutlineBtn {
+.whiteoutlineBtn,
+.whiteoutlineBtn:hover
+ {
   background-color: transparent;
   border: 1px solid #FFF;
   border-radius: 0px;
