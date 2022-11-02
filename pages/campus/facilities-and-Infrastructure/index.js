@@ -33,15 +33,14 @@ const FacilitiesAndInfrastructure = () => {
 
                             {/* <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} /> */}
 
-                            <h3>VIKAS MANTRA PUBLIC SCHOOL
+                            <h3 className='ulineRed'>VIKAS MANTRA PUBLIC SCHOOL
                                 Campus is located in Mahindra
                                 city one of the top rated cities in
                                 India.
                             </h3>
 
-                            <hr className={styles.hrLine} />
 
-                            <p className='pt-3'>The VIKAS MANTRA PUBLIC SCHOOL Campus is spread over
+                            <p className='pt-5'>The VIKAS MANTRA PUBLIC SCHOOL Campus is spread over
                                 4.0 acres and communicates a sense of space to support
                                 an active learning environment. The atmosphere encourages
                                 collaboration, an open exchange of ideas and free movement

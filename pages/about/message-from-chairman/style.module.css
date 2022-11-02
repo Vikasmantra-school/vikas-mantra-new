@@ -3,14 +3,14 @@
     margin-right: 10px;
 }
 
-.hrLine {
-    color: #AA182C;
-    height: 1px;
-    width: 70px;
-}
-
 .sectionContainer {
     padding: 50px 0px;
+}
+.vmpsImg{
+    position: absolute;
+    right: 80px;
+    bottom: 215px;
+    height: 50px;
 }
 
 .vectorImg2::before {
@@ -39,15 +39,15 @@
     height: 210px;
     right: 10%;
     width: 190px;
-    top: 32%;
+    top: 41%;
     
 }
 
 .ChairmanImg {
-    height: 480px;
-    top: -300px;
-    right: -104px;
-    z-index: 1;
+    height: 570px;
+    top: -244px;
+    right: -65px;
+    z-index: 0;
     position: relative;
 }
 
@@ -89,6 +89,10 @@
         width: 190px;
        top: 87%;
     }
+    .vmpsImg{
+        display: none;
+    }
+
 
 }
 

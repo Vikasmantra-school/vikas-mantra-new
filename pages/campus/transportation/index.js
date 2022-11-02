@@ -34,12 +34,10 @@ const Transportation = () => {
 
                         <div className='col-md-5 position-relative'>
 
-                            <h3>VIKAS MANTRA
+                            <h3 className='ulineRed'>VIKAS MANTRA
                                 PUBLIC SCHOOL   </h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p className='pt-3'>has access to a fleet of buses to accommodate student and
+                            <p className='pt-5'>has access to a fleet of buses to accommodate student and
                                 staff transportation to and from the school. School bus movement can be
                                 tracked via SMS allowing parents to predict arrival and departure times
                                 accurately. Bus fees for students are payable on term basis and are based

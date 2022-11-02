@@ -84,9 +84,9 @@ const VisionAndPhilosophy = () => {
                   tabindex='0'
                 >
                   <div className='pt-3'>
-                    <h2>Our Vision</h2>
-                    <hr className={styles.hrLine} />
-                    <p>
+                    <h2 className='ulineRed'>Our Vision</h2>
+
+                    <p className='pt-5'>
                       Our Vision is to develop knowledgeable, adaptable,
                       responsible compassionate and caring young people with the
                       much needed survival and employable skills to create a
@@ -104,9 +104,9 @@ const VisionAndPhilosophy = () => {
                   tabindex='0'
                 >
                   <div className='pt-3'>
-                    <h2>Our Mission</h2>
-                    <hr className={styles.hrLine} />
-                    <p>
+                    <h2 className='ulineRed'>Our Mission</h2>
+            
+                    <p className='pt-5'>
                       Our Mission is to develop knowledgeable, adaptable,
                       responsible compassionate and caring young people with the
                       much needed survival and employable skills to create a
@@ -138,12 +138,11 @@ const VisionAndPhilosophy = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-8'>
-              <h2>As learners we all strive to be:</h2>
-
-              <hr className={styles.hrLine} />
+              <h2 className='ulineRed'>As learners we all strive to be:</h2>
             </div>
 
             <div className={styles.colpdngRt + ' col-md-6 position-relative'}>
+
               {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg3} /> */}
 
               <div className='d-flex align-items-start text-justify'>

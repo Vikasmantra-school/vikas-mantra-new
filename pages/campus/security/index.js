@@ -34,12 +34,10 @@ const Security = () => {
 
                             {/* <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} /> */}
 
-                            <h3>Security at VIKAS MANTRA
+                            <h3 className='ulineRed'>Security at VIKAS MANTRA
                                 PUBLIC SCHOOL</h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p className='pt-3'>is maintained through a combination of trained and
+                            <p className='pt-5'>is maintained through a combination of trained and
                                 well-qualified security personnel who man various entry and exit points.
                                 Strategically located CCTV cameras at various points in the campus
                                 monitor and keep track of movement within the premises. Security measures

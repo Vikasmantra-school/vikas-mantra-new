@@ -3,22 +3,6 @@
     margin-right: 10px;
 }
 
-.hrLine {
-    color: #AA182C;
-    height: 2px;
-    width: 70px;
-}
-
-.vectorImg1 {
-    width: auto;
-    height: 280px;
-    position: absolute;
-    right: -104px;
-    top: -30px;
-    padding: 0px;
-    z-index: 1;
-}
-
 .labImg1 {
     height: 407px;
     position: absolute;

@@ -42,9 +42,9 @@ const About = () => {
 
                             <div className={styles.margin + ' py-5 '}>
 
-                                <h2>About VMPS</h2>
-                                <hr className={styles.hrLine} />
-                                <p>VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu Kanchipuram
+                                <h2 className='ulineRed'>About VMPS</h2>
+                                
+                                <p className='pt-5'>VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu Kanchipuram
                                     is building a distinctive educational platform through a mix of
                                     international learning techniques, experienced academicians and
                                     modern facilities. By blending 21st century learning methodologies

@@ -12,18 +12,19 @@
     z-index: 99;
 }
 
-.hrLine {
-    color: #AA182C;
-    height: 1px;
-    width: 70px;
-}
-
 .vectorImg5 {
     position: absolute;
     right: 302px;
     top: -8px;
     z-index: -1;
     height: 150px;
+}
+.vmpsImg{
+    position: absolute;
+    height: 58px;
+    bottom: 1206px;
+    right: 0;
+    z-index: -1;
 }
 
 .vectorImg6::before{
@@ -63,6 +64,10 @@
 
     .staffImg {
         width: 100%;
+    }
+
+    .vmpsImg{
+        display: none;
     }
 
     .vectorImg6::before {

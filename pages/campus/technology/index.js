@@ -35,13 +35,11 @@ const Technology = () => {
 
                             {/* <img src='/assets/vectors/Vector12.png' alt="image" className={styles.vectorImg12} /> */}
 
-                            <h3>Interweaving technology
+                            <h3 className='ulineRed'>Interweaving technology
                                 with traditional learning
                                 techniques,</h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p className='pt-3'>Life at VIKAS MANTRA PUBLIC SCHOOL aims to go beyond
+                            <p className='pt-5'>Life at VIKAS MANTRA PUBLIC SCHOOL aims to go beyond
                                 gadgets and transform the very nature of learning in the 21st century.
                                 Life at VIKAS MANTRA PUBLIC SCHOOL believes in leveraging technology
                                 as a tool to enhance learning, as opposed to using technology for
@@ -65,9 +63,7 @@ const Technology = () => {
 
                         <div className='col-md-8'>
 
-                            <h3>VIKAS MANTRA PUBLIC SCHOOL has embraced technology to promote learning through:</h3>
-
-                            <hr className={styles.hrLine} />
+                            <h3 className='ulineRed'>VIKAS MANTRA PUBLIC SCHOOL has embraced technology to promote learning through:</h3>
 
                         </div>
 
@@ -75,7 +71,7 @@ const Technology = () => {
                             <div></div>
                         </div>
 
-                        <div className='col-md-8 position-relative'>
+                        <div className='col-md-8 position-relative pt-5'>
 
                             <ul>
 

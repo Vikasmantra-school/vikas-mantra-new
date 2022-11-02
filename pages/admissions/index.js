@@ -162,9 +162,9 @@ const Admissions = () => {
                 >
                   <div className={styles.card1 + ' card'}>
                     <div className='card-body'>
-                      <h5 className='card-title'>Admission</h5>
-                      <hr className={styles.hrLine} />
-                      <h6 className='card-text'>
+                      <h5 className='card-title ulineRed'>Admission</h5>
+
+                      <h6 className='card-text pt-5'>
                         At VIKAS MANTRA PUBLIC SCHOOL, admissions are open for
                         the academic year 2022-23 from classes Lower KG to Grade
                         9. Each grade will have 3 divisions with class strength
@@ -225,49 +225,53 @@ const Admissions = () => {
                     alt='image'
                     className={styles.studentImg}
                   />
+
                 </div>
 
-                <div
-                  className={
-                    styles.order2 + ' col-md-5 py-5 position-relative '
-                  }
-                >
+                <div className={styles.order2 + ' col-md-5 py-5 position-relative '} >
+
                   <img
                     src='/assets/VMPS.png'
                     alt='image'
                     className={styles.Sec2vmpsImg}
                   />
 
-                  <h2>
+                  <h2 className='ulineRed'>
                     Timelines and key milestones for the academic year 2022-23
                     VIKAS MANTRA PUBLIC SCHOOL admissions process
                   </h2>
 
-                  <hr className={styles.hrLine} />
+                  <div className='pt-5'>
 
-                  <table className='table table-bordered'>
-                    <tbody>
-                      <tr>
-                        <td>Admissions Open</td>
-                        <td>15th October 2021</td>
-                      </tr>
+                    <table className={' table table-bordered ' + styles.tableContainer}>
+                      <tbody className={styles.tableBody}>
 
-                      <tr>
-                        <td>Application forms available from</td>
-                        <td>15th October 2021</td>
-                      </tr>
+                        <tr className={styles.tableTr}>
+                          <td>Admissions Open</td>
+                          <td>15th October 2021</td>
+                        </tr>
 
-                      <tr>
-                        <td>Rolling-admissions start date</td>
-                        <td>15th October 2021</td>
-                      </tr>
+                        <tr>
+                          <td>Application forms available from</td>
+                          <td>15th October 2021</td>
+                        </tr>
 
-                      <tr>
-                        <td>Admissions open till</td>
-                        <td>30th June 2022</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                        <tr>
+                          <td>Rolling-admissions start date</td>
+                          <td>15th October 2021</td>
+                        </tr>
+
+                        <tr>
+                          <td>Admissions open till</td>
+                          <td>30th June 2022</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+
+                  </div>
+
+
 
                   <p className=' pt-3'>
                     Please note that Admissions for the new academic year
@@ -295,22 +299,14 @@ const Admissions = () => {
                   />
                 </div>
 
-                <div
-                  className={
-                    styles.cardmargin3 +
-                    ' col-md-8 offset-md-2 ' +
-                    ' ' +
-                    styles.tab3VectorSpiralBlue
-                  }
-                >
+                <div className={styles.cardmargin3 + ' col-md-8 offset-md-2 ' + ' ' + styles.tab3VectorSpiralBlue}>
                   <div className={styles.card1 + ' card'}>
                     <div className='card-body'>
-                      <h5 className='card-title'>
+                      <h5 className='card-title ulineRed'>
                         Eligibility Criteria for all classes
                       </h5>
-                      <hr className={styles.hrLine} />
 
-                      <ul className='pt-2'>
+                      <ul className='pt-5'>
                         <li className='pt-1'>
                           Kindergarten – To be eligible for admission, the child
                           must fall into the following age category as
@@ -331,8 +327,7 @@ const Admissions = () => {
                 </div>
 
                 <div className='col-md-6 mt-5 '>
-                  <h2>Admissions Procedure</h2>
-                  <hr className={styles.hrLine} />
+                  <h2 className='ulineRed'>Admissions Procedure</h2>
                 </div>
 
                 <div className='col-md-6'>
@@ -340,7 +335,7 @@ const Admissions = () => {
                 </div>
 
                 <div
-                  className={styles.colpdngRt + ' col-md-6 position-relative'}
+                  className={styles.colpdngRt + ' col-md-6 position-relative pt-5'}
                 >
                   <div className='d-flex align-items-start text-justify'>
                     <div className='position-relative'>
@@ -359,7 +354,7 @@ const Admissions = () => {
                   </div>
                 </div>
 
-                <div className={styles.colpdngLt + ' col-md-6'}>
+                <div className={styles.colpdngLt + ' col-md-6 pt-5 '}>
                   <div className='d-flex align-items-start text-justify'>
                     <div className='position-relative'>
                       <h2 className={styles.numberStyle}>2</h2>
@@ -569,11 +564,9 @@ const Admissions = () => {
                     className={styles.Sec4vmpsImg}
                   />
 
-                  <h2>FAQ</h2>
+                  <h2 className='ulineRed'>FAQ</h2>
 
-                  <hr className={styles.hrLine} />
-
-                  <div className='accordion' id='accordionExample'>
+                  <div className='accordion pt-5' id='accordionExample'>
                     <div className='accordion-item'>
                       <h2 className='accordion-header' id='headingSeven'>
                         <button

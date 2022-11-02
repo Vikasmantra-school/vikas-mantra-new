@@ -29,15 +29,13 @@ const Blog = () => {
 
                     <div className='row py-5 align-items-center '>
 
-                        <div className='col-md-6'>
+                        <div className={ 'col-md-6 ' + styles.colPdng1}>
 
                             {/* <img src='/assets/vectors/Vector1.png' alt="image" className={styles.vectorImg2} /> */}
 
-                            <h3>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h3>
+                            <h3 className='ulineRed'>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p>Teaching our children the value of making eco-friendly
+                            <p className='pt-5'>Teaching our children the value of making eco-friendly
                                 decisions in their everyday lives can be difficult in
                                 a culture that promotes mass consumption. But it’s more
                                 important than ever today to bring up ecologically
@@ -64,13 +62,11 @@ const Blog = () => {
 
                         </div>
 
-                        <div className='col-md-6'>
+                        <div className={'col-md-6 ' +styles.colPdng2}>
 
-                            <h3>BENEFITS OF YOGA FOR SCHOOL STUDENTS</h3>
+                            <h3 className='ulineRed'>BENEFITS OF YOGA FOR SCHOOL STUDENTS</h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p>The growing levels of competition have made children pursue a variety
+                            <p className='pt-5'>The growing levels of competition have made children pursue a variety
                                 of fresh and interesting experiences. They have paved the way for a
                                 variety of programs, making students get exposed to a wide array of
                                 knowledge that inspires and pushes children to learn, grow, thrive,
