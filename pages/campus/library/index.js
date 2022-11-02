@@ -33,14 +33,12 @@ const Library = () => {
 
                         <div className='col-md-5 position-relative'>
 
-                            <h3>The library is at the heart of
+                            <h3 className='ulineRed'>The library is at the heart of
                                 learning, research and knowledge
                                 assimilation
                             </h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p className='pt-3'>at VIKAS MANTRA PUBLIC SCHOOL. Its close proximity to
+                            <p className='pt-5'>at VIKAS MANTRA PUBLIC SCHOOL. Its close proximity to
                                 classrooms and visually appealing design makes it a virtual extension of
                                 the classroom environment. The library aims to instil a love for reading
                                 by providing students with the required depth and breadth of classical
@@ -74,9 +72,7 @@ const Library = () => {
 
                         <div className='col-md-8'>
 
-                            <h3>The libraries at VIKAS MANTRA PUBLIC SCHOOL offer reading resources such as:</h3>
-
-                            <hr className={styles.hrLine} />
+                            <h3 className='ulineRed'>The libraries at VIKAS MANTRA PUBLIC SCHOOL offer reading resources such as:</h3>
 
                         </div>
 
@@ -84,7 +80,7 @@ const Library = () => {
                             <div></div>
                         </div>
 
-                        <div className='col-md-8 position-relative'>
+                        <div className='col-md-8 position-relative pt-5'>
 
                             <ul>
 

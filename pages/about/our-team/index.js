@@ -32,7 +32,7 @@ const OurTeam = () => {
 
                         <div className='col-md-12 position-relative'>
 
-                            <h1>Our Team</h1>
+                            <h2>Our Team</h2>
 
                             <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} />
 
@@ -42,15 +42,13 @@ const OurTeam = () => {
 
                             return (
 
-                                <div className=' col-sm-6 col-md-6 col-lg-4 py-2' key={i}>
+                                <div className=' col-sm-6 col-md-6 col-lg-4 py-4' key={i}>
 
                                     <img src={item.staffImage} alt='image' className={styles.staffImg + ' img-fluid'} />
 
                                     <h6 className='pt-4'>{item.heading}</h6>
 
-                                    <p>{item.para}</p>
-
-                                    <hr className={styles.hrLine} />
+                                    <p className='ulineRed'>{item.para}</p>
 
                                 </div>
 
@@ -63,9 +61,7 @@ const OurTeam = () => {
 
                         <div className='col-md-12 position-relative'>
 
-                            {/* <img src='/assets/vectors/Vector6.png' alt="image" className={styles.vectorImg6} />
-
-                            <img src='/assets/vectors/Vector8.png' alt="image" className={styles.vectorImg8} /> */}
+                            <img src='/assets/VMPS.png' alt="image" className={styles.vmpsImg} />
 
                         </div>
 

@@ -77,24 +77,24 @@ const Footer = () => {
 
                                     <div className='col-md-4'>
 
-                                        <a href="#" className='nav-link'>About Us</a>
-                                        <a href="#" className='nav-link'>Campus</a>
-                                        <a href="#" className='nav-link'>Learning</a>
+                                        <a href="/about" className='nav-link'>About Us</a>
+                                        <a href="/campus" className='nav-link'>Campus</a>
+                                        <a href="/learning" className='nav-link'>Learning</a>
 
                                     </div>
 
                                     <div className='col-md-4'>
 
-                                        <a href="#" className='nav-link'>Events</a>
-                                        <a href="#" className='nav-link'>Admissions</a>
-                                        <a href="#" className='nav-link'>Faculty</a>
+                                        <a href="/events" className='nav-link'>Events</a>
+                                        <a href="/admissions" className='nav-link'>Admissions</a>
+                                        <a href="/mandatory-public-disclosures" className='nav-link'>Faculty</a>
 
                                     </div>
 
                                     <div className='col-md-4'>
 
-                                        <a href="#" className='nav-link'>Careers</a>
-                                        <a href="#" className='nav-link'>Contact</a>
+                                        <a href="/careers" className='nav-link'>Careers</a>
+                                        <a href="/contact" className='nav-link'>Contact</a>
 
 
                                     </div>

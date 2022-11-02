@@ -35,12 +35,10 @@ const Healthcare = () => {
 
                             {/* <img src='/assets/vectors/Vector12.png' alt="image" className={styles.vectorImg12} /> */}
 
-                            <h3>Security at VIKAS MANTRA
+                            <h3 className='ulineRed'>Security at VIKAS MANTRA
                                 PUBLIC SCHOOL   </h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p className='pt-3'>The good health of our students, faculty and staff is
+                            <p className='pt-5'>The good health of our students, faculty and staff is
                                 of the utmost importance to us. To ensure this, VIKAS MANTRA PUBLIC SCHOOL
                                 has set up a dedicated, fully-functional healthcare centre staffed with a
                                 qualified nurse. The nurse is present during school hours and attends to
@@ -66,16 +64,14 @@ const Healthcare = () => {
 
                             <div className='col-md-5 position-relative'>
 
-                                <h3>Our healthcare centre
+                                <h3 className='ulineRed'>Our healthcare centre
                                     infrastructure includes:</h3>
 
-                                <hr className={styles.hrLine} />
+                                <ul className='pt-5'>
 
-                                <ul>
+                                    <li className='pt-3'> First aid kits, basic medicines & medical supplies</li>
 
-                                    <li> First aid kits, basic medicines & medical supplies</li>
-
-                                    <li>Full-time qualified nurse</li>
+                                    <li className='pt-3'>Full-time qualified nurse</li>
 
                                 </ul>
 

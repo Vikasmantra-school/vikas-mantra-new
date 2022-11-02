@@ -34,13 +34,11 @@ const SpecialityRoom = () => {
 
                             {/* <img src='/assets/vectors/Vector12.png' alt ="image" className={styles.vectorImg12} /> */}
 
-                            <h3>VIKAS MANTRA PUBLIC
+                            <h3 className='ulineRed'>VIKAS MANTRA PUBLIC
                                 SCHOOL
                             </h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p className='pt-3'>has incorporated a number of specialty rooms to strengthen
+                            <p className='pt-5'>has incorporated a number of specialty rooms to strengthen
                                 and support core academic learning and co-curricular programmes. Specialty rooms
                                 are built with a view to enhance student experience through advanced equipment
                                 and technologies.
@@ -60,18 +58,15 @@ const SpecialityRoom = () => {
 
                         <div className='col-md-6'>
 
-                            <h3>Specialty Rooms at
+                            <h3 className='ulineRed'>Specialty Rooms at
                                 VIKAS MANTRA PUBLIC SCHOOL include</h3>
-
-                            <hr className={styles.hrLine} />
-
                         </div>
 
                         <div className='col-md-6'>
                             <div></div>
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-2 py-4'}>
+                        <div className={styles.pdngZero + ' col-md-2 py-5'}>
 
                             <ul>
                                 <li>Audio Video Lab
@@ -80,7 +75,7 @@ const SpecialityRoom = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-2 py-4'}>
+                        <div className={styles.pdngZero + ' col-md-2 py-5'}>
 
                             <ul>
 
@@ -90,7 +85,7 @@ const SpecialityRoom = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-2 py-4'}>
+                        <div className={styles.pdngZero + ' col-md-2 py-5'}>
 
                             <ul>
 
@@ -100,7 +95,7 @@ const SpecialityRoom = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-2 py-4'}>
+                        <div className={styles.pdngZero + ' col-md-2 py-5'}>
 
                             <ul>
 

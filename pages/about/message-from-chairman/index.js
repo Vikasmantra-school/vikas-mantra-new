@@ -39,11 +39,10 @@ const MessageFromChairMan = () => {
 
                             {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg2} /> */}
 
-                            <h3>Dear stake holders,</h3>
+                            <h3 className='ulineRed'>Dear stake holders,</h3>
 
-                            <hr className={styles.hrLine} />
 
-                            <p>Starting a school isn’t toughest job in today’s scenario, but
+                            <p className='pt-5'>Starting a school isn’t toughest job in today’s scenario, but
                                 the biggest challenge is making it a successful one by providing
                                 holistic education and helping students to build strong character,
                                 excellent academic standards, develop intellectual curiosity,
@@ -87,7 +86,7 @@ const MessageFromChairMan = () => {
 
                             <img src='/assets/banners/chairman.png' alt="image" className={styles.ChairmanImg} />
 
-                            {/* <img src='/assets/vectors/Vector7.png' alt="image" className={styles.vectorImg7} /> */}
+                            <img src='/assets/VMPS.png' alt="image" className={styles.vmpsImg} />
 
                         </div>
 

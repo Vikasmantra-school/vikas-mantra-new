@@ -40,11 +40,9 @@ const MessageFromPrincipal = () => {
 
                             {/* <img src='/assets/vectors/Vector1.png' alt="image" className={styles.vectorImg1} /> */}
 
-                            <h3>Dear all,</h3>
+                            <h3 className='ulineRed'>Dear all,</h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p>It is my proud privilege to warmly welcome you into the portals of Learning
+                            <p className='pt-5'>It is my proud privilege to warmly welcome you into the portals of Learning
                                 Community of Vikas Mantra Public School; dedicated to develop skilled/
                                 outstanding students who can pursue their interests and strengths to the
                                 best of their ability so that our enriched students emerge into the society
@@ -80,7 +78,7 @@ const MessageFromPrincipal = () => {
 
                             <img src='/assets/banners/principal.png' alt="image" className={styles.PrincipalImg} />
 
-                            {/* <img src='/assets/vectors/Vector2.png' alt="image" className={styles.vectorImg2} /> */}
+                            <img src='/assets/VMPS.png' alt="image" className={styles.vmpsImg} />
 
                         </div>
 

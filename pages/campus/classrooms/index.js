@@ -32,13 +32,11 @@ const Classrooms = () => {
 
                         <div className='col-md-5 position-relative'>
 
-                            <h3>Spacious, vibrant, well-lit
+                            <h3 className='ulineRed'>Spacious, vibrant, well-lit
                                 and contemporary
                             </h3>
 
-                            <hr className={styles.hrLine} />
-
-                            <p className='pt-3'>are some of the words that describe a typical classroom at
+                            <p className='pt-5'>are some of the words that describe a typical classroom at
                                 VIKAS MANTRA PUBLIC SCHOOL. Classrooms are designed to enable the student to
                                 maximise his/her individual learning while at school. A typical classroom at
                                 VIKAS MANTRA PUBLIC SCHOOL accommodates up to 30 students. Each classroom is
@@ -75,13 +73,11 @@ const Classrooms = () => {
 
                         <div className='col-md-12'>
 
-                            <h3>About our classrooms</h3>
-
-                            <hr className={styles.hrLine} />
+                            <h3 className='ulineRed'>About our classrooms</h3>
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 py-4'}>
+                        <div className={styles.pdngZero + ' col-md-3 py-5'}>
 
                             <ul>
                                 <li>Large (575 sq ft), well-ventilated
@@ -91,7 +87,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 py-4'}>
+                        <div className={styles.pdngZero + ' col-md-3 py-5'}>
 
                             <ul>
 
@@ -101,7 +97,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 py-4'}>
+                        <div className={styles.pdngZero + ' col-md-3 py-5'}>
 
                             <ul>
 
@@ -111,7 +107,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 py-4'}>
+                        <div className={styles.pdngZero + ' col-md-3 py-5'}>
 
                             <ul>
 
@@ -122,7 +118,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 py-4'}>
+                        <div className={styles.pdngZero + ' col-md-3 pb-5'}>
 
                             <ul>
 

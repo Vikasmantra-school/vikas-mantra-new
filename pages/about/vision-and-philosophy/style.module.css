@@ -4,7 +4,8 @@
 }
 
 .sectionPdng {
-    padding: 75px 0px;
+    padding-top: 75px;
+    padding-bottom: 110px;
 }
 
 .schoolBuildingImg {
@@ -14,7 +15,7 @@
     top: -190px;
 }
 
-.vectorImg5::after {
+/* .vectorImg5::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector5.png);
@@ -25,7 +26,7 @@
     height: 210px;
     right: 40%;
     width: 190px;
-}
+} */
 
 .vectorImg2 {
     position: absolute;
@@ -69,12 +70,6 @@
     bottom: -145px;
     right: -550px;
     height: 55px;
-}
-
-.hrLine {
-    color: #AA182C;
-    height: 2px;
-    width: 70px;
 }
 
 .navTabBg {
@@ -125,7 +120,7 @@
         right: 0px;
         height: 20px;
     }
-    .vectorImg5::after {
+    /* .vectorImg5::after {
         content: '';
         position: absolute;
         background-image: url(/assets/vectors/Vector5.png);
@@ -137,7 +132,7 @@
         right: 2%;
         width: 190px;
         top: 64%;
-    }
+    } */
     .vectorImg3::before {
         content: '';
         position: absolute;

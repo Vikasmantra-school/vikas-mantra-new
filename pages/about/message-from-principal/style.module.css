@@ -3,12 +3,6 @@
     margin-right: 10px;
 }
 
-.hrLine {
-    color: #AA182C;
-    height: 1px;
-    width: 70px;
-}
-
 .sectionContainer {
     padding: 50px 0px;
 }
@@ -35,18 +29,23 @@
     z-index: 1;
     background-size: 160px;
     height: 210px;
-    right: 11%;
+    right: 3%;
     width: 190px;
-    bottom: 10%;
+    bottom: 3%;
 }
 
 .PrincipalImg {
     position: absolute;
-    height: 480px;
+    height: 570px;
     top: -460px;
     right: -104px;
 }
-
+.vmpsImg{
+    position: absolute;
+    bottom: -140px;
+    right: 25px;
+    height: 50px;
+}
 
 @media only screen and (max-width: 600px) {
 

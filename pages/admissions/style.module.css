@@ -3,12 +3,6 @@
     margin-right: 10px;
 }
 
-.hrLine {
-    color: #AA182C;
-    height: 2px;
-    width: 70px;
-}
-
 .vectorImg1 {
     width: auto;
     height: 280px;
@@ -24,7 +18,7 @@
 }
 
 .schoolBuildingImg {
-    height: 500px;
+    height: 525px;
     position: absolute;
     bottom: -117px;
     right: 45px;
@@ -151,7 +145,7 @@
 }
 
 .studentImg {
-    height: 450px;
+    height: 520px;
 }
 
 .Sec2PdngBtm {
@@ -292,6 +286,16 @@
     width: 247px;
     bottom: 0;
     right: 0;
+}
+
+.tableContainer{
+    height: 290px;
+}
+.tableBody tr{
+    border: 1px solid #222;
+}
+.tableBody td{
+    padding: 24px 19px;
 }
 
 @media only screen and (max-width: 600px) {
