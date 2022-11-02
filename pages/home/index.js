@@ -32,7 +32,9 @@ function Home() {
             <div
               ref={title}
               className={
-                styles.bannercontent + ' ' + 'col-lg-6 col-md-12 col-sm-12'
+                styles.bannercontent +
+                ' ' +
+                'col-xl-6 col-lg-8 col-md-10 col-sm-12'
               }
             >
               <h1 className='box'>
@@ -92,7 +94,7 @@ function Home() {
 
       <section className={styles.welcomeSection + ' ' + 'pt60' + ' ' + 'pb60'}>
         <div className='container'>
-          <div className={'row' + ' ' + 'pb60'}>
+          <div className={'row' + ' ' + 'mb-xl-5 mb-0'}>
             <div className={'z1' + ' ' + 'col-lg-8 col-md-10 col-sm-12'}>
               <h2>Welcome to Vikas Mantra Public School</h2>
               <p>
@@ -106,7 +108,9 @@ function Home() {
 
           <div className={'row' + ' ' + 'pt60' + ' ' + styles.vkApproch}>
             <div
-              className={'z1' + ' ' + 'col-xl-3 col-lg-6 col-md-6 col-sm-12'}
+              className={
+                'z1' + ' ' + 'mb-xl-0 mb-5 col-xl-3 col-lg-6 col-md-6 col-sm-12'
+              }
             >
               <img
                 width='81'
@@ -124,7 +128,9 @@ function Home() {
             </div>
 
             <div
-              className={'z1' + ' ' + 'col-xl-3 col-lg-6 col-md-6 col-sm-12'}
+              className={
+                'z1' + ' ' + 'mb-xl-0 mb-5 col-xl-3 col-lg-6 col-md-6 col-sm-12'
+              }
             >
               <img
                 width='81'
@@ -145,7 +151,9 @@ function Home() {
             </div>
 
             <div
-              className={'z1' + ' ' + 'col-xl-3 col-lg-6 col-md-6 col-sm-12'}
+              className={
+                'z1' + ' ' + 'mb-xl-0 mb-5 col-xl-3 col-lg-6 col-md-6 col-sm-12'
+              }
             >
               <img
                 width='81'
@@ -166,7 +174,9 @@ function Home() {
             </div>
 
             <div
-              className={'z1' + ' ' + 'col-xl-3 col-lg-6 col-md-6 col-sm-12'}
+              className={
+                'z1' + ' ' + 'mb-xl-0 mb-5 col-xl-3 col-lg-6 col-md-6 col-sm-12'
+              }
             >
               <img
                 width='81'
