@@ -18,7 +18,14 @@ const VisionAndPhilosophy = () => {
         </div>
       </section>
 
-      <section className={styles.sectionPdng + ' greybg'}>
+      <section
+        className={
+          styles.sectionPdng +
+          ' greybg position-relative ' +
+          ' ' +
+          styles.vectorImg5
+        }
+      >
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 position-relative'>
@@ -74,7 +81,7 @@ const VisionAndPhilosophy = () => {
                   id='home-tab-pane'
                   role='tabpanel'
                   aria-labelledby='home-tab'
-                  tabIndex='0'
+                  tabindex='0'
                 >
                   <div className='pt-3'>
                     <h2>Our Vision</h2>
@@ -94,7 +101,7 @@ const VisionAndPhilosophy = () => {
                   id='profile-tab-pane'
                   role='tabpanel'
                   aria-labelledby='profile-tab'
-                  tabIndex='0'
+                  tabindex='0'
                 >
                   <div className='pt-3'>
                     <h2>Our Mission</h2>
@@ -111,18 +118,23 @@ const VisionAndPhilosophy = () => {
               </div>
 
               <div className='pt-5 position-relative'>
-                <img
-                  src='/assets/vectors/Vector5.png'
-                  alt='image'
-                  className={styles.vectorImg5}
-                />
+                {/* <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} /> */}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.sectionPdng + ' greybg'}>
+      <section
+        className={
+          styles.sectionPdng +
+          ' greybg position-relative' +
+          ' ' +
+          styles.vectorImg3 +
+          ' ' +
+          styles.vectorImg6
+        }
+      >
         <div className='container'>
           <div className='row'>
             <div className='col-md-8'>
@@ -132,11 +144,7 @@ const VisionAndPhilosophy = () => {
             </div>
 
             <div className={styles.colpdngRt + ' col-md-6 position-relative'}>
-              <img
-                src='/assets/vectors/Vector3.png'
-                alt='image'
-                className={styles.vectorImg3}
-              />
+              {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg3} /> */}
 
               <div className='d-flex align-items-start text-justify'>
                 <div className='position-relative'>
@@ -322,11 +330,7 @@ const VisionAndPhilosophy = () => {
             </div>
 
             <div className='col-md-6 position-relative'>
-              <img
-                src='/assets/vectors/Vector6.png'
-                alt='image'
-                className={styles.vectorImg6}
-              />
+              {/* <img src='/assets/vectors/Vector6.png' alt="image" className={styles.vectorImg6} /> */}
             </div>
           </div>
         </div>

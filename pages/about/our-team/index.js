@@ -24,7 +24,7 @@ const OurTeam = () => {
         <>
             <Breadcrumb pageName={pageTitle} />
 
-            <section className={styles.rowPdng + ' py-4'}>
+            <section className={styles.rowPdng + ' py-4 position-relative ' + ' ' + styles.vectorImg6 + ' ' + styles.vectorImg8}>
 
                 <div className='container'>
 
@@ -35,7 +35,6 @@ const OurTeam = () => {
                             <h1>Our Team</h1>
 
                             <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} />
-
 
                         </div>
 
@@ -64,9 +63,9 @@ const OurTeam = () => {
 
                         <div className='col-md-12 position-relative'>
 
-                            <img src='/assets/vectors/Vector6.png' alt="image" className={styles.vectorImg6} />
+                            {/* <img src='/assets/vectors/Vector6.png' alt="image" className={styles.vectorImg6} />
 
-                            <img src='/assets/vectors/Vector8.png' alt="image" className={styles.vectorImg8} />
+                            <img src='/assets/vectors/Vector8.png' alt="image" className={styles.vectorImg8} /> */}
 
                         </div>
 

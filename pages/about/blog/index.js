@@ -23,14 +23,15 @@ const Blog = () => {
 
             </section>
 
-            <section className={styles.sectionContainer + ' greybg'}>
+            <section className={styles.sectionContainer + ' greybg position-relative ' + ' ' + styles.vectorImg2 + ' ' + styles.vectorImg3}>
 
                 <div className='container'>
 
                     <div className='row py-5 align-items-center '>
 
                         <div className='col-md-6'>
-                            <img src='/assets/vectors/Vector1.png' alt="image" className={styles.vectorImg2} />
+
+                            {/* <img src='/assets/vectors/Vector1.png' alt="image" className={styles.vectorImg2} /> */}
 
                             <h3>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h3>
 
@@ -77,7 +78,7 @@ const Blog = () => {
 
                             <Link href='/about/blog/blogs'><button className='btn outlineBtn'>Know More</button></Link>
 
-                            <img src='/assets/vectors/Vector2.png' alt="image" className={styles.vectorImg3} />
+                            {/* <img src='/assets/vectors/Vector2.png' alt="image" className={styles.vectorImg3} /> */}
 
                         </div>
 

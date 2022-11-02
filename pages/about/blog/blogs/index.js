@@ -28,14 +28,15 @@ const Blog1 = () => {
 
             </section>
 
-            <section className={styles.sectionContainer + ' greybg'}>
+            <section className={styles.sectionContainer + ' greybg position-relative ' + ' ' + styles.BlogvectorImg2 + ' ' + styles.BlogvectorImg3 }>
 
                 <div className='container'>
 
                     <div className='row py-5 align-items-center '>
 
                         <div className='col-md-6'>
-                            <img src='/assets/vectors/Vector1.png' alt="image" className={styles.BlogvectorImg2} />
+
+                            {/* <img src='/assets/vectors/Vector1.png' alt="image" className={styles.BlogvectorImg2} /> */}
 
                             <p>Teaching our children the value of making eco-friendly decisions
                                 in their everyday lives can be difficult in a culture that promotes
@@ -123,7 +124,7 @@ const Blog1 = () => {
                                     result.
                                 </p>
 
-                                <img src='/assets/vectors/Vector2.png' alt="image" className={styles.BlogvectorImg3} />
+                                {/* <img src='/assets/vectors/Vector2.png' alt="image" className={styles.BlogvectorImg3} /> */}
 
                             </div>
 
