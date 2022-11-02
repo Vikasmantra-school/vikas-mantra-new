@@ -412,7 +412,7 @@ p {
 }
 
 .nav-link{
-  font-size: 1.2vw;
+  font-size: 1rem;
 }
 
 .dropdown-menu .dropdown-item:last-child{
