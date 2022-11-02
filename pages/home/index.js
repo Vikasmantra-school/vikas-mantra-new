@@ -55,7 +55,7 @@ function Home() {
       >
         <div className='container'>
           <div className='row align-items-center'>
-            <div className='col-md-6'>
+            <div className='mb-5 col-lg-6 col-md-12 col-sm-12'>
               <h2>About VMPS</h2>
 
               <p>
@@ -79,7 +79,7 @@ function Home() {
               <button className={'outlineBtn' + ' btn'}>Know More</button>
             </div>
 
-            <div className='col-md-6'>
+            <div className='col-lg-6 col-md-12 col-sm-12'>
               <img
                 src='/assets/home-abt-vmps.png'
                 alt='image'
@@ -93,7 +93,7 @@ function Home() {
       <section className={styles.welcomeSection + ' ' + 'pt60' + ' ' + 'pb60'}>
         <div className='container'>
           <div className={'row' + ' ' + 'pb60'}>
-            <div className={'z1' + ' ' + 'col-md-8'}>
+            <div className={'z1' + ' ' + 'col-lg-8 col-md-10 col-sm-12'}>
               <h2>Welcome to Vikas Mantra Public School</h2>
               <p>
                 Vikas Mantra Public School, is located in a sprawling campus of
@@ -105,7 +105,9 @@ function Home() {
           </div>
 
           <div className={'row' + ' ' + 'pt60' + ' ' + styles.vkApproch}>
-            <div className={'z1' + ' ' + 'col-md-3'}>
+            <div
+              className={'z1' + ' ' + 'col-xl-3 col-lg-6 col-md-6 col-sm-12'}
+            >
               <img
                 width='81'
                 height='74'
@@ -121,7 +123,9 @@ function Home() {
               </p>
             </div>
 
-            <div className={'z1' + ' ' + 'col-md-3'}>
+            <div
+              className={'z1' + ' ' + 'col-xl-3 col-lg-6 col-md-6 col-sm-12'}
+            >
               <img
                 width='81'
                 height='74'
@@ -140,7 +144,9 @@ function Home() {
               </div>
             </div>
 
-            <div className={'z1' + ' ' + 'col-md-3'}>
+            <div
+              className={'z1' + ' ' + 'col-xl-3 col-lg-6 col-md-6 col-sm-12'}
+            >
               <img
                 width='81'
                 height='74'
@@ -159,7 +165,9 @@ function Home() {
               </div>
             </div>
 
-            <div className={'z1' + ' ' + 'col-md-3'}>
+            <div
+              className={'z1' + ' ' + 'col-xl-3 col-lg-6 col-md-6 col-sm-12'}
+            >
               <img
                 width='81'
                 height='74'
@@ -188,14 +196,11 @@ function Home() {
       >
         <div className='container'>
           <div className='row align-items-center'>
-            <div className='col-xl-3 col-sm-6 col-md-5'>
-              <h2 className='cursiveFont'>
-                Life at VMPS
-                <br /> Our Happy Faces
-              </h2>
+            <div className='col-xl-3 col-lg-6 col-md-7 col-sm-8'>
+              <h2 className='cursiveFont'>Life at VMPS Our Happy Faces</h2>
             </div>
 
-            <div className='col-xl-9 col-sm-6 col-md-7'>
+            <div className='col-xl-9 col-lg-6 col-md-5 col-sm-4'>
               <hr className={styles.hrline} />
             </div>
           </div>
@@ -205,7 +210,7 @@ function Home() {
               <Splide>
                 <SplideSlide>
                   <div className='row align-items-center'>
-                    <div className='col-md-4'>
+                    <div className='col-xl-4 col-lg-5 col-md-12 col-sm-12'>
                       <p className={styles.textdate}>June 28, 2022</p>
 
                       <h4 className={styles.uline}>
@@ -225,7 +230,9 @@ function Home() {
 
                     <div
                       className={
-                        styles.vslideimage + ' ' + 'col-md-6 offset-md-2'
+                        styles.vslideimage +
+                        ' ' +
+                        'col-xl-6 offset-xl-2 col-lg-6 offset-lg-1 col-md-12 col-sm-12'
                       }
                     >
                       <img
@@ -267,6 +274,11 @@ function Home() {
                   perPage: 2,
                   pagination: true,
                   arrows: false,
+                  breakpoints: {
+                    640: {
+                      perPage: 1,
+                    },
+                  },
                 }}
               >
                 <SplideSlide>

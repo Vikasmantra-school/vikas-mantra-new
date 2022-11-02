@@ -49,6 +49,7 @@ const Nav = () => {
         </nav>
 
         <nav
+          id='mainMenu'
           className={styles.navTransparent + ' ' + 'navbar navbar-expand-lg'}
         >
           <div className='container'>
@@ -80,17 +81,11 @@ const Nav = () => {
                         <a className='dropdown-item'>About Vikas Mantra</a>
                       </Link>
                     </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
 
                     <li>
                       <Link href='/about/vision-and-philosophy' legacyBehavior>
                         <a className='dropdown-item'>Our Vision & Philosophy</a>
                       </Link>
-                    </li>
-                    <li>
-                      <hr className='dropdown-divider' />
                     </li>
 
                     <li>
@@ -98,26 +93,17 @@ const Nav = () => {
                         <a className='dropdown-item'>Chairman’s Message</a>
                       </Link>
                     </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
 
                     <li>
                       <Link href='/about/message-from-principal' legacyBehavior>
                         <a className='dropdown-item'>Principal’s Message</a>
                       </Link>
                     </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
 
                     <li>
                       <Link href='/about/our-team' legacyBehavior>
                         <a className='dropdown-item'>Our Team</a>
                       </Link>
-                    </li>
-                    <li>
-                      <hr className='dropdown-divider' />
                     </li>
 
                     <li>
@@ -153,9 +139,6 @@ const Nav = () => {
                     </li>
 
                     <li>
-                      <hr className='dropdown-divider' />
-                    </li>
-                    <li>
                       <Link
                         href='/campus/facilities-and-Infrastructure'
                         legacyBehavior
@@ -165,17 +148,11 @@ const Nav = () => {
                         </a>
                       </Link>
                     </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
 
                     <li>
                       <Link href='/campus/laboratory' legacyBehavior>
                         <a className='dropdown-item'>Laboratories</a>
                       </Link>
-                    </li>
-                    <li>
-                      <hr className='dropdown-divider' />
                     </li>
 
                     <li>
@@ -183,17 +160,11 @@ const Nav = () => {
                         <a className='dropdown-item'>Speciality Rooms</a>
                       </Link>
                     </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
 
                     <li>
                       <Link href='/campus/library' legacyBehavior>
                         <a className='dropdown-item'>Library</a>
                       </Link>
-                    </li>
-                    <li>
-                      <hr className='dropdown-divider' />
                     </li>
 
                     <li>
@@ -201,26 +172,17 @@ const Nav = () => {
                         <a className='dropdown-item'>Technology</a>
                       </Link>
                     </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
 
                     <li>
                       <Link href='/campus/security' legacyBehavior>
                         <a className='dropdown-item'>Security</a>
                       </Link>
                     </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
 
                     <li>
                       <Link href='/campus/healthcare' legacyBehavior>
                         <a className='dropdown-item'>Healthcare</a>
                       </Link>
-                    </li>
-                    <li>
-                      <hr className='dropdown-divider' />
                     </li>
 
                     <li>
@@ -251,26 +213,17 @@ const Nav = () => {
                         </a>
                       </Link>
                     </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
 
                     <li>
                       <Link href='/learning/curriculum' legacyBehavior>
                         <a className='dropdown-item'>Curriculum</a>
                       </Link>
                     </li>
-                    <li>
-                      <hr className='dropdown-divider' />
-                    </li>
 
                     <li>
                       <Link href='/learning/pre-primary-years' legacyBehavior>
                         <a className='dropdown-item'>Pre-Primary Years</a>
                       </Link>
-                    </li>
-                    <li>
-                      <hr className='dropdown-divider' />
                     </li>
 
                     <li>
@@ -280,9 +233,6 @@ const Nav = () => {
                       >
                         <a className='dropdown-item'>Curriculum Framework</a>
                       </Link>
-                    </li>
-                    <li>
-                      <hr className='dropdown-divider' />
                     </li>
 
                     <li>
