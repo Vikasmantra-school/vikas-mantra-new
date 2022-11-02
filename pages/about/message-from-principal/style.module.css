@@ -49,29 +49,6 @@
 
 
 @media only screen and (max-width: 600px) {
-    .vectorImg {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 158px;
-        z-index: 1;
-    }
-
-    .vectorImg2 {
-        width: auto;
-        position: absolute;
-        right: 0;
-        top: 285px;
-        height: 100px;
-    }
-
-    .vectorImg1 {
-        right: 1px;
-        position: absolute;
-        bottom: -38px;
-        height: 100px;
-    }
 
     .PrincipalImg {
         position: unset;
@@ -83,6 +60,32 @@
     .sectionContainer {
         padding: 0px;
     }
+    .vectorImg1::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector1.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 100px;
+        height: 210px;
+        left: -1%;
+        width: 190px;
+        top: -2%;
+    }
+    .vectorImg2::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector2.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 1;
+        background-size: 100px;
+        height: 210px;
+        right: 11%;
+        width: 190px;
+        bottom: 2%;
+    }
 }
 
 
@@ -93,58 +96,9 @@
         height: 480px;
     }
 
-    .vectorImg {
-        width: auto;
-        height: 125px;
-        position: absolute;
-        right: -30px;
-        top: 160px;
-        z-index: 1;
-    }
-
-    .vectorImg1 {
-        width: auto;
-        position: absolute;
-        left: -5px;
-        top: 300px;
-        height: 100px;
-    }
-
-    .vectorImg2 {
-        right: -30px;
-        position: absolute;
-        bottom: -135px;
-        height: 100px;
-    }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 990px) {
-
-    .vectorImg {
-        width: auto;
-        height: 125px;
-        position: absolute;
-        right: -23px;
-        top: 195px;
-        z-index: 1;
-        padding: 0;
-    }
-
-    .vectorImg1 {
-        width: auto;
-        position: absolute;
-        left: -5px;
-        top: 330px;
-        height: 95px;
-    }
-
-    .vectorImg2 {
-        right: -24px;
-        position: absolute;
-        bottom: -134px;
-        height: 100px;
-    }
 
     .PrincipalImg {
         position: unset;

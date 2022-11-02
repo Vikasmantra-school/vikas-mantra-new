@@ -121,6 +121,19 @@
     .headingPdng {
         padding-bottom: 0px;
     }
+    .vectorImg2::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 1;
+        background-size: 90px;
+        height: 227px;
+        left: 0;
+        width: 247px;
+        bottom: -34%;
+    }
 
     .sectionPdng {
         padding-top: 15px;
@@ -133,35 +146,11 @@
         height: 100%;
     }
 
-    .vectorImg2 {
-        position: absolute;
-        bottom: -120px;
-        left: 0px;
-        height: 100px;
-    }
-
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        z-index: 1;
-        padding: 0;
-        top: 339px;
-    }
-
     .vmpsImg {
         position: absolute;
-        right: 40px;
-        bottom: -594px;
-        height: 30px;
-    }
-
-    .vectorImg4 {
-        position: absolute;
-        right: 0px;
-        bottom: 20px;
-        height: 100px;
+        right: 14px;
+        bottom: -505px;
+        height: 33px;
     }
 
     .ResponsiveImage {

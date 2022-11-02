@@ -77,29 +77,6 @@
 
 @media only screen and (max-width: 600px) {
 
-    .vectorImg2 {
-        width: auto;
-        position: absolute;
-        left: -10px;
-        top: 290px;
-        height: 81px;
-    }
-
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 158px;
-    }
-
-    .vectorImg3 {
-        width: auto;
-        position: absolute;
-        right: 0;
-        height: 100px;
-    }
-
     .Blog1Img {
         position: unset;
         width: 100%;
@@ -116,32 +93,36 @@
         padding-bottom: 50px;
     }
 
-    .BlogvectorImg2 {
-        width: auto;
-        position: absolute;
-        left: -27px;
-        top: 328px;
-        height: 110px;
-    }
-
-    .vectorImg1 {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 187px;
-    }
-
     .BlogCnt1Img {
         position: unset;
         width: 100%;
         height: 100%;
     }
-
-    .BlogvectorImg3 {
-        width: auto;
+    .vectorImg2::before {
+        content: '';
         position: absolute;
-        right: 0;
-        height: 100px;
+        background-image: url(/assets/vectors/Vector1.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 88px;
+        height: 210px;
+        left: 0%;
+        width: 190px;
+        top: -2%;
     }
+    .vectorImg3::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector2.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 1;
+        background-size: 100px;
+        height: 210px;
+        right: 0%;
+        width: 190px;
+        bottom: 3%;
+    }
+
 }

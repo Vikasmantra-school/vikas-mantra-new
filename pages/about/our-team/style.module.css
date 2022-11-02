@@ -56,29 +56,6 @@
 
 
 @media only screen and (max-width: 600px) {
-    .vectorImg {
-        width: auto;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: 0;
-        z-index: 1;
-    }
-
-    .vectorImg8 {
-        position: absolute;
-        right: 0px;
-        bottom: -36px;
-        height: 100px;
-    }
-
-    .vectorImg5 {
-        position: absolute;
-        top: -60px;
-        z-index: -1;
-        height: 71px;
-        left: -20px;
-    }
 
     .rowPdng {
         padding: 0 !important;
@@ -87,32 +64,43 @@
     .staffImg {
         width: 100%;
     }
+
+    .vectorImg6::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector12.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 30px;
+        height: 210px;
+        left: 0%;
+        width: 190px;
+        top: 48%;
+    }
+    .vectorImg8::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector8.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 1;
+        background-size: 100px;
+        height: 210px;
+        right: 0%;
+        width: 190px;
+        bottom: 3%;
+    }
+    .vectorImg5{
+        position: absolute;
+        right: 245px;
+        top: 68px;
+        z-index: -1;
+        height: 65px;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 767px) {
-    .vectorImg {
-        width: auto;
-        height: 125px;
-        position: absolute;
-        right: -30px;
-        top: -6px;
-        z-index: 1;
-    }
-
-    .vectorImg5 {
-        position: absolute;
-        left: -50px;
-        top: -85px;
-        z-index: -1;
-        height: 80px;
-    }
-
-    .vectorImg8 {
-        position: absolute;
-        right: -30px;
-        bottom: 0;
-        height: 120px;
-    }
 
     .staffImg {
         width: 100%;
@@ -120,29 +108,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 990px) {
-    .vectorImg {
-        width: auto;
-        height: 125px;
-        position: absolute;
-        right: -30px;
-        top: -6px;
-        z-index: 1;
-    }
-
-    .vectorImg5 {
-        position: absolute;
-        left: -50px;
-        top: -85px;
-        z-index: -1;
-        height: 80px;
-    }
-
-    .vectorImg8 {
-        position: absolute;
-        right: -30px;
-        bottom: 0;
-        height: 120px;
-    }
 
     .staffImg {
         width: 100%;
