@@ -94,11 +94,14 @@ function Career() {
 
     </section>
 
-    <section className={'greybg VectorSpiralBlue position-relative' + ' ' + 'pt60' + ' ' + 'pb60'}>
+    <section className={'greybg VectorSpiralBlue position-relative' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + styles.careerBg}>
 
         <div className='container'>
 
-            <div className={'row' + ' ' + styles.careerBg}>
+
+        <Form>
+
+            <div className={'row'}>
 
                 <div className={'col-md-10' + ' ' + styles.formCenter}>
 
@@ -112,9 +115,7 @@ function Career() {
 
                             </div>
 
-                            <div className='col-md-5'>
-
-                                <Form>
+                            <div className='col-md-12 col-lg-5 col-sm-12'>
 
                                     <div className='mb-5'>
 
@@ -136,18 +137,12 @@ function Career() {
 
 
                                     </div>
-
-                                </Form>
-
-                                <a href='#'><Button className={'brownBtn'}>View All</Button></a>
-
+                                
                             </div>
 
-                            <div className='col-md-5 offset-md-1'>
+                            <div className='col-md-12 col-lg-5 col-sm-12 offset-lg-1'>
 
                                 <div className={styles.formPb}>
-
-                                    <Form>
 
                                         <div className='mb-5'>
 
@@ -157,15 +152,11 @@ function Career() {
 
                                         </div>
 
-                                    </Form>
-
                                 </div>
 
                                 <div>
 
                                 <h5 className='mb-5'>Method of Communication</h5>
-
-                                    <Form>
 
                                         <div className='mb-5'>
 
@@ -199,19 +190,16 @@ function Career() {
 
                                         </div>
 
-                                    </Form>
-
                                 </div>
 
                                 <div>
 
-                                    <Form>
 
                                         <div className='mb-5'>
 
                                         <div className='row'>
 
-                                            <div className='col-md-6'>
+                                            <div className='col-md-12 col-lg-6 col-sm-12 m-pb40'>
 
                                                 <label>Phone Number</label>
 
@@ -219,7 +207,7 @@ function Career() {
 
                                             </div>
 
-                                            <div className='col-md-6'>
+                                            <div className='col-md-12 col-lg-6 col-sm-12'>
 
                                                 <label>Email</label>
 
@@ -231,13 +219,13 @@ function Career() {
 
                                         </div>
 
-                                    </Form>
-
-
                                 </div>
 
 
                             </div>
+
+                            <a href='#'><Button className={'brownBtn'}>Submit</Button></a>
+
 
 
                         </div>
@@ -247,6 +235,8 @@ function Career() {
                 </div>
 
             </div>
+
+        </Form>
 
         </div>
 

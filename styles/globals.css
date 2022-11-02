@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+a:not([href]):hover {
+  color: unset;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -423,6 +427,20 @@ p {
 #mainMenu .navbar-nav{
   justify-content: space-between;
 flex: 0 0 100%;
+}
+
+#mainMenu li.nav-item.active .nav-link{
+  position: relative;
+}
+
+#mainMenu li.nav-item.active .nav-link::after{
+  content: '';
+  border-bottom: 5px solid #AA182C;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
 }
 
 .dropdown-menu .dropdown-item{
