@@ -179,7 +179,6 @@ function MandatoryScreen() {
                         <p><b>NOTE:</b> THE SCHOOLS NEEDS TO UPLOAD THE SELF ATTESTED COPIES OF ABOVE LISTED DOCUMETNS BY CHAIRMAN/MANAGER/SECRETARY AND PRINCIPAL. IN CASE, IT IS NOTICED AT LATER STAGE THAT UPLOADED DOCUMENTS ARE NOT GENUINE THEN SCHOOL SHALL BE LIABLE FOR ACTION AS PER NORMS.</p>
 
                     </div>
-
                     <div className={'row pt60' + ' ' + styles.mdBg}>
 
                         <h4>Results and Academics</h4>
