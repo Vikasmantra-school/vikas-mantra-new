@@ -14,13 +14,16 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 142px;
-    height: 210px;
-    background: url(/assets/vectors/vector13.png);
+    width: 179px;
+    height: 282px;
+    background: url(/assets/vectors/greenhalfspiral.png);
     background-size: 142px;
     background-position: top left;
     background-repeat: no-repeat;
     z-index: 1;}
+
+.tableborder tbody, .tableborder td, .tableborder tfoot, .tableborder th, .tableborder thead, .tableborder tr{border-color: #842029;}
+
 
 @media only screen and (max-width: 660px){
 
