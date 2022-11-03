@@ -81,7 +81,7 @@ const Footer = () => {
                                             <a className='nav-link'>About Us</a>
                                         </Link>
 
-                                        <Link href='/campus' legacyBehavior>
+                                        <Link href='/campus/classrooms' legacyBehavior>
                                             <a className='nav-link'>Campus</a>
                                         </Link>
 
