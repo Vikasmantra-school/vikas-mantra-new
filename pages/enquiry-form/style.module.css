@@ -2,7 +2,12 @@
 
 .formCenter{text-align: center;margin: 0 auto;}
 
-.form{text-align: left;padding: 70px 0px 70px 70px;background: #fff;position: relative;top: -150px;}
+.form{
+    text-align: left;
+    padding: 70px 0px 70px 70px;
+    background: #fff;
+}
+
 
 .formPb{padding-bottom: 25px;}
 
@@ -40,4 +45,36 @@
     .schoolLogo::before{background-size: 100px;left: 0;}
 
     .form{padding: 70px 0px 70px 0px;top: 0;}
+}
+
+
+@media only screen and (max-width: 576px) {
+    .formTop{
+      top: 0rem;
+      margin-top: 3rem;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .formTop{
+      top: -0.375rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .formTop{
+      top: -3.375rem;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .formTop{
+      top: -6.375rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .formTop{
+        top: -9.375rem;
+    }
 }

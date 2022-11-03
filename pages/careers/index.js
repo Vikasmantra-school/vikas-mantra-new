@@ -50,7 +50,7 @@ function Career() {
 
                 <p className={styles.textBold}>Vikas Mantra Public School is looking for qualified, dedicated and learner centric EDUCATORS to join our team in the following positions :</p>
 
-                <Table bordered className='mt-4'>
+                <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                    
                     <tbody>
                         <tr>
