@@ -120,7 +120,7 @@ function MandatoryScreen() {
                                 <tr className={styles.tableBorderColor}>
                                 <td>S.No</td>
                                 <td>DOCUMENTS/INFORMATION </td>
-                                <td>LINKS OF UPLOADED DOCUMENTS ON YOUR SCHOOL'S WEBSITE</td>
+                                <td>LINKS OF UPLOADED DOCUMENTS ON YOUR SCHOOL&apos;S WEBSITE</td>
                                 </tr>
 
                                 <tr>
@@ -143,7 +143,7 @@ function MandatoryScreen() {
 
                                 <tr>
                                 <td>4</td>
-                                <td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE*</td>
+                                <td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT&apos;S RENEWAL IF APPLICABLE*</td>
                                 <td><a href="#">Annexure 4</a></td>
                                 </tr>
 
@@ -189,7 +189,7 @@ function MandatoryScreen() {
                                 <tr className={styles.tableBorderColor}>
                                 <td>S.No</td>
                                 <td>DOCUMENTS/INFORMATION </td>
-                                <td>LINKS OF UPLOADED DOCUMENTS ON YOUR SCHOOL'S WEBSITE</td>
+                                <td>LINKS OF UPLOADED DOCUMENTS ON YOUR SCHOOL&apos;S WEBSITE</td>
                                 </tr>
 
                                 <tr>
