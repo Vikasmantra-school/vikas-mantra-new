@@ -1,48 +1,12 @@
 import React from 'react'
 import styles from "./style.module.css"
-import Button from 'react-bootstrap/Button';
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import Table from 'react-bootstrap/Table';
 
 function MandatoryScreen() {
 
     const pageTitle = 'Mandatory Public Disclosures'
-
-    const disclosure = [
-
-        {
-            title: 'Transfer Certificate Sample',
-            url: ''
-        },
-        {
-            title: 'Teaching Staff Details',
-            url: ''
-        },
-        { title: 'Subjects List for Grade Wise 2022-23', url: '' },
-        { title: 'Workshop Details of Staff', url: '' },
-        { title: 'Student Strength 2022-23', url: '' },
-        { title: 'School Management Committee', url: '' },
-        { title: 'Self Affidavit Form', url: '' },
-        { title: 'Fee Structure for the Academic Year 2022-23', url: '' },
-        { title: 'Academic Calendar for 2022 – 23', url: '' },
-        { title: 'POCSO COMMITTEE', url: '' },
-        { title: 'Contact Details', url: '' },
-        { title: 'Infrastructure Details', url: '' },
-        { title: 'Correspondent Pledge', url: '' },
-        { title: 'Interactive Sessions 2021 – 2022', url: '' },
-        { title: 'Self Declaration', url: '' },
-        { title: 'Vishaka Committee', url: '' },
-        { title: 'CBSE Grant Letter', url: '' },
-        { title: 'School Committee List', url: '' },
-        { title: 'Copy of the DEO Certificate', url: '' },
-        { title: 'Copy of No Objection Certificate', url: '' },
-        { title: 'Copy of Recognition Certificate', url: '' },
-        { title: 'Copy of Fire Safety Certificate', url: '' },
-        { title: 'Copy of Sanitary Certificate', url: '' },
-        { title: 'Building Safety Certificate', url: '' },
-        { title: 'Trust Registration Certificate', url: '' },
-        { title: 'General Information', url: '' },
-        { title: 'First Terminal Exam 2022 – 23', url: '' }
-    ]
+    
     return (
         <>
             <style>{`
@@ -74,31 +38,145 @@ function MandatoryScreen() {
 
             </section>
 
-            <section className={'pt60' + ' ' + 'pb60' + ' ' + styles.disclosueSection}>
+            <section className={'pb60' + ' ' + styles.disclosueSection}>
 
                 <div className={'container'}>
 
                     <div className={'row' + ' ' + styles.mdBg}>
 
-                        {disclosure?.map((item, i) => {
+                        <h4>General Information</h4>
 
-                            return (
+                        <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+                   
+                            <tbody>
+                                <tr className={styles.tableBorderColor}>
+                                <td>S.No</td>
+                                <td>Information</td>
+                                <td>Details</td>
+                                </tr>
 
-                                <div className={'col-md-4' + ' ' + 'mb-5'} key={i}>
+                                <tr>
+                                <td>1</td>
+                                <td>NAME OF THE SCHOOL*</td>
+                                <td>VIKAS MANTRA PUBLIC SCHOOL</td>
+                                </tr>
 
-                                    <div className={styles.disclosureCard}>
+                                <tr>
+                                <td>2</td>
+                                <td>AFFILIATION NO.(IF APPLICABLE)</td>
+                                <td></td>
+                                </tr>
 
-                                        <p>{item.title}</p>
+                                <tr>
+                                <td>3</td>
+                                <td>SCHOOL CODE (IF APPLICABLE)</td>
+                                <td></td>
+                                </tr>
 
-                                        <a href='{item.url}'><Button className={'brownBtn'}>View All</Button></a>
+                                <tr>
+                                <td>4</td>
+                                <td>COMPLETE ADDRESS WITH PIN CODE*</td>
+                                <td>168/3 OFF MAHINDRA WORLD CITY ANJUR VILLAGE, CHENGALPATTU , TAMILNADU - 603204</td>
+                                </tr>
 
-                                    </div>
+                                <tr>
+                                <td>5</td>
+                                <td>PRINCIPAL NAME*</td>
+                                <td>MRS PRIYANKA GHOSH JESURAJ</td>
+                                </tr>
 
+                                <tr>
+                                <td>6</td>
+                                <td>PRINCIPAL QUALIFICATION*</td>
+                                <td>M.COM B.ED</td>
+                                </tr>
 
-                                </div>
+                                <tr>
+                                <td>7</td>
+                                <td>SCHOOL EMAIL ID*</td>
+                                <td>principal@vikasmantra.org</td>
+                                </tr>
 
-                            )
-                        })}
+                                <tr>
+                                <td>8</td>
+                                <td>CONTACT DETAILS (LANDLINE/MOBILE)*</td>
+                                <td></td>
+                                </tr>
+
+                               
+                            </tbody>
+
+                        </Table> 
+
+                    </div>
+
+                    <div className={'row' + ' ' + styles.mdBg}>
+
+                        <h4>Documents and Information</h4>
+
+                        <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+                   
+                            <tbody>
+                                <tr className={styles.tableBorderColor}>
+                                <td>S.No</td>
+                                <td>DOCUMENTS/INFORMATION </td>
+                                <td>LINKS OF UPLOADED DOCUMENTS ON YOUR SCHOOL'S WEBSITE</td>
+                                </tr>
+
+                                <tr>
+                                <td>1</td>
+                                <td>COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY</td>
+                                <td><a href="#">Annexure 1</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>2</td>
+                                <td>COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE*</td>
+                                <td><a href="#">Annexure 2</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>3</td>
+                                <td>COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT*</td>
+                                <td><a href="#">Annexure 3</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>4</td>
+                                <td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE*</td>
+                                <td><a href="#">Annexure 4</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>5</td>
+                                <td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE*</td>
+                                <td><a href="#">Annexure 5</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>6</td>
+                                <td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY*</td>
+                                <td><a href="#">Annexure 6</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>7</td>
+                                <td>COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION OR SELF CERTIFICATION BY SCHOOL*</td>
+                                <td><a href="#">Annexure 7</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>8</td>
+                                <td>COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES</td>
+                                <td><a href="#">Annexure 8</a></td>
+                                </tr>
+
+                               
+                            </tbody>
+
+                        </Table> 
+
+                        <p><b>NOTE:</b> THE SCHOOLS NEEDS TO UPLOAD THE SELF ATTESTED COPIES OF ABOVE LISTED DOCUMETNS BY CHAIRMAN/MANAGER/SECRETARY AND PRINCIPAL. IN CASE, IT IS NOTICED AT LATER STAGE THAT UPLOADED DOCUMENTS ARE NOT GENUINE THEN SCHOOL SHALL BE LIABLE FOR ACTION AS PER NORMS.</p>
 
                     </div>
 
