@@ -16,8 +16,8 @@
 .schlBusImg {
     width: 50%;
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    right: 50px;
     z-index: 1;
 }
 
@@ -43,10 +43,10 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 150px;
+    background-size: 160px;
     height: 227px;
     width: 247px;
-    bottom: 0;
+    bottom: 60px;
     right: 0;
 }
 
@@ -66,12 +66,12 @@
 
 .paraAlign {
     text-align: start;
-    padding-left: 95px;
+    /* padding-left: 77px; */
 }
 
 .paraAlign3 {
     text-align: start;
-    padding-left: 111px;
+    /* padding-left: 100px; */
 }
 
 
@@ -88,16 +88,32 @@
     }
 
     .paraAlign {
-        text-align: start;
-        padding: 20px 104px;
+        text-align: center;
+        padding: 0px;
     }
 
     .paraAlign3 {
-        text-align: start;
-        padding: 0px 112px;
+        text-align: center;
+        padding: 0px ;
     }
 
     .sectionPdng {
-        padding: 50px 0px;
+        display: none;
+    }
+    .mobColPdng{
+        padding: 20px 0px;
+    }
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 100px;
+        height: 227px;
+        width: 247px;
+        bottom: 14px;
+        right: 0;
     }
 }
