@@ -35,19 +35,20 @@ const Contact = () => {
             </section>
 
 
-            <section className= { ' greybg pt60 pb60 position-relative ' + ' ' + styles.vectorImg10}>
+            <section className={' greybg pt60 pb60 position-relative ' + ' ' + styles.vectorImg10}>
                 <div className='container'>
                     <div className={styles.rowPdng + ' row text-center'}>
 
-                        <div className= {'col-md-4 ' + ' ' + styles.mobColPdng }>
+                        <div className={'col-md-4 ' + ' ' + styles.mobColPdng}>
                             <div className='position-relative'>
                                 {/* <img src='/assets/vectors/vector13.png' alt="image" className={styles.vectorImg13} /> */}
 
                                 <img src='/assets/icons/mail.png' alt='image' className={styles.iconsImg} />
 
-                                <h4 className='py-4'>Postal address</h4>
-
                                 <div className={styles.paraAlign}>
+
+                                    <h4 className='py-4'>Postal address</h4>
+
                                     <p>
                                         S.No:168,168/3,
                                         <br />
@@ -56,15 +57,16 @@ const Contact = () => {
                                         Anjur - 603204, Chengalpattu
                                     </p>
                                 </div>
+
                             </div>
                         </div>
 
                         <div className={'col-md-4 ' + ' ' + styles.mobColPdng}>
                             <img src='/assets/icons/call.png' alt='image' className={styles.iconsImg} />
 
-                            <h4 className='py-4'>Phone & Email</h4>
-
                             <div className={styles.paraAlign}>
+
+                                <h4 className='py-4'>Phone & Email</h4>
                                 <p>info@vikasmantra.org</p>
                                 <p>
                                     <a href='tel:+91 - 7092 450 450'>+91 - 7092 450 450</a>
@@ -72,15 +74,15 @@ const Contact = () => {
                                 <p>
                                     <a href='tel:+91 - 8148 143 834'>+91 - 8148 143 834</a>
                                 </p>
+
                             </div>
                         </div>
 
                         <div className={'col-md-4 position-relative ' + ' ' + styles.mobColPdng} >
                             <img src='/assets/icons/time.png' alt='image' className={styles.iconsImg} />
 
-                            <h4 className='py-4'>Office hours</h4>
-
                             <div className={styles.paraAlign3}>
+                                <h4 className='py-4'>Office hours</h4>
                                 <p>Monday - Friday</p>
                                 <p> 9.00 am - 4.00 pm</p>
 
