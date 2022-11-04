@@ -65,7 +65,9 @@
 }
 
 .paraAlign {
-    text-align: start;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
     /* padding-left: 77px; */
 }
 
