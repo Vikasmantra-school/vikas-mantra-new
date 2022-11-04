@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Button from 'react-bootstrap/Button'
 import styles from './style.module.css'
@@ -17,6 +17,18 @@ const Nav = () => {
     menu.classList.toggle('mob-menu-hdden')
     hamburgerMenu.classList.toggle('is-active')
   }
+
+  useEffect(() => {
+    const navLink = document.querySelectorAll('.nav-link')
+    // const page = navLink.toLowerCase()
+    navLink.forEach((element) => {
+      if (element.innerText.toLowerCase() === pageName) {
+        console.error(element.parentElement)
+        element.parentElement.classList.add('active')
+      }
+    })
+    // console.error(pageName)
+  }, [])
 
   return (
     <>
@@ -55,7 +67,7 @@ const Nav = () => {
           <div className='container'>
             <div className='collapse navbar-collapse desktop-menu' id=''>
               <ul className='navbar-nav mb-2 mb-lg-0'>
-                <li className='nav-item active'>
+                <li className='nav-item'>
                   <Link href='/home' legacyBehavior>
                     <a className='nav-link' aria-current='page'>
                       Home
