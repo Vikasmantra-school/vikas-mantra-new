@@ -48,7 +48,7 @@ function Career() {
 
                 <p>Remuneration & perks will be the best in the Industry and be commensurate with qualification and experience.</p>
 
-                <p className={styles.textBold}>Vikas Mantra Public School is looking for qualified, dedicated and learner centric EDUCATORS to join our team in the following positions :</p>
+                <p className={styles.textBold}>Vikas Mantra Public School is looking for qualified, dedicated and learner centric EDUCATORS to join our team in the following positions</p>
 
                 <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                    
@@ -82,7 +82,7 @@ function Career() {
 
                 <div className={'imgUp' + ' ' + styles.careerImg}>
 
-                    <img src='/assets/events/beachday.png' alt='image' className='img-fluid' />
+                    <img src='/assets/banners/we-are-hiring.png' alt='image' className='img-fluid' />
 
                 </div>
 

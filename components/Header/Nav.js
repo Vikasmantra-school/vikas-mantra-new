@@ -9,7 +9,7 @@ const Nav = () => {
   const { asPath } = useRouter()
 
   var pageName = asPath.replace('/', '')
-
+  
   function hamburgerMenu(e) {
     let menu = document.getElementById('mobMenu')
     let hamburgerMenu = document.getElementById('hamburger')

@@ -271,8 +271,7 @@ function Home() {
             >
               <h1>Inside the World of Vikas Mantra Public School</h1>
               <p>
-                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.
+              It is a place where diversity is respected and where curiosity, collaboration and contribution all come together to shape considerate individuals with a culturally-sensitive outlook.
               </p>
             </div>
           </div>
@@ -326,14 +325,11 @@ function Home() {
 
                     <div className={styles.testimonialcontent}>
                       <h4>
-                        Parent of <br /> <span>Kavitha (SR.KG)</span>
+                        Parent of <br /> <span>Anirudhi (Grade – II)</span>
                       </h4>
 
                       <p>
-                        The event is very nice to bring up hidden talents of the
-                        kids and also helps to shed their shyness and
-                        inhibitions to face number of people. Keep up the good
-                        work.
+                      It’s a very good platform for the students to show cast their ideas, thoughts and skills without any fear to elaborate themselves in front of all hands….
                       </p>
                     </div>
                   </div>
@@ -347,18 +343,16 @@ function Home() {
 
                     <div className={styles.testimonialcontent}>
                       <h4>
-                        Parent of <br /> <span>Kavitha (SR.KG)</span>
+                        Parent of <br /> <span>Riddhi (Grade – II)</span>
                       </h4>
 
                       <p>
-                        The event is very nice to bring up hidden talents of the
-                        kids and also helps to shed their shyness and
-                        inhibitions to face number of people. Keep up the good
-                        work.
+                      It’s a very good opportunity to the students to enhance their extracurricular skills n to know about themselves where they are good at..!
                       </p>
                     </div>
                   </div>
                 </SplideSlide>
+
               </Splide>
             </div>
           </div>

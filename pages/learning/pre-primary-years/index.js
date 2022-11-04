@@ -74,12 +74,12 @@ function PrePrimary() {
         </div>
       </section>
       <section
-        className={'greybg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo'}
+        className={'greybg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo VectorDot VectorSpiralCenter'}
       >
         <div className='container'>
           <div className='row'>
             <div className='col-md-6'>
-              <div className='mb-5' id='holistic-approach'>
+              <div className='mb-5' id='happy-tots'>
                 <h4 className='ulineRed'>Happy Tots </h4>
                 <p className='pt-4'>
                   formulated the approach of SPICE, which a child must wholly
@@ -105,7 +105,7 @@ function PrePrimary() {
                   of:
                 </p>
 
-                <ul>
+                <ul className='list-item'>
                   <li>Developmentally appropriate curriculum</li>
                   <li>Innovative and dynamic teaching styles</li>
                   <li>Brain friendly learning modules</li>
@@ -117,8 +117,8 @@ function PrePrimary() {
                   <li>Specialized and adept teachers</li>
                 </ul>
               </div>
-              <div className='mb-5' id='local-app'>
-                <h4 className='ulineRed'>OUR APPROACH</h4>
+              <div className='mb-5' id='our-approach'>
+                <h4 className='ulineRed'>Our Approach</h4>
                 <p className='pt-4'>
                   Vikas Mantra Public School follows the futuristic Early Years
                   Curriculum “ Happy Tots’ in the KG classes. “ Happy Tots” is
@@ -130,13 +130,14 @@ function PrePrimary() {
                   2-5 years to enhance their whole brain development by Dr. K R
                   Maalathi, one of the senior educators in India.
                 </p>
+
+                <img src="/assets/learning/spice-banner.jpg"  className='image-fluid mt-4'/>
+
               </div>
-              <div className='mb-5' id='recognizing'>
+              <div className='mb-5' id='programs'>
                 <h4 className='ulineRed'>Programs</h4>
-                <h5 className='pt-4'>
-                  “Happy Tots Curriculum Prepares Children for Lifelong
-                  /learning!”
-                </h5>
+                <p className='pt-4'><b>“Happy Tots Curriculum Prepares Children for Lifelong
+                  /learning!”</b></p>
 
                 <p className='pt-4'>
                   Happy Tots offers a well-structured curriculum for all three
@@ -162,7 +163,7 @@ function PrePrimary() {
                   own pace.
                 </p>
               </div>
-              <div className='mb-5' id='century'>
+              <div className='mb-5' id='why-us'>
                 <h4 className='ulineRed'>WHY CHOOSE VIKAS MANTRA?</h4>
                 <p className='pt-4'>
                   Vikas Mantra Public School is established with a vision to
@@ -170,6 +171,8 @@ function PrePrimary() {
                   skills in the 21st century through rigorous academic and
                   technological skills.
                 </p>
+
+                <button class="outlineBtn btn">Know More</button>
               </div>
             </div>
 
@@ -183,19 +186,33 @@ function PrePrimary() {
               </div>
               <div className={'sticky-sidebar VectorSpiralBlue' + ' ' + 'pt60'}>
                 <ul id='progress'>
-                  <li className={'node' + ' ' + 'green'}>
-                    <Link href='#holistic-approach' legacyBehavior>
-                      <a>
-                        <p> Our Approach</p>
-                      </a>
-                    </Link>
+
+                
+                  <Link href='#happy-tots' legacyBehavior>
+                    <a>
+                    <li className={'node' + ' ' + 'green'}>
+                      <p> Happy Tots</p>
+                    </li>
+                    </a>
+                  </Link>
+                  
+                  <li>
+                    <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
+
+                  <Link legacyBehavior href='#our-approach'>
+                    <a onClick={(e) => progressClick(e)}>
+                      <li className={'node' + ' ' + 'grey'}>
+                        <p>Our Approach</p>
+                      </li>
+                    </a>
+                  </Link>
 
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#local-app'>
+                  <Link legacyBehavior href='#programs'>
                     <a onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
                         <p>Programs</p>
@@ -207,7 +224,7 @@ function PrePrimary() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#recognizing'>
+                  <Link legacyBehavior href='#why-us'>
                     <a onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
                         <p>Why Choose Vikas Mantra</p>
