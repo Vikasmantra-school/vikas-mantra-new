@@ -83,7 +83,8 @@ function index() {
 
                                 <h2 className='ulineRed'>Beach Day for Kg </h2>
 
-                                <p className='pt-4'>We the tiny n happy fishes in the marine world. Today at Vikas Mantra Public School organized The Beach Day as a part of monthly concept. Children learnt the concept of going to beach in summer. Underwater creatures were taught through songs.</p>
+                                <p className='pt-4'>We the tiny n happy fishes in the marine world. </p>
+                                <p>Today at Vikas Mantra Public School organized The Beach Day as a part of monthly concept. Children learnt the concept of going to beach in summer. Underwater creatures were taught through songs.</p>
 
                             </div>
 
@@ -116,6 +117,8 @@ function index() {
                                 pagination: false,
                                 arrows: true,
                                 }}>
+                          
+                                    
 
                                 <SplideSlide>
 
@@ -123,11 +126,7 @@ function index() {
 
                                 </SplideSlide>
 
-                                <SplideSlide>
-
-                                    <img src='/assets/events/beachday.png' alt='image' className='img-fluid' />
-
-                                </SplideSlide>
+                              
 
                             </Splide>
                         </div>
