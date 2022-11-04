@@ -352,7 +352,8 @@ p {
 }
 
 .curriculum-tab .nav-tabs {
-  border: #fff !important;
+  
+  border-bottom: 2px solid #c9c9c9;
 }
 
 .curriculum-tab .nav-tabs :hover {

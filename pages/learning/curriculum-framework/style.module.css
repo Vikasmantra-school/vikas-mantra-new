@@ -7,6 +7,13 @@
     width: 574px;
 }
 
+.highlights{
+
+    font-size: 15px !important;
+}
+
+.highlights span{font-size: 17px !important;font-weight: 700;}
+
 /* .vectorImg2::before {
     content: "";
     position: absolute;
