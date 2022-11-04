@@ -14,10 +14,11 @@
 }
 
 .schlBusImg {
-    width: 100%;
+    width: 50%;
     position: absolute;
-    top: -330px;
-    right: -58px;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .vectorImg11 {
@@ -28,12 +29,7 @@
 }
 
 .sectionPdng {
-    padding-top: 100px;
-    padding-bottom: 150px;
-}
-
-.rowPdng {
-    padding-top: 222px;
+    min-height: 366px;
 }
 
 .iconsImg {
