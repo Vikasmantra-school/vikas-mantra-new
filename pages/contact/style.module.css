@@ -14,10 +14,11 @@
 }
 
 .schlBusImg {
-    width: 100%;
+    width: 50%;
     position: absolute;
-    top: -330px;
-    right: -58px;
+    bottom: 0;
+    right: 50px;
+    z-index: 1;
 }
 
 .vectorImg11 {
@@ -28,12 +29,7 @@
 }
 
 .sectionPdng {
-    padding-top: 100px;
-    padding-bottom: 150px;
-}
-
-.rowPdng {
-    padding-top: 222px;
+    min-height: 366px;
 }
 
 .iconsImg {
@@ -47,10 +43,10 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 150px;
+    background-size: 160px;
     height: 227px;
     width: 247px;
-    bottom: 0;
+    bottom: 60px;
     right: 0;
 }
 
@@ -69,13 +65,8 @@
 }
 
 .paraAlign {
-    text-align: start;
-    padding-left: 95px;
-}
-
-.paraAlign3 {
-    text-align: start;
-    padding-left: 111px;
+    text-align: left;
+    /* padding-left: 77px; */
 }
 
 
@@ -92,16 +83,32 @@
     }
 
     .paraAlign {
-        text-align: start;
-        padding: 20px 104px;
+        text-align: center;
+        padding: 0px;
     }
 
     .paraAlign3 {
-        text-align: start;
-        padding: 0px 112px;
+        text-align: center;
+        padding: 0px ;
     }
 
     .sectionPdng {
-        padding: 50px 0px;
+        display: none;
+    }
+    .mobColPdng{
+        padding: 20px 0px;
+    }
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 100px;
+        height: 227px;
+        width: 247px;
+        bottom: 14px;
+        right: 0;
     }
 }

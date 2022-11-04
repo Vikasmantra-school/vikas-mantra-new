@@ -201,7 +201,7 @@ const Admissions = () => {
             <div className={' tab-pane fade ' + ' ' + styles.vectorImg3Tab3 + ' ' + styles.vectorImg6} id='v-pills-messages' role='tabpanel' aria-labelledby='v-pills-messages-tab'
               tabIndex='0'>
 
-              <div className={'row '}>
+              <div className={'row ' + styles.MobTextNone }>
                 <div className=' col-md-8 offset-md-4'>
                   <img src='/assets/banners/school-building2.png' alt='image' className={styles.schoolBuildingImg} />
                 </div>
