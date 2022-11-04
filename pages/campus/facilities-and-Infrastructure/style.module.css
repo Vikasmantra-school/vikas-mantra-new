@@ -27,7 +27,7 @@
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
-    background-size: 95px;
+    background-size: 100px;
     height: 210px;
     left: 0;
     width: 190px;
@@ -42,11 +42,26 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 150px;
+    background-size: 190px;
     height: 227px;
     right: 0;
     width: 247px;
-    bottom: 50px;
+    bottom: 100px;
+}
+
+.vmpsImg::after {
+    
+    content: '';
+    position: absolute;
+    background-image: url(/assets/VMPS.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 0;
+    background-size: 285px;
+    height: 227px;
+    right: -220px;
+    width: 300px;
+    top: 125px;
 }
 
 @media only screen and (max-width: 600px) {

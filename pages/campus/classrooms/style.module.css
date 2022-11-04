@@ -13,7 +13,7 @@
 .vectorImg10::before {
     content: '';
     position: absolute;
-    background-image: url(/assets/vectors/Vector10.png);
+    background-image: url(/assets/vectors/Vector17.png);
     background-repeat: no-repeat;
     background-position: center left;
     z-index: 0;
@@ -31,12 +31,26 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 110px;
+    background-size: 150px;
     height: 227px;
     width: 247px;
     right: 0;
     bottom: 0;
     
+}
+.vmpsImg::after {
+    
+    content: '';
+    position: absolute;
+    background-image: url(/assets/VMPS.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 0;
+    background-size: 285px;
+    height: 227px;
+    right: -280px;
+    width: 300px;
+    top: 45px;
 }
 
 

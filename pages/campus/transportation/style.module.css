@@ -15,11 +15,13 @@
     position: absolute;
     background-image: url(/assets/vectors/vector15.png);
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: bottom left;
     z-index: 1;
-    background-size: 110px;
-    height: 228px;
-    width: 114px;
+    background-size: 151px;
+    height: 177px;
+    width: 151px;
+    bottom: 10%;
+    left: 0;
 }
 
 .sectionPdng {

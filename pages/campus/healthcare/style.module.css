@@ -16,11 +16,11 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 140px;
+    background-size: 200px;
     height: 227px;
-    right: 0;
+    right: 48px;
     width: 247px;
-    bottom: 0px;
+    bottom: 60px;
 }
 
 .vectorImg12::before {
@@ -30,10 +30,11 @@
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
-    background-size: 88px;
+    background-size: 100px;
     height: 228px;
     width: 114px;
     left: 0;
+    top: 18%;
 }
 
 .sectionPdng {

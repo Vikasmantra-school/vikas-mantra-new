@@ -57,7 +57,7 @@ const FacilitiesAndInfrastructure = () => {
 
                         </div>
 
-                        <div className='col-md-8 position-relatives'>
+                        <div className={'col-md-10 position-relative ' + styles.vmpsImg}>
 
                             <p className='py-3'>Complementing these 21st century classrooms are a multitude of learning
                                 centres and labs such as science , ICT  and maths laboratories, junior
