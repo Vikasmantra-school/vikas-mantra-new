@@ -125,10 +125,10 @@ function CurriculumFrameWork() {
                   dedication, and from winning and losing on the playing field.
                 </p>
 
-                <h5 className=' py-2'>
+                <p className=' py-2'><b>
                   Sports activities are broken down largely into indoor and
-                  outdoor sports
-                </h5>
+                  outdoor sports</b>
+                </p>
 
                 <div className={styles.navTabContainer + ' whitebg'}>
                   <nav>
@@ -147,8 +147,8 @@ function CurriculumFrameWork() {
                         aria-controls='nav-home'
                         aria-selected='true'
                       >
-                        <p className='m-0'>Highlights of</p>
-                        <h6>Indoor sports activities</h6>
+                       <p className={'m-0' + ' ' + styles.highlights}>Highlights of<br /><span>
+                       Indoor sports activities</span></p>
                       </button>
 
                       <button
@@ -161,8 +161,10 @@ function CurriculumFrameWork() {
                         aria-controls='nav-profile'
                         aria-selected='false'
                       >
-                        <p className='m-0'>Highlights of</p>
-                        <h6>Outdoor sports activities</h6>
+
+                        <p className={'m-0' + ' ' + styles.highlights}>Highlights of<br /><span>
+                         Outdoor sports activities</span></p>
+                       
                       </button>
                     </div>
                   </nav>
@@ -201,18 +203,15 @@ function CurriculumFrameWork() {
                     >
                       <ul className='mb-0'>
                         <li className='pt-4'>
-                          Physical Education and Yoga form core elements of the
-                          sports curriculum
+                          1.5 acre playground for outdoor sports such as Football, Cricket and Athletics
                         </li>
 
                         <li className='pt-3'>
-                          Well designed, spacious and child-safe play
-                          environment for younger students
+                          Dedicated Volleyball and Basketball courts
                         </li>
 
                         <li className='py-3'>
-                          Common room for indoor sports such as Table Tennis,
-                          Carrom and Chess
+                          Specialised training in Basketball, Football and Athletics
                         </li>
                       </ul>
                     </div>
@@ -323,14 +322,7 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                      The dance programme part of VIKAS MANTRA PUBLIC SCHOOL
-                      Co-curricular includes traditional Indian classical dance
-                      techniques such as Bharatnatyam , Folk as well as Western
-                      dance forms. Dance provides students with an opportunity
-                      to find creative expression and cultural exposure.
-                      Physical dance lessons are combined with lessons on the
-                      history of dance and discussions on the cultural context
-                      of the dance form.
+                    Students at VIKAS MANTRA PUBLIC SCHOOL are exposed to both Indian and Western music forms. Indian music allows students to immerse themselves in India’s rich cultural heritage and history. Western music gives students a wider context and sensitises them to appreciating art forms that are foreign and new. Besides Theory of Music lessons and classes for practising vocal and instrumental music, the school Band and the Choir provide platforms where students can perform and showcase their talent.
                     </p>
                   </div>
 
@@ -342,14 +334,7 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                      The dance programme part of VIKAS MANTRA PUBLIC SCHOOL
-                      Co-curricular includes traditional Indian classical dance
-                      techniques such as Bharatnatyam , Folk as well as Western
-                      dance forms. Dance provides students with an opportunity
-                      to find creative expression and cultural exposure.
-                      Physical dance lessons are combined with lessons on the
-                      history of dance and discussions on the cultural context
-                      of the dance form.
+                    At VIKAS MANTRA PUBLIC SCHOOL, offerings in theatre include basic acting, advanced improvisation, technical theatre and film analysis classes. Dramatic productions, including musicals and plays, are staged at regular intervals. Theatre allows our students to be creative and serves as an outlet for individual expression. Students are also exposed to film and drama screenings and to guest lectures by renowned theatre personalities.
                     </p>
                   </div>
 
@@ -361,14 +346,7 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                      The dance programme part of VIKAS MANTRA PUBLIC SCHOOL
-                      Co-curricular includes traditional Indian classical dance
-                      techniques such as Bharatnatyam , Folk as well as Western
-                      dance forms. Dance provides students with an opportunity
-                      to find creative expression and cultural exposure.
-                      Physical dance lessons are combined with lessons on the
-                      history of dance and discussions on the cultural context
-                      of the dance form.
+                    Art forms such as modelling, sculpting, animation and photography provide our students with an opportunity to learn art theory, investigate new ideas and explore their creativity through diverse techniques and materials. Guided by a faculty of dedicated art teachers who are committed to nurturing, challenging, and inspiring young artists to think outside the box, VIKAS MANTRA PUBLIC SCHOOL students experience the thrill and importance of visual arts in a tangible and meaningful way. The Co-Curricular programme at VIKAS MANTRA PUBLIC SCHOOL is supported by a wide variety of Sports activities.
                     </p>
                   </div>
                 </div>
@@ -472,25 +450,11 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                      Students are encouraged to participate in clubs which
-                      provide an early exposure to life beyond academics. These
-                      clubs provide an avenue for students to explore their
-                      personal interests through fun social activities.
+                    Community service forms the third pillar of the alternate learning platform at VIKAS MANTRA PUBLIC SCHOOL. We believe that Community Service plays a key role in developing a sense of social responsibility amongst students and its maximum impact is when this sense is developed at an early age. Community Service activities provide students with an opportunity to learn about their communities, serve those living in their communities and learn from those experiences.
                     </p>
 
-                    <h6>Clubs at VIKAS MANTRA PUBLIC SCHOOL</h6>
+                    <p>Right from Elementary School all the way up to High School, students and teachers participate in community-oriented activities. Throughout the year, students engage in programmes which connect them to local community organizations. One such organization that they work closely with is the VIKAS MANTRA PUBLIC SCHOOL Foundation which allows VIKAS MANTRA PUBLIC SCHOOL students to participate in social activities organized to benefit students of weaker classes of society. These collectively help build a sense of grassroots reality within our students and help them give back to the society to which they belong.</p>
 
-                    <ul>
-                      <li className='pt-3'>Eco club</li>
-                      <li className='pt-3'>Photography club</li>
-                      <li className='pt-3'>Robotics club</li>
-                      <li className='pt-3'>Cookery club</li>
-                      <li className='pt-3'>Math club</li>
-                      <li className='pt-3'>Literary club</li>
-                      <li className='pt-3'>Theatre club</li>
-                      <li className='pt-3'>Social Welfare club</li>
-                      <li className='pt-3'>Astronomy club</li>
-                    </ul>
                   </div>
 
                   <div
@@ -501,25 +465,9 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                      Students are encouraged to participate in clubs which
-                      provide an early exposure to life beyond academics. These
-                      clubs provide an avenue for students to explore their
-                      personal interests through fun social activities.
+                    Field trips augment classroom learning at VIKAS MANTRA PUBLIC SCHOOL. They not only provide a break from the routine of chalk and books but also serve to expand student horizons through interaction with the local community. Field trips in the early learning years serve as an opportunity for our younger students to experience a world outside school and incorporate enquiry based learning platforms. These outings also enable students and their teachers to interact in a more informal setting creating opportunities to build on interpersonal skills and student-teacher relationships.
                     </p>
-
-                    <h6>Clubs at VIKAS MANTRA PUBLIC SCHOOL</h6>
-
-                    <ul>
-                      <li className='pt-3'>Eco club</li>
-                      <li className='pt-3'>Photography club</li>
-                      <li className='pt-3'>Robotics club</li>
-                      <li className='pt-3'>Cookery club</li>
-                      <li className='pt-3'>Math club</li>
-                      <li className='pt-3'>Literary club</li>
-                      <li className='pt-3'>Theatre club</li>
-                      <li className='pt-3'>Social Welfare club</li>
-                      <li className='pt-3'>Astronomy club</li>
-                    </ul>
+                    
                   </div>
                 </div>
               </div>
