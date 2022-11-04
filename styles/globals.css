@@ -165,11 +165,11 @@ p {
   position: absolute;
   background-image: url(/assets/vectors/green-vector.png);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom right;
   z-index: 0;
   background-size: 110px;
   height: 227px;
-  left: 40%;
+  right: 0;
   width: 247px;
   bottom: 50px;
 }
@@ -573,7 +573,7 @@ flex: 0 0 100%;
 
 #progress li {
   list-style: none;
-  line-height: 25px;
+  line-height: 11px;
 }
 
 #progress li p {
@@ -819,6 +819,8 @@ flex: 0 0 100%;
 .testimonialSplide .splide__pagination__page.is-active {
   background: #9B9BBE;
 }
+
+.list-item{padding-left: 1rem;}
 
 
 

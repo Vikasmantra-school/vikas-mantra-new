@@ -138,6 +138,8 @@
 
 .testimonialcontent{padding: 0 35px;}
 
+.testimonialcontent p{font-size: 15px !important;}
+
 .uline::after{content: "";
     position: absolute;
     top: 0;
