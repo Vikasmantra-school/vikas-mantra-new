@@ -36,7 +36,7 @@ const Contact = () => {
 
 
 
-                        <div className={'col-md-3 offset-md-1 ' + ' ' + styles.mobColPdng}>
+                        <div className={'col-md-4 ' + ' ' + styles.mobColPdng}>
 
                             <img src=' /assets/icons/mail.png' alt='image' className={styles.iconsImg} />
 
@@ -56,7 +56,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className={'col-md-3 offset-md-1' + ' ' + styles.mobColPdng}>
+                        <div className={'col-md-4' + ' ' + styles.mobColPdng}>
 
                             <img src=' /assets/icons/call.png' alt='image' className={styles.iconsImg} />
 
@@ -73,7 +73,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className={'col-md-3 offset-md-1 position-relative ' + ' ' + styles.mobColPdng}>
+                        <div className={'col-md-4 position-relative ' + ' ' + styles.mobColPdng}>
 
                             <img src='/assets/icons/time.png' alt='image' className={styles.iconsImg} />
 
