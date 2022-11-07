@@ -61,11 +61,11 @@
     background: url(/assets/banners/staff-group-photo.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     display: flex;
     align-items: flex-end;
-    height: 125vh;
+    height: 175vh;
     width: 100%;
 }
 
@@ -92,13 +92,11 @@
 
 .bannercontent1 {
     z-index: 1;
-    position: absolute;
     bottom: 0px;
 }
 
 .bannercontent2 {
     z-index: 1;
-    position: absolute;
     bottom: 0px;
 }
 
@@ -107,6 +105,9 @@
 }
 .pLineHeight{ 
     line-height: 20px;
+}
+.colZindex{
+    z-index: 2;
 }
 
 @media only screen and (max-width: 600px) {
