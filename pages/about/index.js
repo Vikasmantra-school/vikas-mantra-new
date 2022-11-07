@@ -25,7 +25,7 @@ const About = () => {
 
             </section>
 
-            <section className={styles.sectionStyle + ' ' + ' greybg position-relative ' + ' ' + styles.vectorImg2}>
+            <section className={styles.sectionStyle + ' ' + ' whitebg position-relative ' + ' ' + styles.vectorImg2}>
 
                 <div className='container'>
 

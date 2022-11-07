@@ -30,7 +30,7 @@ const MessageFromPrincipal = () => {
             </section>
 
 
-            <section className={styles.sectionContainer + ' greybg position-relative ' + ' ' + styles.vectorImg1 + ' ' + styles.vectorImg2}>
+            <section className={styles.sectionContainer + ' whitebg position-relative ' + ' ' + styles.vectorImg1 + ' ' + styles.vectorImg2}>
 
                 <div className='container'>
 

@@ -26,7 +26,7 @@ const Laboratory = () => {
             </section>
 
 
-            <section className={'pt-5 greybg position-relative ' + styles.vectorImg5 + ' ' + styles.vectorImg10 + ' ' + styles.sectionPdngBtm}>
+            <section className={'pt-5 whitebg position-relative ' + styles.vectorImg5 + ' ' + styles.vectorImg10 + ' ' + styles.sectionPdngBtm}>
 
                 <div className='container position-relative'>
 

@@ -28,7 +28,7 @@ const Blog1 = () => {
 
             </section>
 
-            <section className={styles.sectionContainer + ' greybg position-relative ' + ' ' + styles.BlogvectorImg2 + ' ' + styles.BlogvectorImg3 }>
+            <section className={styles.sectionContainer + ' whitebg position-relative ' + ' ' + styles.BlogvectorImg2 + ' ' + styles.BlogvectorImg3 }>
 
                 <div className='container'>
 

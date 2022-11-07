@@ -20,7 +20,7 @@ const Contact = () => {
                 <img src='assets/campus/school-building3.png' alt='image' className={styles.schlBusImg + ' ' + ' img-fluid'} />
             </section>
 
-            <section className={styles.sectionPdng + ' greybg position-relative ' + ' ' + styles.vectorImg13}>
+            <section className={styles.sectionPdng + ' whitebg position-relative ' + ' ' + styles.vectorImg13}>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-5 position-relative'></div>
@@ -30,7 +30,7 @@ const Contact = () => {
                 </div>
             </section>
 
-            <section className={' greybg pt60 pb60 position-relative ' + ' ' + styles.vectorImg10}>
+            <section className={' whitebg pt60 pb60 position-relative ' + ' ' + styles.vectorImg10}>
                 <div className='container'>
                     <div className={styles.rowPdng + ' row text-center'}>
 

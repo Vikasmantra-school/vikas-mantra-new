@@ -25,7 +25,7 @@ const Library = () => {
 
             </section>
 
-            <section className={'greybg pt-5 position-relative ' + ' ' + styles.vectorImg10}>
+            <section className={'whitebg pt-5 position-relative ' + ' ' + styles.vectorImg10}>
 
                 <div className="container">
 

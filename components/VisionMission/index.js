@@ -7,7 +7,7 @@ const index = () => {
   return (
     <>
 
-    <section className={styles.sectionPdng + ' greybg position-relative pt80 pb60 VectorDot VectorSpiralCenter'}>
+    <section className={styles.sectionPdng + ' whitebg position-relative pt80 pb60 VectorDot VectorSpiralCenter'}>
 
         <div className='container'>
 

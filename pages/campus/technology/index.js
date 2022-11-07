@@ -25,7 +25,7 @@ const Technology = () => {
 
             </section>
 
-            <section className={'greybg py-5 position-relative ' + styles.vectorImg8 + ' ' + styles.vectorImg12}>
+            <section className={'whitebg py-5 position-relative ' + styles.vectorImg8 + ' ' + styles.vectorImg12}>
 
                 <div className="container">
 

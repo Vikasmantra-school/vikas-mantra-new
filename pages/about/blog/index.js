@@ -23,7 +23,7 @@ const Blog = () => {
 
             </section>
 
-            <section className={styles.sectionContainer + ' greybg position-relative ' + ' ' + styles.vectorImg2 + ' ' + styles.vectorImg3}>
+            <section className={styles.sectionContainer + ' whitebg position-relative ' + ' ' + styles.vectorImg2 + ' ' + styles.vectorImg3}>
 
                 <div className='container'>
 
