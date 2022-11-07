@@ -132,7 +132,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className={styles.hrLine} />
-            <p className='text-center m-0 py-3'>Vikas Mantra Public School © 2020 | All Rights Reserved | Coded by Benfy</p>
+            <p className={'text-center mt-4' + ' ' + styles.bottomText}>Vikas Mantra Public School © 2020 | All Rights Reserved | Coded by Benfy</p>
 
 
         </div>

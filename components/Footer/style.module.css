@@ -35,3 +35,8 @@ input.formInput::placeholder {
     /* Chrome/Opera/Safari */
    color: #AEAEAE;
 }
+
+.bottomText{
+
+    font-size: 15px !important;
+}
