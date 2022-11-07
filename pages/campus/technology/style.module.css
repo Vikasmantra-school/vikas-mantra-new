@@ -20,12 +20,18 @@
     right: -58px;
 }
 
-.vectorImg12 {
+.vectorImg12::before {
+    content: '';
     position: absolute;
-    height: 185px;
-    top: 35px;
-    right: 0;
-    left: -114px;
+    background-image: url(/assets/vectors/vector12.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: 100px;
+    height: 228px;
+    width: 114px;
+    left: 0;
+    top: 100px;
 }
 
 .vectorImg8::after {
@@ -36,11 +42,11 @@
     background-repeat: no-repeat;
     background-position: top right;
     z-index: 0;
-    background-size: 110px;
+    background-size: 180px;
     height: 227px;
     width: 247px;
-    bottom: 0;
-    right: 0;
+    bottom: 200px;
+    right: 50px;
 }
 
 .sectionPdng {

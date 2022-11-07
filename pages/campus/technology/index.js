@@ -25,7 +25,7 @@ const Technology = () => {
 
             </section>
 
-            <section className={'greybg py-5 VectorSpiral position-relative ' + styles.vectorImg8}>
+            <section className={'greybg py-5 position-relative ' + styles.vectorImg8 + ' ' + styles.vectorImg12}>
 
                 <div className="container">
 
@@ -53,7 +53,7 @@ const Technology = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <img src='/assets/campus/library.png' alt="image" className={styles.libraryImg} />
+                            <img src='/assets/campus/technology.png' alt="image" className={styles.libraryImg} />
 
                         </div>
 

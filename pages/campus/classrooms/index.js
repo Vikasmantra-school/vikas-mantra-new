@@ -55,7 +55,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className='col-md-8'>
+                        <div className={'col-md-8 position-relative ' + styles.vmpsImg}>
 
                             <p className='py-3'>Apart from aesthetics, classrooms are designed to allow students
                                 to express their personalities and emotions. The layout and space planning is
@@ -77,7 +77,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 py-5'}>
+                        <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
 
                             <ul>
                                 <li>Large (575 sq ft), well-ventilated
@@ -87,7 +87,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 py-5'}>
+                        <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
 
                             <ul>
 
@@ -97,7 +97,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 py-5'}>
+                        <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
 
                             <ul>
 
@@ -107,7 +107,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 py-5'}>
+                        <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
 
                             <ul>
 
@@ -118,7 +118,7 @@ const Classrooms = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-3 pb-5'}>
+                        <div className={styles.pdngZero + ' col-md-3 pb-4'}>
 
                             <ul>
 
@@ -168,12 +168,6 @@ const Classrooms = () => {
                                     appropriate reading material</li>
 
                             </ul>
-
-                        </div>
-
-                        <div className='col-md-3 position-relative'>
-
-                            {/* <img src='/assets/vectors/Vector9.png' alt="image" className={styles.vectorImg9} /> */}
 
                         </div>
 

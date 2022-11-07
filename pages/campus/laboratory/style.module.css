@@ -4,20 +4,23 @@
 }
 
 .labImg1 {
-    height: 407px;
+    height: 440px;
     position: absolute;
     top: -260px;
+    width: auto;
+    left: -50px;
 }
 
 .labImg2 {
-    height: 407px;
+    height: 440px;
     right: 212px;
     position: relative;
+    width: auto;
 }
 
 .labImg3 {
-    height: 407px;
-    right: -2px;
+    height: 445px;
+    right: -35px;
     position: relative;
 }
 
@@ -43,15 +46,18 @@
 .vectorImg10::after {
     content: '';
     position: absolute;
-    background-image: url(/assets/vectors/Vector10.png);
+    background-image: url(/assets/vectors/Vector3.png);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     z-index: 0;
-    background-size: 140px;
+    background-size: 150px;
     height: 227px;
     left: 0;
     width: 247px;
-    bottom: 200px;
+    bottom: 370px;
+}
+.sectionPdngBtm{
+    padding-bottom: 5rem !important;
 }
 
 

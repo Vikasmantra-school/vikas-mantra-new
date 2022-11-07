@@ -13,58 +13,60 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     z-index: 1;
-    background-size: 140px;
+    background-size: 220px;
     height: 227px;
     left: 0;
     width: 247px;
-    bottom: -58%;
+    bottom: -74%;
 }
 
 .vectorImg4::before {
-
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector4.png);
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: bottom right;
     z-index: 1;
-    background-size: 85px;
+    background-size: 95px;
     height: 227px;
     right: 0;
+    bottom: 30%;
     width: 247px;
-
 }
 
 .vmpsImg {
     position: absolute;
-    right: 28px;
-    bottom: 0px;
+    right: 0;
+    bottom: -40px;
     width: auto;
-    height: 54px;
+    height: 70px;
 }
 
 .schoolBuildingImg {
-    width: 100%;
+    width: auto;
     position: absolute;
     left: -106px;
-    top: -200px;
+    top: -140px;
+    height: 560px;
 }
 
 .sectionPdng {
-    padding: 75px 0px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 .bannerSection {
     color: #fff;
     background: url(/assets/banners/staff-group-photo.png);
-    background-position: center;
+    background-position: top-center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     display: flex;
     align-items: flex-end;
-    height: 125vh;
+    height: calc(740px + 260px);
     width: 100%;
+    padding-bottom: 5rem;
 }
 
 .bannerSection h1,
@@ -90,25 +92,27 @@
 
 .bannercontent1 {
     z-index: 1;
-    margin-bottom: 50px;
-    /* padding: 0px 70px 40px 0px; */
-    padding: 0px 70px 45px 40px;
-    position: absolute;
-    bottom: -105px;
+    bottom: 0px;
+    padding-right: 30px;
 }
 
 .bannercontent2 {
     z-index: 1;
-    margin-bottom: 50px;
-    /* padding: 0px 70px 40px 0px; */
-    padding: 0px 90px 13px 0px;
-    position: absolute;
-    right: 0px;
-    bottom: -100px;
+    bottom: 0px;
+    padding-left: 30px;
 }
 
 .headingPdng {
     padding-bottom: 80px;
+}
+.pLineHeight{ 
+    line-height: 20px;
+}
+.colZindex{
+    z-index: 2;
+}
+.h2FontSize{
+    font-size: 35px;
 }
 
 @media only screen and (max-width: 600px) {

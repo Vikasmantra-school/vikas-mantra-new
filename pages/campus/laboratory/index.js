@@ -26,7 +26,7 @@ const Laboratory = () => {
             </section>
 
 
-            <section className={'py-5 greybg position-relative ' + styles.vectorImg5 + ' ' + styles.vectorImg10 }>
+            <section className={'pt-5 greybg position-relative ' + styles.vectorImg5 + ' ' + styles.vectorImg10 + ' ' + styles.sectionPdngBtm}>
 
                 <div className='container position-relative'>
 
@@ -101,7 +101,7 @@ const Laboratory = () => {
 
                         </div>
 
-                        <div className='col-md-6 position-relative offset-md-1'>
+                        <div className='col-md-6 position-relative'>
 
                             <img src='/assets/campus/lab3.png' alt="image" className={styles.labImg3} />
 
