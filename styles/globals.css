@@ -824,6 +824,10 @@ flex: 0 0 100%;
 
 .list-item{padding-left: 1rem;}
 
+tr{
+  border: 2px solid #000;
+}
+
 
 
 
