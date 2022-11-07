@@ -25,7 +25,7 @@ const About = () => {
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg' + ' ' + styles.vectorImg2}>
+            <section className={styles.sectionStyle + ' ' + ' greybg ' + ' ' + styles.vectorImg2}>
 
                 <div className='container'>
 
@@ -33,7 +33,7 @@ const About = () => {
 
                         <div className='col-md-5 position-relative'>
 
-                            <img src='/assets/banners/school-building.png' alt="image" className={styles.schoolBuildingImg} />
+                            {/* <img src='/assets/banners/school-building.png' alt="image" className={styles.schoolBuildingImg} /> */}
                             {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg2} /> */}
 
                         </div>

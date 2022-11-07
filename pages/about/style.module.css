@@ -6,7 +6,7 @@
     top: -24px;
 }
 
-.vectorImg2::before {
+.vectorImg2::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector10.png);
@@ -17,10 +17,10 @@
     height: 227px;
     left: 0;
     width: 247px;
-    bottom: -74%;
+    bottom: -58%;
 }
 
-.vectorImg4::before {
+.vectorImg4::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector4.png);
@@ -50,9 +50,23 @@
     height: 560px;
 }
 
-.sectionPdng {
+.sectionStyle {
     padding-top: 40px;
     padding-bottom: 80px;
+}
+
+.sectionStyle::before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/banners/school-building.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 505px;
+    height: 630px;
+    left: 0;
+    top: 54%;
+    width: 570px;
+    z-index: 1;
 }
 
 .bannerSection {
@@ -105,13 +119,16 @@
 .headingPdng {
     padding-bottom: 80px;
 }
-.pLineHeight{ 
+
+.pLineHeight {
     line-height: 20px;
 }
-.colZindex{
+
+.colZindex {
     z-index: 2;
 }
-.h2FontSize{
+
+.h2FontSize {
     font-size: 35px;
 }
 
