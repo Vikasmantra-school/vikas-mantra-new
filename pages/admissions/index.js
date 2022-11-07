@@ -201,12 +201,12 @@ const Admissions = () => {
             <div className={' tab-pane fade ' + ' ' + styles.vectorImg3Tab3 + ' ' + styles.vectorImg6} id='v-pills-messages' role='tabpanel' aria-labelledby='v-pills-messages-tab'
               tabIndex='0'>
 
-              <div className={'row ' + styles.MobTextNone }>
+              <div className={'row ' + styles.MobTextNone}>
                 <div className=' col-md-8 offset-md-4'>
                   <img src='/assets/banners/school-building2.png' alt='image' className={styles.schoolBuildingImg} />
                 </div>
 
-                <div className={styles.cardmargin3 + ' col-md-8 offset-md-2 ' + ' ' + styles.tab3VectorSpiralBlue}>
+                <div className={styles.cardmargin3 + ' col-md-8 offset-md-2 position-relative ' + ' ' + styles.tab3VectorSpiralBlue}>
 
                   <div className={styles.card1 + ' card'}>
 
@@ -269,7 +269,7 @@ const Admissions = () => {
                     </div>
 
                     <div>
-                      <h2>Interaction and Interview</h2>
+                      <h2 className='text-start'>Interaction and Interview</h2>
 
                       <p>
                         There will be diagnostic test in Math & Science and Test
@@ -430,7 +430,7 @@ const Admissions = () => {
               </div>
             </div>
 
-            <div className={ 'tab-pane fade ' + ' ' + styles.vectorImg11 + ' ' + styles.vectorImg17} id='v-pills-settings' role='tabpanel' aria-labelledby='v-pills-settings-tab'
+            <div className={'tab-pane fade ' + ' ' + styles.vectorImg11 + ' ' + styles.vectorImg17} id='v-pills-settings' role='tabpanel' aria-labelledby='v-pills-settings-tab'
               tabIndex='0'>
               <div className='row'>
                 <div className='col-md-8 offset-md-4'>
@@ -443,13 +443,13 @@ const Admissions = () => {
 
                   <h2 className='ulineRed'>FAQ</h2>
 
-                  <div className='accordion pt-5' id='accordionExample'>
+                  <div className={'accordion pt-5 ' + styles.accordionExample} id='accordionExample'>
                     <div className='accordion-item'>
                       <h2 className='accordion-header' id='headingSeven'>
                         <button className='accordion-button' type='button' data-bs-toggle='collapse'
                           data-bs-target='#collapseSeven' aria-expanded='false' aria-controls='collapseSeven'>
                           <h4 className='pt-3'>
-                            <FontAwesomeIcon icon={faMinus} className={styles.minusIcon} />
+
                             How do you make decision on admission?
                           </h4>
                         </button>
@@ -475,7 +475,6 @@ const Admissions = () => {
                         <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                           data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>
                           <h4 className='pt-3'>
-                            <FontAwesomeIcon icon={faPlus} className={styles.plusIcon} />{' '}
                             Do you have a wait list?
                           </h4>
                         </button>
@@ -504,7 +503,6 @@ const Admissions = () => {
                         <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                           data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'>
                           <h4 className='pt-3'>
-                            <FontAwesomeIcon icon={faPlus} className={styles.plusIcon} />{' '}
                             How are students assessed?
                           </h4>
                         </button>
@@ -533,7 +531,6 @@ const Admissions = () => {
                         <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                           data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree'>
                           <h4 className='pt-3'>
-                            <FontAwesomeIcon icon={faPlus} className={styles.plusIcon} />{' '}
                             How are parents involved in the school community?
                           </h4>
                         </button>
@@ -562,7 +559,6 @@ const Admissions = () => {
                         <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                           data-bs-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour'>
                           <h4 className='pt-3'>
-                            <FontAwesomeIcon icon={faPlus} className={styles.plusIcon} />{' '}
                             What is the student teacher ratio in each class?
                           </h4>
                         </button>
@@ -591,7 +587,6 @@ const Admissions = () => {
                         <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                           data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive'>
                           <h4 className='pt-3'>
-                            <FontAwesomeIcon icon={faPlus} className={styles.plusIcon} />{' '}
                             How are parents involved in the school community?
                           </h4>
                         </button>
@@ -620,7 +615,6 @@ const Admissions = () => {
                         <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                           data-bs-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix'>
                           <h4 className='pt-3'>
-                            <FontAwesomeIcon icon={faPlus} className={styles.plusIcon} />{' '}
                             What kind of training do you provide your teachers?
                           </h4>
                         </button>

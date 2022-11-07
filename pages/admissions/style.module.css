@@ -25,7 +25,7 @@
 }
 
 .card1 {
-    background-color: white;
+    /* background-color: white;
     width: 736px;
     padding: 30px 40px;
     border: 2px solid #fff;
@@ -33,7 +33,16 @@
     margin-bottom: 0px;
     position: relative;
     top: -70px;
-    left: 3px;
+    left: 3px; */
+    background-color: white;
+    width: 830px;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid #fff;
+    border-radius: 0;
+    margin-bottom: 0px;
+    position: relative;
+    top: -125px;
+    left: -70px;
 }
 
 .Sec1vectorImg5 {
@@ -149,7 +158,7 @@
 }
 
 .Sec2PdngBtm {
-    padding-bottom: 350px;
+    padding-bottom: 250px;
 }
 
 .Sec2vectorImg6 {
@@ -174,7 +183,7 @@
 }
 
 .sectionPdng4 {
-    padding-top: 350px;
+    padding-top: 250px;
 }
 
 .plusIcon {
@@ -201,8 +210,8 @@
 .Sec4vmpsImg {
     position: absolute;
     height: 70px;
-    right: -150px;
-    top: 340px;
+    right: -200px;
+    top: 240px;
 }
 
 .Sec4vectoImg10 {
@@ -251,13 +260,13 @@
     position: absolute;
     background-image: url(/assets/vectors/Vector5.png);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: top right;
     z-index: 1;
-    background-size: 110px;
+    background-size: 170px;
     height: 210px;
     width: 190px;
-    bottom: -387px;
-    right: 186px;
+    top: 50px;
+    right: -45px;
 }
 
 .tab3RedDotVector::after {
@@ -360,20 +369,20 @@
     height: 210px;
     width: 190px;
     left: 0px;
-    bottom: -181%;
+    bottom: -140%;
 }
 .vectorImg6::after{
     content: '';
     position: absolute;
-    background-image: url(/assets/vectors/Vector9.png);
+    background-image: url(/assets/vectors/Vector6.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 1;
-    background-size: 120px;
-    height: 210px;
-    width: 190px;
-    right: 0px;
-    bottom: -320%;
+    background-size: 200px;
+    height: 224px;
+    width: 200px;
+    right: 9%;
+    bottom: -335%;
 }
 .vectorImg17::before{
     content: '';
@@ -386,20 +395,23 @@
     height: 210px;
     width: 190px;
     left: 0px;
-    bottom: -45%;
+    bottom: -30%;
 }
 .vectorImg11::after{
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector11.png);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     z-index: 1;
-    background-size: 160px;
+    background-size: 190px;
     height: 210px;
     width: 190px;
     right: 0px;
-    bottom: -170%;
+    bottom: -133%;
+}
+.accordionExample{
+    background-color:#F3F1F2;;
 }
 
 
