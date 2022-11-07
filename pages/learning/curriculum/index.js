@@ -73,7 +73,7 @@ function Curriculum() {
         </div>
       </section>
       <section
-        className={'greybg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo VectorDot VectorSpiralCenter'}
+        className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo VectorDot VectorSpiralCenter'}
       >
         <div className='container'>
           <div className='row'>

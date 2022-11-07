@@ -30,7 +30,7 @@ function OnlineClasses() {
 </section>
 
 
-<section className={'greybg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo VectorSpiral'}>
+<section className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo VectorSpiral'}>
 
     <div className='container'>
 

@@ -72,7 +72,7 @@ function Learning() {
       </section>
       <section
         className={
-          'greybg' +
+          'whitebg' +
           ' ' +
           'pt60' +
           ' ' +
