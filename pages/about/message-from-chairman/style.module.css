@@ -8,9 +8,9 @@
 }
 .vmpsImg{
     position: absolute;
-    right: 80px;
-    bottom: 215px;
-    height: 50px;
+    right: 30px;
+    bottom: 300px;
+    height: 75px;
 }
 
 .vectorImg2::before {
@@ -27,7 +27,7 @@
     top: -3%;
 }
 
-.vectorImg7::after {
+/* .vectorImg7::after {
 
     content: '';
     position: absolute;
@@ -41,11 +41,11 @@
     width: 190px;
     top: 41%;
     
-}
+} */
 
 .ChairmanImg {
     height: 570px;
-    top: -244px;
+    top: -350px;
     right: -65px;
     z-index: 0;
     position: relative;
