@@ -31,20 +31,20 @@ const About = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-md-5 position-relative'>
 
                             <img src='/assets/banners/school-building.png' alt="image" className={styles.schoolBuildingImg} />
                             {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg2} /> */}
 
                         </div>
 
-                        <div className='col-md-6 position-relative '>
+                        <div className='col-md-7 position-relative '>
 
                             <div className={styles.margin + ' py-5 '}>
 
                                 <h2 className='ulineRed'>About VMPS</h2>
-                                
-                                <p className='pt-5'>VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu Kanchipuram
+
+                                <p className={'pt-5 ' + styles.pLineHeight}>VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu Kanchipuram
                                     is building a distinctive educational platform through a mix of
                                     international learning techniques, experienced academicians and
                                     modern facilities. By blending 21st century learning methodologies
@@ -53,7 +53,7 @@ const About = () => {
                                     ground realities.
                                 </p>
 
-                                <p>Learning is not only limited to books and classroom at Vikas Mantra
+                                <p className={styles.pLineHeight}>Learning is not only limited to books and classroom at Vikas Mantra
                                     Public School, our students are encouraged to pursue their interests
                                     and are given sufficien opportunities to exhibit their talents through
                                     numerous co-curricular activities that are conducted frequently.
@@ -74,14 +74,20 @@ const About = () => {
 
             <section className={styles.bannerSection + ' py-5 d-none d-lg-flex' + ' ' + styles.vectorImg4}>
 
-    
+
                 <div className='container'>
 
-                    <div className='row position-relative'>
+                    <div className='row'>
+
+                        <div className='col-md-6'>
+                            <h2>Vikas Mantra Public School,</h2>
+                        </div>
+                        
+                    </div>
+
+                    <div className=' row position-relative align-items-center '>
 
                         <div className={styles.bannercontent1 + ' col-md-6'}>
-
-                            <h2>Vikas Mantra Public School,</h2>
 
                             <p>affiliated to Central Board of Education No : 1931307 was launched
                                 in the academic year 2019-20  by the M.R. EDUCATIONAL AND SOCIAL
