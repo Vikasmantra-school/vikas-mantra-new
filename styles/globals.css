@@ -440,6 +440,7 @@ flex: 0 0 100%;
 
 #mainMenu li.nav-item.active .nav-link::after{
   content: '';
+  border: unset;
   border-bottom: 5px solid #AA182C;
   position: absolute;
   height: 5px;
