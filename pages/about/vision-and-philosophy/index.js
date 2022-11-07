@@ -22,7 +22,7 @@ const VisionAndPhilosophy = () => {
       <section
         className={
           styles.sectionPdng +
-          ' greybg position-relative ' +
+          ' whitebg position-relative ' +
           ' ' +
           styles.vectorImg5
         }

@@ -29,7 +29,7 @@ const MessageFromChairMan = () => {
             </section>
 
 
-            <section className={styles.sectionContainer + ' greybg position-relative ' + ' ' + styles.vectorImg2 + ' ' + styles.vectorImg7}>
+            <section className={styles.sectionContainer + ' whitebg position-relative ' + ' ' + styles.vectorImg2 + ' ' + styles.vectorImg7}>
 
                 <div className='container'>
 
