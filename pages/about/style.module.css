@@ -92,21 +92,14 @@
 
 .bannercontent1 {
     z-index: 1;
-    margin-bottom: 50px;
-    /* padding: 0px 70px 40px 0px; */
-    padding: 0px 70px 45px 40px;
     position: absolute;
-    bottom: -105px;
+    bottom: 0px;
 }
 
 .bannercontent2 {
     z-index: 1;
-    margin-bottom: 50px;
-    /* padding: 0px 70px 40px 0px; */
-    padding: 0px 90px 13px 0px;
     position: absolute;
-    right: 0px;
-    bottom: -100px;
+    bottom: 0px;
 }
 
 .headingPdng {

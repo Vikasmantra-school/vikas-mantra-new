@@ -108,10 +108,6 @@ const About = () => {
 
                         <div className={styles.bannercontent2 + ' col-md-6'}>
 
-                            <div>
-                                <br /><br />
-                            </div>
-
                             <p>Kindergarten to Grade 9 with affiliation from the Central
                                 Board of Secondary Education, New Delhi and will move to
                                 become a full-fledged  K 12 school before 2024.
@@ -176,9 +172,6 @@ const About = () => {
 
                         <div className={styles.ResponsiveBannercontent2 + ' col-md-6'}>
 
-                            <div>
-                                <br /><br />
-                            </div>
 
                             <p>Kindergarten to Grade 9 with affiliation from the Central
                                 Board of Secondary Education, New Delhi and will move to
