@@ -24,7 +24,7 @@ const SpecialityRoom = () => {
 
             </section>
 
-            <section className={'greybg py-5 position-relative ' + styles.vectorImg10 + ' ' + styles.vectorImg12}>
+            <section className={'whitebg py-5 position-relative ' + styles.vectorImg10 + ' ' + styles.vectorImg12}>
 
                 <div className="container">
 

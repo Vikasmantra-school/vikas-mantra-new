@@ -23,7 +23,7 @@ const FacilitiesAndInfrastructure = () => {
 
             </section>
 
-            <section className={ 'greybg py-5 position-relative ' + styles.vectorImg5 + ' ' + styles.vectorImg10 }>
+            <section className={ 'whitebg py-5 position-relative ' + styles.vectorImg5 + ' ' + styles.vectorImg10 }>
 
                 <div className="container">
 

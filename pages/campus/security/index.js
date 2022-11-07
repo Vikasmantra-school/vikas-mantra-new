@@ -24,7 +24,7 @@ const Security = () => {
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg position-relative ' + ' ' + styles.vectorImg10 + ' ' + styles.vectorImg11}>
+            <section className={styles.sectionPdng + ' whitebg position-relative ' + ' ' + styles.vectorImg10 + ' ' + styles.vectorImg11}>
 
                 <div className="container">
 

@@ -25,7 +25,7 @@ const Healthcare = () => {
 
             </section>
 
-            <section className={styles.sectionPdng + ' greybg position-relative ' + ' ' + styles.vectorImg12 + ' ' + styles.vectorImg10}>
+            <section className={styles.sectionPdng + ' whitebg position-relative ' + ' ' + styles.vectorImg12 + ' ' + styles.vectorImg10}>
 
                 <div className="container">
 
