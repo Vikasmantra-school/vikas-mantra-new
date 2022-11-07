@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <div className={styles.section + " py-5"}>
+        <div className={styles.section + ' ' + "pt-5 pb-2"}>
             <div className="container">
 
                 <div className="row ">
@@ -132,8 +132,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className={styles.hrLine} />
-            <div className='my-5'></div>
-            <p className='text-center mt-4'>Vikas Mantra Public School © 2020 | All Rights Reserved | Coded by Benfy</p>
+            <p className={'text-center mt-4' + ' ' + styles.bottomText}>Vikas Mantra Public School © 2020 | All Rights Reserved | Coded by Benfy</p>
 
 
         </div>
