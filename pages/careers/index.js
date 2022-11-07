@@ -32,7 +32,7 @@ function Career() {
 
     </section>
 
-    <section className={'greybg' + ' ' + 'pt60' + ' ' + 'pb60'}>
+    <section className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60'}>
 
     <div className='container'>
 

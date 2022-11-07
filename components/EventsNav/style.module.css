@@ -19,3 +19,4 @@
 .dropdowns .dropMenu{overflow-y: scroll;
     height: 420px;}
 
+.tabNavLink:hover{color: #fff !important;}

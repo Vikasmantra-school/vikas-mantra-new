@@ -71,7 +71,7 @@ function CurriculumFrameWork() {
         </div>
       </section>
       <section
-        className={'greybg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo'}
+        className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo'}
       >
         <div className='container'>
           <div className='row'>
