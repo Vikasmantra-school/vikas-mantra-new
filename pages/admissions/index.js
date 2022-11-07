@@ -206,7 +206,7 @@ const Admissions = () => {
                   <img src='/assets/banners/school-building2.png' alt='image' className={styles.schoolBuildingImg} />
                 </div>
 
-                <div className={styles.cardmargin3 + ' col-md-8 offset-md-2 ' + ' ' + styles.tab3VectorSpiralBlue}>
+                <div className={styles.cardmargin3 + ' col-md-8 offset-md-2 position-relative ' + ' ' + styles.tab3VectorSpiralBlue}>
 
                   <div className={styles.card1 + ' card'}>
 
