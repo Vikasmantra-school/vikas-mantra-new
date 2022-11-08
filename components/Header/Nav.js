@@ -65,7 +65,7 @@ const Nav = () => {
                   </Link>
                 </li>
 
-                <li>
+                <li className='nav-item dropdown'>
                   <Link href='/about' legacyBehavior>
                     <a
                       className='nav-link dropdown-toggle'
