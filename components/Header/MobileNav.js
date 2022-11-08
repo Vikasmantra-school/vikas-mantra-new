@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const MobileNav = () => {
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      console.error(`App is changing to ${url}`)
+      let menu = document.getElementById('mobMenu')
+      menu.classList.add('mob-menu-hdden')
+      let hamburger = document.getElementById('hamburger')
+      hamburger.classList.remove('is-active')
+    }
+
+    router.events.on('routeChangeStart', handleRouteChange)
+
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange)
+    }
+  }, [])
+
   function navLink(e) {
     const sibling = e.target.nextSibling
     sibling.classList.add('is-active')
@@ -23,27 +42,25 @@ const MobileNav = () => {
             </Link>
           </li>
           <li className='nav__item'>
-            <Link href='#' legacyBehavior>
-              <a className='nav__link hasDropdown' onClick={(e) => navLink(e)}>
-                About{' '}
-                <svg
-                  width='29px'
-                  height='27px'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                  />
-                </svg>
-              </a>
-            </Link>
+            <a className='nav__link hasDropdown' onClick={(e) => navLink(e)}>
+              About{' '}
+              <svg
+                width='29px'
+                height='27px'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='w-6 h-6'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                />
+              </svg>
+            </a>
             <ul className='nav__sub'>
               <li className='nav__item'>
                 <a
@@ -114,27 +131,25 @@ const MobileNav = () => {
             </Link>
           </li>
           <li className='nav__item'>
-            <Link href='/campus' legacyBehavior>
-              <a className='nav__link hasDropdown' onClick={(e) => navLink(e)}>
-                Campus{' '}
-                <svg
-                  width='29px'
-                  height='27px'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                  />
-                </svg>
-              </a>
-            </Link>
+            <a className='nav__link hasDropdown' onClick={(e) => navLink(e)}>
+              Campus{' '}
+              <svg
+                width='29px'
+                height='27px'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='w-6 h-6'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                />
+              </svg>
+            </a>
             <ul className='nav__sub'>
               <li className='nav__item'>
                 <a
@@ -216,27 +231,25 @@ const MobileNav = () => {
             </ul>
           </li>
           <li className='nav__item'>
-            <Link href='/campus' legacyBehavior>
-              <a className='nav__link hasDropdown' onClick={(e) => navLink(e)}>
-                Learning{' '}
-                <svg
-                  width='29px'
-                  height='27px'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M8.25 4.5l7.5 7.5-7.5 7.5'
-                  />
-                </svg>
-              </a>
-            </Link>
+            <a className='nav__link hasDropdown' onClick={(e) => navLink(e)}>
+              Learning{' '}
+              <svg
+                width='29px'
+                height='27px'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='w-6 h-6'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                />
+              </svg>
+            </a>
             <ul className='nav__sub'>
               <li className='nav__item'>
                 <a

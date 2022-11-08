@@ -13,22 +13,27 @@ const Nav = () => {
   function hamburgerMenu(e) {
     let menu = document.getElementById('mobMenu')
     let hamburgerMenu = document.getElementById('hamburger')
-    console.log(menu)
     menu.classList.toggle('mob-menu-hdden')
     hamburgerMenu.classList.toggle('is-active')
   }
 
-  useEffect(() => {
+  function isMenuActive() {
     const navLink = document.querySelectorAll('.nav-link')
-    // const page = navLink.toLowerCase()
+
     navLink.forEach((element) => {
       if (element.innerText.toLowerCase() === pageName) {
-        // console.error(element.parentElement)
+        console.error(element.parentElement)
+        element.parentElement.classList.remove('active')
+
         element.parentElement.classList.add('active')
+      } else {
       }
     })
-    // console.error(pageName)
-  }, [])
+  }
+
+  useEffect(() => {
+    isMenuActive()
+  }, [isMenuActive])
 
   return (
     <>
