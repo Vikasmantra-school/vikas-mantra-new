@@ -46,6 +46,8 @@ function MandatoryScreen() {
 
                         <h4>General Information</h4>
 
+                        <div className='table-responsive'>
+
                         <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                    
                             <tbody>
@@ -108,11 +110,15 @@ function MandatoryScreen() {
 
                         </Table> 
 
+                        </div>
+
                     </div>
 
                     <div className={'row pt60'}>
 
                         <h4>Documents and Information</h4>
+
+                        <div className='table-responsive'>
 
                         <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                    
@@ -176,12 +182,16 @@ function MandatoryScreen() {
 
                         </Table> 
 
+                        </div>
+
                         <p><b>NOTE:</b> THE SCHOOLS NEEDS TO UPLOAD THE SELF ATTESTED COPIES OF ABOVE LISTED DOCUMETNS BY CHAIRMAN/MANAGER/SECRETARY AND PRINCIPAL. IN CASE, IT IS NOTICED AT LATER STAGE THAT UPLOADED DOCUMENTS ARE NOT GENUINE THEN SCHOOL SHALL BE LIABLE FOR ACTION AS PER NORMS.</p>
 
                     </div>
                     <div className={'row pt60'}>
 
                         <h4>Results and Academics</h4>
+
+                        <div className='table-responsive'>
 
                         <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                    
@@ -226,11 +236,15 @@ function MandatoryScreen() {
 
                         </Table> 
 
+                        </div>
+
                     </div>
 
                     <div className={'row pt60' + ' ' + styles.mdBg}>
 
                         <h4>Staff(Teaching)</h4>
+
+                        <div className='table-responsive'>
 
                         <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                    
@@ -290,12 +304,16 @@ function MandatoryScreen() {
                             </tbody>
 
                         </Table> 
+
+                        </div>
                         
                     </div>
 
                     <div className={'row pt60'}>
 
                         <h4>Result Class : X</h4>
+
+                        <div className='table-responsive'>
 
                         <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                    
@@ -321,12 +339,16 @@ function MandatoryScreen() {
                             </tbody>
 
                         </Table> 
+
+                        </div>
                         
                     </div>
 
                     <div className={'row pt60'}>
 
                         <h4>Result Class : XII</h4>
+
+                        <div className='table-responsive'>
 
                         <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                    
@@ -352,12 +374,16 @@ function MandatoryScreen() {
                             </tbody>
 
                         </Table> 
+
+                        </div>
                         
                     </div>
 
                     <div className={'row pt60' + ' ' + styles.mdBg}>
 
                         <h4>School and Infrastructure</h4>
+
+                        <div className='table-responsive'>
 
                         <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                    
@@ -413,6 +439,8 @@ function MandatoryScreen() {
                             </tbody>
 
                         </Table> 
+
+                        </div>
 
                     </div>
 
