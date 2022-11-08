@@ -109,7 +109,7 @@ function CurriculumFrameWork() {
                 </p>
               </div>
 
-              <div className='mb-3' id='pre-primary-years'>
+              <div className='mb-3 pt-4' id='pre-primary-years'>
                 <h4 className={styles.vectorImg2 + ' ulineRed'}>Sports</h4>
 
                 <p className='pt-4'>
@@ -219,7 +219,7 @@ function CurriculumFrameWork() {
                 </div>
               </div>
 
-              <div className='mb-3'>
+              <div className='mb-3 pt-4'>
                 <p className='pt-2'>
                   VIKAS MANTRA PUBLIC SCHOOL will partner with nearby gymkhana
                   facilities to provide access to other sports such as swimming,

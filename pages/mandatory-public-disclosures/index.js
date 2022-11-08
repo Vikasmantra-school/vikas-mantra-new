@@ -189,7 +189,7 @@ function MandatoryScreen() {
                                 <tr className={styles.tableBorderColor}>
                                 <td>S.No</td>
                                 <td>DOCUMENTS/INFORMATION </td>
-                                <td>LINKS OF UPLOADED DOCUMENTS ON YOUR SCHOOL&apos;S WEBSITE</td>
+                                <td>LINKS OF UPLOADED DOCUMENTS <br></br> ON YOUR SCHOOL&apos;S WEBSITE</td>
                                 </tr>
 
                                 <tr>

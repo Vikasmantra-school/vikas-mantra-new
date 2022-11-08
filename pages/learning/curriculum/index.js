@@ -86,7 +86,7 @@ function Curriculum() {
                 <p>- John Dewey</p>
               </div>
 
-              <div className='mb-5' id='vikas-mantra'>
+              <div className='mb-5 pt-4' id='vikas-mantra'>
                 <h4 className='ulineRed'>The VIKAS MANTRA PUBLIC SCHOOL </h4>
 
                 <p className='pt-4'>
@@ -132,7 +132,7 @@ function Curriculum() {
                 </p>
               </div>
 
-              <div className='mb-5' id='pre-primary-years'>
+              <div className='mb-5 pt-4' id='pre-primary-years'>
                 <h4 className='ulineRed'>
                   Pre-Primary Years (Nursery and Kindergarten)
                 </h4>
@@ -177,7 +177,7 @@ function Curriculum() {
                 </p>
               </div>
 
-              <div className='mb-5' id='primary-years'>
+              <div className='mb-5 pt-4' id='primary-years'>
                 <h4 className='ulineRed'>
                 Primary Years (Grades I – V)
                 </h4>
@@ -190,7 +190,7 @@ function Curriculum() {
 
               </div>
 
-              <div className='mb-5' id='english'>
+              <div className='mb-5 pt-4' id='english'>
 
                 <h4 className='ulineRed'>English – Language Arts</h4>
 
@@ -205,7 +205,7 @@ function Curriculum() {
 
               </div>
 
-              <div className='mb-5' id='mathematics'>
+              <div className='mb-5 pt-4' id='mathematics'>
 
                 <h4 className='ulineRed'>Mathematics</h4>
 
@@ -213,7 +213,7 @@ function Curriculum() {
 
               </div>
 
-              <div className='mb-5' id='socialStudies'>
+              <div className='mb-5 pt-4' id='socialStudies'>
 
                 <h4 className='ulineRed'>Social Studies</h4>
 
@@ -221,7 +221,7 @@ function Curriculum() {
 
               </div>
 
-              <div className='mb-5' id='science'>
+              <div className='mb-5 pt-4' id='science'>
 
                 <h4 className='ulineRed'>Science</h4>
 
@@ -229,7 +229,7 @@ function Curriculum() {
 
               </div>
 
-              <div className='mb-5' id='why-us'>
+              <div className='mb-5 pt-4' id='why-us'>
                 <h4 className='ulineRed'>WHY CHOOSE VIKAS MANTRA?</h4>
 
                 <p className='pt-4'>
