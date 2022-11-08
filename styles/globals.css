@@ -832,7 +832,7 @@ p {
 }
 
 tr {
-  border: 2px solid #000;
+  border: 2px solid #000000b8;
 }
 
 .accordion {
@@ -860,7 +860,9 @@ tr {
   --bs-accordion-active-bg: #F3F1F2;
 }
 
+.table-bordered>:not(caption)>*>*{border-width: unset;}
 
+.table>tbody {vertical-align: middle;}
 
 
 

@@ -9,7 +9,7 @@ const Nav = () => {
   const { asPath } = useRouter()
 
   var pageName = asPath.replace('/', '')
-  
+
   function hamburgerMenu(e) {
     let menu = document.getElementById('mobMenu')
     let hamburgerMenu = document.getElementById('hamburger')
@@ -23,7 +23,7 @@ const Nav = () => {
     // const page = navLink.toLowerCase()
     navLink.forEach((element) => {
       if (element.innerText.toLowerCase() === pageName) {
-        console.error(element.parentElement)
+        // console.error(element.parentElement)
         element.parentElement.classList.add('active')
       }
     })
