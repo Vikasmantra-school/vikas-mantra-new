@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretLeft } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import styles from './style.module.css'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
-import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 
 const Admissions = () => {
   const pageTitle = 'Admissions'
