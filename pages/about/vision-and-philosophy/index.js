@@ -106,13 +106,12 @@ const VisionAndPhilosophy = () => {
                 >
                   <div className='pt-3'>
                     <h2 className='ulineRed'>Our Mission</h2>
-            
+
                     <p className='pt-5'>
-                      Our Mission is to develop knowledgeable, adaptable,
-                      responsible compassionate and caring young people with the
-                      much needed survival and employable skills to create a
-                      peaceful world through intercultural understanding and
-                      respect.
+                      Our Mission is to educate young minds to be lifelong learners
+                      in this dynamic world. We aspire to develop outstanding world
+                      citizens who can contribute to the well-being of their society
+                      by playing an active role.
                     </p>
                   </div>
                 </div>
@@ -125,10 +124,10 @@ const VisionAndPhilosophy = () => {
           </div>
         </div>
       </section>
-      
+
       <VisionMission />
 
-    
+
     </>
   )
 }

@@ -1,9 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretLeft } from '@fortawesome/free-solid-svg-icons'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faMinus } from '@fortawesome/free-solid-svg-icons'
 import styles from './style.module.css'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 
 const Admissions = () => {
   const pageTitle = 'Admissions'
@@ -244,50 +243,139 @@ const Admissions = () => {
                   <div></div>
                 </div>
 
-                <div className={styles.colpdngRt + ' col-md-6 position-relative pt-5'}>
-                  <div className='d-flex align-items-start text-justify'>
-                    <div className='position-relative'>
-                      <h2 className={styles.numberStyle}>1</h2>
+                <div className='row pt60 '>
+
+                  <div className='col-lg-4 col-md-4 col-sm-12 '>
+
+                    <div className='card-wrapper one'>
+                      <div className="card-header">
+                        <h1 className="card-header-text2">Obtain Admissions Kit</h1>
+                        <p className="card-header-text3">
+                          Visit the school , meet our admissions officer. Take a
+                          tour of the school. Obtain the Admissions Kit from the
+                          Admissions Office for Rs.600, payable by cash or card.</p>
+                      </div>
+                      <div className="card-footer">
+                        <div className="footer-content-wrap">
+                          <div className="footer-text-wrap">
+                            <h1>01</h1>
+                            <p>step</p>
+                          </div>
+
+                          <FontAwesomeIcon icon={faAnglesRight} className={styles.plusIcon} />
+
+                        </div>
+                      </div>
                     </div>
 
-                    <div>
-                      <h2>Obtain Admissions Kit</h2>
-
-                      <p>
-                        Visit the school , meet our admissions officer. Take a
-                        tour of the school. Obtain the Admissions Kit from the
-                        Admissions Office for Rs.600, payable by cash or card.
-                      </p>
-                    </div>
                   </div>
+
+                  <div className='col-lg-4 col-md-4 col-sm-12'>
+
+                    <div className="card-wrapper two">
+                      <div className="card-header">
+                        <h1 className="card-header-text2">Submit Application</h1>
+                        <p className="card-header-text3">
+                          Submit the completed Application Form and all supporting
+                          documents as per instructions and wait to be called for
+                          a personal interview.</p>
+                      </div>
+                      <div className="card-footer">
+                        <div className="footer-content-wrap">
+                          <div className="footer-text-wrap">
+                            <h1>02</h1>
+                            <p>step</p>
+                          </div>
+                          <FontAwesomeIcon icon={faAnglesRight} className={styles.plusIcon} />
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div className='col-lg-4 col-md-4 col-sm-12'>
+
+                    <div className="card-wrapper one">
+                      <div className="card-header">
+                        <h1 className="card-header-text2">Interaction and Interview</h1>
+                        <p className="card-header-text3">
+                          There will be diagnostic test in Math & Science and Test
+                          of fluency in English for students applying from Grade I
+                          upwards*. After this Personal interviews conducted with
+                          prospective students and parents to understand the
+                          child&apos;s interests, skills, abilities, and expectations.
+                          Interactions will be held with both parents and the
+                          child for the Kindergarten classes.</p>
+                      </div>
+                      <div className="card-footer">
+                        <div className="footer-content-wrap">
+                          <div className="footer-text-wrap">
+                            <h1>03</h1>
+                            <p>step</p>
+                          </div>
+                          <FontAwesomeIcon icon={faAnglesRight} className={styles.plusIcon} />
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div className='col-lg-4 col-md-4 col-sm-12'>
+
+                    <div className="card-wrapper two">
+                      <div className="card-header">
+                        <h1 className="card-header-text2">Admission Results</h1>
+                        <p className="card-header-text3">Admissions results emailed within 5 working days.
+                          After which parents can pay the fees within 7 days to confirm the slot.</p>
+                      </div>
+                      <div className="card-footer">
+                        <div className="footer-content-wrap">
+                          <div className="footer-text-wrap">
+                            <h1>04</h1>
+                            <p>step</p>
+                          </div>
+                          <FontAwesomeIcon icon={faAnglesRight} className={styles.plusIcon} />
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div className='col-lg-4 col-md-4 col-sm-12'>
+
+                    <div className="card-wrapper one">
+                      <div className="card-header">
+                        <h1 className="card-header-text2">Admission Fee</h1>
+                        <p className="card-header-text3">Upon receipt of Confirmation Letter,
+                          payment of a one-time non-refundable Admission Fee* within 15 days to
+                          be paid along with the first term and school essentials fee.</p>
+                      </div>
+                      <div className="card-footer">
+                        <div className="footer-content-wrap">
+                          <div className="footer-text-wrap">
+                            <h1>05</h1>
+                            <p>step</p>
+                          </div>
+                          <FontAwesomeIcon icon={faAnglesRight} className={styles.plusIcon} />
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
                 </div>
 
-                <div className={styles.colpdngLt + ' col-md-6 pt-5 '}>
-                  <div className='d-flex align-items-start text-justify'>
-                    <div className='position-relative'>
-                      <h2 className={styles.numberStyle}>2</h2>
-                    </div>
+                {/*
 
-                    <div>
-                      <h2 className='text-start'>Interaction and Interview</h2>
+                
 
-                      <p>
-                        There will be diagnostic test in Math & Science and Test
-                        of fluency in English for students applying from Grade I
-                        upwards*. After this Personal interviews conducted with
-                        prospective students and parents to understand the
-                        child’s interests, skills, abilities, and expectations.
-                        Interactions will be held with both parents and the
-                        child for the Kindergarten classes.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                
+                
 
                 <div className={styles.colpdngRt + ' col-md-6 position-relative'}>
                   <div className='d-flex align-items-start text-justify'>
                     <div className='position-relative'>
-                      <h2 className={styles.numberStyle}>3</h2>
+                      <h2 className={styles.numberStyle}>5</h2>
                     </div>
 
                     <div>
@@ -301,43 +389,7 @@ const Admissions = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-
-                <div className={styles.colpdngLt + ' col-md-6'}>
-                  <div className='d-flex align-items-start text-justify'>
-                    <div className='position-relative'>
-                      <h2 className={styles.numberStyle}>4</h2>
-                    </div>
-
-                    <div>
-                      <h2>Submit Application</h2>
-
-                      <p>
-                        Submit the completed Application Form and all supporting
-                        documents as per instructions and wait to be called for
-                        a personal interview.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className={styles.colpdngRt + ' col-md-6 position-relative'}>
-                  <div className='d-flex align-items-start text-justify'>
-                    <div className='position-relative'>
-                      <h2 className={styles.numberStyle}>5</h2>
-                    </div>
-
-                    <div>
-                      <h2>Admission Results</h2>
-
-                      <p>
-                        Admissions results emailed within 5 working days. After
-                        which parents can pay the fees within 7 days to confirm
-                        the slot.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                </div> */}
 
                 <div className='col-md-6'>
                   <div></div>
@@ -482,18 +534,8 @@ const Admissions = () => {
                       <div id='collapseOne' className='accordion-collapse collapse' aria-labelledby='headingOne'
                         data-bs-parent='#accordionExample'>
                         <div className='accordion-body'>
-                          <strong>
-                            This is the first item&apos;s accordion body.
-                          </strong>{' '}
-                          It is shown by default, until the collapse plugin adds
-                          the appropriate classes that we use to style each
-                          element. These classes control the overall appearance,
-                          as well as the showing and hiding via CSS transitions.
-                          You can modify any of this with custom CSS or
-                          overriding our default variables. It&apos;s also worth
-                          noting that just about any HTML can go within the{' '}
-                          <code>.accordion-body</code>, though the transition
-                          does limit overflow.
+                          Yes we do have. A wait list will be created once seats are
+                          filled by deserving students on first come first serve basis.
                         </div>
                       </div>
                     </div>
@@ -510,18 +552,11 @@ const Admissions = () => {
                       <div id='collapseTwo' className='accordion-collapse collapse' aria-labelledby='headingTwo'
                         data-bs-parent='#accordionExample'>
                         <div className='accordion-body'>
-                          <strong>
-                            This is the second item&apos;s accordion body.
-                          </strong>{' '}
-                          It is hidden by default, until the collapse plugin
-                          adds the appropriate classes that we use to style each
-                          element. These classes control the overall appearance,
-                          as well as the showing and hiding via CSS transitions.
-                          You can modify any of this with custom CSS or
-                          overriding our default variables. It&apos;s also worth
-                          noting that just about any HTML can go within the{' '}
-                          <code>.accordion-body</code>, though the transition
-                          does limit overflow.
+                          Applicants to the early years (KG ) are assessed purely on their interaction
+                          with the respective heads. Applicants in 1st grade and above are assessed
+                          on their written and oral tests administered by the school. Parent&apos;s approach
+                          to education and their involvement in their child&apos;s life plays an even more
+                          critical role.
                         </div>
                       </div>
                     </div>
@@ -538,18 +573,14 @@ const Admissions = () => {
                       <div id='collapseThree' className='accordion-collapse collapse' aria-labelledby='headingThree'
                         data-bs-parent='#accordionExample'>
                         <div className='accordion-body'>
-                          <strong>
-                            This is the third item&apos;s accordion body.
-                          </strong>{' '}
-                          It is hidden by default, until the collapse plugin
-                          adds the appropriate classes that we use to style each
-                          element. These classes control the overall appearance,
-                          as well as the showing and hiding via CSS transitions.
-                          You can modify any of this with custom CSS or
-                          overriding our default variables. It&apos;s also worth
-                          noting that just about any HTML can go within the{' '}
-                          <code>.accordion-body</code>, though the transition
-                          does limit overflow.
+                          VIKAS MANTRA PUBLIC SCHOOL is keen to promote talents and resources that are available in the parent community
+                          ; that can enrich our school programme. As such,
+                          parents are encouraged to participate in the school
+                          community and enhance the learning experience of the
+                          students either being a volunteer in the library,
+                          story telling or chaperoning during a field trip,
+                          or being a guest lecture or by being a substitute
+                          teacher when the need arises.
                         </div>
                       </div>
                     </div>
@@ -566,18 +597,7 @@ const Admissions = () => {
                       <div id='collapseFour' className='accordion-collapse collapse' aria-labelledby='headingFour'
                         data-bs-parent='#accordionExample'>
                         <div className='accordion-body'>
-                          <strong>
-                            This is the third item&apos;s accordion body.
-                          </strong>{' '}
-                          It is hidden by default, until the collapse plugin
-                          adds the appropriate classes that we use to style each
-                          element. These classes control the overall appearance,
-                          as well as the showing and hiding via CSS transitions.
-                          You can modify any of this with custom CSS or
-                          overriding our default variables. It&apos;s also worth
-                          noting that just about any HTML can go within the{' '}
-                          <code>.accordion-body</code>, though the transition
-                          does limit overflow.
+                          As per the CBSE guidelines we follow an 1:35 ratio in our classes.
                         </div>
                       </div>
                     </div>
@@ -587,25 +607,17 @@ const Admissions = () => {
                         <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                           data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive'>
                           <h4 className='pt-3'>
-                            How are parents involved in the school community?
+                            Where are your teachers from?
                           </h4>
                         </button>
                       </h2>
                       <div id='collapseFive' className='accordion-collapse collapse' aria-labelledby='headingFive'
                         data-bs-parent='#accordionExample'>
                         <div className='accordion-body'>
-                          <strong>
-                            This is the third item&apos;s accordion body.
-                          </strong>{' '}
-                          It is hidden by default, until the collapse plugin
-                          adds the appropriate classes that we use to style each
-                          element. These classes control the overall appearance,
-                          as well as the showing and hiding via CSS transitions.
-                          You can modify any of this with custom CSS or
-                          overriding our default variables. It&apos;s also worth
-                          noting that just about any HTML can go within the{' '}
-                          <code>.accordion-body</code>, though the transition
-                          does limit overflow.
+                          Our teachers are from various parts of India .
+                          This gives a unique flavour to our campus where
+                          they bring in not only the academic credentials
+                          but their cultural flavour too.
                         </div>
                       </div>
                     </div>
@@ -622,23 +634,48 @@ const Admissions = () => {
                       <div id='collapseSix' className='accordion-collapse collapse' aria-labelledby='headingSix'
                         data-bs-parent='#accordionExample'>
                         <div className='accordion-body'>
-                          <strong>
-                            This is the third item&apos;s accordion body.
-                          </strong>{' '}
-                          It is hidden by default, until the collapse plugin
-                          adds the appropriate classes that we use to style each
-                          element. These classes control the overall appearance,
-                          as well as the showing and hiding via CSS transitions.
-                          You can modify any of this with custom CSS or
-                          overriding our default variables. It&apos;s also worth
-                          noting that just about any HTML can go within the{' '}
-                          <code>.accordion-body</code>, though the transition
-                          does limit overflow.
+                          As per CBSE, We provide continuous professional
+                          development and capacity building workshops throughout the year.
                         </div>
                       </div>
                     </div>
-                  </div>
 
+                    <div className='accordion-item'>
+                      <h2 className='accordion-header' id='headingSeven'>
+                        <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                          data-bs-target='#collapseSeven' aria-expanded='false' aria-controls='collapseSeven'>
+                          <h4 className='pt-3'>
+                            Does the school have its own transport?
+                          </h4>
+                        </button>
+                      </h2>
+                      <div id='collapseSeven' className='accordion-collapse collapse' aria-labelledby='headingSeven'
+                        data-bs-parent='#accordionExample'>
+                        <div className='accordion-body'>
+                          Yes, the school has a dedicated transport facility for students and teachers.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className='accordion-item'>
+                      <h2 className='accordion-header' id='headingEight'>
+                        <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                          data-bs-target='#collapseEight' aria-expanded='false' aria-controls='collapseEight'>
+                          <h4 className='pt-3'>
+                            Are scholarship available to students?
+                          </h4>
+                        </button>
+                      </h2>
+                      <div id='collapseEight' className='accordion-collapse collapse' aria-labelledby='headingEight'
+                        data-bs-parent='#accordionExample'>
+                        <div className='accordion-body'>
+                          Scholarships will be provided to students at
+                          higher class grades. Please contact the Admissions Officer for further details.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
