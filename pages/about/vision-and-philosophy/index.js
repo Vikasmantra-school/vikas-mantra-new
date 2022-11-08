@@ -82,7 +82,7 @@ const VisionAndPhilosophy = () => {
                   id='home-tab-pane'
                   role='tabpanel'
                   aria-labelledby='home-tab'
-                  tabindex='0'
+                  tabIndex='0'
                 >
                   <div className='pt-3'>
                     <h2 className='ulineRed'>Our Vision</h2>
@@ -102,16 +102,16 @@ const VisionAndPhilosophy = () => {
                   id='profile-tab-pane'
                   role='tabpanel'
                   aria-labelledby='profile-tab'
-                  tabindex='0'
+                  tabIndex='0'
                 >
                   <div className='pt-3'>
                     <h2 className='ulineRed'>Our Mission</h2>
 
                     <p className='pt-5'>
-                      Our Mission is to educate young minds to be lifelong learners
-                      in this dynamic world. We aspire to develop outstanding world
-                      citizens who can contribute to the well-being of their society
-                      by playing an active role.
+                      Our Mission is to educate young minds to be lifelong
+                      learners in this dynamic world. We aspire to develop
+                      outstanding world citizens who can contribute to the
+                      well-being of their society by playing an active role.
                     </p>
                   </div>
                 </div>
@@ -126,8 +126,6 @@ const VisionAndPhilosophy = () => {
       </section>
 
       <VisionMission />
-
-
     </>
   )
 }
