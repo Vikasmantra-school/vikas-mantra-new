@@ -299,13 +299,11 @@ const Admissions = () => {
                       <div className="card-header">
                         <h1 className="card-header-text2">Interaction and Interview</h1>
                         <p className="card-header-text3">
-                          There will be diagnostic test in Math & Science and Test
-                          of fluency in English for students applying from Grade I
-                          upwards*. After this Personal interviews conducted with
-                          prospective students and parents to understand the
-                          child&apos;s interests, skills, abilities, and expectations.
-                          Interactions will be held with both parents and the
-                          child for the Kindergarten classes.</p>
+                          Diagnostic tests in Math & Science and Tests of fluency in
+                          English will be conducted for students applying from Grade I.
+                          Then, personal interviews will be conducted to understand their
+                          skills. For Kindergarten classes, interactions will be held for
+                          both children and parents.</p>
                       </div>
                       <div className="card-footer">
                         <div className="footer-content-wrap">
@@ -364,32 +362,6 @@ const Admissions = () => {
                   </div>
 
                 </div>
-
-                {/*
-
-                
-
-                
-                
-
-                <div className={styles.colpdngRt + ' col-md-6 position-relative'}>
-                  <div className='d-flex align-items-start text-justify'>
-                    <div className='position-relative'>
-                      <h2 className={styles.numberStyle}>5</h2>
-                    </div>
-
-                    <div>
-                      <h2>Admission Fee</h2>
-
-                      <p>
-                        Upon receipt of Confirmation Letter, payment of a
-                        one-time non-refundable Admission Fee* within 15 days to
-                        be paid along with the first term and school essentials
-                        fee.
-                      </p>
-                    </div>
-                  </div>
-                </div> */}
 
                 <div className='col-md-6'>
                   <div></div>

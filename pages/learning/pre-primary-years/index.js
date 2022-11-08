@@ -131,7 +131,7 @@ function PrePrimary() {
                   Maalathi, one of the senior educators in India.
                 </p>
 
-                <img src="/assets/learning/spice-banner.jpg"  className='image-fluid mt-4'/>
+                <img src="/assets/learning/spice-banner.jpg"  alt='' className='image-fluid mt-4'/>
 
               </div>
               <div className='mb-5' id='programs'>

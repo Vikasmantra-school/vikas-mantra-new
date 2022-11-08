@@ -19,7 +19,7 @@
 }
 
 .labImg3 {
-    height: 445px;
+    height: 418px;
     right: -35px;
     position: relative;
 }
@@ -36,11 +36,11 @@
     background-repeat: no-repeat;
     background-position: top right;
     z-index: 1;
-    background-size: 110px;
+    background-size: 135px;
     height: 210px;
-    right: 40px;
+    right: 10vh;
     width: 190px;
-    top: 255px;
+    top: 52vh;
 }
 
 .vectorImg10::after {
@@ -54,7 +54,7 @@
     height: 227px;
     left: 0;
     width: 247px;
-    bottom: 370px;
+    bottom: 65vh;
 }
 .sectionPdngBtm{
     padding-bottom: 5rem !important;
