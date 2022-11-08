@@ -76,7 +76,7 @@ const VisionAndPhilosophy = () => {
                 </li>
               </ul>
 
-              <div className='tab-content' id='myTabContent'>
+              <div className='tab-content VectorHalfSpiral' id='myTabContent'>
                 <div
                   className='tab-pane fade show active'
                   id='home-tab-pane'
