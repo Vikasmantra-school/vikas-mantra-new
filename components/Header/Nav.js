@@ -7,7 +7,6 @@ import MobileNav from '../Header/MobileNav'
 
 const Nav = () => {
   const { asPath } = useRouter()
-
   var pageName = asPath.replace('/', '')
 
   function hamburgerMenu(e) {
@@ -16,24 +15,6 @@ const Nav = () => {
     menu.classList.toggle('mob-menu-hdden')
     hamburgerMenu.classList.toggle('is-active')
   }
-
-  function isMenuActive() {
-    const navLink = document.querySelectorAll('.nav-link')
-
-    navLink.forEach((element) => {
-      if (element.innerText.toLowerCase() === pageName) {
-        console.error(element.parentElement)
-        element.parentElement.classList.remove('active')
-
-        element.parentElement.classList.add('active')
-      } else {
-      }
-    })
-  }
-
-  useEffect(() => {
-    isMenuActive()
-  }, [isMenuActive])
 
   return (
     <>
@@ -72,7 +53,11 @@ const Nav = () => {
           <div className='container'>
             <div className='collapse navbar-collapse desktop-menu' id=''>
               <ul className='navbar-nav mb-2 mb-lg-0'>
-                <li className='nav-item'>
+                <li
+                  className={
+                    pageName === 'home' ? 'active nav-item' : 'nav-item'
+                  }
+                >
                   <Link href='/home' legacyBehavior>
                     <a className='nav-link' aria-current='page'>
                       Home
@@ -80,7 +65,7 @@ const Nav = () => {
                   </Link>
                 </li>
 
-                <li className='nav-item dropdown'>
+                <li>
                   <Link href='/about' legacyBehavior>
                     <a
                       className='nav-link dropdown-toggle'
@@ -131,7 +116,11 @@ const Nav = () => {
                   </ul>
                 </li>
 
-                <li className='nav-item'>
+                <li
+                  className={
+                    pageName === 'admissions' ? 'active nav-item' : 'nav-item'
+                  }
+                >
                   <Link legacyBehavior href='/admissions'>
                     <a className='nav-link'>Admissions</a>
                   </Link>
@@ -260,33 +249,55 @@ const Nav = () => {
                   </ul>
                 </li>
 
-                <li className='nav-item'>
+                <li
+                  className={
+                    pageName === 'enquiry-form' ? 'active nav-item' : 'nav-item'
+                  }
+                >
                   <Link legacyBehavior href='/enquiry-form'>
                     <a className='nav-link'>Enquiry Form</a>
                   </Link>
                 </li>
 
-                <li className='nav-item'>
+                <li
+                  className={
+                    pageName === 'mandatory-public-disclosures'
+                      ? 'active nav-item'
+                      : 'nav-item'
+                  }
+                >
                   <Link legacyBehavior href='/mandatory-public-disclosures'>
                     <a className='nav-link'>Mandatory Public Disclosures</a>
                   </Link>
                 </li>
 
-                <li className='nav-item'>
+                <li
+                  className={
+                    pageName === 'events' ? 'active nav-item' : 'nav-item'
+                  }
+                >
                   <Link legacyBehavior href='/events'>
                     <a className='nav-link'>Events</a>
                   </Link>
                 </li>
 
-                <li className='nav-item'>
+                <li
+                  className={
+                    pageName === 'contact' ? 'active nav-item' : 'nav-item'
+                  }
+                >
                   <Link legacyBehavior href='/contact'>
                     <a className='nav-link'>Contact Us</a>
                   </Link>
                 </li>
 
-                <li className='nav-item'>
+                <li
+                  className={
+                    pageName === 'careers' ? 'active nav-item' : 'nav-item'
+                  }
+                >
                   <Link legacyBehavior href='/careers'>
-                    <a className='nav-link'>Career</a>
+                    <a className='nav-link'>Careers</a>
                   </Link>
                 </li>
               </ul>
