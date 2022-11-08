@@ -28,10 +28,10 @@
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
-    background-size: 105px;
+    background-size: 11vh;
     height: 228px;
     width: 114px;
-    top: 135px;
+    top: 23vh;
     left: 0;
 }
 
@@ -42,11 +42,11 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 180px;
+    background-size: 35vh;
     height: 227px;
     width: 247px;
-    bottom: 30px;
-    right: 60px;
+    bottom: 6vh;
+    right: 6vh;
 }
 
 .sectionPdng {

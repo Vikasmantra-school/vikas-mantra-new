@@ -28,11 +28,11 @@
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
-    background-size: 160px;
+    background-size: 100px;
     height: 210px;
     left: 0%;
     width: 190px;
-    top: -4%;
+    top: 0%;
 }
 
 .vectorImg3::after {

@@ -27,11 +27,11 @@
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
-    background-size: 100px;
+    background-size: 12vh;
     height: 210px;
     left: 0;
     width: 190px;
-    top: 111px;
+    top: 18vh;
 }
 
 .vectorImg10::after {
@@ -42,11 +42,11 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 190px;
+    background-size: 30vh;
     height: 227px;
     right: 0;
     width: 247px;
-    bottom: 100px;
+    bottom: 14vh;
 }
 
 .vmpsImg::after {

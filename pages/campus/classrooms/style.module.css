@@ -17,11 +17,11 @@
     background-repeat: no-repeat;
     background-position: center left;
     z-index: 0;
-    background-size: 110px;
+    background-size: 12vh;
     height: 227px;
     left: 0;
     width: 247px;
-    top: 20%;
+    top: 40vh;
 }
 
 .vectorImg9::after {
@@ -31,12 +31,11 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 150px;
+    background-size: 22vh;
     height: 227px;
     width: 247px;
     right: 0;
-    bottom: 0;
-    
+    bottom: 0;  
 }
 .vmpsImg::after {
     

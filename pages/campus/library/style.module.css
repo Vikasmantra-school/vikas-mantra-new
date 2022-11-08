@@ -27,11 +27,11 @@
     background-repeat: no-repeat;
     background-position: top right;
     z-index: 1;
-    background-size: 190px;
+    background-size: 30vh;
     height: 210px;
-    right: 30px;
+    right: 3vh;
     width: 210px;
-    bottom: 163px;
+    bottom: 26vh;
 }
 
 .vectorImg10::after {
@@ -41,11 +41,11 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     z-index: 0;
-    background-size: 110px;
+    background-size: 14vh;
     height: 227px;
     left: 0;
     width: 247px;
-    bottom: 50px;
+    bottom: 8vh;
 }
 
 .sectionPdng {

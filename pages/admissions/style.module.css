@@ -313,11 +313,11 @@
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
-    background-size: 110px;
+    background-size: 100px;
     height: 210px;
     width: 190px;
     left: 0;
-    bottom: -20%;
+    bottom: -32vh;
 }
 .vectorImg5::after{
     content: '';
@@ -329,8 +329,8 @@
     background-size: 180px;
     height: 210px;
     width: 190px;
-    right: 43px;
-    bottom: -46%;
+    right: 3vh;
+    bottom: -56vh;
 }
 .vectorImg3::before{
     content: '';
@@ -343,7 +343,7 @@
     height: 210px;
     width: 190px;
     left: 0;
-    bottom: -40%;
+    bottom: -41vh;
 }
 .vectorImg9::after{
     content: '';
@@ -352,11 +352,11 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 1;
-    background-size: 120px;
+    background-size: 20vh;
     height: 210px;
     width: 190px;
     right: 0px;
-    bottom: -180%;
+    bottom: -200vh;
 }
 .vectorImg3Tab3::before{
     content: '';
