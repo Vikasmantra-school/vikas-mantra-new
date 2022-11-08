@@ -53,6 +53,12 @@ const About = () => {
                                     ground realities.
                                 </p>
 
+                                <div className={styles.ResponsiveGroupImageContainer}>
+
+                                    <img src='/assets/banners/school-building.png' alt="image" className={styles.ResponsiveGroupImage} />
+
+                                </div>
+
                                 <p className={styles.pLineHeight}>Learning is not only limited to books and classroom at Vikas Mantra
                                     Public School, our students are encouraged to pursue their interests
                                     and are given sufficien opportunities to exhibit their talents through
@@ -149,7 +155,7 @@ const About = () => {
 
                     <div className='row position-relative'>
 
-                        <div className='col-md-12'>
+                        <div className='col-md-12 py-2'>
 
                             <img src='/assets/banners/staff-group-photo.png' alt="image" className={styles.ResponsiveImage} />
 

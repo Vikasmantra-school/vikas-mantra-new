@@ -20,20 +20,6 @@
     bottom: 0%;
 }
 
-.vectorImg4::after {
-    content: '';
-    position: absolute;
-    background-image: url(/assets/vectors/Vector4.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    z-index: 1;
-    background-size: 95px;
-    height: 227px;
-    right: 0;
-    bottom: 30%;
-    width: 247px;
-}
-
 .vmpsImg {
     position: absolute;
     right: 0;
@@ -99,6 +85,20 @@
     background: linear-gradient(180deg, rgba(29, 29, 29, 0) 37.81%, #1D1D1D 65.83%);
 }
 
+.vectorImg4::before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector4.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 2;
+    background-size: 95px;
+    height: 227px;
+    right: 0;
+    bottom: 30%;
+    width: 247px;
+}
+
 .ResponsiveImage {
     height: 45vh;
     width: 100%;
@@ -132,12 +132,16 @@
     font-size: 35px;
 }
 
+.ResponsiveGroupImageContainer {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .headingPdng {
         padding-bottom: 0px;
     }
 
-    .vectorImg2::before {
+    /* .vectorImg2::before {
         content: '';
         position: absolute;
         background-image: url(/assets/vectors/Vector10.png);
@@ -149,6 +153,20 @@
         left: 0;
         width: 247px;
         bottom: -34%;
+    } */
+    .vectorImg2::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 1;
+        background-size: 65px;
+        height: 227px;
+        left: 0;
+        width: 247px;
+        bottom: 0%;
+        
     }
 
     .sectionPdng {
@@ -174,9 +192,36 @@
         width: 100%;
     }
 
-    /* .bannerSection {
-        display: none;
-    } */
+    .ResponsiveGroupImage {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .ResponsiveGroupImageContainer {
+        display: block;
+        padding: 20px 0px;
+    }
+
+    .sectionStyle::before {
+        content: "";
+        position: unset;
+        background-image: url(/assets/banners/school-building.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: cover;
+        height: 112%;
+        left: 0;
+        bottom: 9%;
+        width: calc(100vw - 61vw);
+        z-index: 1;
+    }
+
+    .sectionStyle {
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 990px) {

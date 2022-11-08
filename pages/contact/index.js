@@ -30,7 +30,7 @@ const Contact = () => {
                 </div>
             </section>
 
-            <section className={' whitebg pt60 pb60 position-relative ' + ' ' + styles.vectorImg10}>
+            <section className={' whitebg pb60 position-relative ' + ' ' + styles.vectorImg10}>
                 <div className='container'>
                     <div className={styles.rowPdng + ' row text-center'}>
 

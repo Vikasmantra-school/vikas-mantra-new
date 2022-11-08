@@ -21,10 +21,10 @@
 }
 .vmpsImg{
     position: absolute;
-    height: 58px;
+    height: 70px;
     bottom: 1206px;
-    right: 0;
-    z-index: -1;
+    right: -55px;
+    z-index: 1;
 }
 
 .vectorImg6::before{
