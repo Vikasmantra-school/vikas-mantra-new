@@ -9,20 +9,20 @@ import EventsNav from '../../components/EventsNav'
 function index() {
   const pageTitle = 'Events'
 
-  const [gallery, setGallery] = useState([])
+  // const [gallery, setGallery] = useState([])
 
-  function galleryFunc() {
-    for (let i = 1; i <= 10; i++) {
-      console.error(i, 'el')
-    }
-  }
+  // function galleryFunc() {
+  //   for (let i = 1; i <= 10; i++) {
+  //     console.error(i, 'el')
+  //   }
+  // }
 
-  useEffect(() => {
-    fetch(`./assets/events/1.png`).then(function (response) {
-      setGallery(response)
-      galleryFunc()
-    })
-  }, [])
+  // useEffect(() => {
+  //   fetch(`./assets/events/1.png`).then(function (response) {
+  //     setGallery(response)
+  //     galleryFunc()
+  //   })
+  // }, [])
 
   return (
     <>
