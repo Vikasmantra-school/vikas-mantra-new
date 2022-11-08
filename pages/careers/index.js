@@ -4,23 +4,23 @@ import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
-import { useState } from "react";
+import { useState } from 'react'
 
 function Career() {
-
-    const ValidateEmail=() =>{
-        var email = document.getElementById("txtEmail").value;
-        var lblError = document.getElementById("lblError");
-        lblError.innerHTML = "";
-        var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        if (!expr.test(email)) {
-            lblError.innerHTML = "Invalid email address.";
-        }
+  const ValidateEmail = () => {
+    var email = document.getElementById('txtEmail').value
+    var lblError = document.getElementById('lblError')
+    lblError.innerHTML = ''
+    var expr =
+      /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
+    if (!expr.test(email)) {
+      lblError.innerHTML = 'Invalid email address.'
     }
+  }
 
-    const pageTitle = 'Career'
+  const pageTitle = 'Career'
 
-    const [methodOfCommunication, setCommunication] = useState('email');
+  const [methodOfCommunication, setCommunication] = useState('email')
 
   return (
     <>
@@ -137,101 +137,11 @@ function Career() {
         <div className='container'>
           <Form>
             <div className={'row'}>
-
-                <div className={'col-md-10' + ' ' + styles.formCenter}>
-
-                    <div className={styles.enquiryForm}>
-
-                        <div className={'row' + ' ' + styles.form}>
-
-                            <div className='col-md-12'>
-
-                                <h5 className='mb-5'>Candidate </h5>
-
-                            </div>
-
-                            <div className='col-md-12 col-lg-5 col-sm-12'>
-
-                                    <div className='mb-5'>
-
-                                    <label>Name of the Candidate </label>
-
-                                    <Form.Control className={styles.formText} type="text"  />
-
-                                    </div>
-
-                                    <div className='mb-5'>
-
-                                    <label>Mailing address</label>
-
-                                    <Form.Control className={styles.formText + ' ' + 'mb-5'} type="text"  />
-
-                                    <Form.Control className={styles.formText + ' ' + 'mb-5'} type="text"  />
-
-                                    <Form.Control className={styles.formText + ' ' + 'mb-5'} type="text"  />
-
-
-                                    </div>
-                                
-                            </div>
-
-                            <div className='col-md-12 col-lg-5 col-sm-12 offset-lg-1'>
-
-                                <div className={styles.formPb}>
-
-                                        <div className='mb-5'>
-
-                                        <label>Job Opening</label>
-
-                                        <Form.Control className={styles.formText} type="text"  />
-
-                                        </div>
-
-                                </div>
-
-                                <div className="mb-3">
-                                    <h5 className='mb-4'>Method of Communication</h5>
-                                   
-                                    <div className="form-check ">
-                                        <input className="form-check-input coupon_question" type="radio" name="checking-radio" checked={(methodOfCommunication == 'email')} onChange={() => setCommunication('email')}></input>
-                                        <label className="form-check-label" for="flexRadioDefault2">
-                                            Email
-                                        </label>
-                                    </div>
-                                    <div className="form-check ">
-                                        <input className="form-check-input coupon_question" type="radio" name="checking-radio" checked={(methodOfCommunication == 'phone')} onChange={() => setCommunication('phone')} ></input>
-                                        <label className="form-check-label" for="flexRadioDefault1">
-                                            Phone
-                                        </label>
-                                    </div>
-                                </div>
-                                {(methodOfCommunication == "email") &&
-                                    <div className="mb-3 mail-check">
-                                        <label for="exampleInputEmail1" className="form-label">Email</label>
-                                        <input type="email" className={'form-control form-width' + ' ' + styles.formText} id="txtEmail" onBlur={ValidateEmail} required="true"></input>
-                                        <span id="lblError"></span>
-                                    </div>
-                                }
-                                {(methodOfCommunication == "phone") &&
-                                    <div className="mb-3 phone-check">
-                                        <label for="exampleInputPassword1" className="form-label">Phone</label>
-                                        <input type="number" className={'form-control form-width' + ' ' + styles.formText} required="true"></input>
-                                    </div>
-                                }
-
-                                <div>
-
-                            </div>
-
-
-                            </div>
-
-                            <a href='#'><Button className={'brownBtn'}>Submit</Button></a>
-
-
-
-                        </div>
-
+              <div className={'col-md-10' + ' ' + styles.formCenter}>
+                <div className={styles.enquiryForm}>
+                  <div className={'row' + ' ' + styles.form}>
+                    <div className='col-md-12'>
+                      <h5 className='mb-5'>Candidate </h5>
                     </div>
 
                     <div className='col-md-12 col-lg-5 col-sm-12'>
@@ -273,58 +183,79 @@ function Career() {
                         </div>
                       </div>
 
-                      <div>
-                        <h5 className='mb-5'>Method of Communication</h5>
+                      <div className='mb-3'>
+                        <h5 className='mb-4'>Method of Communication</h5>
 
-                        <div className='mb-5'>
-                          <div className='row'>
-                            <div className='col-md-12'>
-                              {['radio'].map((type) => (
-                                <div key={`inline-${type}`} className='mb-3'>
-                                  <Form.Check
-                                    inline
-                                    label='Email'
-                                    name='group1'
-                                    type={type}
-                                    id={`inline-${type}-1`}
-                                  />
-                                  <Form.Check
-                                    inline
-                                    label='Phone'
-                                    name='group1'
-                                    type={type}
-                                    id={`inline-${type}-2`}
-                                  />
-                                </div>
-                              ))}
-                            </div>
-                          </div>
+                        <div className='form-check '>
+                          <input
+                            className='form-check-input coupon_question'
+                            type='radio'
+                            name='checking-radio'
+                            checked={methodOfCommunication == 'email'}
+                            onChange={() => setCommunication('email')}
+                          ></input>
+                          <label
+                            className='form-check-label'
+                            for='flexRadioDefault2'
+                          >
+                            Email
+                          </label>
+                        </div>
+                        <div className='form-check '>
+                          <input
+                            className='form-check-input coupon_question'
+                            type='radio'
+                            name='checking-radio'
+                            checked={methodOfCommunication == 'phone'}
+                            onChange={() => setCommunication('phone')}
+                          ></input>
+                          <label
+                            className='form-check-label'
+                            for='flexRadioDefault1'
+                          >
+                            Phone
+                          </label>
                         </div>
                       </div>
-
-                      <div>
-                        <div className='mb-5'>
-                          <div className='row'>
-                            <div className='col-md-12 col-lg-6 col-sm-12 m-pb40'>
-                              <label>Phone Number</label>
-
-                              <Form.Control
-                                className={styles.formText}
-                                type='text'
-                              />
-                            </div>
-
-                            <div className='col-md-12 col-lg-6 col-sm-12'>
-                              <label>Email</label>
-
-                              <Form.Control
-                                className={styles.formText}
-                                type='text'
-                              />
-                            </div>
-                          </div>
+                      {methodOfCommunication == 'email' && (
+                        <div className='mb-3 mail-check'>
+                          <label
+                            for='exampleInputEmail1'
+                            className='form-label'
+                          >
+                            Email
+                          </label>
+                          <input
+                            type='email'
+                            className={
+                              'form-control form-width' + ' ' + styles.formText
+                            }
+                            id='txtEmail'
+                            onBlur={ValidateEmail}
+                            required='true'
+                          ></input>
+                          <span id='lblError'></span>
                         </div>
-                      </div>
+                      )}
+                      {methodOfCommunication == 'phone' && (
+                        <div className='mb-3 phone-check'>
+                          <label
+                            for='exampleInputPassword1'
+                            className='form-label'
+                          >
+                            Phone
+                          </label>
+                          <input
+                            type='number'
+                            className={
+                              'form-control form-width' + ' ' + styles.formText
+                            }
+                            required='true'
+                          ></input>
+                        </div>
+                      )}
+
+                      <div></div>
                     </div>
 
                     <a href='#'>
