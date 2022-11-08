@@ -28,7 +28,7 @@ function index() {
     <>
       <Breadcrumb pageName={pageTitle} />
 
-      <img src={gallery.url}></img>
+      {/* <img src={gallery.url}></img> */}
 
       <section className={'pt60'}>
         <div className={'container-fluid' + ' ' + styles.tabSpace}>
@@ -43,7 +43,7 @@ function index() {
 
             <Tab.Content>
               <Tab.Pane eventKey='first'>
-                <section className={'greybg' + ' ' + 'pt60' + ' ' + 'pb60'}>
+                <section className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60'}>
                   <div className='container'>
                     <div className='row'>
                       <div className='col-md-6'>
@@ -341,6 +341,82 @@ function index() {
                     <div className='row'>
                       <div className='col-md-6'>
                         <h2 className='ulineRed'>Friendship Day Celebration</h2>
+
+                        <p className='pt-4'>
+                          Students of VMPS celebrated Friendship Day in school
+                          to show love and respect to their friends. They were
+                          engaged in the card making activity. The entire
+                          concept was to inculcate the value of friendship not
+                          only to school mates but also a special card was asked
+                          to be made to be given to their teacher or mother or
+                          father or even a helper at home.
+                        </p>
+                      </div>
+
+                      <div className='col-md-6'>
+                        <div className='imgUp'>
+                          <img
+                            src='/assets/events/beachday.png'
+                            alt='image'
+                            className='img-fluid'
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section
+                  className={
+                    'greybg' +
+                    ' ' +
+                    'pt60' +
+                    ' ' +
+                    'pb60' +
+                    ' ' +
+                    styles.eventGallery
+                  }
+                >
+                  <div className='container'>
+                    <div className={'row' + ' ' + 'vmpsslide'}>
+                      <div className='col-md-12'>
+                        <Splide
+                          options={{
+                            rewind: true,
+                            gap: '1rem',
+                            perPage: 3,
+                            pagination: false,
+                            arrows: true,
+                          }}
+                        >
+                          <SplideSlide>
+                            <img
+                              src='/assets/events/beachday.png'
+                              alt='image'
+                              className='img-fluid'
+                            />
+                          </SplideSlide>
+
+                          <SplideSlide>
+                            <img
+                              src='/assets/events/beachday.png'
+                              alt='image'
+                              className='img-fluid'
+                            />
+                          </SplideSlide>
+                        </Splide>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </Tab.Pane>
+
+              <Tab.Pane eventKey='six'>
+                <section className={'greybg' + ' ' + 'pt60' + ' ' + 'pb60'}>
+                  <div className='container'>
+                    <div className='row'>
+                      <div className='col-md-6'>
+                        <h2 className='ulineRed'>Girl Child Protection Day</h2>
 
                         <p className='pt-4'>
                           Students of VMPS celebrated Friendship Day in school
