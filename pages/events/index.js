@@ -10,8 +10,6 @@ import { events } from '../../data/events'
 function index() {
   const pageTitle = 'Events'
 
-  const [gallery, setGallery] = useState([])
-
   return (
     <>
       <Breadcrumb pageName={pageTitle} />
@@ -29,9 +27,9 @@ function index() {
               </div>
             </div>
 
-            {events.map((data, key) => {
+            {events.map((data, index) => {
               return (
-                <Tab.Content>
+                <Tab.Content key={index}>
                   <Tab.Pane eventKey={data.id}>
                     <section
                       className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60'}
@@ -81,9 +79,9 @@ function index() {
                                 arrows: true,
                               }}
                             >
-                              {data.gallery?.map((data, key) => {
+                              {data.gallery?.map((data, index) => {
                                 return (
-                                  <SplideSlide>
+                                  <SplideSlide key={index}>
                                     <img
                                       src={data}
                                       alt='image'

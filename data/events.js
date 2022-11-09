@@ -66,14 +66,84 @@ export const events = [
 
   {
     id: 'six',
-    dropdown: 'Friendship Day Celebration',
-    title: '',
+    dropdown: 'Girl Child Protection Day',
+    title: 'Girl Child Protection Day',
     desc: '',
-    mainImage: '',
+    mainImage: '/assets/events/girl-child-protection/1.jpeg',
     gallery: [
-      '/assets/events/friendship/1.jpeg','/assets/events/friendship/2.jpeg','/assets/events/friendship/3.jpeg','/assets/events/friendship/4.jpeg','/assets/events/friendship/5.jpeg',
-      '/assets/events/friendship/6.jpeg','/assets/events/friendship/7.jpeg','/assets/events/friendship/8.jpeg',
+      '/assets/events/girl-child-protection/1.jpeg','/assets/events/girl-child-protection/2.jpeg','/assets/events/girl-child-protection/3.jpeg','/assets/events/girl-child-protection/4.jpeg','/assets/events/girl-child-protection/5.jpeg',
+      '/assets/events/girl-child-protection/6.jpeg','/assets/events/girl-child-protection/7.jpeg','/assets/events/girl-child-protection/8.jpeg',
     ],
   },
+
+  {
+    id: 'seven',
+    dropdown: 'Independence Day Celebrations',
+    title: 'Independence Day Celebrations',
+    desc: '',
+    mainImage: '/assets/events/independence-day/4.jpeg',
+    gallery: [
+      '/assets/events/independence-day/1.jpeg','/assets/events/independence-day/2.jpeg','/assets/events/independence-day/3.jpeg','/assets/events/independence-day/4.jpeg','/assets/events/independence-day/5.jpeg',
+      '/assets/events/independence-day/6.jpeg','/assets/events/independence-day/7.jpeg','/assets/events/independence-day/8.jpeg',
+    ],
+  },
+
+  {
+    id: 'eight',
+    dropdown: 'International Yoga Day',
+    title: 'International Yoga Day Celebration @ VMPS',
+    desc: 'Mrs.Kavitha highlighted the  benefits of few ashanas. Made children understand yoga is a mental, physical and spiritual practice that needs to be carried every day.Children got the chance to know how yoga embodies unity of mind and body.',
+    mainImage: '/assets/events/yoga/3.jpeg',
+    gallery: [
+      '/assets/events/yoga/1.jpeg','/assets/events/yoga/2.jpeg','/assets/events/yoga/3.jpeg','/assets/events/yoga/4.jpeg','/assets/events/yoga/5.jpeg',
+      '/assets/events/yoga/6.jpeg','/assets/events/yoga/7.jpeg','/assets/events/yoga/8.jpeg',
+    ],
+  },
+
+  {
+    id: 'nine',
+    dropdown: 'Investiture Ceremony',
+    title: 'Investiture Ceremony',
+    desc: '',
+    mainImage: '/assets/events/investiture-ceremony/5.jpeg',
+    gallery: [
+      '/assets/events/investiture-ceremony/1.jpeg','/assets/events/investiture-ceremony/2.jpeg','/assets/events/investiture-ceremony/3.jpeg','/assets/events/investiture-ceremony/4.jpeg','/assets/events/investiture-ceremony/5.jpeg',
+      '/assets/events/investiture-ceremony/6.jpeg','/assets/events/investiture-ceremony/7.jpeg','/assets/events/investiture-ceremony/8.jpeg','/assets/events/investiture-ceremony/9.jpeg','/assets/events/investiture-ceremony/10.jpeg',
+      '/assets/events/investiture-ceremony/11.jpeg','/assets/events/investiture-ceremony/12.jpeg','/assets/events/investiture-ceremony/13.jpeg','/assets/events/investiture-ceremony/14.jpeg','/assets/events/investiture-ceremony/15.jpeg',
+      '/assets/events/investiture-ceremony/16.jpeg','/assets/events/investiture-ceremony/17.jpeg','/assets/events/investiture-ceremony/18.jpeg','/assets/events/investiture-ceremony/19.jpeg','/assets/events/investiture-ceremony/20.jpeg',
+      '/assets/events/investiture-ceremony/21.jpeg','/assets/events/investiture-ceremony/22.jpeg','/assets/events/investiture-ceremony/23.jpeg','/assets/events/investiture-ceremony/24.jpeg','/assets/events/investiture-ceremony/25.jpeg',
+      '/assets/events/investiture-ceremony/30.jpeg','/assets/events/investiture-ceremony/26.jpeg','/assets/events/investiture-ceremony/27.jpeg','/assets/events/investiture-ceremony/28.jpeg','/assets/events/investiture-ceremony/29.jpeg',
+      '/assets/events/investiture-ceremony/31.jpeg','/assets/events/investiture-ceremony/32.jpeg','/assets/events/investiture-ceremony/33.jpeg','/assets/events/investiture-ceremony/34.jpeg','/assets/events/investiture-ceremony/35.jpeg',
+      '/assets/events/investiture-ceremony/36.jpeg','/assets/events/investiture-ceremony/37.jpeg','/assets/events/investiture-ceremony/38.jpeg','/assets/events/investiture-ceremony/39.jpeg','/assets/events/investiture-ceremony/40.jpeg',
+      '/assets/events/investiture-ceremony/41.jpeg','/assets/events/investiture-ceremony/42.jpeg','/assets/events/investiture-ceremony/43.jpeg','/assets/events/investiture-ceremony/44.jpeg','/assets/events/investiture-ceremony/45.jpeg',
+      '/assets/events/investiture-ceremony/46.jpeg','/assets/events/investiture-ceremony/47.jpeg','/assets/events/investiture-ceremony/48.jpeg','/assets/events/investiture-ceremony/49.jpeg','/assets/events/investiture-ceremony/50.jpeg',
+      '/assets/events/investiture-ceremony/51.jpeg','/assets/events/investiture-ceremony/52.jpeg','/assets/events/investiture-ceremony/53.jpeg','/assets/events/investiture-ceremony/54.jpeg','/assets/events/investiture-ceremony/55.jpeg',
+      '/assets/events/investiture-ceremony/56.jpeg','/assets/events/investiture-ceremony/57.jpeg','/assets/events/investiture-ceremony/58.jpeg','/assets/events/investiture-ceremony/59.jpeg','/assets/events/investiture-ceremony/60.jpeg',
+      '/assets/events/investiture-ceremony/61.jpeg','/assets/events/investiture-ceremony/62.jpeg','/assets/events/investiture-ceremony/63.jpeg','/assets/events/investiture-ceremony/64.jpeg','/assets/events/investiture-ceremony/65.jpeg',
+      '/assets/events/investiture-ceremony/66.jpeg','/assets/events/investiture-ceremony/66.jpeg','/assets/events/investiture-ceremony/68.jpeg','/assets/events/investiture-ceremony/69.jpeg','/assets/events/investiture-ceremony/70.jpeg',
+      '/assets/events/investiture-ceremony/71.jpeg','/assets/events/investiture-ceremony/72.jpeg','/assets/events/investiture-ceremony/73.jpeg','/assets/events/investiture-ceremony/74.jpeg','/assets/events/investiture-ceremony/75.jpeg',
+      '/assets/events/investiture-ceremony/76.jpeg','/assets/events/investiture-ceremony/77.jpeg','/assets/events/investiture-ceremony/78.jpeg','/assets/events/investiture-ceremony/79.jpeg','/assets/events/investiture-ceremony/80.jpeg',
+      '/assets/events/investiture-ceremony/81.jpeg','/assets/events/investiture-ceremony/82.jpeg','/assets/events/investiture-ceremony/83.jpeg','/assets/events/investiture-ceremony/84.jpeg','/assets/events/investiture-ceremony/85.jpeg',
+      '/assets/events/investiture-ceremony/86.jpeg',
+      
+
+    ],
+  },
+
+
+  {
+    id: 'nine',
+    dropdown: 'Janmashtami celebrations',
+    title: 'Janmashtami celebrations',
+    desc: '',
+    mainImage: '/assets/events/yoga/3.jpeg',
+    gallery: [
+      '/assets/events/yoga/1.jpeg','/assets/events/yoga/2.jpeg','/assets/events/yoga/3.jpeg','/assets/events/yoga/4.jpeg','/assets/events/yoga/5.jpeg',
+      '/assets/events/yoga/6.jpeg','/assets/events/yoga/7.jpeg','/assets/events/yoga/8.jpeg',
+    ],
+  },
+
+  
+
 
 ]
