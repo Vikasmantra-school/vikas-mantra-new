@@ -53,7 +53,7 @@ const Technology = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <img src='/assets/campus/technology.png' alt="image" className={styles.libraryImg} />
+                            <img src='/assets/campus/classroom.png' alt="image" className={styles.libraryImg} />
 
                         </div>
 
