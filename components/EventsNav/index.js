@@ -91,14 +91,6 @@ function EventsNav() {
 
             <Dropdown.Item>
               <Nav.Item>
-                <Nav.Link className={styles.tabNavLink} eventKey='ten'>
-                  Janmashtami celebrations
-                </Nav.Link>
-              </Nav.Item>
-            </Dropdown.Item>
-
-            <Dropdown.Item>
-              <Nav.Item>
                 <Nav.Link className={styles.tabNavLink} eventKey='eleven'>
                   KG Graduation
                 </Nav.Link>
@@ -129,7 +121,7 @@ function EventsNav() {
               </Nav.Item>
             </Dropdown.Item>
 
-            {/* <Dropdown.Item>
+            <Dropdown.Item>
 
                 <Nav.Item>
                     <Nav.Link className={styles.tabNavLink} eventKey="fifteen">Sense Booth</Nav.Link>
@@ -153,13 +145,13 @@ function EventsNav() {
 
             </Dropdown.Item>
 
-            <Dropdown.Item>
+            {/* <Dropdown.Item>
 
                 <Nav.Item>
                     <Nav.Link className={styles.tabNavLink} eventKey="eighteen">The Journey</Nav.Link>
                 </Nav.Item>
 
-            </Dropdown.Item>
+            </Dropdown.Item> */}
 
             <Dropdown.Item>
 
@@ -175,7 +167,23 @@ function EventsNav() {
                     <Nav.Link className={styles.tabNavLink} eventKey="twenty">Yellow Day</Nav.Link>
                 </Nav.Item>
 
-            </Dropdown.Item> */}
+            </Dropdown.Item>
+
+            <Dropdown.Item>
+
+                <Nav.Item>
+                    <Nav.Link className={styles.tabNavLink} eventKey="twenty-one">Young Leaders Awards</Nav.Link>
+                </Nav.Item>
+
+            </Dropdown.Item>
+
+            <Dropdown.Item>
+
+                <Nav.Item>
+                    <Nav.Link className={styles.tabNavLink} eventKey="twenty-two">Investiture Ceremony 2021 - 22</Nav.Link>
+                </Nav.Item>
+
+            </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </Nav>
