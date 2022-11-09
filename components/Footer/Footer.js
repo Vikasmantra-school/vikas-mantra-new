@@ -2,39 +2,82 @@ import Image from 'next/image'
 import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
 import Link from 'next/link'
+import { useState } from 'react'
+import axios from 'axios'
 
 
 const Footer = () => {
+
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phoneNumber, setPhoneNumber] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        // console.log(name,email,number)
+        const data = {
+            Name: name,
+            Email: email,
+            PhoneNumber: phoneNumber,
+        }
+        axios.post('https://sheet.best/api/sheets/4a367836-82f9-44ed-913b-a2260b87ae47', data).then((response) => {
+            console.log(response)
+            //clearing-form-fields
+            setName('')
+            setEmail('')
+            setPhoneNumber('')
+
+        })
+    }
     return (
         <div className={styles.section + " pt-5 pb-4 "}>
             <div className="container">
 
                 <div className="row ">
 
-                    <div className='col-md-4'>
+                    <div className={'col-md-4 '}>
 
-                        <div className='mb-5'>
-                            <h6>VISIT THE SCHOOL</h6>
-                            <h3>FOR AN ADMISSION TOUR</h3>
+                        <div className={styles.formCol}>
+
+                            <div className='mb-5'>
+                                <h6>VISIT THE SCHOOL</h6>
+                                <h3>FOR AN ADMISSION TOUR</h3>
+                            </div>
+
+                            <form onSubmit={handleSubmit} >
+
+                                <div className="mb-3">
+                                    <input type="text" className={styles.formInput + " form-control"} placeholder='Name'
+                                        required
+                                        onChange={(e) => setName(e.target.value)}
+                                        value={name}
+                                    />
+                                </div>
+
+                                <div className="mb-3">
+                                    <input type="email" className={styles.formInput + " form-control"} aria-describedby="emailHelp" placeholder='Email'
+                                        required
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        value={email}
+                                    />
+
+                                </div>
+
+                                <div className="mb-3">
+                                    <input type="number" className={styles.formInput + " form-control"} placeholder='Number'
+                                        required
+                                        onChange={(e) => setPhoneNumber(e.target.value)}
+                                        value={phoneNumber}
+                                    />
+                                </div>
+
+                                <button type="submit" className={styles.sendBtn + " btn btn-light mt-4"}>Send</button>
+                            </form>
+
+                            <p className='mt-4'>Our admission officer will contact you shortly</p>
+
                         </div>
-
-                        <form>
-                            <div className="mb-3">
-                                <input type="text" className={styles.formInput + " form-control"} placeholder='Name' />
-                            </div>
-
-                            <div className="mb-3">
-                                <input type="email" className={styles.formInput + " form-control"} aria-describedby="emailHelp" placeholder='Email' />
-                            </div>
-
-                            <div className="mb-3">
-                                <input type="number" className={styles.formInput + " form-control"} placeholder='Number' />
-                            </div>
-
-                            <button type="submit" className={styles.sendBtn + " btn btn-light mt-4"}>Send</button>
-                        </form>
-
-                        <p className='mt-4'>Our admission officer will contact you shortly</p>
 
                     </div>
 
@@ -42,19 +85,22 @@ const Footer = () => {
 
                         <div className='row align-items-center'>
 
-                            <div className='col-md-4'>
-                                <Image src={VikasLogo} alt='image' />
+                            <div className={'col-md-4 '}>
+                                <div className={styles.logoCol}>
+                                    <Image src={VikasLogo} alt='image' className={styles.logo} />
+                                </div>
                             </div>
 
-                            <div className='col-md-8'>
+                            <div className={'col-md-8 '}>
 
-                                <h3>ABOUT</h3>
-                                <p>Vikas Mantra Public School is established
-                                    with a vision to prepare and equip each
-                                    child with the necessary survival skills in
-                                    the 21st century through rigorous academic
-                                    and technological skills.</p>
-
+                                <div className={styles.aboutCol}>
+                                    <h3>ABOUT</h3>
+                                    <p>Vikas Mantra Public School is established
+                                        with a vision to prepare and equip each
+                                        child with the necessary survival skills in
+                                        the 21st century through rigorous academic
+                                        and technological skills.</p>
+                                </div>
 
                             </div>
 
@@ -62,68 +108,72 @@ const Footer = () => {
 
                         <div className='row'>
 
-                            <div className={styles.contactUs + ' col-md-6'}>
+                            <div className={' col-md-6'}>
 
-                                <h3>CONTACT US</h3>
-                                <p> S.No:168,168/3, Off Mahindra World City, </p>
-                                <p> Anjur 603204, Chengalpattu</p>
-                                <p> info@vikasmantra.org</p>
-                                <p> admissions@vikasmantra.org</p>
-
-                            </div>
-
-                            <div className='col-md-6'>
-                                <h3>QUICK LINKS</h3>
-                                <div className={styles.quickLink + ' row'}>
-
-                                    <div className='col-md-4'>
-                                        <Link href='/about' legacyBehavior>
-                                            <a className='nav-link'>About Us</a>
-                                        </Link>
-
-                                        <Link href='/campus/classrooms' legacyBehavior>
-                                            <a className='nav-link'>Campus</a>
-                                        </Link>
-
-                                        <Link href="/learning" legacyBehavior>
-                                            <a className='nav-link'>Learning</a>
-                                        </Link>
-
-                                    </div>
-
-                                    <div className='col-md-4'>
-
-                                        <Link href="/events" legacyBehavior>
-                                            <a className='nav-link'>Events</a>
-                                        </Link>
-
-                                        <Link href="/admissions" legacyBehavior>
-                                            <a className='nav-link'>Admissions</a>
-                                        </Link>
-
-                                        <Link href="/mandatory-public-disclosures" legacyBehavior>
-                                            <a className='nav-link'>Faculty</a>
-                                        </Link>
-
-                                    </div>
-
-                                    <div className='col-md-4'>
-
-                                        <Link href="/careers" legacyBehavior>
-                                            <a className='nav-link'>Careers</a>
-                                        </Link>
-
-                                        <Link href="/contact"  legacyBehavior>
-                                        <a className='nav-link'>Contact</a>
-                                        </Link>
-
-                                    </div>
-
-
+                                <div className={styles.contactUs}>
+                                    <h3>CONTACT US</h3>
+                                    <p> S.No:168,168/3, Off Mahindra World City, </p>
+                                    <p> Anjur 603204, Chengalpattu</p>
+                                    <p> info@vikasmantra.org</p>
+                                    <p> admissions@vikasmantra.org</p>
                                 </div>
 
                             </div>
 
+                            <div className={'col-md-6 '}>
+                                <div className={styles.quickLinksCol}>
+                                    <h3>QUICK LINKS</h3>
+                                    <div className={styles.quickLink + ' row'}>
+
+                                        <div className='col-md-4'>
+                                            <Link href='/about' legacyBehavior>
+                                                <a className='nav-link'>About Us</a>
+                                            </Link>
+
+                                            <Link href='/campus/classrooms' legacyBehavior>
+                                                <a className='nav-link'>Campus</a>
+                                            </Link>
+
+                                            <Link href="/learning" legacyBehavior>
+                                                <a className='nav-link'>Learning</a>
+                                            </Link>
+
+                                        </div>
+
+                                        <div className='col-md-4'>
+
+                                            <Link href="/events" legacyBehavior>
+                                                <a className='nav-link'>Events</a>
+                                            </Link>
+
+                                            <Link href="/admissions" legacyBehavior>
+                                                <a className='nav-link'>Admissions</a>
+                                            </Link>
+
+                                            <Link href="/mandatory-public-disclosures" legacyBehavior>
+                                                <a className='nav-link'>Faculty</a>
+                                            </Link>
+
+                                        </div>
+
+                                        <div className='col-md-4'>
+
+                                            <Link href="/careers" legacyBehavior>
+                                                <a className='nav-link'>Careers</a>
+                                            </Link>
+
+                                            <Link href="/contact" legacyBehavior>
+                                                <a className='nav-link'>Contact</a>
+                                            </Link>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
 
                         </div>
 
@@ -131,6 +181,7 @@ const Footer = () => {
 
                 </div>
             </div>
+
             <hr className={styles.hrLine} />
             <p className={'text-center mt-4' + ' ' + styles.bottomText}>Vikas Mantra Public School © 2020 | All Rights Reserved | Coded by Benfy</p>
 
