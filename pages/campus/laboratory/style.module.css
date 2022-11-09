@@ -41,7 +41,6 @@
     width: 190px;
     top: 52vh;
 }
-
 .vectorImg10::after {
     content: '';
     position: absolute;
