@@ -646,7 +646,7 @@ const Admissions = () => {
                         data-bs-parent='#accordionExample'
                       >
                         <div className='accordion-body'>
-                          <p className={styles.paraPdng}>
+                          <p>
                             Admission decisions are made purely on first come
                             first serve basis for lower classes. It is also made
                             on merit, aptitude of the applicant, and involvement
