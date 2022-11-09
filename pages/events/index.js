@@ -41,9 +41,7 @@ function index() {
                           <div className='col-md-6'>
                             <h2 className='ulineRed'>{data.title} </h2>
 
-                            <p className='pt-4'>
-                              We the tiny n happy fishes in the marine world.{' '}
-                            </p>
+                            <p className='pt-4'>{data.desc}</p>
                             <p>
                               Today at Vikas Mantra Public School organized The
                               Beach Day as a part of monthly concept. Children
@@ -55,7 +53,7 @@ function index() {
                           <div className='col-md-6'>
                             <div className='imgUp'>
                               <img
-                                src={data.image}
+                                src={data.mainImage}
                                 alt='image'
                                 className='img-fluid'
                               />
@@ -88,13 +86,17 @@ function index() {
                                 arrows: true,
                               }}
                             >
-                              <SplideSlide>
-                                <img
-                                  src='/assets/events/beachday.png'
-                                  alt='image'
-                                  className='img-fluid'
-                                />
-                              </SplideSlide>
+                              {data.gallery?.map((data, key) => {
+                                return (
+                                  <SplideSlide>
+                                    <img
+                                      src={data}
+                                      alt='image'
+                                      className='img-fluid'
+                                    />
+                                  </SplideSlide>
+                                )
+                              })}
                             </Splide>
                           </div>
                         </div>
