@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import '../styles/globals.css'
 import Nav from '../components/Header/Nav'
 import Footer from '../components/Footer/Footer'
+import 'semantic-ui-css/semantic.min.css';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
