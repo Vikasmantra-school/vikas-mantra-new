@@ -13,7 +13,7 @@
 .mdBg::before{content: "";
     position: absolute;
     top: -238px;
-    left: 60px;
+    left: -155px;
     width: 100%;
     height: 237px;
     background: url(/assets/vectors/circle-vector.png);

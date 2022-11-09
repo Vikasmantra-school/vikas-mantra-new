@@ -42,12 +42,7 @@ function index() {
                             <h2 className='ulineRed'>{data.title} </h2>
 
                             <p className='pt-4'>{data.desc}</p>
-                            <p>
-                              Today at Vikas Mantra Public School organized The
-                              Beach Day as a part of monthly concept. Children
-                              learnt the concept of going to beach in summer.
-                              Underwater creatures were taught through songs.
-                            </p>
+                
                           </div>
 
                           <div className='col-md-6'>
@@ -81,7 +76,7 @@ function index() {
                               options={{
                                 rewind: true,
                                 gap: '1rem',
-                                perPage: 3,
+                                perPage: 4,
                                 pagination: false,
                                 arrows: true,
                               }}
@@ -92,7 +87,7 @@ function index() {
                                     <img
                                       src={data}
                                       alt='image'
-                                      className='img-fluid'
+                                      className='img-fluid eventsGallery'
                                     />
                                   </SplideSlide>
                                 )
