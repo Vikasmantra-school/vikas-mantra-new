@@ -509,7 +509,7 @@ p {
 }
 
 .vmpsslide .splide__arrow {
-  top: 95%;
+  top: 112%;
 }
 
 .splide__track {
@@ -878,6 +878,10 @@ tr {
 .table-bordered>:not(caption)>*>*{border-width: unset;}
 
 .table>tbody {vertical-align: middle;}
+
+.eventsGallery{height: 250px;object-fit: cover;}
+
+.splide__slide{text-align: center;}
 
 
 
