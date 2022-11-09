@@ -49,10 +49,10 @@ const Laboratory = () => {
 
                         <div className='col-md-6 position-relative offset-md-1'>
 
-                            <img src='/assets/campus/lab1.png' alt="image" className={styles.labImg1} />
-
-                            {/* <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} /> */}
-
+                            <div>
+                                <img src='/assets/campus/lab1.png' alt="image" className={styles.labImg1} />
+                            </div>
+                            
                         </div>
 
                     </div>
@@ -103,7 +103,11 @@ const Laboratory = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <img src='/assets/campus/lab3.png' alt="image" className={styles.labImg3} />
+                            <div>
+
+                                <img src='/assets/campus/lab3.png' alt="image" className={styles.labImg3} />
+
+                            </div>
 
                         </div>
 

@@ -4,24 +4,23 @@
 }
 
 .labImg1 {
-    height: 440px;
-    position: absolute;
+    /* height: 440px; */
+    /* position: absolute;
     top: -260px;
-    width: auto;
-    left: -50px;
+    left: -50px; */
+    width: 100%;
 }
 
 .labImg2 {
-    height: 440px;
-    right: 212px;
-    position: relative;
-    width: auto;
+    /* right: 212px;
+    position: relative; */
+    width: 100%;
 }
 
 .labImg3 {
-    height: 418px;
-    right: -35px;
-    position: relative;
+    /* right: -35px;
+    position: relative; */
+    width: 100%;
 }
 
 .sectionPdng {
