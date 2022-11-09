@@ -132,15 +132,175 @@ export const events = [
 
 
   {
-    id: 'nine',
+    id: 'ten',
     dropdown: 'Janmashtami celebrations',
     title: 'Janmashtami celebrations',
     desc: '',
-    mainImage: '/assets/events/yoga/3.jpeg',
+    mainImage: '/assets/events/janmashtami/2.jpg',
     gallery: [
-      '/assets/events/yoga/1.jpeg','/assets/events/yoga/2.jpeg','/assets/events/yoga/3.jpeg','/assets/events/yoga/4.jpeg','/assets/events/yoga/5.jpeg',
-      '/assets/events/yoga/6.jpeg','/assets/events/yoga/7.jpeg','/assets/events/yoga/8.jpeg',
+      '/assets/events/janmashtami/1.jpg','/assets/events/janmashtami/2.jpg','/assets/events/janmashtami/3.jpg','/assets/events/janmashtami/4.jpg','/assets/events/janmashtami/5.jpg',
+      '/assets/events/janmashtami/6.jpg','/assets/events/janmashtami/7.jpg',
     ],
+  },
+
+  {
+    id: 'eleven',
+    dropdown: 'KG Graduation',
+    title: 'KG Graduation',
+    desc: '',
+    mainImage: '/assets/events/kg-graduation/1.jpg',
+    gallery: [
+      '/assets/events/kg-graduation/1.jpg','/assets/events/kg-graduation/2.jpg','/assets/events/kg-graduation/3.jpg','/assets/events/kg-graduation/4.jpg','/assets/events/kg-graduation/5.jpg',
+      '/assets/events/kg-graduation/6.jpg','/assets/events/kg-graduation/7.jpg','/assets/events/kg-graduation/8.jpg','/assets/events/kg-graduation/9.jpg','/assets/events/kg-graduation/10.jpg',
+      '/assets/events/kg-graduation/11.jpg','/assets/events/kg-graduation/12.jpg','/assets/events/kg-graduation/13.jpg','/assets/events/kg-graduation/14.jpg',
+    ]
+  },
+
+  {
+    id: 'twevle',
+    dropdown: 'National Sports Day',
+    title: 'National Sports Day',
+    desc: 'Students of VMPS celebrated the Indian National Sports day on 29th August 2019 to mark the birth anniversary of Indian hockey wizard Major Dhyan Chand. To commemorate the event HOUSE COMPETITION was held on Tableau to create interest and awareness of sports.',
+    mainImage: '/assets/events/national-sports-day/3.jpg',
+    gallery: [
+      '/assets/events/national-sports-day/1.jpg','/assets/events/national-sports-day/2.jpg','/assets/events/national-sports-day/3.jpg','/assets/events/national-sports-day/4.jpg','/assets/events/national-sports-day/5.jpg',
+      '/assets/events/national-sports-day/6.jpg','/assets/events/national-sports-day/7.jpg','/assets/events/national-sports-day/8.jpg','/assets/events/national-sports-day/9.jpg','/assets/events/national-sports-day/10.jpg',
+      
+    ]
+  },
+
+  {
+    id: 'thirteen',
+    dropdown: 'Newspaper feature article',
+    title: 'Newspaper feature article',
+    desc: '',
+    mainImage: '/assets/events/newspaper-article/1.jpg',
+    gallery: [
+      '/assets/events/newspaper-article/1.jpg','/assets/events/newspaper-article/2.jpg','/assets/events/newspaper-article/3.jpg',
+      
+    ]
+  },
+
+  {
+    id: 'forteen',
+    dropdown: 'Newspaper feature article',
+    title: 'Newspaper feature article',
+    desc: '',
+    mainImage: '/assets/events/science-expo/1.jpg',
+    gallery: [
+      '/assets/events/newspaper-article/1.jpg','/assets/events/newspaper-article/2.jpg','/assets/events/newspaper-article/3.jpg','/assets/events/newspaper-article/4.jpg','/assets/events/newspaper-article/5.jpg',
+      '/assets/events/newspaper-article/6.jpg','/assets/events/newspaper-article/9.jpg','/assets/events/newspaper-article/7.jpg','/assets/events/newspaper-article/8.jpg','/assets/events/newspaper-article/10.jpg',
+      
+    ]
+  },
+
+
+  {
+    id: 'fifteen',
+    dropdown: 'Sense Booth',
+    title: 'Sense Booth',
+    desc: 'The staff and students of Vikas Mantra Public School displayed the Sense Booth activity on July 19, 2019. The concept depicted the five senses of the body which is the integral aspect and the theme SPICE projected the 5 elements of the Happy Tots curriculum – SOCIAL, PHYSICAL, INTELLECTUAL, CREATIVE AND EMOTIONAL. The event was a huge success and parents were overjoyed to be a part of this learning.',
+    mainImage: '/assets/events/sense-booth/1.jpeg',
+    gallery: [
+      '/assets/events/sense-booth/1.jpeg','/assets/events/sense-booth/2.jpeg','/assets/events/sense-booth/3.jpeg','/assets/events/sense-booth/4.jpeg','/assets/events/sense-booth/5.jpeg',
+      '/assets/events/sense-booth/6.jpeg','/assets/events/sense-booth/9.jpeg','/assets/events/sense-booth/7.jpeg','/assets/events/sense-booth/8.jpeg','/assets/events/sense-booth/10.jpeg',
+      '/assets/events/sense-booth/11.jpeg','/assets/events/sense-booth/12.jpeg','/assets/events/sense-booth/13.jpeg',
+      
+    ]
+  },
+
+  {
+    id: 'sixteen',
+    dropdown: 'Skating Competition',
+    title: 'Winners - Skating Competition',
+    desc: 'VMPS are very happy to share that Master. Adwaith of Grade 6 participated in the state level skating champions and won 2 gold medals and a trophy in 500M fancy inline and 1000M respectively.VMPS is proud to share another winner from Grade 1 Sec B Miss Akshara who won Bronze medal in State level 400Mts Skating Competition.    ',
+    mainImage: '/assets/events/skating/1.jpeg',
+    gallery: [
+      '/assets/events/skating/1.jpeg','/assets/events/skating/2.jpeg','/assets/events/skating/3.jpeg','/assets/events/skating/4.jpeg',
+      
+    ]
+  },
+
+  {
+    id: 'seventeen',
+    dropdown: 'Student Excursion',
+    title: 'Student Excursion',
+    desc: 'A week without walls for students at VMPS.Field trips expand children’s learning through hands on experience with rich resources of local community. Educational tours increases student knowledge and understanding of the subject and adds realism to the topic of study.Our children were taken to Bay of Life Kovalam to experience and explore the ocean world.Everyone loves to fly, and flying underwater is even better than flying in air because there are things around you.The sea should be enjoyed, the animals in it.Exactly the children from Vikas mantra school at Marine world had a great exposure to life underneath water. Students saw a school of fish gathering and moving together and exclaimed “This is architecture”. ',
+    mainImage: '/assets/events/student-excursion/20.jpg',
+    gallery: [
+      '/assets/events/student-excursion/1.jpeg','/assets/events/student-excursion/2.jpeg','/assets/events/student-excursion/3.jpeg','/assets/events/student-excursion/4.jpeg','/assets/events/student-excursion/5.jpeg',
+      '/assets/events/student-excursion/6.jpeg','/assets/events/student-excursion/7.jpeg','/assets/events/student-excursion/8.jpeg','/assets/events/student-excursion/9.jpeg','/assets/events/student-excursion/10.jpeg',
+      '/assets/events/student-excursion/11.jpeg','/assets/events/student-excursion/12.jpeg','/assets/events/student-excursion/13.jpeg','/assets/events/student-excursion/14.jpeg','/assets/events/student-excursion/15.jpeg',
+      '/assets/events/student-excursion/16.jpeg','/assets/events/student-excursion/17.jpeg','/assets/events/student-excursion/18.jpeg','/assets/events/student-excursion/19.jpeg','/assets/events/student-excursion/20.jpg',
+      '/assets/events/student-excursion/21.jpg','/assets/events/student-excursion/22.jpg','/assets/events/student-excursion/23.jpg','/assets/events/student-excursion/24.jpg','/assets/events/student-excursion/25.jpg',
+      '/assets/events/student-excursion/26.jpg','/assets/events/student-excursion/27.jpg','/assets/events/student-excursion/29.jpg','/assets/events/student-excursion/28.jpg','/assets/events/student-excursion/30.jpg',
+      '/assets/events/student-excursion/31.jpg','/assets/events/student-excursion/32.jpg','/assets/events/student-excursion/33.jpg','/assets/events/student-excursion/34.jpg','/assets/events/student-excursion/35.jpg',
+      '/assets/events/student-excursion/36.jpg','/assets/events/student-excursion/37.jpg',
+      
+    ]
+  },
+
+
+  {
+    id: 'sixteen',
+    dropdown: 'Skating Competition',
+    title: 'Winners - Skating Competition',
+    desc: 'VMPS are very happy to share that Master. Adwaith of Grade 6 participated in the state level skating champions and won 2 gold medals and a trophy in 500M fancy inline and 1000M respectively.VMPS is proud to share another winner from Grade 1 Sec B Miss Akshara who won Bronze medal in State level 400Mts Skating Competition.    ',
+    mainImage: '/assets/events/skating/1.jpeg',
+    gallery: [
+      '/assets/events/skating/1.jpeg','/assets/events/skating/2.jpeg','/assets/events/skating/3.jpeg','/assets/events/skating/4.jpeg',
+      
+    ]
+  },
+
+  {
+    id: 'nineteen',
+    dropdown: 'This Schools Got Talent 2019',
+    title: 'This Schools Got Talent 2019',
+    desc: 'A Multi-Talent Event was organised at Vikas Mantra Public School on July 19, 2019. The whole campus hummed with action ,children gave dynamic performances in all categories. The students, dressed in colourful attires, they were enthusiastic and filled with confidence towards their performances. The competition included following categories: On Stage Events – Story Telling, Dance and Vocals.Off Stage Events – Art, Best Out of Waste, Vegetable Carving.  Students displayed their talents and left the audience spellbound. The main reason behind organizing this competition was to nurture the intrinsic qualities of students and remove the stage fear, which eventually helped in their personality development .',
+    mainImage: '/assets/events/school-talent/12.jpeg',
+    gallery: [
+      '/assets/events/school-talent/1.jpeg','/assets/events/school-talent/2.jpeg','/assets/events/school-talent/3.jpeg','/assets/events/school-talent/4.jpeg','/assets/events/school-talent/5.jpeg',
+      '/assets/events/school-talent/6.jpeg','/assets/events/school-talent/7.jpeg','/assets/events/school-talent/8.jpeg','/assets/events/school-talent/9.jpeg','/assets/events/school-talent/10.jpeg',
+      '/assets/events/school-talent/11.jpeg','/assets/events/school-talent/12.jpeg','/assets/events/school-talent/13.jpeg','/assets/events/school-talent/14.jpeg','/assets/events/school-talent/15.jpeg',
+    ]
+  },
+
+  {
+    id: 'twenty',
+    dropdown: 'KG - Yellow Day',
+    title: 'KG - Yellow Day',
+    desc: '',
+    mainImage: '/assets/events/yellow-day/2.jpg',
+    gallery: [
+      '/assets/events/yellow-day/1.jpg','/assets/events/yellow-day/2.jpg','/assets/events/yellow-day/3.jpg','/assets/events/yellow-day/4.jpg','/assets/events/yellow-day/5.jpg',
+      '/assets/events/yellow-day/6.jpg','/assets/events/yellow-day/7.jpg',
+    ]
+  },
+
+  {
+    id: 'twenty-one',
+    dropdown: 'Young Leaders Awards',
+    title: 'Young Leaders Awards',
+    desc: 'Our students got awarded in the recent Young Leaders Awards which happened in Chennai.',
+    mainImage: '/assets/events/young-leaders-awards/3.jpg',
+    gallery: [
+      '/assets/events/young-leaders-awards/1.jpg','/assets/events/young-leaders-awards/2.jpg','/assets/events/young-leaders-awards/3.jpg','/assets/events/young-leaders-awards/4.jpg','/assets/events/young-leaders-awards/5.jpg',
+      '/assets/events/young-leaders-awards/6.jpg','/assets/events/young-leaders-awards/7.jpg','/assets/events/young-leaders-awards/8.jpg',
+    ]
+  },
+
+  {
+    id: 'twenty-two',
+    dropdown: 'Investiture Ceremony 2021 - 22',
+    title: 'Investiture Ceremony 2021 - 22',
+    desc: '',
+    mainImage: '/assets/events/investiture-ceremony-22/1.jpg',
+    gallery: [
+      '/assets/events/investiture-ceremony-22/1.jpg','/assets/events/investiture-ceremony-22/2.jpg','/assets/events/investiture-ceremony-22/3.jpg','/assets/events/investiture-ceremony-22/4.jpg','/assets/events/investiture-ceremony-22/5.jpg',
+      '/assets/events/investiture-ceremony-22/6.jpg','/assets/events/investiture-ceremony-22/7.jpg','/assets/events/investiture-ceremony-22/8.jpg','/assets/events/investiture-ceremony-22/9.jpg','/assets/events/investiture-ceremony-22/10.jpg',
+      '/assets/events/investiture-ceremony-22/11.jpg','/assets/events/investiture-ceremony-22/12.jpg','/assets/events/investiture-ceremony-22/13.jpg',
+    ]
   },
 
   
