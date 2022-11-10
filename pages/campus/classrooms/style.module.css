@@ -5,9 +5,18 @@
 
 .classroomImg {
     width: 100%;
-    position: absolute;
+    position: relative;
+}
+
+.classroomImgDiv{
+    position: relative;
     top: -185px;
-    right: -58px;
+}
+
+.classroomImgDiv::after{
+    content: '';
+    position: absolute;
+    background: #DECEF7;
 }
 
 .vectorImg10::before {
