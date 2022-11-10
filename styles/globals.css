@@ -934,7 +934,22 @@ tr {
   background-color: #e0e7ff;
 }
 
-.imgBgColor
+.imgBgColor{position: relative;}
+
+.imgBgColor img{position: relative;z-index: 1;}
+
+.imgBgColor::after{
+
+  content: '';
+  position: absolute;
+    background-color: #C7FAF4;
+    width: 100%;
+    height: 100%;
+    margin-top: -165px;
+    z-index: 0;
+    left: 73px;
+
+}
 
 
 
