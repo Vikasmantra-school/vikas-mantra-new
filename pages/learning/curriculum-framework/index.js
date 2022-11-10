@@ -71,7 +71,7 @@ function CurriculumFrameWork() {
         </div>
       </section>
       <section
-        className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo'}
+        className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo VectorDot VectorSpiralCenter'}
       >
         <div className='container'>
           <div className='row'>
@@ -130,10 +130,10 @@ function CurriculumFrameWork() {
                   outdoor sports</b>
                 </p>
 
-                <div className={styles.navTabContainer + ' whitebg'}>
+                <div className={styles.navTabContainer + ' greybg'}>
                   <nav>
                     <div
-                      className='nav nav-tabs whitebg'
+                      className='nav nav-tabs greybg'
                       id='nav-tab'
                       role='tablist'
                     >
@@ -233,10 +233,10 @@ function CurriculumFrameWork() {
                 </p>
               </div>
 
-              <div className={styles.navTabContainer + ' whitebg mt-3'}>
+              <div className={styles.navTabContainer + ' greybg mt-3'}>
                 <nav>
                   <div
-                    className='nav nav-tabs whitebg curriculum-tab-1'
+                    className='nav nav-tabs greybg curriculum-tab-1'
                     id='nav-tab'
                     role='tablist'
                   >
@@ -364,10 +364,10 @@ function CurriculumFrameWork() {
                 spirit.
               </p>
 
-              <div className={styles.navTabContainer3 + ' whitebg'}>
+              <div className={styles.navTabContainer3 + ' greybg'}>
                 <nav>
                   <div
-                    className='nav nav-tabs whitebg curriculum-tab-1'
+                    className='nav nav-tabs greybg curriculum-tab-1'
                     id='nav-tab'
                     role='tablist'
                   >
@@ -474,7 +474,7 @@ function CurriculumFrameWork() {
             </div>
 
             <div className={'col-md-6'}>
-              <div className='imgUp'>
+              <div className='imgUp imgBgColor pastelBlue'>
                 <img
                   src='/assets/banners/learning-banner-1.png'
                   alt='image'

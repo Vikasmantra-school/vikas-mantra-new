@@ -177,7 +177,7 @@ function PrePrimary() {
             </div>
 
             <div className={'col-md-6'}>
-              <div className='imgUp'>
+              <div className='imgUp imgBgColor pastelYellow'>
                 <img
                   src='/assets/school-building.png'
                   alt='image'

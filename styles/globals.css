@@ -367,7 +367,7 @@ p {
 
 .curriculum-tab .nav-tabs .nav-link.active {
   color: #222 !important;
-  background-color: #fff !important;
+  background-color: #f3f1f2 !important;
   border: #fff !important;
 }
 
@@ -934,6 +934,20 @@ tr {
   background-color: #e0e7ff;
 }
 
+.sticky-sidebar::before{
+
+  content: '';
+  position: absolute;
+  width: 301px;
+    height: 78px;
+    background-image: url(/assets/VMPS.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+    top: 0;
+}
+
 .imgBgColor{position: relative;}
 
 .imgBgColor img{position: relative;z-index: 1;}
@@ -942,14 +956,20 @@ tr {
 
   content: '';
   position: absolute;
-    background-color: #C7FAF4;
     width: 100%;
     height: 100%;
     z-index: 0;
     left: 73px;
-    bottom: 73px;
+    bottom: 100px;
 
 }
+
+.pastelGreen::after{background-color: #C7FAF4;}
+.pastelLightGreen::after{background-color: #D9F7CB;}
+.pastelYellow::after{background-color: #EDF3C4;}
+.pastelBlue::after{background-color: #D1EAF9;}
+
+
 
 
 

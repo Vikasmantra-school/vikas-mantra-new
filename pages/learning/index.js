@@ -183,13 +183,14 @@ function Learning() {
             <div
               className={'col-md-6 learningLogo' + ' ' + styles.vectorSpiral}
             >
-              <div className='imgUp'>
+              <div className='imgUp imgBgColor pastelLightGreen'>
                 <img
                   src='/assets/school-building.png'
                   alt='image'
                   className='img-fluid'
                 />
               </div>
+
               <div className={'sticky-sidebar' + ' ' + 'pt60'}>
                 <ul id='progress'>
                   <li className={'node' + ' ' + 'green'}>

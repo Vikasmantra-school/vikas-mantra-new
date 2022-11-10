@@ -245,7 +245,7 @@ function Curriculum() {
             </div>
 
             <div className={'col-md-6'}>
-              <div className='imgUp imgBgColor'>
+              <div className='imgUp imgBgColor pastelGreen'>
                 <img
                   src='/assets/banners/learning-banner-1.png'
                   alt='image'
