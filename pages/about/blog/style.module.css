@@ -73,6 +73,9 @@
     height: 380px;
     top: -224px;
 }
+.rowBox{
+    border: 2px solid #222;
+}
 
 @media only screen and (max-width: 600px) {
 

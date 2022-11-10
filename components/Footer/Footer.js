@@ -21,7 +21,7 @@ const Footer = () => {
             Email: email,
             PhoneNumber: phoneNumber,
         }
-        axios.post('https://sheet.best/api/sheets/4a367836-82f9-44ed-913b-a2260b87ae47', data).then((response) => {
+        axios.post('https://sheet.best/api/sheets/3d5a42da-df97-4f61-9663-2049cb1ab35e', data).then((response) => {
             console.log(response)
             //clearing-form-fields
             setName('')
