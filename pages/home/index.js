@@ -3,25 +3,57 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import styles from './style.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
-import { gsap } from 'gsap'
 
+import { gsap, Power3 } from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 function Home() {
-  const title = useRef()
+  let title = useRef(null)
+
+  function staggerAnimeFunc(elem, index) {
+    let text = elem.querySelectorAll('.bottomToTop')
+    gsap.fromTo(
+      text,
+      {
+        opacity: 0,
+        y: 200,
+      },
+      {
+        y: 0,
+        duration: 0.9,
+        delay: 0.3,
+        opacity: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: elem,
+          start: 'top center',
+          end: 'bottom bottom',
+          ease: Power3.easeOut,
+          toggleActions: 'play',
+        },
+      }
+    )
+    console.error(text)
+  }
+
+  function titleAnime() {
+    gsap.fromTo(
+      title,
+      { opacity: 0 },
+      {
+        duration: 1.2,
+        opacity: 1,
+        y: -20,
+        ease: Power3.easeOut,
+      }
+    )
+  }
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.from('.box', {
-        duration: 1,
-        // scale: 0.1,
-        y: 40,
-        ease: 'power1.inOut',
-        stagger: {
-          from: 'left',
-          amount: 1.5,
-        },
-      })
-    }, title)
-    return () => ctx.revert()
+    const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
+    parentTrigger.forEach(staggerAnimeFunc)
+    titleAnime()
   }, [])
 
   return (
@@ -30,7 +62,9 @@ function Home() {
         <div className='container'>
           <div className='row'>
             <div
-              ref={title}
+              ref={(el) => {
+                title = el
+              }}
               className={
                 styles.bannercontent +
                 ' ' +
@@ -52,15 +86,21 @@ function Home() {
 
       <section
         className={
-          styles.homeabout + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'greybg'
+          styles.homeabout +
+          ' ' +
+          'pt60' +
+          ' ' +
+          'pb60' +
+          ' ' +
+          'greybg parentAnimeStarts'
         }
       >
         <div className='container'>
           <div className='row align-items-center'>
             <div className='mb-5 col-lg-6 col-md-12 col-sm-12'>
-              <h2>About VMPS</h2>
+              <h2 className='bottomToTop'>About VMPS</h2>
 
-              <p>
+              <p className='bottomToTop'>
                 VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu
                 Kanchipuram is building a distinctive educational platform
                 through a mix of international learning techniques, experienced
@@ -70,7 +110,7 @@ function Home() {
                 passions, yet remain firmly connected to ground realities.{' '}
               </p>
 
-              <p>
+              <p className='bottomToTop'>
                 Learning is not only limited to books and classroom at Vikas
                 Mantra Public School, our students are encouraged to pursue
                 their interests and are given sufficien opportunities to exhibit
@@ -78,7 +118,9 @@ function Home() {
                 conducted frequently.
               </p>
 
-              <button className={'outlineBtn' + ' btn'}>Know More</button>
+              <button className={'outlineBtn' + ' btn bottomToTop'}>
+                Know More
+              </button>
             </div>
 
             <div className='col-lg-6 col-md-12 col-sm-12'>
@@ -92,17 +134,25 @@ function Home() {
         </div>
       </section>
 
-      <section className={styles.welcomeSection + ' ' + 'pt60' + ' ' + 'pb60'}>
+      <section
+        className={
+          styles.welcomeSection + ' ' + 'pt60' + ' ' + 'pb60 parentAnimeStarts'
+        }
+      >
         <div className='container'>
-          <div className={'row' + ' ' + 'mb-xl-5 mb-0'}>
+          <div className={'row yy' + ' ' + 'mb-xl-5 mb-0'}>
             <div className={'z1' + ' ' + 'col-lg-8 col-md-10 col-sm-12'}>
-              <h2>Welcome to Vikas Mantra Public School</h2>
-              <p>
+              <h2 className='bottomToTop'>
+                Welcome to Vikas Mantra Public School
+              </h2>
+              <p className='bottomToTop'>
                 Vikas Mantra Public School, is located in a sprawling campus of
                 5 acres in the serene Mahindra World City away from the hustle
                 and bustle of Chennai.
               </p>
-              <button className={'whiteoutlineBtn' + ' btn'}>Know More</button>
+              <button className={'whiteoutlineBtn' + ' btn bottomToTop'}>
+                Know More
+              </button>
             </div>
           </div>
 
@@ -113,15 +163,16 @@ function Home() {
               }
             >
               <img
+                className='bottomToTop'
                 width='81'
                 height='74'
                 src='/assets/icons/holistic-approach.png'
                 alt='image'
               ></img>
 
-              <h4>Holistic Approach</h4>
+              <h4 className='bottomToTop'>Holistic Approach</h4>
 
-              <p>
+              <p className='bottomToTop'>
                 We place equal emphasis on academic excellence and on the
                 social, physical emotional and development of our students.
               </p>
@@ -133,6 +184,7 @@ function Home() {
               }
             >
               <img
+                className='bottomToTop'
                 width='81'
                 height='74'
                 src='/assets/icons/holistic-approach.png'
@@ -140,9 +192,9 @@ function Home() {
               ></img>
 
               <div className={styles.borderLeft}>
-                <h4>Global Outlook</h4>
+                <h4 className='bottomToTop'>Global Outlook</h4>
 
-                <p>
+                <p className='bottomToTop'>
                   Blending 21st century education techniques with the best from
                   traditional methods of teaching, Vikas Mantra offers a unique
                   programme for students of the emerging India.
@@ -158,14 +210,15 @@ function Home() {
               <img
                 width='81'
                 height='74'
+                className='bottomToTop'
                 src='/assets/icons/holistic-approach.png'
                 alt='image'
               ></img>
 
               <div className={styles.borderLeft}>
-                <h4>Talented Faculty</h4>
+                <h4 className='bottomToTop'>Talented Faculty</h4>
 
-                <p>
+                <p className='bottomToTop'>
                   VIKAS MANTRA PUBLIC SCHOOL faculty have been handpicked to
                   ensure that they bring the right attitude and approach in
                   engaging with students.
@@ -180,15 +233,16 @@ function Home() {
             >
               <img
                 width='81'
+                className='bottomToTop'
                 height='74'
                 src='/assets/icons/holistic-approach.png'
                 alt='image'
               ></img>
 
               <div className={styles.borderLeft}>
-                <h4>Rich Curriculum</h4>
+                <h4 className='bottomToTop'>Rich Curriculum</h4>
 
-                <p>
+                <p className='bottomToTop'>
                   VIKAS MANTRA PUBLIC SCHOOL offers a unique curriculum which
                   comprises of a rigorous academic programme that deepens and
                   broadens knowledge of our students.
@@ -201,13 +255,21 @@ function Home() {
 
       <section
         className={
-          styles.vmpsSection + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'greybg'
+          styles.vmpsSection +
+          ' ' +
+          'pt60' +
+          ' ' +
+          'pb60' +
+          ' ' +
+          'greybg parentAnimeStarts'
         }
       >
         <div className='container'>
           <div className='row align-items-center'>
             <div className='col-xl-3 col-lg-6 col-md-7 col-sm-8'>
-              <h2 className='cursiveFont'>Life at VMPS Our Happy Faces</h2>
+              <h2 className='cursiveFont bottomToTop'>
+                Life at VMPS Our Happy Faces
+              </h2>
             </div>
 
             <div className='col-xl-9 col-lg-6 col-md-5 col-sm-4'>
@@ -271,7 +333,9 @@ function Home() {
             >
               <h1>Inside the World of Vikas Mantra Public School</h1>
               <p>
-              It is a place where diversity is respected and where curiosity, collaboration and contribution all come together to shape considerate individuals with a culturally-sensitive outlook.
+                It is a place where diversity is respected and where curiosity,
+                collaboration and contribution all come together to shape
+                considerate individuals with a culturally-sensitive outlook.
               </p>
             </div>
           </div>
@@ -329,7 +393,9 @@ function Home() {
                       </h4>
 
                       <p>
-                      It’s a very good platform for the students to show cast their ideas, thoughts and skills without any fear to elaborate themselves in front of all hands….
+                        It’s a very good platform for the students to show cast
+                        their ideas, thoughts and skills without any fear to
+                        elaborate themselves in front of all hands….
                       </p>
                     </div>
                   </div>
@@ -347,12 +413,13 @@ function Home() {
                       </h4>
 
                       <p>
-                      It’s a very good opportunity to the students to enhance their extracurricular skills n to know about themselves where they are good at..!
+                        It’s a very good opportunity to the students to enhance
+                        their extracurricular skills n to know about themselves
+                        where they are good at..!
                       </p>
                     </div>
                   </div>
                 </SplideSlide>
-
               </Splide>
             </div>
           </div>
