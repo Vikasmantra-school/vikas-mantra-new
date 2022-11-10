@@ -10,14 +10,26 @@ const Footer = () => {
   const TEMPLATE_ID = 'template_a202rme'
   const USER_ID = 'roN6mvqkDGDuTSSHW'
 
-  const handleOnSubmit = (e) => {
-    e.preventDefault()
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
-      (result) => {
-        console.log(result.text)
-        Swal.fire({
-          icon: 'success',
-          title: 'Message Sent Successfully',
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phoneNumber, setPhoneNumber] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        // console.log(name,email,number)
+        const data = {
+            Name: name,
+            Email: email,
+            PhoneNumber: phoneNumber,
+        }
+        axios.post('https://sheet.best/api/sheets/3d5a42da-df97-4f61-9663-2049cb1ab35e', data).then((response) => {
+            console.log(response)
+            //clearing-form-fields
+            setName('')
+            setEmail('')
+            setPhoneNumber('')
+
         })
       },
       (error) => {

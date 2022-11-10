@@ -4,7 +4,7 @@ import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
 const Blog = () => {
 
     const pageTitle = 'About'
-    
+
     return (
         <>
             <Breadcrumb pageName={pageTitle} />
@@ -23,13 +23,13 @@ const Blog = () => {
 
             </section>
 
-            <section className={styles.sectionContainer + ' whitebg position-relative ' + ' ' + styles.vectorImg2 + ' ' + styles.vectorImg3}>
+            <section className={ ' whitebg position-relative py-5 ' + ' ' + styles.vectorImg2}>
 
                 <div className='container'>
 
-                    <div className='row py-5 align-items-center '>
+                    <div className={'row p-4 align-items-center ' + styles.rowBox}>
 
-                        <div className={ 'col-md-6 ' + styles.colPdng1}>
+                        <div className={'col-md-6 ' + styles.colPdng1}>
 
                             {/* <img src='/assets/vectors/Vector1.png' alt="image" className={styles.vectorImg2} /> */}
 
@@ -54,7 +54,15 @@ const Blog = () => {
 
                     </div>
 
-                    <div className='row py-5 align-items-center '>
+                </div>
+
+            </section>
+
+            <section className={' whitebg position-relative py-5 ' +  styles.vectorImg3 + ' ' + styles.sectionContainer } >
+
+                <div className='container'>
+
+                    <div className={'row p-4 align-items-center ' + styles.rowBox}>
 
                         <div className='col-md-6 position-relative'>
 
@@ -62,7 +70,7 @@ const Blog = () => {
 
                         </div>
 
-                        <div className={'col-md-6 ' +styles.colPdng2}>
+                        <div className={'col-md-6 ' + styles.colPdng2}>
 
                             <h3 className='ulineRed'>BENEFITS OF YOGA FOR SCHOOL STUDENTS</h3>
 
