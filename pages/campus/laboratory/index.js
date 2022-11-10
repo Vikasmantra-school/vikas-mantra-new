@@ -8,6 +8,7 @@ const Laboratory = () => {
     return (
 
         <>
+        
 
             <Breadcrumb pageName={pageTitle} />
 
@@ -32,7 +33,7 @@ const Laboratory = () => {
 
                     <div className='row align-items-center'>
 
-                        <div className='col-md-5'>
+                        <div className='col-md-6'>
 
                             <h3 className='ulineRed'>VIKAS MANTRA PUBLIC
                                 SCHOOL Labs
@@ -47,7 +48,7 @@ const Laboratory = () => {
 
                         </div>
 
-                        <div className='col-md-6 position-relative offset-md-1'>
+                        <div className='col-md-6 position-relative '>
 
                             <div>
                                 <img src='/assets/campus/lab1.png' alt="image" className={styles.labImg1} />
@@ -59,13 +60,13 @@ const Laboratory = () => {
 
                     <div className={styles.sectionPdng + ' row align-items-center'}>
 
-                        <div className={styles.order2 + ' col-md-6 offset-md-1 position-relative'}>
+                        <div className={styles.order2 + ' col-md-6  position-relative'}>
 
                             <img src='/assets/campus/lab2.png' alt="image" className={styles.labImg2} />
 
                         </div>
 
-                        <div className={styles.order1 + ' col-md-5'}>
+                        <div className={styles.order1 + ' col-md-6'}>
 
                             <h3 className='ulineRed'>Science Labs
                             </h3>
@@ -86,7 +87,7 @@ const Laboratory = () => {
 
                     <div className='row align-items-center'>
 
-                        <div className='col-md-5'>
+                        <div className='col-md-6'>
 
                             {/* <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} /> */}
 

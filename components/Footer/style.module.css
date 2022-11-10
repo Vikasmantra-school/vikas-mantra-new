@@ -29,6 +29,7 @@
 
 .formInput {
     border: 5px solid #fff !important;
+    color: #222;
 }
 
 input.formInput::placeholder {

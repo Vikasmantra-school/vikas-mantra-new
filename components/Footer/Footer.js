@@ -3,7 +3,6 @@ import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
 import Link from 'next/link'
 import emailjs from 'emailjs-com'
-import Swal from 'sweetalert2';
 
 
 const Footer = () => {
@@ -18,17 +17,10 @@ const Footer = () => {
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
             .then((result) => {
                 console.log(result.text);
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Message Sent Successfully'
-                })
+                alert('success');
             }, (error) => {
                 console.log(error.text);
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Ooops, something went wrong',
-                    text: error.text,
-                })
+                alert('unsuccess');
             });
         e.target.reset()
     }
