@@ -10,39 +10,6 @@ const Footer = () => {
   const TEMPLATE_ID = 'template_a202rme'
   const USER_ID = 'roN6mvqkDGDuTSSHW'
 
-
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [phoneNumber, setPhoneNumber] = useState('')
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        // console.log(name,email,number)
-        const data = {
-            Name: name,
-            Email: email,
-            PhoneNumber: phoneNumber,
-        }
-        axios.post('https://sheet.best/api/sheets/3d5a42da-df97-4f61-9663-2049cb1ab35e', data).then((response) => {
-            console.log(response)
-            //clearing-form-fields
-            setName('')
-            setEmail('')
-            setPhoneNumber('')
-
-        })
-      },
-      (error) => {
-        console.log(error.text)
-        Swal.fire({
-          icon: 'error',
-          title: 'Ooops, something went wrong',
-          text: error.text,
-        })
-      }
-    )
-    e.target.reset()
-  }
   return (
     <div className={styles.section + ' pt-5 pb-4 '}>
       <div className='container'>
@@ -54,7 +21,7 @@ const Footer = () => {
                 <h3>FOR AN ADMISSION TOUR</h3>
               </div>
 
-              <form onSubmit={handleOnSubmit}>
+              <form>
                 <div className='mb-3'>
                   <input
                     type='text'
