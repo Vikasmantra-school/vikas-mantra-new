@@ -509,7 +509,7 @@ p {
 }
 
 .vmpsslide .splide__arrow {
-  top: 112%;
+  top: 103%;
 }
 
 .splide__track {
@@ -540,7 +540,7 @@ p {
 } */
 
 .imgUp img {
-  margin-top: -165px;
+  top: -165px;
 }
 
 .bglogo {
@@ -889,9 +889,7 @@ tr {
   object-fit: cover;
 }
 
-.splide__slide {
-  text-align: center;
-}
+
 
 /*our-team-dynamic*/
 
@@ -935,6 +933,49 @@ tr {
 .ImgContainer11{
   background-color: #e0e7ff;
 }
+
+.imgBgColor{position: relative;}
+
+.imgBgColor img{position: relative;z-index: 1;}
+
+.imgBgColor::after{
+
+  content: '';
+  position: absolute;
+    background-color: #C7FAF4;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 73px;
+    bottom: 73px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
