@@ -2,27 +2,33 @@ import Image from 'next/image'
 import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
 import Link from 'next/link'
-import emailjs from 'emailjs-com'
+import { useState } from 'react'
+import axios from 'axios'
 
 
 const Footer = () => {
 
 
-    const SERVICE_ID = "service_z5uvtt8"
-    const TEMPLATE_ID = "template_a202rme"
-    const USER_ID = "roN6mvqkDGDuTSSHW"
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phoneNumber, setPhoneNumber] = useState('')
 
-    const handleOnSubmit = (e) => {
-        e.preventDefault();
-        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-            .then((result) => {
-                console.log(result.text);
-                alert('success');
-            }, (error) => {
-                console.log(error.text);
-                alert('unsuccess');
-            });
-        e.target.reset()
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        // console.log(name,email,number)
+        const data = {
+            Name: name,
+            Email: email,
+            PhoneNumber: phoneNumber,
+        }
+        axios.post('https://sheet.best/api/sheets/4a367836-82f9-44ed-913b-a2260b87ae47', data).then((response) => {
+            console.log(response)
+            //clearing-form-fields
+            setName('')
+            setEmail('')
+            setPhoneNumber('')
+
+        })
     }
     return (
         <div className={styles.section + " pt-5 pb-4 "}>
@@ -39,20 +45,21 @@ const Footer = () => {
                                 <h3>FOR AN ADMISSION TOUR</h3>
                             </div>
 
-                            <form onSubmit={handleOnSubmit} >
+                            <form onSubmit={handleSubmit} >
 
                                 <div className="mb-3">
-                                    <input type="text" className={styles.formInput + " form-control"}
-                                        placeholder='Name'
+                                    <input type="text" className={styles.formInput + " form-control"} placeholder='Name'
                                         required
-                                        name='user_name'
+                                        onChange={(e) => setName(e.target.value)}
+                                        value={name}
                                     />
                                 </div>
 
                                 <div className="mb-3">
                                     <input type="email" className={styles.formInput + " form-control"} aria-describedby="emailHelp" placeholder='Email'
                                         required
-                                        name='user_email'
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        value={email}
                                     />
 
                                 </div>
@@ -60,7 +67,8 @@ const Footer = () => {
                                 <div className="mb-3">
                                     <input type="number" className={styles.formInput + " form-control"} placeholder='Number'
                                         required
-                                        name='user_number'
+                                        onChange={(e) => setPhoneNumber(e.target.value)}
+                                        value={phoneNumber}
                                     />
                                 </div>
 
@@ -177,7 +185,10 @@ const Footer = () => {
             <hr className={styles.hrLine} />
             <p className={'text-center mt-4' + ' ' + styles.bottomText}>Vikas Mantra Public School © 2020 | All Rights Reserved | Coded by Benfy</p>
 
+
         </div>
+
+
 
     )
 }
