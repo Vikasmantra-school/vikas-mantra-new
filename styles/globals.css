@@ -978,9 +978,11 @@ tr {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 63px;
+  left: 60px;
   bottom: -50px;
 }
+
+.imgbg{position: relative;}
 
 .imgbg img{position: relative;
   z-index: 1;}
