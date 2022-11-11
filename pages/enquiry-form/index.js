@@ -54,15 +54,31 @@ export default function index() {
 
     if (
       form.name !== '' &&
-      form.email !== '' &&
-      form.topic !== '' &&
-      form.description !== ''
+      form.dob !== '' &&
+      form.lastClassStudied !== '' &&
+      form.nameOfTheCurrentSchool !== '' &&
+      form.admissionSeekingFor !== '' &&
+      form.fatherName !== '' &&
+      form.fatherNumber !== '' &&
+      form.fatherEmail !== '' &&
+      form.motherName !== '' &&
+      form.motherNumber !== '' &&
+      form.motherEmail !== '' &&
+      form.admissionOfCommunication !== ''
     ) {
       const newRow = {
-        FullName: form.name,
-        Email: form.email,
-        Topic: form.topic,
-        Description: form.description,
+        Name: form.name,
+        Dob: form.dob,
+        LastClassStudied: form.lastClassStudied,
+        NameOfTheCurrentSchool: form.nameOfTheCurrentSchool,
+        AdmissionSeekingFor: form.admissionSeekingFor,
+        FatherName: form.fatherName,
+        FatherNumber: form.fatherNumber,
+        FatherEmail: form.fatherEmail,
+        MotherName: form.motherName,
+        MotherNumber: form.motherNumber,
+        MotherEmail: form.motherEmail,
+        AdmissionOfCommunication: form.admissionOfCommunication,
       };
 
       appendSpreadsheet(newRow);
