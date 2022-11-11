@@ -37,52 +37,58 @@ const MessageFromChairMan = () => {
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
 
-                            {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg2} /> */}
+                            <div className={styles.pdngRight}>
 
-                            <h3 className='ulineRed'>Dear stake holders,</h3>
+                                <h3 className='ulineRed'>Dear stake holders,</h3>
 
 
-                            <p className='pt-5'>Starting a school isn’t toughest job in today’s scenario, but
-                                the biggest challenge is making it a successful one by providing
-                                holistic education and helping students to build strong character,
-                                excellent academic standards, develop intellectual curiosity,
-                                build aesthetic qualities along with strong social, emotional
-                                and survival  skills. According to me an ideal school should
-                                aim to help a child to find the right path in life while providing
-                                an excellent base for over all development. Beyond academics at
-                                VMPS, we give ample opportunities to all our students equally
-                                to explore themselves in sports, co-curricular and performing
-                                art activities through experts from the respective fields.
-                            </p>
+                                <p className='pt-5'>Starting a school isn’t toughest job in today’s scenario, but
+                                    the biggest challenge is making it a successful one by providing
+                                    holistic education and helping students to build strong character,
+                                    excellent academic standards, develop intellectual curiosity,
+                                    build aesthetic qualities along with strong social, emotional
+                                    and survival  skills. According to me an ideal school should
+                                    aim to help a child to find the right path in life while providing
+                                    an excellent base for over all development. Beyond academics at
+                                    VMPS, we give ample opportunities to all our students equally
+                                    to explore themselves in sports, co-curricular and performing
+                                    art activities through experts from the respective fields.
+                                </p>
 
-                            <p>
-                                At VMPS we  believe in working in consensus with all the stakeholders
-                                i.e. parents, students and teachers  by providing a conducive teaching,
-                                learning environment and a complete involvement of the parents.
-                                We  firmly believe that the role of the teacher is not confined to the
-                                subject matter delivered and tested in the answer scripts, rather to
-                                work with the students to make it more application oriented for life
-                                beyond school walls; hence teachers professional development is also
-                                our major focus and area of work.
-                            </p>
+                                <p>
+                                    At VMPS we  believe in working in consensus with all the stakeholders
+                                    i.e. parents, students and teachers  by providing a conducive teaching,
+                                    learning environment and a complete involvement of the parents.
+                                    We  firmly believe that the role of the teacher is not confined to the
+                                    subject matter delivered and tested in the answer scripts, rather to
+                                    work with the students to make it more application oriented for life
+                                    beyond school walls; hence teachers professional development is also
+                                    our major focus and area of work.
+                                </p>
 
-                           
+                            </div>
+
                         </div>
 
-                        <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative'>
+                        <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative  '>
 
-                            <img src='/assets/banners/chairman.png' alt="image" className={styles.ChairmanImg} />
+                            <div className='imgBgColor pastelBlue'>
+
+                                <img src='/assets/banners/chairman.png' alt="image" className={styles.ChairmanImg} />
+
+                            </div>
 
                             <img src='/assets/VMPS.png' alt="image" className={styles.vmpsImg} />
 
                         </div>
+
 
                     </div>
 
                     <div className='row'>
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
-                            
+
                         </div>
 
                     </div>
