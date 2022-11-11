@@ -183,13 +183,13 @@ export const events = [
 
   {
     id: 'forteen',
-    dropdown: 'Newspaper feature article',
-    title: 'Newspaper feature article',
+    dropdown: 'Science Expo',
+    title: 'Science Expo',
     desc: '',
     mainImage: '/assets/events/science-expo/1.jpg',
     gallery: [
-      '/assets/events/newspaper-article/1.jpg','/assets/events/newspaper-article/2.jpg','/assets/events/newspaper-article/3.jpg','/assets/events/newspaper-article/4.jpg','/assets/events/newspaper-article/5.jpg',
-      '/assets/events/newspaper-article/6.jpg','/assets/events/newspaper-article/9.jpg','/assets/events/newspaper-article/7.jpg','/assets/events/newspaper-article/8.jpg','/assets/events/newspaper-article/10.jpg',
+      '/assets/events/science-expo/1.jpg','/assets/events/science-expo/2.jpg','/assets/events/science-expo/3.jpg','/assets/events/science-expo/4.jpg','/assets/events/science-expo/5.jpg',
+      '/assets/events/science-expo/6.jpg','/assets/events/science-expo/9.jpg','/assets/events/science-expo/7.jpg','/assets/events/science-expo/8.jpg','/assets/events/science-expo/10.jpg',
       
     ]
   },
