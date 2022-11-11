@@ -10,7 +10,7 @@ const Library = () => {
         <>
 
             <Breadcrumb pageName={pageTitle} />
-            
+
             <section className='pt-4'>
 
                 <div className='container position-relative'>
@@ -60,9 +60,11 @@ const Library = () => {
 
                         <div className={'col-md-7 position-relative ' + styles.vectorImg5}>
 
-                            <img src='/assets/campus/library.png' alt="image" className={styles.libraryImg} />
+                            <div className='imgBgColor pastelPurple2 '>
 
-                            {/* <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} /> */}
+                                <img src='/assets/campus/library.png' alt="image" className={styles.libraryImg} />
+
+                            </div>
 
                         </div>
 

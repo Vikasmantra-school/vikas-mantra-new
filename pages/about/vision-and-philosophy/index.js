@@ -29,21 +29,8 @@ const VisionAndPhilosophy = () => {
       >
         <div className='container'>
           <div className='row'>
-            <div className='col-md-6 position-relative'>
-              <img
-                src='/assets/banners/school-building.png'
-                alt='image'
-                className={styles.schoolBuildingImg}
-              />
 
-              <img
-                src='/assets/VMPS.png'
-                alt='image'
-                className={styles.vmpsImg}
-              />
-            </div>
-
-            <div className='col-md-6 navTab vision-1-Tab'>
+            <div className='col-md-5 navTab vision-1-Tab'>
               <ul className='nav nav-tabs' id='myTab' role='tablist'>
                 <li className='nav-item' role='presentation'>
                   <button
@@ -121,6 +108,21 @@ const VisionAndPhilosophy = () => {
                 {/* <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} /> */}
               </div>
             </div>
+
+            <div className='col-md-6 offset-md-1 position-relative'>
+              <img
+                src='/assets/banners/school-building.png'
+                alt='image'
+                className={styles.schoolBuildingImg}
+              />
+
+              <img
+                src='/assets/VMPS.png'
+                alt='image'
+                className={styles.vmpsImg}
+              />
+            </div>
+
           </div>
         </div>
       </section>

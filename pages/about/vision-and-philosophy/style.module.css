@@ -9,10 +9,10 @@
 }
 
 .schoolBuildingImg {
-    width: 100%;
     position: absolute;
-    left: -106px;
-    top: -190px;
+    right: -62px;
+    top: -115px;
+    height: 500px;
 }
 
 /* .vectorImg5::after {
@@ -67,9 +67,9 @@
 
 .vmpsImg {
     position: absolute;
-    bottom: -145px;
-    right: -550px;
-    height: 55px;
+    bottom: -100px;
+    right: -30px;
+    height: 65px;
 }
 
 .navTabBg {

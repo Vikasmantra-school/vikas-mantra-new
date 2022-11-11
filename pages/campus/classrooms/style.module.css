@@ -13,11 +13,6 @@
     top: -185px;
 }
 
-.classroomImgDiv::after{
-    content: '';
-    position: absolute;
-    background: #DECEF7;
-}
 
 .vectorImg10::before {
     content: '';

@@ -51,9 +51,11 @@ const Security = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <img src='/assets/campus/security.png' alt="image" className={styles.securityImg} />
+                            <div className='imgBgColor pastelRed2'>
 
-                            {/* <img src='/assets/vectors/Vector11.png' alt="image" className={styles.vectorImg11} /> */}
+                                <img src='/assets/campus/security.png' alt="image" className={styles.securityImg} />
+
+                            </div>
 
                         </div>
 

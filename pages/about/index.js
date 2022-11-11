@@ -31,16 +31,9 @@ const About = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-5 position-relative'>
+                        <div className='col-md-5 position-relative '>
 
-                            {/* <img src='/assets/banners/school-building.png' alt="image" className={styles.schoolBuildingImg} /> */}
-                            {/* <img src='/assets/vectors/Vector3.png' alt="image" className={styles.vectorImg2} /> */}
-
-                        </div>
-
-                        <div className='col-md-7 position-relative '>
-
-                            <div className={styles.margin + ' py-5 '}>
+                            <div className={styles.margin + ' pb-5 '}>
 
                                 <h2 className='ulineRed'>About VMPS</h2>
 
@@ -67,9 +60,24 @@ const About = () => {
 
                             </div>
 
-                            <img src='/assets/VMPS.png' alt="image" className={styles.vmpsImg} />
 
                         </div>
+
+                        <div className='col-md-6 offset-md-1 position-relative'>
+
+                            <div className=''>
+
+                                <img src='/assets/banners/school-building.png' alt="image" className={styles.schoolBuildingImg} />
+
+                            </div>
+
+                            <div className='position-relative'>
+
+                                <img src='/assets/VMPS.png' alt="image" className={styles.vmpsImg} />
+
+                            </div>
+                        </div>
+
 
                     </div>
 
@@ -145,8 +153,6 @@ const About = () => {
                 </div>
 
             </section>
-
-
 
 
             <section className={' py-5 d-block d-lg-none '}>

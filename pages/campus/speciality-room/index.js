@@ -8,7 +8,7 @@ const SpecialityRoom = () => {
     return (
         <>
 
-        <Breadcrumb pageName={pageTitle} />
+            <Breadcrumb pageName={pageTitle} />
 
             <section className='pt-4 '>
 
@@ -48,7 +48,11 @@ const SpecialityRoom = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <img src='/assets/campus/classroom.png' alt ="image" className={styles.classroomImg} />
+                            <div className='imgBgColor pastelBrown'>
+
+                                <img src='/assets/campus/classroom.png' alt="image" className={styles.classroomImg} />
+
+                            </div>
 
                         </div>
 

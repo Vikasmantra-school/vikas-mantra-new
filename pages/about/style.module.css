@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     z-index: 1;
-    background-size: 220px;
+    background-size: 140px;
     height: 227px;
     left: 0;
     width: 247px;
@@ -22,18 +22,17 @@
 
 .vmpsImg {
     position: absolute;
-    right: 0;
-    bottom: -40px;
+    right: -70px;
+    top: 435px;
     width: auto;
     height: 70px;
 }
 
 .schoolBuildingImg {
-    width: auto;
     position: absolute;
-    left: -106px;
-    top: -140px;
-    height: 560px;
+    right: -62px;
+    top: -115px;
+    height: 500px;
 }
 
 .sectionStyle {
@@ -41,7 +40,7 @@
     padding-bottom: 80px;
 }
 
-.sectionStyle::before {
+/* .sectionStyle::before {
     content: "";
     position: absolute;
     background-image: url(/assets/banners/school-building.png);
@@ -53,7 +52,7 @@
     bottom: 9%;
     width: calc(100vw - 61vw);
     z-index: 1;
-}
+} */
 
 .bannerSection {
     color: #fff;

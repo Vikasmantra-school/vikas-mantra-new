@@ -23,7 +23,7 @@ const Blog = () => {
 
             </section>
 
-            <section className={ ' whitebg position-relative py-5 ' + ' ' + styles.vectorImg2}>
+            <section className={' whitebg position-relative pt-2 pb-5 ' + ' ' + styles.vectorImg2}>
 
                 <div className='container'>
 
@@ -48,7 +48,11 @@ const Blog = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <img src='/assets/blog1.png' alt="image" className={styles.Blog1Img} />
+                            <div className={'imgBgColor2 pastelBlue'}>
+
+                                <img src='/assets/blog1.png' alt="image" className={styles.Blog1Img} />
+
+                            </div>
 
                         </div>
 
@@ -58,7 +62,7 @@ const Blog = () => {
 
             </section>
 
-            <section className={' whitebg position-relative py-5 ' +  styles.vectorImg3 + ' ' + styles.sectionContainer } >
+            <section className={' whitebg position-relative py-5 ' + styles.vectorImg3 + ' ' + styles.sectionContainer} >
 
                 <div className='container'>
 
@@ -66,7 +70,11 @@ const Blog = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <img src='/assets/blog2.png' alt="image" className={styles.Blog2Img} />
+                            <div className={' pastelBlue imgBgColorLeft '}>
+
+                                <img src='/assets/blog2.png' alt="image" className={styles.Blog2Img} />
+
+                            </div>
 
                         </div>
 

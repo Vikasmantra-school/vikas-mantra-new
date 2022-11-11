@@ -5,12 +5,13 @@
 .Blog1Img {
     position: absolute;
     width: 100%;
+    top: -100px;
     height: 380px;
-    top: -270px;
 }
 
 .Blog2Img {
     width: 100%;
+    top: -70px;
     height: 380px;
 }
 .colPdng1{
@@ -76,6 +77,7 @@
 .rowBox{
     border: 2px solid #222;
 }
+
 
 @media only screen and (max-width: 600px) {
 
