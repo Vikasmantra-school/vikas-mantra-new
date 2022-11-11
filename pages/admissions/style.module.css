@@ -52,9 +52,23 @@
     border: 2px solid #fff;
     border-radius: 0;
     margin-bottom: 0px;
+    position: absolute;
+    top: -480px;
+    left: -100px;
+    z-index: 1;
+}
+
+.card2 {
+    background-color: white;
+    width: 830px;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid #fff;
+    border-radius: 0;
+    margin-bottom: 0px;
     position: relative;
-    top: -125px;
-    left: -70px;
+    top: -140px;
+    left: -100px;
+    z-index: 1;
 }
 
 .Sec1vectorImg5 {
@@ -156,7 +170,7 @@
 }
 
 .cardmargin1 {
-    margin-top: 12rem;
+    margin-top: 1rem;
     margin-left: 222px;
 }
 

@@ -10,11 +10,11 @@ const Contact = () => {
 
             <section className={'pt60' + ' ' + 'pb60'}>
                 <div className='container'>
-                <div className='row'>
-                    <div className='col-md-5'>
-                    <h2>Contact Us</h2>
+                    <div className='row'>
+                        <div className='col-md-5'>
+                            <h2>Contact Us</h2>
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
 
@@ -27,13 +27,17 @@ const Contact = () => {
                         <div className='col-md-6'></div>
 
                         <div className='col-md-6'>
-                        <div className={'imgUp imgBgColor pastelLightPink' + ' ' + styles.careerImg}>
-                            <img
-                            src='/assets/campus/school-building3.png'
-                            alt='image'
-                            className='img-fluid'
-                            />
-                        </div>
+
+                            <div className={'imgUp imgBgColor pastelGreen2' + ' ' + styles.careerImg}>
+
+                                <img
+                                    src='/assets/campus/school-building3.png'
+                                    alt='image'
+                                    className='img-fluid'
+                                />
+
+                            </div>
+
                         </div>
 
                     </div>

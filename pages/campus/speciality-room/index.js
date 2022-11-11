@@ -50,7 +50,7 @@ const SpecialityRoom = () => {
 
                             <div className='imgBgColor pastelBrown'>
 
-                                <img src='/assets/campus/classroom.png' alt="image" className={styles.classroomImg} />
+                                <img src='/assets/campus/Speciality-room.png' alt="image" className={styles.classroomImg} />
 
                             </div>
 

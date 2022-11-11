@@ -3,16 +3,13 @@
     margin-right: 10px;
 }
 .Blog1Img {
-    position: absolute;
     width: 100%;
-    top: -100px;
-    height: 380px;
+    top: -90px;
 }
 
 .Blog2Img {
     width: 100%;
     top: -70px;
-    height: 380px;
 }
 .colPdng1{
     padding: 0px 70px 0px 12px;
