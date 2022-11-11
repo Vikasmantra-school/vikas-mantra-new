@@ -8,26 +8,38 @@ const Contact = () => {
         <>
             <Breadcrumb pageName={pageTitle} />
 
-            <section className='pt-5 '>
-                <div className='container position-relative'>
-                    <div className='row py-5 dot-vector-before red-dot'>
-                        <div className='col-sm-8 col-md-6'>
-                            <h2 className={styles.headingPdng}>Contact</h2>
-                        </div>
+            <section className={'pt60' + ' ' + 'pb60'}>
+                <div className='container'>
+                <div className='row'>
+                    <div className='col-md-5'>
+                    <h2>Contact Us</h2>
                     </div>
                 </div>
-
-                <img src='assets/campus/school-building3.png' alt='image' className={styles.schlBusImg + ' ' + ' img-fluid'} />
+                </div>
             </section>
 
-            <section className={styles.sectionPdng + ' whitebg position-relative ' + ' ' + styles.vectorImg13}>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-md-5 position-relative'></div>
+            <section className={'whitebg' + ' ' + 'pt60'}>
 
-                        <div className='col-md-7 position-relative'></div>
+                <div className='container'>
+
+                    <div className='row'>
+
+                        <div className='col-md-6'></div>
+
+                        <div className='col-md-6'>
+                        <div className={'imgUp imgBgColor pastelLightPink' + ' ' + styles.careerImg}>
+                            <img
+                            src='/assets/campus/school-building3.png'
+                            alt='image'
+                            className='img-fluid'
+                            />
+                        </div>
+                        </div>
+
                     </div>
+
                 </div>
+
             </section>
 
             <section className={' whitebg pb60 position-relative ' + ' ' + styles.vectorImg10}>
