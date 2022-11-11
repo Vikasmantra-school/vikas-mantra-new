@@ -221,6 +221,24 @@ p {
 
 }
 
+.VectorYellowHalfSpiral{position: relative;}
+
+.VectorYellowHalfSpiral::after {
+
+  content: '';
+  position: absolute;
+    background-image: url(/assets/vectors/Vector13.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: contain;
+    height: 142px;
+    width: 210px;
+    left: 0;
+    top: 25%;
+
+}
+
 .VectorHalfSpiral::after {
 
   content: '';

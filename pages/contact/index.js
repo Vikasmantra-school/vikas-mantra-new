@@ -18,7 +18,7 @@ const Contact = () => {
                 </div>
             </section>
 
-            <section className={'whitebg' + ' ' + 'pt60'}>
+            <section className={'whitebg VectorYellowHalfSpiral' + ' ' + 'pt60'}>
 
                 <div className='container'>
 
