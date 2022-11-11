@@ -35,10 +35,13 @@
 }
 
 .PrincipalImg {
-    position: absolute;
-    height: 570px;
-    top: -550px;
-    right: -60px;
+    width: 100%;
+    top: -200px;
+    right: -20px;
+    position: relative;
+}
+.pdngRight{
+padding-right: 75px;
 }
 .vmpsImg{
     position: absolute;

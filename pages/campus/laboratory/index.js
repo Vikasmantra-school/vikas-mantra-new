@@ -8,7 +8,7 @@ const Laboratory = () => {
     return (
 
         <>
-        
+
 
             <Breadcrumb pageName={pageTitle} />
 
@@ -50,10 +50,10 @@ const Laboratory = () => {
 
                         <div className='col-md-6 position-relative '>
 
-                            <div>
+                            <div className='imgBgColor2 pastelSkyBlue'>
                                 <img src='/assets/campus/lab1.png' alt="image" className={styles.labImg1} />
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -62,7 +62,11 @@ const Laboratory = () => {
 
                         <div className={styles.order2 + ' col-md-6  position-relative'}>
 
-                            <img src='/assets/campus/lab2.png' alt="image" className={styles.labImg2} />
+                            <div className='imgBgColorLeft pastelLightGreen'>
+
+                                <img src='/assets/campus/lab2.png' alt="image" className={styles.labImg2} />
+
+                            </div>
 
                         </div>
 
@@ -104,7 +108,7 @@ const Laboratory = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <div>
+                            <div className='imgBgColor2 pastelGold'>
 
                                 <img src='/assets/campus/lab3.png' alt="image" className={styles.labImg3} />
 

@@ -36,7 +36,7 @@
     height: 60px;
 }
 
-.vectorImg10::after{
+.vectorImg10::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector10.png);
@@ -50,7 +50,7 @@
     right: 0;
 }
 
-.vectorImg13::before{
+.vectorImg13::before {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector13.png);
@@ -68,6 +68,21 @@
     text-align: left;
     width: fit-content;
     margin: 0 auto;
+}
+
+.contactBgcolor::after {
+
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-image: url(/assets/contactBg.png);
+    z-index: 0;
+    background-size: 100px;
+    height: 227px;
+    width: 247px;
+    bottom: -55px;
+    right: 0;
 }
 
 
@@ -90,15 +105,17 @@
 
     .paraAlign3 {
         text-align: center;
-        padding: 0px ;
+        padding: 0px;
     }
 
     .sectionPdng {
         display: none;
     }
-    .mobColPdng{
+
+    .mobColPdng {
         padding: 20px 0px;
     }
+
     .vectorImg10::after {
         content: '';
         position: absolute;

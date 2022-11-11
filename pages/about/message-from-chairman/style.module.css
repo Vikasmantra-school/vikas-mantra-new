@@ -44,9 +44,9 @@
 } */
 
 .ChairmanImg {
-    height: 570px;
+    width: 100%;
     top: -200px;
-    right: 0px;
+    right: -20px;
     z-index: 0;
     position: relative;
 }

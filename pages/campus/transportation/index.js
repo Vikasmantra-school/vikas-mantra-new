@@ -50,7 +50,11 @@ const Transportation = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <img src='/assets/campus/school-bus.png' alt="image" className={styles.schlBusImg} />
+                            <div className='imgBgColor pastelBrown2'>
+
+                                <img src='/assets/campus/school-bus.png' alt="image" className={styles.schlBusImg} />
+
+                            </div>
 
                         </div>
 

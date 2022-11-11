@@ -48,11 +48,11 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     z-index: 0;
-    background-size: 150px;
+    background-size: 90px;
     height: 227px;
     left: 0;
     width: 247px;
-    bottom: 65vh;
+    bottom: 52vh;
 }
 .sectionPdngBtm{
     padding-bottom: 5rem !important;

@@ -17,7 +17,12 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <img src='assets/campus/school-building3.png' alt='image' className={styles.schlBusImg + ' ' + ' img-fluid'} />
+                <div className={'pastelGreen2 ' + styles.contactBgcolor }>
+
+                    <img src='assets/campus/school-building3.png' alt='image' className={styles.schlBusImg + ' ' + ' img-fluid'} />
+
+                </div>
+
             </section>
 
             <section className={styles.sectionPdng + ' whitebg position-relative ' + ' ' + styles.vectorImg13}>

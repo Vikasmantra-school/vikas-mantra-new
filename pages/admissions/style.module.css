@@ -24,6 +24,18 @@
     right: 45px;
 }
 
+/* .schoolBuilding::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 73px;
+    bottom: 100px;
+    background-color: #C7FAF4;
+    z-index: 1;
+} */
+
 .card1 {
     /* background-color: white;
     width: 736px;
@@ -297,16 +309,19 @@
     right: 0;
 }
 
-.tableContainer{
+.tableContainer {
     height: 290px;
 }
-.tableBody tr{
+
+.tableBody tr {
     border: 1px solid #222;
 }
-.tableBody td{
+
+.tableBody td {
     padding: 24px 19px;
 }
-.vectorImg16::before{
+
+.vectorImg16::before {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector16.png);
@@ -319,7 +334,8 @@
     left: 0;
     bottom: -32vh;
 }
-.vectorImg5::after{
+
+.vectorImg5::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector10.png);
@@ -332,7 +348,8 @@
     right: 3vh;
     bottom: -56vh;
 }
-.vectorImg3::before{
+
+.vectorImg3::before {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector3.png);
@@ -345,7 +362,8 @@
     left: 0;
     bottom: -41vh;
 }
-.vectorImg9::after{
+
+.vectorImg9::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector9.png);
@@ -358,7 +376,8 @@
     right: 0px;
     bottom: -200vh;
 }
-.vectorImg3Tab3::before{
+
+.vectorImg3Tab3::before {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector3.png);
@@ -371,7 +390,8 @@
     left: 0px;
     bottom: -140%;
 }
-.vectorImg6::after{
+
+.vectorImg6::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector6.png);
@@ -384,7 +404,8 @@
     right: 9%;
     bottom: -335%;
 }
-.vectorImg17::before{
+
+.vectorImg17::before {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector17.png);
@@ -397,7 +418,8 @@
     left: 0px;
     bottom: -30%;
 }
-.vectorImg11::after{
+
+.vectorImg11::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector11.png);
@@ -410,8 +432,10 @@
     right: 0px;
     bottom: -150%;
 }
-.accordionExample{
-    background-color:#F3F1F2;;
+
+.accordionExample {
+    background-color: #F3F1F2;
+    ;
 }
 
 
@@ -494,7 +518,7 @@
         padding-right: 25px;
         padding-bottom: 30px;
     }
-    
+
     .Sec4vmpsImg {
         position: absolute;
         height: 25px;
@@ -515,6 +539,7 @@
         left: 0;
         bottom: -15%;
     }
+
     .vectorImg5::after {
         content: '';
         position: absolute;
@@ -528,6 +553,7 @@
         right: 43px;
         bottom: -41%;
     }
+
     .vectorImg3::before {
         content: '';
         position: absolute;
@@ -541,6 +567,7 @@
         left: 0;
         bottom: -48%;
     }
+
     .vectorImg9::after {
         content: '';
         position: absolute;
@@ -554,6 +581,7 @@
         right: 0px;
         bottom: -144%;
     }
+
     .tab3VectorSpiralBlue::before {
         content: '';
         position: absolute;
@@ -567,10 +595,12 @@
         bottom: -326px;
         right: 10px;
     }
-    .colpdngLt ,
-    .colpdngRt{
+
+    .colpdngLt,
+    .colpdngRt {
         text-align: left !important;
     }
+
     .vectorImg3Tab3::before {
         content: '';
         position: absolute;
@@ -584,6 +614,7 @@
         left: 0px;
         bottom: -186%;
     }
+
     .vectorImg6::after {
         content: '';
         position: absolute;
@@ -597,6 +628,7 @@
         right: 0px;
         bottom: -293%;
     }
+
     .vectorImg17::before {
         content: '';
         position: absolute;
@@ -610,6 +642,7 @@
         left: 0px;
         bottom: 0%;
     }
+
     .vectorImg11::after {
         content: '';
         position: absolute;

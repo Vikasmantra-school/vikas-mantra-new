@@ -15,7 +15,7 @@ const FacilitiesAndInfrastructure = () => {
 
                     <div className='row py-5'>
 
-                        <h2 className={styles.headingPdng}>Facilities and <br/> Infrastructure</h2>
+                        <h2 className={styles.headingPdng}>Facilities and <br /> Infrastructure</h2>
 
                     </div>
 
@@ -23,7 +23,7 @@ const FacilitiesAndInfrastructure = () => {
 
             </section>
 
-            <section className={ 'whitebg py-5 position-relative ' + styles.vectorImg5 + ' ' + styles.vectorImg10 }>
+            <section className={'whitebg py-5 position-relative ' + styles.vectorImg5 + ' ' + styles.vectorImg10}>
 
                 <div className="container">
 
@@ -53,7 +53,11 @@ const FacilitiesAndInfrastructure = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <img src='/assets/campus/school-building3.png' alt="image" className={styles.schlBuildingImg} />
+                            <div className='imgBgColor pastelRed'>
+
+                                <img src='/assets/campus/school-building3.png' alt="image" className={styles.schlBuildingImg} />
+                            
+                            </div>
 
                         </div>
 
