@@ -46,9 +46,12 @@
 .ChairmanImg {
     height: 570px;
     top: -200px;
-    right: -20px;
+    right: 0px;
     z-index: 0;
     position: relative;
+}
+.pdngRight{
+padding-right: 75px;
 }
 
 @media only screen and (max-width: 600px) {
