@@ -3,88 +3,88 @@ import styles from './style.module.css'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
-import { useState } from 'react';
-import { GoogleSpreadsheet } from 'google-spreadsheet';
+// import { useState } from 'react';
+// import { GoogleSpreadsheet } from 'google-spreadsheet';
 
-const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID;
-const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID;
-const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL;
-const GOOGLE_SERVICE_PRIVATE_KEY = process.env.NEXT_PUBLIC_GOOGLE_SERVICE_PRIVATE_KEY;
+// const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID;
+// const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID;
+// const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL;
+// const GOOGLE_SERVICE_PRIVATE_KEY = process.env.NEXT_PUBLIC_GOOGLE_SERVICE_PRIVATE_KEY;
 
 
-export default function index() {
+const EnquiryForm = () => {
   const pageTitle = 'Enquiry Form'
 
-  //sheet-integration
-  const [form, setForm] = useState({
-    name: '',
-    dob: '',
-    lastClassStudied: '',
-    nameOfTheCurrentSchool: '',
-    admissionSeekingFor: '',
-    fatherName: '',
-    fatherNumber: '',
-    fatherEmail: '',
-    motherName: '',
-    motherNumber: '',
-    motherEmail: '',
-    admissionOfCommunication: '',
-  });
+  // //sheet-integration
+  // const [form, setForm] = useState({
+  //   name: '',
+  //   dob: '',
+  //   lastClassStudied: '',
+  //   nameOfTheCurrentSchool: '',
+  //   admissionSeekingFor: '',
+  //   fatherName: '',
+  //   fatherNumber: '',
+  //   fatherEmail: '',
+  //   motherName: '',
+  //   motherNumber: '',
+  //   motherEmail: '',
+  //   admissionOfCommunication: '',
+  // });
 
 
-  const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+  // const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
 
-  const appendSpreadsheet = async (row) => {
-    try {
-      await doc.useServiceAccountAuth({
-        client_email: GOOGLE_CLIENT_EMAIL,
-        private_key: GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-      });
-      // loads document properties and worksheets
-      await doc.loadInfo();
-      const sheet = doc.sheetsById[SHEET_ID];
-      await sheet.addRow(row);
-    } catch (e) {
-      console.error('Error: ', e);
-    }
-  };
+  // const appendSpreadsheet = async (row) => {
+  //   try {
+  //     await doc.useServiceAccountAuth({
+  //       client_email: GOOGLE_CLIENT_EMAIL,
+  //       private_key: GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+  //     });
+  //     // loads document properties and worksheets
+  //     await doc.loadInfo();
+  //     const sheet = doc.sheetsById[SHEET_ID];
+  //     await sheet.addRow(row);
+  //   } catch (e) {
+  //     console.error('Error: ', e);
+  //   }
+  // };
 
-  const submitForm = (e) => {
-    e.preventDefault();
+  // const submitForm = (e) => {
+  //   e.preventDefault();
 
-    if (
-      form.name !== '' &&
-      form.dob !== '' &&
-      form.lastClassStudied !== '' &&
-      form.nameOfTheCurrentSchool !== '' &&
-      form.admissionSeekingFor !== '' &&
-      form.fatherName !== '' &&
-      form.fatherNumber !== '' &&
-      form.fatherEmail !== '' &&
-      form.motherName !== '' &&
-      form.motherNumber !== '' &&
-      form.motherEmail !== '' &&
-      form.admissionOfCommunication !== ''
-    ) {
-      const newRow = {
-        Name: form.name,
-        Dob: form.dob,
-        LastClassStudied: form.lastClassStudied,
-        NameOfTheCurrentSchool: form.nameOfTheCurrentSchool,
-        AdmissionSeekingFor: form.admissionSeekingFor,
-        FatherName: form.fatherName,
-        FatherNumber: form.fatherNumber,
-        FatherEmail: form.fatherEmail,
-        MotherName: form.motherName,
-        MotherNumber: form.motherNumber,
-        MotherEmail: form.motherEmail,
-        AdmissionOfCommunication: form.admissionOfCommunication,
-      };
+  //   if (
+  //     form.name !== '' &&
+  //     form.dob !== '' &&
+  //     form.lastClassStudied !== '' &&
+  //     form.nameOfTheCurrentSchool !== '' &&
+  //     form.admissionSeekingFor !== '' &&
+  //     form.fatherName !== '' &&
+  //     form.fatherNumber !== '' &&
+  //     form.fatherEmail !== '' &&
+  //     form.motherName !== '' &&
+  //     form.motherNumber !== '' &&
+  //     form.motherEmail !== '' &&
+  //     form.admissionOfCommunication !== ''
+  //   ) {
+  //     const newRow = {
+  //       Name: form.name,
+  //       Dob: form.dob,
+  //       LastClassStudied: form.lastClassStudied,
+  //       NameOfTheCurrentSchool: form.nameOfTheCurrentSchool,
+  //       AdmissionSeekingFor: form.admissionSeekingFor,
+  //       FatherName: form.fatherName,
+  //       FatherNumber: form.fatherNumber,
+  //       FatherEmail: form.fatherEmail,
+  //       MotherName: form.motherName,
+  //       MotherNumber: form.motherNumber,
+  //       MotherEmail: form.motherEmail,
+  //       AdmissionOfCommunication: form.admissionOfCommunication,
+  //     };
 
-      appendSpreadsheet(newRow);
-    }
-    alert('success');
-  };
+  //     appendSpreadsheet(newRow);
+  //   }
+  //   alert('success');
+  // };
 
   const handleChange = (e) => {
     setForm({
@@ -137,7 +137,7 @@ export default function index() {
               }
             >
               <div className={styles.enquiryForm}>
-                <Form onSubmit={submitForm}>
+                <Form>
                   <div className={'row' + ' ' + styles.form}>
                     <div className='col-md-5'>
                       <h5 className='mb-5'>Child Information</h5>
@@ -262,3 +262,5 @@ export default function index() {
     </>
   )
 }
+
+export default EnquiryForm;
