@@ -93,10 +93,10 @@ export const events = [
     dropdown: 'International Yoga Day',
     title: 'International Yoga Day Celebration @ VMPS',
     desc: 'Mrs.Kavitha highlighted the  benefits of few ashanas. Made children understand yoga is a mental, physical and spiritual practice that needs to be carried every day.Children got the chance to know how yoga embodies unity of mind and body.',
-    mainImage: '/assets/events/yoga/3.jpeg',
+    mainImage: '/assets/events/yoga/3.jpg',
     gallery: [
-      '/assets/events/yoga/1.jpeg','/assets/events/yoga/2.jpeg','/assets/events/yoga/3.jpeg','/assets/events/yoga/4.jpeg','/assets/events/yoga/5.jpeg',
-      '/assets/events/yoga/6.jpeg','/assets/events/yoga/7.jpeg','/assets/events/yoga/8.jpeg',
+      '/assets/events/yoga/1.jpg','/assets/events/yoga/2.jpg','/assets/events/yoga/3.jpg','/assets/events/yoga/4.jpg','/assets/events/yoga/5.jpg',
+      '/assets/events/yoga/6.jpg','/assets/events/yoga/7.jpg','/assets/events/yoga/8.jpg',
     ],
   },
 
