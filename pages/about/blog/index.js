@@ -42,7 +42,7 @@ const Blog = () => {
                                 conscious kids. Here we bring to you a few yet effective
                                 eco-friendly practices you can start …</p>
 
-                            <Link href='/about/blog/blogs'><button className='btn outlineBtn'>Know More</button></Link>
+                            <Link href='/about/blog/blog1'><button className='btn outlineBtn'>Know More</button></Link>
 
                         </div>
 
@@ -88,7 +88,7 @@ const Blog = () => {
                                 knowledge that inspires and pushes children to learn, grow, thrive,
                                 and succeed. But the truth …</p>
 
-                            <Link href='/about/blog/blogs'><button className='btn outlineBtn'>Know More</button></Link>
+                            <Link href='/about/blog/blog2'><button className='btn outlineBtn'>Know More</button></Link>
 
                             {/* <img src='/assets/vectors/Vector2.png' alt="image" className={styles.vectorImg3} /> */}
 
