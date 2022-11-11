@@ -48,7 +48,7 @@ const Blog = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <div className={'imgBgColor pastelBlue'}>
+                            <div className={'imgBgColor2 pastelBlue'}>
 
                                 <img src='/assets/blog1.png' alt="image" className={styles.Blog1Img} />
 
@@ -70,7 +70,7 @@ const Blog = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <div className={' pastelBlue imgBgColor '}>
+                            <div className={' pastelBlue imgBgColorLeft '}>
 
                                 <img src='/assets/blog2.png' alt="image" className={styles.Blog2Img} />
 
