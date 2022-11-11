@@ -954,6 +954,8 @@ tr {
 
 .list-points li img{margin-right: 6px;width: 11px;}
 
+.eventGallery{text-align: center;}
+
 .imgBgColor{position: relative;}
 
 .imgBgColor img{position: relative;z-index: 1;}
@@ -969,6 +971,19 @@ tr {
     bottom: 100px;
 
 }
+
+.imgbg::after{
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 63px;
+  bottom: -50px;
+}
+
+.imgbg img{position: relative;
+  z-index: 1;}
 
 .pastelGreen::after{background-color: #C7FAF4;}
 .pastelLightGreen::after{background-color: #D9F7CB;}

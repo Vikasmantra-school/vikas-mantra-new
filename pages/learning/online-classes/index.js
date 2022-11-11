@@ -40,7 +40,7 @@ function OnlineClasses() {
 
             <div className={'col-md-10'}>
 
-                <div className='imgUp'>
+                <div className={'imgUp' + ' ' + styles.onlineImg}>
 
                 <img src='/assets/virtual-class.png' alt='image' className='img-fluid' />
 

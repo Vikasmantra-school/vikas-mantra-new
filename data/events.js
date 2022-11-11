@@ -20,7 +20,7 @@ export const events = [
     id: 'second',
     dropdown: 'Launch of BE THE CHANGE',
     title: 'Launch of BE THE CHANGE',
-    desc: 'Oct 8, 2019 marked a historic day in the school&apos;s calendar by launching BE THE CHANGE – an initiative by the school joining hands with BE THE CHANGE to inculcate social responsibilities among children to bring out their innate talents. Chief Guest of the day – Actor and Celebrity Jeeva Ravi.',
+    desc: 'Oct 8, 2019 marked a historic day in the school\'s calendar by launching BE THE CHANGE – an initiative by the school joining hands with BE THE CHANGE to inculcate social responsibilities among children to bring out their innate talents. Chief Guest of the day – Actor and Celebrity Jeeva Ravi.',
     mainImage: '/assets/events/be-the-change/3.jpg',
     gallery: [
       '/assets/events/be-the-change/1.jpg','/assets/events/be-the-change/2.jpg','/assets/events/be-the-change/3.jpg','/assets/events/be-the-change/4.jpg','/assets/events/be-the-change/5.jpg',
@@ -41,8 +41,8 @@ export const events = [
 
   {
     id: 'forth',
-    dropdown: 'Children&apos;s Day at Raj Nivas',
-    title: 'Children&apos;s Day at Raj Nivas',
+    dropdown: 'Children\'s Day at Raj Nivas',
+    title: 'Children\'s Day at Raj Nivas',
     desc: 'On the eve of Childrens Day as a part of our Be The Change initiative the students of Vikas Mantra Public School were invited to Raj Nivas Puducherry to meet Lieutenant governor Dr Kiran Bedi. She encouraged the children and interacted with them. Indeed a memorable day in the life of students of VMPS.',
     mainImage: '/assets/events/childrens-day/6.jpg',
     gallery: [
@@ -240,19 +240,6 @@ export const events = [
     ]
   },
 
-
-  {
-    id: 'sixteen',
-    dropdown: 'Skating Competition',
-    title: 'Winners - Skating Competition',
-    desc: 'VMPS are very happy to share that Master. Adwaith of Grade 6 participated in the state level skating champions and won 2 gold medals and a trophy in 500M fancy inline and 1000M respectively.VMPS is proud to share another winner from Grade 1 Sec B Miss Akshara who won Bronze medal in State level 400Mts Skating Competition.    ',
-    mainImage: '/assets/events/skating/1.jpeg',
-    gallery: [
-      '/assets/events/skating/1.jpeg','/assets/events/skating/2.jpeg','/assets/events/skating/3.jpeg','/assets/events/skating/4.jpeg',
-      
-    ]
-  },
-
   {
     id: 'nineteen',
     dropdown: 'This Schools Got Talent 2019',
@@ -283,10 +270,10 @@ export const events = [
     dropdown: 'Young Leaders Awards',
     title: 'Young Leaders Awards',
     desc: 'Our students got awarded in the recent Young Leaders Awards which happened in Chennai.',
-    mainImage: '/assets/events/young-leaders-awards/3.jpg',
+    mainImage: '/assets/events/young-leaders-awards/3.jpeg',
     gallery: [
-      '/assets/events/young-leaders-awards/1.jpg','/assets/events/young-leaders-awards/2.jpg','/assets/events/young-leaders-awards/3.jpg','/assets/events/young-leaders-awards/4.jpg','/assets/events/young-leaders-awards/5.jpg',
-      '/assets/events/young-leaders-awards/6.jpg','/assets/events/young-leaders-awards/7.jpg','/assets/events/young-leaders-awards/8.jpg',
+      '/assets/events/young-leaders-awards/1.jpeg','/assets/events/young-leaders-awards/2.jpeg','/assets/events/young-leaders-awards/3.jpeg','/assets/events/young-leaders-awards/4.jpeg','/assets/events/young-leaders-awards/5.jpeg',
+      '/assets/events/young-leaders-awards/6.jpeg','/assets/events/young-leaders-awards/7.jpeg','/assets/events/young-leaders-awards/8.jpeg',
     ]
   },
 
