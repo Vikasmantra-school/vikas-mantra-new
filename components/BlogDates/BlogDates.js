@@ -9,12 +9,12 @@ const BlogDates = () => {
                 <h4>Latest Blog</h4>
                 <hr />
 
-                <Link href='/about/blog/blog1'>
+                <Link href='/about/blog/blog2'>
                     <a>BENEFITS OF YOGA FOR SCHOOL STUDENTS</a>
                 </Link>
                 <p className='greyText'>26-July-2022</p>
 
-                <Link href='/about/blog/blog2'>
+                <Link href='/about/blog/blog1'>
                     <a>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</a>
                 </Link>
                 <p className='greyText'>26-July-2022</p>
