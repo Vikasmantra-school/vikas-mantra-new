@@ -958,9 +958,15 @@ tr {
   top: 0;
 }
 
-.imgBgColor {
-  position: relative;
-}
+.list-points{list-style: none;padding-left: 10px;}
+
+.list-points li{display: flex;align-items: baseline;}
+
+.list-points li img{margin-right: 6px;width: 11px;}
+
+.eventGallery{text-align: center;}
+
+.imgBgColor{position: relative;}
 
 .imgBgColor img {
   position: relative;
@@ -979,102 +985,29 @@ tr {
 
 }
 
+.imgbg::after{
 
-/**/
-.imgBgColor2::after {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 0;
-  left: 73px;
+  left: 60px;
   bottom: -50px;
 }
 
-.imgBgColor2 {
-  position: relative;
-}
+.imgbg{position: relative;}
 
-.imgBgColor2 img {
-  position: relative;
-  z-index: 1;
-}
+.imgbg img{position: relative;
+  z-index: 1;}
 
-.imgBgColorLeft::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  left: -50px;
-  bottom: -40px;
-}
-.imgBgColorLeft {
-  position: relative;
-}
+.pastelGreen::after{background-color: #C7FAF4;}
+.pastelLightGreen::after{background-color: #D9F7CB;}
+.pastelYellow::after{background-color: #EDF3C4;}
+.pastelBlue::after{background-color: #D1EAF9;}
+.pastelDarkBlue::after{background-color: #BCDBFF;}
+.pastelLightPink::after{background-color: #EACFFF;}
 
-.imgBgColorLeft img {
-  position: relative;
-  z-index: 1;
-}
 
-/**/
-
-.pastelGreen::after {
-  background-color: #C7FAF4;
-}
-
-.pastelLightGreen::after {
-  background-color: #D9F7CB;
-}
-
-.pastelYellow::after {
-  background-color: #EDF3C4;
-}
-
-.pastelBlue::after {
-  background-color: #D1EAF9;
-}
-
-.pastelPurple::after {
-  background-color: #e7deff;
-}
-
-.pastelRed::after {
-  background-color: #f08888;
-}
-
-.pastelSkyBlue::after {
-  background-color: #a4efff;
-}
-.pastelBlue2::after{
-  background-color: #c6fcff;
-}
-
-.pastelGold::after {
-  background-color: #f0d988;
-}
-.pastelLightGreen::after{
-  background-color: #b5fbbc;
-}
-.pastelBrown::after{
-background-color: #ffc5a4;
-}
-.pastelPurple2::after{
-  background-color: #d0cffa;
-}
-.pastelYellow::after{
-  background-color: #f4f9c1;
-}
-.pastelRed2::after{
-  background-color: #f8bebe;
-}
-.pastelBrown2::after{
-background-color: #faf3da;
-}
-.pastelGreen2::after{
-  background-color: #c9f088;
-}
 
 
 

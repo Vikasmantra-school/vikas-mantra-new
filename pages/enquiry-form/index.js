@@ -28,7 +28,7 @@ export default function index() {
               </h2>
             </div>
 
-            <div className={'col-md-7'}>
+            <div className={'col-md-6 offset-lg-1 pastelBlue imgbg'}>
               <img
                 className='img-fluid'
                 src='/assets/building-transport.png'

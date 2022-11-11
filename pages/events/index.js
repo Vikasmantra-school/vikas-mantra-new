@@ -44,7 +44,7 @@ function index() {
                           </div>
 
                           <div className='col-md-6'>
-                            <div className='imgUp'>
+                            <div className='imgUp imgBgColor pastelDarkBlue'>
                               <img
                                 src={data.mainImage}
                                 alt='image'
@@ -81,7 +81,7 @@ function index() {
                             >
                               {data.gallery?.map((data, index) => {
                                 return (
-                                  <SplideSlide key={index}>
+                                  <SplideSlide className='eventGallery' key={index}>
                                     <img
                                       src={data}
                                       alt='image'

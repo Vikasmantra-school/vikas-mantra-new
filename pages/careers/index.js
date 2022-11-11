@@ -111,7 +111,7 @@ function Career() {
             </div>
 
             <div className='col-md-6'>
-              <div className={'imgUp' + ' ' + styles.careerImg}>
+              <div className={'imgUp imgBgColor pastelLightPink' + ' ' + styles.careerImg}>
                 <img
                   src='/assets/banners/we-are-hiring.png'
                   alt='image'

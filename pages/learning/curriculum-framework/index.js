@@ -177,19 +177,19 @@ function CurriculumFrameWork() {
                       aria-labelledby='nav-home-tab'
                       tabIndex='0'
                     >
-                      <ul className='mb-0'>
+                      <ul className='mb-0 list-points'>
                         <li className='pt-4'>
-                          Physical Education and Yoga form core elements of the
+                         <img src="/assets/icons/green-point.png" alt='list-point' /> Physical Education and Yoga form core elements of the
                           sports curriculum
                         </li>
 
                         <li className='pt-3'>
-                          Well designed, spacious and child-safe play
+                        <img src="/assets/icons/pink-point.png" alt='list-point' /> Well designed, spacious and child-safe play
                           environment for younger students
                         </li>
 
                         <li className='py-3'>
-                          Common room for indoor sports such as Table Tennis,
+                        <img src="/assets/icons/red-point.png" alt='list-point' /> Common room for indoor sports such as Table Tennis,
                           Carrom and Chess
                         </li>
                       </ul>
@@ -201,17 +201,17 @@ function CurriculumFrameWork() {
                       aria-labelledby='nav-profile-tab'
                       tabIndex='0'
                     >
-                      <ul className='mb-0'>
+                      <ul className='mb-0 list-points'>
                         <li className='pt-4'>
-                          1.5 acre playground for outdoor sports such as Football, Cricket and Athletics
+                        <img src="/assets/icons/green-point.png" alt='list-point' /> 1.5 acre playground for outdoor sports such as Football, Cricket and Athletics
                         </li>
 
                         <li className='pt-3'>
-                          Dedicated Volleyball and Basketball courts
+                        <img src="/assets/icons/pink-point.png" alt='list-point' /> Dedicated Volleyball and Basketball courts
                         </li>
 
                         <li className='py-3'>
-                          Specialised training in Basketball, Football and Athletics
+                        <img src="/assets/icons/red-point.png" alt='list-point' /> Specialised training in Basketball, Football and Athletics
                         </li>
                       </ul>
                     </div>
@@ -429,16 +429,16 @@ function CurriculumFrameWork() {
 
                     <h6>Clubs at VIKAS MANTRA PUBLIC SCHOOL</h6>
 
-                    <ul>
-                      <li className='pt-3'>Eco club</li>
-                      <li className='pt-3'>Photography club</li>
-                      <li className='pt-3'>Robotics club</li>
-                      <li className='pt-3'>Cookery club</li>
-                      <li className='pt-3'>Math club</li>
-                      <li className='pt-3'>Literary club</li>
-                      <li className='pt-3'>Theatre club</li>
-                      <li className='pt-3'>Social Welfare club</li>
-                      <li className='pt-3'>Astronomy club</li>
+                    <ul className='list-points'>
+                      <li className='pt-3'><img src="/assets/icons/blue-point.png" alt='list-point' /> Eco club</li>
+                      <li className='pt-3'><img src="/assets/icons/pink-point.png" alt='list-point' /> Photography club</li>
+                      <li className='pt-3'><img src="/assets/icons/yellow-point.png" alt='list-point' /> Robotics club</li>
+                      <li className='pt-3'><img src="/assets/icons/lightgreen-point.png" alt='list-point' /> Cookery club</li>
+                      <li className='pt-3'><img src="/assets/icons/orange-point.png" alt='list-point' /> Math club</li>
+                      <li className='pt-3'><img src="/assets/icons/darkblue-point.png" alt='list-point' /> Literary club</li>
+                      <li className='pt-3'><img src="/assets/icons/red-point.png" alt='list-point' /> Theatre club</li>
+                      <li className='pt-3'><img src="/assets/icons/lightblue.png" alt='list-point' /> Social Welfare club</li>
+                      <li className='pt-3'><img src="/assets/icons/green-point.png" alt='list-point' /> Astronomy club</li>
                     </ul>
                   </div>
 

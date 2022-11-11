@@ -12,6 +12,8 @@
     background-repeat: no-repeat;
     z-index: 1;}
 
+.onlineImg{margin-top: -165px;}
+
 .tilteSpace{padding-bottom: 120px;}
 
 @media only screen and (max-width: 660px) {
