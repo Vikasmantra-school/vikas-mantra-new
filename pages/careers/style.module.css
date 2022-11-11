@@ -10,19 +10,6 @@
 
 .careerBg{position: relative;}
 
-.careerImg::after{
-    content: "";
-    position: absolute;
-    bottom: -80px;
-    right: 160px;
-    width: 247px;
-    height: 227px;
-    background: url(/assets/vectors/circle-vector.png);
-    background-size: 142px;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    z-index: 1;}
-
 .careerBg::after{content: "";
     position: absolute;
     top: 0px;

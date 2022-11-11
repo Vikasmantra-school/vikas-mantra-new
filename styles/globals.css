@@ -948,6 +948,12 @@ tr {
     top: 0;
 }
 
+.list-points{list-style: none;padding-left: 10px;}
+
+.list-points li{display: flex;align-items: baseline;}
+
+.list-points li img{margin-right: 6px;width: 11px;}
+
 .imgBgColor{position: relative;}
 
 .imgBgColor img{position: relative;z-index: 1;}
@@ -968,6 +974,10 @@ tr {
 .pastelLightGreen::after{background-color: #D9F7CB;}
 .pastelYellow::after{background-color: #EDF3C4;}
 .pastelBlue::after{background-color: #D1EAF9;}
+.pastelDarkBlue::after{background-color: #BCDBFF;}
+.pastelLightPink::after{background-color: #EACFFF;}
+
+
 
 
 
