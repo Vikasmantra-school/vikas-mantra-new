@@ -77,20 +77,20 @@ const Technology = () => {
 
                         <div className='col-md-8 position-relative pt-5'>
 
-                            <ul>
+                            <ul className='list-points'>
 
-                                <li className='pt-3'>Junior Computer Lab for younger students which introduce them to computers and facilitate computer-aided learning
+                                <li className='pt-3'> <img src="/assets/icons/blue-point.png" alt='list-point' /> Junior Computer Lab for younger students which introduce them to computers and facilitate computer-aided learning
                                 </li>
 
-                                <li className='pt-3'> Senior Computer Lab with relevant software and internet access for developing learning skills such as critical thinking,
+                                <li className='pt-3'> <img src="/assets/icons/pink-point.png" alt='list-point' />  Senior Computer Lab with relevant software and internet access for developing learning skills such as critical thinking,
                                     research, problem-solving and communication
                                 </li>
 
-                                <li className='pt-3'>Each classroom at VIKAS MANTRA PUBLIC SCHOOL has Wi-Fi-connectivity and a dedicated LCD projection system to
+                                <li className='pt-3'> <img src="/assets/icons/yellow-point.png" alt='list-point' /> Each classroom at VIKAS MANTRA PUBLIC SCHOOL has Wi-Fi-connectivity and a dedicated LCD projection system to
                                     facilitate technology-enabled learning
                                 </li>
 
-                                <li className='pt-3'>Other labs and learning centres such as libraries are Wi-Fi enabled for easy access to the internet.
+                                <li className='pt-3'> <img src="/assets/icons/lightgreen-point.png" alt='list-point' /> Other labs and learning centres such as libraries are Wi-Fi enabled for easy access to the internet.
                                 </li>
 
 

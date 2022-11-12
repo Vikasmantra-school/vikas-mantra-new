@@ -170,14 +170,16 @@ const Admissions = () => {
                         and build on individual potential.
                       </h6>
 
-                      <ul className='pt-4'>
+                      <ul className='pt-4 list-points '>
                         <li className='pt-1'>
+                          <img src="/assets/icons/blue-point.png" alt='list-point' />
                           To find out more about admissions at VIKAS MANTRA
                           PUBLIC SCHOOL or to visit the school for an
                           admissions
                           tour
                         </li>
                         <li className='pt-1'>
+                          <img src="/assets/icons/pink-point.png" alt='list-point' />
                           Please contact the Admission Coordinator between
                           8.30
                           am and 4.30 pm., Mon-Sat | 9.00 am – 1.00 pm on
@@ -327,8 +329,9 @@ const Admissions = () => {
                         Eligibility Criteria for all classes
                       </h5>
 
-                      <ul className='pt-5'>
+                      <ul className='pt-5 list-points'>
                         <li className='pt-1'>
+                          <img src="/assets/icons/blue-point.png" alt='list-point' />
                           Kindergarten – To be eligible for admission, the
                           child
                           must fall into the following age category as
@@ -336,11 +339,13 @@ const Admissions = () => {
                           secondary education.
                         </li>
                         <li className='pt-1'>
+                          <img src="/assets/icons/pink-point.png" alt='list-point' />
                           For Junior KG the child must have completed 3. 5
                           years
                           as on 30th June.
                         </li>
                         <li className='pt-1'>
+                          <img src="/assets/icons/yellow-point.png" alt='list-point' />
                           For Senior KG the child must have completed 4.5
                           years
                           as on 30th June.
