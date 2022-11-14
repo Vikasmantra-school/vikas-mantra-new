@@ -213,8 +213,9 @@
 }
 
 .plusIcon {
-    color: #222;
+    color: #fff;
     padding-right: 15px;
+    font-size: 40px;
 }
 
 .minusIcon {
@@ -451,6 +452,7 @@
     background-color: #F3F1F2;
     ;
 }
+
 
 
 @media only screen and (max-width: 600px) {
