@@ -1199,6 +1199,15 @@ background-color: #faf3da;
     border-radius: 0;
     border-color: #AA182C;
   }
+
+  .imgBgColor::after{
+
+    left: 10px;
+    bottom: -12px;
+  }
+
+
+
 }
 
 .learningLogo .imgUp::before {
@@ -1285,6 +1294,7 @@ background-color: #faf3da;
 
   .imgUp img {
     margin-top: 0;
+    top: 0;
   }
 
   .desktop-menu {
