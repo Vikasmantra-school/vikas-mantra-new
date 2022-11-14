@@ -2,22 +2,40 @@ import Image from 'next/image'
 import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
 import Link from 'next/link'
-import {useEffect} from 'react'
+import { useState } from 'react'
 
 const Footer = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
 
- function suma(e) {
-  e.preventDefault()
-  fetch('https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec', {
-    method: 'POST',
-    body: data,
-  })
-    .then(() => {
-      alert('Form has been submitted successfully');
+  function suma(e) {
+    e.preventDefault()
+    setName(e.target.Name.value)
+    setEmail(e.target.Email.value)
+    setPhone(e.target.Phone.value)
+
+    let data = [
+      {
+        Name: name,
+        Email: email,
+        Phone: phone,
+      },
+    ]
+    console.error(data)
+
+    // setEmail('')
+
+    fetch(
+      'https://script.google.com/macros/s/AKfycbymJsuHpK8K-YPOnYmPEmBW-K6wxUbghTmJd1JMB5Pr1twYSKdX6n1YcYyISd_-M4Xd2Q/exec',
+      {
+        method: 'POST',
+        body: data,
+      }
+    ).then(() => {
+      alert('Form has been submitted successfully')
     })
- }
-
-
+  }
 
   return (
     <div className={styles.section + ' pt-5 pb-4 '}>
@@ -30,13 +48,10 @@ const Footer = () => {
                 <h3>FOR AN ADMISSION TOUR</h3>
               </div>
 
-              <form
-              onSubmit={(e) => suma(e)}
-                id='myForm'
-                method='post'
-              >
+              <form onSubmit={(e) => suma(e)} id='myForm' method='post'>
                 <div className='mb-3'>
                   <input
+                    onChange={(e) => setName(e.target.value)}
                     type='text'
                     className={styles.formInput + ' form-control'}
                     placeholder='Name'
@@ -47,6 +62,7 @@ const Footer = () => {
 
                 <div className='mb-3'>
                   <input
+                    onChange={(e) => setEmail(e.target.value)}
                     type='email'
                     className={styles.formInput + ' form-control'}
                     aria-describedby='emailHelp'
@@ -58,6 +74,7 @@ const Footer = () => {
 
                 <div className='mb-3'>
                   <input
+                    onChange={(e) => setPhone(e.target.value)}
                     type='number'
                     className={styles.formInput + ' form-control'}
                     placeholder='Number'
