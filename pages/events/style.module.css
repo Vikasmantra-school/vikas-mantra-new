@@ -16,3 +16,12 @@
 
 .eventText{margin-left: 67px;}
 
+
+@media only screen and (max-width: 660px) {
+
+    .eventText {
+        
+        margin-left: 12px;
+    }
+  
+  }
