@@ -34,7 +34,6 @@ function Home() {
         },
       }
     )
-    console.error(text)
   }
 
   function titleAnime() {

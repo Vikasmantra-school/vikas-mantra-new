@@ -2,71 +2,30 @@ import Image from 'next/image'
 import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
 import Link from 'next/link'
-import { useState } from 'react'
-import { GoogleSpreadsheet } from 'google-spreadsheet';
-
-
-
-const SPREADSHEET_ID = process.env.NEXT_PUBLIC_FOOTER_SPREADSHEET_ID;
-const SHEET_ID = process.env.NEXT_PUBLIC_FOOTER_SHEET_ID;
-const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_FOOTER_GOOGLE_CLIENT_EMAIL;
-const GOOGLE_SERVICE_PRIVATE_KEY = process.env.NEXT_PUBLIC_FOOTER_GOOGLE_SERVICE_PRIVATE_KEY;
-
+import { useState, useRef } from 'react'
 
 const Footer = () => {
 
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    number: '',
-  });
+  //form-sheet-integration
 
-  const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+  const formRef = useRef(null)
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec"
+  const [loading, setLoading] = useState(false)
 
-  const appendSpreadsheet = async (row) => {
-    try {
-      await doc.useServiceAccountAuth({
-        client_email: GOOGLE_CLIENT_EMAIL,
-        private_key: GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-      });
-      // loads document properties and worksheets
-      await doc.loadInfo();
-      const sheet = doc.sheetsById[SHEET_ID];
-      await sheet.addRow(row);
-    } catch (e) {
-      console.error('Error: ', e);
-    }
-  };
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
 
-  const submitForm = (e) => {
-    e.preventDefault();
+    fetch(scriptUrl, {
+      method: 'POST',
+      body: new FormData(formRef.current),
 
-    if (
-      form.name !== '' &&
-      form.email !== '' &&
-      form.number !== ''
-    ) {
-
-      const newRow = {
-        Name: form.name,
-        Email: form.email,
-        Number: form.number,
-      };
-
-      appendSpreadsheet(newRow);
-    }
-    alert('success');
-
-  };
-
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-
+    }).then(res => {
+      alert('Our admission officer will contact you shortly');
+      setLoading(false)
+    })
+      .catch(err => console.log(err))
+  }
   return (
     <div className={styles.section + ' pt-5 pb-4 '}>
       <div className='container'>
@@ -78,15 +37,14 @@ const Footer = () => {
                 <h3>FOR AN ADMISSION TOUR</h3>
               </div>
 
-              <form onSubmit={submitForm}>
+              <form ref={formRef} onSubmit={handleSubmit} name="google-sheet" >
                 <div className='mb-3'>
                   <input
                     type='text'
                     className={styles.formInput + ' form-control'}
                     placeholder='Name'
                     required
-                    name="name"
-                    onChange={handleChange}
+                    name='Name'
                   />
                 </div>
 
@@ -97,8 +55,7 @@ const Footer = () => {
                     aria-describedby='emailHelp'
                     placeholder='Email'
                     required
-                    name="email"
-                    onChange={handleChange}
+                    name='Email'
                   />
                 </div>
 
@@ -108,17 +65,16 @@ const Footer = () => {
                     className={styles.formInput + ' form-control'}
                     placeholder='Number'
                     required
-                    name="number"
-                    rows="3"
+                    name='Phone'
                   />
                 </div>
 
-                <button
-                  type='submit'
-                  className={styles.sendBtn + ' btn btn-light mt-4'}
-                >
-                  Send
-                </button>
+                <div className='mb-3'>
+
+                  <input type="submit" value={loading ? "Loading..." : "Send"} className={styles.sendBtn + ' btn btn-light mt-4'} />
+
+                </div>
+
               </form>
 
               <p className='mt-4'>

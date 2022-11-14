@@ -53,7 +53,7 @@ const FacilitiesAndInfrastructure = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <div className='imgBgColor pastelRed bgImageMargin'>
+                            <div className='imgBgColor pastelRed bgImageMargin imgUp '>
 
                                 <img src='/assets/campus/school-building3.png' alt="image" className={styles.schlBuildingImg} />
                             
