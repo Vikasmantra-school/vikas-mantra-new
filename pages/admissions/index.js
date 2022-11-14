@@ -552,29 +552,43 @@ const Admissions = () => {
                     school.
                   </p>
 
-                  <ul className={styles.ulLineHeight}>
-                    <li>Application Form, duly filled</li>
-                    <li>3 colour Photos</li>
-                    <li>Report from Previous School (if available)</li>
+                  <ul className={styles.ulLineHeight + ' list-points'}>
                     <li>
+                      <img src="/assets/icons/blue-point.png" alt='list-point' />
+                      Application Form, duly filled
+                    </li>
+                    <li>
+                      <img src="/assets/icons/pink-point.png" alt='list-point' />
+                      3 colour Photos
+                    </li>
+                    <li>
+                      <img src="/assets/icons/yellow-point.png" alt='list-point' />
+                      Report from Previous School (if available)
+                    </li>
+                    <li>
+                      <img src="/assets/icons/green-point.png" alt='list-point' />
                       Copy of the Student’s Aadhar / Passport (if
                       available)
                     </li>
                     <li>
+                      <img src="/assets/icons/red-point.png" alt='list-point' />
                       Copy of the Student’s Birth Certificate in
                       case of (PIO
                       holders)
                     </li>
                     <li>
+                      <img src="/assets/icons/orange-point.png" alt='list-point' />
                       Copy of any one of the following as proof of
                       Residence for
                       Parents:{' '}
                     </li>
 
                     <li className='mt-3 ms-3'>
+                      <img src="/assets/icons/lightblue.png" alt='list-point' />
                       Passport/Aadhar / Ration /Voter ID card
                     </li>
                     <li className='ms-3'>
+                      <img src="/assets/icons/lightgreen-point.png" alt='list-point' />
                       Most recent water/telephone/electricity/gas
                       bill/ rental
                       agreement
@@ -594,8 +608,9 @@ const Admissions = () => {
                     form
                   </h2>
 
-                  <ul className={styles.ulLineHeight + ' position-relative'}>
+                  <ul className={styles.ulLineHeight + ' position-relative list-points '}>
                     <li>
+                      <img src="/assets/icons/darkblue-point.png" alt='list-point' />
                       Application form to be submitted within 5
                       working days
                       after buying the form. Duly filled in forms
@@ -612,12 +627,14 @@ const Admissions = () => {
                     </li>
 
                     <li>
+                      <img src="/assets/icons/yellow-point.png" alt='list-point' />
                       Admission at Vikas Mantra Public School will
                       be on first
                       on first come basis.
                     </li>
 
                     <li>
+                      <img src="/assets/icons/red-point.png" alt='list-point' />
                       Admission for the academic year will be done
                       till the 30th
                       of June every year based on the availability
@@ -625,7 +642,9 @@ const Admissions = () => {
                       each class.
                     </li>
 
-                    <li>Each class is limited to 35 students only.</li>
+                    <li>
+                      <img src="/assets/icons/green-point.png" alt='list-point' />
+                      Each class is limited to 35 students only.</li>
                   </ul>
                 </div>
               </div>
