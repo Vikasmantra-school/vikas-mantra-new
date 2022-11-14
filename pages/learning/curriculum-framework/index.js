@@ -495,54 +495,6 @@ function CurriculumFrameWork() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#pre-primary-years'>
-                    <a onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
-                        <p>Dance</p>
-                      </li>
-                    </a>
-                  </Link>
-
-                  <li>
-                    <div className={'divider' + ' ' + 'grey'}></div>
-                  </li>
-
-                  <Link legacyBehavior href='#'>
-                    <a onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
-                        <p>Music</p>
-                      </li>
-                    </a>
-                  </Link>
-
-                  <li>
-                    <div className={'divider' + ' ' + 'grey'}></div>
-                  </li>
-
-                  <Link legacyBehavior href='#'>
-                    <a onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
-                        <p>Theater</p>
-                      </li>
-                    </a>
-                  </Link>
-
-                  <li>
-                    <div className={'divider' + ' ' + 'grey'}></div>
-                  </li>
-
-                  <Link legacyBehavior href='#'>
-                    <a onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
-                        <p>visual Art</p>
-                      </li>
-                    </a>
-                  </Link>
-
-                  <li>
-                    <div className={'divider' + ' ' + 'grey'}></div>
-                  </li>
-
                   <Link legacyBehavior href='#'>
                     <a onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
