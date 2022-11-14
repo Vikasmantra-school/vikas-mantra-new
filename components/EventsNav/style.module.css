@@ -20,3 +20,8 @@
     height: 420px;}
 
 .tabNavLink:hover{color: #fff !important;}
+
+.formSelect{
+    background-color: transparent;
+    border: unset;
+}
