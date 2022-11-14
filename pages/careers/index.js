@@ -4,7 +4,7 @@ import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 function Career() {
   const ValidateEmail = () => {
@@ -21,6 +21,28 @@ function Career() {
   const pageTitle = 'Career'
 
   const [methodOfCommunication, setCommunication] = useState('email')
+
+
+  //form-sheet-integration
+
+  const formRef = useRef(null)
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbw3cVmLmrjniePfI9yHuKwUil6I7y8mSoDK7GLbD5_QL4JQz9wfpXVXKnYJtRJWJiPF4g/exec"
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    fetch(scriptUrl, {
+      method: 'POST',
+      body: new FormData(formRef.current),
+
+    }).then(res => {
+      alert("SUCCESSFULLY SUBMITTED")
+      setLoading(false)
+    })
+      .catch(err => console.log(err))
+  }
 
   return (
     <>
@@ -135,7 +157,7 @@ function Career() {
         }
       >
         <div className='container'>
-          <Form>
+          <Form ref={formRef} onSubmit={handleSubmit} name="google-sheet" >
             <div className={'row'}>
               <div className={'col-md-10' + ' ' + styles.formCenter}>
                 <div className={styles.enquiryForm}>
@@ -147,8 +169,7 @@ function Career() {
                     <div className='col-md-12 col-lg-5 col-sm-12'>
                       <div className='mb-5'>
                         <label>Name of the Candidate </label>
-
-                        <Form.Control className={styles.formText} type='text' />
+                        <Form.Control className={styles.formText} type='text' name='Name of the Candidate' />
                       </div>
 
                       <div className='mb-5'>
@@ -157,16 +178,19 @@ function Career() {
                         <Form.Control
                           className={styles.formText + ' ' + 'mb-5'}
                           type='text'
+                          name='Address'
                         />
 
                         <Form.Control
                           className={styles.formText + ' ' + 'mb-5'}
                           type='text'
+                          name='Address'
                         />
 
                         <Form.Control
                           className={styles.formText + ' ' + 'mb-5'}
                           type='text'
+                          name='Address'
                         />
                       </div>
                     </div>
@@ -179,6 +203,7 @@ function Career() {
                           <Form.Control
                             className={styles.formText}
                             type='text'
+                            name='Job Opening'
                           />
                         </div>
                       </div>
@@ -193,22 +218,26 @@ function Career() {
                             name='checking-radio'
                             checked={methodOfCommunication == 'email'}
                             onChange={() => setCommunication('email')}
-                          ></input>
+                          />
+
                           <label
                             className='form-check-label'
                             for='flexRadioDefault2'
                           >
                             Email
                           </label>
+
                         </div>
                         <div className='form-check '>
+
                           <input
                             className='form-check-input coupon_question'
                             type='radio'
                             name='checking-radio'
                             checked={methodOfCommunication == 'phone'}
                             onChange={() => setCommunication('phone')}
-                          ></input>
+                          />
+
                           <label
                             className='form-check-label'
                             for='flexRadioDefault1'
@@ -233,6 +262,7 @@ function Career() {
                             id='txtEmail'
                             onBlur={ValidateEmail}
                             required='true'
+                            name='Mail Id'
                           ></input>
                           <span id='lblError'></span>
                         </div>
@@ -251,15 +281,17 @@ function Career() {
                               'form-control form-width' + ' ' + styles.formText
                             }
                             required='true'
+                            name='Number'
                           ></input>
                         </div>
                       )}
 
                       <div></div>
+
                     </div>
 
                     <a href='#'>
-                      <Button className={'brownBtn'}>Submit</Button>
+                      <Button className={'brownBtn'} type="submit" value={loading ? " Loading..." : " Submit "}>Submit</Button>
                     </a>
                   </div>
                 </div>

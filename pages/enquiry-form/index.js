@@ -3,95 +3,31 @@ import styles from './style.module.css'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
-// import { useState } from 'react';
-// import { GoogleSpreadsheet } from 'google-spreadsheet';
-
-// const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID;
-// const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID;
-// const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL;
-// const GOOGLE_SERVICE_PRIVATE_KEY = process.env.NEXT_PUBLIC_GOOGLE_SERVICE_PRIVATE_KEY;
+import { useState, useRef } from 'react'
 
 
 const EnquiryForm = () => {
   const pageTitle = 'Enquiry Form'
 
-  // //sheet-integration
-  // const [form, setForm] = useState({
-  //   name: '',
-  //   dob: '',
-  //   lastClassStudied: '',
-  //   nameOfTheCurrentSchool: '',
-  //   admissionSeekingFor: '',
-  //   fatherName: '',
-  //   fatherNumber: '',
-  //   fatherEmail: '',
-  //   motherName: '',
-  //   motherNumber: '',
-  //   motherEmail: '',
-  //   admissionOfCommunication: '',
-  // });
+  const formRef = useRef(null)
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbx03T_Gd3qn7GKJ99OrxmuXC4JkQ-hNbfJBpC3iuukhSvwI90YyscbgN4ZCrnRK72JRRQ/exec"
+  const [loading, setLoading] = useState(false)
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
 
-  // const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+    fetch(scriptUrl, {
+      method: 'POST',
+      body: new FormData(formRef.current),
 
-  // const appendSpreadsheet = async (row) => {
-  //   try {
-  //     await doc.useServiceAccountAuth({
-  //       client_email: GOOGLE_CLIENT_EMAIL,
-  //       private_key: GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-  //     });
-  //     // loads document properties and worksheets
-  //     await doc.loadInfo();
-  //     const sheet = doc.sheetsById[SHEET_ID];
-  //     await sheet.addRow(row);
-  //   } catch (e) {
-  //     console.error('Error: ', e);
-  //   }
-  // };
+    }).then(res => {
+      alert('Thank You :) Our admission officer will contact you shortly')
+      setLoading(false)
+    })
+      .catch(err => console.log(err))
+  }
 
-  // const submitForm = (e) => {
-  //   e.preventDefault();
-
-  //   if (
-  //     form.name !== '' &&
-  //     form.dob !== '' &&
-  //     form.lastClassStudied !== '' &&
-  //     form.nameOfTheCurrentSchool !== '' &&
-  //     form.admissionSeekingFor !== '' &&
-  //     form.fatherName !== '' &&
-  //     form.fatherNumber !== '' &&
-  //     form.fatherEmail !== '' &&
-  //     form.motherName !== '' &&
-  //     form.motherNumber !== '' &&
-  //     form.motherEmail !== '' &&
-  //     form.admissionOfCommunication !== ''
-  //   ) {
-  //     const newRow = {
-  //       Name: form.name,
-  //       Dob: form.dob,
-  //       LastClassStudied: form.lastClassStudied,
-  //       NameOfTheCurrentSchool: form.nameOfTheCurrentSchool,
-  //       AdmissionSeekingFor: form.admissionSeekingFor,
-  //       FatherName: form.fatherName,
-  //       FatherNumber: form.fatherNumber,
-  //       FatherEmail: form.fatherEmail,
-  //       MotherName: form.motherName,
-  //       MotherNumber: form.motherNumber,
-  //       MotherEmail: form.motherEmail,
-  //       AdmissionOfCommunication: form.admissionOfCommunication,
-  //     };
-
-  //     appendSpreadsheet(newRow);
-  //   }
-  //   alert('success');
-  // };
-
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   return (
     <>
@@ -137,34 +73,34 @@ const EnquiryForm = () => {
               }
             >
               <div className={styles.enquiryForm}>
-                <Form>
+                <Form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
                   <div className={'row' + ' ' + styles.form}>
                     <div className='col-md-5'>
                       <h5 className='mb-5'>Child Information</h5>
 
                       <Form.Group className='mb-5' controlId='formBasicEmail'>
                         <Form.Label>Name of the Child</Form.Label>
-                        <Form.Control onChange={handleChange} name='name' className={styles.formText} type='text' />
+                        <Form.Control name='Name' className={styles.formText} type='text' />
                       </Form.Group>
 
                       <Form.Group className='mb-5'>
                         <Form.Label>Student Date of Birth</Form.Label>
-                        <Form.Control onChange={handleChange} name='dob' className={styles.formText} type='date' />
+                        <Form.Control name='DOB' className={styles.formText} type='date' />
                       </Form.Group>
 
                       <Form.Group className='mb-5'>
                         <Form.Label>Last Class Studied</Form.Label>
-                        <Form.Control onChange={handleChange} name='lastClassStudied' className={styles.formText} type='text' />
+                        <Form.Control name='Last Class Studied' className={styles.formText} type='text' />
                       </Form.Group>
 
                       <Form.Group className='mb-5'>
                         <Form.Label>Name of the Current school</Form.Label>
-                        <Form.Control onChange={handleChange} name='nameOfTheCurrentSchool' className={styles.formText} type='text' />
+                        <Form.Control name='Name Of The Current School' className={styles.formText} type='text' />
                       </Form.Group>
 
                       <Form.Group className='mb-5'>
                         <Form.Label>Admission seeking for</Form.Label>
-                        <Form.Control onChange={handleChange} name='admissionSeekingFor' className={styles.formText} type='text' />
+                        <Form.Control name='Admission Seeking For' className={styles.formText} type='text' />
                       </Form.Group>
                     </div>
 
@@ -175,8 +111,8 @@ const EnquiryForm = () => {
                         <Form.Group className='mb-5'>
                           <Form.Label>Name</Form.Label>
                           <Form.Control
-                            onChange={handleChange}
-                            name='fatherName'
+
+                            name='Father Name'
                             className={styles.formText}
                             type='text'
                           />
@@ -187,7 +123,7 @@ const EnquiryForm = () => {
                             <Form.Group className='col-md-6 mb-5'>
                               <Form.Label>Phone Number</Form.Label>
                               <Form.Control
-                                onChange={handleChange} name='fatherNumber'
+                                name='Father Number'
                                 className={styles.formText}
                                 type='number'
                               />
@@ -196,7 +132,7 @@ const EnquiryForm = () => {
                             <Form.Group className='col-md-6 mb-5'>
                               <Form.Label>Email</Form.Label>
                               <Form.Control
-                                onChange={handleChange} name='fatherEmail'
+                                name='Father Email'
                                 className={styles.formText}
                                 type='email'
                               />
@@ -210,7 +146,7 @@ const EnquiryForm = () => {
                         <Form.Group className='mb-5'>
                           <Form.Label>Name</Form.Label>
                           <Form.Control
-                            onChange={handleChange} name='motherName'
+                            name='Mother Name'
                             className={styles.formText}
                             type='text'
                           />
@@ -221,7 +157,7 @@ const EnquiryForm = () => {
                             <Form.Group className='col-md-6 mb-5'>
                               <Form.Label>Phone Number</Form.Label>
                               <Form.Control
-                                onChange={handleChange} name='motherNumber'
+                                name='Mother Number'
                                 className={styles.formText}
                                 type='number'
                               />
@@ -230,7 +166,7 @@ const EnquiryForm = () => {
                             <Form.Group className='col-md-6 mb-5'>
                               <Form.Label>Email</Form.Label>
                               <Form.Control
-                                onChange={handleChange} name='motherEmail'
+                                name='Mother Email'
                                 className={styles.formText}
                                 type='email'
                               />
@@ -245,11 +181,12 @@ const EnquiryForm = () => {
                         <Form.Label className='mb-5'>
                           Admission of Communication
                         </Form.Label>
-                        <Form.Control onChange={handleChange} name='admissionOfCommunication' className={styles.formText} type='text' />
+                        <Form.Control name='Admission Of Communication' className={styles.formText} type='text' />
                       </Form.Group>
 
                       <a href='#'>
-                        <Button className={'brownBtn'}>Submit</Button>
+                        <input type="submit" className={'brownBtn ' + styles.submitBtn } value={loading ? "Loading..." : "Submit"}/>
+                        {/* < className={'brownBtn'} type="submit" value={loading ? "Loading..." : "Send"}>Submit</Button> */}
                       </a>
                     </div>
                   </div>

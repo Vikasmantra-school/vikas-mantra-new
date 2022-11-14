@@ -2,41 +2,30 @@ import Image from 'next/image'
 import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 const Footer = () => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
 
-  function suma(e) {
+  //form-sheet-integration
+
+  const formRef = useRef(null)
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec"
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = (e) => {
     e.preventDefault()
-    setName(e.target.Name.value)
-    setEmail(e.target.Email.value)
-    setPhone(e.target.Phone.value)
+    setLoading(true)
 
-    let data = [
-      {
-        Name: name,
-        Email: email,
-        Phone: phone,
-      },
-    ]
-    console.error(data)
+    fetch(scriptUrl, {
+      method: 'POST',
+      body: new FormData(formRef.current),
 
-    // setEmail('')
-
-    fetch(
-      'https://script.google.com/macros/s/AKfycbymJsuHpK8K-YPOnYmPEmBW-K6wxUbghTmJd1JMB5Pr1twYSKdX6n1YcYyISd_-M4Xd2Q/exec',
-      {
-        method: 'POST',
-        body: data,
-      }
-    ).then(() => {
-      alert('Form has been submitted successfully')
+    }).then(res => {
+      alert('Our admission officer will contact you shortly');
+      setLoading(false)
     })
+      .catch(err => console.log(err))
   }
-
   return (
     <div className={styles.section + ' pt-5 pb-4 '}>
       <div className='container'>
@@ -48,10 +37,9 @@ const Footer = () => {
                 <h3>FOR AN ADMISSION TOUR</h3>
               </div>
 
-              <form onSubmit={(e) => suma(e)} id='myForm' method='post'>
+              <form ref={formRef} onSubmit={handleSubmit} name="google-sheet" >
                 <div className='mb-3'>
                   <input
-                    onChange={(e) => setName(e.target.value)}
                     type='text'
                     className={styles.formInput + ' form-control'}
                     placeholder='Name'
@@ -62,7 +50,6 @@ const Footer = () => {
 
                 <div className='mb-3'>
                   <input
-                    onChange={(e) => setEmail(e.target.value)}
                     type='email'
                     className={styles.formInput + ' form-control'}
                     aria-describedby='emailHelp'
@@ -74,7 +61,6 @@ const Footer = () => {
 
                 <div className='mb-3'>
                   <input
-                    onChange={(e) => setPhone(e.target.value)}
                     type='number'
                     className={styles.formInput + ' form-control'}
                     placeholder='Number'
@@ -83,12 +69,12 @@ const Footer = () => {
                   />
                 </div>
 
-                <button
-                  type='submit'
-                  className={styles.sendBtn + ' btn btn-light mt-4'}
-                >
-                  Send
-                </button>
+                <div className='mb-3'>
+
+                  <input type="submit" value={loading ? "Loading..." : "Send"} className={styles.sendBtn + ' btn btn-light mt-4'} />
+
+                </div>
+
               </form>
 
               <p className='mt-4'>
