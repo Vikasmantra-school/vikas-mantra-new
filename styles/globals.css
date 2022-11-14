@@ -1104,6 +1104,7 @@ tr {
 
 .imgBgColorAdmission1 {
   position: relative;
+  max-width: fit-content;
 }
 
 .imgBgColorAdmission2::after {

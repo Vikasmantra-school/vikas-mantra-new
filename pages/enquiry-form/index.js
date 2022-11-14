@@ -149,7 +149,7 @@ const EnquiryForm = () => {
 
                       <Form.Group className='mb-5'>
                         <Form.Label>Student Date of Birth</Form.Label>
-                        <Form.Control onChange={handleChange} name='dob' className={styles.formText} type='text' />
+                        <Form.Control onChange={handleChange} name='dob' className={styles.formText} type='date' />
                       </Form.Group>
 
                       <Form.Group className='mb-5'>
