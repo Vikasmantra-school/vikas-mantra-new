@@ -53,7 +53,7 @@
     padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
 
     .libraryImg{
@@ -69,9 +69,27 @@
         z-index: 1;
         background-size: 70px;
         height: 210px;
-        right: 12px;
+        right: 0px;
         width: 190px;
-        bottom: 248px;
+        bottom: 180px;
+    }
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector18.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 0;
+        background-size: 8vh;
+        height: 227px;
+        left: 0;
+        width: 247px;
+        bottom: 0;
+    }
+    .libraryImg {
+        width: 100%;
+        top: 0px;
+        right: 0px;
     }
 
 }

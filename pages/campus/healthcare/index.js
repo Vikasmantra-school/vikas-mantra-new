@@ -56,7 +56,7 @@ const Healthcare = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <div className='imgBgColor pastelBlue2'>
+                            <div className='imgBgColor pastelBlue2 bgImageMargin'>
 
                                 <img src='/assets/campus/healthcare.png' alt="image" className={styles.securityImg} />
 

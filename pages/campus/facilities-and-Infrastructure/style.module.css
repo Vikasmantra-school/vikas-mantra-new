@@ -16,11 +16,11 @@
 .schlBuildingImg {
     width: 100%;
     position: absolute;
-    top: -200px;
+    top: 0px;
     right: -58px;
 }
 
-.vectorImg5::before{
+.vectorImg5::before {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector14.png);
@@ -35,7 +35,7 @@
 }
 
 .vectorImg10::after {
-    
+
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector10.png);
@@ -50,7 +50,7 @@
 }
 
 .vmpsImg::after {
-    
+
     content: '';
     position: absolute;
     background-image: url(/assets/VMPS.png);
@@ -64,13 +64,17 @@
     top: 125px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
 
     .schlBuildingImg {
         width: 100%;
         position: unset;
+        top: 0px;
+        right: 0;
+
     }
+
     .vectorImg10::after {
         content: '';
         position: absolute;
@@ -84,6 +88,7 @@
         width: 247px;
         bottom: 20px;
     }
+
     .vectorImg5::before {
         content: '';
         position: absolute;
@@ -96,5 +101,19 @@
         left: 0;
         width: 190px;
         top: 117px;
+    }
+
+    .vmpsImg::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/VMPS.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 0;
+        background-size: 185px;
+        height: 227px;
+        left: 0;
+        width: 300px;
+        bottom: 0;
     }
 }

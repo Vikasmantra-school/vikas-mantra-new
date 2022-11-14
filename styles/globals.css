@@ -1077,6 +1077,7 @@ tr {
   position: relative;
   z-index: 1;
 }
+
 /*bgs*/
 
 /*admsn*/
@@ -1090,6 +1091,7 @@ tr {
   left: 73px;
   bottom: 300px;
 }
+
 .imgBgColorAdmission1 img {
   position: relative;
   z-index: 1;
@@ -1113,6 +1115,7 @@ tr {
   left: 55px;
   bottom: 300px;
 }
+
 .imgBgColorAdmission2 img {
   position: relative;
   z-index: 1;
@@ -1139,6 +1142,7 @@ tr {
   left: 73px;
   bottom: 40px;
 }
+
 .imgBgColorBlog1 img {
   position: relative;
   z-index: 1;
@@ -1167,6 +1171,7 @@ tr {
   position: relative;
   z-index: 1;
 }
+
 /*blog*/
 
 .pastelGreen::after {
@@ -1257,51 +1262,38 @@ tr {
 .pastelGreen2::after {
   background-color: #c9f088;
 }
-.pastelGreen3::after{
+
+.pastelGreen3::after {
   background-color: #d8fbe0;
 }
-.pastelGold1::after{
+
+.pastelGold1::after {
   background-color: #f0e688;
 }
-.pastelBlue3::after{
+
+.pastelBlue3::after {
   background-color: #88f0e4;
 }
-.pastelPurple3::after{
+
+.pastelPurple3::after {
   background-color: #d8d7fc;
 }
-.pastelGreen4::after{
+
+.pastelGreen4::after {
   background-color: #97f088;
 }
-.pastelBlue4::after{
+
+.pastelBlue4::after {
   background-color: #51c6eb;
 }
-.pastelBlue5::after{
+
+.pastelBlue5::after {
   background-color: #baecef;
 }
-.pastelBrown3::after{
+
+.pastelBrown3::after {
   background-color: #efd0ce;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1355,13 +1347,35 @@ tr {
     border-color: #AA182C;
   }
 
-  .imgBgColor::after{
+  .imgBgColor::after {
 
     left: 10px;
     bottom: -12px;
   }
 
+  .imgBgColor2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 12px;
+    bottom: -12px;
+  }
 
+  .imgBgColorLeft::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: -12px;
+    bottom: -12px;
+  }
+
+  .bgImageMargin {
+    margin: 25px 0;
+  }
 
 }
 

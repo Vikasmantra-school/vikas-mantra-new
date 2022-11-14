@@ -48,7 +48,7 @@ const SpecialityRoom = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <div className='imgBgColor pastelBrown'>
+                            <div className='imgBgColor pastelBrown bgImageMargin'>
 
                                 <img src='/assets/campus/Speciality-room.png' alt="image" className={styles.classroomImg} />
 
@@ -62,7 +62,7 @@ const SpecialityRoom = () => {
 
                         <div className='col-md-6'>
 
-                            <h3 className='ulineRed'>Specialty Rooms at
+                            <h3 className={'ulineRed ' + styles.uLineMargin}>Specialty Rooms at
                                 VIKAS MANTRA PUBLIC SCHOOL include</h3>
                         </div>
 

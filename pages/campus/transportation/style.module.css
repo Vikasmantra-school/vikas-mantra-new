@@ -31,7 +31,7 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
     .sectionPdng {
         padding-top: 50px;
@@ -41,18 +41,20 @@
     .schlBusImg {
         width: 100%;
         position: unset;
+        top: 0;
+        right: 0;
     }
     .vectorImg11::before {
         content: '';
         position: absolute;
         background-image: url(/assets/vectors/vector15.png);
         background-repeat: no-repeat;
-        background-position: top left;
+        background-position: center left;
         z-index: 1;
         background-size: 62px;
         height: 228px;
         width: 114px;
-        top: 40%;
+        bottom: 0%;
     }
 
 }

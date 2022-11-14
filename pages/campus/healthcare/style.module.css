@@ -43,11 +43,13 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
     .securityImg {
         width: 100%;
         position: unset;
+        top: 0;
+        right: 0;
     }
 
     .sectionPdng {

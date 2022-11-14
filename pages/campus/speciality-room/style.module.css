@@ -54,7 +54,7 @@
     padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
     .sectionPdng {
         padding-right: 10px;
@@ -98,6 +98,15 @@
         width: 247px;
         bottom: 10px;
         right: 0;
+    }
+    .classroomImg {
+        width: 100%;
+        position: absolute;
+        top: 0; 
+        right: 0;
+    }
+    .uLineMargin{
+        margin: 40px 0;
     }
 
 }

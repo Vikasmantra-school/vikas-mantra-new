@@ -53,7 +53,7 @@ const Technology = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <div className='imgBgColor pastelYellow '>
+                            <div className='imgBgColor pastelYellow bgImageMargin'>
 
                                 <img src='/assets/campus/technology.png' alt="image" className={styles.libraryImg} />
 
