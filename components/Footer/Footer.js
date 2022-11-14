@@ -3,69 +3,59 @@ import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
 import Link from 'next/link'
 import { useState } from 'react'
-import { GoogleSpreadsheet } from 'google-spreadsheet';
+import { GoogleSpreadsheet } from 'google-spreadsheet'
 
-
-
-const SPREADSHEET_ID = process.env.NEXT_PUBLIC_FOOTER_SPREADSHEET_ID;
-const SHEET_ID = process.env.NEXT_PUBLIC_FOOTER_SHEET_ID;
-const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_FOOTER_GOOGLE_CLIENT_EMAIL;
-const GOOGLE_SERVICE_PRIVATE_KEY = process.env.NEXT_PUBLIC_FOOTER_GOOGLE_SERVICE_PRIVATE_KEY;
-
+const SPREADSHEET_ID = process.env.NEXT_PUBLIC_FOOTER_SPREADSHEET_ID
+const SHEET_ID = process.env.NEXT_PUBLIC_FOOTER_SHEET_ID
+const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_FOOTER_GOOGLE_CLIENT_EMAIL
+const GOOGLE_SERVICE_PRIVATE_KEY =
+  process.env.NEXT_PUBLIC_FOOTER_GOOGLE_SERVICE_PRIVATE_KEY
 
 const Footer = () => {
-
   const [form, setForm] = useState({
     name: '',
     email: '',
     number: '',
-  });
+  })
 
-  const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+  const doc = new GoogleSpreadsheet(SPREADSHEET_ID)
 
   const appendSpreadsheet = async (row) => {
     try {
       await doc.useServiceAccountAuth({
         client_email: GOOGLE_CLIENT_EMAIL,
         private_key: GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-      });
+      })
       // loads document properties and worksheets
-      await doc.loadInfo();
-      const sheet = doc.sheetsById[SHEET_ID];
-      await sheet.addRow(row);
+      await doc.loadInfo()
+      const sheet = doc.sheetsById[SHEET_ID]
+      await sheet.addRow(row)
     } catch (e) {
-      console.error('Error: ', e);
+      console.error('Error: ', e)
     }
-  };
+  }
 
   const submitForm = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    if (
-      form.name !== '' &&
-      form.email !== '' &&
-      form.number !== ''
-    ) {
+    // if (form.name !== '' && form.email !== '' && form.number !== '') {
+    //   const newRow = {
+    //     Name: form.name,
+    //     Email: form.email,
+    //     Number: form.number,
+    //   }
 
-      const newRow = {
-        Name: form.name,
-        Email: form.email,
-        Number: form.number,
-      };
-
-      appendSpreadsheet(newRow);
-    }
-    alert('success');
-
-  };
+    //   appendSpreadsheet(newRow)
+    // }
+    // alert('success')
+  }
 
   const handleChange = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
-    });
-  };
-
+    })
+  }
 
   return (
     <div className={styles.section + ' pt-5 pb-4 '}>
@@ -78,14 +68,17 @@ const Footer = () => {
                 <h3>FOR AN ADMISSION TOUR</h3>
               </div>
 
-              <form onSubmit={submitForm}>
+              <form
+                method='post'
+                action='https://script.google.com/macros/s/AKfycbymJsuHpK8K-YPOnYmPEmBW-K6wxUbghTmJd1JMB5Pr1twYSKdX6n1YcYyISd_-M4Xd2Q/exec'
+              >
                 <div className='mb-3'>
                   <input
                     type='text'
                     className={styles.formInput + ' form-control'}
                     placeholder='Name'
                     required
-                    name="name"
+                    name='Name'
                     onChange={handleChange}
                   />
                 </div>
@@ -97,7 +90,7 @@ const Footer = () => {
                     aria-describedby='emailHelp'
                     placeholder='Email'
                     required
-                    name="email"
+                    name='Email'
                     onChange={handleChange}
                   />
                 </div>
@@ -108,8 +101,7 @@ const Footer = () => {
                     className={styles.formInput + ' form-control'}
                     placeholder='Number'
                     required
-                    name="number"
-                    rows="3"
+                    name='Phone'
                   />
                 </div>
 
