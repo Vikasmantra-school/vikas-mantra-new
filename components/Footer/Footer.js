@@ -2,60 +2,22 @@ import Image from 'next/image'
 import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
 import Link from 'next/link'
-import { useState } from 'react'
-import { GoogleSpreadsheet } from 'google-spreadsheet'
-
-const SPREADSHEET_ID = process.env.NEXT_PUBLIC_FOOTER_SPREADSHEET_ID
-const SHEET_ID = process.env.NEXT_PUBLIC_FOOTER_SHEET_ID
-const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_FOOTER_GOOGLE_CLIENT_EMAIL
-const GOOGLE_SERVICE_PRIVATE_KEY =
-  process.env.NEXT_PUBLIC_FOOTER_GOOGLE_SERVICE_PRIVATE_KEY
+import {useEffect} from 'react'
 
 const Footer = () => {
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    number: '',
+
+ function suma(e) {
+  e.preventDefault()
+  fetch('https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec', {
+    method: 'POST',
+    body: data,
   })
-
-  const doc = new GoogleSpreadsheet(SPREADSHEET_ID)
-
-  const appendSpreadsheet = async (row) => {
-    try {
-      await doc.useServiceAccountAuth({
-        client_email: GOOGLE_CLIENT_EMAIL,
-        private_key: GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-      })
-      // loads document properties and worksheets
-      await doc.loadInfo()
-      const sheet = doc.sheetsById[SHEET_ID]
-      await sheet.addRow(row)
-    } catch (e) {
-      console.error('Error: ', e)
-    }
-  }
-
-  const submitForm = (e) => {
-    e.preventDefault()
-
-    // if (form.name !== '' && form.email !== '' && form.number !== '') {
-    //   const newRow = {
-    //     Name: form.name,
-    //     Email: form.email,
-    //     Number: form.number,
-    //   }
-
-    //   appendSpreadsheet(newRow)
-    // }
-    // alert('success')
-  }
-
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
+    .then(() => {
+      alert('Form has been submitted successfully');
     })
-  }
+ }
+
+
 
   return (
     <div className={styles.section + ' pt-5 pb-4 '}>
@@ -69,8 +31,9 @@ const Footer = () => {
               </div>
 
               <form
+              onSubmit={(e) => suma(e)}
+                id='myForm'
                 method='post'
-                action='https://script.google.com/macros/s/AKfycbymJsuHpK8K-YPOnYmPEmBW-K6wxUbghTmJd1JMB5Pr1twYSKdX6n1YcYyISd_-M4Xd2Q/exec'
               >
                 <div className='mb-3'>
                   <input
@@ -79,7 +42,6 @@ const Footer = () => {
                     placeholder='Name'
                     required
                     name='Name'
-                    onChange={handleChange}
                   />
                 </div>
 
@@ -91,7 +53,6 @@ const Footer = () => {
                     placeholder='Email'
                     required
                     name='Email'
-                    onChange={handleChange}
                   />
                 </div>
 
