@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.classroomImgDiv{
+.classroomImgDiv {
     position: relative;
     top: -185px;
 }
@@ -39,10 +39,11 @@
     height: 227px;
     width: 247px;
     right: 0;
-    bottom: 0;  
+    bottom: 0;
 }
+
 .vmpsImg::after {
-    
+
     content: '';
     position: absolute;
     background-image: url(/assets/VMPS.png);
@@ -57,17 +58,19 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
     .pdngZero {
         padding: 0px 12px !important;
     }
-    .classroomImg{
+
+    .classroomImg {
         width: 100%;
         height: 100%;
         position: unset;
-        padding: 20px 0px;
+        padding: 0px;
     }
+
     .vectorImg9::after {
         content: '';
         position: absolute;
@@ -81,6 +84,7 @@
         right: 0;
         bottom: 0;
     }
+
     .vectorImg10::before {
         content: '';
         position: absolute;
@@ -94,6 +98,29 @@
         width: 247px;
         top: 18%;
         z-index: 1;
+    }
+
+    .classroomImgDiv {
+        position: relative;
+        top: 0;
+        margin: 25px 0;
+    }
+
+    .vmpsImg::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/VMPS.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: 0;
+        background-size: 185px;
+        height: 227px;
+        right: 0px;
+        width: 300px;
+        bottom: 0;
+    }
+    .ulineMargin{
+        margin-bottom: 40px;
     }
 
 }

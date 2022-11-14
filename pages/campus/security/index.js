@@ -51,7 +51,7 @@ const Security = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <div className='imgBgColor pastelRed2'>
+                            <div className='imgBgColor pastelRed2 bgImageMargin'>
 
                                 <img src='/assets/campus/security.png' alt="image" className={styles.securityImg} />
 

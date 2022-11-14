@@ -2,6 +2,7 @@
     color: #AA182C;
     margin-right: 10px;
 }
+
 .vectorImg1 {
     width: auto;
     height: 280px;
@@ -33,7 +34,7 @@
     bottom: 78px;
 }
 
-.vectorImg10::before{
+.vectorImg10::before {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector17.png);
@@ -53,12 +54,13 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
     .securityImg {
         width: 100%;
         position: unset;
-
+        top: 0;
+        right: 0;
     }
 
     .sectionPdng {
@@ -78,6 +80,19 @@
         left: -43px;
         width: 247px;
         top: 13%;
+    }
+    .vectorImg11::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector11.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 70px;
+        height: 227px;
+        right: 0;
+        width: 247px;
+        bottom: 0;
     }
 
 }

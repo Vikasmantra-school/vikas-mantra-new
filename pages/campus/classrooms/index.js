@@ -74,7 +74,7 @@ const Classrooms = () => {
 
           <div className='row py-5'>
             <div className='col-md-12'>
-              <h3 className='ulineRed'>About our classrooms</h3>
+              <h3 className={'ulineRed ' + styles.ulineMargin}>About our classrooms</h3>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>

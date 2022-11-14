@@ -50,7 +50,7 @@ const Transportation = () => {
 
                         <div className='col-md-7 position-relative'>
 
-                            <div className='imgBgColor pastelBrown2'>
+                            <div className='imgBgColor pastelBrown2 bgImageMargin'>
 
                                 <img src='/assets/campus/school-bus.png' alt="image" className={styles.schlBusImg} />
 
