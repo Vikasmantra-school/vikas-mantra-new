@@ -5,7 +5,7 @@ import styles from './style.module.css'
 import { useState } from 'react'
 
 function EventsNav({ events }) {
-  const [active, setActive] = useState('Beach Day')
+  const [active, setActive] = useState('Beach Day for Kg')
 
   function tabs(elem, index) {
     console.error(elem.innerText)

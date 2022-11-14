@@ -10,7 +10,7 @@
 
 .dropdowns .dropdown-toggle::after{color: #9e1928;}
 
-.dropdowns button::after{position: absolute;left: 80px;top: 24px;color: #992331;}
+.dropdowns button::after{position: absolute;left: 235px;top: 24px;color: #992331;}
 
 .tabNavLink{color: rgba(29, 29, 29, 1) !important;padding-left: 0;}
 

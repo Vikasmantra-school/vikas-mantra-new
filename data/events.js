@@ -1,7 +1,7 @@
 export const events = [
   {
     id: 'first',
-    dropdown: 'Beach Day',
+    dropdown: 'Beach Day for Kg',
     title: 'Beach Day for Kg',
     desc: 'We the tiny n happy fishes in the marine world.Today at Vikas Mantra Public School organized The Beach Day as a part of monthly concept. Children learnt the concept of going to beach in summer. Underwater creatures were taught through songs.',
     mainImage: '/assets/events/beach-day/1.jpeg',
