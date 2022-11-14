@@ -71,11 +71,11 @@ const Healthcare = () => {
                                 <h3 className='ulineRed'>Our healthcare centre
                                     infrastructure includes:</h3>
 
-                                <ul className='pt-5'>
+                                <ul className='pt-5 list-points '>
 
-                                    <li className='pt-3'> First aid kits, basic medicines & medical supplies</li>
+                                    <li className='pt-3'>  <img src="/assets/icons/blue-point.png" alt='list-point' />First aid kits, basic medicines & medical supplies</li>
 
-                                    <li className='pt-3'>Full-time qualified nurse</li>
+                                    <li className='pt-3'> <img src="/assets/icons/pink-point.png" alt='list-point' />Full-time qualified nurse</li>
 
                                 </ul>
 

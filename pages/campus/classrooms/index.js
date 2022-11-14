@@ -78,32 +78,32 @@ const Classrooms = () => {
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
-              <ul>
-                <li>Large (575 sq ft), well-ventilated and naturally-lit</li>
+              <ul className='list-points'>
+                <li> <img src="/assets/icons/blue-point.png" alt='list-point' /> Large (575 sq ft), well-ventilated and naturally-lit</li>
               </ul>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
-              <ul>
-                <li>Air-conditioned classrooms.</li>
+              <ul className='list-points'>
+                <li><img src="/assets/icons/pink-point.png" alt='list-point' /> Air-conditioned classrooms.</li>
               </ul>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
-              <ul>
-                <li>Student safe furniture</li>
+              <ul className='list-points'>
+                <li><img src="/assets/icons/yellow-point.png" alt='list-point' />Student safe furniture</li>
               </ul>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
-              <ul>
-                <li>Storage space for every student</li>
+              <ul className='list-points'>
+                <li><img src="/assets/icons/lightgreen-point.png" alt='list-point' />Storage space for every student</li>
               </ul>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pb-4'}>
-              <ul>
-                <li>
+              <ul className='list-points'>
+                <li><img src="/assets/icons/orange-point.png" alt='list-point' />
                   Racks, pegs and pigeon holes for students to organise activity
                   material
                 </li>
@@ -111,26 +111,26 @@ const Classrooms = () => {
             </div>
 
             <div className='col-md-3'>
-              <ul>
-                <li>Wi-Fi-enabled</li>
+              <ul className='list-points'>
+                <li><img src="/assets/icons/darkblue-point.png" alt='list-point' />Wi-Fi-enabled</li>
               </ul>
             </div>
 
             <div className='col-md-3'>
-              <ul>
-                <li>Interactive boards</li>
+              <ul className='list-points'>
+                <li><img src="/assets/icons/red-point.png" alt='list-point' />Interactive boards</li>
               </ul>
             </div>
 
             <div className='col-md-3'>
-              <ul>
-                <li>Reading corners to promote the habit of reading</li>
+              <ul className='list-points'>
+                <li><img src="/assets/icons/lightblue.png" alt='list-point' />Reading corners to promote the habit of reading</li>
               </ul>
             </div>
 
             <div className='col-md-3'>
-              <ul>
-                <li>
+              <ul className='list-points'>
+                <li><img src="/assets/icons/green-point.png" alt='list-point' />
                   Mini libraries\ within classrooms with appropriate reading
                   material
                 </li>

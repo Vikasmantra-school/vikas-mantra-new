@@ -2,38 +2,49 @@
     color: #AA182C;
     margin-right: 10px;
 }
+
 .Blog1Img {
+    position: absolute;
     width: 100%;
-    top: -90px;
+    height: 380px;
+    top: -270px;
 }
 
 .Blog2Img {
     width: 100%;
-    top: -70px;
-}
-.colPdng1{
-    padding: 0px 70px 0px 12px;
-}
-.colPdng2{
-    padding: 0px 60px 0px 60px;
 }
 
+.vectorImg1 {
+    width: auto;
+    height: 322px;
+    position: absolute;
+    right: -104px;
+    top: -24px;
+}
 
-.vectorImg2::before {
+.vectorImg2 {
+    width: auto;
+    position: absolute;
+    left: -10px;
+    top: 316px;
+
+}
+
+.BlogvectorImg2::before {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector1.png);
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
-    background-size: 100px;
+    background-size: 160px;
     height: 210px;
     left: 0%;
     width: 190px;
-    top: 0%;
+    top: -2%;
 }
 
-.vectorImg3::after {
+.BlogvectorImg3::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector2.png);
@@ -47,18 +58,10 @@
     bottom: 3%;
 }
 
-.BlogvectorImg2 {
-    width: auto;
-    position: absolute;
-    left: -27px;
-    top: 333px;
-}
-
-.BlogvectorImg3 {
+.vectorImg3 {
     width: auto;
     position: absolute;
     right: 0;
-    bottom: -800px;
 }
 
 .sectionContainer {
@@ -71,10 +74,6 @@
     height: 380px;
     top: -224px;
 }
-.rowBox{
-    border: 2px solid #222;
-}
-
 
 @media only screen and (max-width: 600px) {
 
@@ -99,20 +98,20 @@
         width: 100%;
         height: 100%;
     }
-    .vectorImg2::before {
+    .BlogvectorImg2::before {
         content: '';
         position: absolute;
         background-image: url(/assets/vectors/Vector1.png);
         background-repeat: no-repeat;
         background-position: top left;
         z-index: 1;
-        background-size: 88px;
+        background-size: 100px;
         height: 210px;
         left: 0%;
         width: 190px;
-        top: -2%;
+        top: -1%;
     }
-    .vectorImg3::after {
+    .BlogvectorImg3::after {
         content: '';
         position: absolute;
         background-image: url(/assets/vectors/Vector2.png);
@@ -123,10 +122,7 @@
         height: 210px;
         right: 0%;
         width: 190px;
-        bottom: 3%;
-    }
-    .colPdng2{
-        padding: 0 15px;
+        bottom: 1%;
     }
 
 }

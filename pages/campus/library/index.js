@@ -84,19 +84,19 @@ const Library = () => {
 
                         <div className='col-md-8 position-relative pt-5'>
 
-                            <ul>
+                            <ul className='list-points'>
 
-                                <li className='pt-3'>A wide spectrum of books, magazines, periodicals, and dailies which support the core learning curriculum.</li>
+                                <li className='pt-3'> <img src="/assets/icons/blue-point.png" alt='list-point' /> A wide spectrum of books, magazines, periodicals, and dailies which support the core learning curriculum.</li>
 
-                                <li className='pt-3'>Abridged novels, children’s story books, early reading tools in the Junior Library.</li>
+                                <li className='pt-3'> <img src="/assets/icons/pink-point.png" alt='list-point' /> Abridged novels, children’s story books, early reading tools in the Junior Library.</li>
 
-                                <li className='pt-3'>Digital resources such as e-books, videos, online databases and other aids to research.</li>
+                                <li className='pt-3'> <img src="/assets/icons/yellow-point.png" alt='list-point' /> Digital resources such as e-books, videos, online databases and other aids to research.</li>
 
-                                <li className='pt-3'>Literature in multiple languages, sourced from around the globe.</li>
+                                <li className='pt-3'> <img src="/assets/icons/lightgreen-point.png" alt='list-point' /> Literature in multiple languages, sourced from around the globe.</li>
 
-                                <li className='pt-3'>Departmental sections which stock subject-specific resources.</li>
+                                <li className='pt-3'> <img src="/assets/icons/orange-point.png" alt='list-point' /> Departmental sections which stock subject-specific resources.</li>
 
-                                <li className='pt-3'>Computers which allow students to access online publications and journals.</li>
+                                <li className='pt-3'> <img src="/assets/icons/darkblue-point.png" alt='list-point' /> Computers which allow students to access online publications and journals.</li>
 
                             </ul>
 

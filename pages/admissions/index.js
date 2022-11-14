@@ -128,18 +128,17 @@ const Admissions = () => {
           {/* tab-content-start */}
 
           <div className={'tab-content '} id=' v-pills-tabContent'>
-            <div
-              className={' tab-pane fade show active ' + styles.Tab1BlueVector + ' ' +
-                styles.tab1RedDotVector + ' ' + styles.vectorImg16 + ' ' + styles.vectorImg5}
+            <div className={' tab-pane fade show active ' + styles.Tab1BlueVector + ' ' +
+              styles.tab1RedDotVector + ' ' + styles.vectorImg16 + ' ' + styles.vectorImg5}
               id='v-pills-home' role='tabpanel' aria-labelledby='v-pills-home-tab' tabIndex='0'>
               <div className='row'>
                 <div className='col-md-8 offset-md-4'>
 
-                  <div className={styles.schoolBuilding}>
+                  <div className={styles.schoolBuilding + ' imgUpAdmission1 imgBgColorAdmission1 pastelPurple3 '}>
                     <img
                       src='/assets/banners/school-building2.png'
                       alt='image'
-                      className={styles.schoolBuildingImg}
+                      className={styles.schoolBuildingImg + ' img-fluid'}
                     />
                   </div>
 
@@ -171,14 +170,16 @@ const Admissions = () => {
                         and build on individual potential.
                       </h6>
 
-                      <ul className='pt-4'>
+                      <ul className='pt-4 list-points '>
                         <li className='pt-1'>
+                          <img src="/assets/icons/blue-point.png" alt='list-point' />
                           To find out more about admissions at VIKAS MANTRA
                           PUBLIC SCHOOL or to visit the school for an
                           admissions
                           tour
                         </li>
                         <li className='pt-1'>
+                          <img src="/assets/icons/pink-point.png" alt='list-point' />
                           Please contact the Admission Coordinator between
                           8.30
                           am and 4.30 pm., Mon-Sat | 9.00 am – 1.00 pm on
@@ -204,12 +205,17 @@ const Admissions = () => {
               aria-labelledby='v-pills-profile-tab'
               tabIndex='0'>
               <div className={'row '}>
+
                 <div className={styles.Sec2PdngBtm + ' col-md-8 offset-md-4'}>
-                  <img
-                    src='/assets/banners/school-building2.png'
-                    alt='image'
-                    className={styles.schoolBuildingImg}
-                  />
+
+                  <div className={' imgUpAdmission2 imgBgColorAdmission2 pastelBlue3'}>
+                    <img
+                      src='/assets/banners/school-building2.png'
+                      alt='image'
+                      className={styles.schoolBuildingImg + ' img-fluid'}
+                    />
+                  </div>
+
                 </div>
 
                 <div className='col-md-8 offset-md-2'>
@@ -300,11 +306,14 @@ const Admissions = () => {
               tabIndex='0'>
               <div className={'row ' + styles.MobTextNone}>
                 <div className=' col-md-8 offset-md-4'>
-                  <img
-                    src='/assets/banners/school-building2.png'
-                    alt='image'
-                    className={styles.schoolBuildingImg}
-                  />
+
+                  <div className='imgUpAdmission2 imgBgColorAdmission2 pastelGold1 '>
+                    <img
+                      src='/assets/banners/school-building2.png'
+                      alt='image'
+                      className={styles.schoolBuildingImg}
+                    />
+                  </div>
                 </div>
 
                 <div
@@ -314,14 +323,15 @@ const Admissions = () => {
                     ' ' +
                     styles.tab3VectorSpiralBlue
                   }>
-                  <div className={styles.card1 + ' card'}>
+                  <div className={styles.card2 + ' card'}>
                     <div className='card-body'>
                       <h5 className='card-title ulineRed'>
                         Eligibility Criteria for all classes
                       </h5>
 
-                      <ul className='pt-5'>
+                      <ul className='pt-5 list-points'>
                         <li className='pt-1'>
+                          <img src="/assets/icons/blue-point.png" alt='list-point' />
                           Kindergarten – To be eligible for admission, the
                           child
                           must fall into the following age category as
@@ -329,11 +339,13 @@ const Admissions = () => {
                           secondary education.
                         </li>
                         <li className='pt-1'>
+                          <img src="/assets/icons/pink-point.png" alt='list-point' />
                           For Junior KG the child must have completed 3. 5
                           years
                           as on 30th June.
                         </li>
                         <li className='pt-1'>
+                          <img src="/assets/icons/yellow-point.png" alt='list-point' />
                           For Senior KG the child must have completed 4.5
                           years
                           as on 30th June.
@@ -633,11 +645,14 @@ const Admissions = () => {
               tabIndex='0'>
               <div className='row'>
                 <div className='col-md-8 offset-md-4'>
-                  <img
-                    src='/assets/banners/school-building2.png'
-                    alt='image'
-                    className={styles.schoolBuildingImg}
-                  />
+
+                  <div className='imgUpAdmission2 imgBgColorAdmission2 pastelGreen3'>
+                    <img
+                      src='/assets/banners/school-building2.png'
+                      alt='image'
+                      className={styles.schoolBuildingImg}
+                    />
+                  </div>
                 </div>
 
                 <div

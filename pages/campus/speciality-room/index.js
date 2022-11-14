@@ -50,7 +50,7 @@ const SpecialityRoom = () => {
 
                             <div className='imgBgColor pastelBrown'>
 
-                                <img src='/assets/campus/classroom.png' alt="image" className={styles.classroomImg} />
+                                <img src='/assets/campus/Speciality-room.png' alt="image" className={styles.classroomImg} />
 
                             </div>
 
@@ -72,8 +72,8 @@ const SpecialityRoom = () => {
 
                         <div className={styles.pdngZero + ' col-md-2 py-5'}>
 
-                            <ul>
-                                <li>Audio Video Lab
+                            <ul className='list-points'>
+                                <li> <img src="/assets/icons/blue-point.png" alt='list-point' />Audio Video Lab
                                 </li>
                             </ul>
 
@@ -81,19 +81,9 @@ const SpecialityRoom = () => {
 
                         <div className={styles.pdngZero + ' col-md-2 py-5'}>
 
-                            <ul>
+                            <ul className='list-points'>
 
-                                <li>Music and Dance studios</li>
-
-                            </ul>
-
-                        </div>
-
-                        <div className={styles.pdngZero + ' col-md-2 py-5'}>
-
-                            <ul>
-
-                                <li>Media Centre</li>
+                                <li> <img src="/assets/icons/pink-point.png" alt='list-point' /> Music and Dance studios</li>
 
                             </ul>
 
@@ -101,9 +91,19 @@ const SpecialityRoom = () => {
 
                         <div className={styles.pdngZero + ' col-md-2 py-5'}>
 
-                            <ul>
+                            <ul className='list-points'>
 
-                                <li>Multipurpose Hall</li>
+                                <li> <img src="/assets/icons/yellow-point.png" alt='list-point' /> Media Centre</li>
+
+                            </ul>
+
+                        </div>
+
+                        <div className={styles.pdngZero + ' col-md-2 py-5'}>
+
+                            <ul className='list-points'>
+
+                                <li> <img src="/assets/icons/lightgreen-point.png" alt='list-point' /> Multipurpose Hall</li>
 
                             </ul>
 
@@ -119,8 +119,6 @@ const SpecialityRoom = () => {
 
 
                         <div className='col-md-3 position-relative'>
-
-                            {/* <img src='/assets/vectors/Vector10.png' alt ="image" className={styles.vectorImg10} /> */}
 
                         </div>
 

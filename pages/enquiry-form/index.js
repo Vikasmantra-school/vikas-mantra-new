@@ -3,9 +3,96 @@ import styles from './style.module.css'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+// import { useState } from 'react';
+// import { GoogleSpreadsheet } from 'google-spreadsheet';
 
-export default function index() {
+// const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID;
+// const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID;
+// const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL;
+// const GOOGLE_SERVICE_PRIVATE_KEY = process.env.NEXT_PUBLIC_GOOGLE_SERVICE_PRIVATE_KEY;
+
+
+const EnquiryForm = () => {
   const pageTitle = 'Enquiry Form'
+
+  // //sheet-integration
+  // const [form, setForm] = useState({
+  //   name: '',
+  //   dob: '',
+  //   lastClassStudied: '',
+  //   nameOfTheCurrentSchool: '',
+  //   admissionSeekingFor: '',
+  //   fatherName: '',
+  //   fatherNumber: '',
+  //   fatherEmail: '',
+  //   motherName: '',
+  //   motherNumber: '',
+  //   motherEmail: '',
+  //   admissionOfCommunication: '',
+  // });
+
+
+  // const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+
+  // const appendSpreadsheet = async (row) => {
+  //   try {
+  //     await doc.useServiceAccountAuth({
+  //       client_email: GOOGLE_CLIENT_EMAIL,
+  //       private_key: GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+  //     });
+  //     // loads document properties and worksheets
+  //     await doc.loadInfo();
+  //     const sheet = doc.sheetsById[SHEET_ID];
+  //     await sheet.addRow(row);
+  //   } catch (e) {
+  //     console.error('Error: ', e);
+  //   }
+  // };
+
+  // const submitForm = (e) => {
+  //   e.preventDefault();
+
+  //   if (
+  //     form.name !== '' &&
+  //     form.dob !== '' &&
+  //     form.lastClassStudied !== '' &&
+  //     form.nameOfTheCurrentSchool !== '' &&
+  //     form.admissionSeekingFor !== '' &&
+  //     form.fatherName !== '' &&
+  //     form.fatherNumber !== '' &&
+  //     form.fatherEmail !== '' &&
+  //     form.motherName !== '' &&
+  //     form.motherNumber !== '' &&
+  //     form.motherEmail !== '' &&
+  //     form.admissionOfCommunication !== ''
+  //   ) {
+  //     const newRow = {
+  //       Name: form.name,
+  //       Dob: form.dob,
+  //       LastClassStudied: form.lastClassStudied,
+  //       NameOfTheCurrentSchool: form.nameOfTheCurrentSchool,
+  //       AdmissionSeekingFor: form.admissionSeekingFor,
+  //       FatherName: form.fatherName,
+  //       FatherNumber: form.fatherNumber,
+  //       FatherEmail: form.fatherEmail,
+  //       MotherName: form.motherName,
+  //       MotherNumber: form.motherNumber,
+  //       MotherEmail: form.motherEmail,
+  //       AdmissionOfCommunication: form.admissionOfCommunication,
+  //     };
+
+  //     appendSpreadsheet(newRow);
+  //   }
+  //   alert('success');
+  // };
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <>
       <style>{`
@@ -57,27 +144,27 @@ export default function index() {
 
                       <Form.Group className='mb-5' controlId='formBasicEmail'>
                         <Form.Label>Name of the Child</Form.Label>
-                        <Form.Control className={styles.formText} type='text' />
+                        <Form.Control onChange={handleChange} name='name' className={styles.formText} type='text' />
                       </Form.Group>
 
                       <Form.Group className='mb-5'>
                         <Form.Label>Student Date of Birth</Form.Label>
-                        <Form.Control className={styles.formText} type='text' />
+                        <Form.Control onChange={handleChange} name='dob' className={styles.formText} type='text' />
                       </Form.Group>
 
                       <Form.Group className='mb-5'>
                         <Form.Label>Last Class Studied</Form.Label>
-                        <Form.Control className={styles.formText} type='text' />
+                        <Form.Control onChange={handleChange} name='lastClassStudied' className={styles.formText} type='text' />
                       </Form.Group>
 
                       <Form.Group className='mb-5'>
                         <Form.Label>Name of the Current school</Form.Label>
-                        <Form.Control className={styles.formText} type='text' />
+                        <Form.Control onChange={handleChange} name='nameOfTheCurrentSchool' className={styles.formText} type='text' />
                       </Form.Group>
 
                       <Form.Group className='mb-5'>
                         <Form.Label>Admission seeking for</Form.Label>
-                        <Form.Control className={styles.formText} type='text' />
+                        <Form.Control onChange={handleChange} name='admissionSeekingFor' className={styles.formText} type='text' />
                       </Form.Group>
                     </div>
 
@@ -88,6 +175,8 @@ export default function index() {
                         <Form.Group className='mb-5'>
                           <Form.Label>Name</Form.Label>
                           <Form.Control
+                            onChange={handleChange}
+                            name='fatherName'
                             className={styles.formText}
                             type='text'
                           />
@@ -98,16 +187,18 @@ export default function index() {
                             <Form.Group className='col-md-6 mb-5'>
                               <Form.Label>Phone Number</Form.Label>
                               <Form.Control
+                                onChange={handleChange} name='fatherNumber'
                                 className={styles.formText}
-                                type='text'
+                                type='number'
                               />
                             </Form.Group>
 
                             <Form.Group className='col-md-6 mb-5'>
                               <Form.Label>Email</Form.Label>
                               <Form.Control
+                                onChange={handleChange} name='fatherEmail'
                                 className={styles.formText}
-                                type='text'
+                                type='email'
                               />
                             </Form.Group>
                           </div>
@@ -119,6 +210,7 @@ export default function index() {
                         <Form.Group className='mb-5'>
                           <Form.Label>Name</Form.Label>
                           <Form.Control
+                            onChange={handleChange} name='motherName'
                             className={styles.formText}
                             type='text'
                           />
@@ -129,16 +221,18 @@ export default function index() {
                             <Form.Group className='col-md-6 mb-5'>
                               <Form.Label>Phone Number</Form.Label>
                               <Form.Control
+                                onChange={handleChange} name='motherNumber'
                                 className={styles.formText}
-                                type='text'
+                                type='number'
                               />
                             </Form.Group>
 
                             <Form.Group className='col-md-6 mb-5'>
                               <Form.Label>Email</Form.Label>
                               <Form.Control
+                                onChange={handleChange} name='motherEmail'
                                 className={styles.formText}
-                                type='text'
+                                type='email'
                               />
                             </Form.Group>
                           </div>
@@ -149,10 +243,9 @@ export default function index() {
                     <div className='col-md-11'>
                       <Form.Group className='mb-5'>
                         <Form.Label className='mb-5'>
-                          {' '}
-                          Admission of Communication{' '}
+                          Admission of Communication
                         </Form.Label>
-                        <Form.Control className={styles.formText} type='text' />
+                        <Form.Control onChange={handleChange} name='admissionOfCommunication' className={styles.formText} type='text' />
                       </Form.Group>
 
                       <a href='#'>
@@ -169,3 +262,5 @@ export default function index() {
     </>
   )
 }
+
+export default EnquiryForm;
