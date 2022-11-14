@@ -109,7 +109,7 @@ function CurriculumFrameWork() {
                 </p>
               </div>
 
-              <div className='mb-3 pt-4' id='pre-primary-years'>
+              <div className='mb-3 pt-4' id='sports'>
                 <h4 className={styles.vectorImg2 + ' ulineRed'}>Sports</h4>
 
                 <p className='pt-4'>
@@ -352,7 +352,7 @@ function CurriculumFrameWork() {
                 </div>
               </div>
 
-              <h4 className='ulineRed pt-5'>Other Learning Opportunities</h4>
+              <h4 className='ulineRed pt-5' id="other-learning-Opportunities">Other Learning Opportunities</h4>
 
               <p className='pt-4'>
                 Co-curricular programmes. While our core programme is aimed at
@@ -484,7 +484,7 @@ function CurriculumFrameWork() {
               <div className={'sticky-sidebar VectorSpiralBlue' + ' ' + 'pt60'}>
                 <ul id='progress'>
                   <li className={'node' + ' ' + 'green'}>
-                    <Link href='#vikas-mantra' legacyBehavior>
+                    <Link href='#sports' legacyBehavior>
                       <a>
                         <p> Sports</p>
                       </a>
@@ -495,7 +495,7 @@ function CurriculumFrameWork() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#'>
+                  <Link legacyBehavior href='#other-learning-Opportunities'>
                     <a onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
                         <p>Other Learning Opportunities</p>
