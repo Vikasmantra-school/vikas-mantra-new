@@ -17,7 +17,7 @@
     width: 100%;
     position: absolute;
     top: -185px;
-    right: -58px;
+
 }
 
 .vectorImg12::before {
@@ -50,7 +50,6 @@
 }
 
 .sectionPdng {
-    padding-top: 100px;
     padding-bottom: 50px;
 }
 

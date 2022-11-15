@@ -282,7 +282,7 @@ function Home() {
             <div className='col-md-12'>
               <Splide>
                 <SplideSlide>
-                  <div className='row align-items-center'>
+                  <div className='row align-items-center bottomToTop'>
                     <div className='col-xl-4 col-lg-5 col-md-12 col-sm-12'>
                       <p className={styles.textdate}>June 28, 2022</p>
 
@@ -322,7 +322,7 @@ function Home() {
         </div>
       </section>
 
-      <section className={styles.videoSection}>
+      <section className={styles.videoSection + ' ' + 'parentAnimeStarts'}>
         <div className='container'>
           <div className='row'>
             <div
@@ -332,8 +332,8 @@ function Home() {
                 'col-xl-6 col-lg-8 col-md-10 col-sm-12'
               }
             >
-              <h1>Inside the World of Vikas Mantra Public School</h1>
-              <p>
+              <h1 className='bottomToTop'>Inside the World of Vikas Mantra Public School</h1>
+              <p className='bottomToTop'>
                 It is a place where diversity is respected and where curiosity,
                 collaboration and contribution all come together to shape
                 considerate individuals with a culturally-sensitive outlook.
