@@ -1296,6 +1296,8 @@ tr {
 
 .outlineBtn:hover a, .whiteoutlineBtn:hover a{color: #fff;}
 
+.nav{justify-content: space-between;}
+
 
 
 
@@ -1313,6 +1315,7 @@ tr {
   #progress li p {
     width: 225px;
     margin-left: 25px;
+    line-height: 20px;
   }
 
   .imgUp::before,
