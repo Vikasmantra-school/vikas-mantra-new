@@ -6,6 +6,12 @@ import { useState, useRef } from 'react'
 
 const Footer = () => {
 
+  //form-data-clear-after-submit
+
+  const [name, setName] = useState('')
+  const [mail, setEmail] = useState('')
+  const [number, setNumber] = useState('')
+
   //form-sheet-integration
 
   const formRef = useRef(null)
@@ -15,6 +21,10 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
+
+    setName('');
+    setEmail('');
+    setNumber('');
 
     fetch(scriptUrl, {
       method: 'POST',
@@ -45,6 +55,8 @@ const Footer = () => {
                     placeholder='Name'
                     required
                     name='Name'
+                    onChange={event => setName(event.target.value)}
+                    value={name}
                   />
                 </div>
 
@@ -56,6 +68,8 @@ const Footer = () => {
                     placeholder='Email'
                     required
                     name='Email'
+                    onChange={event => setEmail(event.target.value)}
+                    value={mail}
                   />
                 </div>
 
@@ -66,6 +80,8 @@ const Footer = () => {
                     placeholder='Number'
                     required
                     name='Phone'
+                    onChange={event => setNumber(event.target.value)}
+                    value={number}
                   />
                 </div>
 
@@ -172,3 +188,4 @@ const Footer = () => {
   )
 }
 export default Footer
+
