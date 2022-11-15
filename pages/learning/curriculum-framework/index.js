@@ -131,7 +131,7 @@ function CurriculumFrameWork() {
                 </p>
 
                 <div className={styles.navTabContainer + ' greybg'}>
-                  <nav>
+                  <nav className='curriculumNav'>
                     <div
                       className='nav nav-tabs greybg'
                       id='nav-tab'
@@ -234,7 +234,7 @@ function CurriculumFrameWork() {
               </div>
 
               <div className={styles.navTabContainer + ' greybg mt-3'}>
-                <nav>
+                <nav className='curriculumNav'>
                   <div
                     className='nav nav-tabs greybg curriculum-tab-1'
                     id='nav-tab'
@@ -365,7 +365,7 @@ function CurriculumFrameWork() {
               </p>
 
               <div className={styles.navTabContainer3 + ' greybg'}>
-                <nav>
+                <nav className='curriculumNav'>
                   <div
                     className='nav nav-tabs greybg curriculum-tab-1'
                     id='nav-tab'

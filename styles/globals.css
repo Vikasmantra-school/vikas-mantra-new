@@ -1296,7 +1296,9 @@ tr {
 
 .outlineBtn:hover a, .whiteoutlineBtn:hover a{color: #fff;}
 
-.nav{justify-content: space-between;}
+.curriculumNav .nav{justify-content: space-between;}
+
+.curriculumNav .nav-tabs .nav-link{padding: 10px !important;}
 
 
 
@@ -1383,6 +1385,8 @@ tr {
   .bgImageMargin {
     margin: 25px 0;
   }
+
+  .imgbg::after{left: 0;}
 
 }
 
