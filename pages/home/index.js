@@ -3,7 +3,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import styles from './style.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
-
+import Link from 'next/link'
 import { gsap, Power3 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
@@ -118,7 +118,9 @@ function Home() {
               </p>
 
               <button className={'outlineBtn' + ' btn bottomToTop'}>
-                Know More
+
+              <Link href='/about' legacyBehavior><a>Know More</a></Link>
+
               </button>
             </div>
 
@@ -150,7 +152,7 @@ function Home() {
                 and bustle of Chennai.
               </p>
               <button className={'whiteoutlineBtn' + ' btn bottomToTop'}>
-                Know More
+              <Link href='/learning' legacyBehavior><a>Know More</a></Link>
               </button>
             </div>
           </div>

@@ -1,3 +1,9 @@
 .quotes h4{font-size: 35px;}
 
 .quotes p{position: relative;left: 65%;color: #AA182C;margin-top: 20px;}
+
+
+@media only screen and (max-width: 660px){
+
+    .quotes p{left: 0;}
+}
