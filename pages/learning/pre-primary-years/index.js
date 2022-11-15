@@ -105,16 +105,15 @@ function PrePrimary() {
                   of:
                 </p>
 
-                <ul className='list-item'>
-                  <li>Developmentally appropriate curriculum</li>
-                  <li>Innovative and dynamic teaching styles</li>
-                  <li>Brain friendly learning modules</li>
-                  <li>Tangible learning outcomes</li>
-                  <li>
-                    Creative and intellectual curiosity stimulated by suitable
+                <ul className='list-points'>
+                  <li><img src="/assets/icons/blue-point.png" alt="list-point" /> Developmentally appropriate curriculum</li>
+                  <li><img src="/assets/icons/pink-point.png" alt="list-point" /> Innovative and dynamic teaching styles</li>
+                  <li><img src="/assets/icons/yellow-point.png" alt="list-point" /> Brain friendly learning modules</li>
+                  <li><img src="/assets/icons/lightgreen-point.png" alt="list-point" /> Tangible learning outcomes</li>
+                  <li><img src="/assets/icons/orange-point.png" alt="list-point" /> Creative and intellectual curiosity stimulated by suitable
                     learning environment
                   </li>
-                  <li>Specialized and adept teachers</li>
+                  <li><img src="/assets/icons/darkblue-point.png" alt="list-point" /> Specialized and adept teachers</li>
                 </ul>
               </div>
               <div className='mb-5' id='our-approach'>

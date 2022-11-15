@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button'
 import styles from './style.module.css'
 import Link from 'next/link'
 import MobileNav from '../Header/MobileNav'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
   const { asPath } = useRouter()
@@ -30,8 +32,8 @@ const Nav = () => {
                 )}
               </a>
             </Link>
-            <ul className='m-hide navbar-nav ms-auto mb-2 mb-lg-0'>
-              <Button className={styles.firstbtn}>70924 50450</Button>
+            <ul className='m-hide navbar-nav ms-auto mb-2 mb-lg-0 call-btn'>
+              <Button className={styles.firstbtn}><FontAwesomeIcon icon={faPhone} className={styles.callIcon} />70924 50450</Button>
               <Button className={styles.secondtbtn}>Enroll</Button>
             </ul>
             <div
