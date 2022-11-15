@@ -34,7 +34,7 @@ const MessageFromPrincipal = () => {
 
                 <div className='container'>
 
-                    <div className='row py-5 align-items-center'>
+                    <div className='row py-5 '>
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
 
@@ -78,7 +78,7 @@ const MessageFromPrincipal = () => {
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative'>
 
-                            <div className='imgBgColor pastelBrown3'>
+                            <div className='imgBgColor pastelBrown3 imgUp'>
 
                                 <img src='/assets/banners/principal.png' alt="image" className={styles.PrincipalImg} />
 

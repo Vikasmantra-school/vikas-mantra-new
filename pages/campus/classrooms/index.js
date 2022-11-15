@@ -26,7 +26,7 @@ const Classrooms = () => {
       >
         <div className='container'>
           <div className='row'>
-            <div className='col-md-5 position-relative'>
+            <div className='col-md-6 position-relative'>
               <h3 className='ulineRed'>
                 Spacious, vibrant, well-lit and contemporary
               </h3>
@@ -46,9 +46,9 @@ const Classrooms = () => {
               </p>
             </div>
 
-            <div className='col-md-7 position-relative'>
+            <div className='col-md-6 position-relative'>
 
-              <div className={styles.classroomImgDiv + ' imgBgColor2 pastelPurple '}>
+              <div className={styles.classroomImgDiv + ' imgBgColor imgUp pastelPurple '}>
                 <img
                   src='/assets/campus/classroom.png'
                   alt='image'

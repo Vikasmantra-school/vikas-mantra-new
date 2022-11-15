@@ -6,6 +6,7 @@ import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import { useState, useRef } from 'react'
 
 function Career() {
+  const namecheck = useRef()
   const pageTitle = 'Career'
 
   //form-data-clear-after-submit
@@ -16,29 +17,19 @@ function Career() {
   const [jobOpening, setJobOpening] = useState('')
   const [number, setNumber] = useState('')
 
-
-  const namecheck = useRef()
-
   let errmsg = 'Invalid name';
 
-
-
-  const ValidateEmail = (e) => {
+  const ValidateEmail = () => {
 
     var lblError = document.getElementById('lblError')
 
     lblError.innerHTML = ''
 
-    var nameExpr = /[^A-Za-z0-9]+/
+    var nameExpr = /[^A-Za-z0-9]+/ 
 
     if (!nameExpr.test(namecheck)) {
       lblError.innerHTML = errmsg;
-      // alert('invalid')
     }
-    else{
-      console.log(true);
-    }
-    
   }
 
 
@@ -57,17 +48,22 @@ function Career() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
-    ValidateEmail()
 
-    // fetch(scriptUrl, {
-    //   method: 'POST',
-    //   body: new FormData(formRef.current),
+    setName('')
+    setAddress('')
+    setNumber('')
+    setJobOpening('')
+    setMail('')
 
-    // }).then(res => {
-    //   alert("SUCCESSFULLY SUBMITTED")
-    //   setLoading(false)
-    // })
-    //   .catch(err => console.log(err))
+    fetch(scriptUrl, {
+      method: 'POST',
+      body: new FormData(formRef.current),
+
+    }).then(res => {
+      alert("SUCCESSFULLY SUBMITTED")
+      setLoading(false)
+    })
+      .catch(err => console.log(err))
   }
 
   return (
