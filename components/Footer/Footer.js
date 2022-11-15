@@ -12,6 +12,7 @@ const Footer = () => {
   const [mail, setEmail] = useState('')
   const [number, setNumber] = useState('')
 
+
   //form-sheet-integration
 
   const formRef = useRef(null)
@@ -188,4 +189,3 @@ const Footer = () => {
   )
 }
 export default Footer
-

@@ -24,7 +24,11 @@
 
 .tableborder tbody, .tableborder td, .tableborder tfoot, .tableborder th, .tableborder thead, .tableborder tr{border-color: #842029;}
 
-
+.submitBtn {
+    border: 0;
+    color: #fff;
+    padding: 5px 10px;
+}
 @media only screen and (max-width: 660px){
 
     .form{padding: 70px 0px 70px;}

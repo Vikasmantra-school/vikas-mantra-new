@@ -1,24 +1,47 @@
 import React from 'react'
 import styles from './style.module.css'
 import Table from 'react-bootstrap/Table'
-import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import { useState, useRef } from 'react'
 
 function Career() {
-  const ValidateEmail = () => {
-    var email = document.getElementById('txtEmail').value
+  const pageTitle = 'Career'
+
+  //form-data-clear-after-submit
+
+  const [name, setName] = useState('')
+  const [mail, setMail] = useState('')
+  const [address, setAddress] = useState('')
+  const [jobOpening, setJobOpening] = useState('')
+  const [number, setNumber] = useState('')
+
+
+  const namecheck = useRef()
+
+  let errmsg = 'Invalid name';
+
+
+
+  const ValidateEmail = (e) => {
+
     var lblError = document.getElementById('lblError')
+
     lblError.innerHTML = ''
-    var expr =
-      /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
-    if (!expr.test(email)) {
-      lblError.innerHTML = 'Invalid email address.'
+
+    var nameExpr = /[^A-Za-z0-9]+/
+
+    if (!nameExpr.test(namecheck)) {
+      lblError.innerHTML = errmsg;
+      // alert('invalid')
     }
+    else{
+      console.log(true);
+    }
+    
   }
 
-  const pageTitle = 'Career'
+
 
   const [methodOfCommunication, setCommunication] = useState('email')
 
@@ -29,19 +52,22 @@ function Career() {
   const scriptUrl = "https://script.google.com/macros/s/AKfycbw3cVmLmrjniePfI9yHuKwUil6I7y8mSoDK7GLbD5_QL4JQz9wfpXVXKnYJtRJWJiPF4g/exec"
   const [loading, setLoading] = useState(false)
 
+
+
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
+    ValidateEmail()
 
-    fetch(scriptUrl, {
-      method: 'POST',
-      body: new FormData(formRef.current),
+    // fetch(scriptUrl, {
+    //   method: 'POST',
+    //   body: new FormData(formRef.current),
 
-    }).then(res => {
-      alert("SUCCESSFULLY SUBMITTED")
-      setLoading(false)
-    })
-      .catch(err => console.log(err))
+    // }).then(res => {
+    //   alert("SUCCESSFULLY SUBMITTED")
+    //   setLoading(false)
+    // })
+    //   .catch(err => console.log(err))
   }
 
   return (
@@ -169,7 +195,17 @@ function Career() {
                     <div className='col-md-12 col-lg-5 col-sm-12'>
                       <div className='mb-5'>
                         <label>Name of the Candidate </label>
-                        <Form.Control className={styles.formText} type='text' name='Name of the Candidate' />
+                        <Form.Control
+                          className={styles.formText}
+                          type='text'
+                          name='Name of the Candidate'
+                          required
+                          onChange={event => setName(event.target.value)}
+                          value={name}
+                          ref={namecheck}
+                          onBlur={ValidateEmail}
+                        />
+                        <span id='lblError' />
                       </div>
 
                       <div className='mb-5'>
@@ -179,18 +215,23 @@ function Career() {
                           className={styles.formText + ' ' + 'mb-5'}
                           type='text'
                           name='Address'
+                          required
+                          onChange={event => setAddress(event.target.value)}
+                          value={address}
                         />
 
                         <Form.Control
                           className={styles.formText + ' ' + 'mb-5'}
                           type='text'
                           name='Address'
+
                         />
 
                         <Form.Control
                           className={styles.formText + ' ' + 'mb-5'}
                           type='text'
                           name='Address'
+
                         />
                       </div>
                     </div>
@@ -204,6 +245,9 @@ function Career() {
                             className={styles.formText}
                             type='text'
                             name='Job Opening'
+                            required
+                            onChange={event => setJobOpening(event.target.value)}
+                            value={jobOpening}
                           />
                         </div>
                       </div>
@@ -222,7 +266,7 @@ function Career() {
 
                           <label
                             className='form-check-label'
-                            for='flexRadioDefault2'
+                            htmlFor='flexRadioDefault2'
                           >
                             Email
                           </label>
@@ -240,7 +284,7 @@ function Career() {
 
                           <label
                             className='form-check-label'
-                            for='flexRadioDefault1'
+                            htmlFor='flexRadioDefault1'
                           >
                             Phone
                           </label>
@@ -248,41 +292,34 @@ function Career() {
                       </div>
                       {methodOfCommunication == 'email' && (
                         <div className='mb-3 mail-check'>
-                          <label
-                            for='exampleInputEmail1'
-                            className='form-label'
-                          >
+                          <label htmlFor='exampleInputEmail1' className='form-label' >
                             Email
                           </label>
+
                           <input
                             type='email'
-                            className={
-                              'form-control form-width' + ' ' + styles.formText
-                            }
+                            className={'form-control form-width' + ' ' + styles.formText}
                             id='txtEmail'
-                            onBlur={ValidateEmail}
-                            required='true'
                             name='Mail Id'
-                          ></input>
-                          <span id='lblError'></span>
+                            required
+                            onChange={event => setMail(event.target.value)}
+                            value={mail}
+                          />
                         </div>
                       )}
                       {methodOfCommunication == 'phone' && (
                         <div className='mb-3 phone-check'>
-                          <label
-                            for='exampleInputPassword1'
-                            className='form-label'
-                          >
+                          <label htmlFor='exampleInputPassword1' className='form-label' >
                             Phone
                           </label>
                           <input
                             type='number'
-                            className={
-                              'form-control form-width' + ' ' + styles.formText
-                            }
-                            required='true'
+                            className={'form-control form-width' + ' ' + styles.formText}
+                            required
                             name='Number'
-                          ></input>
+                            onChange={event => setNumber(event.target.value)}
+                            value={number}
+                          />
                         </div>
                       )}
 
@@ -291,7 +328,7 @@ function Career() {
                     </div>
 
                     <a href='#'>
-                      <Button className={'brownBtn'} type="submit" value={loading ? " Loading..." : " Submit "}>Submit</Button>
+                      <input className={'brownBtn ' + styles.submitBtn} type="submit" value={loading ? " Loading..." : " Submit "} />
                     </a>
                   </div>
                 </div>
