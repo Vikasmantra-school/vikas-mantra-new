@@ -30,7 +30,7 @@ const Security = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-5 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
                             {/* <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} /> */}
 
@@ -49,9 +49,9 @@ const Security = () => {
 
                         </div>
 
-                        <div className='col-md-7 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
-                            <div className='imgBgColor pastelRed2 bgImageMargin'>
+                            <div className='imgBgColor imgUp pastelRed2 bgImageMargin'>
 
                                 <img src='/assets/campus/security.png' alt="image" className={styles.securityImg} />
 

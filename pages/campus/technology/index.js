@@ -31,7 +31,7 @@ const Technology = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-5 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
                             {/* <img src='/assets/vectors/Vector12.png' alt="image" className={styles.vectorImg12} /> */}
 
@@ -51,9 +51,9 @@ const Technology = () => {
 
                         </div>
 
-                        <div className='col-md-7 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
-                            <div className='imgBgColor pastelYellow bgImageMargin'>
+                            <div className='imgBgColor pastelYellow imgUp bgImageMargin'>
 
                                 <img src='/assets/campus/technology.png' alt="image" className={styles.libraryImg} />
 

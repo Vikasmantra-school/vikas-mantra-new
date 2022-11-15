@@ -31,7 +31,7 @@ const Healthcare = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-5 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
                             {/* <img src='/assets/vectors/Vector12.png' alt="image" className={styles.vectorImg12} /> */}
 
@@ -52,34 +52,24 @@ const Healthcare = () => {
                                 any medical emergencies.
                             </p>
 
+                            <h3 className='ulineRed pt-5'>Our healthcare centre
+                                infrastructure includes:</h3>
+
+                            <ul className='pt-5 list-points '>
+
+                                <li className='pt-3'>  <img src="/assets/icons/blue-point.png" alt='list-point' />First aid kits, basic medicines & medical supplies</li>
+
+                                <li className='pt-3'> <img src="/assets/icons/pink-point.png" alt='list-point' />Full-time qualified nurse</li>
+
+                            </ul>
+
                         </div>
 
-                        <div className='col-md-7 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
-                            <div className='imgBgColor pastelBlue2 bgImageMargin'>
+                            <div className='imgBgColor imgUp pastelBlue2 bgImageMargin'>
 
                                 <img src='/assets/campus/healthcare.png' alt="image" className={styles.securityImg} />
-
-                            </div>
-
-                        </div>
-
-                        <div className='row pt-5'>
-
-                            <div className='col-md-5 position-relative'>
-
-                                <h3 className='ulineRed'>Our healthcare centre
-                                    infrastructure includes:</h3>
-
-                                <ul className='pt-5 list-points '>
-
-                                    <li className='pt-3'>  <img src="/assets/icons/blue-point.png" alt='list-point' />First aid kits, basic medicines & medical supplies</li>
-
-                                    <li className='pt-3'> <img src="/assets/icons/pink-point.png" alt='list-point' />Full-time qualified nurse</li>
-
-                                </ul>
-
-                                {/* <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} /> */}
 
                             </div>
 
@@ -89,7 +79,7 @@ const Healthcare = () => {
 
                 </div>
 
-            </section>
+        </section>
 
         </>
     )

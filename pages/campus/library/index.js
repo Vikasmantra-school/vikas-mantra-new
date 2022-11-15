@@ -31,7 +31,7 @@ const Library = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-5 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
                             <h3 className='ulineRed'>The library is at the heart of
                                 learning, research and knowledge
@@ -58,7 +58,7 @@ const Library = () => {
 
                         </div>
 
-                        <div className={'col-md-7 position-relative ' + styles.vectorImg5}>
+                        <div className={'col-md-6 position-relative ' + styles.vectorImg5}>
 
                             <div className='imgBgColor pastelPurple2 '>
 

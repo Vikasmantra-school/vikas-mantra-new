@@ -29,7 +29,7 @@ const FacilitiesAndInfrastructure = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-5 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
                             {/* <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} /> */}
 
@@ -49,20 +49,6 @@ const FacilitiesAndInfrastructure = () => {
                                 of technology and interactive learning.
                             </p>
 
-                        </div>
-
-                        <div className='col-md-7 position-relative'>
-
-                            <div className='imgBgColor pastelRed bgImageMargin imgUp '>
-
-                                <img src='/assets/campus/school-building3.png' alt="image" className={styles.schlBuildingImg} />
-                            
-                            </div>
-
-                        </div>
-
-                        <div className={'col-md-10 position-relative ' + styles.vmpsImg}>
-
                             <p className='py-3'>Complementing these 21st century classrooms are a multitude of learning
                                 centres and labs such as science , ICT  and maths laboratories, junior
                                 and senior libraries, indoor sports arena, music, dance and performing
@@ -76,6 +62,22 @@ const FacilitiesAndInfrastructure = () => {
                                 All these elements come together as a collective whole to create an
                                 environment that enhances experiential learning.
                             </p>
+
+
+                        </div>
+
+                        <div className='col-md-6 position-relative'>
+
+                            <div className='imgBgColor pastelRed bgImageMargin imgUp '>
+
+                                <img src='/assets/campus/school-building3.png' alt="image" className={styles.schlBuildingImg} />
+
+                            </div>
+
+                        </div>
+
+                        <div className={'col-md-10 position-relative ' + styles.vmpsImg}>
+
 
                             {/* <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} /> */}
 

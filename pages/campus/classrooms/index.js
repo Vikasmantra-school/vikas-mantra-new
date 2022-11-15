@@ -44,6 +44,17 @@ const Classrooms = () => {
                 teachers and students to present relevant content as per
                 learning requirements.
               </p>
+
+              <p className='py-3'>
+                Apart from aesthetics, classrooms are designed to allow students
+                to express their personalities and emotions. The layout and
+                space planning is grade-appropriate and leaves room to
+                incorporate student work, mood boards, bulletin boards, reading
+                corners and other such elements. More than anything, we envision
+                the classroom to be a living, breathing organism that changes
+                colour, texture and character based on its students and the
+                topic du jour.
+              </p>
             </div>
 
             <div className='col-md-6 position-relative'>
@@ -59,16 +70,7 @@ const Classrooms = () => {
             </div>
 
             <div className={'col-md-8 position-relative ' + styles.vmpsImg}>
-              <p className='py-3'>
-                Apart from aesthetics, classrooms are designed to allow students
-                to express their personalities and emotions. The layout and
-                space planning is grade-appropriate and leaves room to
-                incorporate student work, mood boards, bulletin boards, reading
-                corners and other such elements. More than anything, we envision
-                the classroom to be a living, breathing organism that changes
-                colour, texture and character based on its students and the
-                topic du jour.
-              </p>
+
             </div>
           </div>
 

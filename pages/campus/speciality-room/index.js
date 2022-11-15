@@ -30,7 +30,7 @@ const SpecialityRoom = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-5 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
                             {/* <img src='/assets/vectors/Vector12.png' alt ="image" className={styles.vectorImg12} /> */}
 
@@ -46,9 +46,9 @@ const SpecialityRoom = () => {
 
                         </div>
 
-                        <div className='col-md-7 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
-                            <div className='imgBgColor pastelBrown bgImageMargin'>
+                            <div className='imgBgColor imgUp pastelBrown bgImageMargin'>
 
                                 <img src='/assets/campus/Speciality-room.png' alt="image" className={styles.classroomImg} />
 

@@ -32,7 +32,7 @@ const Transportation = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-5 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
                             <h3 className='ulineRed'>VIKAS MANTRA
                                 PUBLIC SCHOOL   </h3>
@@ -48,9 +48,9 @@ const Transportation = () => {
 
                         </div>
 
-                        <div className='col-md-7 position-relative'>
+                        <div className='col-md-6 position-relative'>
 
-                            <div className='imgBgColor pastelBrown2 bgImageMargin'>
+                            <div className='imgBgColor imgUp pastelBrown2 bgImageMargin'>
 
                                 <img src='/assets/campus/school-bus.png' alt="image" className={styles.schlBusImg} />
 
