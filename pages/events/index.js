@@ -75,8 +75,14 @@ function index() {
                                 rewind: true,
                                 gap: '1rem',
                                 perPage: 4,
+                                autoplay:true,
                                 pagination: false,
                                 arrows: true,
+                                breakpoints: {
+                                  660: {
+                                    perPage: 1,
+                                  },
+                                }
                               }}
                             >
                               {data.gallery?.map((data, index) => {

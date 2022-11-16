@@ -4,7 +4,7 @@ import Link from 'next/link'
 const BlogDates = () => {
     return (
         <>
-            <div className={styles.colBg + ' col-md-4'}>
+            <div className={styles.colBg}>
 
                 <h4>Latest Blog</h4>
                 <hr />
