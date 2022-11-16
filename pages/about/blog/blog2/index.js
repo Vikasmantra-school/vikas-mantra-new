@@ -56,8 +56,6 @@ const Blog2 = () => {
 
                             <img src='/assets/blog2.png' alt="image" className={styles.BlogCnt1Img} />
 
-                            <BlogDates />
-
                         </div>
 
 
@@ -100,7 +98,12 @@ const Blog2 = () => {
 
                         </div>
 
-                       
+                        <div className='col-md-4'>
+
+                            <BlogDates />
+                            
+                        </div>
+
 
                     </div>
 
