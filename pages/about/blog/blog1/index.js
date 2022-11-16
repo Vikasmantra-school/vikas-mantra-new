@@ -1,4 +1,3 @@
-import styles from './style.module.css'
 import BlogDates from '../../../../components/BlogDates/BlogDates'
 import Breadcrumb from '../../../../components/Breadcrumb/Breadcrumb'
 
@@ -11,7 +10,7 @@ const Blog1 = () => {
 
       <section className='pt-4'>
         <div className='container position-relative'>
-          <div className={'row py-5'}>
+          <div className='row py-5'>
             <div className='col-md-6'>
               <h2>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h2>
             </div>
@@ -19,7 +18,7 @@ const Blog1 = () => {
         </div>
       </section>
 
-      <section className={styles.sectionContainer + ' whitebg position-relative ' + ' ' + styles.BlogvectorImg2 + ' ' + styles.BlogvectorImg3} >
+      <section className=' whitebg position-relative sectionContainer BlogvectorImg2 BlogvectorImg3 '>
         <div className='container'>
           <div className='row py-5 align-items-start '>
             <div className='col-md-6'>
@@ -41,7 +40,7 @@ const Blog1 = () => {
               <img
                 src='/assets/blog1.png'
                 alt='image'
-                className={styles.BlogCnt1Img}
+                className='BlogCntImg'
               />
             </div>
           </div>
@@ -128,8 +127,6 @@ const Blog1 = () => {
                   make them feel good about themselves and make them happy as a
                   result.
                 </p>
-
-                {/* <img src='/assets/vectors/Vector2.png' alt="image" className={styles.BlogvectorImg3} /> */}
               </div>
             </div>
             <div className='col-md-4'>
