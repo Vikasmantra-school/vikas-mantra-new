@@ -41,14 +41,8 @@ const Blog2 = () => {
                             <p>The growing levels of competition have made children pursue a variety of fresh and interesting experiences. They have paved the way for a variety of programs, making students get exposed to a wide array of knowledge that inspires and pushes children to learn, grow, thrive, and succeed.
                             </p>
 
-                            <p>But the truth is, children, in order to keep meeting the demands of the ever-changing and growing competition, tend to forget themselves and enjoy their childhood down the lane. Despite being multi-talented, a vast majority of today’s children feel lonely, get quickly bored, isolate themselves, and lack curiosity and satisfaction. Most of the time, they either find themselves highly stressed and anxious or sad and depressed.
+                            <p>But the truth is, children, in order to keep meeting the demands of the ever-changing and growing competition, tend to forget themselves and enjoy their childhood down the lane.
                             </p>
-
-                            <p>There is no doubt that technology and the latest innovation have provided many opportunities, regardless of the age group. But these have also made us disconnect from ourselves, snatching our natural ability to take time, ponder, introspect, and respond mindfully.</p>
-
-                            <p>Now the most important question is, how and where should children strike the right balance? How do they learn to stay connected to their inner self while maintaining a sense of awareness of everything going on around them? This is where Yoga comes into the picture. Today, Yoga is recognized and practiced all over the world. Almost everyone knows the significance of practicing yoga, i.e., it not only looks after one’s physical health but also fosters emotional, mental, and spiritual well-being.</p>
-
-                            <p>Unlike workouts that target only one single body part at a time, Yoga is a full-body workout that enhances the overall health and fitness of your body. Let’s have a look at some of the benefits of yoga for children.</p>
 
                         </div>
 
@@ -66,6 +60,16 @@ const Blog2 = () => {
                         <div className='col-md-8'>
 
                             <div>
+
+                                <p>Despite being multi-talented, a vast majority of today’s children feel lonely, get quickly bored, isolate themselves, and lack curiosity and satisfaction. Most of the time, they either find themselves highly stressed and anxious or sad and depressed.</p>
+
+                                <p>There is no doubt that technology and the latest innovation have provided many opportunities, regardless of the age group. But these have also made us disconnect from ourselves, snatching our natural ability to take time, ponder, introspect, and respond mindfully.</p>
+
+                                <p>Now the most important question is, how and where should children strike the right balance? How do they learn to stay connected to their inner self while maintaining a sense of awareness of everything going on around them? This is where Yoga comes into the picture. Today, Yoga is recognized and practiced all over the world. Almost everyone knows the significance of practicing yoga, i.e., it not only looks after one’s physical health but also fosters emotional, mental, and spiritual well-being.</p>
+
+                                <p>Unlike workouts that target only one single body part at a time, Yoga is a full-body workout that enhances the overall health and fitness of your body. Let’s have a look at some of the benefits of yoga for children.</p>
+
+
 
                                 <h4>Flexibility</h4>
 
@@ -101,7 +105,7 @@ const Blog2 = () => {
                         <div className='col-md-4'>
 
                             <BlogDates />
-                            
+
                         </div>
 
 
