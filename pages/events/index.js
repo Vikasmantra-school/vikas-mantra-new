@@ -14,15 +14,12 @@ function index() {
     <>
       <Breadcrumb pageName={pageTitle} />
 
-      {/* <img src={gallery.url}></img> */}
-
       <section className={'pt60'}>
         <div className={'container-fluid' + ' ' + styles.tabSpace}>
           <Tab.Container id='left-tabs-example' defaultActiveKey='first'>
             <div className='row pt-5'>
               <div className={'col-md-5' + ' ' + styles.eventText}>
                 <h2>Events</h2>
-
                 <EventsNav events={events} />
               </div>
             </div>
@@ -40,7 +37,6 @@ function index() {
                             <h2 className='ulineRed'>{data.title} </h2>
 
                             <p className='pt-4'>{data.desc}</p>
-                
                           </div>
 
                           <div className='col-md-6'>
@@ -75,19 +71,22 @@ function index() {
                                 rewind: true,
                                 gap: '1rem',
                                 perPage: 4,
-                                autoplay:true,
+                                autoplay: true,
                                 pagination: false,
                                 arrows: true,
                                 breakpoints: {
                                   660: {
                                     perPage: 1,
                                   },
-                                }
+                                },
                               }}
                             >
                               {data.gallery?.map((data, index) => {
                                 return (
-                                  <SplideSlide className='eventGallery' key={index}>
+                                  <SplideSlide
+                                    className='eventGallery'
+                                    key={index}
+                                  >
                                     <img
                                       src={data}
                                       alt='image'

@@ -14,7 +14,7 @@ const Blog2 = () => {
 
                 <div className='container position-relative'>
 
-                    <div className={styles.blogRow1 + 'row py-5'}>
+                    <div className='row py-5'>
 
                         <div className='col-md-6'>
 
@@ -28,7 +28,7 @@ const Blog2 = () => {
 
             </section>
 
-            <section className={styles.sectionContainer + ' whitebg position-relative ' + ' ' + styles.BlogvectorImg2 + ' ' + styles.BlogvectorImg3}>
+            <section className='whitebg position-relative sectionContainer BlogvectorImg2 BlogvectorImg3'>
 
                 <div className='container'>
 
@@ -48,7 +48,7 @@ const Blog2 = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <img src='/assets/blog2.png' alt="image" className={styles.BlogCnt1Img} />
+                            <img src='/assets/blog2.png' alt="image" className='BlogCntImg'/>
 
                         </div>
 

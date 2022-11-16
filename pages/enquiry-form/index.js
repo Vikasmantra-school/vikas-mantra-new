@@ -72,22 +72,13 @@ const EnquiryForm = () => {
 
       <Breadcrumb pageName={pageTitle} />
 
-      <section className={'pt60' + ' ' + ' ' + styles.eqBg}>
+      <section className={'pt60 pb60 ' + ' ' + ' ' + styles.eqBg}>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-5'>
+            <div className='col-md-6'>
               <h2>
-                Admissions –<br />
-                Enquiry Form
+                Admissions Enquiry Form
               </h2>
-            </div>
-
-            <div className={'col-md-6 offset-lg-1 pastelBlue imgbg'}>
-              <img
-                className='img-fluid'
-                src='/assets/building-transport.png'
-                alt='building-transpor'
-              />
             </div>
           </div>
         </div>

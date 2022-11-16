@@ -20,11 +20,14 @@ function EventsNav({ events }) {
   }, [])
   return (
     <>
-      <Nav className='flex-column'>
+      <Nav className='flex-column eventsMenu'>
         <Dropdown className={styles.dropdowns}>
-          <Dropdown.Toggle id='dropdown-basic'>
+          <Dropdown.Toggle id=''>
             <Nav.Item>
-              <Nav.Link className={styles.tabNavLink} eventKey='first'>
+              <Nav.Link
+                className={styles.tabNavLink + ' tabNavlinkColor first'}
+                eventKey='first'
+              >
                 {active}
               </Nav.Link>
             </Nav.Item>

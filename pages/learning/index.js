@@ -12,18 +12,34 @@ function Learning() {
       behavior: 'smooth',
     })
 
-  function name() {}
-
   function progressClick(e) {
-    const progressLink = e.target.closest('li')
-    const progressLinkNode = e.target.parentNode.parentNode.previousSibling
-    progressLink.classList.add('green')
-    progressLink.classList.remove('grey')
-    progressLink.classList.add('activated')
-    progressLinkNode.classList.add('dividerActivated')
+    const progress = document.getElementById('progress')
+
+    var thisElem = e.target.parentNode.parentNode
+    // thisElem.classList.add('theActive')
+    var progressChildren = progress.children
+
+    // const progressLink = e.target.closest('li')
+    // const progressLinkNode = e.target.parentNode.parentNode.previousSibling
+    // progressLink.classList.add('green')
+    // progressLink.classList.remove('grey')
+    // progressLink.classList.add('activated')
+    // progressLinkNode.classList.add('dividerActivated')
   }
 
   useEffect(() => {
+    // let aTag = document.querySelectorAll('.aTag')
+    // aTag.forEach((elem, filter) => {
+    //   var sibs = []
+    //   while ((elem = elem.previousSibling)) {
+    //     if (elem.nodeType === 3) continue // text node
+    //     if (!filter || filter(elem)) sibs.push(elem)
+    //   }
+    //   return sibs
+    // })
+
+    //
+
     var list = document.getElementById('progress'),
       next = document.getElementById('next'),
       clear = document.getElementById('clear'),
@@ -195,7 +211,7 @@ function Learning() {
                 <ul id='progress'>
                   <li className={'node' + ' ' + 'green'}>
                     <Link href='' legacyBehavior onClick={executeScroll}>
-                      <a>
+                      <a className='aTag'>
                         <p> Holistic Approach</p>
                       </a>
                     </Link>
@@ -206,7 +222,7 @@ function Learning() {
                   </li>
 
                   <Link legacyBehavior href='#local-app'>
-                    <a onClick={(e) => progressClick(e)}>
+                    <a className='aTag' onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
                         <p>Global Outlook, Local Application</p>
                       </li>
@@ -218,7 +234,7 @@ function Learning() {
                   </li>
 
                   <Link legacyBehavior href='#recognizing'>
-                    <a onClick={(e) => progressClick(e)}>
+                    <a className='aTag' onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
                         <p>Recognizing That Every Child is Unique</p>
                       </li>
@@ -230,7 +246,7 @@ function Learning() {
                   </li>
 
                   <Link legacyBehavior href='#century'>
-                    <a onClick={(e) => progressClick(e)}>
+                    <a className='aTag' onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
                         <p>21st Century Ready Infrastructure</p>
                       </li>
@@ -242,7 +258,10 @@ function Learning() {
                   </li>
 
                   <Link legacyBehavior href='#talentedFaculty'>
-                    <a onClick={(e) => progressClick(e)}>
+                    <a
+                      className='aTag activatedATag'
+                      onClick={(e) => progressClick(e)}
+                    >
                       <li className={'node' + ' ' + 'grey'}>
                         <p>Talented Faculty</p>
                       </li>
@@ -254,7 +273,7 @@ function Learning() {
                   </li>
 
                   <Link legacyBehavior href='#richCurriculum'>
-                    <a onClick={(e) => progressClick(e)}>
+                    <a className='aTag' onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
                         <p>Rich Curriculum</p>
                       </li>
@@ -266,7 +285,11 @@ function Learning() {
                   </li>
 
                   <Link legacyBehavior href='#windowWorld'>
-                    <a href='#' onClick={(e) => progressClick(e)}>
+                    <a
+                      className='aTag'
+                      href='#'
+                      onClick={(e) => progressClick(e)}
+                    >
                       <li className={'node' + ' ' + 'grey'}>
                         <p>Window to the World</p>
                       </li>
@@ -278,7 +301,7 @@ function Learning() {
                   </li>
 
                   <Link legacyBehavior href='#wirelessWorld'>
-                    <a onClick={(e) => progressClick(e)}>
+                    <a className='aTag' onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
                         <p>Technologically Wired for a Wireless World</p>
                       </li>
@@ -290,7 +313,7 @@ function Learning() {
                   </li>
 
                   <Link legacyBehavior href='#smorgasbord'>
-                    <a onClick={(e) => progressClick(e)}>
+                    <a className='aTag' onClick={(e) => progressClick(e)}>
                       <li className={'node' + ' ' + 'grey'}>
                         <p>A Smorgasbord of Co-Curricular Choices</p>
                       </li>

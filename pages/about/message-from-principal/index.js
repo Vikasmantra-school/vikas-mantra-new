@@ -15,7 +15,7 @@ const MessageFromPrincipal = () => {
 
                 <div className='container position-relative'>
 
-                    <div className={styles.blogRow1 + 'row py-5'}>
+                    <div className={styles + 'row py-5'}>
 
                         <div className='col-md-6'>
 
