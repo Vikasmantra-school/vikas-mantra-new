@@ -68,7 +68,7 @@
 .BlogCnt1Img {
     position: absolute;
     width: 100%;
-    height: 380px;
+    height: auto;
     top: -224px;
 }
 .rowBox{
