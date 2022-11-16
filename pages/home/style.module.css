@@ -142,6 +142,8 @@
 
 .testimonialcontent p{font-size: 15px !important;}
 
+.testimonialcard img{border-radius: 15px;}
+
 .uline::after{content: "";
     position: absolute;
     top: 0;
