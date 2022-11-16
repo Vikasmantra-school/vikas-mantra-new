@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
-    background-size: 12vh;
+    background-size: 65px;
     height: 210px;
     left: 0;
     width: 190px;
@@ -41,11 +41,11 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 30vh;
+    background-size: 26vh;
     height: 227px;
     right: 0;
     width: 247px;
-    bottom: 14vh;
+    bottom: 30px;
 }
 
 .vmpsImg::after {

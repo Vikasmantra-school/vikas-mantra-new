@@ -109,6 +109,7 @@
     position: absolute;
     left: 225px;
     font-size: 25px;
+    width: 13px;
 }
 
 .Sec3vectorImg5 {
@@ -455,16 +456,15 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
     .schoolBuildingImg {
         height: 100%;
         width: 100%;
         position: unset;
-        padding-top: 5rem;
     }
 
     .cardmargin1 {
-        margin-top: 5rem;
+        margin-top: 0;
         margin-left: 0px;
     }
 
@@ -475,7 +475,18 @@
         margin-bottom: 0px;
         position: unset;
         width: 100%;
-        padding: 0%;
+        padding: 20px;
+    }
+
+    .card2 {
+        background-color: white;
+        width: 100%;
+        padding: 20px 40px 20px 40px;
+        border: 2px solid #fff;
+        border-radius: 0;
+        margin-bottom: 0px;
+        position: unset;
+        z-index: 1;
     }
 
     .sectionPdng {
@@ -485,9 +496,9 @@
 
     .Sec2vmpsImg {
         position: absolute;
-        top: 17px;
-        left: 10px;
-        height: 20px;
+        top: -10px;
+        right: 0;
+        height: 35px;
     }
 
     .studentImg {
@@ -510,7 +521,7 @@
 
 
     .cardmargin3 {
-        margin-top: 5rem;
+        margin-top: 0px;
         margin-left: 0px;
     }
 
@@ -529,10 +540,7 @@
     }
 
     .sectionPdng4 {
-        padding-top: 50px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 30px;
+        padding: 0 25px;
     }
 
     .Sec4vmpsImg {
@@ -581,7 +589,7 @@
         height: 210px;
         width: 190px;
         left: 0;
-        bottom: -48%;
+        bottom: -40%;
     }
 
     .vectorImg9::after {
@@ -595,7 +603,7 @@
         height: 210px;
         width: 190px;
         right: 0px;
-        bottom: -144%;
+        bottom: -195%;
     }
 
     .tab3VectorSpiralBlue::before {
@@ -603,13 +611,13 @@
         position: absolute;
         background-image: url(/assets/vectors/Vector5.png);
         background-repeat: no-repeat;
-        background-position: bottom center;
+        background-position: bottom right;
         z-index: 1;
-        background-size: 50px;
-        height: 210px;
-        width: 190px;
-        bottom: -326px;
-        right: 10px;
+        background-size: 60px;
+        height: 150px;
+        width: 150px;
+        bottom: 0;
+        right: 0;
     }
 
     .colpdngLt,
