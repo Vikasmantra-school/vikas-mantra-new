@@ -19,13 +19,15 @@ function EventsNav({ events }) {
     link.forEach(tabs)
   }, [])
   return (
-
     <>
-      <Nav className='flex-column'>
+      <Nav className='flex-column eventsMenu'>
         <Dropdown className={styles.dropdowns}>
-          <Dropdown.Toggle id='dropdown-basic'>
+          <Dropdown.Toggle id=''>
             <Nav.Item>
-              <Nav.Link className={styles.tabNavLink + ' tabNavlinkColor'} eventKey='first'>
+              <Nav.Link
+                className={styles.tabNavLink + ' tabNavlinkColor first'}
+                eventKey='first'
+              >
                 {active}
               </Nav.Link>
             </Nav.Item>
@@ -36,7 +38,7 @@ function EventsNav({ events }) {
               return (
                 <Dropdown.Item key={index} onClick={(e) => navLinkClick(e)}>
                   <Nav.Item>
-                    <Nav.Link className={styles.tabNavLink } eventKey={data.id}>
+                    <Nav.Link className={styles.tabNavLink} eventKey={data.id}>
                       {data.dropdown}
                     </Nav.Link>
                   </Nav.Item>

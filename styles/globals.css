@@ -404,7 +404,9 @@ p {
   border-bottom: 2px solid #AA182C !important;
 }
 
-
+.eventsMenu .dropdown-item:hover .nav-item a{
+  color: #fff;
+}
 
 
 .vision-1-Tab .nav-tabs .nav-item.show .nav-link,
@@ -1134,6 +1136,10 @@ tr {
 
 .imgBgColorAdmission2 {
   position: absolute;
+}
+
+.nav-link.first{
+  color: #fff;
 }
 
 /*admsn*/
