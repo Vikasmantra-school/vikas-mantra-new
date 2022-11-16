@@ -151,6 +151,11 @@ const Footer = () => {
                     </div>
 
                     <div className='col-md-4'>
+
+                      <Link href='/enquiry-form' legacyBehavior>
+                        <a className='nav-link'>EnquiryForm</a>
+                      </Link>
+
                       <Link href='/events' legacyBehavior>
                         <a className='nav-link'>Events</a>
                       </Link>
@@ -158,13 +163,13 @@ const Footer = () => {
                       <Link href='/admissions' legacyBehavior>
                         <a className='nav-link'>Admissions</a>
                       </Link>
-
-                      <Link href='/mandatory-public-disclosures' legacyBehavior>
-                        <a className='nav-link'>Faculty</a>
-                      </Link>
                     </div>
 
                     <div className='col-md-4'>
+                      <Link href='/about/our-team' legacyBehavior>
+                        <a className='nav-link'>Faculty</a>
+                      </Link>
+
                       <Link href='/careers' legacyBehavior>
                         <a className='nav-link'>Careers</a>
                       </Link>
