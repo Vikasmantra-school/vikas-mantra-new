@@ -54,6 +54,8 @@ const Blog1 = () => {
 
                             <img src='/assets/blog1.png' alt="image" className={styles.BlogCnt1Img} />
 
+                            <BlogDates />
+
                         </div>
 
 
@@ -130,7 +132,7 @@ const Blog1 = () => {
 
                         </div>
 
-                        <BlogDates />
+                       
 
                     </div>
 
