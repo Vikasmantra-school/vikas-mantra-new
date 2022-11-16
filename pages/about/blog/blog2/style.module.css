@@ -6,7 +6,7 @@
 .Blog1Img {
     position: absolute;
     width: 100%;
-    height: 380px;
+    height: auto;
     top: -270px;
 }
 
@@ -37,7 +37,7 @@
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
-    background-size: 160px;
+    background-size: 100px;
     height: 210px;
     left: 0%;
     width: 190px;
