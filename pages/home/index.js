@@ -364,7 +364,7 @@ function Home() {
                 <SplideSlide>
                   <div className={styles.testimonialcard}>
                     <div>
-                      <img src='/assets/rectangle.png' alt='image' />
+                      <img src='/assets/Parent-1.png' alt='image' />
                     </div>
 
                     <div className={styles.testimonialcontent}>
@@ -385,7 +385,7 @@ function Home() {
                 <SplideSlide>
                   <div className={styles.testimonialcard}>
                     <div>
-                      <img src='/assets/rectangle.png' alt='image' />
+                      <img src='/assets/Parent-2.png' alt='image' />
                     </div>
 
                     <div className={styles.testimonialcontent}>
@@ -405,7 +405,7 @@ function Home() {
                 <SplideSlide>
                   <div className={styles.testimonialcard}>
                     <div>
-                      <img src='/assets/rectangle.png' alt='image' />
+                      <img src='/assets/Parent-3.png' alt='image' />
                     </div>
 
                     <div className={styles.testimonialcontent}>

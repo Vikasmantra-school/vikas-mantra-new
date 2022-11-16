@@ -60,7 +60,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
     .rowPdng {
         padding: 0 !important;
@@ -98,7 +98,7 @@
         height: 210px;
         right: 0%;
         width: 190px;
-        bottom: 3%;
+        bottom: 0%;
     }
     .vectorImg5{
         position: absolute;
@@ -109,7 +109,7 @@
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 767px) {
+@media only screen and (min-width: 661px) and (max-width: 767px) {
 
     .staffImg {
         width: 100%;

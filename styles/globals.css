@@ -960,6 +960,15 @@ tr {
   background-color: #e0e7ff;
 }
 
+@media only screen and (max-width: 660px) {
+  .ImgContainer {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+  }
+}
+
 .sticky-sidebar::before {
 
   content: '';
