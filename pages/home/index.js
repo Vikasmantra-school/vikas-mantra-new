@@ -6,6 +6,7 @@ import '@splidejs/react-splide/css'
 import Link from 'next/link'
 import { gsap, Power3 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import HomeSlider from '../../components/HomeSlider'
 
 gsap.registerPlugin(ScrollTrigger)
 function Home() {
@@ -57,31 +58,8 @@ function Home() {
 
   return (
     <>
-      <section className={styles.bannerSection}>
-        <div className='container'>
-          <div className='row'>
-            <div
-              ref={(el) => {
-                title = el
-              }}
-              className={
-                styles.bannercontent +
-                ' ' +
-                'col-xl-6 col-lg-8 col-md-10 col-sm-12'
-              }
-            >
-              <h1 className='box'>
-                To educate young minds to be lifelong learners in this dynamic
-                world
-              </h1>
-              <p className='box'>
-                Vikas Mantra Public School offers CBSE Curriculum and was
-                launched in the academic year 2019-22.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    
+      <HomeSlider  />
 
       <section
         className={
