@@ -598,10 +598,6 @@ p {
   transition: all 1000ms ease;
 }
 
-.green.activated p {
-  color: #842029;
-}
-
 .divider {
   height: 40px;
   width: 2px;
