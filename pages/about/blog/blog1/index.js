@@ -11,7 +11,7 @@ const Blog1 = () => {
 
       <section className='pt-4'>
         <div className='container position-relative'>
-          <div className={styles.blogRow1 + 'row py-5'}>
+          <div className={'row py-5'}>
             <div className='col-md-6'>
               <h2>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h2>
             </div>
@@ -21,7 +21,7 @@ const Blog1 = () => {
 
       <section className={styles.sectionContainer + ' whitebg position-relative ' + ' ' + styles.BlogvectorImg2 + ' ' + styles.BlogvectorImg3} >
         <div className='container'>
-          <div className='row py-5 align-items-center '>
+          <div className='row py-5 align-items-start '>
             <div className='col-md-6'>
               <p>
                 Teaching our children the value of making eco-friendly decisions

@@ -13,7 +13,7 @@ const Blog = () => {
 
                 <div className='container position-relative'>
 
-                    <div className={styles.blogRow1 + 'row py-5'}>
+                    <div className={'row py-5'}>
 
                         <h2>Blog</h2>
 
