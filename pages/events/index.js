@@ -12,7 +12,8 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function index() {
+const Events = () => {
+
   const pageTitle = 'Events'
 
   //gsap-integration
@@ -153,4 +154,4 @@ function index() {
   )
 }
 
-export default index
+export default Events
