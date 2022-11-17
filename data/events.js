@@ -33,9 +33,9 @@ export const events = [
     dropdown: 'Best Emerging School Award',
     title: 'Best Emerging School Award',
     desc: 'We are happy to announce that our school Vikas Mantra Public school received the Indian icon of the year awards for Best Emerging School ( Holistic) of the year 2021 😀',
-    mainImage: '/assets/events/school-award/1.jpeg',
+    mainImage: '/assets/events/school-award/1.jpg',
     gallery: [
-      '/assets/events/school-award/1.jpeg','/assets/events/school-award/2.jpeg','/assets/events/school-award/3.jpeg',
+      '/assets/events/school-award/1.jpg','/assets/events/school-award/2.jpg','/assets/events/school-award/3.jpg',
     ],
   },
 
@@ -200,11 +200,11 @@ export const events = [
     dropdown: 'Sense Booth',
     title: 'Sense Booth',
     desc: 'The staff and students of Vikas Mantra Public School displayed the Sense Booth activity on July 19, 2019. The concept depicted the five senses of the body which is the integral aspect and the theme SPICE projected the 5 elements of the Happy Tots curriculum – SOCIAL, PHYSICAL, INTELLECTUAL, CREATIVE AND EMOTIONAL. The event was a huge success and parents were overjoyed to be a part of this learning.',
-    mainImage: '/assets/events/sense-booth/1.jpeg',
+    mainImage: '/assets/events/sense-booth/1.jpg',
     gallery: [
-      '/assets/events/sense-booth/1.jpeg','/assets/events/sense-booth/2.jpeg','/assets/events/sense-booth/3.jpeg','/assets/events/sense-booth/4.jpeg','/assets/events/sense-booth/5.jpeg',
-      '/assets/events/sense-booth/6.jpeg','/assets/events/sense-booth/9.jpeg','/assets/events/sense-booth/7.jpeg','/assets/events/sense-booth/8.jpeg','/assets/events/sense-booth/10.jpeg',
-      '/assets/events/sense-booth/11.jpeg','/assets/events/sense-booth/12.jpeg','/assets/events/sense-booth/13.jpeg',
+      '/assets/events/sense-booth/1.jpg','/assets/events/sense-booth/2.jpg','/assets/events/sense-booth/3.jpg','/assets/events/sense-booth/4.jpg','/assets/events/sense-booth/5.jpg',
+      '/assets/events/sense-booth/6.jpg','/assets/events/sense-booth/9.jpg','/assets/events/sense-booth/7.jpg','/assets/events/sense-booth/8.jpg','/assets/events/sense-booth/10.jpg',
+      '/assets/events/sense-booth/11.jpg','/assets/events/sense-booth/12.jpg','/assets/events/sense-booth/13.jpg',
       
     ]
   },
@@ -245,11 +245,11 @@ export const events = [
     dropdown: 'This Schools Got Talent 2019',
     title: 'This Schools Got Talent 2019',
     desc: 'A Multi-Talent Event was organised at Vikas Mantra Public School on July 19, 2019. The whole campus hummed with action ,children gave dynamic performances in all categories. The students, dressed in colourful attires, they were enthusiastic and filled with confidence towards their performances. The competition included following categories: On Stage Events – Story Telling, Dance and Vocals.Off Stage Events – Art, Best Out of Waste, Vegetable Carving.  Students displayed their talents and left the audience spellbound. The main reason behind organizing this competition was to nurture the intrinsic qualities of students and remove the stage fear, which eventually helped in their personality development .',
-    mainImage: '/assets/events/school-talent/12.jpeg',
+    mainImage: '/assets/events/school-talent/12.jpg',
     gallery: [
-      '/assets/events/school-talent/1.jpeg','/assets/events/school-talent/2.jpeg','/assets/events/school-talent/3.jpeg','/assets/events/school-talent/4.jpeg','/assets/events/school-talent/5.jpeg',
-      '/assets/events/school-talent/6.jpeg','/assets/events/school-talent/7.jpeg','/assets/events/school-talent/8.jpeg','/assets/events/school-talent/9.jpeg','/assets/events/school-talent/10.jpeg',
-      '/assets/events/school-talent/11.jpeg','/assets/events/school-talent/12.jpeg','/assets/events/school-talent/13.jpeg','/assets/events/school-talent/14.jpeg','/assets/events/school-talent/15.jpeg',
+      '/assets/events/school-talent/1.jpg','/assets/events/school-talent/2.jpg','/assets/events/school-talent/3.jpg','/assets/events/school-talent/4.jpg','/assets/events/school-talent/5.jpg',
+      '/assets/events/school-talent/6.jpg','/assets/events/school-talent/7.jpg','/assets/events/school-talent/8.jpg','/assets/events/school-talent/9.jpg','/assets/events/school-talent/10.jpg',
+      '/assets/events/school-talent/11.jpg','/assets/events/school-talent/12.jpg','/assets/events/school-talent/13.jpg','/assets/events/school-talent/14.jpg','/assets/events/school-talent/15.jpg',
     ]
   },
 
