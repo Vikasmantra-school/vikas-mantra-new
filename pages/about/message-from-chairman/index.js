@@ -66,6 +66,13 @@ const MessageFromChairMan = () => {
                                     our major focus and area of work.
                                 </p>
 
+                                <p>We look forward to all the  valuable suggestions incorporated into our system with the changing time and scenario for the development of the school from the parents and eminent educationists on  our advisory board. On behalf of the School Management we are thankful to you for entrusting the education of your children to us. We assure you that we will make all possible efforts to come up to your expectations.  It is promise that the school will achieve the higher goals set and make it a heaven for children!!</p>
+
+                                <p>Yours Sincerely,</p>
+
+                                <h6>Dr. V. Shanmuga Prabu</h6>
+
+
                             </div>
 
                         </div>
@@ -88,6 +95,7 @@ const MessageFromChairMan = () => {
                     <div className='row'>
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
+
 
                         </div>
 
