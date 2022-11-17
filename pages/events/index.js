@@ -56,9 +56,9 @@ function index() {
                       className={
                         'greybg VectorSpiralPink' +
                         ' ' +
-                        'pt60' +
+                        'pt80' +
                         ' ' +
-                        'pb60' +
+                        'pb80' +
                         ' ' +
                         styles.eventGallery
                       }
