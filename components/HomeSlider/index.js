@@ -107,7 +107,7 @@ function HomeSlider({ref}) {
 </SplideSlide>
 
 <SplideSlide>
-  <section className={styles.bannerSection+ ' ' + styles.banner2 + 'parentAnimeStarts'}>
+  <section className={styles.bannerSection+ ' ' + styles.banner2 + ' ' + 'parentAnimeStarts'}>
     <div className='container'>
       <div className='row homeBanner'>
 
