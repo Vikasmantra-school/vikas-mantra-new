@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import styles from './style.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
@@ -6,15 +6,66 @@ import Tab from 'react-bootstrap/Tab'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import EventsNav from '../../components/EventsNav'
 import { events } from '../../data/events'
+import { gsap, Power3 } from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+
+
+gsap.registerPlugin(ScrollTrigger)
 
 function index() {
   const pageTitle = 'Events'
+
+  //gsap-integration
+  let title = useRef(null)
+  function staggerAnimeFunc(elem, index) {
+    let text = elem.querySelectorAll('.bottomToTop')
+    gsap.fromTo(
+      text,
+      {
+        opacity: 0,
+        y: 200,
+      },
+      {
+        y: 0,
+        duration: 0.9,
+        delay: 0.3,
+        opacity: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: elem,
+          start: 'top center',
+          end: 'bottom bottom',
+          ease: Power3.easeOut,
+          toggleActions: 'play',
+        },
+      }
+    )
+  }
+
+  function titleAnime() {
+    gsap.fromTo(
+      title,
+      { opacity: 0 },
+      {
+        duration: 1.2,
+        opacity: 1,
+        y: -20,
+        ease: Power3.easeOut,
+      }
+    )
+  }
+
+  useEffect(() => {
+    const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
+    parentTrigger.forEach(staggerAnimeFunc)
+    titleAnime()
+  }, [])
 
   return (
     <>
       <Breadcrumb pageName={pageTitle} />
 
-      <section className={'pt60'}>
+      <section className='pt60 bottomToTop parentAnimeStarts'>
         <div className={'container-fluid' + ' ' + styles.tabSpace}>
           <Tab.Container id='left-tabs-example' defaultActiveKey='first'>
             <div className='row pt-5'>
@@ -29,14 +80,13 @@ function index() {
                 <Tab.Content key={index}>
                   <Tab.Pane eventKey={data.id}>
                     <section
-                      className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60'}
-                    >
+                      className='whitebg pt60 pb60 parentAnimeStarts '>
                       <div className='container'>
                         <div className='row'>
                           <div className='col-md-6'>
                             <h2 className='ulineRed'>{data.title} </h2>
 
-                            <p className='pt-4'>{data.desc}</p>
+                            <p className='pt-4 bottomToTop '>{data.desc}</p>
                           </div>
 
                           <div className='col-md-6'>
@@ -53,11 +103,11 @@ function index() {
                     </section>
 
                     <section
-                      className={ 'greybg VectorSpiralPink pt80 pb80 ' + styles.eventGallery + ' ' + styles.eventSectionPdng}
+                      className={' greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts ' + styles.eventGallery + ' ' + styles.eventSectionPdng}
                     >
                       <div className='container'>
-                        <div className={'row' + ' ' + 'vmpsslide'}>
-                          <div className='col-md-12'>
+                        <div className='row vmpsslide'>
+                          <div className='col-md-12 bottomToTop'>
                             <Splide
                               options={{
                                 rewind: true,
