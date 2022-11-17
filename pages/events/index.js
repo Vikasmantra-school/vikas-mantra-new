@@ -20,6 +20,7 @@ const Events = () => {
   let title = useRef(null)
   function staggerAnimeFunc(elem, index) {
     let text = elem.querySelectorAll('.bottomToTop')
+    let imageAnime = elem.querySelectorAll('.leftToRight')
     gsap.fromTo(
       text,
       {
@@ -36,6 +37,27 @@ const Events = () => {
           trigger: elem,
           start: 'top center',
           end: 'bottom bottom',
+          ease: Power3.easeOut,
+          toggleActions: 'play',
+        },
+      }
+    )
+    gsap.fromTo(
+      imageAnime,
+      {
+        opacity: 0,
+        x: 200,
+      },
+      {
+        x: 0,
+        duration: 0.9,
+        delay: 0.3,
+        opacity: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: elem,
+          start: 'left center',
+          end: 'right right',
           ease: Power3.easeOut,
           toggleActions: 'play',
         },
@@ -133,7 +155,7 @@ const Events = () => {
                                     <img
                                       src={data}
                                       alt='image'
-                                      className='img-fluid eventsGallery'
+                                      className='img-fluid eventsGallery leftToRight'
                                     />
                                   </SplideSlide>
                                 )
