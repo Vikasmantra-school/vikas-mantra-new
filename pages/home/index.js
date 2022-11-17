@@ -58,8 +58,8 @@ function Home() {
 
   return (
     <>
-    
-      <HomeSlider  />
+
+      <HomeSlider />
 
       <section
         className={
@@ -97,7 +97,7 @@ function Home() {
 
               <button className={'outlineBtn' + ' btn bottomToTop'}>
 
-              <Link href='/about' legacyBehavior><a>Know More</a></Link>
+                <Link href='/about' legacyBehavior><a>Know More</a></Link>
 
               </button>
             </div>
@@ -130,7 +130,7 @@ function Home() {
                 and bustle of Chennai.
               </p>
               <button className={'whiteoutlineBtn' + ' btn bottomToTop'}>
-              <Link href='/learning' legacyBehavior><a>Know More</a></Link>
+                <Link href='/learning' legacyBehavior><a>Know More</a></Link>
               </button>
             </div>
           </div>

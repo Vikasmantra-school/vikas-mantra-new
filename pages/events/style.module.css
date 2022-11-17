@@ -16,6 +16,10 @@
 
 .eventText{margin-left: 67px;}
 
+.eventSectionPdng{
+    padding: 120px 0;
+}
+
 
 @media only screen and (max-width: 660px) {
 

@@ -53,15 +53,7 @@ function index() {
                     </section>
 
                     <section
-                      className={
-                        'greybg VectorSpiralPink' +
-                        ' ' +
-                        'pt80' +
-                        ' ' +
-                        'pb80' +
-                        ' ' +
-                        styles.eventGallery
-                      }
+                      className={ 'greybg VectorSpiralPink pt80 pb80 ' + styles.eventGallery + ' ' + styles.eventSectionPdng}
                     >
                       <div className='container'>
                         <div className={'row' + ' ' + 'vmpsslide'}>
