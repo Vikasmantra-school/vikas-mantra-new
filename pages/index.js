@@ -7,7 +7,6 @@ import { gsap, Power3 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import HomeSlider from '../components/HomeSlider'
 
-gsap.registerPlugin(ScrollTrigger)
 function Home() {
   let title = useRef(null)
 
@@ -41,8 +40,8 @@ function Home() {
       title,
       { opacity: 0 },
       {
-        duration: 1.2,
         opacity: 1,
+        duration: 1.2,
         y: -20,
         ease: Power3.easeOut,
       }
@@ -50,9 +49,10 @@ function Home() {
   }
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
-    titleAnime()
+    // titleAnime()
   }, [])
 
   return (

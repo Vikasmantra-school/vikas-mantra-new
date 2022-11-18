@@ -86,7 +86,7 @@
 }
 
 .tabUl {
-    align-items: start;
+    align-items: flex-start;
     background-color: white;
     width: 240px;
 }
