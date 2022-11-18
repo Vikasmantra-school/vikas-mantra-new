@@ -20,7 +20,7 @@ const Nav = () => {
 
   return (
     <>
-      <header className={styles.homeheader + ' ' + pageName}>
+      <header className={styles.homeheader + ' ' + pageName + 'home'}>
         <nav className={styles.navTransparent + ' navbar-expand-lg navbar'}>
           <div className='container'>
             <Link href='/home' legacyBehavior>
