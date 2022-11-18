@@ -188,7 +188,7 @@ const Footer = () => {
 
       <hr className={styles.hrLine} />
       <p className={'text-center mt-4' + ' ' + styles.bottomText}>
-        Vikas Mantra Public School © 2020 | All Rights Reserved | Coded by Benfy
+        Vikas Mantra Public School © 2022 | All Rights Reserved | Coded by <Link href='https://benfy.co/' ><a target='_blank' rel="noopener noreferrer">Benfy</a></Link>
       </p>
     </div>
   )
