@@ -81,7 +81,7 @@ const Events = () => {
                 <Tab.Content key={index}>
                   <Tab.Pane eventKey={data.id}>
                     <section
-                      className='whitebg pt60 pb60 parentAnimeStarts '>
+                      className='whitebg pt60 pb60 parentAnimeStarts'>
                       <div className='container'>
                         <div className='row'>
                           <div className='col-md-6'>
