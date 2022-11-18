@@ -8,51 +8,37 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import HomeSlider from '../components/HomeSlider'
 
 function Home() {
-  // let title = useRef(null)
-
-  function staggerAnimeFunc(elem, index) {
-    let text = elem.querySelectorAll('.bottomToTop')
-    gsap.fromTo(
-      text,
-      {
-        opacity: 0,
-        y: 200,
-      },
-      {
-        y: 0,
-        duration: 0.9,
-        delay: 0.3,
-        opacity: 1,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: elem,
-          start: 'top center',
-          end: 'bottom bottom',
-          ease: Power3.easeOut,
-          toggleActions: 'play',
-        },
-      }
-    )
-  }
-
-  // function titleAnime() {
-  //   gsap.fromTo(
-  //     title,
-  //     { opacity: 0 },
-  //     {
-  //       opacity: 1,
-  //       duration: 1.2,
-  //       y: -20,
-  //       ease: Power3.easeOut,
-  //     }
-  //   )
-  // }
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
     // titleAnime()
+    function staggerAnimeFunc(elem) {
+      let text = elem.querySelectorAll('.bottomToTop')
+      gsap.fromTo(
+        text,
+        {
+          opacity: 0,
+          y: 200,
+        },
+        {
+          y: 0,
+          duration: 0.9,
+          delay: 0.3,
+          opacity: 1,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: elem,
+            start: 'top center',
+            end: 'bottom bottom',
+            ease: Power3.easeOut,
+            toggleActions: 'play',
+          },
+        }
+      )
+    }
+    ScrollTrigger.refresh();
   }, [])
 
   return (
