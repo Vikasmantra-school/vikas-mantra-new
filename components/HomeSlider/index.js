@@ -63,10 +63,10 @@ function HomeSlider({ref}) {
 
         <Splide
             options={{
-              rewind: true,
+              rewind: false,
               gap: '0rem',
               perPage: 1,
-              autoplay: true,
+              autoplay: false,
               pagination: true,
               arrows: false,
               breakpoints: {

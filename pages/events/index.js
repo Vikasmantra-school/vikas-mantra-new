@@ -6,7 +6,7 @@ import Tab from 'react-bootstrap/Tab'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import EventsNav from '../../components/EventsNav'
 import { events } from '../../data/events'
-import { gsap, Power3 } from 'gsap'
+import { gsap, Power3, Power2 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -17,7 +17,6 @@ const Events = () => {
   //gsap-integration
   function staggerAnimeFunc(elem, index) {
     let text = elem.querySelectorAll('.bottomToTop')
-    let imageAnime = elem.querySelectorAll('.leftToRight')
     gsap.fromTo(
       text,
       {
@@ -36,26 +35,30 @@ const Events = () => {
           end: 'bottom bottom',
           ease: Power3.easeOut,
           toggleActions: 'play',
-        },
+        }
       }
     )
+  }
+
+  function imageAnime(elem, index) {
+    let image = elem.querySelectorAll('.leftToRight')
     gsap.fromTo(
-      imageAnime,
+      image,
       {
         opacity: 0,
-        x: 200,
+        x: 50,
       },
       {
         x: 0,
-        duration: 0.9,
-        delay: 0.3,
+        duration: 0.5,
+        delay: 0.2,
         opacity: 1,
         stagger: 0.2,
         scrollTrigger: {
           trigger: elem,
           start: 'left center',
           end: 'right right',
-          ease: Power3.easeOut,
+          ease: Power2.easeOut,
           toggleActions: 'play',
         },
       }
@@ -65,13 +68,15 @@ const Events = () => {
   useEffect(() => {
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
+    parentTrigger.forEach(imageAnime)
+    ScrollTrigger.refresh();
   }, [])
 
   return (
     <>
       <Breadcrumb pageName={pageTitle} />
 
-      <section className='pt60 parentAnimeStarts'>
+      <section className='pt60 '>
         <div className={'container-fluid' + ' ' + styles.tabSpace}>
           <Tab.Container id='left-tabs-example' defaultActiveKey='first'>
             <div className='row pt-5'>
