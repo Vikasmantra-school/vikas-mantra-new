@@ -40,9 +40,7 @@ const Events = () => {
           ease: Power3.easeOut,
           toggleActions: 'play',
         },
-      }
-    )
-    gsap.fromTo(
+      },
       imageAnime,
       {
         opacity: 0,
