@@ -214,9 +214,9 @@ export const events = [
     dropdown: 'Skating Competition',
     title: 'Winners - Skating Competition',
     desc: 'VMPS are very happy to share that Master. Adwaith of Grade 6 participated in the state level skating champions and won 2 gold medals and a trophy in 500M fancy inline and 1000M respectively.VMPS is proud to share another winner from Grade 1 Sec B Miss Akshara who won Bronze medal in State level 400Mts Skating Competition.    ',
-    mainImage: '/assets/events/skating/1.jpeg',
+    mainImage: '/assets/events/skating/1.jpg',
     gallery: [
-      '/assets/events/skating/1.jpeg','/assets/events/skating/2.jpeg','/assets/events/skating/3.jpeg','/assets/events/skating/4.jpeg',
+      '/assets/events/skating/1.jpg','/assets/events/skating/2.jpg','/assets/events/skating/3.jpg','/assets/events/skating/4.jpg',
       
     ]
   },
