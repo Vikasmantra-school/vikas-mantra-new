@@ -51,7 +51,7 @@ const Events = () => {
       {
         x: 0,
         duration: 0.5,
-        delay: 0.2,
+        delay: 0.9,
         opacity: 1,
         stagger: 0.2,
         scrollTrigger: {
@@ -59,7 +59,7 @@ const Events = () => {
           start: 'left center',
           end: 'right right',
           ease: Power2.easeOut,
-          toggleActions: 'play',
+          toggleActions: 'play play restart none',
         },
       }
     )
