@@ -25,7 +25,7 @@ const Nav = () => {
           <div className='container'>
             <Link href='/home' legacyBehavior>
               <a className={styles.mainLogo + ' ' + 'navbar-brand'}>
-                {pageName === 'home' ? (
+                {pageName === '' ? (
                   <img src='/assets/vmps-white-logo.png' alt='image' />
                 ) : (
                   <img src='/assets/vmps-color.png' alt='image' />
@@ -33,7 +33,10 @@ const Nav = () => {
               </a>
             </Link>
             <ul className='m-hide navbar-nav ms-auto mb-2 mb-lg-0 call-btn'>
-              <Button className={styles.firstbtn}><FontAwesomeIcon icon={faPhone} className={styles.callIcon} />70924 50450</Button>
+              <Button className={styles.firstbtn}>
+                <FontAwesomeIcon icon={faPhone} className={styles.callIcon} />
+                70924 50450
+              </Button>
               <Button className={styles.secondtbtn}>Enroll</Button>
             </ul>
             <div
@@ -56,9 +59,7 @@ const Nav = () => {
             <div className='collapse navbar-collapse desktop-menu' id=''>
               <ul className='navbar-nav mb-2 mb-lg-0'>
                 <li
-                  className={
-                    pageName === 'home' ? 'active nav-item' : 'nav-item'
-                  }
+                  className={pageName === '' ? 'active nav-item' : 'nav-item'}
                 >
                   <Link href='/home' legacyBehavior>
                     <a className='nav-link' aria-current='page'>

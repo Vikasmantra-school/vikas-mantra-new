@@ -9,17 +9,15 @@ import { events } from '../../data/events'
 import { gsap, Power3 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
-
 gsap.registerPlugin(ScrollTrigger)
 
 const Events = () => {
-
   const pageTitle = 'Events'
 
   //gsap-integration
-  let title = useRef(null)
   function staggerAnimeFunc(elem, index) {
     let text = elem.querySelectorAll('.bottomToTop')
+    let imageAnime = elem.querySelectorAll('.leftToRight')
     gsap.fromTo(
       text,
       {
@@ -41,17 +39,25 @@ const Events = () => {
         },
       }
     )
-  }
-
-  function titleAnime() {
     gsap.fromTo(
-      title,
-      { opacity: 0 },
+      imageAnime,
       {
-        duration: 1.2,
+        opacity: 0,
+        x: 200,
+      },
+      {
+        x: 0,
+        duration: 0.9,
+        delay: 0.3,
         opacity: 1,
-        y: -20,
-        ease: Power3.easeOut,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: elem,
+          start: 'left center',
+          end: 'right right',
+          ease: Power3.easeOut,
+          toggleActions: 'play',
+        },
       }
     )
   }
@@ -59,19 +65,18 @@ const Events = () => {
   useEffect(() => {
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
-    titleAnime()
   }, [])
 
   return (
     <>
       <Breadcrumb pageName={pageTitle} />
 
-      <section className='pt60 bottomToTop parentAnimeStarts'>
+      <section className='pt60 parentAnimeStarts'>
         <div className={'container-fluid' + ' ' + styles.tabSpace}>
           <Tab.Container id='left-tabs-example' defaultActiveKey='first'>
             <div className='row pt-5'>
               <div className={'col-md-5' + ' ' + styles.eventText}>
-                <h2>Events</h2>
+                <h2 className='bottomToTop'>Events</h2>
                 <EventsNav events={events} />
               </div>
             </div>
@@ -80,12 +85,13 @@ const Events = () => {
               return (
                 <Tab.Content key={index}>
                   <Tab.Pane eventKey={data.id}>
-                    <section
-                      className='whitebg pt60 pb60 parentAnimeStarts'>
+                    <section className='whitebg pt60 pb60 parentAnimeStarts '>
                       <div className='container'>
                         <div className='row'>
                           <div className='col-md-6'>
-                            <h2 className='ulineRed'>{data.title} </h2>
+                            <h2 className='ulineRed bottomToTop '>
+                              {data.title}{' '}
+                            </h2>
 
                             <p className='pt-4 bottomToTop '>{data.desc}</p>
                           </div>
@@ -104,11 +110,16 @@ const Events = () => {
                     </section>
 
                     <section
-                      className={' greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts ' + styles.eventGallery + ' ' + styles.eventSectionPdng}
+                      className={
+                        ' greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts ' +
+                        styles.eventGallery +
+                        ' ' +
+                        styles.eventSectionPdng
+                      }
                     >
                       <div className='container'>
                         <div className='row vmpsslide'>
-                          <div className='col-md-12 bottomToTop'>
+                          <div className='col-md-12'>
                             <Splide
                               options={{
                                 rewind: true,
@@ -127,13 +138,13 @@ const Events = () => {
                               {data.gallery?.map((data, index) => {
                                 return (
                                   <SplideSlide
-                                    className='eventGallery'
+                                    className='eventGallery leftToRight'
                                     key={index}
                                   >
                                     <img
                                       src={data}
                                       alt='image'
-                                      className='img-fluid eventsGallery'
+                                      className='img-fluid eventsGallery leftToRight'
                                     />
                                   </SplideSlide>
                                 )
