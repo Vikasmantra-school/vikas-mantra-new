@@ -59,7 +59,7 @@ const Events = () => {
           start: 'left center',
           end: 'right right',
           ease: Power2.easeOut,
-          toggleActions: 'play play restart none',
+          toggleActions: 'play none restart none',
         },
       }
     )

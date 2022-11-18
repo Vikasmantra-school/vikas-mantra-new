@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import styles from './style.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import HomeSlider from '../components/HomeSlider'
 
 function Home() {
-  let title = useRef(null)
+  // let title = useRef(null)
 
   function staggerAnimeFunc(elem, index) {
     let text = elem.querySelectorAll('.bottomToTop')
@@ -35,18 +35,18 @@ function Home() {
     )
   }
 
-  function titleAnime() {
-    gsap.fromTo(
-      title,
-      { opacity: 0 },
-      {
-        opacity: 1,
-        duration: 1.2,
-        y: -20,
-        ease: Power3.easeOut,
-      }
-    )
-  }
+  // function titleAnime() {
+  //   gsap.fromTo(
+  //     title,
+  //     { opacity: 0 },
+  //     {
+  //       opacity: 1,
+  //       duration: 1.2,
+  //       y: -20,
+  //       ease: Power3.easeOut,
+  //     }
+  //   )
+  // }
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
