@@ -9,15 +9,12 @@ import { events } from '../../data/events'
 import { gsap, Power3 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
-
 gsap.registerPlugin(ScrollTrigger)
 
 const Events = () => {
-
   const pageTitle = 'Events'
 
   //gsap-integration
-  // let title = useRef(null)
   function staggerAnimeFunc(elem, index) {
     let text = elem.querySelectorAll('.bottomToTop')
     let imageAnime = elem.querySelectorAll('.leftToRight')
@@ -40,7 +37,9 @@ const Events = () => {
           ease: Power3.easeOut,
           toggleActions: 'play',
         },
-      },
+      }
+    )
+    gsap.fromTo(
       imageAnime,
       {
         opacity: 0,
@@ -63,23 +62,9 @@ const Events = () => {
     )
   }
 
-  // function titleAnime() {
-  //   gsap.fromTo(
-  //     title,
-  //     { opacity: 0 },
-  //     {
-  //       duration: 1.2,
-  //       opacity: 1,
-  //       y: -20,
-  //       ease: Power3.easeOut,
-  //     }
-  //   )
-  // }
-
   useEffect(() => {
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
-    // titleAnime()
   }, [])
 
   return (
@@ -104,7 +89,9 @@ const Events = () => {
                       <div className='container'>
                         <div className='row'>
                           <div className='col-md-6'>
-                            <h2 className='ulineRed bottomToTop '>{data.title} </h2>
+                            <h2 className='ulineRed bottomToTop '>
+                              {data.title}{' '}
+                            </h2>
 
                             <p className='pt-4 bottomToTop '>{data.desc}</p>
                           </div>
@@ -122,7 +109,14 @@ const Events = () => {
                       </div>
                     </section>
 
-                    <section className={' greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts ' + styles.eventGallery + ' ' + styles.eventSectionPdng} >
+                    <section
+                      className={
+                        ' greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts ' +
+                        styles.eventGallery +
+                        ' ' +
+                        styles.eventSectionPdng
+                      }
+                    >
                       <div className='container'>
                         <div className='row vmpsslide'>
                           <div className='col-md-12'>
