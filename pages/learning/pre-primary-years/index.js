@@ -178,7 +178,7 @@ function PrePrimary() {
             <div className={'col-md-6'}>
               <div className='imgUp imgBgColor pastelYellow'>
                 <img
-                  src='/assets/banners/learning-banner-1.png'
+                  src='/assets/pre-primary.png'
                   alt='image'
                   className='img-fluid'
                 />

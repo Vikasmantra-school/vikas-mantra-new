@@ -201,7 +201,7 @@ function Learning() {
             >
               <div className='imgUp imgBgColor pastelLightGreen'>
                 <img
-                  src='/assets/school-building.png'
+                  src='/assets/banners/school-building.png'
                   alt='image'
                   className='img-fluid'
                 />
