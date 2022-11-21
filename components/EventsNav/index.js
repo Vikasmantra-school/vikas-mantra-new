@@ -24,10 +24,7 @@ function EventsNav({ events }) {
         <Dropdown className={styles.dropdowns}>
           <Dropdown.Toggle id=''>
             <Nav.Item>
-              <Nav.Link
-                className={styles.tabNavLink + ' tabNavlinkColor first'}
-                eventKey='first'
-              >
+              <Nav.Link className={styles.tabNavLink + ' tabNavlinkColor first'}>
                 {active}
               </Nav.Link>
             </Nav.Item>
@@ -36,7 +33,7 @@ function EventsNav({ events }) {
           <Dropdown.Menu className={styles.dropMenu}>
             {events.map((data, index) => {
               return (
-                <Dropdown.Item key={index} onClick={(e) => navLinkClick(e)}>
+                <Dropdown.Item className={styles.dropDownItemNav} key={index} onClick={(e) => navLinkClick(e)}>
                   <Nav.Item>
                     <Nav.Link className={styles.tabNavLink} eventKey={data.id}>
                       {data.dropdown}

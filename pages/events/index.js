@@ -24,12 +24,12 @@ const Events = () => {
         text,
         {
           opacity: 0,
-          y: 200,
+          y: 100,
         },
         {
           y: 0,
-          duration: 0.9,
-          delay: 0.3,
+          duration: 0.6,
+          delay: 0.5,
           opacity: 1,
           stagger: 0.2,
           scrollTrigger: {
@@ -60,20 +60,22 @@ const Events = () => {
         {
           x: 0,
           duration: 0.5,
-          delay: 0.9,
+          delay: 0.5,
           opacity: 1,
           stagger: 0.2,
           scrollTrigger: {
             trigger: elem,
             start: 'left center',
-            end: 'right right',
+            end: 'right center',
             ease: Power2.easeOut,
-            toggleActions: 'play none restart none',
+            toggleActions: 'restart restart pause none',
           },
+          
+          
         }
       )
     }
-    ScrollTrigger.refresh();
+    
   }, [])
 
   return (
@@ -90,6 +92,8 @@ const Events = () => {
               </div>
             </div>
 
+
+
             {events.map((data, index) => {
               return (
                 <Tab.Content key={index}>
@@ -99,7 +103,7 @@ const Events = () => {
                         <div className='row'>
                           <div className='col-md-6'>
                             <h2 className='ulineRed bottomToTop '>
-                              {data.title}{' '}
+                              {data.title}
                             </h2>
 
                             <p className='pt-4 bottomToTop '>{data.desc}</p>
@@ -128,7 +132,7 @@ const Events = () => {
                                 rewind: true,
                                 gap: '1rem',
                                 perPage: 4,
-                                autoplay: false,
+                                autoplay: true,
                                 pagination: false,
                                 arrows: true,
                                 breakpoints: {
@@ -161,6 +165,8 @@ const Events = () => {
                 </Tab.Content>
               )
             })}
+
+
           </Tab.Container>
         </div>
       </section>
