@@ -2,11 +2,11 @@ import React from 'react'
 import styles from './style.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
-const index = () => {
+const Index = () => {
 
     gsap.registerPlugin(ScrollTrigger)
 
@@ -15,7 +15,6 @@ const index = () => {
     useEffect(() => {
         const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
         parentTrigger.forEach(fadeIn)
-
         function fadeIn(elem) {
             let text = elem.querySelectorAll('.fading')
             gsap.fromTo(
@@ -251,4 +250,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index
