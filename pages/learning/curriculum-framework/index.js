@@ -476,7 +476,7 @@ function CurriculumFrameWork() {
             <div className={'col-md-6'}>
               <div className='imgUp imgBgColor pastelBlue'>
                 <img
-                  src='/assets/banners/learning-banner-1.png'
+                  src='/assets/curriculum-framework.png'
                   alt='image'
                   className='img-fluid'
                 />
