@@ -1742,8 +1742,8 @@ tr {
   background-image: linear-gradient(85.31deg, var(--color-primary) -39.85%, var(--color-secondary) 44.76%, var(--color-third) 117.87%);
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: start;
+  justify-content: flex-end;
+  align-items: flex-start;
   margin-top: -150px;
   border-radius: 5px 5px 70px 0px !important;
   color: #fff;

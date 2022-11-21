@@ -5,8 +5,9 @@
     height: 100vh;
     position: relative;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .banner1{background: url(/assets/banners/home-page-banner.png);}

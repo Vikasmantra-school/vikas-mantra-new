@@ -20,10 +20,10 @@ const Nav = () => {
 
   return (
     <>
-      <header className={styles.homeheader + ' ' + pageName}>
+      <header className={styles.homeheader + ' ' + pageName + 'home'}>
         <nav className={styles.navTransparent + ' navbar-expand-lg navbar'}>
           <div className='container'>
-            <Link href='/home' legacyBehavior>
+            <Link href='/' legacyBehavior>
               <a className={styles.mainLogo + ' ' + 'navbar-brand'}>
                 {pageName === '' ? (
                   <img src='/assets/vmps-white-logo.png' alt='image' />
@@ -61,7 +61,7 @@ const Nav = () => {
                 <li
                   className={pageName === '' ? 'active nav-item' : 'nav-item'}
                 >
-                  <Link href='/home' legacyBehavior>
+                  <Link href='/' legacyBehavior>
                     <a className='nav-link' aria-current='page'>
                       Home
                     </a>

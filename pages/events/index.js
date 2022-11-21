@@ -9,66 +9,70 @@ import { events } from '../../data/events'
 import { gsap, Power3, Power2 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger)
-
 const Events = () => {
+  gsap.registerPlugin(ScrollTrigger)
+
   const pageTitle = 'Events'
 
-  //gsap-integration
-  function staggerAnimeFunc(elem, index) {
-    let text = elem.querySelectorAll('.bottomToTop')
-    gsap.fromTo(
-      text,
-      {
-        opacity: 0,
-        y: 200,
-      },
-      {
-        y: 0,
-        duration: 0.9,
-        delay: 0.3,
-        opacity: 1,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: elem,
-          start: 'top center',
-          end: 'bottom bottom',
-          ease: Power3.easeOut,
-          toggleActions: 'play',
-        }
-      }
-    )
-  }
-
-  function imageAnime(elem, index) {
-    let image = elem.querySelectorAll('.leftToRight')
-    gsap.fromTo(
-      image,
-      {
-        opacity: 0,
-        x: 50,
-      },
-      {
-        x: 0,
-        duration: 0.5,
-        delay: 0.2,
-        opacity: 1,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: elem,
-          start: 'left center',
-          end: 'right right',
-          ease: Power2.easeOut,
-          toggleActions: 'play',
-        },
-      }
-    )
-  }
-
+  //animation-for-text
   useEffect(() => {
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
-    parentTrigger.forEach(imageAnime)
+    function staggerAnimeFunc(elem) {
+      let text = elem.querySelectorAll('.bottomToTop')
+      gsap.fromTo(
+        text,
+        {
+          opacity: 0,
+          y: 200,
+        },
+        {
+          y: 0,
+          duration: 0.9,
+          delay: 0.3,
+          opacity: 1,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: elem,
+            start: 'top center',
+            end: 'bottom bottom',
+            ease: Power3.easeOut,
+            toggleActions: 'play',
+          }
+        }
+      )
+    }
+    ScrollTrigger.refresh();
+  }, [])
+
+  //animation-for-gallery
+  useEffect(() => {
+    const parentTrigger2 = document.querySelectorAll('.parentAnimeStarts2')
+    parentTrigger2.forEach(imageAnime)
+    function imageAnime(elem) {
+      let image = elem.querySelectorAll('.leftToRight')
+      gsap.fromTo(
+        image,
+        {
+          opacity: 0,
+          x: 50,
+        },
+        {
+          x: 0,
+          duration: 0.5,
+          delay: 0.9,
+          opacity: 1,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: elem,
+            start: 'left center',
+            end: 'right right',
+            ease: Power2.easeOut,
+            toggleActions: 'play none restart none',
+          },
+        }
+      )
+    }
     ScrollTrigger.refresh();
   }, [])
 
@@ -115,13 +119,7 @@ const Events = () => {
                     </section>
 
                     <section
-                      className={
-                        ' greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts ' +
-                        styles.eventGallery +
-                        ' ' +
-                        styles.eventSectionPdng
-                      }
-                    >
+                      className={'greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts2 ' + styles.eventGallery + ' ' + styles.eventSectionPdng}>
                       <div className='container'>
                         <div className='row vmpsslide'>
                           <div className='col-md-12'>
@@ -130,7 +128,7 @@ const Events = () => {
                                 rewind: true,
                                 gap: '1rem',
                                 perPage: 4,
-                                autoplay: true,
+                                autoplay: false,
                                 pagination: false,
                                 arrows: true,
                                 breakpoints: {
@@ -149,7 +147,7 @@ const Events = () => {
                                     <img
                                       src={data}
                                       alt='image'
-                                      className='img-fluid eventsGallery leftToRight'
+                                      className='img-fluid eventsGallery '
                                     />
                                   </SplideSlide>
                                 )
