@@ -24,7 +24,7 @@ function EventsNav({ events }) {
       },
       {
         x: 0,
-        duration: 0.6,
+        duration: 0.5,
         opacity: 1,
         stagger: 0.2,
       }

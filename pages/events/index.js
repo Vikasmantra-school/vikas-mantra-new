@@ -6,7 +6,7 @@ import Tab from 'react-bootstrap/Tab'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import EventsNav from '../../components/EventsNav'
 import { events } from '../../data/events'
-import { gsap, Power3, Power2 } from 'gsap'
+import { gsap, Power2 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 const Events = () => {
@@ -25,21 +25,14 @@ const Events = () => {
         text,
         {
           opacity: 0,
-          x: -100,
+          x: -10,
         },
         {
           x: 0,
           duration: 0.6,
-          delay: 0.6,
+          delay:0.5,
           opacity: 1,
           stagger: 0.2,
-          scrollTrigger: {
-            trigger: elem,
-            start: 'top left',
-            end: 'bottom right',
-            ease: Power3.easeOut,
-            toggleActions: 'play',
-          },
         }
       )
     }
