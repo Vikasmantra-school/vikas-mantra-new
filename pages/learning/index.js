@@ -14,30 +14,30 @@ function Learning() {
 
   function progressClick(e) {
     const progress = document.getElementById('progress')
-
-    var thisElem = e.target.parentNode.parentNode
-    // thisElem.classList.add('theActive')
-    var progressChildren = progress.children
-
-    // const progressLink = e.target.closest('li')
-    // const progressLinkNode = e.target.parentNode.parentNode.previousSibling
-    // progressLink.classList.add('green')
-    // progressLink.classList.remove('grey')
-    // progressLink.classList.add('activated')
-    // progressLinkNode.classList.add('dividerActivated')
   }
 
   useEffect(() => {
-    // let aTag = document.querySelectorAll('.aTag')
-    // aTag.forEach((elem, filter) => {
-    //   var sibs = []
-    //   while ((elem = elem.previousSibling)) {
-    //     if (elem.nodeType === 3) continue // text node
-    //     if (!filter || filter(elem)) sibs.push(elem)
-    //   }
-    //   return sibs
-    // })
+    //
+    const progress = document.getElementById('progress')
+    let learningDivs = document.querySelectorAll('.learningDivs')
+    let listOfLearningDivs = progress.querySelectorAll('.node')
+    console.log(listOfLearningDivs)
+    window.addEventListener('scroll', Scroll, false)
 
+    function Scroll() {
+      learningDivs.forEach((lds, index) => {
+        let sectionTop = lds.getBoundingClientRect().top
+        var ids = lds.getAttribute('id')
+        var id = document.getElementById(ids + '-li')
+        if (sectionTop < 0) {
+          id.nextElementSibling.children[0].classList.add('green')
+          id.nextElementSibling.children[0].classList.remove('grey')
+        } else {
+          id.nextElementSibling.children[0].classList.remove('green')
+          id.nextElementSibling.children[0].classList.add('grey')
+        }
+      })
+    }
     //
 
     var list = document.getElementById('progress'),
@@ -110,7 +110,12 @@ function Learning() {
           <div className='row'>
             <div className='col-md-6'>
               {learning.map((item, index) => (
-                <div className='mb-5' ref={myRef} id={item.id} key={index}>
+                <div
+                  className='mb-5 learningDivs'
+                  ref={myRef}
+                  id={item.id}
+                  key={index}
+                >
                   <h4 className='ulineRed'>{item.title}</h4>
                   <p className='pt-4'>{item.desc}</p>
                 </div>
@@ -209,7 +214,10 @@ function Learning() {
 
               <div className={'sticky-sidebar' + ' ' + 'pt60'}>
                 <ul id='progress'>
-                  <li className={'node' + ' ' + 'green'}>
+                  <li
+                    id='holistic-approach-li'
+                    className={'node' + ' ' + 'green'}
+                  >
                     <Link href='' legacyBehavior onClick={executeScroll}>
                       <a className='aTag'>
                         <p> Holistic Approach</p>
@@ -220,26 +228,24 @@ function Learning() {
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
-
-                  <Link legacyBehavior href='#local-app'>
-                    <a className='aTag' onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li id='local-app-li' className={'node' + ' ' + 'grey'}>
+                    <Link legacyBehavior href='#local-app'>
+                      <a className='aTag' onClick={(e) => progressClick(e)}>
                         <p>Global Outlook, Local Application</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
 
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
-
-                  <Link legacyBehavior href='#recognizing'>
-                    <a className='aTag' onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li className={'node' + ' ' + 'grey'} id='recognizing-li'>
+                    <Link legacyBehavior href='#recognizing'>
+                      <a className='aTag' onClick={(e) => progressClick(e)}>
                         <p>Recognizing That Every Child is Unique</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
 
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
