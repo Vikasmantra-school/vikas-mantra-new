@@ -109,65 +109,13 @@
 
     .ChairmanImg {
         position: unset;
-        height: 480px;
+        height: auto;
     }
 
-    .vectorImg1 {
-        width: auto;
-        height: 125px;
-        position: absolute;
-        right: -30px;
-        top: 161px;
-        z-index: 1;
-        padding: 0;
-    }
 
-    .vectorImg2 {
-        width: auto;
-        position: absolute;
-        left: -5px;
-        top: 300px;
-        height: 95px;
-    }
-
-    .vectorImg7 {
-        right: 0;
-        position: absolute;
-        bottom: -50px;
-        height: 100px;
-    }
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 990px) {
-    .vectorImg1 {
-        width: auto;
-        height: 125px;
-        position: absolute;
-        right: -23px;
-        top: 195px;
-        z-index: 1;
-        padding: 0;
-    }
-
-    .vectorImg2 {
-        width: auto;
-        position: absolute;
-        left: -5px;
-        top: 300px;
-        height: 95px;
-    }
-
-    .vectorImg7 {
-        right: 0;
-        position: absolute;
-        bottom: -50px;
-        height: 100px;
-    }
-
-    .ChairmanImg {
-        position: unset;
-        height: 480px;
-    }
-
+    
 }

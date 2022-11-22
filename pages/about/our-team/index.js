@@ -1,11 +1,7 @@
 import styles from './style.module.css'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
-import React, { useEffect } from 'react'
 
 const OurTeam = () => {
-
 
     const staffTeam = [
         { staffImage: '/assets/staffs/staff1.png', heading: 'Kirthika Manimaran', para: 'VP & HOD - English', ImgContainer: 'ImgContainer1' },
@@ -20,54 +16,6 @@ const OurTeam = () => {
         { staffImage: '/assets/staffs/staff10.png', heading: 'Kavitha Yadav', para: 'HOD - Hindi', ImgContainer: 'ImgContainer10' },
         { staffImage: '/assets/staffs/staff11.png', heading: 'Soundarrajan Venkatesan', para: 'HOD - Art & Craft', ImgContainer: 'ImgContainer11' },
     ];
-
-    //lazy-load
-    useEffect(() => {
-        gsap.utils.toArray(".lazy").forEach(image => {
-
-            let a = image.src.split("/"),
-                newImage = document.createElement("img"),
-                newSRC, loaded,
-                loadImage = () => {
-                    if (!loaded) {
-                        a.length -= 2; // chop off the last two numbers
-                        newSRC = a.join("/") + "/" + fullRes;
-                        newImage.onload = () => {
-                            newImage.onload = null; // avoid recursion
-                            newImage.src = image.src; // swap the src
-                            image.src = newSRC;
-                            // place the low-res version on TOP and then fade it out.
-                            gsap.set(newImage, {
-                                position: "absolute",
-                                top: image.offsetTop,
-                                left: image.offsetLeft,
-                                width: image.offsetWidth,
-                                height: image.offsetHeight
-                            });
-                            image.parentNode.appendChild(newImage);
-                            gsap.to(newImage, {
-                                opacity: 0,
-                                onComplete: () => newImage.parentNode.removeChild(newImage)
-                            });
-                            st && st.kill();
-                        }
-                        newImage.src = newSRC;
-                        loaded = true;
-                    }
-                },
-                st = ScrollTrigger.create({
-                    trigger: image,
-                    start: "-50% bottom",
-                    onEnter: loadImage,
-                    onEnterBack: loadImage // make sure it works in either direction
-                });
-        });
-
-    },[])
-
-    let fullRes = "1200/600"; // replace the final two values in the low-res URLs with these
-
-    ScrollTrigger.config({ limitCallbacks: true });
 
 
     const pageTitle = 'About'
@@ -98,7 +46,7 @@ const OurTeam = () => {
 
                                     <div className={item.ImgContainer + ' ImgContainer'}>
 
-                                        <img src={item.staffImage} alt='image' className={styles.staffImg + ' img-fluid lazy '} />
+                                        <img src={item.staffImage} alt='image' className={styles.staffImg + ' img-fluid  '} />
 
                                         <h6 className='pt-4 text-center fw-bold '>{item.heading}</h6>
 

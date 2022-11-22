@@ -213,6 +213,7 @@
     .schoolBuildingImg {
         width: 100%;
         position: unset;
+        height: auto;
         padding-bottom: 60px;
     }
 
@@ -221,10 +222,7 @@
     }
 
     .vectorImg5 {
-        position: absolute;
-        height: 90px;
-        bottom: -45px;
-        left: -55px;
+        position: unset;
     }
 
     .vectorImg3 {

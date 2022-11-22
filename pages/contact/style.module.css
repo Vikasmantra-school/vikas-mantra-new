@@ -13,7 +13,7 @@
     z-index: 1;
 }
 
-.schlBusImg{
+.schlBusImg {
 
     position: absolute;
     bottom: 0;
@@ -23,12 +23,12 @@
 }
 
 .schlBusImg img {
-   
+
     z-index: 1;
     position: relative;
 }
 
-.schlBusImg::after{
+.schlBusImg::after {
 
     content: '';
     position: absolute;
@@ -148,4 +148,13 @@
         bottom: 14px;
         right: 0;
     }
+}
+
+@media screen and (min-width: 661px) and (max-width: 767px) {
+
+    .schlBusImg {
+        width: 100%;
+        position: unset;
+    }
+
 }

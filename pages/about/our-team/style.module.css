@@ -57,6 +57,7 @@
 
 .staffImg{
     border-radius: 8px;
+    margin-top: 10px;
 }
 
 
@@ -111,8 +112,19 @@
 
 @media only screen and (min-width: 661px) and (max-width: 767px) {
 
+
     .staffImg {
         width: 100%;
+    }
+
+    .vmpsImg{
+        display: none;
+    }
+    .ImgContainer {
+        border-radius: 10px;
+        height: auto;
+        width: auto;
+        padding: 2px;
     }
 }
 
