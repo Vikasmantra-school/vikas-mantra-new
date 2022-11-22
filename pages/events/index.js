@@ -38,11 +38,11 @@ const Events = () => {
             end: 'bottom right',
             ease: Power3.easeOut,
             toggleActions: 'play',
-          }
+          },
         }
       )
     }
-    ScrollTrigger.refresh();
+    ScrollTrigger.refresh()
   }, [])
 
   //animation-for-gallery
@@ -70,12 +70,9 @@ const Events = () => {
             ease: Power2.easeOut,
             toggleActions: 'restart restart pause none',
           },
-          
-          
         }
       )
     }
-    
   }, [])
 
   return (
@@ -88,11 +85,9 @@ const Events = () => {
             <div className='row pt-5'>
               <div className={'col-md-5' + ' ' + styles.eventText}>
                 <h2 className='bottomToTop'>Events</h2>
-                <EventsNav events={events}/>
+                <EventsNav events={events} />
               </div>
             </div>
-
-
 
             {events.map((data, index) => {
               return (
@@ -123,7 +118,13 @@ const Events = () => {
                     </section>
 
                     <section
-                      className={'greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts2 ' + styles.eventGallery + ' ' + styles.eventSectionPdng}>
+                      className={
+                        'greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts2 ' +
+                        styles.eventGallery +
+                        ' ' +
+                        styles.eventSectionPdng
+                      }
+                    >
                       <div className='container'>
                         <div className='row vmpsslide'>
                           <div className='col-md-12'>
@@ -165,8 +166,6 @@ const Events = () => {
                 </Tab.Content>
               )
             })}
-
-
           </Tab.Container>
         </div>
       </section>
