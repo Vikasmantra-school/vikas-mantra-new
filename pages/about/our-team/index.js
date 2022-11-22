@@ -63,7 +63,7 @@ const OurTeam = () => {
                 });
         });
 
-    }, [])
+    },[])
 
     let fullRes = "1200/600"; // replace the final two values in the low-res URLs with these
 
