@@ -1,13 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect , useState } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Dropdown from 'react-bootstrap/Dropdown'
 import styles from './style.module.css'
-import { useState } from 'react'
 
 function EventsNav({ events }) {
   const [active, setActive] = useState('Beach Day for Kg')
 
-  function tabs(elem, index) {}
+  function tabs(elem, index) { }
 
   function navLinkClick(e) {
     console.error(e.target.innerText)
@@ -18,6 +17,8 @@ function EventsNav({ events }) {
     let link = document.querySelectorAll('.tab-pane.active .ulineRed')
     link.forEach(tabs)
   }, [])
+
+
   return (
     <>
       <Nav className='flex-column eventsMenu'>
@@ -35,7 +36,7 @@ function EventsNav({ events }) {
               return (
                 <Dropdown.Item className={styles.dropDownItemNav} key={index} onClick={(e) => navLinkClick(e)}>
                   <Nav.Item>
-                    <Nav.Link className={styles.tabNavLink} eventKey={data.id}>
+                    <Nav.Link className={styles.tabNavLink} eventKey={data.id} onClick={drpDwnClick}>
                       {data.dropdown}
                     </Nav.Link>
                   </Nav.Item>

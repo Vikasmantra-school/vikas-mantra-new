@@ -24,18 +24,18 @@ const Events = () => {
         text,
         {
           opacity: 0,
-          y: 100,
+          x: -100,
         },
         {
-          y: 0,
+          x: 0,
           duration: 0.6,
-          delay: 0.5,
+          delay: 0.6,
           opacity: 1,
           stagger: 0.2,
           scrollTrigger: {
             trigger: elem,
-            start: 'top center',
-            end: 'bottom bottom',
+            start: 'top left',
+            end: 'bottom right',
             ease: Power3.easeOut,
             toggleActions: 'play',
           }
@@ -88,7 +88,7 @@ const Events = () => {
             <div className='row pt-5'>
               <div className={'col-md-5' + ' ' + styles.eventText}>
                 <h2 className='bottomToTop'>Events</h2>
-                <EventsNav events={events} />
+                <EventsNav events={events}/>
               </div>
             </div>
 
@@ -114,7 +114,7 @@ const Events = () => {
                               <img
                                 src={data.mainImage}
                                 alt='image'
-                                className='img-fluid'
+                                className='img-fluid bottomToTop'
                               />
                             </div>
                           </div>

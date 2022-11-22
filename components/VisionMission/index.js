@@ -42,13 +42,13 @@ const Index = () => {
     return (
         <>
 
-            <section className={styles.sectionPdng + ' whitebg position-relative pt80 pb60 VectorDot parentAnimeStarts'}>
+            <section className={styles.sectionPdng + ' whitebg position-relative pt80 pb60 VectorDot '}>
 
                 <div className='container'>
 
                     <div className='row'>
 
-                        <div className='col-md-8'>
+                        <div className='col-md-8 parentAnimeStarts'>
                             <h2 className='ulineRed fading'>As learners we all strive to be:</h2>
                         </div>
 
@@ -56,7 +56,7 @@ const Index = () => {
 
                     <div className='row pt60'>
 
-                        <div className='col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 parentAnimeStarts'>
 
                             <div className='card-wrapper one'>
                                 <div className="card-header">
@@ -78,7 +78,7 @@ const Index = () => {
 
                         </div>
 
-                        <div className='col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 parentAnimeStarts'>
 
                             <div className="card-wrapper two">
                                 <div className="card-header">
@@ -98,7 +98,7 @@ const Index = () => {
 
                         </div>
 
-                        <div className='col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 parentAnimeStarts'>
 
                             <div className="card-wrapper one">
                                 <div className="card-header">
@@ -119,7 +119,7 @@ const Index = () => {
                         </div>
 
 
-                        <div className='col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 parentAnimeStarts'>
 
                             <div className="card-wrapper two">
                                 <div className="card-header">
@@ -139,7 +139,7 @@ const Index = () => {
 
                         </div>
 
-                        <div className='col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 parentAnimeStarts'>
 
                             <div className="card-wrapper one">
                                 <div className="card-header">
@@ -159,7 +159,7 @@ const Index = () => {
 
                         </div>
 
-                        <div className='col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 parentAnimeStarts'>
 
                             <div className="card-wrapper two">
                                 <div className="card-header">
@@ -179,7 +179,7 @@ const Index = () => {
 
                         </div>
 
-                        <div className='col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 parentAnimeStarts'>
 
                             <div className="card-wrapper one">
                                 <div className="card-header">
@@ -199,7 +199,7 @@ const Index = () => {
 
                         </div>
 
-                        <div className='col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 parentAnimeStarts'>
 
                             <div className="card-wrapper two">
                                 <div className="card-header">
@@ -220,7 +220,7 @@ const Index = () => {
                         </div>
 
 
-                        <div className='col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 parentAnimeStarts'>
 
                             <div className="card-wrapper one">
                                 <div className="card-header">
