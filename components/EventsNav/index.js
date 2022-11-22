@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Dropdown from 'react-bootstrap/Dropdown'
 import styles from './style.module.css'
-import { gsap, Power3, Power2 } from 'gsap'
+import { gsap } from 'gsap'
 
 function EventsNav({ events }) {
   const [active, setActive] = useState('Beach Day for Kg')
-
-  function tabs(elem, index) {}
 
   function navLinkClick(e) {
     setActive(e.target.innerText)
   }
 
-  function drpDwnClick() {
-    let text = document.querySelectorAll('.bottomToTop')
+  function drpDwnClick(e, dataId) {
+    const sec = document.getElementById(dataId)
+
+    let text = sec.querySelectorAll('.bottomToTop')
 
     gsap.fromTo(
       text,
@@ -30,11 +30,6 @@ function EventsNav({ events }) {
       }
     )
   }
-
-  useEffect(() => {
-    let link = document.querySelectorAll('.tab-pane.active .ulineRed')
-    link.forEach(tabs)
-  }, [])
 
   return (
     <>
@@ -62,7 +57,7 @@ function EventsNav({ events }) {
                     <Nav.Link
                       className={styles.tabNavLink}
                       eventKey={data.id}
-                      onClick={drpDwnClick}
+                      onClick={(e) => drpDwnClick(e, data.id)}
                     >
                       {data.dropdown}
                     </Nav.Link>
