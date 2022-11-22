@@ -15,7 +15,6 @@ function EventsNav({ events }) {
 
   function drpDwnClick() {
     let text = document.querySelectorAll('.bottomToTop')
-
     gsap.fromTo(
       text,
       {
@@ -24,7 +23,7 @@ function EventsNav({ events }) {
       },
       {
         x: 0,
-        duration: 0.6,
+        duration: 0.5,
         opacity: 1,
         stagger: 0.2,
       }
