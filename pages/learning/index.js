@@ -34,62 +34,22 @@ function Learning() {
         let sectionTop = lds.getBoundingClientRect().top
         var ids = lds.getAttribute('id')
         var id = document.getElementById(ids + '-li')
-        if (sectionTop < 0) {
+
+        if (id.nextElementSibling !== null && sectionTop < 0) {
           id.nextElementSibling.children[0].classList.add('green')
           id.nextElementSibling.children[0].classList.remove('grey')
           id.classList.add('green')
           id.classList.remove('grey')
-          console.log(id)
-        } else {
+        } else if (id.nextElementSibling !== null && sectionTop > 0) {
           id.nextElementSibling.children[0].classList.remove('green')
           id.nextElementSibling.children[0].classList.add('grey')
           id.classList.remove('green')
           id.classList.add('grey')
+        } else {
         }
       })
     }
     //
-
-    var list = document.getElementById('progress'),
-      next = document.getElementById('next'),
-      clear = document.getElementById('clear'),
-      children = list.children,
-      completed = 0
-    // simulate activating a node
-    next.addEventListener(
-      'click',
-      function () {
-        // count the number of completed nodes.
-        completed = completed === 0 ? 1 : completed + 2
-        if (completed > children.length) return
-        // for each node that is completed, reflect the status
-        // and show a green color!
-        for (var i = 0; i < completed; i++) {
-          console.log(children[i].children[0])
-          children[i].children[0].classList.remove('grey')
-          children[i].children[0].classList.add('green')
-          // if this child is a node and not divider,
-          // make it shine a little more
-          if (i % 2 === 0) {
-            children[i].children[0].classList.add('activated')
-          }
-        }
-      },
-      false
-    )
-    // clear the activated state of the markers
-    clear.addEventListener(
-      'click',
-      function () {
-        for (var i = 0; i < children.length; i++) {
-          children[i].children[0].classList.remove('green')
-          children[i].children[0].classList.remove('activated')
-          children[i].children[0].classList.add('grey')
-        }
-        completed = 0
-      },
-      false
-    )
   }, [])
 
   return (
@@ -130,85 +90,6 @@ function Learning() {
                   <p className='pt-4'>{item.desc}</p>
                 </div>
               ))}
-
-              <div className='mb-5 pt-4' id='century'>
-                <h4 className='ulineRed'>21st Century Ready Infrastructure</h4>
-                <p className='pt-4'>
-                  The campus at VIKAS MANTRA PUBLIC SCHOOL is spread over 2
-                  acres of open space in Anjur Village. The infrastructure is
-                  designed on the principles of free movement within campus to
-                  encourage collaboration and group learning. The labs are
-                  equipped with the latest equipment; classrooms are large and
-                  designed to foster an engaging and fun learning environment.
-                </p>
-              </div>
-              <div className='mb-5 pt-4' id='talentedFaculty'>
-                <h4 className='ulineRed'>Talented Faculty</h4>
-                <p className='pt-4'>
-                  The VIKAS MANTRA PUBLIC SCHOOL faculty have been handpicked to
-                  ensure that they bring the right attitude and approach in
-                  engaging with students, are successful in implementing the
-                  school’s vision and come with the right qualifications. In
-                  fact we aim for at least 10% of our teachers to have advanced
-                  educational degrees and at least 20% of our teachers to have
-                  themselves received some form of international education,
-                  either within or outside India.
-                </p>
-              </div>
-
-              <div className='mb-5 pt-4' id='richCurriculum'>
-                <h4 className='ulineRed'>Rich Curriculum</h4>
-                <p className='pt-4'>
-                  Based on the International education philosophy, Learning at
-                  Vikas Mantra offers a unique curriculum which comprises of a
-                  rigorous academic programme that deepens and broadens
-                  knowledge of our students. The curriculum is appropriate, yet
-                  challenging to ensure that each student’s potential is
-                  maximised.
-                </p>
-              </div>
-
-              <div className='mb-5 pt-4' id='windowWorld'>
-                <h4 className='ulineRed'>Window to the World</h4>
-                <p className='pt-4'>
-                  By learning at Vikas Mantra, students get an opportunity to
-                  collaborate online and exchange ideas with their peers from
-                  other cities and countries. They hence learn to develop an
-                  attitude that is open to social and cultural differences which
-                  exist in our society.
-                </p>
-              </div>
-
-              <div className='mb-5 pt-4' id='wirelessWorld'>
-                <h4 className='ulineRed'>
-                  Technologically Wired for a Wireless World
-                </h4>
-                <p className='pt-4'>
-                  Technology is used to support core learning and to enhance the
-                  student experience. VIKAS MANTRA PUBLIC SCHOOL strives to stay
-                  on the cutting-edge of best practices in technology to ensure
-                  that new tools and techniques are integrated into the
-                  pedagogy. Our classrooms are equipped with smart boards and
-                  projectors and our entire building is Wi-Fi enabled.
-                </p>
-              </div>
-
-              <div className='mb-5 pt-4' id='smorgasbord'>
-                <h4 className='ulineRed'>
-                  A Smorgasbord of Co-Curricular Choices
-                </h4>
-                <p className='pt-4'>
-                  Co-curricular exposure for students is vital to all-round
-                  growth and development. Learning at Vikas Mantra offers a
-                  variety of options to students to choose from based on
-                  personal interest and aptitude. The various Sports activities
-                  give a new dimension to learning and help students understand
-                  the meaning of teamwork, excellence and competition. The Arts
-                  allow students to find creative expression through various
-                  media. Theatre, Music and Dance classes are various other
-                  options that students can also explore here.
-                </p>
-              </div>
             </div>
 
             <div
@@ -267,7 +148,7 @@ function Learning() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <li className={'node' + ' ' + 'grey'}>
+                  <li className={'node' + ' ' + 'grey'} id='century-li'>
                     <Link legacyBehavior href='#century'>
                       <a className='aTag' onClick={(e) => progressClick(e)}>
                         <p>21st Century Ready Infrastructure</p>
@@ -279,68 +160,68 @@ function Learning() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#talentedFaculty'>
-                    <a
-                      className='aTag activatedATag'
-                      onClick={(e) => progressClick(e)}
-                    >
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li className={'node' + ' ' + 'grey'} id='talentedFaculty-li'>
+                    <Link legacyBehavior href='#talentedFaculty'>
+                      <a
+                        className='aTag activatedATag'
+                        onClick={(e) => progressClick(e)}
+                      >
                         <p>Talented Faculty</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
 
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#richCurriculum'>
-                    <a className='aTag' onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li className={'node' + ' ' + 'grey'} id='richCurriculum-li'>
+                    <Link legacyBehavior href='#richCurriculum'>
+                      <a className='aTag' onClick={(e) => progressClick(e)}>
                         <p>Rich Curriculum</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
 
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#windowWorld'>
-                    <a
-                      className='aTag'
-                      href='#'
-                      onClick={(e) => progressClick(e)}
-                    >
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li className={'node' + ' ' + 'grey'} id='windowWorld-li'>
+                    <Link legacyBehavior href='#windowWorld'>
+                      <a
+                        className='aTag'
+                        href='#'
+                        onClick={(e) => progressClick(e)}
+                      >
                         <p>Window to the World</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
 
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#wirelessWorld'>
-                    <a className='aTag' onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li className={'node' + ' ' + 'grey'} id='wirelessWorld-li'>
+                    <Link legacyBehavior href='#wirelessWorld'>
+                      <a className='aTag' onClick={(e) => progressClick(e)}>
                         <p>Technologically Wired for a Wireless World</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
 
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#smorgasbord'>
-                    <a className='aTag' onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li className={'node' + ' ' + 'grey'} id='smorgasbord-li'>
+                    <Link legacyBehavior href='#smorgasbord'>
+                      <a className='aTag' onClick={(e) => progressClick(e)}>
                         <p>A Smorgasbord of Co-Curricular Choices</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
                 </ul>
                 <input
                   type='button'
