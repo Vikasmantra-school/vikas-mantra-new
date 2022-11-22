@@ -18,6 +18,7 @@ const Events = () => {
   useEffect(() => {
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
+    console.log(parentTrigger)
     function staggerAnimeFunc(elem) {
       let text = elem.querySelectorAll('.bottomToTop')
       gsap.fromTo(
@@ -86,7 +87,10 @@ const Events = () => {
               return (
                 <Tab.Content key={index}>
                   <Tab.Pane eventKey={data.id}>
-                    <section className='whitebg pt60 pb60 parentAnimeStarts '>
+                    <section
+                      id={data.id}
+                      className='whitebg pt60 pb60 parentAnimeStarts '
+                    >
                       <div className='container'>
                         <div className='row'>
                           <div className='col-md-6'>
