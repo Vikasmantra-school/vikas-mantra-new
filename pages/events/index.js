@@ -30,7 +30,7 @@ const Events = () => {
         {
           x: 0,
           duration: 0.6,
-          delay:0.5,
+          delay: 0.5,
           opacity: 1,
           stagger: 0.2,
         }
@@ -38,6 +38,8 @@ const Events = () => {
     }
     ScrollTrigger.refresh()
   }, [])
+
+
 
   //animation-for-gallery
   useEffect(() => {
@@ -62,11 +64,12 @@ const Events = () => {
             start: 'left center',
             end: 'right center',
             ease: Power2.easeOut,
-            toggleActions: 'restart restart pause none',
+            toggleActions: 'play restart play none',
           },
         }
       )
     }
+    ScrollTrigger.refresh()
   }, [])
 
   return (
@@ -87,18 +90,19 @@ const Events = () => {
               return (
                 <Tab.Content key={index}>
                   <Tab.Pane eventKey={data.id}>
-                    <section
-                      id={data.id}
-                      className='whitebg pt60 pb60 parentAnimeStarts '
-                    >
+                    <section id={data.id} className='whitebg pt60 pb60 parentAnimeStarts '>
                       <div className='container'>
                         <div className='row'>
                           <div className='col-md-6'>
+
                             <h2 className='ulineRed bottomToTop '>
                               {data.title}
                             </h2>
 
-                            <p className='pt-4 bottomToTop '>{data.desc}</p>
+                            <p className='pt-4 bottomToTop '>
+                              {data.desc}
+                            </p>
+
                           </div>
 
                           <div className='col-md-6'>
@@ -143,13 +147,13 @@ const Events = () => {
                               {data.gallery?.map((data, index) => {
                                 return (
                                   <SplideSlide
-                                    className='eventGallery leftToRight'
+                                    className='eventGallery '
                                     key={index}
                                   >
                                     <img
                                       src={data}
                                       alt='image'
-                                      className='img-fluid eventsGallery '
+                                      className='img-fluid eventsGallery leftToRight '
                                     />
                                   </SplideSlide>
                                 )
