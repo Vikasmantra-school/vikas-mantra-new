@@ -40,7 +40,6 @@ const Events = () => {
   }, [])
 
 
-
   //animation-for-gallery
   useEffect(() => {
     const parentTrigger2 = document.querySelectorAll('.parentAnimeStarts2')
