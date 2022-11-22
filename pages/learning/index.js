@@ -14,6 +14,11 @@ function Learning() {
 
   function progressClick(e) {
     const progress = document.getElementById('progress')
+    progress.scrollIntoView({
+      behavior: 'smooth',
+      block: 'end',
+      inline: 'nearest',
+    })
   }
 
   useEffect(() => {
@@ -32,9 +37,14 @@ function Learning() {
         if (sectionTop < 0) {
           id.nextElementSibling.children[0].classList.add('green')
           id.nextElementSibling.children[0].classList.remove('grey')
+          id.classList.add('green')
+          id.classList.remove('grey')
+          console.log(id)
         } else {
           id.nextElementSibling.children[0].classList.remove('green')
           id.nextElementSibling.children[0].classList.add('grey')
+          id.classList.remove('green')
+          id.classList.add('grey')
         }
       })
     }
@@ -218,7 +228,11 @@ function Learning() {
                     id='holistic-approach-li'
                     className={'node' + ' ' + 'green'}
                   >
-                    <Link href='' legacyBehavior onClick={executeScroll}>
+                    <Link
+                      href='#holistic-approach'
+                      legacyBehavior
+                      onClick={executeScroll}
+                    >
                       <a className='aTag'>
                         <p> Holistic Approach</p>
                       </a>
@@ -228,6 +242,7 @@ function Learning() {
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
+
                   <li id='local-app-li' className={'node' + ' ' + 'grey'}>
                     <Link legacyBehavior href='#local-app'>
                       <a className='aTag' onClick={(e) => progressClick(e)}>
@@ -239,6 +254,7 @@ function Learning() {
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
+
                   <li className={'node' + ' ' + 'grey'} id='recognizing-li'>
                     <Link legacyBehavior href='#recognizing'>
                       <a className='aTag' onClick={(e) => progressClick(e)}>
@@ -251,13 +267,13 @@ function Learning() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#century'>
-                    <a className='aTag' onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li className={'node' + ' ' + 'grey'}>
+                    <Link legacyBehavior href='#century'>
+                      <a className='aTag' onClick={(e) => progressClick(e)}>
                         <p>21st Century Ready Infrastructure</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
 
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
