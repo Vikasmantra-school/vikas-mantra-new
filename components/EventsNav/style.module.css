@@ -28,7 +28,14 @@
 
 .tabNavLink{color: rgba(29, 29, 29, 1);text-align: left;}
 
-.dropMenu .tabNavLink{padding: 0;}
+.dropMenu .tabNavLink{
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropDownItemNav{
+    padding: 0 !important;
+}
 
 .dropdowns .dropMenu{overflow-y: scroll;
     height: 420px;}

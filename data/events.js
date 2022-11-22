@@ -68,7 +68,7 @@ export const events = [
     id: 'six',
     dropdown: 'Girl Child Protection Day',
     title: 'Girl Child Protection Day',
-    desc: '',
+    desc: 'yet to come',
     mainImage: '/assets/events/girl-child-protection/1.jpeg',
     gallery: [
       '/assets/events/girl-child-protection/1.jpeg','/assets/events/girl-child-protection/2.jpeg','/assets/events/girl-child-protection/3.jpeg','/assets/events/girl-child-protection/4.jpeg','/assets/events/girl-child-protection/5.jpeg',
@@ -80,7 +80,7 @@ export const events = [
     id: 'seven',
     dropdown: 'Independence Day Celebrations',
     title: 'Independence Day Celebrations',
-    desc: '',
+    desc: 'yet to come',
     mainImage: '/assets/events/independence-day/4.jpg',
     gallery: [
       '/assets/events/independence-day/1.jpg','/assets/events/independence-day/2.jpg','/assets/events/independence-day/3.jpg','/assets/events/independence-day/4.jpg','/assets/events/independence-day/5.jpg',
@@ -104,7 +104,7 @@ export const events = [
     id: 'nine',
     dropdown: 'Investiture Ceremony',
     title: 'Investiture Ceremony',
-    desc: '',
+    desc: 'yet to come',
     mainImage: '/assets/events/investiture-ceremony/5.jpg',
     gallery: [
       '/assets/events/investiture-ceremony/1.jpg','/assets/events/investiture-ceremony/2.jpg','/assets/events/investiture-ceremony/3.jpg','/assets/events/investiture-ceremony/4.jpg','/assets/events/investiture-ceremony/5.jpg',
@@ -135,7 +135,7 @@ export const events = [
     id: 'ten',
     dropdown: 'Janmashtami celebrations',
     title: 'Janmashtami celebrations',
-    desc: '',
+    desc: 'yet to come',
     mainImage: '/assets/events/janmashtami/2.jpg',
     gallery: [
       '/assets/events/janmashtami/1.jpg','/assets/events/janmashtami/2.jpg','/assets/events/janmashtami/3.jpg','/assets/events/janmashtami/4.jpg','/assets/events/janmashtami/5.jpg',
@@ -147,7 +147,7 @@ export const events = [
     id: 'eleven',
     dropdown: 'KG Graduation',
     title: 'KG Graduation',
-    desc: '',
+    desc: 'yet to come',
     mainImage: '/assets/events/kg-graduation/1.jpg',
     gallery: [
       '/assets/events/kg-graduation/1.jpg','/assets/events/kg-graduation/2.jpg','/assets/events/kg-graduation/3.jpg','/assets/events/kg-graduation/4.jpg','/assets/events/kg-graduation/5.jpg',
@@ -173,7 +173,7 @@ export const events = [
     id: 'thirteen',
     dropdown: 'Newspaper feature article',
     title: 'Newspaper feature article',
-    desc: '',
+    desc: 'yet to come',
     mainImage: '/assets/events/newspaper-article/1.jpg',
     gallery: [
       '/assets/events/newspaper-article/1.jpg','/assets/events/newspaper-article/2.jpg','/assets/events/newspaper-article/3.jpg',
@@ -185,7 +185,7 @@ export const events = [
     id: 'forteen',
     dropdown: 'Science Expo',
     title: 'Science Expo',
-    desc: '',
+    desc: 'yet to come',
     mainImage: '/assets/events/science-expo/1.jpg',
     gallery: [
       '/assets/events/science-expo/1.jpg','/assets/events/science-expo/2.jpg','/assets/events/science-expo/3.jpg','/assets/events/science-expo/4.jpg','/assets/events/science-expo/5.jpg',
@@ -257,7 +257,7 @@ export const events = [
     id: 'twenty',
     dropdown: 'KG - Yellow Day',
     title: 'KG - Yellow Day',
-    desc: '',
+    desc: 'yet to come',
     mainImage: '/assets/events/yellow-day/2.jpg',
     gallery: [
       '/assets/events/yellow-day/1.jpg','/assets/events/yellow-day/2.jpg','/assets/events/yellow-day/3.jpg','/assets/events/yellow-day/4.jpg','/assets/events/yellow-day/5.jpg',
@@ -281,7 +281,7 @@ export const events = [
     id: 'twenty-two',
     dropdown: 'Investiture Ceremony 2021 - 22',
     title: 'Investiture Ceremony 2021 - 22',
-    desc: '',
+    desc: 'yet to come',
     mainImage: '/assets/events/investiture-ceremony-22/1.jpg',
     gallery: [
       '/assets/events/investiture-ceremony-22/1.jpg','/assets/events/investiture-ceremony-22/2.jpg','/assets/events/investiture-ceremony-22/3.jpg','/assets/events/investiture-ceremony-22/4.jpg','/assets/events/investiture-ceremony-22/5.jpg',

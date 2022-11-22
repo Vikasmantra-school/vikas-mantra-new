@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Dropdown from 'react-bootstrap/Dropdown'
 import styles from './style.module.css'
-import { useState } from 'react'
+import { gsap, Power3, Power2 } from 'gsap'
 
 function EventsNav({ events }) {
   const [active, setActive] = useState('Beach Day for Kg')
@@ -10,14 +10,31 @@ function EventsNav({ events }) {
   function tabs(elem, index) {}
 
   function navLinkClick(e) {
-    console.error(e.target.innerText)
     setActive(e.target.innerText)
+  }
+
+  function drpDwnClick() {
+    let text = document.querySelectorAll('.bottomToTop')
+    gsap.fromTo(
+      text,
+      {
+        opacity: 0,
+        x: -10,
+      },
+      {
+        x: 0,
+        duration: 0.5,
+        opacity: 1,
+        stagger: 0.2,
+      }
+    )
   }
 
   useEffect(() => {
     let link = document.querySelectorAll('.tab-pane.active .ulineRed')
     link.forEach(tabs)
   }, [])
+
   return (
     <>
       <Nav className='flex-column eventsMenu'>
@@ -26,7 +43,6 @@ function EventsNav({ events }) {
             <Nav.Item>
               <Nav.Link
                 className={styles.tabNavLink + ' tabNavlinkColor first'}
-                eventKey='first'
               >
                 {active}
               </Nav.Link>
@@ -36,9 +52,17 @@ function EventsNav({ events }) {
           <Dropdown.Menu className={styles.dropMenu}>
             {events.map((data, index) => {
               return (
-                <Dropdown.Item key={index} onClick={(e) => navLinkClick(e)}>
+                <Dropdown.Item
+                  className={styles.dropDownItemNav}
+                  key={index}
+                  onClick={(e) => navLinkClick(e)}
+                >
                   <Nav.Item>
-                    <Nav.Link className={styles.tabNavLink} eventKey={data.id}>
+                    <Nav.Link
+                      className={styles.tabNavLink}
+                      eventKey={data.id}
+                      onClick={drpDwnClick}
+                    >
                       {data.dropdown}
                     </Nav.Link>
                   </Nav.Item>

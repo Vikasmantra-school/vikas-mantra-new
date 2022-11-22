@@ -6,7 +6,7 @@ import Tab from 'react-bootstrap/Tab'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import EventsNav from '../../components/EventsNav'
 import { events } from '../../data/events'
-import { gsap, Power3, Power2 } from 'gsap'
+import { gsap, Power2 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 const Events = () => {
@@ -24,25 +24,18 @@ const Events = () => {
         text,
         {
           opacity: 0,
-          y: 200,
+          x: -10,
         },
         {
-          y: 0,
-          duration: 0.9,
-          delay: 0.3,
+          x: 0,
+          duration: 0.6,
+          delay:0.5,
           opacity: 1,
           stagger: 0.2,
-          scrollTrigger: {
-            trigger: elem,
-            start: 'top center',
-            end: 'bottom bottom',
-            ease: Power3.easeOut,
-            toggleActions: 'play',
-          }
         }
       )
     }
-    ScrollTrigger.refresh();
+    ScrollTrigger.refresh()
   }, [])
 
   //animation-for-gallery
@@ -60,20 +53,19 @@ const Events = () => {
         {
           x: 0,
           duration: 0.5,
-          delay: 0.9,
+          delay: 0.5,
           opacity: 1,
           stagger: 0.2,
           scrollTrigger: {
             trigger: elem,
             start: 'left center',
-            end: 'right right',
+            end: 'right center',
             ease: Power2.easeOut,
-            toggleActions: 'play none restart none',
+            toggleActions: 'restart restart pause none',
           },
         }
       )
     }
-    ScrollTrigger.refresh();
   }, [])
 
   return (
@@ -99,7 +91,7 @@ const Events = () => {
                         <div className='row'>
                           <div className='col-md-6'>
                             <h2 className='ulineRed bottomToTop '>
-                              {data.title}{' '}
+                              {data.title}
                             </h2>
 
                             <p className='pt-4 bottomToTop '>{data.desc}</p>
@@ -110,7 +102,7 @@ const Events = () => {
                               <img
                                 src={data.mainImage}
                                 alt='image'
-                                className='img-fluid'
+                                className='img-fluid bottomToTop'
                               />
                             </div>
                           </div>
@@ -119,7 +111,13 @@ const Events = () => {
                     </section>
 
                     <section
-                      className={'greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts2 ' + styles.eventGallery + ' ' + styles.eventSectionPdng}>
+                      className={
+                        'greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts2 ' +
+                        styles.eventGallery +
+                        ' ' +
+                        styles.eventSectionPdng
+                      }
+                    >
                       <div className='container'>
                         <div className='row vmpsslide'>
                           <div className='col-md-12'>
@@ -128,7 +126,7 @@ const Events = () => {
                                 rewind: true,
                                 gap: '1rem',
                                 perPage: 4,
-                                autoplay: false,
+                                autoplay: true,
                                 pagination: false,
                                 arrows: true,
                                 breakpoints: {
