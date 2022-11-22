@@ -136,7 +136,7 @@ const Footer = () => {
                 <div className={styles.quickLinksCol}>
                   <h3>QUICK LINKS</h3>
                   <div className={styles.quickLink + ' row'}>
-                    <div className='col-md-4'>
+                    <div className='col-md-6 col-lg-4 col-sm-4'>
                       <Link href='/about' legacyBehavior>
                         <a className='nav-link'>About Us</a>
                       </Link>
@@ -150,7 +150,7 @@ const Footer = () => {
                       </Link>
                     </div>
 
-                    <div className='col-md-4'>
+                    <div className='col-md-6 col-lg-4 col-sm-4'>
 
                       <Link href='/enquiry-form' legacyBehavior>
                         <a className='nav-link'>EnquiryForm</a>
@@ -165,7 +165,7 @@ const Footer = () => {
                       </Link>
                     </div>
 
-                    <div className='col-md-4'>
+                    <div className='col-md-6 col-lg-4 col-sm-4'>
                       <Link href='/about/our-team' legacyBehavior>
                         <a className='nav-link'>Faculty</a>
                       </Link>

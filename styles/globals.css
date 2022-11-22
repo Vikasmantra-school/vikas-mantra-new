@@ -697,6 +697,8 @@ p {
   list-style-type: none;
 }
 
+.mob-menu{width: 100%;}
+
 .mob-menu .nav {
   position: relative;
   width: 100%;
@@ -1565,6 +1567,7 @@ tr {
 .learningLogo .imgUp::before {
   left: 73px;
 }
+
 
 
 @media only screen and (max-width: 660px) {
