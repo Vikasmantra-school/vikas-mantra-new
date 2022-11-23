@@ -6,11 +6,6 @@ import { learning } from '../../data/learning'
 
 function Learning() {
   const pageTitle = 'Learning'
-  const myRef = useRef(null)
-  const executeScroll = () =>
-    myRef.current.scrollIntoView({
-      behavior: 'smooth',
-    })
 
   function progressClick(e) {
     console.log('hi')
@@ -24,10 +19,8 @@ function Learning() {
 
   useEffect(() => {
     //
-    const progress = document.getElementById('progress')
+
     let learningDivs = document.querySelectorAll('.learningDivs')
-    let listOfLearningDivs = progress.querySelectorAll('.node')
-    console.log(listOfLearningDivs)
     window.addEventListener('scroll', Scroll, false)
 
     function Scroll() {
@@ -50,7 +43,6 @@ function Learning() {
         }
       })
     }
-    //
   }, [])
 
   return (
@@ -81,12 +73,7 @@ function Learning() {
           <div className='row'>
             <div className='col-md-6'>
               {learning.map((item, index) => (
-                <div
-                  className='mb-5 learningDivs'
-                  ref={myRef}
-                  id={item.id}
-                  key={index}
-                >
+                <div className='mb-5 learningDivs' id={item.id} key={index}>
                   <h4 className='ulineRed'>{item.title}</h4>
                   <p className='pt-4'>{item.desc}</p>
                 </div>
@@ -110,11 +97,7 @@ function Learning() {
                     id='holistic-approach-li'
                     className={'node' + ' ' + 'green'}
                   >
-                    <Link
-                      href='#holistic-approach'
-                      legacyBehavior
-                      onClick={executeScroll}
-                    >
+                    <Link href='#holistic-approach' legacyBehavior>
                       <a className='aTag'>
                         <p> Holistic Approach</p>
                       </a>

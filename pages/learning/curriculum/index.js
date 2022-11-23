@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import styles from './style.module.css'
 import Link from 'next/link'
 import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
@@ -6,11 +6,6 @@ import { curriculum } from '../../../data/curriculum'
 
 function Curriculum() {
   const pageTitle = 'Curriculum'
-  const myRef = useRef(null)
-  const executeScroll = () =>
-    myRef.current.scrollIntoView({
-      behavior: 'smooth',
-    })
 
   function progressClick(e) {
     const progress = document.getElementById('progress')
@@ -49,7 +44,6 @@ function Curriculum() {
         }
       })
     }
-    //
   }, [])
 
   return (
@@ -88,12 +82,7 @@ function Curriculum() {
               </div>
 
               {curriculum.map((item, index) => (
-                <div
-                  className='mb-5 learningDivs'
-                  ref={myRef}
-                  id={item.id}
-                  key={index}
-                >
+                <div className='mb-5 learningDivs' id={item.id} key={index}>
                   <h4 className='ulineRed'>{item.title}</h4>
                   {item.desc?.map((it, i) => (
                     <p key={i} className={i === 0 ? 'pt-4' : null}>
@@ -118,11 +107,7 @@ function Curriculum() {
               <div className={'sticky-sidebar' + ' ' + 'pt60'}>
                 <ul id='progress'>
                   <li id='vikas-mantra-li' className={'node' + ' ' + 'green'}>
-                    <Link
-                      href='#vikas-mantra'
-                      legacyBehavior
-                      onClick={executeScroll}
-                    >
+                    <Link href='#vikas-mantra' legacyBehavior>
                       <a className='aTag'>
                         <p> The VIKAS MANTRA PUBLIC SCHOOL</p>
                       </a>
@@ -220,18 +205,6 @@ function Curriculum() {
                     </Link>
                   </li>
                 </ul>
-                <input
-                  type='button'
-                  value='Next'
-                  id='next'
-                  className='d-none'
-                />
-                <input
-                  type='button'
-                  value='Clear'
-                  id='clear'
-                  className='d-none'
-                />
               </div>
             </div>
           </div>

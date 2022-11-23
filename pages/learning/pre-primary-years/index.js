@@ -1,18 +1,9 @@
-import React, { useEffect ,useRef } from 'react'
-// import styles from './style.module.css'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
 
 function PrePrimary() {
-
   const pageTitle = 'PrePrimary'
-  const myRef = useRef(null)
-  const executeScroll = () =>
-    myRef.current.scrollIntoView({
-      behavior: 'smooth',
-    })
 
   function progressClick(e) {
     const progress = document.getElementById('progress')
@@ -24,11 +15,8 @@ function PrePrimary() {
   }
 
   useEffect(() => {
-    //
-    const progress = document.getElementById('progress')
+    // progess timeline
     let learningDivs = document.querySelectorAll('.learningDivs')
-    let listOfLearningDivs = progress.querySelectorAll('.node')
-    console.log(listOfLearningDivs)
     window.addEventListener('scroll', Scroll, false)
 
     function Scroll() {
@@ -51,7 +39,6 @@ function PrePrimary() {
         }
       })
     }
-    //
   }, [])
 
   return (
@@ -68,13 +55,21 @@ function PrePrimary() {
         </div>
       </section>
       <section
-        className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo VectorDot VectorSpiralCenter'}
+        className={
+          'whitebg' +
+          ' ' +
+          'pt60' +
+          ' ' +
+          'pb60' +
+          ' ' +
+          'bglogo VectorDot VectorSpiralCenter'
+        }
       >
         <div className='container'>
           <div className='row'>
             <div className='col-md-6'>
-              <div className='mb-5' id='happy-tots'>
-                <h4 className='ulineRed'>Happy Tots </h4>
+              <div className='mb-5 learningDivs' id='happy-tots'>
+                <h4 className='ulineRed'>Happy Tots</h4>
                 <p className='pt-4'>
                   formulated the approach of SPICE, which a child must wholly
                   foster during the kindergarten years.
@@ -100,17 +95,46 @@ function PrePrimary() {
                 </p>
 
                 <ul className='list-points'>
-                  <li><img src="/assets/icons/blue-point.png" alt="list-point" /> Developmentally appropriate curriculum</li>
-                  <li><img src="/assets/icons/pink-point.png" alt="list-point" /> Innovative and dynamic teaching styles</li>
-                  <li><img src="/assets/icons/yellow-point.png" alt="list-point" /> Brain friendly learning modules</li>
-                  <li><img src="/assets/icons/lightgreen-point.png" alt="list-point" /> Tangible learning outcomes</li>
-                  <li><img src="/assets/icons/orange-point.png" alt="list-point" /> Creative and intellectual curiosity stimulated by suitable
+                  <li>
+                    <img src='/assets/icons/blue-point.png' alt='list-point' />{' '}
+                    Developmentally appropriate curriculum
+                  </li>
+                  <li>
+                    <img src='/assets/icons/pink-point.png' alt='list-point' />{' '}
+                    Innovative and dynamic teaching styles
+                  </li>
+                  <li>
+                    <img
+                      src='/assets/icons/yellow-point.png'
+                      alt='list-point'
+                    />{' '}
+                    Brain friendly learning modules
+                  </li>
+                  <li>
+                    <img
+                      src='/assets/icons/lightgreen-point.png'
+                      alt='list-point'
+                    />{' '}
+                    Tangible learning outcomes
+                  </li>
+                  <li>
+                    <img
+                      src='/assets/icons/orange-point.png'
+                      alt='list-point'
+                    />{' '}
+                    Creative and intellectual curiosity stimulated by suitable
                     learning environment
                   </li>
-                  <li><img src="/assets/icons/darkblue-point.png" alt="list-point" /> Specialized and adept teachers</li>
+                  <li>
+                    <img
+                      src='/assets/icons/darkblue-point.png'
+                      alt='list-point'
+                    />{' '}
+                    Specialized and adept teachers
+                  </li>
                 </ul>
               </div>
-              <div className='mb-5' id='our-approach'>
+              <div className='mb-5 learningDivs' id='our-approach'>
                 <h4 className='ulineRed'>Our Approach</h4>
                 <p className='pt-4'>
                   Vikas Mantra Public School follows the futuristic Early Years
@@ -124,13 +148,20 @@ function PrePrimary() {
                   Maalathi, one of the senior educators in India.
                 </p>
 
-                <img src="/assets/learning/spice-banner.jpg"  alt='' className='img-fluid mt-4'/>
-
+                <img
+                  src='/assets/learning/spice-banner.jpg'
+                  alt=''
+                  className='img-fluid mt-4'
+                />
               </div>
-              <div className='mb-5' id='programs'>
+              <div className='mb-5 learningDivs' id='programs'>
                 <h4 className='ulineRed'>Programs</h4>
-                <p className='pt-4'><b>“Happy Tots Curriculum Prepares Children for Lifelong
-                  /learning!”</b></p>
+                <p className='pt-4'>
+                  <b>
+                    “Happy Tots Curriculum Prepares Children for Lifelong
+                    /learning!”
+                  </b>
+                </p>
 
                 <p className='pt-4'>
                   Happy Tots offers a well-structured curriculum for all three
@@ -156,7 +187,7 @@ function PrePrimary() {
                   own pace.
                 </p>
               </div>
-              <div className='mb-5' id='why-us'>
+              <div className='mb-5 learningDivs' id='why-us'>
                 <h4 className='ulineRed'>WHY CHOOSE VIKAS MANTRA?</h4>
                 <p className='pt-4'>
                   Vikas Mantra Public School is established with a vision to
@@ -165,11 +196,11 @@ function PrePrimary() {
                   technological skills.
                 </p>
 
-                <button class="outlineBtn btn">Know More</button>
+                <button class='outlineBtn btn'>Know More</button>
               </div>
             </div>
 
-            <div className={'col-md-6'}>
+            <div className='col-md-6'>
               <div className='imgUp imgBgColor pastelYellow'>
                 <img
                   src='/assets/pre-primary.png'
@@ -179,64 +210,49 @@ function PrePrimary() {
               </div>
               <div className={'sticky-sidebar VectorSpiralBlue' + ' ' + 'pt60'}>
                 <ul id='progress'>
+                  <li id='happy-tots-li' className={'node' + ' ' + 'green'}>
+                    <Link href='#happy-tots' legacyBehavior>
+                      <a>
+                        <p> Happy Tots</p>
+                      </a>
+                    </Link>
+                  </li>
 
-                
-                  <Link href='#happy-tots' legacyBehavior>
-                    <a>
-                    <li className={'node' + ' ' + 'green'}>
-                      <p> Happy Tots</p>
-                    </li>
-                    </a>
-                  </Link>
-                  
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#our-approach'>
-                    <a onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li id='our-approach-li' className={'node' + ' ' + 'grey'}>
+                    <Link legacyBehavior href='#our-approach'>
+                      <a onClick={(e) => progressClick(e)}>
                         <p>Our Approach</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
 
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#programs'>
-                    <a onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li id='programs-li' className={'node' + ' ' + 'grey'}>
+                    <Link legacyBehavior href='#programs'>
+                      <a onClick={(e) => progressClick(e)}>
                         <p>Programs</p>
-                      </li>
-                    </a>
-                  </Link>
-
+                      </a>
+                    </Link>
+                  </li>
                   <li>
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#why-us'>
-                    <a onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li id='why-us-li' className={'node' + ' ' + 'grey'}>
+                    <Link legacyBehavior href='#why-us'>
+                      <a onClick={(e) => progressClick(e)}>
                         <p>Why Choose Vikas Mantra</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
                 </ul>
-                <input
-                  type='button'
-                  value='Next'
-                  id='next'
-                  className='d-none'
-                />
-                <input
-                  type='button'
-                  value='Clear'
-                  id='clear'
-                  className='d-none'
-                />
               </div>
             </div>
           </div>

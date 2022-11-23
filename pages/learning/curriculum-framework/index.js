@@ -6,56 +6,33 @@ import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
 function CurriculumFrameWork() {
   const pageTitle = 'Learning'
 
-  function progressClick(e) {
-    const progressLink = e.target.closest('li')
-    const progressLinkNode = e.target.parentNode.parentNode.previousSibling
-    progressLink.classList.add('green')
-    progressLink.classList.remove('grey')
-    progressLink.classList.add('activated')
-    progressLinkNode.classList.add('dividerActivated')
-  }
+  function progressClick(e) {}
 
   useEffect(() => {
-    var list = document.getElementById('progress'),
-      next = document.getElementById('next'),
-      clear = document.getElementById('clear'),
-      children = list.children,
-      completed = 0
-    // simulate activating a node
-    next.addEventListener(
-      'click',
-      function () {
-        // count the number of completed nodes.
-        completed = completed === 0 ? 1 : completed + 2
-        if (completed > children.length) return
-        // for each node that is completed, reflect the status
-        // and show a green color!
-        for (var i = 0; i < completed; i++) {
-          console.log(children[i].children[0])
-          children[i].children[0].classList.remove('grey')
-          children[i].children[0].classList.add('green')
-          // if this child is a node and not divider,
-          // make it shine a little more
-          if (i % 2 === 0) {
-            children[i].children[0].classList.add('activated')
-          }
+    // progress timeline
+    let learningDivs = document.querySelectorAll('.learningDivs')
+    window.addEventListener('scroll', Scroll, false)
+
+    function Scroll() {
+      learningDivs.forEach((lds) => {
+        let sectionTop = lds.getBoundingClientRect().top
+        var ids = lds.getAttribute('id')
+        var id = document.getElementById(ids + '-li')
+
+        if (id.previousElementSibling !== null && sectionTop < 60) {
+          id.previousElementSibling.children[0].classList.add('green')
+          id.previousElementSibling.children[0].classList.remove('grey')
+          id.classList.add('green')
+          id.classList.remove('grey')
+        } else if (id.previousElementSibling !== null && sectionTop > 30) {
+          id.previousElementSibling.children[0].classList.remove('green')
+          id.previousElementSibling.children[0].classList.add('grey')
+          id.classList.remove('green')
+          id.classList.add('grey')
+        } else {
         }
-      },
-      false
-    )
-    // clear the activated state of the markers
-    clear.addEventListener(
-      'click',
-      function () {
-        for (var i = 0; i < children.length; i++) {
-          children[i].children[0].classList.remove('green')
-          children[i].children[0].classList.remove('activated')
-          children[i].children[0].classList.add('grey')
-        }
-        completed = 0
-      },
-      false
-    )
+      })
+    }
   }, [])
   return (
     <>
@@ -71,12 +48,20 @@ function CurriculumFrameWork() {
         </div>
       </section>
       <section
-        className={'whitebg' + ' ' + 'pt60' + ' ' + 'pb60' + ' ' + 'bglogo VectorDot VectorSpiralCenter'}
+        className={
+          'whitebg' +
+          ' ' +
+          'pt60' +
+          ' ' +
+          'pb60' +
+          ' ' +
+          'bglogo VectorDot VectorSpiralCenter'
+        }
       >
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 curriculum-tab'>
-              <div className='mb-5' id='vikas-mantra'>
+              <div className='mb-5 learningDivs' id='vikas-mantra'>
                 <h4 className='ulineRed'>
                   VIKAS MANTRA PUBLIC SCHOOL Co-curricular offers students a
                   diverse Co-curricular programme which includes, Sports, Arts,
@@ -109,7 +94,7 @@ function CurriculumFrameWork() {
                 </p>
               </div>
 
-              <div className='mb-3 pt-4' id='sports'>
+              <div className='mb-3 pt-4 learningDivs' id='sports'>
                 <h4 className={styles.vectorImg2 + ' ulineRed'}>Sports</h4>
 
                 <p className='pt-4'>
@@ -125,9 +110,11 @@ function CurriculumFrameWork() {
                   dedication, and from winning and losing on the playing field.
                 </p>
 
-                <p className=' py-2'><b>
-                  Sports activities are broken down largely into indoor and
-                  outdoor sports</b>
+                <p className=' py-2'>
+                  <b>
+                    Sports activities are broken down largely into indoor and
+                    outdoor sports
+                  </b>
                 </p>
 
                 <div className={styles.navTabContainer + ' greybg'}>
@@ -147,8 +134,11 @@ function CurriculumFrameWork() {
                         aria-controls='nav-home'
                         aria-selected='true'
                       >
-                       <p className={'m-0' + ' ' + styles.highlights}>Highlights of<br /><span>
-                       Indoor sports activities</span></p>
+                        <p className={'m-0' + ' ' + styles.highlights}>
+                          Highlights of
+                          <br />
+                          <span>Indoor sports activities</span>
+                        </p>
                       </button>
 
                       <button
@@ -161,10 +151,11 @@ function CurriculumFrameWork() {
                         aria-controls='nav-profile'
                         aria-selected='false'
                       >
-
-                        <p className={'m-0' + ' ' + styles.highlights}>Highlights of<br /><span>
-                         Outdoor sports activities</span></p>
-                       
+                        <p className={'m-0' + ' ' + styles.highlights}>
+                          Highlights of
+                          <br />
+                          <span>Outdoor sports activities</span>
+                        </p>
                       </button>
                     </div>
                   </nav>
@@ -179,17 +170,29 @@ function CurriculumFrameWork() {
                     >
                       <ul className='mb-0 list-points'>
                         <li className='pt-4'>
-                         <img src="/assets/icons/green-point.png" alt='list-point' /> Physical Education and Yoga form core elements of the
+                          <img
+                            src='/assets/icons/green-point.png'
+                            alt='list-point'
+                          />{' '}
+                          Physical Education and Yoga form core elements of the
                           sports curriculum
                         </li>
 
                         <li className='pt-3'>
-                        <img src="/assets/icons/pink-point.png" alt='list-point' /> Well designed, spacious and child-safe play
+                          <img
+                            src='/assets/icons/pink-point.png'
+                            alt='list-point'
+                          />{' '}
+                          Well designed, spacious and child-safe play
                           environment for younger students
                         </li>
 
                         <li className='py-3'>
-                        <img src="/assets/icons/red-point.png" alt='list-point' /> Common room for indoor sports such as Table Tennis,
+                          <img
+                            src='/assets/icons/red-point.png'
+                            alt='list-point'
+                          />{' '}
+                          Common room for indoor sports such as Table Tennis,
                           Carrom and Chess
                         </li>
                       </ul>
@@ -203,15 +206,29 @@ function CurriculumFrameWork() {
                     >
                       <ul className='mb-0 list-points'>
                         <li className='pt-4'>
-                        <img src="/assets/icons/green-point.png" alt='list-point' /> 1.5 acre playground for outdoor sports such as Football, Cricket and Athletics
+                          <img
+                            src='/assets/icons/green-point.png'
+                            alt='list-point'
+                          />{' '}
+                          1.5 acre playground for outdoor sports such as
+                          Football, Cricket and Athletics
                         </li>
 
                         <li className='pt-3'>
-                        <img src="/assets/icons/pink-point.png" alt='list-point' /> Dedicated Volleyball and Basketball courts
+                          <img
+                            src='/assets/icons/pink-point.png'
+                            alt='list-point'
+                          />{' '}
+                          Dedicated Volleyball and Basketball courts
                         </li>
 
                         <li className='py-3'>
-                        <img src="/assets/icons/red-point.png" alt='list-point' /> Specialised training in Basketball, Football and Athletics
+                          <img
+                            src='/assets/icons/red-point.png'
+                            alt='list-point'
+                          />{' '}
+                          Specialised training in Basketball, Football and
+                          Athletics
                         </li>
                       </ul>
                     </div>
@@ -322,7 +339,15 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                    Students at VIKAS MANTRA PUBLIC SCHOOL are exposed to both Indian and Western music forms. Indian music allows students to immerse themselves in India’s rich cultural heritage and history. Western music gives students a wider context and sensitises them to appreciating art forms that are foreign and new. Besides Theory of Music lessons and classes for practising vocal and instrumental music, the school Band and the Choir provide platforms where students can perform and showcase their talent.
+                      Students at VIKAS MANTRA PUBLIC SCHOOL are exposed to both
+                      Indian and Western music forms. Indian music allows
+                      students to immerse themselves in India’s rich cultural
+                      heritage and history. Western music gives students a wider
+                      context and sensitises them to appreciating art forms that
+                      are foreign and new. Besides Theory of Music lessons and
+                      classes for practising vocal and instrumental music, the
+                      school Band and the Choir provide platforms where students
+                      can perform and showcase their talent.
                     </p>
                   </div>
 
@@ -334,7 +359,14 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                    At VIKAS MANTRA PUBLIC SCHOOL, offerings in theatre include basic acting, advanced improvisation, technical theatre and film analysis classes. Dramatic productions, including musicals and plays, are staged at regular intervals. Theatre allows our students to be creative and serves as an outlet for individual expression. Students are also exposed to film and drama screenings and to guest lectures by renowned theatre personalities.
+                      At VIKAS MANTRA PUBLIC SCHOOL, offerings in theatre
+                      include basic acting, advanced improvisation, technical
+                      theatre and film analysis classes. Dramatic productions,
+                      including musicals and plays, are staged at regular
+                      intervals. Theatre allows our students to be creative and
+                      serves as an outlet for individual expression. Students
+                      are also exposed to film and drama screenings and to guest
+                      lectures by renowned theatre personalities.
                     </p>
                   </div>
 
@@ -346,13 +378,25 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                    Art forms such as modelling, sculpting, animation and photography provide our students with an opportunity to learn art theory, investigate new ideas and explore their creativity through diverse techniques and materials. Guided by a faculty of dedicated art teachers who are committed to nurturing, challenging, and inspiring young artists to think outside the box, VIKAS MANTRA PUBLIC SCHOOL students experience the thrill and importance of visual arts in a tangible and meaningful way. The Co-Curricular programme at VIKAS MANTRA PUBLIC SCHOOL is supported by a wide variety of Sports activities.
+                      Art forms such as modelling, sculpting, animation and
+                      photography provide our students with an opportunity to
+                      learn art theory, investigate new ideas and explore their
+                      creativity through diverse techniques and materials.
+                      Guided by a faculty of dedicated art teachers who are
+                      committed to nurturing, challenging, and inspiring young
+                      artists to think outside the box, VIKAS MANTRA PUBLIC
+                      SCHOOL students experience the thrill and importance of
+                      visual arts in a tangible and meaningful way. The
+                      Co-Curricular programme at VIKAS MANTRA PUBLIC SCHOOL is
+                      supported by a wide variety of Sports activities.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <h4 className='ulineRed pt-5' id="other-learning-Opportunities">Other Learning Opportunities</h4>
+              <h4 className='ulineRed pt-5' id='other-learning-Opportunities'>
+                Other Learning Opportunities
+              </h4>
 
               <p className='pt-4'>
                 Co-curricular programmes. While our core programme is aimed at
@@ -430,15 +474,69 @@ function CurriculumFrameWork() {
                     <h6>Clubs at VIKAS MANTRA PUBLIC SCHOOL</h6>
 
                     <ul className='list-points'>
-                      <li className='pt-3'><img src="/assets/icons/blue-point.png" alt='list-point' /> Eco club</li>
-                      <li className='pt-3'><img src="/assets/icons/pink-point.png" alt='list-point' /> Photography club</li>
-                      <li className='pt-3'><img src="/assets/icons/yellow-point.png" alt='list-point' /> Robotics club</li>
-                      <li className='pt-3'><img src="/assets/icons/lightgreen-point.png" alt='list-point' /> Cookery club</li>
-                      <li className='pt-3'><img src="/assets/icons/orange-point.png" alt='list-point' /> Math club</li>
-                      <li className='pt-3'><img src="/assets/icons/darkblue-point.png" alt='list-point' /> Literary club</li>
-                      <li className='pt-3'><img src="/assets/icons/red-point.png" alt='list-point' /> Theatre club</li>
-                      <li className='pt-3'><img src="/assets/icons/lightblue.png" alt='list-point' /> Social Welfare club</li>
-                      <li className='pt-3'><img src="/assets/icons/green-point.png" alt='list-point' /> Astronomy club</li>
+                      <li className='pt-3'>
+                        <img
+                          src='/assets/icons/blue-point.png'
+                          alt='list-point'
+                        />
+                        Eco club
+                      </li>
+                      <li className='pt-3'>
+                        <img
+                          src='/assets/icons/pink-point.png'
+                          alt='list-point'
+                        />
+                        Photography club
+                      </li>
+                      <li className='pt-3'>
+                        <img
+                          src='/assets/icons/yellow-point.png'
+                          alt='list-point'
+                        />
+                        Robotics club
+                      </li>
+                      <li className='pt-3'>
+                        <img
+                          src='/assets/icons/lightgreen-point.png'
+                          alt='list-point'
+                        />
+                        Cookery club
+                      </li>
+                      <li className='pt-3'>
+                        <img
+                          src='/assets/icons/orange-point.png'
+                          alt='list-point'
+                        />
+                        Math club
+                      </li>
+                      <li className='pt-3'>
+                        <img
+                          src='/assets/icons/darkblue-point.png'
+                          alt='list-point'
+                        />
+                        Literary club
+                      </li>
+                      <li className='pt-3'>
+                        <img
+                          src='/assets/icons/red-point.png'
+                          alt='list-point'
+                        />
+                        Theatre club
+                      </li>
+                      <li className='pt-3'>
+                        <img
+                          src='/assets/icons/lightblue.png'
+                          alt='list-point'
+                        />
+                        Social Welfare club
+                      </li>
+                      <li className='pt-3'>
+                        <img
+                          src='/assets/icons/green-point.png'
+                          alt='list-point'
+                        />
+                        Astronomy club
+                      </li>
                     </ul>
                   </div>
 
@@ -450,11 +548,31 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                    Community service forms the third pillar of the alternate learning platform at VIKAS MANTRA PUBLIC SCHOOL. We believe that Community Service plays a key role in developing a sense of social responsibility amongst students and its maximum impact is when this sense is developed at an early age. Community Service activities provide students with an opportunity to learn about their communities, serve those living in their communities and learn from those experiences.
+                      Community service forms the third pillar of the alternate
+                      learning platform at VIKAS MANTRA PUBLIC SCHOOL. We
+                      believe that Community Service plays a key role in
+                      developing a sense of social responsibility amongst
+                      students and its maximum impact is when this sense is
+                      developed at an early age. Community Service activities
+                      provide students with an opportunity to learn about their
+                      communities, serve those living in their communities and
+                      learn from those experiences.
                     </p>
 
-                    <p>Right from Elementary School all the way up to High School, students and teachers participate in community-oriented activities. Throughout the year, students engage in programmes which connect them to local community organizations. One such organization that they work closely with is the VIKAS MANTRA PUBLIC SCHOOL Foundation which allows VIKAS MANTRA PUBLIC SCHOOL students to participate in social activities organized to benefit students of weaker classes of society. These collectively help build a sense of grassroots reality within our students and help them give back to the society to which they belong.</p>
-
+                    <p>
+                      Right from Elementary School all the way up to High
+                      School, students and teachers participate in
+                      community-oriented activities. Throughout the year,
+                      students engage in programmes which connect them to local
+                      community organizations. One such organization that they
+                      work closely with is the VIKAS MANTRA PUBLIC SCHOOL
+                      Foundation which allows VIKAS MANTRA PUBLIC SCHOOL
+                      students to participate in social activities organized to
+                      benefit students of weaker classes of society. These
+                      collectively help build a sense of grassroots reality
+                      within our students and help them give back to the society
+                      to which they belong.
+                    </p>
                   </div>
 
                   <div
@@ -465,15 +583,24 @@ function CurriculumFrameWork() {
                     tabIndex='0'
                   >
                     <p className='pt-3'>
-                    Field trips augment classroom learning at VIKAS MANTRA PUBLIC SCHOOL. They not only provide a break from the routine of chalk and books but also serve to expand student horizons through interaction with the local community. Field trips in the early learning years serve as an opportunity for our younger students to experience a world outside school and incorporate enquiry based learning platforms. These outings also enable students and their teachers to interact in a more informal setting creating opportunities to build on interpersonal skills and student-teacher relationships.
+                      Field trips augment classroom learning at VIKAS MANTRA
+                      PUBLIC SCHOOL. They not only provide a break from the
+                      routine of chalk and books but also serve to expand
+                      student horizons through interaction with the local
+                      community. Field trips in the early learning years serve
+                      as an opportunity for our younger students to experience a
+                      world outside school and incorporate enquiry based
+                      learning platforms. These outings also enable students and
+                      their teachers to interact in a more informal setting
+                      creating opportunities to build on interpersonal skills
+                      and student-teacher relationships.
                     </p>
-                    
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className={'col-md-6'}>
+            <div className='col-md-6'>
               <div className='imgUp imgBgColor pastelBlue'>
                 <img
                   src='/assets/curriculum-framework.png'
@@ -483,7 +610,7 @@ function CurriculumFrameWork() {
               </div>
               <div className={'sticky-sidebar VectorSpiralBlue' + ' ' + 'pt60'}>
                 <ul id='progress'>
-                  <li className={'node' + ' ' + 'green'}>
+                  <li id='vikas-mantra-li' className={'node' + ' ' + 'green'}>
                     <Link href='#sports' legacyBehavior>
                       <a>
                         <p> Sports</p>
@@ -495,26 +622,14 @@ function CurriculumFrameWork() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <Link legacyBehavior href='#other-learning-Opportunities'>
-                    <a onClick={(e) => progressClick(e)}>
-                      <li className={'node' + ' ' + 'grey'}>
+                  <li id='sports-li' className={'node' + ' ' + 'grey'}>
+                    <Link legacyBehavior href='#other-learning-Opportunities'>
+                      <a onClick={(e) => progressClick(e)}>
                         <p>Other Learning Opportunities</p>
-                      </li>
-                    </a>
-                  </Link>
+                      </a>
+                    </Link>
+                  </li>
                 </ul>
-                <input
-                  type='button'
-                  value='Next'
-                  id='next'
-                  className='d-none'
-                />
-                <input
-                  type='button'
-                  value='Clear'
-                  id='clear'
-                  className='d-none'
-                />
               </div>
             </div>
           </div>
