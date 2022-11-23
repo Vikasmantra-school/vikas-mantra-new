@@ -1695,7 +1695,6 @@ tr {
   .imgUp img {
     margin-top: 0;
     top: 0;
-    margin-bottom: 12px;
   }
 
   .desktop-menu {
@@ -1856,4 +1855,10 @@ tr {
     max-width: calc(100% - 8.5vw);
   }
 
+}
+
+
+
+.AnimeElement{
+  
 }
