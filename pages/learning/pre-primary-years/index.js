@@ -7,59 +7,53 @@ import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
 
 function PrePrimary() {
 
-  const pageTitle = 'Learning'
-  
+  const pageTitle = 'PrePrimary'
+  const myRef = useRef(null)
+  const executeScroll = () =>
+    myRef.current.scrollIntoView({
+      behavior: 'smooth',
+    })
+
   function progressClick(e) {
-    const progressLink = e.target.closest('li')
-    const progressLinkNode = e.target.parentNode.parentNode.previousSibling
-    progressLink.classList.add('green')
-    progressLink.classList.remove('grey')
-    progressLink.classList.add('activated')
-    progressLinkNode.classList.add('dividerActivated')
+    const progress = document.getElementById('progress')
+    progress.scrollIntoView({
+      behavior: 'smooth',
+      block: 'end',
+      inline: 'nearest',
+    })
   }
 
   useEffect(() => {
-    var list = document.getElementById('progress'),
-      next = document.getElementById('next'),
-      clear = document.getElementById('clear'),
-      children = list.children,
-      completed = 0
-    // simulate activating a node
-    next.addEventListener(
-      'click',
-      function () {
-        // count the number of completed nodes.
-        completed = completed === 0 ? 1 : completed + 2
-        if (completed > children.length) return
-        // for each node that is completed, reflect the status
-        // and show a green color!
-        for (var i = 0; i < completed; i++) {
-          console.log(children[i].children[0])
-          children[i].children[0].classList.remove('grey')
-          children[i].children[0].classList.add('green')
-          // if this child is a node and not divider,
-          // make it shine a little more
-          if (i % 2 === 0) {
-            children[i].children[0].classList.add('activated')
-          }
+    //
+    const progress = document.getElementById('progress')
+    let learningDivs = document.querySelectorAll('.learningDivs')
+    let listOfLearningDivs = progress.querySelectorAll('.node')
+    console.log(listOfLearningDivs)
+    window.addEventListener('scroll', Scroll, false)
+
+    function Scroll() {
+      learningDivs.forEach((lds) => {
+        let sectionTop = lds.getBoundingClientRect().top
+        var ids = lds.getAttribute('id')
+        var id = document.getElementById(ids + '-li')
+
+        if (id.previousElementSibling !== null && sectionTop < 60) {
+          id.previousElementSibling.children[0].classList.add('green')
+          id.previousElementSibling.children[0].classList.remove('grey')
+          id.classList.add('green')
+          id.classList.remove('grey')
+        } else if (id.previousElementSibling !== null && sectionTop > 30) {
+          id.previousElementSibling.children[0].classList.remove('green')
+          id.previousElementSibling.children[0].classList.add('grey')
+          id.classList.remove('green')
+          id.classList.add('grey')
+        } else {
         }
-      },
-      false
-    )
-    // clear the activated state of the markers
-    clear.addEventListener(
-      'click',
-      function () {
-        for (var i = 0; i < children.length; i++) {
-          children[i].children[0].classList.remove('green')
-          children[i].children[0].classList.remove('activated')
-          children[i].children[0].classList.add('grey')
-        }
-        completed = 0
-      },
-      false
-    )
+      })
+    }
+    //
   }, [])
+
   return (
     <>
       <Breadcrumb pageName={pageTitle} />
