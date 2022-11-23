@@ -682,3 +682,209 @@
 
 
 }
+
+@media only screen and (min-width: 661px) and (max-width: 990px) {
+    .tabBtn {
+        border-radius: 0px !important;
+        padding: 14px 20px;
+        width: 50%;
+    }
+
+    .tabWidth {
+        width: 100%;
+        margin-bottom: 40px;
+        background-color: #fff;
+    }
+
+    .schoolBuildingImg {
+        height: 100%;
+    }
+
+    .card1 {
+        background-color: white;
+        width: 100%;
+        padding: 20px 40px 20px 40px;
+        border: 2px solid #fff;
+        border-radius: 0;
+        margin-bottom: 0px;
+        position: unset;
+        z-index: 1;
+    }
+
+    .cardmargin1 {
+        margin-top: 60px;
+        margin-left: 0;
+    }
+
+    .leftIcon {
+        color: #fff;
+        position: absolute;
+        right: 51px;
+        font-size: 30px;
+        width: 14px;
+        left: unset;
+    }
+
+    .vectorImg16::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector16.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 50px;
+        height: 120px;
+        width: 130px;
+        left: 0;
+        bottom: -24vh;
+    }
+
+    .vectorImg5::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 1;
+        background-size: 100px;
+        height: 190px;
+        width: 190px;
+        right: 0;
+        bottom: -50vh;
+    }
+
+    .responsiveRedBorder1 {
+        border-bottom: 1px solid #AA182C !important;
+        border-right: 1px solid #AA182C !important;
+    }
+
+    .responsiveRedBorder2 {
+        border-bottom: 1px solid #AA182C !important;
+        border-left: 1px solid #AA182C !important;
+    }
+
+    .responsiveRedBorder3 {
+        border-bottom: 1px solid #AA182C !important;
+        border-right: 1px solid #AA182C !important;
+    }
+
+    .responsiveRedBorder4 {
+        border-bottom: 1px solid #AA182C !important;
+        border-left: 1px solid #AA182C !important;
+    }
+    .cardmargin3 {
+        margin-top: 60px;
+        margin-left: 0;
+    }
+    .card2 {
+        background-color: white;
+        width: 100%;
+        padding: 20px 40px 20px 40px;
+        border: 2px solid #fff;
+        border-radius: 0;
+        margin-bottom: 0px;
+        position: unset;
+        z-index: 1;
+    }
+    .tab3VectorSpiralBlue::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector5.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        z-index: 1;
+        background-size: 90px;
+        height: 110px;
+        width: 100px;
+        top: 0;
+        right: 0;
+    }
+    .vectorImg3Tab3::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector3.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 100px;
+        height: 110px;
+        width: 110px;
+        left: 0px;
+        bottom: -130%;
+    }
+    .vectorImg6::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector6.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 1;
+        background-size: 100px;
+        height: 110px;
+        width: 100px;
+        right: 0%;
+        bottom: -330%;
+    }
+    .Sec2PdngBtm {
+        padding-bottom: 30px;
+    }
+    .Sec2vmpsImg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 45px;
+        left: unset;
+    }
+    .vectorImg9::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector9.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 1;
+        background-size: 100px;
+        height: 130px;
+        width: 110px;
+        right: 0px;
+        bottom: -180vh;
+    }
+    .studentImg{
+        height: 100%;
+        width: 100%;
+    }
+    .sectionPdng4{
+        padding-top: 40px;
+    }
+    .Sec4vmpsImg {
+        position: absolute;
+        height: 50px;
+        right: 0;
+        top: 50px;
+    }
+    .vectorImg17::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector17.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 1;
+        background-size: 100px;
+        height: 140px;
+        width: 110px;
+        left: 0px;
+        bottom: -30%;
+    }
+    .vectorImg11::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector11.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 1;
+        background-size: 100px;
+        height: 110px;
+        width: 100px;
+        right: 0px;
+        bottom: -140%;
+    }
+}

@@ -697,7 +697,9 @@ p {
   list-style-type: none;
 }
 
-.mob-menu{width: 100%;}
+.mob-menu {
+  width: 100%;
+}
 
 .mob-menu .nav {
   position: relative;
@@ -919,6 +921,7 @@ tr {
   padding: 2px;
   text-align: center;
 }
+
 .ImgContainer1 {
   background-color: #99daff;
 }
@@ -1149,6 +1152,48 @@ tr {
 
 .nav-link.first {
   color: #fff;
+}
+
+@media only screen and (min-width: 661px) and (max-width: 990px) {
+  .imgUpAdmission1 img {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .imgBgColorAdmission1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 15px;
+    bottom: -15px;
+  }
+
+  .responsiveRow {
+    flex-direction: row !important;
+  }
+
+  .imgUpAdmission2 img {
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .imgBgColorAdmission2 {
+    position: relative;
+  }
+
+  .imgBgColorAdmission2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 15px;
+    bottom: -15px;
+  }
 }
 
 /*admsn*/

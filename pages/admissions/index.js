@@ -29,21 +29,14 @@ const Admissions = () => {
       <section className={styles.sectionPdng + ' greybg'}>
         <div className='container'>
           <div className='row align-items-start'>
-            <div className=' col-md-4'>
+            <div className='col-md-12 col-lg-4'>
               {/* tab-menu-start */}
 
-              <div
-                className={styles.tabWidth + ' nav flex-column nav-pills me-3'}
+              <div className={styles.tabWidth + ' nav flex-column nav-pills me-3 responsiveRow '}
                 id='v-pills-tab'
                 role='tablist'
                 aria-orientation='vertical'>
-                <button
-                  className={
-                    styles.tabBtn +
-                    ' ' +
-                    styles.redBorder +
-                    ' nav-link active text-start color-black position-relative'
-                  }
+                <button className={ styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder1 + ' nav-link active text-start color-black position-relative' }
                   id='v-pills-home-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-home'
@@ -58,13 +51,7 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button
-                  className={
-                    styles.tabBtn +
-                    ' ' +
-                    styles.redBorder +
-                    ' nav-link text-start color-black position-relative'
-                  }
+                <button className={ styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder2 + ' nav-link text-start color-black position-relative' }
                   id='v-pills-profile-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-profile'
@@ -79,13 +66,7 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button
-                  className={
-                    styles.tabBtn +
-                    ' ' +
-                    styles.redBorder +
-                    ' nav-link text-start color-black position-relative'
-                  }
+                <button className={ styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder3 + ' nav-link text-start color-black position-relative' }
                   id='v-pills-messages-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-messages'
@@ -100,12 +81,7 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button
-                  className={
-                    styles.tabBtn +
-                    ' ' +
-                    ' nav-link text-start color-black position-relative'
-                  }
+                <button className={ styles.tabBtn + ' ' + styles.responsiveRedBorder4 + ' nav-link text-start color-black position-relative ' }
                   id='v-pills-settings-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-settings'
@@ -132,7 +108,7 @@ const Admissions = () => {
               styles.tab1RedDotVector + ' ' + styles.vectorImg16 + ' ' + styles.vectorImg5}
               id='v-pills-home' role='tabpanel' aria-labelledby='v-pills-home-tab' tabIndex='0'>
               <div className='row'>
-                <div className='col-md-8 offset-md-4'>
+                <div className='col-lg-8 offset-lg-4 col-md-12 '>
 
                   <div className={styles.schoolBuilding + ' imgUpAdmission1 imgBgColorAdmission1 pastelPurple3 '}>
                     <img
@@ -144,12 +120,7 @@ const Admissions = () => {
 
                 </div>
 
-                <div
-                  className={
-                    styles.cardmargin1 +
-                    ' ' +
-                    ' col-md-8 offset-md-2 position-relative '
-                  }>
+                <div className={ styles.cardmargin1 + ' ' + ' col-lg-8 offset-lg-2 col-md-12 position-relative ' }>
                   <div className={styles.card1 + ' card'}>
                     <div className='card-body'>
                       <h5 className='card-title ulineRed'>Admission</h5>
@@ -192,21 +163,14 @@ const Admissions = () => {
               </div>
             </div>
 
-            <div
-              className={
-                ' tab-pane fade ' +
-                ' ' +
-                styles.vectorImg3 +
-                ' ' +
-                styles.vectorImg9
-              }
+            <div className={ ' tab-pane fade ' + ' ' + styles.vectorImg3 + ' ' + styles.vectorImg9 }
               id='v-pills-profile'
               role='tabpanel'
               aria-labelledby='v-pills-profile-tab'
               tabIndex='0'>
               <div className={'row '}>
 
-                <div className={styles.Sec2PdngBtm + ' col-md-8 offset-md-4'}>
+                <div className={styles.Sec2PdngBtm + ' col-lg-8 offset-lg-4 col-md-12'}>
 
                   <div className={' imgUpAdmission2 imgBgColorAdmission2 pastelBlue3'}>
                     <img
@@ -222,13 +186,7 @@ const Admissions = () => {
                   <div></div>
                 </div>
 
-                <div
-                  className={
-                    styles.order3 +
-                    ' col-md-6 py-5 dot-vector-before' +
-                    ' ' +
-                    styles.tab2RedDotVector
-                  }>
+                <div className={ styles.order3 + ' col-lg-6 col-md-12 py-5 dot-vector-before' + ' ' + styles.tab2RedDotVector }>
                   <img
                     src='/assets/banners/student.png'
                     alt='image'
@@ -238,7 +196,7 @@ const Admissions = () => {
 
                 <div
                   className={
-                    styles.order2 + ' col-md-5 py-5 position-relative '
+                    styles.order2 + ' col-lg-5 col-md-12 py-5 position-relative '
                   }>
                   <img
                     src='/assets/VMPS.png'
@@ -305,7 +263,7 @@ const Admissions = () => {
               aria-labelledby='v-pills-messages-tab'
               tabIndex='0'>
               <div className={'row ' + styles.MobTextNone}>
-                <div className=' col-md-8 offset-md-4'>
+                <div className=' col-lg-8 offset-lg-4 col-md-12'>
 
                   <div className='imgUpAdmission2 imgBgColorAdmission2 pastelGold1 '>
                     <img
@@ -316,13 +274,7 @@ const Admissions = () => {
                   </div>
                 </div>
 
-                <div
-                  className={
-                    styles.cardmargin3 +
-                    ' col-md-8 offset-md-2 position-relative ' +
-                    ' ' +
-                    styles.tab3VectorSpiralBlue
-                  }>
+                <div className={ styles.cardmargin3 + ' col-md-12 col-lg-8 offset-lg-2 position-relative ' + ' ' + styles.tab3VectorSpiralBlue }>
                   <div className={styles.card2 + ' card'}>
                     <div className='card-body'>
                       <h5 className='card-title ulineRed'>
@@ -364,7 +316,7 @@ const Admissions = () => {
                 </div>
 
                 <div className='row pt60 '>
-                  <div className='col-lg-4 col-md-4 col-sm-12 '>
+                  <div className='col-lg-4 col-md-6 col-sm-12 '>
                     <div className='card-wrapper one'>
                       <div className='card-header'>
                         <h1 className='card-header-text2'>
@@ -395,7 +347,7 @@ const Admissions = () => {
                     </div>
                   </div>
 
-                  <div className='col-lg-4 col-md-4 col-sm-12'>
+                  <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper two'>
                       <div className='card-header'>
                         <h1 className='card-header-text2'>
@@ -423,7 +375,7 @@ const Admissions = () => {
                     </div>
                   </div>
 
-                  <div className='col-lg-4 col-md-4 col-sm-12'>
+                  <div className='col-lg-4 col-md-6 col-sm-12'>
 
                     <div className="card-wrapper one">
                       <div className="card-header">
@@ -455,7 +407,7 @@ const Admissions = () => {
                     </div>
                   </div>
 
-                  <div className='col-lg-4 col-md-4 col-sm-12'>
+                  <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper two'>
                       <div className='card-header'>
                         <h1 className='card-header-text2'>Admission
@@ -483,7 +435,7 @@ const Admissions = () => {
                     </div>
                   </div>
 
-                  <div className='col-lg-4 col-md-4 col-sm-12'>
+                  <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper one'>
                       <div className='card-header'>
                         <h1 className='card-header-text2'>Admission
@@ -663,7 +615,7 @@ const Admissions = () => {
               aria-labelledby='v-pills-settings-tab'
               tabIndex='0'>
               <div className='row'>
-                <div className='col-md-8 offset-md-4'>
+                <div className='col-lg-8 offset-lg-4 col-md-12'>
 
                   <div className='imgUpAdmission2 imgBgColorAdmission2 pastelGreen3'>
                     <img
@@ -1002,3 +954,4 @@ const Admissions = () => {
 }
 
 export default Admissions
+
