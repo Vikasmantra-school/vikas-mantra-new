@@ -18,7 +18,6 @@ const Events = () => {
   useEffect(() => {
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
-    console.log(parentTrigger)
     function staggerAnimeFunc(elem) {
       let text = elem.querySelectorAll('.bottomToTop')
       gsap.fromTo(
@@ -37,8 +36,7 @@ const Events = () => {
       )
     }
     ScrollTrigger.refresh()
-  }, [])
-
+  }, [events])
 
   //animation-for-gallery
   useEffect(() => {
@@ -89,19 +87,18 @@ const Events = () => {
               return (
                 <Tab.Content key={index}>
                   <Tab.Pane eventKey={data.id}>
-                    <section id={data.id} className='whitebg pt60 pb60 parentAnimeStarts '>
+                    <section
+                      id={data.id}
+                      className='whitebg pt60 pb60 parentAnimeStarts '
+                    >
                       <div className='container'>
                         <div className='row'>
                           <div className='col-md-6'>
-
                             <h2 className='ulineRed bottomToTop '>
                               {data.title}
                             </h2>
 
-                            <p className='pt-4 bottomToTop '>
-                              {data.desc}
-                            </p>
-
+                            <p className='pt-4 bottomToTop '>{data.desc}</p>
                           </div>
 
                           <div className='col-md-6'>
