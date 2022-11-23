@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
-import styles from './style.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import React, { useEffect ,useRef } from 'react'
+// import styles from './style.module.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
 
