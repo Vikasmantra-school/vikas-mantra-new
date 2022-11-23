@@ -30,12 +30,12 @@ function Learning() {
     window.addEventListener('scroll', Scroll, false)
 
     function Scroll() {
-      learningDivs.forEach((lds, index) => {
+      learningDivs.forEach((lds) => {
         let sectionTop = lds.getBoundingClientRect().top
         var ids = lds.getAttribute('id')
         var id = document.getElementById(ids + '-li')
 
-        if (id.nextElementSibling !== null && sectionTop < 0) {
+        if (id.nextElementSibling !== null && sectionTop < 20) {
           id.nextElementSibling.children[0].classList.add('green')
           id.nextElementSibling.children[0].classList.remove('grey')
           id.classList.add('green')
