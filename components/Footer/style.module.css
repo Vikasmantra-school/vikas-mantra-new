@@ -28,8 +28,8 @@
 }
 
 .formInput {
-    border: 5px solid #fff !important;
     color: #222;
+    padding: 15px;
 }
 
 input.formInput::placeholder {
@@ -43,7 +43,19 @@ input.formInput::placeholder {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
+
+    .contactUs,
+    .quickLinksCol,
+    .aboutCol,
+    .logoCol,
+    .formCol {
+        padding: 20px;
+    }
+
+    .bottomText {
+        padding: 10px;
+    }
 
     .contactUs,
     .quickLinksCol,
@@ -58,7 +70,7 @@ input.formInput::placeholder {
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-width: 661px) and (max-width: 767px) {
 
     .contactUs,
     .quickLinksCol,
@@ -66,10 +78,6 @@ input.formInput::placeholder {
     .logoCol,
     .formCol {
         padding: 20px;
-    }
-
-    .bottomText {
-        padding: 10px;
     }
 }
 

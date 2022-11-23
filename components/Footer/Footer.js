@@ -41,7 +41,7 @@ const Footer = () => {
     <div className={styles.section + ' pt-5 pb-4 '}>
       <div className='container'>
         <div className='row '>
-          <div className={'col-md-4 '}>
+          <div className='col-lg-4 col-md-12'>
             <div className={styles.formCol}>
               <div className='mb-5'>
                 <h6>VISIT THE SCHOOL</h6>
@@ -100,7 +100,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=' offset-md-1 col-md-7'>
+          <div className=' offset-lg-1 col-lg-7 col-md-12'>
             <div className='row align-items-center'>
               <div className={'col-md-4 '}>
                 <div className={styles.logoCol}>

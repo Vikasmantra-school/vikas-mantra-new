@@ -7,7 +7,6 @@ const MobileNav = () => {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      console.error(`App is changing to ${url}`)
       let menu = document.getElementById('mobMenu')
       menu.classList.add('mob-menu-hdden')
       let hamburger = document.getElementById('hamburger')
