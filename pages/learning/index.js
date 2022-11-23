@@ -13,6 +13,7 @@ function Learning() {
     })
 
   function progressClick(e) {
+    console.log('hi')
     const progress = document.getElementById('progress')
     progress.scrollIntoView({
       behavior: 'smooth',

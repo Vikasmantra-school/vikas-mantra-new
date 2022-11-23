@@ -79,15 +79,14 @@ function Curriculum() {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6'>
-
-            <div className={'mb-5' + ' ' + styles.quotes}>
+              <div className={'mb-5' + ' ' + styles.quotes}>
                 <h4>
                   Education is not preparation for <br />
                   life: education is life itself
                 </h4>
                 <p>- John Dewey</p>
               </div>
-              
+
               {curriculum.map((item, index) => (
                 <div
                   className='mb-5 learningDivs'
@@ -97,8 +96,10 @@ function Curriculum() {
                 >
                   <h4 className='ulineRed'>{item.title}</h4>
                   {item.desc?.map((it, i) => (
-                    <p className={ i === 0 ? 'pt-4' : null }>{it}</p>
-                    ))}
+                    <p key={i} className={i === 0 ? 'pt-4' : null}>
+                      {it}
+                    </p>
+                  ))}
                 </div>
               ))}
             </div>
@@ -116,10 +117,7 @@ function Curriculum() {
 
               <div className={'sticky-sidebar' + ' ' + 'pt60'}>
                 <ul id='progress'>
-                  <li
-                    id='vikas-mantra-li'
-                    className={'node' + ' ' + 'green'}
-                  >
+                  <li id='vikas-mantra-li' className={'node' + ' ' + 'green'}>
                     <Link
                       href='#vikas-mantra'
                       legacyBehavior
@@ -135,7 +133,10 @@ function Curriculum() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <li id='pre-primary-years-li' className={'node' + ' ' + 'grey'}>
+                  <li
+                    id='pre-primary-years-li'
+                    className={'node' + ' ' + 'grey'}
+                  >
                     <Link legacyBehavior href='#pre-primary-years'>
                       <a className='aTag' onClick={(e) => progressClick(e)}>
                         <p>Pre-Primary Years (Nursery and Kindergarten)</p>
