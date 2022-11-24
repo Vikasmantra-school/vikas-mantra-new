@@ -3,10 +3,8 @@ import { useEffect } from 'react'
 import '../styles/globals.css'
 import Nav from '../components/Header/Nav'
 import Footer from '../components/Footer/Footer'
-// import {Anime} from '../components/Animation/Anime';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-import SplitType from 'split-type'
 
 
 function MyApp({ Component, pageProps }) {
