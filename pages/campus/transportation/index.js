@@ -18,7 +18,9 @@ const Transportation = () => {
 
                     <div className='row py-5'>
 
-                        <h2 className={styles.headingPdng}>Transportation</h2>
+                        <div className='AnimeStarts'>
+                            <h2 className={styles.headingPdng + ' AnimeElement'}>Transportation</h2>
+                        </div>
 
                     </div>
 
@@ -34,25 +36,27 @@ const Transportation = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <h3 className='ulineRed'>VIKAS MANTRA
-                                PUBLIC SCHOOL   </h3>
+                            <div className='AnimeStarts'>
+                                <h3 className='ulineRed AnimeElement'>VIKAS MANTRA
+                                    PUBLIC SCHOOL   </h3>
+                            </div>
 
-                            <p className='pt-5'>has access to a fleet of buses to accommodate student and
-                                staff transportation to and from the school. School bus movement can be
-                                tracked via SMS allowing parents to predict arrival and departure times
-                                accurately. Bus fees for students are payable on term basis and are based
-                                on distances between the school and the student’s pick-up/drop-off point.
-                            </p>
-
-                            {/* <img src='/assets/vectors/Vector11.png' alt="image" className={styles.vectorImg11} /> */}
+                            <div className='AnimeStarts'>
+                                <p className='pt-5 AnimeElement'>has access to a fleet of buses to accommodate student and
+                                    staff transportation to and from the school. School bus movement can be
+                                    tracked via SMS allowing parents to predict arrival and departure times
+                                    accurately. Bus fees for students are payable on term basis and are based
+                                    on distances between the school and the student’s pick-up/drop-off point.
+                                </p>
+                            </div>
 
                         </div>
 
                         <div className='col-md-6 position-relative'>
 
-                            <div className='imgBgColor imgUp pastelBrown2 bgImageMargin'>
+                            <div className='imgBgColor imgUp pastelBrown2 bgImageMargin AnimeStarts'>
 
-                                <img src='/assets/campus/school-bus.png' alt="image" className={styles.schlBusImg} />
+                                <img src='/assets/campus/school-bus.png' alt="image" className={styles.schlBusImg + ' AnimeElement'} />
 
                             </div>
 

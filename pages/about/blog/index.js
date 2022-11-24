@@ -15,7 +15,9 @@ const Blog = () => {
 
                     <div className={'row py-5'}>
 
-                        <h2>Blog</h2>
+                        <div className='AnimeStarts'>
+                            <h2 className='AnimeElement'>Blog</h2>
+                        </div>
 
                     </div>
 
@@ -31,26 +33,28 @@ const Blog = () => {
 
                         <div className={'col-md-6 ' + styles.colPdng1}>
 
-                            {/* <img src='/assets/vectors/Vector1.png' alt="image" className={styles.vectorImg2} /> */}
+                            <div className='AnimeStarts'>
+                                <h3 className='ulineRed AnimeElement'>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h3>
+                            </div>
 
-                            <h3 className='ulineRed'>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h3>
+                            <div className='AnimeStarts'>
+                                <p className='pt-5 AnimeElement'>Teaching our children the value of making eco-friendly
+                                    decisions in their everyday lives can be difficult in
+                                    a culture that promotes mass consumption. But it’s more
+                                    important than ever today to bring up ecologically
+                                    conscious kids. Here we bring to you a few yet effective
+                                    eco-friendly practices you can start …</p>
 
-                            <p className='pt-5'>Teaching our children the value of making eco-friendly
-                                decisions in their everyday lives can be difficult in
-                                a culture that promotes mass consumption. But it’s more
-                                important than ever today to bring up ecologically
-                                conscious kids. Here we bring to you a few yet effective
-                                eco-friendly practices you can start …</p>
-
-                            <Link href='/about/blog/blog1'><button className='btn outlineBtn'>Know More</button></Link>
+                                <Link href='/about/blog/blog1'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
+                            </div>
 
                         </div>
 
                         <div className='col-md-6 position-relative'>
 
-                            <div className={'imgBgColorBlog1 pastelGreen4'}>
+                            <div className={'imgBgColorBlog1 pastelGreen4 AnimeStarts'}>
 
-                                <img src='/assets/blog1.png' alt="image" className={styles.Blog1Img} />
+                                <img src='/assets/blog1.png' alt="image" className={styles.Blog1Img + ' AnimeElement'} />
 
                             </div>
 
@@ -70,9 +74,9 @@ const Blog = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            <div className={' pastelBlue4 imgBgColorBlog2 '}>
+                            <div className={' pastelBlue4 imgBgColorBlog2 AnimeStarts '}>
 
-                                <img src='/assets/blog2.png' alt="image" className={styles.Blog2Img} />
+                                <img src='/assets/blog2.png' alt="image" className={styles.Blog2Img + ' AnimeElement'} />
 
                             </div>
 
@@ -80,18 +84,20 @@ const Blog = () => {
 
                         <div className={'col-md-6 ' + styles.colPdng2}>
 
-                            <h3 className='ulineRed'>BENEFITS OF YOGA FOR SCHOOL STUDENTS</h3>
+                            <div className='AnimeStarts'>
+                                <h3 className='ulineRed AnimeElement'>BENEFITS OF YOGA FOR SCHOOL STUDENTS</h3>
+                            </div>
 
-                            <p className='pt-5'>The growing levels of competition have made children pursue a variety
-                                of fresh and interesting experiences. They have paved the way for a
-                                variety of programs, making students get exposed to a wide array of
-                                knowledge that inspires and pushes children to learn, grow, thrive,
-                                and succeed. But the truth …</p>
+                            <div className='AnimeStarts'>
+                                <p className='pt-5 AnimeElement'>The growing levels of competition have made children pursue a variety
+                                    of fresh and interesting experiences. They have paved the way for a
+                                    variety of programs, making students get exposed to a wide array of
+                                    knowledge that inspires and pushes children to learn, grow, thrive,
+                                    and succeed. But the truth …</p>
 
-                            <Link href='/about/blog/blog2'><button className='btn outlineBtn'>Know More</button></Link>
-
-                            {/* <img src='/assets/vectors/Vector2.png' alt="image" className={styles.vectorImg3} /> */}
-
+                                <Link href='/about/blog/blog2'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
+                            </div>
+                            
                         </div>
 
                     </div>

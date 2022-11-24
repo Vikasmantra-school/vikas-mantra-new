@@ -16,7 +16,9 @@ const Security = () => {
 
                     <div className='row py-5'>
 
-                        <h2 className={styles.headingPdng}>Security</h2>
+                        <div className='AnimeStarts'>
+                            <h2 className={styles.headingPdng + ' AnimeElement'}>Security</h2>
+                        </div>
 
                     </div>
 
@@ -32,28 +34,30 @@ const Security = () => {
 
                         <div className='col-md-6 position-relative'>
 
-                            {/* <img src='/assets/vectors/Vector10.png' alt="image" className={styles.vectorImg10} /> */}
+                            <div className='AnimeStarts'>
+                                <h3 className='ulineRed AnimeElement'>Security at VIKAS MANTRA
+                                    PUBLIC SCHOOL</h3>
+                            </div>
 
-                            <h3 className='ulineRed'>Security at VIKAS MANTRA
-                                PUBLIC SCHOOL</h3>
-
-                            <p className='pt-5'>is maintained through a combination of trained and
-                                well-qualified security personnel who man various entry and exit points.
-                                Strategically located CCTV cameras at various points in the campus
-                                monitor and keep track of movement within the premises. Security measures
-                                such as fire alarms, fire extinguishers, key card access, etc. are
-                                installed as per government norms and follow best practice in security
-                                management. Entry of non-authorised personnel on the campus is strictly
-                                prohibited.
-                            </p>
+                            <div className='AnimeStarts'>
+                                <p className='pt-5 AnimeElement'>is maintained through a combination of trained and
+                                    well-qualified security personnel who man various entry and exit points.
+                                    Strategically located CCTV cameras at various points in the campus
+                                    monitor and keep track of movement within the premises. Security measures
+                                    such as fire alarms, fire extinguishers, key card access, etc. are
+                                    installed as per government norms and follow best practice in security
+                                    management. Entry of non-authorised personnel on the campus is strictly
+                                    prohibited.
+                                </p>
+                            </div>
 
                         </div>
 
                         <div className='col-md-6 position-relative'>
 
-                            <div className='imgBgColor imgUp pastelRed2 bgImageMargin'>
+                            <div className='imgBgColor imgUp pastelRed2 bgImageMargin AnimeStarts'>
 
-                                <img src='/assets/campus/security.png' alt="image" className={styles.securityImg} />
+                                <img src='/assets/campus/security.png' alt="image" className={styles.securityImg + ' AnimeElement'} />
 
                             </div>
 

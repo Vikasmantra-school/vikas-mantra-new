@@ -18,7 +18,9 @@ const MessageFromChairMan = () => {
 
                         <div className='col-md-6'>
 
-                            <h2 className='AnimeStarts'>Message from Our Chairman</h2>
+                            <div className='AnimeStarts'>
+                                <h2 className='AnimeElement'>Message from Our Chairman</h2>
+                            </div>
 
                         </div>
 
@@ -39,11 +41,12 @@ const MessageFromChairMan = () => {
 
                             <div className={styles.pdngRight}>
 
-                                
-                                    <h3 className='ulineRed AnimeStarts'>Dear stake holders,</h3>
+                                <div className='AnimeStarts'>
+                                    <h3 className='ulineRed AnimeElement'>Dear stake holders,</h3>
+                                </div>
 
-                               
-                                    <p className='pt-5 AnimeStarts'>Starting a school isn’t toughest job in today’s scenario, but
+                                <div className='AnimeStarts'>
+                                    <p className='pt-5 AnimeElement'>Starting a school isn’t toughest job in today’s scenario, but
                                         the biggest challenge is making it a successful one by providing
                                         holistic education and helping students to build strong character,
                                         excellent academic standards, develop intellectual curiosity,
@@ -55,10 +58,10 @@ const MessageFromChairMan = () => {
                                         to explore themselves in sports, co-curricular and performing
                                         art activities through experts from the respective fields.
                                     </p>
-                             
+                                </div>
 
-                             
-                                    <p className='AnimeStarts'>
+                                <div className='AnimeStarts'>
+                                    <p className='AnimeElement'>
                                         At VMPS we  believe in working in consensus with all the stakeholders
                                         i.e. parents, students and teachers  by providing a conducive teaching,
                                         learning environment and a complete involvement of the parents.
@@ -68,19 +71,19 @@ const MessageFromChairMan = () => {
                                         beyond school walls; hence teachers professional development is also
                                         our major focus and area of work.
                                     </p>
-                             
+                                </div>
 
-                                
-                                    <p className='AnimeStarts'>We look forward to all the  valuable suggestions incorporated into our system with the changing time and scenario for the development of the school from the parents and eminent educationists on  our advisory board. On behalf of the School Management we are thankful to you for entrusting the education of your children to us. We assure you that we will make all possible efforts to come up to your expectations.  It is promise that the school will achieve the higher goals set and make it a heaven for children!!</p>
-                                
+                                <div className='AnimeStarts'>
+                                    <p className='AnimeElement'>We look forward to all the  valuable suggestions incorporated into our system with the changing time and scenario for the development of the school from the parents and eminent educationists on  our advisory board. On behalf of the School Management we are thankful to you for entrusting the education of your children to us. We assure you that we will make all possible efforts to come up to your expectations.  It is promise that the school will achieve the higher goals set and make it a heaven for children!!</p>
+                                </div>
 
-                               
-                                    <p className='AnimeStarts'>Yours Sincerely,</p>
-                                
+                                <div className='AnimeStarts'>
+                                    <p className='AnimeElement'>Yours Sincerely,</p>
+                                </div>
 
-                              
-                                    <h4 className='AnimeStarts'>Dr. V. Shanmuga Prabu</h4>
-                             
+                                <div className='AnimeStarts'>
+                                    <h4 className='AnimeElement'>Dr. V. Shanmuga Prabu</h4>
+                                </div>
 
                             </div>
 
@@ -88,9 +91,9 @@ const MessageFromChairMan = () => {
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative  '>
 
-                            <div className='imgBgColor pastelBlue5 imgUp AnimeStarts2'>
+                            <div className='imgBgColor pastelBlue5 imgUp AnimeStarts'>
 
-                                <img src='/assets/banners/chairman.png' alt="image" className={styles.ChairmanImg + ' AnimeImage'} />
+                                <img src='/assets/banners/chairman.png' alt="image" className={styles.ChairmanImg + ' AnimeElement'} />
 
                             </div>
 
@@ -98,14 +101,11 @@ const MessageFromChairMan = () => {
 
                         </div>
 
-
                     </div>
 
                     <div className='row'>
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
-
-
                         </div>
 
                     </div>
