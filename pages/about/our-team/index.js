@@ -32,7 +32,7 @@ const OurTeam = () => {
 
                         <div className='col-md-12 position-relative'>
 
-                            <h2>Our Team</h2>
+                            <h2 className='AnimeStarts'>Our Team</h2>
 
                             <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} />
 
@@ -46,11 +46,13 @@ const OurTeam = () => {
 
                                     <div className={item.ImgContainer + ' ImgContainer'}>
 
-                                        <img src={item.staffImage} alt='image' className={styles.staffImg + ' img-fluid  '} />
+                                        <div className='AnimeStarts2'>
+                                            <img src={item.staffImage} alt='image' className={styles.staffImg + ' img-fluid AnimeImage'} />
+                                        </div>
 
-                                        <h6 className='pt-4 text-center fw-bold '>{item.heading}</h6>
+                                        <h6 className='pt-4 text-center fw-bold AnimeStarts '>{item.heading}</h6>
 
-                                        <p className='text-center pb-2'>{item.para}</p>
+                                        <p className='text-center pb-2 AnimeStarts'>{item.para}</p>
 
                                     </div>
 

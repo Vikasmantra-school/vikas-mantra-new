@@ -11,7 +11,7 @@ const Classrooms = () => {
       <section className='pt-4 '>
         <div className='container position-relative'>
           <div className='row py-5'>
-            <h2 className={styles.headingPdng}>Classrooms</h2>
+            <h2 className={styles.headingPdng + ' AnimeStarts'}>Classrooms</h2>
           </div>
         </div>
       </section>
@@ -27,11 +27,12 @@ const Classrooms = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 position-relative'>
-              <h3 className='ulineRed'>
+
+              <h3 className='ulineRed AnimeStarts'>
                 Spacious, vibrant, well-lit and contemporary
               </h3>
 
-              <p className='pt-5'>
+              <p className='pt-5 AnimeStarts'>
                 are some of the words that describe a typical classroom at VIKAS
                 MANTRA PUBLIC SCHOOL. Classrooms are designed to enable the
                 student to maximise his/her individual learning while at school.
@@ -45,7 +46,7 @@ const Classrooms = () => {
                 learning requirements.
               </p>
 
-              <p className='py-3'>
+              <p className='py-3 AnimeStarts'>
                 Apart from aesthetics, classrooms are designed to allow students
                 to express their personalities and emotions. The layout and
                 space planning is grade-appropriate and leaves room to
@@ -59,11 +60,11 @@ const Classrooms = () => {
 
             <div className='col-md-6 position-relative'>
 
-              <div className={styles.classroomImgDiv + ' imgBgColor imgUp pastelPurple '}>
+              <div className={styles.classroomImgDiv + ' imgBgColor imgUp pastelPurple AnimeStarts2'}>
                 <img
                   src='/assets/campus/classroom.png'
                   alt='image'
-                  className={styles.classroomImg}
+                  className={styles.classroomImg + ' AnimeImage'}
                 />
               </div>
 
@@ -76,36 +77,37 @@ const Classrooms = () => {
 
           <div className='row py-5'>
             <div className='col-md-12'>
-              <h3 className={'ulineRed ' + styles.ulineMargin}>About our classrooms</h3>
+              <h3 className={'ulineRed AnimeStarts ' + styles.ulineMargin}>About our classrooms</h3>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
               <ul className='list-points'>
-                <li> <img src="/assets/icons/blue-point.png" alt='list-point' /> Large (575 sq ft), well-ventilated and naturally-lit</li>
+                <li className='AnimeStarts'> <img src="/assets/icons/blue-point.png" alt='list-point' /> Large (575 sq ft), well-ventilated and naturally-lit</li>
               </ul>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
               <ul className='list-points'>
-                <li><img src="/assets/icons/pink-point.png" alt='list-point' /> Air-conditioned classrooms.</li>
+                <li className='AnimeStarts'><img src="/assets/icons/pink-point.png" alt='list-point' /> Air-conditioned classrooms.</li>
               </ul>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
               <ul className='list-points'>
-                <li><img src="/assets/icons/yellow-point.png" alt='list-point' />Student safe furniture</li>
+                <li className='AnimeStarts'><img src="/assets/icons/yellow-point.png" alt='list-point' />Student safe furniture</li>
               </ul>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
               <ul className='list-points'>
-                <li><img src="/assets/icons/lightgreen-point.png" alt='list-point' />Storage space for every student</li>
+                <li className='AnimeStarts'><img src="/assets/icons/lightgreen-point.png" alt='list-point' />Storage space for every student</li>
               </ul>
             </div>
 
             <div className={styles.pdngZero + ' col-md-3 pb-4'}>
               <ul className='list-points'>
-                <li><img src="/assets/icons/orange-point.png" alt='list-point' />
+                <li className='AnimeStarts'>
+                  <img src="/assets/icons/orange-point.png" alt='list-point' />
                   Racks, pegs and pigeon holes for students to organise activity
                   material
                 </li>
@@ -114,25 +116,25 @@ const Classrooms = () => {
 
             <div className='col-md-3'>
               <ul className='list-points'>
-                <li><img src="/assets/icons/darkblue-point.png" alt='list-point' />Wi-Fi-enabled</li>
+                <li className='AnimeStarts'><img src="/assets/icons/darkblue-point.png" alt='list-point' />Wi-Fi-enabled</li>
               </ul>
             </div>
 
             <div className='col-md-3'>
               <ul className='list-points'>
-                <li><img src="/assets/icons/red-point.png" alt='list-point' />Interactive boards</li>
+                <li className='AnimeStarts'><img src="/assets/icons/red-point.png" alt='list-point' />Interactive boards</li>
               </ul>
             </div>
 
             <div className='col-md-3'>
               <ul className='list-points'>
-                <li><img src="/assets/icons/lightblue.png" alt='list-point' />Reading corners to promote the habit of reading</li>
+                <li className='AnimeStarts'><img src="/assets/icons/lightblue.png" alt='list-point' />Reading corners to promote the habit of reading</li>
               </ul>
             </div>
 
             <div className='col-md-3'>
               <ul className='list-points'>
-                <li><img src="/assets/icons/green-point.png" alt='list-point' />
+                <li className='AnimeStarts'><img src="/assets/icons/green-point.png" alt='list-point' />
                   Mini libraries\ within classrooms with appropriate reading
                   material
                 </li>

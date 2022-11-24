@@ -1857,8 +1857,9 @@ tr {
 
 }
 
-
-
-.AnimeElement{
-  
+.target {
+  font-kerning: none;
+}
+.AnimeStarts{
+  font-kerning: none;
 }
