@@ -89,7 +89,7 @@ function Curriculum() {
                 <div className='mb-5 learningDivs AnimeStarts ' id={item.id} key={index}>
                   <h4 className='ulineRed AnimeElement'>{item.title}</h4>
                   {item.desc?.map((it, i) => (
-                    <p key={i} className={i === 0 ? 'pt-4 AnimeElement' : null}>
+                    <p key={i} className={i === 0 ? 'pt-4 AnimeElement' : 'AnimeElement' }>
                       {it}
                     </p>
                   ))}
