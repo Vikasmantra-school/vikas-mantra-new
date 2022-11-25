@@ -30,7 +30,11 @@ function Learning() {
         <div className='container'>
           <div className='row'>
             <div className='col-xl-5 col-lg-6 col-md-7 col-sm-12'>
-              <h2>Why VIKAS MANTRA PUBLIC SCHOOL</h2>
+
+              <div className='AnimeStarts'>
+                <h2 className='AnimeElement'>Why VIKAS MANTRA PUBLIC SCHOOL</h2>
+              </div>
+
             </div>
           </div>
         </div>
@@ -50,9 +54,9 @@ function Learning() {
           <div className='row'>
             <div className='col-md-6'>
               {learning.map((item, index) => (
-                <div className='mb-5 learningDivs' id={item.id} key={index}>
-                  <h4 className='ulineRed'>{item.title}</h4>
-                  <p className='pt-4'>{item.desc}</p>
+                <div className='mb-5 learningDivs AnimeStarts ' id={item.id} key={index}>
+                  <h4 className='ulineRed AnimeElement '>{item.title}</h4>
+                  <p className='pt-4 AnimeElement '>{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -60,11 +64,11 @@ function Learning() {
             <div
               className={'col-md-6 learningLogo' + ' ' + styles.vectorSpiral}
             >
-              <div className='imgUp imgBgColor pastelLightGreen'>
+              <div className='imgUp imgBgColor pastelLightGreen AnimeStarts'>
                 <img
                   src='/assets/banners/school-building.png'
                   alt='image'
-                  className='img-fluid'
+                  className='img-fluid AnimeElement'
                 />
               </div>
 
