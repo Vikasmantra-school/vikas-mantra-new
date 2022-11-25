@@ -244,7 +244,9 @@ function Home() {
 
           <div className={'row' + ' ' + 'vmpsslide'}>
             <div className='col-md-12'>
-              <Splide>
+              <Splide options={{
+                arrows: false
+              }}>
                 <SplideSlide>
                   <div className='row align-items-center bottomToTop'>
                     <div className='col-xl-4 col-lg-5 col-md-12 col-sm-12'>
@@ -255,17 +257,21 @@ function Home() {
                       </h4>
 
                       <p className='pt-4'>
-                      At Vikas Mantra Public School, we believe in making every child 
-                      grow up to become the best version of themselves. State-of-the-art 
-                      infrastructure, a vibrantly positive environment, experienced teaching
-                       faculty, and a multitude of activities and programs, are just a few of
-                        what we provide for the sole purpose of enabling children to develop 
-                        into self-aware, socially responsible, intellectually advanced and 
-                        strongly empathetic individuals. 
+                        At Vikas Mantra Public School, we believe in making every child
+                        grow up to become the best version of themselves. State-of-the-art
+                        infrastructure, a vibrantly positive environment, experienced teaching
+                        faculty, and a multitude of activities and programs, are just a few of
+                        what we provide for the sole purpose of enabling children to develop
+                        into self-aware, socially responsible, intellectually advanced and
+                        strongly empathetic individuals.
                       </p>
 
-                      <button className={'outlineBtn' + ' btn'}>
-                        Know More
+                      <button className='outlineBtn  btn'>
+                        <Link href='/about/blog'>
+                          <a>
+                            Know More
+                          </a>
+                        </Link>
                       </button>
                     </div>
 
