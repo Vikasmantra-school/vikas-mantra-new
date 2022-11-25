@@ -3,9 +3,39 @@ import { faCaretLeft } from '@fortawesome/free-solid-svg-icons'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import styles from './style.module.css'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import { gsap } from 'gsap'
+import { useEffect } from 'react'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+
 
 const Admissions = () => {
   const pageTitle = 'Admissions'
+
+
+  //gsap-integration
+
+  useEffect(() => {
+    const parentTrigger = document.querySelectorAll('.AdmissionAnimeStarts')
+    parentTrigger.forEach(drpDwnClick)
+    gsap.registerPlugin(ScrollTrigger)
+    function drpDwnClick(elem) {
+      let text = elem.querySelectorAll('.AdmissionAnimeElement')
+  
+      gsap.fromTo(
+        text,
+        {
+          opacity: 0,
+          x: -10,
+        },
+        {
+          x: 0,
+          duration: 0.5,
+          opacity: 1,
+          stagger: 0.2,
+        }
+      )
+    }
+  }, [drpDwnClick])
 
   return (
     <><style>
@@ -21,7 +51,11 @@ const Admissions = () => {
       <section className='pt-4 greybg'>
         <div className='container position-relative'>
           <div className='row py-5'>
-            <h2 className={styles.headingPdng}>Admissions</h2>
+
+            <div className='AdmissionAnimeStarts'>
+              <h2 className={styles.headingPdng + ' AdmissionAnimeElement'}>Admissions</h2>
+            </div>
+
           </div>
         </div>
       </section>
@@ -32,18 +66,21 @@ const Admissions = () => {
             <div className='col-md-12 col-lg-4'>
               {/* tab-menu-start */}
 
-              <div className={styles.tabWidth + ' nav flex-column nav-pills me-3 responsiveRow '}
+              <div className={styles.tabWidth + ' nav flex-column nav-pills me-3 responsiveRow AdmissionAnimeStarts '}
                 id='v-pills-tab'
                 role='tablist'
                 aria-orientation='vertical'>
-                <button className={ styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder1 + ' nav-link active text-start color-black position-relative' }
+
+                <button className={styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder1 + ' nav-link active text-start color-black position-relative AdmissionAnimeElement '}
                   id='v-pills-home-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-home'
                   type='button'
                   role='tab'
                   aria-controls='v-pills-home'
-                  aria-selected='true'>
+                  aria-selected='true'
+                  onClick={(elem) => drpDwnClick(elem)}
+                >
                   Admission Overview
                   <FontAwesomeIcon
                     icon={faCaretLeft}
@@ -51,14 +88,16 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button className={ styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder2 + ' nav-link text-start color-black position-relative' }
+                <button className={styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder2 + ' nav-link text-start color-black position-relative AdmissionAnimeElement '}
                   id='v-pills-profile-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-profile'
                   type='button'
                   role='tab'
                   aria-controls='v-pills-profile'
-                  aria-selected='false'>
+                  aria-selected='false'
+                  onClick={(elem) => drpDwnClick(elem)}
+                >
                   Admission Timeline
                   <FontAwesomeIcon
                     icon={faCaretLeft}
@@ -66,14 +105,16 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button className={ styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder3 + ' nav-link text-start color-black position-relative' }
+                <button className={styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder3 + ' nav-link text-start color-black position-relative AdmissionAnimeElement'}
                   id='v-pills-messages-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-messages'
                   type='button'
                   role='tab'
                   aria-controls='v-pills-messages'
-                  aria-selected='false'>
+                  aria-selected='false'
+                  onClick={(elem) => drpDwnClick(elem)}
+                >
                   Admission Procedure
                   <FontAwesomeIcon
                     icon={faCaretLeft}
@@ -81,14 +122,16 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button className={ styles.tabBtn + ' ' + styles.responsiveRedBorder4 + ' nav-link text-start color-black position-relative ' }
+                <button className={styles.tabBtn + ' ' + styles.responsiveRedBorder4 + ' nav-link text-start color-black position-relative AdmissionAnimeElement '}
                   id='v-pills-settings-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-settings'
                   type='button'
                   role='tab'
                   aria-controls='v-pills-settings'
-                  aria-selected='false'>
+                  aria-selected='false'
+                  onClick={(elem) => drpDwnClick(elem)}
+                >
                   FAQ
                   <FontAwesomeIcon
                     icon={faCaretLeft}
@@ -110,46 +153,53 @@ const Admissions = () => {
               <div className='row'>
                 <div className='col-lg-8 offset-lg-4 col-md-12 '>
 
-                  <div className={styles.schoolBuilding + ' imgUpAdmission1 imgBgColorAdmission1 pastelPurple3 '}>
+                  <div className={styles.schoolBuilding + ' imgUpAdmission1 imgBgColorAdmission1 pastelPurple3 AdmissionAnimeStarts '}>
                     <img
                       src='/assets/banners/school-building2.png'
                       alt='image'
-                      className={styles.schoolBuildingImg + ' img-fluid'}
+                      className={styles.schoolBuildingImg + ' img-fluid AdmissionAnimeElement '}
                     />
                   </div>
 
                 </div>
 
-                <div className={ styles.cardmargin1 + ' ' + ' col-lg-8 offset-lg-2 col-md-12 position-relative ' }>
+                <div className={styles.cardmargin1 + ' ' + ' col-lg-8 offset-lg-2 col-md-12 position-relative '}>
                   <div className={styles.card1 + ' card'}>
-                    <div className='card-body'>
-                      <h5 className='card-title ulineRed'>Admission</h5>
 
-                      <h6 className='card-text pt-5'>
-                        At VIKAS MANTRA PUBLIC SCHOOL, admissions are open
-                        for
-                        the academic year 2022-23 from classes Lower KG to
-                        Grade
-                        9. Each grade will have 3 divisions with class
-                        strength
-                        of no more than 30 students. At VMPS ,we aim to
-                        create a
-                        personalised education experience for each student
-                        and
-                        provide a platform to maximise each student’s
-                        learning
-                        and build on individual potential.
-                      </h6>
+                    <div className='card-body '>
 
-                      <ul className='pt-4 list-points '>
-                        <li className='pt-1'>
+                      <div className='AdmissionAnimeStarts'>
+                        <h5 className='card-title ulineRed AdmissionAnimeElement'>Admission</h5>
+                      </div>
+
+                      <div className='AdmissionAnimeStarts'>
+                        <h6 className='card-text pt-5 AdmissionAnimeElement'>
+                          At VIKAS MANTRA PUBLIC SCHOOL, admissions are open
+                          for
+                          the academic year 2022-23 from classes Lower KG to
+                          Grade
+                          9. Each grade will have 3 divisions with class
+                          strength
+                          of no more than 30 students. At VMPS ,we aim to
+                          create a
+                          personalised education experience for each student
+                          and
+                          provide a platform to maximise each student’s
+                          learning
+                          and build on individual potential.
+                        </h6>
+                      </div>
+
+
+                      <ul className='pt-4 list-points AdmissionAnimeStarts '>
+                        <li className='pt-1 AdmissionAnimeElement'>
                           <img src="/assets/icons/blue-point.png" alt='list-point' />
                           To find out more about admissions at VIKAS MANTRA
                           PUBLIC SCHOOL or to visit the school for an
                           admissions
                           tour
                         </li>
-                        <li className='pt-1'>
+                        <li className='pt-1 AdmissionAnimeElement'>
                           <img src="/assets/icons/pink-point.png" alt='list-point' />
                           Please contact the Admission Coordinator between
                           8.30
@@ -163,7 +213,7 @@ const Admissions = () => {
               </div>
             </div>
 
-            <div className={ ' tab-pane fade ' + ' ' + styles.vectorImg3 + ' ' + styles.vectorImg9 }
+            <div className={' tab-pane fade ' + ' ' + styles.vectorImg3 + ' ' + styles.vectorImg9}
               id='v-pills-profile'
               role='tabpanel'
               aria-labelledby='v-pills-profile-tab'
@@ -172,11 +222,11 @@ const Admissions = () => {
 
                 <div className={styles.Sec2PdngBtm + ' col-lg-8 offset-lg-4 col-md-12'}>
 
-                  <div className={' imgUpAdmission2 imgBgColorAdmission2 pastelBlue3'}>
+                  <div className={' imgUpAdmission2 imgBgColorAdmission2 pastelBlue3 AdmissionAnimeStarts'}>
                     <img
                       src='/assets/banners/school-building2.png'
                       alt='image'
-                      className={styles.schoolBuildingImg + ' img-fluid'}
+                      className={styles.schoolBuildingImg + ' img-fluid AdmissionAnimeElement '}
                     />
                   </div>
 
@@ -186,78 +236,69 @@ const Admissions = () => {
                   <div></div>
                 </div>
 
-                <div className={ styles.order3 + ' col-lg-6 col-md-12 py-5 dot-vector-before' + ' ' + styles.tab2RedDotVector }>
+                <div className={styles.order3 + ' col-lg-6 col-md-12 py-5 dot-vector-before' + ' ' + styles.tab2RedDotVector}>
                   <img
                     src='/assets/banners/student.png'
                     alt='image'
-                    className={styles.studentImg}
+                    className={styles.studentImg + ' AdmissionAnimeElement'}
                   />
                 </div>
 
-                <div
-                  className={
-                    styles.order2 + ' col-lg-5 col-md-12 py-5 position-relative '
-                  }>
+                <div className={styles.order2 + ' col-lg-5 col-md-12 py-5 position-relative '}>
                   <img
                     src='/assets/VMPS.png'
                     alt='image'
                     className={styles.Sec2vmpsImg}
                   />
-
-                  <h2 className='ulineRed'>
-                    Timelines and key milestones for the academic year
-                    2022-23
-                    VIKAS MANTRA PUBLIC SCHOOL admissions process
-                  </h2>
+                  <div className='AdmissionAnimeStarts'>
+                    <h2 className='ulineRed AdmissionAnimeElement'>
+                      Timelines and key milestones for the academic year
+                      2022-23
+                      VIKAS MANTRA PUBLIC SCHOOL admissions process
+                    </h2>
+                  </div>
 
                   <div className='pt-5'>
-                    <table
-                      className={
-                        ' table table-bordered ' + styles.tableContainer
-                      }>
+                    <table className={' table table-bordered ' + styles.tableContainer}>
                       <tbody className={styles.tableBody}>
-                        <tr className={styles.tableTr}>
-                          <td>Admissions Open</td>
-                          <td>15th October 2021</td>
+                        <tr className={styles.tableTr + ' AdmissionAnimeStarts'}>
+                          <td className='AdmissionAnimeElement'>Admissions Open</td>
+                          <td className='AdmissionAnimeElement'>15th October 2021</td>
                         </tr>
 
-                        <tr>
-                          <td>Application forms available from</td>
-                          <td>15th October 2021</td>
+                        <tr className='AdmissionAnimeStarts'>
+                          <td className='AdmissionAnimeElement'>Application forms available from</td>
+                          <td className='AdmissionAnimeElement'>15th October 2021</td>
                         </tr>
 
-                        <tr>
-                          <td>Rolling-admissions start date</td>
-                          <td>15th October 2021</td>
+                        <tr className='AdmissionAnimeStarts'>
+                          <td className='AdmissionAnimeElement'>Rolling-admissions start date</td>
+                          <td className='AdmissionAnimeElement'>15th October 2021</td>
                         </tr>
 
-                        <tr>
-                          <td>Admissions open till</td>
-                          <td>30th June 2022</td>
+                        <tr className='AdmissionAnimeStarts'>
+                          <td className='AdmissionAnimeElement'>Admissions open till</td>
+                          <td className='AdmissionAnimeElement'>30th June 2022</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
 
-                  <p className=' pt-3'>
-                    Please note that Admissions for the new academic year
-                    2022-23 at VIKAS MANTRA PUBLIC SCHOOL will commence from
-                    23rd November 2021 and the admissions will for this
-                    academic
-                    year will be closed on 30th June 2022.
-                  </p>
+                  <div className='AdmissionAnimeStarts'>
+                    <p className=' pt-3 AdmissionAnimeElement'>
+                      Please note that Admissions for the new academic year
+                      2022-23 at VIKAS MANTRA PUBLIC SCHOOL will commence from
+                      23rd November 2021 and the admissions will for this
+                      academic
+                      year will be closed on 30th June 2022.
+                    </p>
+                  </div>
+
                 </div>
               </div>
             </div>
 
-            <div
-              className={
-                ' tab-pane fade ' +
-                ' ' +
-                styles.vectorImg3Tab3 +
-                ' ' +
-                styles.vectorImg6
-              }
+            <div className={' tab-pane fade ' + ' ' + styles.vectorImg3Tab3 + ' ' + styles.vectorImg6}
               id='v-pills-messages'
               role='tabpanel'
               aria-labelledby='v-pills-messages-tab'
@@ -265,38 +306,41 @@ const Admissions = () => {
               <div className={'row ' + styles.MobTextNone}>
                 <div className=' col-lg-8 offset-lg-4 col-md-12'>
 
-                  <div className='imgUpAdmission2 imgBgColorAdmission2 pastelGold1 '>
+                  <div className='imgUpAdmission2 imgBgColorAdmission2 pastelGold1 AdmissionAnimeStarts '>
                     <img
                       src='/assets/banners/school-building2.png'
                       alt='image'
-                      className={styles.schoolBuildingImg}
+                      className={styles.schoolBuildingImg + ' AdmissionAnimeElement'}
                     />
                   </div>
                 </div>
 
-                <div className={ styles.cardmargin3 + ' col-md-12 col-lg-8 offset-lg-2 position-relative ' + ' ' + styles.tab3VectorSpiralBlue }>
+                <div className={styles.cardmargin3 + ' col-md-12 col-lg-8 offset-lg-2 position-relative ' + ' ' + styles.tab3VectorSpiralBlue}>
                   <div className={styles.card2 + ' card'}>
                     <div className='card-body'>
-                      <h5 className='card-title ulineRed'>
-                        Eligibility Criteria for all classes
-                      </h5>
 
-                      <ul className='pt-5 list-points'>
-                        <li className='pt-1'>
-                          <img src="/assets/icons/blue-point.png" alt='list-point' />
+                      <div className='AdmissionAnimeStarts'>
+                        <h5 className='card-title ulineRed AdmissionAnimeElement '>
+                          Eligibility Criteria for all classes
+                        </h5>
+                      </div>
+
+                      <ul className='pt-5 list-points AdmissionAnimeStarts'>
+                        <li className='pt-1 AdmissionAnimeElement'>
+                          <img src="/assets/icons/blue-point.png" alt='list-point' className='' />
                           Kindergarten – To be eligible for admission, the
                           child
                           must fall into the following age category as
                           prescribed and suggested by the central board of
                           secondary education.
                         </li>
-                        <li className='pt-1'>
+                        <li className='pt-1 AdmissionAnimeElement'>
                           <img src="/assets/icons/pink-point.png" alt='list-point' />
                           For Junior KG the child must have completed 3. 5
                           years
                           as on 30th June.
                         </li>
-                        <li className='pt-1'>
+                        <li className='pt-1 AdmissionAnimeElement'>
                           <img src="/assets/icons/yellow-point.png" alt='list-point' />
                           For Senior KG the child must have completed 4.5
                           years
@@ -308,7 +352,11 @@ const Admissions = () => {
                 </div>
 
                 <div className='col-md-6 mt-5 '>
-                  <h2 className='ulineRed'>Admissions Procedure</h2>
+
+                  <div className='AdmissionAnimeStarts'>
+                    <h2 className='ulineRed AdmissionAnimeElement'>Admissions Procedure</h2>
+                  </div>
+
                 </div>
 
                 <div className='col-md-6'>
@@ -319,23 +367,30 @@ const Admissions = () => {
                   <div className='col-lg-4 col-md-6 col-sm-12 '>
                     <div className='card-wrapper one'>
                       <div className='card-header'>
-                        <h1 className='card-header-text2'>
-                          Obtain Admissions Kit
-                        </h1>
-                        <p className='card-header-text3'>
-                          Visit the school , meet our admissions officer.
-                          Take a
-                          tour of the school. Obtain the Admissions Kit from
-                          the
-                          Admissions Office for Rs.600, payable by cash or
-                          card.
-                        </p>
+
+                        <div className='AdmissionAnimeStarts'>
+                          <h1 className='card-header-text2 AdmissionAnimeElement'>
+                            Obtain Admissions Kit
+                          </h1>
+                        </div>
+
+                        <div className='AdmissionAnimeStarts'>
+                          <p className='card-header-text3 AdmissionAnimeElement'>
+                            Visit the school , meet our admissions officer.
+                            Take a
+                            tour of the school. Obtain the Admissions Kit from
+                            the
+                            Admissions Office for Rs.600, payable by cash or
+                            card.
+                          </p>
+                        </div>
+
                       </div>
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
-                          <div className='footer-text-wrap'>
-                            <h1>01</h1>
-                            <p>step</p>
+                          <div className='footer-text-wrap AdmissionAnimeStarts'>
+                            <h1 className='AdmissionAnimeElement'>01</h1>
+                            <p className='AdmissionAnimeElement'>step</p>
                           </div>
 
                           <FontAwesomeIcon
@@ -349,11 +404,11 @@ const Admissions = () => {
 
                   <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper two'>
-                      <div className='card-header'>
-                        <h1 className='card-header-text2'>
+                      <div className='card-header AdmissionAnimeStarts'>
+                        <h1 className='card-header-text2 AdmissionAnimeElement'>
                           Submit Application
                         </h1>
-                        <p className='card-header-text3'>
+                        <p className='card-header-text3 AdmissionAnimeElement'>
                           Submit the completed Application Form and all
                           supporting documents as per instructions and
                           wait to
@@ -362,9 +417,9 @@ const Admissions = () => {
                       </div>
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
-                          <div className='footer-text-wrap'>
-                            <h1>02</h1>
-                            <p>step</p>
+                          <div className='footer-text-wrap AdmissionAnimeStarts'>
+                            <h1 className='AdmissionAnimeElement'>02</h1>
+                            <p className='AdmissionAnimeElement'>step</p>
                           </div>
                           <FontAwesomeIcon
                             icon={faAnglesRight}
@@ -378,10 +433,10 @@ const Admissions = () => {
                   <div className='col-lg-4 col-md-6 col-sm-12'>
 
                     <div className="card-wrapper one">
-                      <div className="card-header">
-                        <h1 className="card-header-text2">Interaction
+                      <div className="card-header AdmissionAnimeStarts">
+                        <h1 className="card-header-text2 AdmissionAnimeElement">Interaction
                           and Interview</h1>
-                        <p className="card-header-text3">
+                        <p className="card-header-text3 AdmissionAnimeElement">
                           Diagnostic tests in Math & Science and Tests
                           of fluency in
                           English will be conducted for students
@@ -390,13 +445,14 @@ const Admissions = () => {
                           understand their
                           skills. For Kindergarten classes, interactions
                           will be held for
-                          both children and parents.</p>
+                          both children and parents.
+                        </p>
                       </div>
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
-                          <div className='footer-text-wrap'>
-                            <h1>03</h1>
-                            <p>step</p>
+                          <div className='footer-text-wrap AdmissionAnimeStarts'>
+                            <h1 className='AdmissionAnimeElement'>03</h1>
+                            <p className='AdmissionAnimeElement'>step</p>
                           </div>
                           <FontAwesomeIcon
                             icon={faAnglesRight}
@@ -409,10 +465,10 @@ const Admissions = () => {
 
                   <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper two'>
-                      <div className='card-header'>
-                        <h1 className='card-header-text2'>Admission
+                      <div className='card-header AdmissionAnimeStarts'>
+                        <h1 className='card-header-text2 AdmissionAnimeElement'>Admission
                           Results</h1>
-                        <p className='card-header-text3'>
+                        <p className='card-header-text3 AdmissionAnimeElement'>
                           Admissions results emailed within 5 working
                           days.
                           After which parents can pay the fees within
@@ -422,9 +478,9 @@ const Admissions = () => {
                       </div>
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
-                          <div className='footer-text-wrap'>
-                            <h1>04</h1>
-                            <p>step</p>
+                          <div className='footer-text-wrap AdmissionAnimeStarts'>
+                            <h1 className='AdmissionAnimeElement'>04</h1>
+                            <p className='AdmissionAnimeElement'>step</p>
                           </div>
                           <FontAwesomeIcon
                             icon={faAnglesRight}
@@ -437,10 +493,10 @@ const Admissions = () => {
 
                   <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper one'>
-                      <div className='card-header'>
-                        <h1 className='card-header-text2'>Admission
+                      <div className='card-header AdmissionAnimeStarts'>
+                        <h1 className='card-header-text2 AdmissionAnimeElement'>Admission
                           Fee</h1>
-                        <p className='card-header-text3'>
+                        <p className='card-header-text3 AdmissionAnimeElement'>
                           Upon receipt of Confirmation Letter,
                           payment of a
                           one-time non-refundable Admission Fee*
@@ -452,9 +508,9 @@ const Admissions = () => {
                       </div>
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
-                          <div className='footer-text-wrap'>
-                            <h1>05</h1>
-                            <p>step</p>
+                          <div className='footer-text-wrap AdmissionAnimeStarts'>
+                            <h1 className='AdmissionAnimeElement'>05</h1>
+                            <p className='AdmissionAnimeElement'>step</p>
                           </div>
                           <FontAwesomeIcon
                             icon={faAnglesRight}
