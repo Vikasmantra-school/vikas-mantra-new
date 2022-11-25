@@ -6,6 +6,7 @@ export const timeline = () => {
       let sectionTop = elem.getBoundingClientRect().top
       let timelineContent = elem.getAttribute('id')
       let timelineId = document.getElementById(timelineContent + '-li')
+      console.log(timelineId)
 
       if (timelineId.previousElementSibling != null && sectionTop < 60) {
         timelineId.previousElementSibling.children[0].classList.add('green')

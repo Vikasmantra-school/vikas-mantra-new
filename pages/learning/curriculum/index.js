@@ -97,7 +97,6 @@ function Curriculum() {
                     <Link href='#vikas-mantra' legacyBehavior>
                       <a className='aTag'>
                         <p className='AnimeElement'>
-                          {' '}
                           The VIKAS MANTRA PUBLIC SCHOOL
                         </p>
                       </a>
