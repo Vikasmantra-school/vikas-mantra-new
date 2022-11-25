@@ -34,7 +34,7 @@ const MobileNav = () => {
       <div id='mobMenu' className='mob-menu mob-menu-hdden'>
         <ul className='nav'>
           <li className='nav__item'>
-            <Link href='/home' legacyBehavior>
+            <Link href='/' legacyBehavior>
               <a className='nav__link' aria-current='page'>
                 Home
               </a>
