@@ -20,7 +20,7 @@ function Learning() {
 
   useEffect(() => {
     timeline()
-  }, [timeline])
+  }, [])
 
   return (
     <>
@@ -30,11 +30,9 @@ function Learning() {
         <div className='container'>
           <div className='row'>
             <div className='col-xl-5 col-lg-6 col-md-7 col-sm-12'>
-
               <div className='AnimeStarts'>
                 <h2 className='AnimeElement'>Why VIKAS MANTRA PUBLIC SCHOOL</h2>
               </div>
-
             </div>
           </div>
         </div>
@@ -54,7 +52,11 @@ function Learning() {
           <div className='row'>
             <div className='col-md-6'>
               {learning.map((item, index) => (
-                <div className='mb-5 learningDivs AnimeStarts ' id={item.id} key={index}>
+                <div
+                  className='mb-5 learningDivs AnimeStarts '
+                  id={item.id}
+                  key={index}
+                >
                   <h4 className='ulineRed AnimeElement '>{item.title}</h4>
                   <p className='pt-4 AnimeElement '>{item.desc}</p>
                 </div>

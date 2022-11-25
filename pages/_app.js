@@ -6,11 +6,8 @@ import Footer from '../components/Footer/Footer'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
-
 function MyApp({ Component, pageProps }) {
-
   function Anime() {
-
     // const text = new SplitType('.AnimeStarts', { types: 'lines' })
 
     // //store splitted lines in const line
@@ -32,7 +29,7 @@ function MyApp({ Component, pageProps }) {
         text,
         {
           autoAlpha: 0,
-          y: 50
+          y: 50,
         },
         {
           delay: 0.5,
@@ -44,7 +41,7 @@ function MyApp({ Component, pageProps }) {
             animation: text,
             toggleActions: 'play none none none',
             once: true,
-          }
+          },
         }
       )
     }
@@ -83,10 +80,8 @@ function MyApp({ Component, pageProps }) {
     Anime()
 
     import('../node_modules/bootstrap/dist/js/bootstrap')
-  }, [Anime])
+  }, [])
   gsap.registerPlugin(ScrollTrigger)
-
-
 
   return (
     <>
