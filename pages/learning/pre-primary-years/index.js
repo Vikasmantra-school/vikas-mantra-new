@@ -198,7 +198,22 @@ function PrePrimary() {
                 </div>
               </div>
               <div className='mb-5 learningDivs' id='why-us'>
-                <button className='outlineBtn btn'>Know More</button>
+                <div className='AnimeStarts'>
+                  <h4 className='ulineRed AnimeElement'>WHY CHOOSE  VIKAS MANTRA?</h4>
+                </div>
+                <div className='AnimeStarts'>
+                  <p className='pt-4 AnimeElement'>
+                    
+                    Vikas Mantra Public School is established with a vision to prepare and equip each child with the necessary survival skills in the 21st century through rigorous academic and technological skills.
+                  
+                  </p>
+                </div>
+
+                <button className='outlineBtn btn'>
+                  <Link href='/learning'>
+                    <a>Know More</a>
+                  </Link>
+                </button>
               </div>
             </div>
 
@@ -213,14 +228,14 @@ function PrePrimary() {
 
               <div
                 className={
-                  'sticky-sidebar VectorSpiralBlue' + ' AnimeStarts ' + 'pt60'
+                  'sticky-sidebar VectorSpiralBlue' + '  ' + 'pt60'
                 }
               >
                 <ul id='progress'>
                   <li id='happy-tots-li' className={'node' + ' ' + 'green'}>
                     <Link href='#happy-tots' legacyBehavior>
                       <a>
-                        <p className='AnimeElement'> Happy Tots</p>
+                        <p className=''> Happy Tots</p>
                       </a>
                     </Link>
                   </li>
@@ -231,11 +246,11 @@ function PrePrimary() {
 
                   <li
                     id='our-approach-li'
-                    className={'node' + ' AnimeStarts ' + 'grey'}
+                    className={'node' + '  ' + 'grey'}
                   >
                     <Link legacyBehavior href='#our-approach'>
                       <a onClick={(e) => progressClick(e)}>
-                        <p className='AnimeElement'>Our Approach</p>
+                        <p className=''>Our Approach</p>
                       </a>
                     </Link>
                   </li>
@@ -246,11 +261,11 @@ function PrePrimary() {
 
                   <li
                     id='programs-li'
-                    className={'node' + ' AnimeStarts ' + 'grey'}
+                    className={'node' + '  ' + 'grey'}
                   >
                     <Link legacyBehavior href='#programs'>
                       <a onClick={(e) => progressClick(e)}>
-                        <p className='AnimeElement'>Programs</p>
+                        <p className=''>Programs</p>
                       </a>
                     </Link>
                   </li>
@@ -260,11 +275,11 @@ function PrePrimary() {
 
                   <li
                     id='why-us-li'
-                    className={'node' + ' AnimeStarts ' + 'grey'}
+                    className={'node' + '  ' + 'grey'}
                   >
                     <Link legacyBehavior href='#why-us'>
                       <a onClick={(e) => progressClick(e)}>
-                        <p className='AnimeElement'>Why Choose Vikas Mantra</p>
+                        <p className=''>Why Choose Vikas Mantra</p>
                       </a>
                     </Link>
                   </li>
