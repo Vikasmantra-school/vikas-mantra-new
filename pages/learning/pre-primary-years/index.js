@@ -17,7 +17,7 @@ function PrePrimary() {
 
   useEffect(() => {
     timeline()
-  }, [timeline])
+  }, [])
 
   return (
     <>
@@ -27,11 +27,9 @@ function PrePrimary() {
         <div className='container'>
           <div className='row'>
             <div className='col-md-5'>
-
               <div className='AnimeStarts'>
                 <h2 className='AnimeElement'>Pre-Primary Years</h2>
               </div>
-
             </div>
           </div>
         </div>
@@ -51,7 +49,6 @@ function PrePrimary() {
           <div className='row'>
             <div className='col-md-6'>
               <div className='mb-5 learningDivs' id='happy-tots'>
-
                 <div className='AnimeStarts'>
                   <h4 className='ulineRed AnimeElement'>Happy Tots</h4>
                 </div>
@@ -74,10 +71,11 @@ function PrePrimary() {
                 <div className='AnimeStarts'>
                   <p className='AnimeElement'>
                     The findings from these streams of research helped us to
-                    Arrive at the 5 core skill areas i.e., SPICE and also provided
-                    an insight into the foremost fundamentals of a high quality
-                    early childhood education programmes, which encompasses the
-                    primary fundamentals of a top-notch kindergarten programme.
+                    Arrive at the 5 core skill areas i.e., SPICE and also
+                    provided an insight into the foremost fundamentals of a high
+                    quality early childhood education programmes, which
+                    encompasses the primary fundamentals of a top-notch
+                    kindergarten programme.
                   </p>
                 </div>
 
@@ -129,22 +127,22 @@ function PrePrimary() {
                 </ul>
               </div>
               <div className='mb-5 learningDivs' id='our-approach'>
-
                 <div className='AnimeStarts'>
                   <h4 className='ulineRed AnimeElement'>Our Approach</h4>
                 </div>
 
                 <div className='AnimeStarts'>
                   <p className='pt-4 AnimeElement'>
-                    Vikas Mantra Public School follows the futuristic Early Years
-                    Curriculum “ Happy Tots’ in the KG classes. “ Happy Tots” is
-                    one of the pioneering curriculum for the Kindergarteners
-                    focusing on the development of the five vital skills Social,
-                    Physical, Intellectual, Creative and Emotional ( SPICE)
-                    amongst children in their early years. It is a unique
-                    curriculum exclusively designed for children in the age group
-                    2-5 years to enhance their whole brain development by Dr. K R
-                    Maalathi, one of the senior educators in India.
+                    Vikas Mantra Public School follows the futuristic Early
+                    Years Curriculum “ Happy Tots’ in the KG classes. “ Happy
+                    Tots” is one of the pioneering curriculum for the
+                    Kindergarteners focusing on the development of the five
+                    vital skills Social, Physical, Intellectual, Creative and
+                    Emotional ( SPICE) amongst children in their early years. It
+                    is a unique curriculum exclusively designed for children in
+                    the age group 2-5 years to enhance their whole brain
+                    development by Dr. K R Maalathi, one of the senior educators
+                    in India.
                   </p>
                 </div>
 
@@ -155,11 +153,9 @@ function PrePrimary() {
                     className='img-fluid mt-4 AnimeElement'
                   />
                 </div>
-
               </div>
 
               <div className='mb-5 learningDivs' id='programs'>
-
                 <div className='AnimeStarts'>
                   <h4 className='ulineRed AnimeElement'>Programs</h4>
                 </div>
@@ -172,7 +168,6 @@ function PrePrimary() {
                     </b>
                   </p>
                 </div>
-
 
                 <div className='AnimeStarts'>
                   <p className='pt-4 AnimeElement'>
@@ -192,19 +187,17 @@ function PrePrimary() {
                     The core principles of “Happy Tots “begin with the simple
                     truth that each child has a unique and individual nature,
                     worthy of respect, nurture and celebration. “ Happy Tots
-                    “believe that children are natural learners who gain knowledge
-                    by doing and communicating – that is why we always plan active
-                    and engaging experiences for your children . It is the goal of
-                    Happy Tots to facilitate experiences that promote children’s
-                    natural curiosity to actively learn, while creating an
-                    environment that allows children to grown and develop at their
-                    own pace.
+                    “believe that children are natural learners who gain
+                    knowledge by doing and communicating – that is why we always
+                    plan active and engaging experiences for your children . It
+                    is the goal of Happy Tots to facilitate experiences that
+                    promote children’s natural curiosity to actively learn,
+                    while creating an environment that allows children to grown
+                    and develop at their own pace.
                   </p>
                 </div>
-
               </div>
               <div className='mb-5 learningDivs' id='why-us'>
-
                 <button className='outlineBtn btn'>Know More</button>
               </div>
             </div>
@@ -217,8 +210,12 @@ function PrePrimary() {
                   className='img-fluid AnimeElement'
                 />
               </div>
-               
-              <div className={'sticky-sidebar VectorSpiralBlue' + ' AnimeStarts ' + 'pt60'}>
+
+              <div
+                className={
+                  'sticky-sidebar VectorSpiralBlue' + ' AnimeStarts ' + 'pt60'
+                }
+              >
                 <ul id='progress'>
                   <li id='happy-tots-li' className={'node' + ' ' + 'green'}>
                     <Link href='#happy-tots' legacyBehavior>
@@ -232,7 +229,10 @@ function PrePrimary() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <li id='our-approach-li' className={'node' + ' AnimeStarts ' + 'grey'}>
+                  <li
+                    id='our-approach-li'
+                    className={'node' + ' AnimeStarts ' + 'grey'}
+                  >
                     <Link legacyBehavior href='#our-approach'>
                       <a onClick={(e) => progressClick(e)}>
                         <p className='AnimeElement'>Our Approach</p>
@@ -244,7 +244,10 @@ function PrePrimary() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <li id='programs-li' className={'node' + ' AnimeStarts ' + 'grey'}>
+                  <li
+                    id='programs-li'
+                    className={'node' + ' AnimeStarts ' + 'grey'}
+                  >
                     <Link legacyBehavior href='#programs'>
                       <a onClick={(e) => progressClick(e)}>
                         <p className='AnimeElement'>Programs</p>
@@ -255,7 +258,10 @@ function PrePrimary() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <li id='why-us-li' className={'node' + ' AnimeStarts ' + 'grey'}>
+                  <li
+                    id='why-us-li'
+                    className={'node' + ' AnimeStarts ' + 'grey'}
+                  >
                     <Link legacyBehavior href='#why-us'>
                       <a onClick={(e) => progressClick(e)}>
                         <p className='AnimeElement'>Why Choose Vikas Mantra</p>
