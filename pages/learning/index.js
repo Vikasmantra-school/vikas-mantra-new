@@ -20,7 +20,7 @@ function Learning() {
 
   useEffect(() => {
     timeline()
-  }, [])
+  }, [timeline])
 
   return (
     <>

@@ -19,7 +19,7 @@ function Curriculum() {
 
   useEffect(() => {
     timeline()
-  }, [])
+  }, [timeline])
 
   return (
     <>

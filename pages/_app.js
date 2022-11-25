@@ -80,7 +80,7 @@ function MyApp({ Component, pageProps }) {
     Anime()
 
     import('../node_modules/bootstrap/dist/js/bootstrap')
-  }, [])
+  }, [Anime])
   gsap.registerPlugin(ScrollTrigger)
 
   return (

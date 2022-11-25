@@ -9,7 +9,7 @@ function CurriculumFrameWork() {
 
   useEffect(() => {
     timeline()
-  }, [])
+  }, [timeline])
   return (
     <>
       <Breadcrumb pageName={pageTitle} />
