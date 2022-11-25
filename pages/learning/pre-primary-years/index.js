@@ -49,7 +49,11 @@ function PrePrimary() {
         <div className='container'>
           <div className='row'>
             <div className='col-md-5'>
-              <h2>Pre-Primary Years</h2>
+
+              <div className='AnimeStarts'>
+                <h2 className='AnimeElement'>Pre-Primary Years</h2>
+              </div>
+
             </div>
           </div>
         </div>
@@ -69,55 +73,67 @@ function PrePrimary() {
           <div className='row'>
             <div className='col-md-6'>
               <div className='mb-5 learningDivs' id='happy-tots'>
-                <h4 className='ulineRed'>Happy Tots</h4>
-                <p className='pt-4'>
-                  formulated the approach of SPICE, which a child must wholly
-                  foster during the kindergarten years.
-                </p>
 
-                <p>
-                  We help the children develop their critical thinking skills
-                  and intellectual curiosity that fuels success in their
-                  kindergarten classrooms and beyond.
-                </p>
+                <div className='AnimeStarts'>
+                  <h4 className='ulineRed AnimeElement'>Happy Tots</h4>
+                </div>
 
-                <p>
-                  The findings from these streams of research helped us to
-                  Arrive at the 5 core skill areas i.e., SPICE and also provided
-                  an insight into the foremost fundamentals of a high quality
-                  early childhood education programmes, which encompasses the
-                  primary fundamentals of a top-notch kindergarten programme.
-                </p>
+                <div className='AnimeStarts'>
+                  <p className='pt-4 AnimeElement'>
+                    formulated the approach of SPICE, which a child must wholly
+                    foster during the kindergarten years.
+                  </p>
+                </div>
 
-                <p>
-                  The program has been designed to address the following areas
-                  of:
-                </p>
+                <div className='AnimeStarts'>
+                  <p className='AnimeElement'>
+                    We help the children develop their critical thinking skills
+                    and intellectual curiosity that fuels success in their
+                    kindergarten classrooms and beyond.
+                  </p>
+                </div>
 
-                <ul className='list-points'>
-                  <li>
+                <div className='AnimeStarts'>
+                  <p className='AnimeElement'>
+                    The findings from these streams of research helped us to
+                    Arrive at the 5 core skill areas i.e., SPICE and also provided
+                    an insight into the foremost fundamentals of a high quality
+                    early childhood education programmes, which encompasses the
+                    primary fundamentals of a top-notch kindergarten programme.
+                  </p>
+                </div>
+
+                <div className='AnimeStarts'>
+                  <p className='AnimeElement'>
+                    The program has been designed to address the following areas
+                    of:
+                  </p>
+                </div>
+
+                <ul className='list-points AnimeStarts'>
+                  <li className='AnimeElement'>
                     <img src='/assets/icons/blue-point.png' alt='list-point' />{' '}
                     Developmentally appropriate curriculum
                   </li>
-                  <li>
+                  <li className='AnimeElement'>
                     <img src='/assets/icons/pink-point.png' alt='list-point' />{' '}
                     Innovative and dynamic teaching styles
                   </li>
-                  <li>
+                  <li className='AnimeElement'>
                     <img
                       src='/assets/icons/yellow-point.png'
                       alt='list-point'
                     />{' '}
                     Brain friendly learning modules
                   </li>
-                  <li>
+                  <li className='AnimeElement'>
                     <img
                       src='/assets/icons/lightgreen-point.png'
                       alt='list-point'
                     />{' '}
                     Tangible learning outcomes
                   </li>
-                  <li>
+                  <li className='AnimeElement'>
                     <img
                       src='/assets/icons/orange-point.png'
                       alt='list-point'
@@ -125,7 +141,7 @@ function PrePrimary() {
                     Creative and intellectual curiosity stimulated by suitable
                     learning environment
                   </li>
-                  <li>
+                  <li className='AnimeElement'>
                     <img
                       src='/assets/icons/darkblue-point.png'
                       alt='list-point'
@@ -135,85 +151,116 @@ function PrePrimary() {
                 </ul>
               </div>
               <div className='mb-5 learningDivs' id='our-approach'>
-                <h4 className='ulineRed'>Our Approach</h4>
-                <p className='pt-4'>
-                  Vikas Mantra Public School follows the futuristic Early Years
-                  Curriculum “ Happy Tots’ in the KG classes. “ Happy Tots” is
-                  one of the pioneering curriculum for the Kindergarteners
-                  focusing on the development of the five vital skills Social,
-                  Physical, Intellectual, Creative and Emotional ( SPICE)
-                  amongst children in their early years. It is a unique
-                  curriculum exclusively designed for children in the age group
-                  2-5 years to enhance their whole brain development by Dr. K R
-                  Maalathi, one of the senior educators in India.
-                </p>
 
-                <img
-                  src='/assets/learning/spice-banner.jpg'
-                  alt=''
-                  className='img-fluid mt-4'
-                />
+                <div className='AnimeStarts'>
+                  <h4 className='ulineRed AnimeElement'>Our Approach</h4>
+                </div>
+
+                <div className='AnimeStarts'>
+                  <p className='pt-4 AnimeElement'>
+                    Vikas Mantra Public School follows the futuristic Early Years
+                    Curriculum “ Happy Tots’ in the KG classes. “ Happy Tots” is
+                    one of the pioneering curriculum for the Kindergarteners
+                    focusing on the development of the five vital skills Social,
+                    Physical, Intellectual, Creative and Emotional ( SPICE)
+                    amongst children in their early years. It is a unique
+                    curriculum exclusively designed for children in the age group
+                    2-5 years to enhance their whole brain development by Dr. K R
+                    Maalathi, one of the senior educators in India.
+                  </p>
+                </div>
+
+                <div className='AnimeStarts'>
+                  <img
+                    src='/assets/learning/spice-banner.jpg'
+                    alt=''
+                    className='img-fluid mt-4 AnimeElement'
+                  />
+                </div>
+
               </div>
+
               <div className='mb-5 learningDivs' id='programs'>
-                <h4 className='ulineRed'>Programs</h4>
-                <p className='pt-4'>
-                  <b>
-                    “Happy Tots Curriculum Prepares Children for Lifelong
-                    /learning!”
-                  </b>
-                </p>
 
-                <p className='pt-4'>
-                  Happy Tots offers a well-structured curriculum for all three
-                  levels of Kindergarten: Preschool, Junior and Senior
-                  kindergarten. The program engages children in exciting
-                  learning activities specifically designed to meet the
-                  developmental needs and help them advance to the next level.
-                  The curriculum emphasizes language and literacy, cognitive
-                  development, social-emotional skills, physical activity and
-                  creativity.
-                </p>
+                <div className='AnimeStarts'>
+                  <h4 className='ulineRed AnimeElement'>Programs</h4>
+                </div>
 
-                <p>
-                  The core principles of “Happy Tots “begin with the simple
-                  truth that each child has a unique and individual nature,
-                  worthy of respect, nurture and celebration. “ Happy Tots
-                  “believe that children are natural learners who gain knowledge
-                  by doing and communicating – that is why we always plan active
-                  and engaging experiences for your children . It is the goal of
-                  Happy Tots to facilitate experiences that promote children’s
-                  natural curiosity to actively learn, while creating an
-                  environment that allows children to grown and develop at their
-                  own pace.
-                </p>
+                <div className='AnimeStarts'>
+                  <p className='pt-4 AnimeElement'>
+                    <b>
+                      “Happy Tots Curriculum Prepares Children for Lifelong
+                      /learning!”
+                    </b>
+                  </p>
+                </div>
+
+
+                <div className='AnimeStarts'>
+                  <p className='pt-4 AnimeElement'>
+                    Happy Tots offers a well-structured curriculum for all three
+                    levels of Kindergarten: Preschool, Junior and Senior
+                    kindergarten. The program engages children in exciting
+                    learning activities specifically designed to meet the
+                    developmental needs and help them advance to the next level.
+                    The curriculum emphasizes language and literacy, cognitive
+                    development, social-emotional skills, physical activity and
+                    creativity.
+                  </p>
+                </div>
+
+                <div className='AnimeStarts'>
+                  <p className='AnimeElement'>
+                    The core principles of “Happy Tots “begin with the simple
+                    truth that each child has a unique and individual nature,
+                    worthy of respect, nurture and celebration. “ Happy Tots
+                    “believe that children are natural learners who gain knowledge
+                    by doing and communicating – that is why we always plan active
+                    and engaging experiences for your children . It is the goal of
+                    Happy Tots to facilitate experiences that promote children’s
+                    natural curiosity to actively learn, while creating an
+                    environment that allows children to grown and develop at their
+                    own pace.
+                  </p>
+                </div>
+
               </div>
               <div className='mb-5 learningDivs' id='why-us'>
-                <h4 className='ulineRed'>WHY CHOOSE VIKAS MANTRA?</h4>
-                <p className='pt-4'>
-                  Vikas Mantra Public School is established with a vision to
-                  prepare and equip each child with the necessary survival
-                  skills in the 21st century through rigorous academic and
-                  technological skills.
-                </p>
 
-                <button class='outlineBtn btn'>Know More</button>
+                <div className='AnimeStarts'>
+                  <h4 className='ulineRed AnimeElement'>WHY CHOOSE VIKAS MANTRA?</h4>
+                </div>
+
+                <div className='AnimeStarts'>
+                  <p className='pt-4 AnimeElement'>
+                    Vikas Mantra Public School is established with a vision to
+                    prepare and equip each child with the necessary survival
+                    skills in the 21st century through rigorous academic and
+                    technological skills.
+                  </p>
+                </div>
+
+                <div className='AnimeStarts'>
+                  <button class='outlineBtn btn AnimeElement'>Know More</button>
+                </div>
               </div>
             </div>
 
             <div className='col-md-6'>
-              <div className='imgUp imgBgColor pastelYellow'>
+              <div className='imgUp imgBgColor pastelYellow AnimeStarts'>
                 <img
                   src='/assets/pre-primary.png'
                   alt='image'
-                  className='img-fluid'
+                  className='img-fluid AnimeElement'
                 />
               </div>
-              <div className={'sticky-sidebar VectorSpiralBlue' + ' ' + 'pt60'}>
+               
+              <div className={'sticky-sidebar VectorSpiralBlue' + ' AnimeStarts ' + 'pt60'}>
                 <ul id='progress'>
                   <li id='happy-tots-li' className={'node' + ' ' + 'green'}>
                     <Link href='#happy-tots' legacyBehavior>
                       <a>
-                        <p> Happy Tots</p>
+                        <p className='AnimeElement'> Happy Tots</p>
                       </a>
                     </Link>
                   </li>
@@ -222,10 +269,10 @@ function PrePrimary() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <li id='our-approach-li' className={'node' + ' ' + 'grey'}>
+                  <li id='our-approach-li' className={'node' + ' AnimeStarts ' + 'grey'}>
                     <Link legacyBehavior href='#our-approach'>
                       <a onClick={(e) => progressClick(e)}>
-                        <p>Our Approach</p>
+                        <p className='AnimeElement'>Our Approach</p>
                       </a>
                     </Link>
                   </li>
@@ -234,10 +281,10 @@ function PrePrimary() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <li id='programs-li' className={'node' + ' ' + 'grey'}>
+                  <li id='programs-li' className={'node' + ' AnimeStarts ' + 'grey'}>
                     <Link legacyBehavior href='#programs'>
                       <a onClick={(e) => progressClick(e)}>
-                        <p>Programs</p>
+                        <p className='AnimeElement'>Programs</p>
                       </a>
                     </Link>
                   </li>
@@ -245,10 +292,10 @@ function PrePrimary() {
                     <div className={'divider' + ' ' + 'grey'}></div>
                   </li>
 
-                  <li id='why-us-li' className={'node' + ' ' + 'grey'}>
+                  <li id='why-us-li' className={'node' + ' AnimeStarts ' + 'grey'}>
                     <Link legacyBehavior href='#why-us'>
                       <a onClick={(e) => progressClick(e)}>
-                        <p>Why Choose Vikas Mantra</p>
+                        <p className='AnimeElement'>Why Choose Vikas Mantra</p>
                       </a>
                     </Link>
                   </li>
