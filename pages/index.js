@@ -251,13 +251,17 @@ function Home() {
                       <p className={styles.textdate}>June 28, 2022</p>
 
                       <h4 className={styles.uline}>
-                        Et harum quidem rerum facilis est et expedita distinctio
-                        cum soluta nobis.
+                        Holistic education for the 21st century
                       </h4>
 
                       <p className='pt-4'>
-                        vero eos et accusamus et iusto odio dignissimos ducimus
-                        qui blanditiis praesentium voluptatum.
+                      At Vikas Mantra Public School, we believe in making every child 
+                      grow up to become the best version of themselves. State-of-the-art 
+                      infrastructure, a vibrantly positive environment, experienced teaching
+                       faculty, and a multitude of activities and programs, are just a few of
+                        what we provide for the sole purpose of enabling children to develop 
+                        into self-aware, socially responsible, intellectually advanced and 
+                        strongly empathetic individuals. 
                       </p>
 
                       <button className={'outlineBtn' + ' btn'}>
