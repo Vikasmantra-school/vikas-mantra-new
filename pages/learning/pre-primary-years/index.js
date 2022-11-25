@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
+import { timeline } from '../timeline'
 
 function PrePrimary() {
   const pageTitle = 'PrePrimary'
@@ -15,31 +16,8 @@ function PrePrimary() {
   }
 
   useEffect(() => {
-    // progess timeline
-    let learningDivs = document.querySelectorAll('.learningDivs')
-    window.addEventListener('scroll', Scroll, false)
-
-    function Scroll() {
-      learningDivs.forEach((lds) => {
-        let sectionTop = lds.getBoundingClientRect().top
-        var ids = lds.getAttribute('id')
-        var id = document.getElementById(ids + '-li')
-
-        if (id.previousElementSibling !== null && sectionTop < 60) {
-          id.previousElementSibling.children[0].classList.add('green')
-          id.previousElementSibling.children[0].classList.remove('grey')
-          id.classList.add('green')
-          id.classList.remove('grey')
-        } else if (id.previousElementSibling !== null && sectionTop > 30) {
-          id.previousElementSibling.children[0].classList.remove('green')
-          id.previousElementSibling.children[0].classList.add('grey')
-          id.classList.remove('green')
-          id.classList.add('grey')
-        } else {
-        }
-      })
-    }
-  }, [])
+    timeline()
+  }, [timeline])
 
   return (
     <>
@@ -227,22 +205,7 @@ function PrePrimary() {
               </div>
               <div className='mb-5 learningDivs' id='why-us'>
 
-                <div className='AnimeStarts'>
-                  <h4 className='ulineRed AnimeElement'>WHY CHOOSE VIKAS MANTRA?</h4>
-                </div>
-
-                <div className='AnimeStarts'>
-                  <p className='pt-4 AnimeElement'>
-                    Vikas Mantra Public School is established with a vision to
-                    prepare and equip each child with the necessary survival
-                    skills in the 21st century through rigorous academic and
-                    technological skills.
-                  </p>
-                </div>
-
-                <div className='AnimeStarts'>
-                  <button class='outlineBtn btn AnimeElement'>Know More</button>
-                </div>
+                <button className='outlineBtn btn'>Know More</button>
               </div>
             </div>
 
