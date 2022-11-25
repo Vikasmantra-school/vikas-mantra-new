@@ -1,5 +1,5 @@
 export const timeline = () => {
-  console.log('hi')
+  // console.log('hi')
   let learningDivs = document.querySelectorAll('.learningDivs')
   window.addEventListener('scroll', Scroll, false)
 

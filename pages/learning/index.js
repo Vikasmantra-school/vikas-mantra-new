@@ -3,13 +3,13 @@ import styles from './style.module.css'
 import Link from 'next/link'
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import { learning } from '../../data/learning'
-import { timeline } from './timeline'
+import { timeline } from '../../components/Timeline/Timeline'
 
 function Learning() {
   const pageTitle = 'Learning'
 
   function progressClick(e) {
-    console.log('hi')
+    // console.log('hi')
     const progress = document.getElementById('progress')
     progress.scrollIntoView({
       behavior: 'smooth',

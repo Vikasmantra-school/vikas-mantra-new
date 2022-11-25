@@ -3,7 +3,7 @@ import styles from './style.module.css'
 import Link from 'next/link'
 import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
 import { curriculum } from '../../../data/curriculum'
-import { timeline } from '../timeline'
+import { timeline } from '../../../components/Timeline/Timeline'
 
 function Curriculum() {
   const pageTitle = 'Curriculum'
