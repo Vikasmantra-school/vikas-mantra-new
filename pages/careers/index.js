@@ -25,7 +25,7 @@ function Career() {
 
     lblError.innerHTML = ''
 
-    var nameExpr = /[^A-Za-z0-9]+/ 
+    var nameExpr = /[^A-Za-z0-9]+/
 
     if (!nameExpr.test(namecheck)) {
       lblError.innerHTML = errmsg;
@@ -74,7 +74,11 @@ function Career() {
         <div className='container'>
           <div className='row'>
             <div className='col-md-5'>
-              <h2>Careers</h2>
+
+              <div className='AnimeStarts'>
+                <h2 className='AnimeElement'>Careers</h2>
+              </div>
+
             </div>
           </div>
         </div>
@@ -84,44 +88,55 @@ function Career() {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6'>
-              <h2 className='ulineRed'>WE ARE HIRING! </h2>
 
-              <p className='pt-4'>
-                At the VIKAS MANTRA PUBLIC SCHOOL the teachers are handpicked
-                through an extensive and exhaustive process. Our selection of
-                the right candidate not only depends on the credentials, but
-                also their student handling abilities.
-              </p>
+              <div className='AnimeStarts'>
+                <h2 className='ulineRed AnimeElement'>WE ARE HIRING! </h2>
+              </div>
 
-              <p>
-                We are committed to building great careers for our students.
-                This mission inspires us to recruit competent and committed
-                faculty.
-              </p>
+              <div className='AnimeStarts'>
+                <p className='pt-4 AnimeElement'>
+                  At the VIKAS MANTRA PUBLIC SCHOOL the teachers are handpicked
+                  through an extensive and exhaustive process. Our selection of
+                  the right candidate not only depends on the credentials, but
+                  also their student handling abilities.
+                </p>
+              </div>
 
-              <p>
-                Remuneration & perks will be the best in the Industry and be
-                commensurate with qualification and experience.
-              </p>
+              <div className='AnimeStarts'>
+                <p className='AnimeElement'>
+                  We are committed to building great careers for our students.
+                  This mission inspires us to recruit competent and committed
+                  faculty.
+                </p>
+              </div>
 
-              <p className={styles.textBold}>
-                Vikas Mantra Public School is looking for qualified, dedicated
-                and learner centric EDUCATORS to join our team in the following
-                positions
-              </p>
+              <div className='AnimeStarts'>
+                <p className='AnimeElement'>
+                  Remuneration & perks will be the best in the Industry and be
+                  commensurate with qualification and experience.
+                </p>
+              </div>
+
+              <div className='AnimeStarts'>
+                <p className={styles.textBold + ' AnimeElement'}>
+                  Vikas Mantra Public School is looking for qualified, dedicated
+                  and learner centric EDUCATORS to join our team in the following
+                  positions
+                </p>
+              </div>
 
               <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                 <tbody>
-                  <tr>
-                    <td>Pre-Primary</td>
-                    <td>
-                      <p>Montessori trained </p>
+                  <tr className='AnimeStarts'>
+                    <td className='AnimeElement'>Pre-Primary</td>
+                    <td className='AnimeElement'>
+                      <p className='AnimeElement'>Montessori trained </p>
                     </td>
                   </tr>
-                  <tr>
-                    <td>Music teacher</td>
-                    <td>
-                      <p>
+                  <tr className='AnimeStarts'>
+                    <td className='AnimeElement'>Music teacher</td>
+                    <td className='AnimeElement'>
+                      <p className='AnimeElement'>
                         Classical and Western
                         <br />
                         Full time
@@ -132,10 +147,10 @@ function Career() {
                       </p>
                     </td>
                   </tr>
-                  <tr>
-                    <td>Primary teacher</td>
-                    <td>
-                      <p>
+                  <tr className='AnimeStarts'>
+                    <td className='AnimeElement'>Primary teacher</td>
+                    <td className='AnimeElement'>
+                      <p className='AnimeElement'>
                         Trained graduate with B.ed (minimum 2+ years experience,
                         full time)
                       </p>
@@ -144,22 +159,28 @@ function Career() {
                 </tbody>
               </Table>
 
-              <p>
-                Salary will not be a limiting factor for the right candidate.{' '}
-              </p>
-              <p>
-                Apply with your resume to hr@vikasmantra.org with a passport
-                size photo.
-              </p>
-              <p>For more details, Call : +91 – 7092450450, +91 – 7330098765</p>
+              <div className='AnimeStarts'>
+                <p className='AnimeElement'>
+                  Salary will not be a limiting factor for the right candidate.{' '}
+                </p>
+
+                <p className='AnimeElement'>
+                  Apply with your resume to hr@vikasmantra.org with a passport
+                  size photo.
+                </p>
+
+                <p className='AnimeElement'>For more details, Call : +91 – 7092450450, +91 – 7330098765</p>
+
+              </div>
+
             </div>
 
             <div className='col-md-6'>
-              <div className={'imgUp imgBgColor pastelLightPink' + ' ' + styles.careerImg}>
+              <div className={'imgUp imgBgColor pastelLightPink AnimeStarts ' + ' ' + styles.careerImg}>
                 <img
                   src='/assets/banners/we-are-hiring.png'
                   alt='image'
-                  className='img-fluid'
+                  className='img-fluid AnimeElement'
                 />
               </div>
             </div>
@@ -185,14 +206,18 @@ function Career() {
                 <div className={styles.enquiryForm}>
                   <div className={'row' + ' ' + styles.form}>
                     <div className='col-md-12'>
-                      <h5 className='mb-5'>Candidate </h5>
+
+                      <div className='AnimeStarts'>
+                        <h5 className='mb-5 AnimeElement'>Candidate </h5>
+                      </div>
+
                     </div>
 
                     <div className='col-md-12 col-lg-5 col-sm-12'>
-                      <div className='mb-5'>
-                        <label>Name of the Candidate </label>
+                      <div className='mb-5 AnimeStarts'>
+                        <label className='AnimeElement'>Name of the Candidate </label>
                         <Form.Control
-                          className={styles.formText}
+                          className={styles.formText + ' AnimeElement'}
                           type='text'
                           name='Name of the Candidate'
                           required
@@ -204,11 +229,11 @@ function Career() {
                         <span id='lblError' />
                       </div>
 
-                      <div className='mb-5'>
-                        <label>Mailing address</label>
+                      <div className='mb-5 AnimeStarts'>
+                        <label className='AnimeElement'>Mailing address</label>
 
                         <Form.Control
-                          className={styles.formText + ' ' + 'mb-5'}
+                          className={styles.formText + ' ' + 'mb-5 AnimeElement '}
                           type='text'
                           name='Address'
                           required
@@ -217,14 +242,14 @@ function Career() {
                         />
 
                         <Form.Control
-                          className={styles.formText + ' ' + 'mb-5'}
+                          className={styles.formText + ' ' + 'mb-5 AnimeElement'}
                           type='text'
                           name='Address'
 
                         />
 
                         <Form.Control
-                          className={styles.formText + ' ' + 'mb-5'}
+                          className={styles.formText + ' ' + 'mb-5 AnimeElement'}
                           type='text'
                           name='Address'
 
@@ -234,11 +259,11 @@ function Career() {
 
                     <div className='col-md-12 col-lg-5 col-sm-12 offset-lg-1'>
                       <div className={styles.formPb}>
-                        <div className='mb-5'>
-                          <label>Job Opening</label>
+                        <div className='mb-5 AnimeStarts'>
+                          <label className='AnimeElement'>Job Opening</label>
 
                           <Form.Control
-                            className={styles.formText}
+                            className={styles.formText + ' AnimeElement'}
                             type='text'
                             name='Job Opening'
                             required
@@ -248,12 +273,12 @@ function Career() {
                         </div>
                       </div>
 
-                      <div className='mb-3'>
-                        <h5 className='mb-4'>Method of Communication</h5>
+                      <div className='mb-3 AnimeStarts'>
+                        <h5 className='mb-4 AnimeElement'>Method of Communication</h5>
 
-                        <div className='form-check '>
+                        <div className='form-check AnimeStarts'>
                           <input
-                            className='form-check-input coupon_question'
+                            className='form-check-input coupon_question AnimeElement'
                             type='radio'
                             name='checking-radio'
                             checked={methodOfCommunication == 'email'}
@@ -261,17 +286,17 @@ function Career() {
                           />
 
                           <label
-                            className='form-check-label'
+                            className='form-check-label AnimeElement'
                             htmlFor='flexRadioDefault2'
                           >
                             Email
                           </label>
 
                         </div>
-                        <div className='form-check '>
+                        <div className='form-check AnimeStarts'>
 
                           <input
-                            className='form-check-input coupon_question'
+                            className='form-check-input coupon_question AnimeElement'
                             type='radio'
                             name='checking-radio'
                             checked={methodOfCommunication == 'phone'}
@@ -279,7 +304,7 @@ function Career() {
                           />
 
                           <label
-                            className='form-check-label'
+                            className='form-check-label AnimeElement'
                             htmlFor='flexRadioDefault1'
                           >
                             Phone
@@ -288,13 +313,13 @@ function Career() {
                       </div>
                       {methodOfCommunication == 'email' && (
                         <div className='mb-3 mail-check'>
-                          <label htmlFor='exampleInputEmail1' className='form-label' >
+                          <label htmlFor='exampleInputEmail1' className='form-label AnimeElement' >
                             Email
                           </label>
 
                           <input
                             type='email'
-                            className={'form-control form-width' + ' ' + styles.formText}
+                            className={'form-control form-width AnimeElement ' + ' ' + styles.formText}
                             id='txtEmail'
                             name='Mail Id'
                             required
@@ -305,12 +330,12 @@ function Career() {
                       )}
                       {methodOfCommunication == 'phone' && (
                         <div className='mb-3 phone-check'>
-                          <label htmlFor='exampleInputPassword1' className='form-label' >
+                          <label htmlFor='exampleInputPassword1 AnimeElement ' className='form-label' >
                             Phone
                           </label>
                           <input
                             type='number'
-                            className={'form-control form-width' + ' ' + styles.formText}
+                            className={'form-control form-width AnimeElement ' + ' ' + styles.formText}
                             required
                             name='Number'
                             onChange={event => setNumber(event.target.value)}

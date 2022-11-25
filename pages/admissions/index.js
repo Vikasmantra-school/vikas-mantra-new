@@ -15,12 +15,10 @@ const Admissions = () => {
     let activeTab = id.replace('-tab', '')
 
     let par = document.getElementById(activeTab)
-    console.log(par)
 
     let child = par.querySelectorAll('.AdmissionAnimeElement')
-    console.log(child)
 
-    child.forEach(function (elem, index) {
+    child.forEach(function (elem) {
       gsap.fromTo(
         elem,
         {
@@ -35,63 +33,43 @@ const Admissions = () => {
         }
       )
     })
-    const parentTrigger = document.querySelectorAll(
-      '.AdmissionScrollAnimeStarts'
-    )
-    parentTrigger.forEach(staggerAnimeFunc)
-    function staggerAnimeFunc(elem) {
-      let text = elem.querySelectorAll('.AdmissionScrollAnimeElement')
+
+    gsap.registerPlugin(ScrollTrigger)
+
+    let textOnly = par.querySelectorAll('.AdmissionScrollAnimeElement')
+    textOnly.forEach(function (elem1) {
       gsap.fromTo(
-        text,
+        elem1,
         {
-          opacity: 0,
-          x: -10,
+          autoAlpha: 0,
+          y: 50
         },
         {
-          x: 0,
+          delay: 0.3,
           duration: 0.6,
-          delay: 0.5,
-          opacity: 1,
-          stagger: 0.2,
+          autoAlpha: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: elem1,
+            animation: elem1,
+            toggleActions: 'play none none none',
+            once: true,
+          }
         }
       )
-    }
-    ScrollTrigger.refresh()
-    gsap.registerPlugin(ScrollTrigger)
+      ScrollTrigger.refresh()
+    })
   }
 
-  useEffect(() => {
-    // const parentTrigger = document.querySelectorAll('.AdmissionAnimeStarts')
-    // parentTrigger.forEach(staggerAnimeFunc)
-    // function staggerAnimeFunc(elem) {
-    //   let text = elem.querySelectorAll('.AdmissionAnimeElement')
-    //   gsap.fromTo(
-    //     text,
-    //     {
-    //       opacity: 0,
-    //       x: -10,
-    //     },
-    //     {
-    //       x: 0,
-    //       duration: 0.6,
-    //       delay: 0.5,
-    //       opacity: 1,
-    //       stagger: 0.2,
-    //     }
-    //   )
-    // }
-    // ScrollTrigger.refresh()
-    // gsap.registerPlugin(ScrollTrigger)
-  }, [])
 
   return (
     <>
       <style>
-        {` body {
-  background: #f3f1f2;
-  }
-
-  `}
+        {` 
+        body {
+                background: #f3f1f2;
+            }
+        `}
       </style>
 
       <Breadcrumb pageName={pageTitle} />
@@ -99,7 +77,7 @@ const Admissions = () => {
       <section className='pt-4 greybg'>
         <div className='container position-relative'>
           <div className='row py-5'>
-            <div className='AdmissionAnimeStarts'>
+            <div className='AdmissionAnimeStarts AnimeStarts'>
               <h2 className={styles.headingPdng + ' AdmissionAnimeElement'}>
                 Admissions
               </h2>
@@ -114,29 +92,17 @@ const Admissions = () => {
             <div className='col-md-12 col-lg-4'>
               {/* tab-menu-start */}
 
-              <div
-                className={
-                  styles.tabWidth +
-                  ' nav flex-column nav-pills me-3 responsiveRow AdmissionAnimeStarts '
-                }
+              <div className={styles.tabWidth + ' nav flex-column nav-pills me-3 responsiveRow AdmissionAnimeStarts AnimeStarts '}
                 id='v-pills-tab'
                 role='tablist'
                 aria-orientation='vertical'
               >
-                <button
-                  className={
-                    styles.tabBtn +
-                    ' ' +
-                    styles.redBorder +
-                    ' ' +
-                    styles.responsiveRedBorder1 +
-                    ' nav-link active text-start color-black position-relative AdmissionAnimeElement '
-                  }
+                <button className={styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder1 + ' nav-link active text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '}
                   id='v-pills-home-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-home'
                   type='button'
-                  role='tab'
+                  a
                   aria-controls='v-pills-home'
                   aria-selected='true'
                   onClick={(e) => drpDwnClick(e)}
@@ -148,15 +114,7 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button
-                  className={
-                    styles.tabBtn +
-                    ' ' +
-                    styles.redBorder +
-                    ' ' +
-                    styles.responsiveRedBorder2 +
-                    ' nav-link text-start color-black position-relative AdmissionAnimeElement '
-                  }
+                <button className={styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder2 + ' nav-link text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '}
                   id='admission-timeline-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#admission-timeline'
@@ -173,15 +131,7 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button
-                  className={
-                    styles.tabBtn +
-                    ' ' +
-                    styles.redBorder +
-                    ' ' +
-                    styles.responsiveRedBorder3 +
-                    ' nav-link text-start color-black position-relative AdmissionAnimeElement'
-                  }
+                <button className={styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder3 + ' nav-link text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '}
                   id='v-pills-messages-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-messages'
@@ -198,13 +148,7 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button
-                  className={
-                    styles.tabBtn +
-                    ' ' +
-                    styles.responsiveRedBorder4 +
-                    ' nav-link text-start color-black position-relative AdmissionAnimeElement '
-                  }
+                <button className={styles.tabBtn + ' ' + styles.responsiveRedBorder4 + ' nav-link text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '}
                   id='v-pills-settings-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-settings'
@@ -221,25 +165,13 @@ const Admissions = () => {
                   />
                 </button>
               </div>
-
               {/* tab-menu-end */}
             </div>
           </div>
 
           {/* tab-content-start */}
-
           <div className={'tab-content '} id=' v-pills-tabContent'>
-            <div
-              className={
-                ' tab-pane fade show active ' +
-                styles.Tab1BlueVector +
-                ' ' +
-                styles.tab1RedDotVector +
-                ' ' +
-                styles.vectorImg16 +
-                ' ' +
-                styles.vectorImg5
-              }
+            <div className={' tab-pane fade show active ' + styles.Tab1BlueVector + ' ' + styles.tab1RedDotVector + ' ' + styles.vectorImg16 + ' ' + styles.vectorImg5}
               id='v-pills-home'
               role='tabpanel'
               aria-labelledby='v-pills-home-tab'
@@ -247,40 +179,26 @@ const Admissions = () => {
             >
               <div className='row'>
                 <div className='col-lg-8 offset-lg-4 col-md-12 '>
-                  <div
-                    className={
-                      styles.schoolBuilding +
-                      ' imgUpAdmission1 imgBgColorAdmission1 pastelPurple3 AdmissionAnimeStarts '
-                    }
-                  >
+                  <div className={styles.schoolBuilding + ' imgUpAdmission1 imgBgColorAdmission1 pastelPurple3 AdmissionAnimeElement AnimeStarts'}>
                     <img
                       src='/assets/banners/school-building2.png'
                       alt='image'
-                      className={
-                        styles.schoolBuildingImg +
-                        ' img-fluid AdmissionAnimeElement '
-                      }
+                      className={styles.schoolBuildingImg + ' img-fluid AdmissionAnimeElement AnimeElement '}
                     />
                   </div>
                 </div>
 
-                <div
-                  className={
-                    styles.cardmargin1 +
-                    ' ' +
-                    ' col-lg-8 offset-lg-2 col-md-12 position-relative '
-                  }
-                >
+                <div className={ styles.cardmargin1 + ' ' + ' col-lg-8 offset-lg-2 col-md-12 position-relative ' } >
                   <div className={styles.card1 + ' card'}>
                     <div className='card-body '>
-                      <div className='AdmissionAnimeStarts'>
-                        <h5 className='card-title ulineRed AdmissionAnimeElement'>
+                      <div className='AdmissionAnimeStarts AnimeStarts'>
+                        <h5 className='card-title ulineRed AdmissionScrollAnimeElement AnimeElement'>
                           Admission
                         </h5>
                       </div>
 
-                      <div className='AdmissionAnimeStarts'>
-                        <h6 className='card-text pt-5 AdmissionAnimeElement'>
+                      <div className='AdmissionAnimeStarts AnimeStarts'>
+                        <h6 className='card-text pt-5 AdmissionScrollAnimeElement AnimeElement'>
                           At VIKAS MANTRA PUBLIC SCHOOL, admissions are open for
                           the academic year 2022-23 from classes Lower KG to
                           Grade 9. Each grade will have 3 divisions with class
@@ -291,8 +209,8 @@ const Admissions = () => {
                         </h6>
                       </div>
 
-                      <ul className='pt-4 list-points AdmissionAnimeStarts '>
-                        <li className='pt-1 AdmissionAnimeElement'>
+                      <ul className='pt-4 list-points AdmissionAnimeStarts AnimeStarts'>
+                        <li className='pt-1 AdmissionScrollAnimeElement AnimeElement'>
                           <img
                             src='/assets/icons/blue-point.png'
                             alt='list-point'
@@ -301,7 +219,7 @@ const Admissions = () => {
                           PUBLIC SCHOOL or to visit the school for an admissions
                           tour
                         </li>
-                        <li className='pt-1 AdmissionAnimeElement'>
+                        <li className='pt-1 AdmissionScrollAnimeElement AnimeElement'>
                           <img
                             src='/assets/icons/pink-point.png'
                             alt='list-point'
@@ -317,14 +235,7 @@ const Admissions = () => {
               </div>
             </div>
 
-            <div
-              className={
-                ' tab-pane fade ' +
-                ' ' +
-                styles.vectorImg3 +
-                ' ' +
-                styles.vectorImg9
-              }
+            <div className={' tab-pane fade ' + ' ' + styles.vectorImg3 + ' ' + styles.vectorImg9}
               id='admission-timeline'
               role='tabpanel'
               aria-labelledby='admission-timeline-tab'
@@ -367,7 +278,7 @@ const Admissions = () => {
                   <img
                     src='/assets/banners/student.png'
                     alt='image'
-                    className={styles.studentImg + ' AdmissionAnimeElement'}
+                    className={styles.studentImg + ' AdmissionScrollAnimeElement'}
                   />
                 </div>
 
@@ -383,7 +294,7 @@ const Admissions = () => {
                     className={styles.Sec2vmpsImg}
                   />
                   <div className='AdmissionAnimeStarts'>
-                    <h2 className='ulineRed AdmissionAnimeElement'>
+                    <h2 className='ulineRed AdmissionScrollAnimeElement'>
                       Timelines and key milestones for the academic year 2022-23
                       VIKAS MANTRA PUBLIC SCHOOL admissions process
                     </h2>
@@ -399,37 +310,37 @@ const Admissions = () => {
                         <tr
                           className={styles.tableTr + ' AdmissionAnimeStarts'}
                         >
-                          <td className='AdmissionAnimeElement'>
+                          <td className='AdmissionScrollAnimeElement'>
                             Admissions Open
                           </td>
-                          <td className='AdmissionAnimeElement'>
+                          <td className='AdmissionScrollAnimeElement'>
                             15th October 2021
                           </td>
                         </tr>
 
                         <tr className='AdmissionAnimeStarts'>
-                          <td className='AdmissionAnimeElement'>
+                          <td className='AdmissionScrollAnimeElement'>
                             Application forms available from
                           </td>
-                          <td className='AdmissionAnimeElement'>
+                          <td className='AdmissionScrollAnimeElement'>
                             15th October 2021
                           </td>
                         </tr>
 
                         <tr className='AdmissionAnimeStarts'>
-                          <td className='AdmissionAnimeElement'>
+                          <td className='AdmissionScrollAnimeElement'>
                             Rolling-admissions start date
                           </td>
-                          <td className='AdmissionAnimeElement'>
+                          <td className='AdmissionScrollAnimeElement'>
                             15th October 2021
                           </td>
                         </tr>
 
                         <tr className='AdmissionAnimeStarts'>
-                          <td className='AdmissionAnimeElement'>
+                          <td className='AdmissionScrollAnimeElement'>
                             Admissions open till
                           </td>
-                          <td className='AdmissionAnimeElement'>
+                          <td className='AdmissionScrollAnimeElement'>
                             30th June 2022
                           </td>
                         </tr>
@@ -438,7 +349,7 @@ const Admissions = () => {
                   </div>
 
                   <div className='AdmissionAnimeStarts'>
-                    <p className=' pt-3 AdmissionAnimeElement'>
+                    <p className=' pt-3 AdmissionScrollAnimeElement'>
                       Please note that Admissions for the new academic year
                       2022-23 at VIKAS MANTRA PUBLIC SCHOOL will commence from
                       23rd November 2021 and the admissions will for this
@@ -486,13 +397,13 @@ const Admissions = () => {
                   <div className={styles.card2 + ' card'}>
                     <div className='card-body'>
                       <div className='AdmissionAnimeStarts'>
-                        <h5 className='card-title ulineRed AdmissionAnimeElement '>
+                        <h5 className='card-title ulineRed AdmissionScrollAnimeElement '>
                           Eligibility Criteria for all classes
                         </h5>
                       </div>
 
                       <ul className='pt-5 list-points AdmissionAnimeStarts'>
-                        <li className='pt-1 AdmissionAnimeElement'>
+                        <li className='pt-1 AdmissionScrollAnimeElement'>
                           <img
                             src='/assets/icons/blue-point.png'
                             alt='list-point'
@@ -503,7 +414,7 @@ const Admissions = () => {
                           prescribed and suggested by the central board of
                           secondary education.
                         </li>
-                        <li className='pt-1 AdmissionAnimeElement'>
+                        <li className='pt-1 AdmissionScrollAnimeElement'>
                           <img
                             src='/assets/icons/pink-point.png'
                             alt='list-point'
@@ -511,7 +422,7 @@ const Admissions = () => {
                           For Junior KG the child must have completed 3. 5 years
                           as on 30th June.
                         </li>
-                        <li className='pt-1 AdmissionAnimeElement'>
+                        <li className='pt-1 AdmissionScrollAnimeElement'>
                           <img
                             src='/assets/icons/yellow-point.png'
                             alt='list-point'
@@ -526,7 +437,7 @@ const Admissions = () => {
 
                 <div className='col-md-6 mt-5 '>
                   <div className='AdmissionAnimeStarts'>
-                    <h2 className='ulineRed AdmissionAnimeElement'>
+                    <h2 className='ulineRed AdmissionScrollAnimeElement'>
                       Admissions Procedure
                     </h2>
                   </div>
@@ -541,13 +452,13 @@ const Admissions = () => {
                     <div className='card-wrapper one'>
                       <div className='card-header'>
                         <div className='AdmissionAnimeStarts'>
-                          <h1 className='card-header-text2 AdmissionAnimeElement'>
+                          <h1 className='card-header-text2 AdmissionScrollAnimeElement'>
                             Obtain Admissions Kit
                           </h1>
                         </div>
 
                         <div className='AdmissionAnimeStarts'>
-                          <p className='card-header-text3 AdmissionAnimeElement'>
+                          <p className='card-header-text3 AdmissionScrollAnimeElement'>
                             Visit the school , meet our admissions officer. Take
                             a tour of the school. Obtain the Admissions Kit from
                             the Admissions Office for Rs.600, payable by cash or
@@ -558,8 +469,8 @@ const Admissions = () => {
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
                           <div className='footer-text-wrap AdmissionAnimeStarts'>
-                            <h1 className='AdmissionAnimeElement'>01</h1>
-                            <p className='AdmissionAnimeElement'>step</p>
+                            <h1 className='AdmissionScrollAnimeElement'>01</h1>
+                            <p className='AdmissionScrollAnimeElement'>step</p>
                           </div>
 
                           <FontAwesomeIcon
@@ -574,10 +485,10 @@ const Admissions = () => {
                   <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper two'>
                       <div className='card-header AdmissionAnimeStarts'>
-                        <h1 className='card-header-text2 AdmissionAnimeElement'>
+                        <h1 className='card-header-text2 AdmissionScrollAnimeElement'>
                           Submit Application
                         </h1>
-                        <p className='card-header-text3 AdmissionAnimeElement'>
+                        <p className='card-header-text3 AdmissionScrollAnimeElement'>
                           Submit the completed Application Form and all
                           supporting documents as per instructions and wait to
                           be called for a personal interview.
@@ -586,8 +497,8 @@ const Admissions = () => {
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
                           <div className='footer-text-wrap AdmissionAnimeStarts'>
-                            <h1 className='AdmissionAnimeElement'>02</h1>
-                            <p className='AdmissionAnimeElement'>step</p>
+                            <h1 className='AdmissionScrollAnimeElement'>02</h1>
+                            <p className='AdmissionScrollAnimeElement'>step</p>
                           </div>
                           <FontAwesomeIcon
                             icon={faAnglesRight}
@@ -601,10 +512,10 @@ const Admissions = () => {
                   <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper one'>
                       <div className='card-header AdmissionAnimeStarts'>
-                        <h1 className='card-header-text2 AdmissionAnimeElement'>
+                        <h1 className='card-header-text2 AdmissionScrollAnimeElement'>
                           Interaction and Interview
                         </h1>
-                        <p className='card-header-text3 AdmissionAnimeElement'>
+                        <p className='card-header-text3 AdmissionScrollAnimeElement'>
                           Diagnostic tests in Math & Science and Tests of
                           fluency in English will be conducted for students
                           applying from Grade I. Then, personal interviews will
@@ -616,8 +527,8 @@ const Admissions = () => {
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
                           <div className='footer-text-wrap AdmissionAnimeStarts'>
-                            <h1 className='AdmissionAnimeElement'>03</h1>
-                            <p className='AdmissionAnimeElement'>step</p>
+                            <h1 className='AdmissionScrollAnimeElement'>03</h1>
+                            <p className='AdmissionScrollAnimeElement'>step</p>
                           </div>
                           <FontAwesomeIcon
                             icon={faAnglesRight}
@@ -631,10 +542,10 @@ const Admissions = () => {
                   <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper two'>
                       <div className='card-header AdmissionAnimeStarts'>
-                        <h1 className='card-header-text2 AdmissionAnimeElement'>
+                        <h1 className='card-header-text2 AdmissionScrollAnimeElement'>
                           Admission Results
                         </h1>
-                        <p className='card-header-text3 AdmissionAnimeElement'>
+                        <p className='card-header-text3 AdmissionScrollAnimeElement'>
                           Admissions results emailed within 5 working days.
                           After which parents can pay the fees within 7 days to
                           confirm the slot.
@@ -643,8 +554,8 @@ const Admissions = () => {
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
                           <div className='footer-text-wrap AdmissionAnimeStarts'>
-                            <h1 className='AdmissionAnimeElement'>04</h1>
-                            <p className='AdmissionAnimeElement'>step</p>
+                            <h1 className='AdmissionScrollAnimeElement'>04</h1>
+                            <p className='AdmissionScrollAnimeElement'>step</p>
                           </div>
                           <FontAwesomeIcon
                             icon={faAnglesRight}
@@ -658,10 +569,10 @@ const Admissions = () => {
                   <div className='col-lg-4 col-md-6 col-sm-12'>
                     <div className='card-wrapper one'>
                       <div className='card-header AdmissionAnimeStarts'>
-                        <h1 className='card-header-text2 AdmissionAnimeElement'>
+                        <h1 className='card-header-text2 AdmissionScrollAnimeElement'>
                           Admission Fee
                         </h1>
-                        <p className='card-header-text3 AdmissionAnimeElement'>
+                        <p className='card-header-text3 AdmissionScrollAnimeElement'>
                           Upon receipt of Confirmation Letter, payment of a
                           one-time non-refundable Admission Fee* within 15 days
                           to be paid along with the first term and school
@@ -671,8 +582,8 @@ const Admissions = () => {
                       <div className='card-footer'>
                         <div className='footer-content-wrap'>
                           <div className='footer-text-wrap AdmissionAnimeStarts'>
-                            <h1 className='AdmissionAnimeElement'>05</h1>
-                            <p className='AdmissionAnimeElement'>step</p>
+                            <h1 className='AdmissionScrollAnimeElement'>05</h1>
+                            <p className='AdmissionScrollAnimeElement'>step</p>
                           </div>
                           <FontAwesomeIcon
                             icon={faAnglesRight}
@@ -689,7 +600,7 @@ const Admissions = () => {
                 </div>
 
                 <div className='col-md-12 mt-3'>
-                  <p className='mb-5'>
+                  <p className='mb-5 AdmissionScrollAnimeElement'>
                     Following the VIKAS MANTRA PUBLIC SCHOOL admissions process,
                     the decision to accept a student is based upon a number of
                     factors, including academic potential, previous academic
@@ -702,51 +613,51 @@ const Admissions = () => {
                 </div>
 
                 <div className={'col-md-10 '}>
-                  <h2 className=' mt-5 mb-3'>Admissions Requirements</h2>
+                  <h2 className=' mt-5 mb-3 AdmissionScrollAnimeElement'>Admissions Requirements</h2>
 
-                  <h4>Documents Required:</h4>
+                  <h4 className='AdmissionScrollAnimeElement'>Documents Required:</h4>
 
-                  <p>
+                  <p className='AdmissionScrollAnimeElement'>
                     As part of the application process, parents are requested to
                     prepare the following documents for submission to the
                     school.
                   </p>
 
                   <ul className={styles.ulLineHeight + ' list-points'}>
-                    <li>
+                    <li className='AdmissionScrollAnimeElement '>
                       <img
                         src='/assets/icons/blue-point.png'
                         alt='list-point'
                       />
                       Application Form, duly filled
                     </li>
-                    <li>
+                    <li className='AdmissionScrollAnimeElement'>
                       <img
                         src='/assets/icons/pink-point.png'
                         alt='list-point'
                       />
                       3 colour Photos
                     </li>
-                    <li>
+                    <li className='AdmissionScrollAnimeElement'>
                       <img
                         src='/assets/icons/yellow-point.png'
                         alt='list-point'
                       />
                       Report from Previous School (if available)
                     </li>
-                    <li>
+                    <li className='AdmissionScrollAnimeElement'>
                       <img
                         src='/assets/icons/green-point.png'
                         alt='list-point'
                       />
                       Copy of the Student’s Aadhar / Passport (if available)
                     </li>
-                    <li>
+                    <li className='AdmissionScrollAnimeElement'>
                       <img src='/assets/icons/red-point.png' alt='list-point' />
                       Copy of the Student’s Birth Certificate in case of (PIO
                       holders)
                     </li>
-                    <li>
+                    <li className='AdmissionScrollAnimeElement'>
                       <img
                         src='/assets/icons/orange-point.png'
                         alt='list-point'
@@ -755,11 +666,11 @@ const Admissions = () => {
                       Parents:{' '}
                     </li>
 
-                    <li className='mt-3 ms-3'>
+                    <li className='mt-3 ms-3 AdmissionScrollAnimeElement'>
                       <img src='/assets/icons/lightblue.png' alt='list-point' />
                       Passport/Aadhar / Ration /Voter ID card
                     </li>
-                    <li className='ms-3'>
+                    <li className='ms-3 AdmissionScrollAnimeElement'>
                       <img
                         src='/assets/icons/lightgreen-point.png'
                         alt='list-point'
@@ -769,13 +680,13 @@ const Admissions = () => {
                     </li>
                   </ul>
 
-                  <p className=''>
+                  <p className='AdmissionScrollAnimeElement'>
                     Please refer to the checklist provided with the admissions
                     package for a comprehensive list of documents required for
                     the admissions process.
                   </p>
 
-                  <h2 className='mt-5'>
+                  <h2 className='mt-5 AdmissionScrollAnimeElement'>
                     Procedures to be followed while filling up the form
                   </h2>
 
@@ -784,7 +695,7 @@ const Admissions = () => {
                       styles.ulLineHeight + ' position-relative list-points '
                     }
                   >
-                    <li>
+                    <li className='AdmissionScrollAnimeElement'>
                       <img
                         src='/assets/icons/darkblue-point.png'
                         alt='list-point'
@@ -798,7 +709,7 @@ const Admissions = () => {
                       be accepted. Kindly avoid further requests.
                     </li>
 
-                    <li>
+                    <li className='AdmissionScrollAnimeElement'>
                       <img
                         src='/assets/icons/yellow-point.png'
                         alt='list-point'
@@ -807,14 +718,14 @@ const Admissions = () => {
                       on first come basis.
                     </li>
 
-                    <li>
+                    <li className='AdmissionScrollAnimeElement'>
                       <img src='/assets/icons/red-point.png' alt='list-point' />
                       Admission for the academic year will be done till the 30th
                       of June every year based on the availability of seats in
                       each class.
                     </li>
 
-                    <li>
+                    <li className='AdmissionScrollAnimeElement'>
                       <img
                         src='/assets/icons/green-point.png'
                         alt='list-point'
@@ -841,11 +752,11 @@ const Admissions = () => {
             >
               <div className='row'>
                 <div className='col-lg-8 offset-lg-4 col-md-12'>
-                  <div className='imgUpAdmission2 imgBgColorAdmission2 pastelGreen3 AdmissionAnimeElement'>
+                  <div className='imgUpAdmission2 imgBgColorAdmission2 pastelGreen3 '>
                     <img
                       src='/assets/banners/school-building2.png'
                       alt='image'
-                      className={styles.schoolBuildingImg}
+                      className={styles.schoolBuildingImg + ' AdmissionAnimeElement'}
                     />
                   </div>
                 </div>
@@ -861,7 +772,7 @@ const Admissions = () => {
                     className={styles.Sec4vmpsImg}
                   />
 
-                  <h2 className='ulineRed'>FAQ</h2>
+                  <h2 className='ulineRed AdmissionScrollAnimeElement'>FAQ</h2>
 
                   <div
                     className={'accordion pt-5 ' + styles.accordionExample}
@@ -877,7 +788,7 @@ const Admissions = () => {
                           aria-expanded='false'
                           aria-controls='collapseSeven'
                         >
-                          <h4 className='pt-3'>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>
                             How do you make decision on admission?
                           </h4>
                         </button>
@@ -890,7 +801,7 @@ const Admissions = () => {
                         data-bs-parent='#accordionExample'
                       >
                         <div className='accordion-body'>
-                          <p>
+                          <p className='AdmissionScrollAnimeElement'>
                             Admission decisions are made purely on first come
                             first serve basis for lower classes. It is also made
                             on merit, aptitude of the applicant, and involvement
@@ -913,7 +824,7 @@ const Admissions = () => {
                           aria-expanded='true'
                           aria-controls='collapseOne'
                         >
-                          <h4 className='pt-3'>Do you have a wait list?</h4>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>Do you have a wait list?</h4>
                         </button>
                       </h2>
                       <div
@@ -922,7 +833,7 @@ const Admissions = () => {
                         aria-labelledby='headingOne'
                         data-bs-parent='#accordionExample'
                       >
-                        <div className='accordion-body'>
+                        <div className='accordion-body AdmissionScrollAnimeElement'>
                           Yes we do have. A wait list will be created once seats
                           are filled by deserving students on first come first
                           serve basis.
@@ -940,7 +851,7 @@ const Admissions = () => {
                           aria-expanded='false'
                           aria-controls='collapseTwo'
                         >
-                          <h4 className='pt-3'>How are students assessed?</h4>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>How are students assessed?</h4>
                         </button>
                       </h2>
                       <div
@@ -949,7 +860,7 @@ const Admissions = () => {
                         aria-labelledby='headingTwo'
                         data-bs-parent='#accordionExample'
                       >
-                        <div className='accordion-body'>
+                        <div className='accordion-body AdmissionScrollAnimeElement'>
                           Applicants to the early years (KG ) are assessed
                           purely on their interaction with the respective heads.
                           Applicants in 1st grade and above are assessed on
@@ -971,7 +882,7 @@ const Admissions = () => {
                           aria-expanded='false'
                           aria-controls='collapseThree'
                         >
-                          <h4 className='pt-3'>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>
                             How are parents involved in the school community?
                           </h4>
                         </button>
@@ -982,7 +893,7 @@ const Admissions = () => {
                         aria-labelledby='headingThree'
                         data-bs-parent='#accordionExample'
                       >
-                        <div className='accordion-body'>
+                        <div className='accordion-body AdmissionScrollAnimeElement'>
                           VIKAS MANTRA PUBLIC SCHOOL is keen to promote talents
                           and resources that are available in the parent
                           community ; that can enrich our school programme. As
@@ -1006,7 +917,7 @@ const Admissions = () => {
                           aria-expanded='false'
                           aria-controls='collapseFour'
                         >
-                          <h4 className='pt-3'>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>
                             What is the student teacher ratio in each class?
                           </h4>
                         </button>
@@ -1017,7 +928,7 @@ const Admissions = () => {
                         aria-labelledby='headingFour'
                         data-bs-parent='#accordionExample'
                       >
-                        <div className='accordion-body'>
+                        <div className='accordion-body AdmissionScrollAnimeElement'>
                           As per the CBSE guidelines we follow an 1:35 ratio in
                           our classes.
                         </div>
@@ -1034,7 +945,7 @@ const Admissions = () => {
                           aria-expanded='false'
                           aria-controls='collapseFive'
                         >
-                          <h4 className='pt-3'>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>
                             Where are your teachers from?
                           </h4>
                         </button>
@@ -1045,7 +956,7 @@ const Admissions = () => {
                         aria-labelledby='headingFive'
                         data-bs-parent='#accordionExample'
                       >
-                        <div className='accordion-body'>
+                        <div className='accordion-body AdmissionScrollAnimeElement'>
                           Our teachers are from various parts of India . This
                           gives a unique flavour to our campus where they bring
                           in not only the academic credentials but their
@@ -1064,7 +975,7 @@ const Admissions = () => {
                           aria-expanded='false'
                           aria-controls='collapseSix'
                         >
-                          <h4 className='pt-3'>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>
                             What kind of training do you provide your teachers?
                           </h4>
                         </button>
@@ -1075,7 +986,7 @@ const Admissions = () => {
                         aria-labelledby='headingSix'
                         data-bs-parent='#accordionExample'
                       >
-                        <div className='accordion-body'>
+                        <div className='accordion-body AdmissionScrollAnimeElement'>
                           As per CBSE, We provide continuous professional
                           development and capacity building workshops throughout
                           the year.
@@ -1093,7 +1004,7 @@ const Admissions = () => {
                           aria-expanded='false'
                           aria-controls='collapseSeven'
                         >
-                          <h4 className='pt-3'>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>
                             Does the school have its own transport?
                           </h4>
                         </button>
@@ -1104,7 +1015,7 @@ const Admissions = () => {
                         aria-labelledby='headingSeven'
                         data-bs-parent='#accordionExample'
                       >
-                        <div className='accordion-body'>
+                        <div className='accordion-body AdmissionScrollAnimeElement'>
                           Yes, the school has a dedicated transport facility for
                           students and teachers.
                         </div>
@@ -1121,7 +1032,7 @@ const Admissions = () => {
                           aria-expanded='false'
                           aria-controls='collapseEight'
                         >
-                          <h4 className='pt-3'>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>
                             Are scholarship available to students?
                           </h4>
                         </button>
@@ -1132,7 +1043,7 @@ const Admissions = () => {
                         aria-labelledby='headingEight'
                         data-bs-parent='#accordionExample'
                       >
-                        <div className='accordion-body'>
+                        <div className='accordion-body AdmissionScrollAnimeElement'>
                           Scholarships will be provided to students at higher
                           class grades. Please contact the Admissions Officer
                           for further details.
@@ -1143,6 +1054,7 @@ const Admissions = () => {
                 </div>
               </div>
             </div>
+
           </div>
 
           {/* tab-content-start */}
