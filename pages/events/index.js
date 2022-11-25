@@ -36,7 +36,7 @@ const Events = () => {
       )
     }
     ScrollTrigger.refresh()
-  }, [events])
+  }, [])
 
   //animation-for-gallery
   useEffect(() => {
