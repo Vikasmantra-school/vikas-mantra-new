@@ -76,9 +76,13 @@ const EnquiryForm = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6'>
-              <h2>
-                Admissions Enquiry Form
-              </h2>
+
+              <div className='AnimeStarts'>
+                <h2 className='AnimeElement'>
+                  Admissions Enquiry Form
+                </h2>
+              </div>
+
             </div>
           </div>
         </div>
@@ -98,10 +102,13 @@ const EnquiryForm = () => {
                 <Form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
                   <div className={'row' + ' ' + styles.form}>
                     <div className='col-md-5'>
-                      <h5 className='mb-5'>Child Information</h5>
 
-                      <Form.Group className='mb-5' controlId='formBasicEmail'>
-                        <Form.Label>Name of the Child</Form.Label>
+                      <div className='AnimeStarts'>
+                        <h5 className='mb-5 AnimeElement'>Child Information</h5>
+                      </div>
+
+                      <Form.Group className='mb-5 AnimeStarts' controlId='formBasicEmail'>
+                        <Form.Label className='AnimeElement'>Name of the Child</Form.Label>
                         <Form.Control
                           required
                           name='Name'
@@ -111,8 +118,8 @@ const EnquiryForm = () => {
                           onChange={event => setName(event.target.value)} />
                       </Form.Group>
 
-                      <Form.Group className='mb-5'>
-                        <Form.Label>Student Date of Birth</Form.Label>
+                      <Form.Group className='mb-5 AnimeStarts'>
+                        <Form.Label className='AnimeElement'>Student Date of Birth</Form.Label>
                         <Form.Control
                           required
                           name='DOB'
@@ -122,8 +129,8 @@ const EnquiryForm = () => {
                           onChange={event => setDob(event.target.value)} />
                       </Form.Group>
 
-                      <Form.Group className='mb-5'>
-                        <Form.Label>Last Class Studied</Form.Label>
+                      <Form.Group className='mb-5 AnimeStarts'>
+                        <Form.Label className='AnimeElement'>Last Class Studied</Form.Label>
                         <Form.Control
                           required
                           name='Last Class Studied'
@@ -133,8 +140,8 @@ const EnquiryForm = () => {
                           onChange={event => setLastClass(event.target.value)} />
                       </Form.Group>
 
-                      <Form.Group className='mb-5'>
-                        <Form.Label>Name of the Current school</Form.Label>
+                      <Form.Group className='mb-5 AnimeStarts'>
+                        <Form.Label className='AnimeElement'>Name of the Current school</Form.Label>
                         <Form.Control
                           required
                           name='Name Of The Current School'
@@ -144,8 +151,8 @@ const EnquiryForm = () => {
                           onChange={event => setCurrentSchool(event.target.value)} />
                       </Form.Group>
 
-                      <Form.Group className='mb-5'>
-                        <Form.Label>Admission seeking for</Form.Label>
+                      <Form.Group className='mb-5 AnimeStarts'>
+                        <Form.Label className='AnimeElement'>Admission seeking for</Form.Label>
                         <Form.Control
                           required
                           name='Admission Seeking For'
@@ -159,10 +166,13 @@ const EnquiryForm = () => {
 
                     <div className='col-md-5 offset-md-1'>
                       <div className={styles.formPb}>
-                        <h5 className='mb-5'>Parent Information : Father</h5>
 
-                        <Form.Group className='mb-5'>
-                          <Form.Label>Name</Form.Label>
+                        <div className='AnimeStarts'>
+                        <h5 className='mb-5 AnimeElement'>Parent Information : Father</h5>
+                        </div>
+
+                        <Form.Group className='mb-5 AnimeStarts'>
+                          <Form.Label className='AnimeElement'>Name</Form.Label>
                           <Form.Control
                             required
                             name='Father Name'
@@ -175,8 +185,8 @@ const EnquiryForm = () => {
 
                         <div className='mb-5'>
                           <div className='row'>
-                            <Form.Group className='col-md-6 mb-5'>
-                              <Form.Label>Phone Number</Form.Label>
+                            <Form.Group className='col-md-6 mb-5 AnimeStarts'>
+                              <Form.Label className='AnimeElement'>Phone Number</Form.Label>
                               <Form.Control
                                 required
                                 name='Father Number'
@@ -187,8 +197,8 @@ const EnquiryForm = () => {
                               />
                             </Form.Group>
 
-                            <Form.Group className='col-md-6 mb-5'>
-                              <Form.Label>Email</Form.Label>
+                            <Form.Group className='col-md-6 mb-5 AnimeStarts'>
+                              <Form.Label className='AnimeElement'>Email</Form.Label>
                               <Form.Control
                                 required
                                 name='Father Email'
@@ -202,10 +212,10 @@ const EnquiryForm = () => {
                         </div>
                       </div>
 
-                      <div>
-                        <h5 className='mb-5'>Parent Information : Mother</h5>
+                      <div className='AnimeStarts'>
+                        <h5 className='mb-5 AnimeElement'>Parent Information : Mother</h5>
                         <Form.Group className='mb-5'>
-                          <Form.Label>Name</Form.Label>
+                          <Form.Label className='AnimeElement'>Name</Form.Label>
                           <Form.Control
                             required
                             name='Mother Name'
@@ -218,8 +228,8 @@ const EnquiryForm = () => {
 
                         <div className='mb-5'>
                           <div className='row'>
-                            <Form.Group className='col-md-6 mb-5'>
-                              <Form.Label>Phone Number</Form.Label>
+                            <Form.Group className='col-md-6 mb-5 AnimeStarts'>
+                              <Form.Label className='AnimeElement'>Phone Number</Form.Label>
                               <Form.Control
                                 required
                                 name='Mother Number'
@@ -230,8 +240,8 @@ const EnquiryForm = () => {
                               />
                             </Form.Group>
 
-                            <Form.Group className='col-md-6 mb-5'>
-                              <Form.Label>Email</Form.Label>
+                            <Form.Group className='col-md-6 mb-5 AnimeStarts'>
+                              <Form.Label className='AnimeElement'>Email</Form.Label>
                               <Form.Control
                                 required
                                 name='Mother Email'
@@ -247,8 +257,8 @@ const EnquiryForm = () => {
                     </div>
 
                     <div className='col-md-11'>
-                      <Form.Group className='mb-5'>
-                        <Form.Label className='mb-5'>
+                      <Form.Group className='mb-5 AnimeStarts'>
+                        <Form.Label className='mb-5 AnimeElement'>
                           Admission of Communication
                         </Form.Label>
                         <Form.Control

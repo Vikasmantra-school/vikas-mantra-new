@@ -64,7 +64,9 @@ function MandatoryScreen() {
 
                         <div className='col-md-5'>
 
-                            <h2 className='ulineRed'>Mandatory<br /> Public Disclosures</h2>
+                            <div className='AnimeStarts'>
+                                <h2 className='ulineRed AnimeStarts'>Mandatory<br /> Public Disclosures</h2>
+                            </div>
 
                         </div>
 
@@ -86,11 +88,11 @@ function MandatoryScreen() {
 
                                 <div className={'col-md-4' + ' ' + 'mb-5'} key={i}>
 
-                                    <div className={styles.disclosureCard}>
+                                    <div className={styles.disclosureCard + ' AnimeStarts'}>
 
-                                        <p>{item.title}</p>
+                                        <p className='AnimeElement'>{item.title}</p>
 
-                                        <a href='{item.url}'><Button className={'brownBtn'}>View All</Button></a>
+                                        <a href={item.url}><Button className='AnimeElement brownBtn'>View All</Button></a>
 
                                     </div>
 
