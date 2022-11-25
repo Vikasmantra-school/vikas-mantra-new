@@ -42,7 +42,7 @@ const Admissions = () => {
         elem1,
         {
           autoAlpha: 0,
-          y: 50
+          y: 50,
         },
         {
           delay: 0.3,
@@ -54,13 +54,12 @@ const Admissions = () => {
             animation: elem1,
             toggleActions: 'play none none none',
             once: true,
-          }
+          },
         }
       )
       ScrollTrigger.refresh()
     })
   }
-
 
   return (
     <>
@@ -92,17 +91,28 @@ const Admissions = () => {
             <div className='col-md-12 col-lg-4'>
               {/* tab-menu-start */}
 
-              <div className={styles.tabWidth + ' nav flex-column nav-pills me-3 responsiveRow AdmissionAnimeStarts AnimeStarts '}
+              <div
+                className={
+                  styles.tabWidth +
+                  ' nav flex-column nav-pills me-3 responsiveRow AdmissionAnimeStarts AnimeStarts '
+                }
                 id='v-pills-tab'
                 role='tablist'
                 aria-orientation='vertical'
               >
-                <button className={styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder1 + ' nav-link active text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '}
+                <button
+                  className={
+                    styles.tabBtn +
+                    ' ' +
+                    styles.redBorder +
+                    ' ' +
+                    styles.responsiveRedBorder1 +
+                    ' nav-link active text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '
+                  }
                   id='v-pills-home-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-home'
                   type='button'
-                  a
                   aria-controls='v-pills-home'
                   aria-selected='true'
                   onClick={(e) => drpDwnClick(e)}
@@ -114,7 +124,15 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button className={styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder2 + ' nav-link text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '}
+                <button
+                  className={
+                    styles.tabBtn +
+                    ' ' +
+                    styles.redBorder +
+                    ' ' +
+                    styles.responsiveRedBorder2 +
+                    ' nav-link text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '
+                  }
                   id='admission-timeline-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#admission-timeline'
@@ -131,7 +149,15 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button className={styles.tabBtn + ' ' + styles.redBorder + ' ' + styles.responsiveRedBorder3 + ' nav-link text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '}
+                <button
+                  className={
+                    styles.tabBtn +
+                    ' ' +
+                    styles.redBorder +
+                    ' ' +
+                    styles.responsiveRedBorder3 +
+                    ' nav-link text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '
+                  }
                   id='v-pills-messages-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-messages'
@@ -148,7 +174,13 @@ const Admissions = () => {
                   />
                 </button>
 
-                <button className={styles.tabBtn + ' ' + styles.responsiveRedBorder4 + ' nav-link text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '}
+                <button
+                  className={
+                    styles.tabBtn +
+                    ' ' +
+                    styles.responsiveRedBorder4 +
+                    ' nav-link text-start color-black position-relative AdmissionScrollAnimeElement AnimeElement '
+                  }
                   id='v-pills-settings-tab'
                   data-bs-toggle='pill'
                   data-bs-target='#v-pills-settings'
@@ -171,7 +203,17 @@ const Admissions = () => {
 
           {/* tab-content-start */}
           <div className={'tab-content '} id=' v-pills-tabContent'>
-            <div className={' tab-pane fade show active ' + styles.Tab1BlueVector + ' ' + styles.tab1RedDotVector + ' ' + styles.vectorImg16 + ' ' + styles.vectorImg5}
+            <div
+              className={
+                ' tab-pane fade show active ' +
+                styles.Tab1BlueVector +
+                ' ' +
+                styles.tab1RedDotVector +
+                ' ' +
+                styles.vectorImg16 +
+                ' ' +
+                styles.vectorImg5
+              }
               id='v-pills-home'
               role='tabpanel'
               aria-labelledby='v-pills-home-tab'
@@ -179,16 +221,30 @@ const Admissions = () => {
             >
               <div className='row'>
                 <div className='col-lg-8 offset-lg-4 col-md-12 '>
-                  <div className={styles.schoolBuilding + ' imgUpAdmission1 imgBgColorAdmission1 pastelPurple3 AdmissionAnimeElement AnimeStarts'}>
+                  <div
+                    className={
+                      styles.schoolBuilding +
+                      ' imgUpAdmission1 imgBgColorAdmission1 pastelPurple3 AdmissionAnimeElement AnimeStarts'
+                    }
+                  >
                     <img
                       src='/assets/banners/school-building2.png'
                       alt='image'
-                      className={styles.schoolBuildingImg + ' img-fluid AdmissionAnimeElement AnimeElement '}
+                      className={
+                        styles.schoolBuildingImg +
+                        ' img-fluid AdmissionAnimeElement AnimeElement '
+                      }
                     />
                   </div>
                 </div>
 
-                <div className={ styles.cardmargin1 + ' ' + ' col-lg-8 offset-lg-2 col-md-12 position-relative ' } >
+                <div
+                  className={
+                    styles.cardmargin1 +
+                    ' ' +
+                    ' col-lg-8 offset-lg-2 col-md-12 position-relative '
+                  }
+                >
                   <div className={styles.card1 + ' card'}>
                     <div className='card-body '>
                       <div className='AdmissionAnimeStarts AnimeStarts'>
@@ -235,7 +291,14 @@ const Admissions = () => {
               </div>
             </div>
 
-            <div className={' tab-pane fade ' + ' ' + styles.vectorImg3 + ' ' + styles.vectorImg9}
+            <div
+              className={
+                ' tab-pane fade ' +
+                ' ' +
+                styles.vectorImg3 +
+                ' ' +
+                styles.vectorImg9
+              }
               id='admission-timeline'
               role='tabpanel'
               aria-labelledby='admission-timeline-tab'
@@ -278,7 +341,9 @@ const Admissions = () => {
                   <img
                     src='/assets/banners/student.png'
                     alt='image'
-                    className={styles.studentImg + ' AdmissionScrollAnimeElement'}
+                    className={
+                      styles.studentImg + ' AdmissionScrollAnimeElement'
+                    }
                   />
                 </div>
 
@@ -613,9 +678,13 @@ const Admissions = () => {
                 </div>
 
                 <div className={'col-md-10 '}>
-                  <h2 className=' mt-5 mb-3 AdmissionScrollAnimeElement'>Admissions Requirements</h2>
+                  <h2 className=' mt-5 mb-3 AdmissionScrollAnimeElement'>
+                    Admissions Requirements
+                  </h2>
 
-                  <h4 className='AdmissionScrollAnimeElement'>Documents Required:</h4>
+                  <h4 className='AdmissionScrollAnimeElement'>
+                    Documents Required:
+                  </h4>
 
                   <p className='AdmissionScrollAnimeElement'>
                     As part of the application process, parents are requested to
@@ -756,7 +825,9 @@ const Admissions = () => {
                     <img
                       src='/assets/banners/school-building2.png'
                       alt='image'
-                      className={styles.schoolBuildingImg + ' AdmissionAnimeElement'}
+                      className={
+                        styles.schoolBuildingImg + ' AdmissionAnimeElement'
+                      }
                     />
                   </div>
                 </div>
@@ -824,7 +895,9 @@ const Admissions = () => {
                           aria-expanded='true'
                           aria-controls='collapseOne'
                         >
-                          <h4 className='pt-3 AdmissionScrollAnimeElement'>Do you have a wait list?</h4>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>
+                            Do you have a wait list?
+                          </h4>
                         </button>
                       </h2>
                       <div
@@ -851,7 +924,9 @@ const Admissions = () => {
                           aria-expanded='false'
                           aria-controls='collapseTwo'
                         >
-                          <h4 className='pt-3 AdmissionScrollAnimeElement'>How are students assessed?</h4>
+                          <h4 className='pt-3 AdmissionScrollAnimeElement'>
+                            How are students assessed?
+                          </h4>
                         </button>
                       </h2>
                       <div
@@ -1054,7 +1129,6 @@ const Admissions = () => {
                 </div>
               </div>
             </div>
-
           </div>
 
           {/* tab-content-start */}
