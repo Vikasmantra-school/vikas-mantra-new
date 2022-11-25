@@ -114,7 +114,6 @@ const Admissions = () => {
                   data-bs-target='#v-pills-home'
                   type='button'
                   aria-controls='v-pills-home'
-                  aria-selected='true'
                   onClick={(e) => drpDwnClick(e)}
                 >
                   Admission Overview
