@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import styles from './style.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
@@ -12,52 +12,7 @@ function HomeSlider({ ref }) {
 
   let title = useRef(null)
 
-  useEffect(() => {
-    function titleAnime() {
-      gsap.fromTo(
-        title,
-        { opacity: 0 },
-        {
-          duration: 0.9,
-          opacity: 1,
-          y: -20,
-          ease: Power3.easeOut,
-        }
-      )
-    }
-    titleAnime()
-    ScrollTrigger.refresh();
-  }, [])
 
-  useEffect(() => {
-    const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
-    parentTrigger.forEach(staggerAnimeFunc)
-    function staggerAnimeFunc(elem, index) {
-      let text = elem.querySelectorAll('.bottomToTop')
-      gsap.fromTo(
-        text,
-        {
-          opacity: 0,
-          y: 200,
-        },
-        {
-          y: 0,
-          duration: 0.9,
-          delay: 0.3,
-          opacity: 1,
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: elem,
-            start: 'top center',
-            end: 'bottom bottom',
-            ease: Power3.easeOut,
-            toggleActions: 'play',
-          },
-        }
-      )
-    }
-    ScrollTrigger.refresh();
-  }, [])
 
   return (
     <>
@@ -80,28 +35,27 @@ function HomeSlider({ ref }) {
           }}
         >
           <SplideSlide>
-            <section className={styles.bannerSection + ' ' + styles.banner1 + ' ' + ' parentAnimeStarts'}>
+            <section className={styles.bannerSection + ' ' + styles.banner1 + ' ' + ''}>
               <div className='container'>
                 <div className='row homeBanner'>
 
-                  <div
-                    ref={(el) => {
-                      title = el
-                    }}
-                    className={
-                      styles.bannercontent +
-                      ' ' +
-                      'col-xl-6 col-lg-8 col-md-10 col-sm-12'
-                    }
-                  >
-                    <h1 className='box bottomToTop'>
-                      To educate young minds to be lifelong learners in this dynamic
-                      world
-                    </h1>
-                    <p className='box bottomToTop'>
-                      Vikas Mantra Public School offers CBSE Curriculum and was
-                      launched in the academic year 2019-22.
-                    </p>
+                  <div ref={(el) => { title = el }}
+                    className={styles.bannercontent + ' ' + 'col-xl-6 col-lg-8 col-md-10 col-sm-12 '} >
+
+                    <div className='AnimeStarts'>
+
+                      <h1 className='box AnimeElement'>
+                        To educate young minds to be lifelong learners in this dynamic
+                        world
+                      </h1>
+
+                      <p className='box AnimeElement'>
+                        Vikas Mantra Public School offers CBSE Curriculum and was
+                        launched in the academic year 2019-22.
+                      </p>
+
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -110,7 +64,7 @@ function HomeSlider({ ref }) {
           </SplideSlide>
 
           <SplideSlide>
-            <section className={styles.bannerSection + ' ' + styles.banner2 + ' ' + 'parentAnimeStarts'}>
+            <section className={styles.bannerSection + ' ' + styles.banner2 + ' ' + ''}>
               <div className='container'>
                 <div className='row homeBanner'>
 
@@ -124,12 +78,18 @@ function HomeSlider({ ref }) {
                       'col-xl-6 col-lg-8 col-md-10 col-sm-12'
                     }
                   >
-                    <h1 className='box bottomToTop'>
-                      Award for Academic Excellence
-                    </h1>
-                    <p className='box bottomToTop'>
-                      VMPS received the International Education Award for Academic Excellence ( Private School ) of the year 2021 - 22
-                    </p>
+
+                    <div className=''>
+
+                      <h1 className='box'>
+                        Award for Academic Excellence
+                      </h1>
+                      <p className='box '>
+                        VMPS received the International Education Award for Academic Excellence ( Private School ) of the year 2021 - 22
+                      </p>
+
+                    </div>
+
                   </div>
                 </div>
               </div>

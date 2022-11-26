@@ -30,7 +30,7 @@ function Curriculum() {
           <div className='row'>
             <div className='col-xl-5 col-lg-6 col-md-7 col-sm-12'>
               <div className='AnimeStarts'>
-                <h2 className='AnimeElement'>Why VIKAS MANTRA PUBLIC SCHOOL</h2>
+                <h2 className='AnimeElement'>Curriculum</h2>
               </div>
             </div>
           </div>

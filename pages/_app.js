@@ -2,7 +2,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { useEffect } from 'react'
 import '../styles/globals.css'
 import Nav from '../components/Header/Nav'
-import Footer from '../components/Footer/Footer'
+import { Footer } from '../components/Footer/Footer'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 

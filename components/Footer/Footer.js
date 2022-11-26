@@ -4,7 +4,7 @@ import styles from './style.module.css'
 import Link from 'next/link'
 import { useState, useRef } from 'react'
 
-const Footer = () => {
+export const Footer = () => {
 
   //form-data-clear-after-submit
 
@@ -193,4 +193,3 @@ const Footer = () => {
     </div>
   )
 }
-export default Footer
