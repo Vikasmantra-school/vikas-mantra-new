@@ -1,4 +1,4 @@
-import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
 import styles from './style.module.css'
 
 const Laboratory = () => {

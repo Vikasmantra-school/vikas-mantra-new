@@ -1,5 +1,5 @@
 import styles from './style.module.css'
-import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
 import VisionMission from '../../../components/VisionMission'
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap'

@@ -1,5 +1,5 @@
 import styles from './style.module.css'
-import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
 
 const Classrooms = () => {
   const pageTitle = 'Campus'

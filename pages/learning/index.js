@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './style.module.css'
 import Link from 'next/link'
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
 import { learning } from '../../data/learning'
 import { timeline } from '../../components/Timeline/Timeline'
 

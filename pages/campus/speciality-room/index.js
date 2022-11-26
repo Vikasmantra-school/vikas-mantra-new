@@ -1,4 +1,4 @@
-import Breadcrumb from '../../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
 import styles from './style.module.css'
 
 const SpecialityRoom = () => {
@@ -67,7 +67,7 @@ const SpecialityRoom = () => {
                         <div className='col-md-6'>
 
                             <div className='AnimeStarts'>
-                                <h3 className={'ulineRed AnimeElement' + styles.uLineMargin}>Specialty Rooms at
+                                <h3 className={' ulineRed AnimeElement ' + styles.uLineMargin}>Specialty Rooms at
                                     VIKAS MANTRA PUBLIC SCHOOL include</h3>
                             </div>
 
@@ -80,7 +80,9 @@ const SpecialityRoom = () => {
                         <div className={styles.pdngZero + ' col-md-2 py-5'}>
 
                             <ul className='list-points AnimeStarts'>
-                                <li className='AnimeElement'> <img src="/assets/icons/blue-point.png" alt='list-point' />Audio Video Lab
+                                <li className='AnimeElement'>
+                                    <img src="/assets/icons/blue-point.png" alt='list-point' />
+                                    Audio Video Lab
                                 </li>
                             </ul>
 
@@ -90,7 +92,10 @@ const SpecialityRoom = () => {
 
                             <ul className='list-points AnimeStarts'>
 
-                                <li className='AnimeElement'> <img src="/assets/icons/pink-point.png" alt='list-point' /> Music and Dance studios</li>
+                                <li className='AnimeElement'>
+                                    <img src="/assets/icons/pink-point.png" alt='list-point' />
+                                    Music and Dance studios
+                                </li>
 
                             </ul>
 
@@ -100,7 +105,10 @@ const SpecialityRoom = () => {
 
                             <ul className='list-points AnimeStarts'>
 
-                                <li className='AnimeElement'> <img src="/assets/icons/yellow-point.png" alt='list-point' /> Media Centre</li>
+                                <li className='AnimeElement'>
+                                    <img src="/assets/icons/yellow-point.png" alt='list-point' />
+                                    Media Centre
+                                </li>
 
                             </ul>
 
@@ -110,7 +118,10 @@ const SpecialityRoom = () => {
 
                             <ul className='list-points AnimeStarts'>
 
-                                <li className='AnimeElement'> <img src="/assets/icons/lightgreen-point.png" alt='list-point' /> Multipurpose Hall</li>
+                                <li className='AnimeElement'>
+                                    <img src="/assets/icons/lightgreen-point.png" alt='list-point' />
+                                    Multipurpose Hall
+                                </li>
 
                             </ul>
 

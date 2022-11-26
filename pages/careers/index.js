@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './style.module.css'
 import Table from 'react-bootstrap/Table'
 import Form from 'react-bootstrap/Form'
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
 import { useState, useRef } from 'react'
 
 function Career() {

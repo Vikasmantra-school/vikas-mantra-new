@@ -1,5 +1,5 @@
 import styles from './style.module.css'
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { useEffect } from 'react'

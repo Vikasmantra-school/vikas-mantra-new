@@ -4,7 +4,7 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import styles from './style.module.css'
 
 
-const Breadcrumb = ({ pageName }) => {
+export const Breadcrumb = ({ pageName }) => {
   return (
     <>
       <section className='pt-4 VectorLogo '>
@@ -27,5 +27,3 @@ const Breadcrumb = ({ pageName }) => {
     </>
   )
 }
-
-export default Breadcrumb

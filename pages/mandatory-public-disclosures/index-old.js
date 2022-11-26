@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './style.module.css'
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
 import Table from 'react-bootstrap/Table'
 
 function MandatoryScreen() {

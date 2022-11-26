@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./style.module.css"
 import Button from 'react-bootstrap/Button';
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
 
 function MandatoryScreen() {
 
@@ -65,7 +65,7 @@ function MandatoryScreen() {
                         <div className='col-md-5'>
 
                             <div className='AnimeStarts'>
-                                <h2 className='ulineRed AnimeStarts'>Mandatory<br /> Public Disclosures</h2>
+                                <h2 className='ulineRed AnimeElement'>Mandatory<br /> Public Disclosures</h2>
                             </div>
 
                         </div>

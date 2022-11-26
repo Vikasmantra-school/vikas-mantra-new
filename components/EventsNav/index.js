@@ -4,7 +4,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import styles from './style.module.css'
 import { gsap } from 'gsap'
 
-function EventsNav({ events }) {
+export const EventsNav = ({ events }) => {
   const [active, setActive] = useState('Beach Day for Kg')
 
   function navLinkClick(e) {
@@ -72,4 +72,3 @@ function EventsNav({ events }) {
   )
 }
 
-export default EventsNav

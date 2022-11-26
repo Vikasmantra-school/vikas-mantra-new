@@ -1,27 +1,25 @@
 import styles from './style.module.css'
 import Link from 'next/link'
 
-const BlogDates = () => {
+export const BlogDates = () => {
     return (
         <>
-            <div className={styles.colBg}>
+            <div className={styles.colBg + ' AnimeStarts '}>
 
-                <h4>Latest Blog</h4>
+                <h4 className='AnimeElement'>Latest Blog</h4>
                 <hr />
 
                 <Link href='/about/blog/blog2'>
-                    <a>BENEFITS OF YOGA FOR SCHOOL STUDENTS</a>
+                    <a className='AnimeElement'>BENEFITS OF YOGA FOR SCHOOL STUDENTS</a>
                 </Link>
-                <p className='greyText'>26-July-2022</p>
+                <p className='greyText AnimeElement'>26-July-2022</p>
 
                 <Link href='/about/blog/blog1'>
-                    <a>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</a>
+                    <a className='AnimeElement'>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</a>
                 </Link>
-                <p className='greyText'>26-July-2022</p>
+                <p className='greyText AnimeElement'>26-July-2022</p>
 
             </div>
         </>
     )
 }
-
-export default BlogDates;

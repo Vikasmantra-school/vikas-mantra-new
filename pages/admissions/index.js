@@ -2,9 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretLeft, faHdd } from '@fortawesome/free-solid-svg-icons'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import styles from './style.module.css'
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
 import { gsap } from 'gsap'
-import { useEffect } from 'react'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 const Admissions = () => {
@@ -77,7 +76,7 @@ const Admissions = () => {
         <div className='container position-relative'>
           <div className='row py-5'>
             <div className='AdmissionAnimeStarts AnimeStarts'>
-              <h2 className={styles.headingPdng + ' AdmissionAnimeElement'}>
+              <h2 className={styles.headingPdng + ' AdmissionAnimeElement AnimeElement '}>
                 Admissions
               </h2>
             </div>
