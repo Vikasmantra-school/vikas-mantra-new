@@ -2,18 +2,9 @@ import React, { useRef } from 'react'
 import styles from './style.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
-import { gsap, Power3 } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-
-gsap.registerPlugin(ScrollTrigger)
 
 function HomeSlider({ ref }) {
-
-
   let title = useRef(null)
-
-
-
   return (
     <>
 

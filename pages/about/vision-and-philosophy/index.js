@@ -1,62 +1,29 @@
 import styles from './style.module.css'
 import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
 import VisionMission from '../../../components/VisionMission'
-import React, { useEffect } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 const VisionAndPhilosophy = () => {
-  gsap.registerPlugin(ScrollTrigger)
 
   const pageTitle = 'About'
 
   //gsap-integration
 
-  useEffect(() => {
-    const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
-    parentTrigger.forEach(fadeIn)
-
-    function fadeIn(elem) {
-      let text = elem.querySelectorAll('.fading')
-      gsap.fromTo(
-        text,
-        {
-          autoAlpha: 0,
-          y: 50
-        },
-        {
-          delay: 0.5,
-          duration: 1,
-          autoAlpha: 1,
-          y: 0,
-          scrollTrigger: {
-            trigger: text,
-            animation: text,
-            toggleActions: 'play none none none',
-            once: true,
-          }
-        }
-      )
-    }
-  }, [])
-
-
   return (
     <>
       <Breadcrumb pageName={pageTitle} />
 
-      <section className='pt-4 parentAnimeStarts '>
+      <section className='pt-4 AnimeStarts '>
         <div className='container position-relative'>
           <div className='row py-5'>
             <div className='col-md-6'>
-              <h2 className={styles.headingPdng + ' fading'}>Our Vision And Philosophy</h2>
+              <h2 className={styles.headingPdng + ' AnimeElement'}>Our Vision And Philosophy</h2>
             </div>
           </div>
         </div>
       </section>
 
       <section
-        className={styles.sectionPdng + ' whitebg position-relative parentAnimeStarts ' + ' ' + styles.vectorImg5}>
+        className={styles.sectionPdng + ' whitebg position-relative AnimeStarts ' + ' ' + styles.vectorImg5}>
         <div className='container'>
           <div className='row'>
 
@@ -64,7 +31,7 @@ const VisionAndPhilosophy = () => {
               <ul className='nav nav-tabs' id='myTab' role='tablist'>
                 <li className='nav-item' role='presentation'>
                   <button
-                    className='nav-link color-black active fading'
+                    className='nav-link color-black active AnimeElement'
                     id='home-tab'
                     data-bs-toggle='tab'
                     data-bs-target='#home-tab-pane'
@@ -79,7 +46,7 @@ const VisionAndPhilosophy = () => {
 
                 <li className='nav-item' role='presentation'>
                   <button
-                    className='nav-link color-black fading'
+                    className='nav-link color-black AnimeElement'
                     id='profile-tab'
                     data-bs-toggle='tab'
                     data-bs-target='#profile-tab-pane'
@@ -102,9 +69,9 @@ const VisionAndPhilosophy = () => {
                   tabIndex='0'
                 >
                   <div className='pt-3'>
-                    <h2 className='ulineRed fading'>Our Vision</h2>
+                    <h2 className='ulineRed AnimeElement'>Our Vision</h2>
 
-                    <p className='pt-5 fading'>
+                    <p className='pt-5 AnimeElement'>
                       Our Vision is to develop knowledgeable, adaptable,
                       responsible compassionate and caring young people with the
                       much needed survival and employable skills to create a
@@ -122,9 +89,9 @@ const VisionAndPhilosophy = () => {
                   tabIndex='0'
                 >
                   <div className='pt-3'>
-                    <h2 className='ulineRed fading'>Our Mission</h2>
+                    <h2 className='ulineRed AnimeElement'>Our Mission</h2>
 
-                    <p className='pt-5 fading'>
+                    <p className='pt-5 AnimeElement'>
                       Our Mission is to educate young minds to be lifelong
                       learners in this dynamic world. We aspire to develop
                       outstanding world citizens who can contribute to the
@@ -143,13 +110,13 @@ const VisionAndPhilosophy = () => {
               <img
                 src='/assets/banners/school-building.png'
                 alt='image'
-                className={styles.schoolBuildingImg + ' fading'}
+                className={styles.schoolBuildingImg + ' AnimeElement'}
               />
 
               <img
                 src='/assets/VMPS.png'
                 alt='image'
-                className={styles.vmpsImg + ' fading'}
+                className={styles.vmpsImg + ' AnimeElement'}
               />
             </div>
 
