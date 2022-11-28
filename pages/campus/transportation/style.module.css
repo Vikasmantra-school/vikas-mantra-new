@@ -47,7 +47,7 @@
     .vectorImg11::before {
         content: '';
         position: absolute;
-        background-image: url(/assets/vectors/vector15.png);
+        background-image: url(/assets/vectors/Vector15.png);
         background-repeat: no-repeat;
         background-position: center left;
         z-index: 1;

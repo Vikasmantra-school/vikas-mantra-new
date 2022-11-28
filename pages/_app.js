@@ -5,6 +5,7 @@ import Nav from '../components/Header/Nav'
 import { Footer } from '../components/Footer/Footer'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
   function Anime() {
@@ -92,6 +93,8 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
 
       <Footer />
+
+      <Analytics />
     </>
   )
 }

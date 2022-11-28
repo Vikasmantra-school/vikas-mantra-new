@@ -25,7 +25,7 @@
 .vectorImg12::before {
     content: '';
     position: absolute;
-    background-image: url(/assets/vectors/vector12.png);
+    background-image: url(/assets/vectors/Vector12.png);
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
@@ -63,7 +63,7 @@
     .vectorImg12::before {
         content: '';
         position: absolute;
-        background-image: url(/assets/vectors/vector12.png);
+        background-image: url(/assets/vectors/Vector12.png);
         background-repeat: no-repeat;
         background-position: top left;
         z-index: 1;

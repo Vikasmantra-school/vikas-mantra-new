@@ -114,7 +114,7 @@ p {
 .VectorSpiral::before {
   content: '';
   position: absolute;
-  background-image: url(/assets/vectors/vector12.png);
+  background-image: url(/assets/vectors/Vector12.png);
   background-repeat: no-repeat;
   background-position: top right;
   z-index: 1;
