@@ -34,10 +34,21 @@ const Nav = () => {
             </Link>
             <ul className='m-hide navbar-nav ms-auto mb-2 mb-lg-0 call-btn'>
               <Button className={styles.firstbtn}>
-                <FontAwesomeIcon icon={faPhone} className={styles.callIcon} />
-                70924 50450
+                <Link href='tel:+91-7092450450' legacyBehavior>
+                  <a>
+                    <FontAwesomeIcon icon={faPhone} className={styles.callIcon} />
+                    70924 50450
+                  </a>
+                </Link>
               </Button>
-              <Button className={styles.secondtbtn}>Enroll</Button>
+
+              <Button className={styles.secondtbtn}>
+                <Link href='/enquiry-form' legacyBehavior>
+                  <a>
+                    Enroll
+                  </a>
+                </Link>
+              </Button>
             </ul>
             <div
               onClick={(e) => hamburgerMenu(e)}

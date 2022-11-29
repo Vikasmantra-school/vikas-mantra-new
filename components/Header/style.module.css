@@ -1,18 +1,50 @@
-.mainLogo img{width: 165px !important;}
+.mainLogo img {
+    width: 165px !important;
+}
 
-.firstbtn{background: #D8FF3E;
+.firstbtn {
+    background: #D8FF3E;
     border: 0.5px solid #D8FF3E;
     border-radius: 1px;
-    color: #474747;padding: 5px 18px;font-size: 14px;}
+    color: #474747;
+    padding: 5px 18px;
+    font-size: 14px;
+}
 
-.secondtbtn{background: linear-gradient(85.31deg, #A11D2A -39.85%, #E02D53 44.76%, #F27D49 117.87%);border-radius: 1px;color: #FFFFFF;border: unset;padding: 5px 18px;
-    font-size: 14px;}
+.secondtbtn {
+    background: linear-gradient(85.31deg, #A11D2A -39.85%, #E02D53 44.76%, #F27D49 117.87%);
+    border-radius: 1px;
+    color: #FFFFFF;
+    border: unset;
+    padding: 5px 18px;
+    font-size: 14px;
+}
 
-.homeheader{z-index: 2;}
+.homeheader {
+    z-index: 2;
+}
 
-.navTransparent{z-index: 9999;}
+.navTransparent {
+    z-index: 9999;
+}
 
-.homeheader{width: 100%;}
+.homeheader {
+    width: 100%;
+}
 
-.callIcon{font-size: 13px;margin-right: 4px;width: 12px;}
+.callIcon {
+    font-size: 13px;
+    margin-right: 4px;
+    width: 12px;
+}
 
+.firstbtn:hover {
+    background: #D8FF3E;
+    border: 0.5px solid #D8FF3E;
+    color: #474747 !important;
+}
+
+.secondtbtn:hover {
+    color: #fff !important;
+    background: linear-gradient(85.31deg, #A11D2A -39.85%, #E02D53 44.76%, #F27D49 117.87%);
+}
