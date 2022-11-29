@@ -296,7 +296,7 @@ function Home() {
         </div>
       </section>
 
-      <section className={styles.videoSection + ' ' + 'parentAnimeStarts'}>
+      {/* <section className={styles.videoSection + ' ' + 'parentAnimeStarts'}>
         <div className='container'>
           <div className='row'>
             <div
@@ -317,6 +317,17 @@ function Home() {
             </div>
           </div>
         </div>
+      </section> */}
+
+
+      <section className={styles.SchoolVideoSection}>
+
+        <div className={styles.VideoContainer}>
+          <video controls width='100%' height='auto' poster='/assets/videos/school-video-thumbnail.png' >
+            <source src="/assets/videos/school-video.mp4" type='video/mp4' />
+          </video>
+        </div>
+
       </section>
 
       <section className={styles.testimonials}>
