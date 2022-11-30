@@ -99,3 +99,38 @@
     }
 
 }
+
+@media screen and (min-width: 661px) and (max-width: 990px) {
+    .VectorSpiral::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector12.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 35px;
+        height: 228px;
+        width: 114px;
+        left: 0;
+        top: 90px;
+    }
+
+    .vectorImg8::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        z-index: 0;
+        background-size: 85px;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        right: 0;
+    }
+
+    .sectionPdng {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+}

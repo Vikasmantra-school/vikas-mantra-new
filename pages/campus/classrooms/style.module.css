@@ -20,11 +20,11 @@
     background-repeat: no-repeat;
     background-position: center left;
     z-index: 0;
-    background-size: 12vh;
-    height: 227px;
+    background-size: 85px;
+    height: 125px;
     left: 0;
-    width: 247px;
-    top: 40vh;
+    width: 100px;
+    top: 350px;
 }
 
 .vectorImg9::after {
@@ -34,9 +34,9 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 22vh;
-    height: 227px;
-    width: 247px;
+    background-size: 120px;
+    height: 155px;
+    width: 140px;
     right: 0;
     bottom: 0;
 }
@@ -50,10 +50,11 @@
     background-position: top center;
     z-index: 0;
     background-size: 285px;
-    height: 227px;
-    right: -280px;
-    width: 300px;
-    top: 0px;
+    height: 120px;
+    right: 0;
+    width: 290px;
+    top: unset;
+    bottom: 0;
 }
 
 
@@ -78,25 +79,28 @@
         background-position: bottom right;
         z-index: 0;
         background-size: 75px;
-        height: 227px;
-        width: 247px;
+        height: 127px;
+        width: 100px;
         right: 0;
         bottom: 0;
     }
 
     .vectorImg10::before {
+
+        display: none;
         content: '';
         position: absolute;
         background-image: url(/assets/vectors/Vector10.png);
         background-repeat: no-repeat;
         background-position: center left;
         z-index: 0;
-        background-size: 110px;
-        height: 227px;
-        left: 0;
-        width: 247px;
-        top: 18%;
+        background-size: 70px;
+        height: 127px;
+        right: 0;
+        width: 130px;
+        top: 25%;
         z-index: 1;
+        left: 0;
     }
 
     .classroomImgDiv {
@@ -112,14 +116,85 @@
         background-repeat: no-repeat;
         background-position: bottom center;
         z-index: 0;
-        background-size: 185px;
-        height: 227px;
+        background-size: 85px;
+        height: 93px;
         right: 0px;
-        width: 300px;
+        width: 120px;
         bottom: 0;
     }
-    .ulineMargin{
+
+    .ulineMargin {
         margin-bottom: 40px;
     }
 
+}
+
+
+@media screen and (min-width: 661px) and (max-width: 767px) {
+    .vmpsImg::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/VMPS.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: 0;
+        background-size: 85px;
+        height: 93px;
+        right: 0px;
+        width: 120px;
+        bottom: 0;
+    }
+
+    .classroomImgDiv {
+        position: relative;
+        top: 0;
+    }
+
+    .pdngZero {
+        padding: 0px 12px !important;
+    }
+
+    .ulineMargin {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .vectorImg10::before {
+        display: none;
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector17.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        z-index: 0;
+        background-size: 120px;
+        height: 170px;
+        left: unset;
+        width: 150px;
+        top: 350px;
+        right: 0;
+    }
+
+    .vmpsImg::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/VMPS.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        z-index: 0;
+        background-size: 285px;
+        height: 120px;
+        right: 0;
+        width: 300px;
+        top: unset;
+        left: unset;
+        bottom: 0;
+    }
+    .pdngZero {
+        padding: 0px 12px !important;
+    }
+    .ulineMargin {
+        margin-bottom: 40px;
+    }
 }

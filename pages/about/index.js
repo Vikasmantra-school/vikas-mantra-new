@@ -33,7 +33,7 @@ const About = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-5 position-relative '>
+                        <div className='col-lg-5 col-md-12 position-relative '>
 
                             <div className={styles.margin + ' pb-5 '}>
 
@@ -71,7 +71,7 @@ const About = () => {
 
                         </div>
 
-                        <div className='col-md-6 offset-md-1 position-relative'>
+                        <div className='col-lg-6 offset-lg-1 col-md-12 position-relative'>
 
                             <div className='AnimeStarts'>
 

@@ -2,6 +2,7 @@
     color: #AA182C;
     margin-right: 10px;
 }
+
 .Blog1Img {
     width: 100%;
     top: -90px;
@@ -11,10 +12,12 @@
     width: 100%;
     top: -70px;
 }
-.colPdng1{
+
+.colPdng1 {
     padding: 0px 70px 0px 12px;
 }
-.colPdng2{
+
+.colPdng2 {
     padding: 0px 60px 0px 60px;
 }
 
@@ -71,7 +74,8 @@
     height: auto;
     top: -224px;
 }
-.rowBox{
+
+.rowBox {
     border: 2px solid #222;
 }
 
@@ -82,12 +86,14 @@
         position: unset;
         width: 100%;
         height: 100%;
-        padding-top: 60px;
+        top: 0;
     }
 
     .Blog2Img {
+        position: unset;
         width: 100%;
-        padding-bottom: 50px;
+        height: 100%;
+        top: 0;
     }
 
     .sectionContainer {
@@ -99,6 +105,7 @@
         width: 100%;
         height: 100%;
     }
+
     .vectorImg2::before {
         content: '';
         position: absolute;
@@ -112,6 +119,7 @@
         width: 190px;
         top: -2%;
     }
+
     .vectorImg3::after {
         content: '';
         position: absolute;
@@ -125,8 +133,56 @@
         width: 190px;
         bottom: 3%;
     }
-    .colPdng2{
+
+    .colPdng2 {
         padding: 0 15px;
     }
 
+}
+
+@media only screen and (min-width: 661px) and (max-width: 990px) {
+    .vectorImg2::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector1.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 88px;
+        height: 210px;
+        left: 0%;
+        width: 190px;
+        top: -2%;
+    }
+
+    .vectorImg3::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector2.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 1;
+        background-size: 100px;
+        height: 210px;
+        right: 0%;
+        width: 190px;
+        bottom: 3%;
+    }
+    .Blog1Img {
+        width: 100%;
+        top: 0;
+    }
+    .Blog2Img {
+        width: 100%;
+        top: 0;
+    }
+    .colPdng1 , .colPdng2 {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    .colPdng1 , .colPdng2 {
+        padding: 0;
+    }
 }

@@ -128,7 +128,7 @@ const Contact = () => {
 
                         <div className='col-md-6'></div>
 
-                        <div className='col-md-6'>
+                        <div className='col-lg-6 col-md-12'>
 
                             <div className={'imgUp imgBgColor pastelGreen2 ContactAnimeStarts3 ' + ' ' + styles.careerImg}>
 
@@ -254,6 +254,7 @@ const Contact = () => {
 
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </section>

@@ -91,7 +91,7 @@ const MessageFromChairMan = () => {
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative  '>
 
-                            <div className='imgBgColor pastelBlue5 imgUp AnimeStarts'>
+                            <div className={'imgBgColor pastelBlue5 imgUp AnimeStarts ' + styles.ImgMargin}>
 
                                 <img src='/assets/banners/chairman.png' alt="image" className={styles.ChairmanImg + ' AnimeElement'} />
 

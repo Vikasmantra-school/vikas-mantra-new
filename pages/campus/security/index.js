@@ -32,7 +32,7 @@ const Security = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative'>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>Security at VIKAS MANTRA
@@ -53,7 +53,7 @@ const Security = () => {
 
                         </div>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12  position-relative'>
 
                             <div className='imgBgColor imgUp pastelRed2 bgImageMargin AnimeStarts'>
 

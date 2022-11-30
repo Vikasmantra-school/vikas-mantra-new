@@ -33,7 +33,7 @@ const Library = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative'>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>The library is at the heart of
@@ -67,7 +67,7 @@ const Library = () => {
 
                         </div>
 
-                        <div className={'col-md-6 position-relative ' + styles.vectorImg5}>
+                        <div className={'col-lg-6 col-md-12 position-relative ' + styles.vectorImg5}>
 
                             <div className='imgBgColor pastelPurple2 AnimeStarts '>
 

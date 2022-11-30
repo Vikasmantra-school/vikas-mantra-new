@@ -7,7 +7,7 @@
     width: 100%;
     position: absolute;
     top: -185px;
-   
+
 }
 
 .vectorImg11::before {
@@ -44,6 +44,7 @@
         top: 0;
         right: 0;
     }
+
     .vectorImg11::before {
         content: '';
         position: absolute;
@@ -57,4 +58,19 @@
         bottom: 0%;
     }
 
+}
+
+@media screen and (min-width: 661px) and (max-width: 990px) {
+    .vectorImg11::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector15.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        z-index: 1;
+        background-size: 62px;
+        height: 228px;
+        width: 114px;
+        bottom: 0%;
+    }
 }

@@ -88,3 +88,32 @@
     }
 
 }
+
+@media screen and (min-width: 661px) and (max-width: 990px) {
+    .vectorImg12::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector12.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 65px;
+        height: 228px;
+        width: 114px;
+        left: 0;
+        top: 40px;
+    }
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 100px;
+        height: 227px;
+        right: 0;
+        width: 247px;
+        bottom: 10px;
+    }
+}

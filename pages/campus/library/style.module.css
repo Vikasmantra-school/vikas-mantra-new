@@ -2,7 +2,7 @@
     color: #AA182C;
     margin-right: 10px;
 }
- 
+
 .vectorImg1 {
     width: auto;
     height: 280px;
@@ -55,10 +55,11 @@
 @media only screen and (max-width: 660px) {
 
 
-    .libraryImg{
+    .libraryImg {
         width: 100%;
         position: unset;
     }
+
     .vectorImg5::before {
         content: '';
         position: absolute;
@@ -72,6 +73,7 @@
         width: 190px;
         bottom: 180px;
     }
+
     .vectorImg10::after {
         content: '';
         position: absolute;
@@ -85,10 +87,38 @@
         width: 247px;
         bottom: 0;
     }
+
     .libraryImg {
         width: 100%;
         top: 0px;
         right: 0px;
     }
 
+}
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+    .vectorImg5::before {
+        display: none;
+    }
+
+    .libraryImg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector8.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 0;
+        background-size: 130px;
+        height: 170px;
+        right: 0;
+        left: unset;
+        width: 140px;
+        bottom: 0;
+    }
 }

@@ -27,7 +27,7 @@ const VisionAndPhilosophy = () => {
         <div className='container'>
           <div className='row'>
 
-            <div className='col-md-5 navTab vision-1-Tab '>
+            <div className='col-lg-5 col-md-12 navTab vision-1-Tab '>
               <ul className='nav nav-tabs' id='myTab' role='tablist'>
                 <li className='nav-item' role='presentation'>
                   <button
@@ -106,7 +106,7 @@ const VisionAndPhilosophy = () => {
               </div>
             </div>
 
-            <div className='col-md-6 offset-md-1 position-relative'>
+            <div className='col-lg-6 offset-lg-1 col-md-12 position-relative'>
               <img
                 src='/assets/banners/school-building.png'
                 alt='image'

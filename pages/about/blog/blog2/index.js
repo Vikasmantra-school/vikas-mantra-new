@@ -16,7 +16,7 @@ const Blog2 = () => {
 
                     <div className='row py-5'>
 
-                        <div className='col-md-6 AnimeStarts'>
+                        <div className='col-lg-6 col-md-10 AnimeStarts'>
 
                             <h2 className='AnimeElement'>BENEFITS OF YOGA FOR SCHOOL STUDENTS</h2>
 
@@ -34,7 +34,7 @@ const Blog2 = () => {
 
                     <div className='row py-5 align-items-start '>
 
-                        <div className='col-md-6'>
+                        <div className='col-lg-6 col-md-12'>
 
                             <div className='AnimeStarts'>
                                 
@@ -48,7 +48,7 @@ const Blog2 = () => {
 
                         </div>
 
-                        <div className='col-md-6 position-relative AnimeStarts'>
+                        <div className='col-lg-6 col-md-12 position-relative AnimeStarts'>
 
                             <img src='/assets/blog2.png' alt="image" className='BlogCntImg AnimeElement' />
 
@@ -59,7 +59,7 @@ const Blog2 = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-8'>
+                        <div className='col-lg-8 col-md-12 '>
 
                             <div className='AnimeStarts'>
 
@@ -128,7 +128,7 @@ const Blog2 = () => {
 
                         </div>
 
-                        <div className='col-md-4 '>
+                        <div className='col-lg-4 col-md-8 '>
 
                             <BlogDates />
 

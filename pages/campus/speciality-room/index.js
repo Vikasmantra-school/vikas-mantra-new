@@ -32,7 +32,7 @@ const SpecialityRoom = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative'>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>VIKAS MANTRA PUBLIC
@@ -50,7 +50,7 @@ const SpecialityRoom = () => {
 
                         </div>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative'>
 
                             <div className='imgBgColor imgUp pastelBrown bgImageMargin AnimeStarts'>
 
@@ -64,7 +64,7 @@ const SpecialityRoom = () => {
 
                     <div className={styles.sectionPdng + ' row '}>
 
-                        <div className='col-md-6'>
+                        <div className='col-lg-6 col-md-12'>
 
                             <div className='AnimeStarts'>
                                 <h3 className={' ulineRed AnimeElement ' + styles.uLineMargin}>Specialty Rooms at
@@ -73,11 +73,11 @@ const SpecialityRoom = () => {
 
                         </div>
 
-                        <div className='col-md-6'>
+                        <div className='col-lg-6 col-md-0'>
                             <div></div>
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-2 py-5'}>
+                        <div className={styles.pdngZero + ' col-lg-2 col-md-3 py-5'}>
 
                             <ul className='list-points AnimeStarts'>
                                 <li className='AnimeElement'>
@@ -88,7 +88,7 @@ const SpecialityRoom = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-2 py-5'}>
+                        <div className={styles.pdngZero + ' col-lg-2 col-md-3 py-5'}>
 
                             <ul className='list-points AnimeStarts'>
 
@@ -101,7 +101,7 @@ const SpecialityRoom = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-2 py-5'}>
+                        <div className={styles.pdngZero + ' col-lg-2 col-md-3 py-5'}>
 
                             <ul className='list-points AnimeStarts'>
 
@@ -114,7 +114,7 @@ const SpecialityRoom = () => {
 
                         </div>
 
-                        <div className={styles.pdngZero + ' col-md-2 py-5 '}>
+                        <div className={styles.pdngZero + ' col-lg-2 col-md-3 py-5 '}>
 
                             <ul className='list-points AnimeStarts'>
 

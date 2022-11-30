@@ -30,7 +30,7 @@ const Classrooms = () => {
       >
         <div className='container'>
           <div className='row'>
-            <div className='col-md-6 position-relative'>
+            <div className='col-lg-6 col-md-12 position-relative'>
 
               <div className='AnimeStarts'>
                 <h3 className='ulineRed AnimeElement'>
@@ -69,7 +69,7 @@ const Classrooms = () => {
 
             </div>
 
-            <div className='col-md-6 position-relative'>
+            <div className={'col-lg-6 col-md-12 position-relative ' + styles.vmpsImg}>
 
               <div className={styles.classroomImgDiv + ' imgBgColor imgUp pastelPurple AnimeStarts'}>
                 <img
@@ -81,8 +81,8 @@ const Classrooms = () => {
 
             </div>
 
-            <div className={'col-md-8 position-relative ' + styles.vmpsImg}>
-            </div>
+            {/* <div className={'col-md-8 position-relative ' + styles.vmpsImg}>
+            </div> */}
 
           </div>
 

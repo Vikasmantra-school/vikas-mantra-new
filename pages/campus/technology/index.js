@@ -33,7 +33,7 @@ const Technology = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative'>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>Interweaving technology
@@ -55,7 +55,7 @@ const Technology = () => {
 
                         </div>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative'>
 
                             <div className='imgBgColor pastelYellow imgUp bgImageMargin AnimeStarts'>
 

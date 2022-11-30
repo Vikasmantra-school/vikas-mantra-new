@@ -105,13 +105,15 @@
 }
 
 
-@media only screen and (min-width: 661px) and (max-width: 767px) {
+@media only screen and (min-width: 661px) and (max-width: 990px) {
 
     .ChairmanImg {
         position: unset;
         height: auto;
     }
-
+    .ImgMargin{
+        margin-top: 35px;
+    }
 
 
 }

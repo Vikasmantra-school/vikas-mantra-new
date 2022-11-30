@@ -34,7 +34,7 @@
     left: 0;
 }
 
-.vectorImg10::after{
+.vectorImg10::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector10.png);
@@ -84,6 +84,7 @@
         top: 70px;
         left: 0;
     }
+
     .vectorImg10::after {
         content: '';
         position: absolute;
@@ -97,14 +98,96 @@
         bottom: 10px;
         right: 0;
     }
+
     .classroomImg {
         width: 100%;
         position: absolute;
-        top: 0; 
+        top: 0;
         right: 0;
     }
-    .uLineMargin{
+
+    .uLineMargin {
         margin: 40px 0;
     }
 
+}
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+    .vectorImg12::before {
+        bottom: 0;
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector12.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 50px;
+        height: 100px;
+        width: 100px;
+        top: 90px;
+        left: 0;
+    }
+
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 140px;
+        height: 227px;
+        width: 247px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .pdngZero {
+        padding: 0% !important;
+    }
+
+    .uLineMargin {
+        margin: 40px 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .sectionPdng {
+        padding-top: 50px;
+    }
+    .pdngZero {
+        padding: 0% !important;
+    }
+    .uLineMargin {
+        margin: 40px 0;
+    }
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 110px;
+        height: 227px;
+        width: 247px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .vectorImg12::before {
+        bottom: 0;
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector9.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 78px;
+        height: 115px;
+        width: 70px;
+        top: 0;
+        left: unset;
+        right: 0;
+    }
 }

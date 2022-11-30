@@ -31,7 +31,7 @@ const FacilitiesAndInfrastructure = () => {
 
                     <div className='row'>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative'>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>VIKAS MANTRA PUBLIC SCHOOL
@@ -72,7 +72,7 @@ const FacilitiesAndInfrastructure = () => {
 
                         </div>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className={'col-lg-6 col-md-12 position-relative ' + styles.vmpsImg}>
 
                             <div className='imgBgColor pastelRed bgImageMargin imgUp AnimeStarts'>
 
@@ -82,9 +82,9 @@ const FacilitiesAndInfrastructure = () => {
 
                         </div>
 
-                        <div className={'col-md-10 position-relative ' + styles.vmpsImg}>
+                        {/* <div className={'col-md-10 position-relative ' + styles.vmpsImg}>
 
-                        </div>
+                        </div> */}
 
                     </div>
 

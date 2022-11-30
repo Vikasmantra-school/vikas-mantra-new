@@ -11,7 +11,7 @@ const Blog1 = () => {
       <section className='pt-4'>
         <div className='container position-relative'>
           <div className='row py-5'>
-            <div className='col-md-6'>
+            <div className='col-lg-6 col-md-10'>
 
               <div className='AnimeStarts'>
                 <h2 className='AnimeElement'>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h2>
@@ -25,7 +25,7 @@ const Blog1 = () => {
       <section className=' whitebg position-relative sectionContainer BlogvectorImg2 BlogvectorImg3 '>
         <div className='container'>
           <div className='row py-5 align-items-start '>
-            <div className='col-md-6'>
+            <div className='col-lg-6 col-md-12'>
 
               <div className='AnimeStarts'>
 
@@ -45,7 +45,7 @@ const Blog1 = () => {
 
             </div>
 
-            <div className='col-md-6 position-relative'>
+            <div className='col-lg-6 col-md-12 position-relative'>
 
               <div className='AnimeStarts'>
                 <img
@@ -58,7 +58,7 @@ const Blog1 = () => {
           </div>
 
           <div className='row'>
-            <div className='col-md-8'>
+            <div className='col-lg-8 col-md-12'>
 
               <div className='AnimeStarts'>
                 <h4 className='AnimeElement'>Source of Food</h4>
@@ -155,7 +155,7 @@ const Blog1 = () => {
 
             </div>
 
-            <div className='col-md-4'>
+            <div className='col-lg-4 col-md-8'>
               <BlogDates />
             </div>
 

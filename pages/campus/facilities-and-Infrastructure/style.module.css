@@ -56,11 +56,11 @@
     background-repeat: no-repeat;
     background-position: top right;
     z-index: 0;
-    background-size: 285px;
-    height: 227px;
-    right: -220px;
-    width: 300px;
-    top: 125px;
+    background-size: 250px;
+    height: 220px;
+    right: 0;
+    width: 256px;
+    bottom: 0;
 }
 
 @media only screen and (max-width: 660px) {
@@ -81,11 +81,11 @@
         background-repeat: no-repeat;
         background-position: bottom right;
         z-index: 0;
-        background-size: 100px;
-        height: 227px;
+        background-size: 60px;
+        height: 120px;
         right: 0;
-        width: 247px;
-        bottom: 20px;
+        width: 120px;
+        bottom: 0;
     }
 
     .vectorImg5::before {
@@ -114,5 +114,25 @@
         left: 0;
         width: 300px;
         bottom: 0;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 990px) {
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 90px;
+        height: 130px;
+        right: 0;
+        width: 130px;
+        bottom: 0;
+    }
+
+    .vmpsImg::after {
+        display: none;
     }
 }

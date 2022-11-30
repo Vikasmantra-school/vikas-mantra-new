@@ -93,7 +93,7 @@ const MessageFromPrincipal = () => {
 
                         <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative'>
 
-                            <div className='imgBgColor pastelBrown3 imgUp AnimeStarts'>
+                            <div className={'imgBgColor pastelBrown3 imgUp AnimeStarts ' + styles.ImgMargin }>
 
                                 <img src='/assets/banners/principal.png' alt="image" className={styles.PrincipalImg + ' AnimeElement'} />
 

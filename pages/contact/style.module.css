@@ -150,11 +150,30 @@
     }
 }
 
-@media screen and (min-width: 661px) and (max-width: 767px) {
+@media screen and (min-width: 661px) and (max-width: 990px) {
 
     .schlBusImg {
         width: 100%;
         position: unset;
+    }
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 100px;
+        height: 227px;
+        width: 247px;
+        bottom: 14px;
+        right: 0;
+    }
+    .mobColPdng {
+        padding: 20px 0px;
+    }
+    .rowPdng {
+        padding-top: 70px;
     }
 
 }

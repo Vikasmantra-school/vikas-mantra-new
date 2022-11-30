@@ -31,7 +31,7 @@ const Blog = () => {
 
                     <div className={'row p-4 align-items-center ' + styles.rowBox}>
 
-                        <div className={'col-md-6 ' + styles.colPdng1}>
+                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng1}>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h3>
@@ -50,7 +50,7 @@ const Blog = () => {
 
                         </div>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative'>
 
                             <div className={'imgBgColorBlog1 pastelGreen4 AnimeStarts'}>
 
@@ -72,7 +72,7 @@ const Blog = () => {
 
                     <div className={'row p-4 align-items-center ' + styles.rowBox}>
 
-                        <div className='col-md-6 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative'>
 
                             <div className={' pastelBlue4 imgBgColorBlog2 AnimeStarts '}>
 
@@ -82,7 +82,7 @@ const Blog = () => {
 
                         </div>
 
-                        <div className={'col-md-6 ' + styles.colPdng2}>
+                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng2}>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>BENEFITS OF YOGA FOR SCHOOL STUDENTS</h3>
