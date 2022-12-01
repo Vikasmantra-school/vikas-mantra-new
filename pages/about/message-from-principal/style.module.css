@@ -98,6 +98,8 @@ padding-right: 75px;
 
     .PrincipalImg {
         position: unset;
+        right: unset;
+        height: 100%;
     }
     .ImgMargin{
         margin-top: 35px;

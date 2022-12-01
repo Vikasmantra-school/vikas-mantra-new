@@ -109,7 +109,8 @@
 
     .ChairmanImg {
         position: unset;
-        height: auto;
+        height: 100%;
+        right: unset;
     }
     .ImgMargin{
         margin-top: 35px;
