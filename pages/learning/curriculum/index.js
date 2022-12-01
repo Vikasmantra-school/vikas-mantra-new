@@ -75,6 +75,12 @@ function Curriculum() {
                   ))}
                 </div>
               ))}
+
+              <button className='outlineBtn btn'>
+                <Link href='/learning'>
+                  <a>Know More</a>
+                </Link>
+              </button>
             </div>
 
             <div

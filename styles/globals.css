@@ -381,6 +381,72 @@ p {
   color: #fbe7b5;
 }
 
+/*home-page-video-styles*/
+
+.VideoContainer {
+  position: relative;
+}
+
+.PlayIconContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+.playSvg {
+  stroke: #e0e0e0;
+}
+
+.pauseSvg {
+  display: none;
+  stroke: #e0e0e0;
+}
+
+.playBtn .playSvg {
+  display: none;
+}
+
+.playBtn .pauseSvg {
+  display: block;
+}
+
+.playIconControls {
+  opacity: 0;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+  .VectorSpiralBlue::before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector5.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 1;
+    background-size: 75px;
+    height: 180px;
+    right: 0;
+    width: 180px;
+    bottom: 10px;
+  }
+
+  .VectorSpiral::before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector12.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: 75px;
+    height: 225px;
+    left: 0;
+    width: 114px;
+  }
+}
+
 /*svg-section-ends*/
 
 
@@ -1635,8 +1701,8 @@ tr {
 
   .imgBgColor::after {
 
-    left: 10px;
-    bottom: -12px;
+    left: 25px;
+    bottom: -25px;
   }
 
   .imgBgColor2::after {
@@ -1645,8 +1711,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: 12px;
-    bottom: -12px;
+    left: 25px;
+    bottom: -25px;
   }
 
   .imgBgColorLeft::after {
@@ -1655,8 +1721,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: -12px;
-    bottom: -12px;
+    left: -25px;
+    bottom: -25px;
   }
 
   .bgImageMargin {
@@ -1698,8 +1764,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: 10px;
-    bottom: -10px;
+    left: 25px;
+    bottom: -25px;
   }
 
   .imgBgColor2::after {
@@ -1708,8 +1774,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: 10px;
-    bottom: -10px;
+    left: 25px;
+    bottom: -25px;
   }
 
   .imgBgColorLeft::after {
@@ -1718,8 +1784,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: -10px;
-    bottom: -10px;
+    left: -25px;
+    bottom: -25px;
   }
 
   .VectorYellowHalfSpiral::after {

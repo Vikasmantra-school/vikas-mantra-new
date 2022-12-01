@@ -1,16 +1,37 @@
-.textBold{font-size: 20px;padding-top: 50px;font-weight: 600;}
+.textBold {
+    font-size: 20px;
+    padding-top: 50px;
+    font-weight: 600;
+}
 
-.form .formText{border: none;border-bottom: 1px solid #000000;border-radius: 0;padding: 0;}
+.form .formText {
+    border: none;
+    border-bottom: 1px solid #000000;
+    border-radius: 0;
+    padding: 0;
+}
 
-.formCenter{text-align: center;margin: 0 auto;}
+.formCenter {
+    text-align: center;
+    margin: 0 auto;
+}
 
-.form{text-align: left;padding: 70px 0px 70px 70px;background: #fff;}
+.form {
+    text-align: left;
+    padding: 70px 0px 70px 70px;
+    background: #fff;
+}
 
-.formPb{padding-bottom: 25px;}
+.formPb {
+    padding-bottom: 25px;
+}
 
-.careerBg{position: relative;}
+.careerBg {
+    position: relative;
+}
 
-.careerBg::after{content: "";
+.careerBg::after {
+    content: "";
     position: absolute;
     top: 0px;
     left: 0px;
@@ -20,16 +41,44 @@
     background-size: 142px;
     background-position: top left;
     background-repeat: no-repeat;
-    z-index: 1;}
+    z-index: 1;
+}
 
-.tableborder tbody, .tableborder td, .tableborder tfoot, .tableborder th, .tableborder thead, .tableborder tr{border-color: #842029;}
+.tableborder tbody,
+.tableborder td,
+.tableborder tfoot,
+.tableborder th,
+.tableborder thead,
+.tableborder tr {
+    border-color: #842029;
+}
 
 .submitBtn {
     border: 0;
     color: #fff;
     padding: 5px 10px;
 }
-@media only screen and (max-width: 660px){
 
-    .form{padding: 70px 0px 70px;}
+@media only screen and (max-width: 660px) {
+
+    .form {
+        padding: 70px 0px 70px;
+    }
+}
+
+
+@media only screen and (max-width: 990px) {
+    .careerBg::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100px;
+        height: 115px;
+        background: url(/assets/vectors/greenhalfspiral.png);
+        background-size: 75px;
+        background-position: top left;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
 }

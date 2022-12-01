@@ -12,7 +12,8 @@ function OnlineClasses() {
       <section className={'pt60' + ' ' + 'pb60' + ' ' + styles.tilteSpace}>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-5'>
+
+            <div className='col-lg-5 col-md-10'>
 
               <div className='AnimeStarts'>
                 <h2 className='AnimeElement'>Online Classes</h2>
@@ -30,9 +31,11 @@ function OnlineClasses() {
       >
         <div className='container'>
           <div className='row'>
-            <div className={'col-md-2'}></div>
 
-            <div className='col-md-10'>
+            <div className={'col-lg-2 col-md-0'}>
+            </div>
+
+            <div className=' col-lg-10 col-md-12 '>
               <div className={'imgUp AnimeStarts ' + ' ' + styles.onlineImg}>
                 <img
                   src='/assets/virtual-class.png'
@@ -44,7 +47,7 @@ function OnlineClasses() {
           </div>
 
           <div className={'row' + ' ' + 'pt60' + ' ' + styles.classContent}>
-            <div className='col-md-10'>
+            <div className='col-lg-10 col-md-12'>
 
               <div className='AnimeStarts'>
                 <h2 className='ulineRed AnimeElement'>The covid -19 pandemic</h2>
