@@ -122,3 +122,28 @@
         bottom: 0;
     }
 }
+
+@media screen and (min-width: 661px) and (max-width: 990px) {
+
+    .libraryImg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .vectorImg5::before{
+        display: none;
+    }
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector18.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 0;
+        background-size: 80px;
+        height: 160px;
+        left: 0;
+        width: 100px;
+        bottom: 0;
+    }
+}
