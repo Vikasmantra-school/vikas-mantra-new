@@ -72,7 +72,7 @@ const Blog = () => {
 
                     <div className={'row p-4 align-items-center ' + styles.rowBox}>
 
-                        <div className='col-lg-6 col-md-12 position-relative'>
+                        <div className={'col-lg-6 col-md-12 position-relative ' + styles.order2}>
 
                             <div className={' pastelBlue4 imgBgColorBlog2 AnimeStarts '}>
 
@@ -82,7 +82,7 @@ const Blog = () => {
 
                         </div>
 
-                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng2}>
+                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng2 + ' ' + styles.order1}>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>BENEFITS OF YOGA FOR SCHOOL STUDENTS</h3>
@@ -97,7 +97,7 @@ const Blog = () => {
 
                                 <Link href='/about/blog/blog2'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
                             </div>
-                            
+
                         </div>
 
                     </div>
