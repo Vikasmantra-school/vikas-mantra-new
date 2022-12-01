@@ -375,8 +375,6 @@ function Home() {
 
           <a ref={controlParent} onClick={videoPlayer} className='PlayIconContainer'>
 
-            {/* <img ref={ImageRef} src='/assets/icons/video.png' alt='Play Icon' className={styles.PlayIcon}></img> */}
-
             {/*play*/}
             <svg ref={PlayImageRef} className="w-6 h-6 playSvg " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -407,13 +405,10 @@ function Home() {
                   pagination: true,
                   arrows: false,
                   breakpoints: {
-                    640: {
+                    992: {
                       perPage: 1,
-                    },
+                    }, 
 
-                    768: {
-                      perPage: 1,
-                    },
                   },
                 }}
               >

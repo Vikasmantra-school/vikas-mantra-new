@@ -285,5 +285,20 @@
     .testimonialcontent {
         padding: 15px;
     }
+    .homeabout {
+        background: url(/assets/vectors/green-vector.png);
+        background-position: top right;
+        background-size: 100px 100px;
+        background-repeat: no-repeat;
+    }
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .homeabout {
+        background: url(/assets/vectors/green-vector.png);
+        background-position: top right;
+        background-size: 100px 100px;
+        background-repeat: no-repeat;
+    }
 }

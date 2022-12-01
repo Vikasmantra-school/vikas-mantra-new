@@ -92,6 +92,9 @@ padding-right: 75px;
         width: 190px;
         bottom: 0;
     }
+    .pdngRight{
+        padding: 0;
+    }
 }
 
 
@@ -104,6 +107,9 @@ padding-right: 75px;
     }
     .ImgMargin{
         margin-top: 35px;
+    }
+    .pdngRight{
+        padding: 0;
     }
 }
 
