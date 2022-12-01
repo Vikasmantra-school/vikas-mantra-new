@@ -1701,8 +1701,8 @@ tr {
 
   .imgBgColor::after {
 
-    left: 25px;
-    bottom: -25px;
+    left: 15px;
+    bottom: -15px;
   }
 
   .imgBgColor2::after {
@@ -1711,8 +1711,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: 25px;
-    bottom: -25px;
+    left: 15px;
+    bottom: -15px;
   }
 
   .imgBgColorLeft::after {
@@ -1721,8 +1721,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: -25px;
-    bottom: -25px;
+    left: -15px;
+    bottom: -15px;
   }
 
   .bgImageMargin {

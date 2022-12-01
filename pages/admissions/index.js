@@ -843,30 +843,32 @@ const Admissions = () => {
 
                   <h2 className='ulineRed AdmissionScrollAnimeElement'>FAQ</h2>
 
-                  <div
-                    className={'accordion pt-5 ' + styles.accordionExample}
-                    id='accordionExample'
-                  >
+                  <div className={'accordion pt-5 ' + styles.accordionExample} id='accordionExample' >
+
+
+
+
                     <div className='accordion-item'>
-                      <h2 className='accordion-header' id='headingSeven'>
+
+                      <h2 className='accordion-header' id='headingZero'>
                         <button
                           className='accordion-button'
                           type='button'
                           data-bs-toggle='collapse'
-                          data-bs-target='#collapseSeven'
+                          data-bs-target='#collapseZero'
                           aria-expanded='false'
-                          aria-controls='collapseSeven'
+                          aria-controls='collapseZero'
                         >
                           <h4 className='pt-3 AdmissionScrollAnimeElement'>
                             How do you make decision on admission?
                           </h4>
                         </button>
                       </h2>
+
                       <div
-                        id='collapseSeven'
-                        className='accordion-collapse collapse
-                                      show'
-                        aria-labelledby='headingSeven'
+                        id='collapseZero'
+                        className='accordion-collapse collapse show'
+                        aria-labelledby='headingZero'
                         data-bs-parent='#accordionExample'
                       >
                         <div className='accordion-body'>

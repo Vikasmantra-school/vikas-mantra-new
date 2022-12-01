@@ -104,6 +104,25 @@
     right: 0;
 }
 
+.ContactImgBgColor {
+    position: relative;
+}
+
+.ContactImgBgColor img {
+    position: relative;
+    z-index: 1;
+}
+.ContactImgBgColor::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 73px;
+    bottom: 100px;
+}
+
+
 
 
 @media only screen and (max-width: 660px) {
@@ -150,12 +169,13 @@
     }
 }
 
-@media screen and (min-width: 661px) and (max-width: 990px) {
+@media screen and (max-width: 990px) {
 
     .schlBusImg {
         width: 100%;
         position: unset;
     }
+
     .vectorImg10::after {
         content: '';
         position: absolute;
@@ -169,11 +189,27 @@
         bottom: 14px;
         right: 0;
     }
+
     .mobColPdng {
         padding: 20px 0px;
     }
+
     .rowPdng {
         padding-top: 70px;
+    }
+
+    .ContactImgBgColor::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        left: 10px;
+        bottom: -10px;
+    }
+    .ContactImgBgColor img {
+        position: relative;
+        z-index: 3;
     }
 
 }

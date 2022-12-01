@@ -130,7 +130,7 @@ const Contact = () => {
 
                         <div className='col-lg-6 col-md-12'>
 
-                            <div className={'imgUp imgBgColor pastelGreen2 ContactAnimeStarts3 ' + ' ' + styles.careerImg}>
+                            <div className={'imgUp pastelGreen2 ContactAnimeStarts3 ' + ' ' + styles.careerImg + ' ' + styles.ContactImgBgColor}>
 
                                 <img
                                     src='/assets/campus/school-building3.png'
