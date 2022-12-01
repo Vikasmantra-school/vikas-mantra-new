@@ -102,6 +102,8 @@ export const Footer = () => {
 
           <div className=' offset-lg-1 col-lg-7 col-md-12'>
             <div className='row align-items-center'>
+
+
               <div className={'col-md-4 '}>
                 <div className={styles.logoCol}>
                   <Image src={VikasLogo} alt='image' className={styles.logo} />
@@ -136,7 +138,7 @@ export const Footer = () => {
                 <div className={styles.quickLinksCol}>
                   <h3>QUICK LINKS</h3>
                   <div className={styles.quickLink + ' row'}>
-                    <div className='col-md-6 col-lg-4 col-sm-4'>
+                    <div className='col-6 col-md-4 col-lg-4 col-sm-4'>
                       <Link href='/about' legacyBehavior>
                         <a className='nav-link'>About Us</a>
                       </Link>
@@ -150,7 +152,7 @@ export const Footer = () => {
                       </Link>
                     </div>
 
-                    <div className='col-md-6 col-lg-4 col-sm-4'>
+                    <div className='col-6 col-md-4 col-lg-4 col-sm-4'>
 
                       <Link href='/enquiry-form' legacyBehavior>
                         <a className='nav-link'>EnquiryForm</a>
@@ -165,7 +167,7 @@ export const Footer = () => {
                       </Link>
                     </div>
 
-                    <div className='col-md-6 col-lg-4 col-sm-4'>
+                    <div className='col-6 col-md-4 col-lg-4 col-sm-4'>
                       <Link href='/about/our-team' legacyBehavior>
                         <a className='nav-link'>Faculty</a>
                       </Link>

@@ -137,6 +137,11 @@
     .colPdng2 {
         padding: 0 15px;
     }
+    .order1{
+        order: 1;
+    }.order2{
+        order: 2;
+    }
 
 }
 
