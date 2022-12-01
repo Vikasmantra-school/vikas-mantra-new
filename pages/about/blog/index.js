@@ -31,7 +31,7 @@ const Blog = () => {
 
                     <div className={'row p-4 align-items-center ' + styles.rowBox}>
 
-                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng1}>
+                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng1 + ' ' + styles.order2}>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>TEACHING ECO-FRIENDLY PRACTICES TO CHILDREN</h3>
@@ -50,7 +50,7 @@ const Blog = () => {
 
                         </div>
 
-                        <div className='col-lg-6 col-md-12 position-relative'>
+                        <div className={'col-lg-6 col-md-12 position-relative ' + styles.order1}>
 
                             <div className={'imgBgColorBlog1 pastelGreen4 AnimeStarts'}>
 
@@ -72,9 +72,9 @@ const Blog = () => {
 
                     <div className={'row p-4 align-items-center ' + styles.rowBox}>
 
-                        <div className={'col-lg-6 col-md-12 position-relative ' + styles.order2}>
+                        <div className={'col-lg-6 col-md-12 position-relative '}>
 
-                            <div className={' pastelBlue4 imgBgColorBlog2 AnimeStarts '}>
+                            <div className={' pastelBlue4 imgBgColorBlog2 AnimeStarts ' + styles.order1}>
 
                                 <img src='/assets/blog2.png' alt="image" className={styles.Blog2Img + ' AnimeElement'} />
 
@@ -82,13 +82,13 @@ const Blog = () => {
 
                         </div>
 
-                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng2 + ' ' + styles.order1}>
+                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng2}>
 
-                            <div className='AnimeStarts'>
+                            <div className={'AnimeStarts ' + styles.order3}>
                                 <h3 className='ulineRed AnimeElement'>BENEFITS OF YOGA FOR SCHOOL STUDENTS</h3>
                             </div>
 
-                            <div className='AnimeStarts'>
+                            <div className={'AnimeStarts ' + styles.order2}>
                                 <p className='pt-5 AnimeElement'>The growing levels of competition have made children pursue a variety
                                     of fresh and interesting experiences. They have paved the way for a
                                     variety of programs, making students get exposed to a wide array of
