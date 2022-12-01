@@ -99,14 +99,14 @@ const About = () => {
                 <div className='container'>
 
                     <div className='row'>
-                        <div className={' col-md-5 offset-md-1 AnimeStarts ' + styles.colZindex}>
+                        <div className={' col-lg-5 offset-lg-1 col-md-12 AnimeStarts ' + styles.colZindex}>
                             <h2 className={'pb-2 AnimeElement ' + styles.h2FontSize}>Vikas Mantra Public School,</h2>
                         </div>
                     </div>
 
                     <div className='row position-relative'>
 
-                        <div className={styles.bannercontent1 + ' col-md-5 offset-md-1 '}>
+                        <div className={styles.bannercontent1 + ' col-lg-5 offset-lg-1 col-md-12 '}>
 
                             <div className='AnimeStarts'>
                                 <p className={styles.pLineHeight + ' AnimeElement'}>affiliated to Central Board of Education No : 1931307 was launched
@@ -131,7 +131,7 @@ const About = () => {
 
                         </div>
 
-                        <div className={styles.bannercontent2 + ' col-md-5 '}>
+                        <div className={styles.bannercontent2 + ' col-lg-5 col-md-12 '}>
 
                             <div className='AnimeStarts'>
                                 <p className={styles.pLineHeight + ' AnimeElement '}>Kindergarten to Grade 9 with affiliation from the Central
@@ -154,7 +154,7 @@ const About = () => {
 
                         </div>
 
-                        <div className='col-md-1'>
+                        <div className='col-lg-1 col-md-0'>
                             <div></div>
                         </div>
 
@@ -171,15 +171,15 @@ const About = () => {
 
                     <div className='row position-relative'>
 
-                        <div className='col-md-12 py-2'>
+                        <div className={'col-lg-12 col-md-12 py-2 ' + styles.order2}>
 
-                            <div className='AnimeStarts'>
+                            <div className={'AnimeStarts '}>
                                 <img src='/assets/banners/staff-group-photo.png' alt="image" className={styles.ResponsiveImage + ' AnimeElement'} />
                             </div>
 
                         </div>
 
-                        <div className={styles.ResponsiveBannercontent1 + ' col-md-6'}>
+                        <div className={styles.ResponsiveBannercontent1 + ' ' + styles.order3 + ' col-lg-6 col-md-12 '}>
 
                             <div className='AnimeStarts'>
                                 <h2 className='AnimeElement'>Vikas Mantra Public School,</h2>
@@ -204,7 +204,7 @@ const About = () => {
 
                         </div>
 
-                        <div className={styles.ResponsiveBannercontent2 + ' col-md-6'}>
+                        <div className={styles.ResponsiveBannercontent2 + ' ' + styles.order1 + ' col-lg-6 col-md-12 '}>
 
                             <div className='AnimeStarts'>
                                 <p className='AnimeElement'>Kindergarten to Grade 9 with affiliation from the Central
