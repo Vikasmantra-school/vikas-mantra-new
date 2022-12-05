@@ -20,8 +20,16 @@
     font-size: 14px;
 }
 
+.homeheader {
+    z-index: 2;
+}
+
 .navTransparent {
     z-index: 9999;
+}
+
+.homeheader {
+    width: 100%;
 }
 
 .callIcon {
@@ -40,4 +48,3 @@
     color: #fff !important;
     background: linear-gradient(85.31deg, #A11D2A -39.85%, #E02D53 44.76%, #F27D49 117.87%);
 }
-

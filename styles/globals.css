@@ -1564,10 +1564,6 @@ tr {
   --color-third: #F27D49;
 }
 
-.homeheader {
-  z-index: 2;
-  width: 100%;
-}
 
 
 
@@ -2066,15 +2062,3 @@ tr {
     bottom: -15px;
   }
 }
-
-
-@media only screen and (max-width: 660px) {
-  .homeheader {
-      position: relative;
-  }
-
-  .home  {
-      background-color: #a41b2b;
-  }
-}
-
