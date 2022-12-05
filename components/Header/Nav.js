@@ -20,13 +20,14 @@ const Nav = () => {
 
   return (
     <>
-      <header className={styles.homeheader + ' ' + pageName + 'home'}>
+      <header className={ pageName + ' home homeheader '}>
         <nav className={styles.navTransparent + ' navbar-expand-lg navbar'}>
           <div className='container'>
             <Link href='/' legacyBehavior>
               <a className={styles.mainLogo + ' ' + 'navbar-brand'}>
                 {pageName === '' ? (
                   <img src='/assets/vmps-white-logo.png' alt='image' />
+                  
                 ) : (
                   <img src='/assets/vmps-color.png' alt='image' />
                 )}
