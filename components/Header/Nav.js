@@ -26,7 +26,10 @@ const Nav = () => {
             <Link href='/' legacyBehavior>
               <a className={styles.mainLogo + ' ' + 'navbar-brand'}>
                 {pageName === '' ? (
-                  <img src='/assets/vmps-white-logo.png' alt='image' />
+                  <picture>
+                    <source media="(max-width:660px)" srcSet='/assets/vmps-color.png' />
+                    <img src='/assets/vmps-white-logo.png' alt='image' />
+                  </picture>
                 ) : (
                   <img src='/assets/vmps-color.png' alt='image' />
                 )}

@@ -1766,6 +1766,13 @@ tr {
 
 @media only screen and (max-width: 660px) {
 
+  .home .hamburger .line {
+    background-color: #842029;
+}
+
+  .home {
+    position: relative;
+  }
   .VectorSpiralCenter::after{
     display: none;
   }

@@ -116,13 +116,11 @@ function HomeSlider({ ref }) {
                     <div className='AnimeStarts py-4 '>
 
                       <h1 className='box AnimeElement'>
-                        To educate young minds to be lifelong learners in this dynamic
-                        world
+                        Award for Academic Excellence
                       </h1>
 
                       <p className='box AnimeElement'>
-                        Vikas Mantra Public School offers CBSE Curriculum and was
-                        launched in the academic year 2019-22.
+                        VMPS received the International Education Award for Academic Excellence ( Private School ) of the year 2021 - 22
                       </p>
 
                     </div>
@@ -162,6 +160,27 @@ function HomeSlider({ ref }) {
               </div>
             </section>
 
+            <section className='d-block d-sm-none '>
+              <div className='container'>
+                <div className='row mobileBanner'>
+                  <div className='col-md-12'>
+
+                    <div className='AnimeStarts py-4 '>
+
+                      <h1 className='box AnimeElement'>
+                        Best Emerging School ( Holistic)
+                      </h1>
+
+                      <p className='box AnimeElement'>
+                        Vikas Mantra Public school received the Indian Icon of the year awards for Best Emerging School of the year 2021
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
           </SplideSlide>
 
           <SplideSlide>
@@ -179,6 +198,37 @@ function HomeSlider({ ref }) {
                       'col-xl-6 col-lg-8 col-md-10 col-sm-12'
                     }
                   >
+
+                    <div className='d-none d-sm-block'>
+                      <h1 className='box'>
+                        Investiture Ceremony
+                      </h1>
+                      <p className='box'>
+                        Vikas Mantra Public school  Investiture Ceremony
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className='d-block d-sm-none '>
+              <div className='container'>
+                <div className='row mobileBanner'>
+                  <div className='col-md-12'>
+
+                    <div className='AnimeStarts py-4 '>
+
+                      <h1 className='box AnimeElement'>
+                        Investiture Ceremony
+                      </h1>
+
+                      <p className='box AnimeElement'>
+                        Vikas Mantra Public school  Investiture Ceremony
+                      </p>
+
+                    </div>
                   </div>
                 </div>
               </div>
@@ -201,6 +251,36 @@ function HomeSlider({ ref }) {
                       'col-xl-6 col-lg-8 col-md-10 col-sm-12'
                     }
                   >
+                    <div className='d-none d-sm-block'>
+                      <h1 className='box'>
+                        Dance Competition 
+                      </h1>
+                      <p className='box'>
+                      Dance competition conducted at vikas mantra
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            
+            <section className='d-block d-sm-none '>
+              <div className='container'>
+                <div className='row mobileBanner'>
+                  <div className='col-md-12'>
+
+                    <div className='AnimeStarts py-4 '>
+
+                      <h1 className='box AnimeElement'>
+                      Dance Competition 
+                      </h1>
+
+                      <p className='box AnimeElement'>
+                      Dance competition conducted at vikas mantra
+                      </p>
+
+                    </div>
                   </div>
                 </div>
               </div>
