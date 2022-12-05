@@ -630,7 +630,7 @@ function CurriculumFrameWork() {
             </div>
 
             <div className='col-md-6'>
-              <div className='imgUp imgBgColor pastelBlue AnimeStarts'>
+              <div className='imgUp imgBgColor pastelBlue AnimeStarts bgImageMargin'>
                 <img
                   src='/assets/curriculum-framework.png'
                   alt='image'

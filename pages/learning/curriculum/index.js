@@ -86,7 +86,7 @@ function Curriculum() {
             <div
               className={'col-md-6 learningLogo ' + ' ' + styles.vectorSpiral}
             >
-              <div className='imgUp imgBgColor pastelLightGreen AnimeStarts'>
+              <div className='imgUp imgBgColor pastelLightGreen AnimeStarts bgImageMargin'>
                 <img
                   src='/assets/banners/school-building.png'
                   alt='image'

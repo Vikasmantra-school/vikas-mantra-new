@@ -29,11 +29,10 @@ function HomeSlider({ ref }) {
             <section className={styles.bannerSection + ' ' + styles.banner1 + ' ' + ''}>
               <div className='container'>
                 <div className='row homeBanner'>
-
                   <div ref={(el) => { title = el }}
                     className={styles.bannercontent + ' ' + 'col-xl-6 col-lg-8 col-md-10 col-sm-12 '} >
 
-                    <div className='AnimeStarts'>
+                    <div className='AnimeStarts d-none d-sm-block '>
 
                       <h1 className='box AnimeElement'>
                         To educate young minds to be lifelong learners in this dynamic
@@ -47,6 +46,29 @@ function HomeSlider({ ref }) {
 
                     </div>
 
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className='d-block d-sm-none '>
+              <div className='container'>
+                <div className='row mobileBanner'>
+                  <div className='col-md-12'>
+
+                    <div className='AnimeStarts py-2 '>
+
+                      <h1 className='box AnimeElement'>
+                        To educate young minds to be lifelong learners in this dynamic
+                        world
+                      </h1>
+
+                      <p className='box AnimeElement'>
+                        Vikas Mantra Public School offers CBSE Curriculum and was
+                        launched in the academic year 2019-22.
+                      </p>
+
+                    </div>
                   </div>
                 </div>
               </div>
@@ -70,7 +92,7 @@ function HomeSlider({ ref }) {
                     }
                   >
 
-                    <div className=''>
+                    <div className='d-none d-sm-block'>
 
                       <h1 className='box'>
                         Award for Academic Excellence
@@ -81,6 +103,29 @@ function HomeSlider({ ref }) {
 
                     </div>
 
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className='d-block d-sm-none '>
+              <div className='container'>
+                <div className='row mobileBanner'>
+                  <div className='col-md-12'>
+
+                    <div className='AnimeStarts py-4 '>
+
+                      <h1 className='box AnimeElement'>
+                        To educate young minds to be lifelong learners in this dynamic
+                        world
+                      </h1>
+
+                      <p className='box AnimeElement'>
+                        Vikas Mantra Public School offers CBSE Curriculum and was
+                        launched in the academic year 2019-22.
+                      </p>
+
+                    </div>
                   </div>
                 </div>
               </div>
@@ -103,12 +148,15 @@ function HomeSlider({ ref }) {
                       'col-xl-6 col-lg-8 col-md-10 col-sm-12'
                     }
                   >
-                    <h1 className='box'>
-                      Best Emerging School ( Holistic)
-                    </h1>
-                    <p className='box'>
-                      Vikas Mantra Public school received the Indian Icon of the year awards for Best Emerging School of the year 2021
-                    </p>
+
+                    <div className='d-none d-sm-block'>
+                      <h1 className='box'>
+                        Best Emerging School ( Holistic)
+                      </h1>
+                      <p className='box'>
+                        Vikas Mantra Public school received the Indian Icon of the year awards for Best Emerging School of the year 2021
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -131,12 +179,6 @@ function HomeSlider({ ref }) {
                       'col-xl-6 col-lg-8 col-md-10 col-sm-12'
                     }
                   >
-                    {/* <h1 className='box'>
-              Best Emerging School ( Holistic)
-          </h1>
-          <p className='box'>
-              Vikas Mantra Public school received the Indian Icon of the year awards for Best Emerging School of the year 2021
-          </p> */}
                   </div>
                 </div>
               </div>
@@ -159,12 +201,6 @@ function HomeSlider({ ref }) {
                       'col-xl-6 col-lg-8 col-md-10 col-sm-12'
                     }
                   >
-                    {/* <h1 className='box'>
-              Best Emerging School ( Holistic)
-          </h1>
-          <p className='box'>
-              Vikas Mantra Public school received the Indian Icon of the year awards for Best Emerging School of the year 2021
-          </p> */}
                   </div>
                 </div>
               </div>

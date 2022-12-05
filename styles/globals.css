@@ -94,6 +94,10 @@ p {
   text-align: justify;
 }
 
+.mobileBanner h1{
+font-size: 30px;
+}
+
 .VectorLogo {
   position: relative;
 }
@@ -421,8 +425,6 @@ p {
 
 
 /*svg-section-ends*/
-
-
 
 .curriculum-tab .nav-tabs .nav-link.active {
   color: #222 !important;
@@ -1764,6 +1766,18 @@ tr {
 
 @media only screen and (max-width: 660px) {
 
+  .home {
+    position: relative;
+  }
+
+  .VectorSpiralCenter::after{
+    display: none;
+  }
+
+  .mobile-heading-size{
+    font-size: 25px;
+  }
+
   .m-pb40 {
     padding-bottom: 40px;
   }
@@ -1854,8 +1868,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: 15px;
-    bottom: -15px;
+    left: 10px;
+    bottom: -10px;
   }
 
   .imgBgColorLeft::after {
@@ -1864,8 +1878,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: -15px;
-    bottom: -15px;
+    left: -10px;
+    bottom: -10px;
   }
 
   .bgImageMargin {
@@ -1975,8 +1989,8 @@ tr {
     width: 100%;
     height: 100%;
     z-index: 0;
-    left: 20px;
-    bottom: 20px;
+    left: 10px;
+    bottom: 10px;
   }
   .imgBgColorBlog1::after {
     content: '';

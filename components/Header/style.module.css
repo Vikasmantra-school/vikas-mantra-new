@@ -48,3 +48,10 @@
     color: #fff !important;
     background: linear-gradient(85.31deg, #A11D2A -39.85%, #E02D53 44.76%, #F27D49 117.87%);
 }
+
+@media only screen and (max-width: 660px) {
+    .homeheader{
+        background-color: #a41b2b;
+    }
+    
+}

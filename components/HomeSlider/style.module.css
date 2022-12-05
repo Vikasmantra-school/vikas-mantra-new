@@ -66,26 +66,37 @@
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
-        height: 70vh;
+        height: 40vh;
         position: relative;
         display: flex;
         align-items: flex-end;
         overflow-x: hidden;
         width: 100%;
     }
+    .bannerSection::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: unset;
+    }
     .banner1 {
         background: url(/assets/mobile-banners/mob-banner1.png);
     }
+    /*
     .banner2{
         background: url(/assets/mobile-banners/mob-banner2.png);
     }
     /* .banner3 {
         /* background: url(/assets/mobile-banners/mob-banner3.png); 
-    } */
+    } 
     .banner4 {
         background: url(/assets/mobile-banners/mob-banner3.png);
     }
     .banner5 {
         background: url(/assets/mobile-banners/mob-banner5.png);
-    }
+    } 
+    */
 }

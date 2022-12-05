@@ -357,7 +357,7 @@ const Admissions = () => {
                     className={styles.Sec2vmpsImg}
                   />
                   <div className='AdmissionAnimeStarts'>
-                    <h2 className='ulineRed AdmissionScrollAnimeElement'>
+                    <h2 className='ulineRed AdmissionScrollAnimeElement mobile-heading-size'>
                       Timelines and key milestones for the academic year 2022-23
                       VIKAS MANTRA PUBLIC SCHOOL admissions process
                     </h2>
@@ -500,7 +500,7 @@ const Admissions = () => {
 
                 <div className='col-md-6 mt-5 '>
                   <div className='AdmissionAnimeStarts'>
-                    <h2 className='ulineRed AdmissionScrollAnimeElement'>
+                    <h2 className='ulineRed AdmissionScrollAnimeElement '>
                       Admissions Procedure
                     </h2>
                   </div>
@@ -753,7 +753,7 @@ const Admissions = () => {
                     the admissions process.
                   </p>
 
-                  <h2 className='mt-5 AdmissionScrollAnimeElement'>
+                  <h2 className='mt-5 AdmissionScrollAnimeElement mobile-heading-size'>
                     Procedures to be followed while filling up the form
                   </h2>
 

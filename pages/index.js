@@ -125,12 +125,15 @@ function Home() {
               </button>
             </div>
 
-            <div className='col-lg-6 col-md-12 col-sm-12'>
-              <img
-                src='/assets/home-abt-vmps.png'
-                alt='image'
-                className='img-fluid'
-              />
+            <div className='col-lg-6 col-md-12 col-sm-12 '>
+
+              <div className='AnimeStarts'>
+                <img
+                  src='/assets/home-abt-vmps.png'
+                  alt='image'
+                  className='img-fluid AnimeElement'
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -321,11 +324,13 @@ function Home() {
                         'col-xl-6 offset-xl-2 col-lg-6 offset-lg-1 col-md-12 col-sm-12'
                       }
                     >
-                      <img
-                        src='/assets/home-happy-face.png'
-                        alt='image'
-                        className='img-fluid'
-                      ></img>
+                      <div className='AnimeStarts'>
+                        <img
+                          src='/assets/home-happy-face.png'
+                          alt='image'
+                          className='img-fluid AnimeElement'
+                        />
+                      </div>
                     </div>
                   </div>
                 </SplideSlide>
@@ -407,7 +412,7 @@ function Home() {
                   breakpoints: {
                     992: {
                       perPage: 1,
-                    }, 
+                    },
 
                   },
                 }}
