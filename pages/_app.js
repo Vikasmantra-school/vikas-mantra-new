@@ -1,8 +1,8 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import { useEffect } from 'react'
 import '../styles/globals.css'
 import Nav from '../components/Header/Nav'
 import { Footer } from '../components/Footer/Footer'
+import { useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { CSSRulePlugin } from 'gsap/dist/CSSRulePlugin'
@@ -135,6 +135,22 @@ function MyApp({ Component, pageProps }) {
             opacity: "1",
           }
         });
+      const rule8 = CSSRulePlugin.getRule(".ContactImgBgColor:after");
+      gsap.fromTo(
+        rule8,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          delay:0.9,
+          duration: 4,
+          y: 0,
+          cssRule: {
+            opacity: "1",
+          }
+        });
+
 
     }
 
