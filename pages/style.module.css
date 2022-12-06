@@ -291,9 +291,6 @@
         background-size: 100px 100px;
         background-repeat: no-repeat;
     }
-    .playSvg , .pauseSvg{
-        display: none !important;
-    }
 
 }
 

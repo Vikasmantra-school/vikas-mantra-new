@@ -1764,6 +1764,9 @@ tr {
 
 @media only screen and (max-width: 660px) {
 
+  .PlayIconContainer {
+    display: none !important;
+  }
 
   .splide__pagination__page.is-active {
     background: #9d1b29 !important;

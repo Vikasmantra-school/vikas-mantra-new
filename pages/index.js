@@ -48,15 +48,12 @@ function Home() {
   }
 
 
-  const [controls, setControls] = useState(false)
 
+  
+  const [controls, setControls] = useState(false)
   useEffect(() => {
 
-    /* mobile-only-class*/
-
     let windowSize = window.innerWidth;
-    // console.log(windowSize);
-
     function addAttrForMob() {
       if (windowSize < 660) {
         setControls(true)
