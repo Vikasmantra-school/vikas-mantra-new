@@ -12,9 +12,9 @@
 
 .mdBg::before{content: "";
     position: absolute;
-    top: -238px;
-    left: -155px;
-    width: 100%;
+    top: -202px;
+    left: -164px;
+    width: 247px;
     height: 237px;
     background: url(/assets/vectors/circle-vector.png);
     background-size: 142px;
@@ -64,3 +64,4 @@
 
 
 @media only screen and (max-width: 992px){.disclosureCard p{padding-right: 0 !important;}}
+
