@@ -47,7 +47,29 @@ function Home() {
     controlParent.current.classList.remove('d-none')
   }
 
+
+  const [controls, setControls] = useState(false)
+
   useEffect(() => {
+
+    /* mobile-only-class*/
+
+    let windowSize = window.innerWidth;
+    // console.log(windowSize);
+
+    function addAttrForMob() {
+      if (windowSize < 660) {
+        setControls(true)
+      }
+      else {
+        setControls(false)
+      }
+    }
+    addAttrForMob()
+    console.log(controls + ' attrb');
+
+    /*------------------*/
+
 
     gsap.registerPlugin(ScrollTrigger)
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
@@ -365,21 +387,18 @@ function Home() {
 
 
       <section className={styles.SchoolVideoSection}>
-
         <div className='VideoContainer' onMouseOver={onHover} onMouseLeave={onLeave}>
-
           <video
             ref={getVideo}
             width='100%'
             height='auto'
             id='myvid'
             type="video/mp4"
-          >
+            controls={controls}>
             <source src="/assets/videos/school-video.mp4" type='video/mp4' />
           </video>
 
           <a ref={controlParent} onClick={videoPlayer} className='PlayIconContainer'>
-
             {/*play*/}
             <svg ref={PlayImageRef} className="w-6 h-6 playSvg " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -390,12 +409,8 @@ function Home() {
             <svg ref={PauseImageRef} className="w-6 h-6 pauseSvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
               <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9v6m-4.5 0V9M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-
-
           </a>
-
         </div>
-
       </section>
 
       <section className={styles.testimonials}>
