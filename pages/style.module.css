@@ -292,7 +292,7 @@
         background-repeat: no-repeat;
     }
     .playSvg , .pauseSvg{
-        display: none;
+        display: none !important;
     }
 
 }
