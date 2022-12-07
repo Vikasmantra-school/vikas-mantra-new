@@ -131,7 +131,7 @@ function MyApp({ Component, pageProps }) {
           y: 50,
         },
         {
-          delay:0.9,
+          delay: 0.9,
           duration: 4,
           y: 0,
           cssRule: {
