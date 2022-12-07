@@ -168,34 +168,6 @@ function MyApp({ Component, pageProps }) {
       )
     }
 
-    //image-animation
-
-    // const parentTrigger2 = document.querySelectorAll('.AnimeStarts2')
-    // parentTrigger2.forEach(fadeIn2)
-
-    // function fadeIn2(elem) {
-    //   let image = elem.querySelectorAll('.AnimeImage')
-
-    //   gsap.fromTo(
-    //     image,
-    //     {
-    //       autoAlpha: 0,
-    //       y: 50
-    //     },
-    //     {
-    //       delay: 0.5,
-    //       duration: 1,
-    //       autoAlpha: 1,
-    //       y: 0,
-    //       scrollTrigger: {
-    //         trigger: elem,
-    //         animation: text,
-    //         toggleActions: 'play none none none',
-    //         once: true,
-    //       }
-    //     }
-    //   )
-    // }
   }
 
   useEffect(() => {

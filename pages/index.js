@@ -64,7 +64,7 @@ function Home() {
       }
     }
     addAttrForMob()
-    console.log(controls + ' attrb');
+    // console.log(controls + ' attrb');
 
     /*------------------*/
 
