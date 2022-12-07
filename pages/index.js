@@ -49,11 +49,12 @@ function Home() {
 
 
 
-  
+
   const [controls, setControls] = useState(false)
   useEffect(() => {
 
     let windowSize = window.innerWidth;
+
     function addAttrForMob() {
       if (windowSize < 660) {
         setControls(true)
@@ -71,7 +72,6 @@ function Home() {
     gsap.registerPlugin(ScrollTrigger)
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
-    // titleAnime()
     function staggerAnimeFunc(elem) {
       let text = elem.querySelectorAll('.bottomToTop')
       gsap.fromTo(

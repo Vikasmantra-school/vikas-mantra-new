@@ -13,18 +13,6 @@ gsap.registerPlugin(CSSRulePlugin)
 function MyApp({ Component, pageProps }) {
 
   function Anime() {
-    // const text = new SplitType('.AnimeStarts', { types: 'lines' })
-
-    // //store splitted lines in const line
-    // const line = text.lines
-
-    // line.forEach(eachDiv)
-
-    // //create a func that add a class to every splitted div
-    // function eachDiv(elem) {
-    //   elem.classList.add('AnimeElement')
-    // }
-
 
     const parentTrigger2 = document.querySelectorAll('.AnimeStarts')
     parentTrigger2.forEach(fadeInAfter)

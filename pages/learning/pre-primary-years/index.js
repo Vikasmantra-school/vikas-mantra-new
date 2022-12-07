@@ -17,7 +17,7 @@ function PrePrimary() {
 
   useEffect(() => {
     timeline()
-  }, [timeline])
+  }, [])
 
   return (
     <>
