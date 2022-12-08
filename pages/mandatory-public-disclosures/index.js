@@ -132,7 +132,7 @@ function MandatoryScreen() {
                       CERTIFICATE, AS APPLICABLE*
                     </td>
                     <td>
-                      <a href='#'>Annexure 2</a>
+                      <a href='/pdf/trust-registration-certificate.pdf' target='_blank'>Annexure 2</a>
                     </td>
                   </tr>
 
