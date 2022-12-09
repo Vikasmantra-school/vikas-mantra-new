@@ -336,13 +336,17 @@ const Admissions = () => {
                     styles.tab2RedDotVector
                   }
                 >
-                  <img
+                  {/* <img
                     src='/assets/banners/student.png'
                     alt='image'
-                    className={
-                      styles.studentImg + ' AdmissionScrollAnimeElement'
-                    }
-                  />
+                    className={ styles.studentImg + ' AdmissionScrollAnimeElement'}
+                  /> */}
+                  <picture>
+                    <source srcSet='/assets/banners/student.webp' />
+                    <source srcSet='/assets/banners/student.png'/>
+                    <img src='/assets/banners/student.webp' alt="image" className={ styles.studentImg + ' AdmissionScrollAnimeElement'}/>
+                  </picture>
+
                 </div>
 
                 <div

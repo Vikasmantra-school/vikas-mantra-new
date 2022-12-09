@@ -49,7 +49,7 @@ function Home() {
 
 
 
-  
+
   const [controls, setControls] = useState(false)
   useEffect(() => {
 
@@ -147,11 +147,16 @@ function Home() {
             <div className='col-lg-6 col-md-12 col-sm-12 '>
 
               <div className='AnimeStarts'>
-                <img
+                {/* <img
                   src='/assets/home-abt-vmps.png'
                   alt='image'
-                  className='img-fluid AnimeElement'
-                />
+                  className='img-fluid AnimeElement'  
+                /> */}
+                <picture>
+                  <source srcSet='/assets/home-abt-vmps.png' />
+                  <source srcSet='/assets/home-abt-vmps.png' />
+                  <img src='/assets/home-abt-vmps.png' alt="Flowers" className='img-fluid AnimeElement' />
+                </picture>
               </div>
             </div>
           </div>
@@ -188,13 +193,19 @@ function Home() {
                 'z1' + ' ' + 'mb-xl-0 mb-5 col-xl-3 col-lg-6 col-md-6 col-sm-12'
               }
             >
-              <img
+              {/* <img
                 className='bottomToTop'
                 width='81'
                 height='74'
                 src='/assets/icons/holistic-approach.png'
                 alt='image'
-              ></img>
+              /> */}
+              <picture>
+                  <source srcSet='/assets/icons/holistic-approach.png' />
+                  <source srcSet='/assets/icons/holistic-approach.png' />
+                  <img src='/assets/icons/holistic-approach.png' alt="image"  width='81' height='74' className='bottomToTop'/>
+                </picture>
+              
 
               <h4 className='bottomToTop'>Holistic Approach</h4>
 

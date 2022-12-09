@@ -11,23 +11,23 @@
 }
 
 .banner1 {
-    background: url(/assets/banners/home-page-banner.png);
+    background: url(/assets/banners/home-page-banner.webp);
 }
 
 .banner2 {
-    background: url(/assets/banners/banner2.jpg);
+    background: url(/assets/banners/banner2.webp);
 }
 
 .banner3 {
-    background: url(/assets/banners/banner3.jpg);
+    background: url(/assets/banners/banner3.webp);
 }
 
 .banner4 {
-    background: url(/assets/banners/home-banner4.jpg);
+    background: url(/assets/banners/home-banner4.webp);
 }
 
 .banner5 {
-    background: url(/assets/banners/home-banner5.jpg);
+    background: url(/assets/banners/home-banner5.webp);
 }
 
 .bannerSection::after {

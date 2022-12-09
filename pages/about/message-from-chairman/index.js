@@ -93,7 +93,13 @@ const MessageFromChairMan = () => {
 
                             <div className={'imgBgColor pastelBlue5 imgUp AnimeStarts ' + styles.ImgMargin}>
 
-                                <img src='/assets/banners/chairman.png' alt="image" className={styles.ChairmanImg + ' AnimeElement'} />
+                                {/* <img src='/assets/banners/chairman.png' alt="image" className={styles.ChairmanImg + ' AnimeElement'} /> */}
+
+                                <picture>
+                                    <source srcSet='/assets/banners/chairman.webp' />
+                                    <source srcSet='/assets/banners/chairman.png'/>
+                                    <img src='/assets/banners/chairman.webp' alt="image" className={styles.ChairmanImg + ' AnimeElement'} />
+                                </picture>
 
                             </div>
 
