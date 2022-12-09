@@ -54,7 +54,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>2</td>
                     <td>AFFILIATION NO.(IF APPLICABLE)</td>
-                    <td></td>
+                    <td>1931307</td>
                   </tr>
 
                   <tr>
@@ -87,13 +87,13 @@ function MandatoryScreen() {
                   <tr>
                     <td>7</td>
                     <td>SCHOOL EMAIL ID*</td>
-                    <td>principal@vikasmantra.org</td>
+                    <td>info@vikasmantra.org</td>
                   </tr>
 
                   <tr>
                     <td>8</td>
                     <td>CONTACT DETAILS (LANDLINE/MOBILE)*</td>
-                    <td></td>
+                    <td>6380978251</td>
                   </tr>
                 </tbody>
               </Table>
@@ -132,7 +132,7 @@ function MandatoryScreen() {
                       CERTIFICATE, AS APPLICABLE*
                     </td>
                     <td>
-                      <a href='#'>Annexure 2</a>
+                      <a href='/pdf/trust-registration-certificate.pdf' target='_blank'>Annexure 2</a>
                     </td>
                   </tr>
 
@@ -143,7 +143,7 @@ function MandatoryScreen() {
                       APPLICABLE, BY THE STATE GOVT./UT*
                     </td>
                     <td>
-                      <a href='#'>Annexure 3</a>
+                      <a href='/pdf/noc.pdf' target='_blank'>Annexure 3</a>
                     </td>
                   </tr>
 
@@ -154,7 +154,7 @@ function MandatoryScreen() {
                       IT&apos;S RENEWAL IF APPLICABLE*
                     </td>
                     <td>
-                      <a href='#'>Annexure 4</a>
+                      <a href='/pdf/certificate-of-recognition.pdf'>Annexure 4</a>
                     </td>
                   </tr>
 
@@ -176,7 +176,7 @@ function MandatoryScreen() {
                       COMPETENT AUTHORITY*
                     </td>
                     <td>
-                      <a href='/pdf/fire-safety.pdf' target='_blank'>Annexure 5</a>
+                      <a href='/pdf/fire-safety.pdf' target='_blank'>Annexure 6</a>
                     </td>
                   </tr>
 
@@ -296,40 +296,40 @@ function MandatoryScreen() {
                   <tr>
                     <td rowspan='4'>2</td>
                     <td>TOTAL NO. OF TEACHERS* </td>
-                    <td></td>
+                    <td>47</td>
                   </tr>
 
                   <tr>
                     <td>PGT*</td>
-                    <td></td>
+                    <td>0</td>
                   </tr>
 
                   <tr>
                     <td>TGT*</td>
-                    <td></td>
+                    <td>16</td>
                   </tr>
 
                   <tr>
                     <td>PRT*</td>
-                    <td></td>
+                    <td>11</td>
                   </tr>
 
                   <tr>
                     <td>3</td>
                     <td>TEACHERS SECTION RATIO*</td>
-                    <td></td>
+                    <td>35:1</td>
                   </tr>
 
                   <tr>
                     <td>4</td>
                     <td>DETAILS OF SPECIAL EDUCATOR*</td>
-                    <td></td>
+                    <td>MS LATHA BABU B.Sc B.Ed MDA SPECIAL EDUCATOR</td>
                   </tr>
 
                   <tr>
                     <td>5</td>
                     <td>DETAILS OF COUNSELLOR AND WELLNESS TEACHER*</td>
-                    <td></td>
+                    <td>MS SHARMILI M.Sc COUNSELLING PSYCOLOGY</td>
                   </tr>
                 </tbody>
               </Table>
@@ -407,13 +407,13 @@ function MandatoryScreen() {
                   <tr>
                     <td>1</td>
                     <td>TOTAL CAMPUS AREA OF THE SCHOOL (IN SQUARE MTR)*</td>
-                    <td></td>
+                    <td>13961</td>
                   </tr>
 
                   <tr>
                     <td>2</td>
                     <td>NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)*</td>
-                    <td></td>
+                    <td>38 and 41</td>
                   </tr>
 
                   <tr>
@@ -422,25 +422,25 @@ function MandatoryScreen() {
                       NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN
                       SQ MTR)*{' '}
                     </td>
-                    <td></td>
+                    <td>3 and 65</td>
                   </tr>
 
                   <tr>
                     <td>4</td>
                     <td>INTERNET FACILITY*</td>
-                    <td></td>
+                    <td>YES</td>
                   </tr>
 
                   <tr>
                     <td>5</td>
                     <td>NO. OF GIRLS TOILETS*</td>
-                    <td></td>
+                    <td>3</td>
                   </tr>
 
                   <tr>
                     <td>6</td>
                     <td>NO. OF BOYS TOILETS*</td>
-                    <td></td>
+                    <td>3</td>
                   </tr>
 
                   <tr>
@@ -449,7 +449,7 @@ function MandatoryScreen() {
                       LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING
                       THE INFRASTRUCTURE OF THE SCHOOL
                     </td>
-                    <td></td>
+                    <td><a href="https://www.youtube.com/watch?v=JJrU/EOgfaZw81=149s">https://www.youtube.com/watch?v=JJrU/EOgfaZw81=149s</a></td>
                   </tr>
                 </tbody>
               </Table>
