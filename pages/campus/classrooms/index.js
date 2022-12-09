@@ -72,11 +72,19 @@ const Classrooms = () => {
             <div className={'col-lg-6 col-md-12 position-relative ' + styles.vmpsImg}>
 
               <div className={styles.classroomImgDiv + ' imgBgColor imgUp pastelPurple AnimeStarts'}>
-                <img
+
+                {/* <img
                   src='/assets/campus/classroom.png'
                   alt='image'
                   className={styles.classroomImg + ' AnimeElement'}
-                />
+                /> */}
+
+                <picture>
+                  <source srcSet='/assets/campus/classroom.webp' />
+                  <source srcSet='/assets/campus/classroom.png' />
+                  <img src='/assets/campus/classroom.webp' alt="image" className={styles.classroomImg + ' AnimeElement'} />
+                </picture>
+
               </div>
 
             </div>

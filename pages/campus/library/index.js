@@ -71,7 +71,13 @@ const Library = () => {
 
                             <div className='imgBgColor pastelPurple2 AnimeStarts '>
 
-                                <img src='/assets/campus/library.png' alt="image" className={styles.libraryImg + ' AnimeElement'} />
+                                {/* <img src='/assets/campus/library.png' alt="image" className={styles.libraryImg + ' AnimeElement'} /> */}
+
+                                <picture>
+                                    <source srcSet='/assets/campus/library.webp' />
+                                    <source srcSet='/assets/campus/library.png'/>
+                                    <img src='/assets/campus/library.webp' alt="image" className={styles.libraryImg + ' AnimeElement'} />
+                                </picture>
 
                             </div>
 
