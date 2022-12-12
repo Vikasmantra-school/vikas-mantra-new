@@ -394,7 +394,7 @@ function Home() {
       </section> */}
 
 
-      <section className={styles.SchoolVideoSection}>
+      <section className={styles.SchoolVideoSection + ' whitebg'}>
         <div className='VideoContainer' onMouseOver={onHover} onMouseLeave={onLeave}>
           <video
             ref={getVideo}
