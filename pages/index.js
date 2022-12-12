@@ -48,8 +48,6 @@ function Home() {
   }
 
 
-
-
   const [controls, setControls] = useState(false)
   useEffect(() => {
 
