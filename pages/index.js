@@ -47,7 +47,6 @@ function Home() {
     controlParent.current.classList.remove('d-none')
   }
 
-
   const [controls, setControls] = useState(false)
   useEffect(() => {
 
