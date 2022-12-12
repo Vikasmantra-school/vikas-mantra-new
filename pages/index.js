@@ -394,7 +394,7 @@ function Home() {
       </section> */}
 
 
-      <section className={styles.SchoolVideoSection + ' whitebg'}>
+      <section className={styles.SchoolVideoSection + ' whitebg parentAnimeStarts '}>
         <div className='VideoContainer' onMouseOver={onHover} onMouseLeave={onLeave}>
           <video
             ref={getVideo}
@@ -402,7 +402,9 @@ function Home() {
             height='auto'
             id='myvid'
             type="video/mp4"
-            controls={controls}>
+            controls={controls}
+            className='bottomToTop'
+            >
             <source src="/assets/videos/school-video.mp4" type='video/mp4' />
           </video>
 
