@@ -180,7 +180,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {/* <Anime /> */}
 
       <Nav />
 
