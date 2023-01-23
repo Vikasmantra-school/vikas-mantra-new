@@ -6,6 +6,7 @@ import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
 import { useState, useRef } from 'react'
 
 function Career() {
+  
   const namecheck = useRef()
   const pageTitle = 'Career'
 
