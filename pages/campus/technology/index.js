@@ -64,7 +64,7 @@ const Technology = () => {
                                 <picture>
                                     <source srcSet='/assets/campus/technology.webp' />
                                     <source srcSet='/assets/campus/technology.png' />
-                                    <img src='/assets/campus/technology.webp' alt="image" className={styles.libraryImg + ' AnimeElement'} />
+                                    <img src='/assets/campus/technology.png' alt="image" className={styles.libraryImg + ' AnimeElement'} />
                                 </picture>
 
                             </div>

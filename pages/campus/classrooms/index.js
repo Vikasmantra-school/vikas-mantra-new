@@ -78,12 +78,12 @@ const Classrooms = () => {
                   alt='image'
                   className={styles.classroomImg + ' AnimeElement'}
                 /> */}
-                
+
 
                 <picture>
                   <source srcSet='/assets/campus/classroom.webp' />
                   <source srcSet='/assets/campus/classroom.png' />
-                  <img src='/assets/campus/classroom.webp' alt="image" className={styles.classroomImg + ' AnimeElement'} />
+                  <img src='/assets/campus/classroom.png' alt="image" className={styles.classroomImg + ' AnimeElement'} />
                 </picture>
 
               </div>

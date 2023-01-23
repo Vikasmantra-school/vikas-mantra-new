@@ -60,7 +60,7 @@ const About = () => {
                                     <picture>
                                         <source srcSet='/assets/banners/school-building.webp' />
                                         <source srcSet='/assets/banners/school-building.png'/>
-                                        <img src='/assets/banners/school-building.webp' alt="image" className={styles.ResponsiveGroupImage + ' AnimeElement'} />
+                                        <img src='/assets/banners/school-building.png' alt="image" className={styles.ResponsiveGroupImage + ' AnimeElement'} />
                                     </picture>
 
                                 </div>
@@ -87,7 +87,7 @@ const About = () => {
                                 <picture>
                                     <source srcSet='/assets/banners/school-building.webp' />
                                     <source srcSet='/assets/banners/school-building.png' />
-                                    <img src='/assets/banners/school-building.webp' alt="image" className={styles.schoolBuildingImg + ' AnimeElement'} />
+                                    <img src='/assets/banners/school-building.png' alt="image" className={styles.schoolBuildingImg + ' AnimeElement'} />
                                 </picture>
 
                             </div>
@@ -193,7 +193,7 @@ const About = () => {
                                 <picture>
                                     <source srcSet='/assets/banners/staff-group-photo.webp' />
                                     <source srcSet='/assets/banners/staff-group-photo.png' />
-                                    <img src='/assets/banners/staff-group-photo.webp' alt="image" className={styles.ResponsiveImage + ' AnimeElement'} />
+                                    <img src='/assets/banners/staff-group-photo.png' alt="image" className={styles.ResponsiveImage + ' AnimeElement'} />
                                 </picture>
 
                             </div>

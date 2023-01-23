@@ -59,7 +59,7 @@ const SpecialityRoom = () => {
                                 <picture>
                                     <source srcSet='/assets/campus/Speciality-room.webp' />
                                     <source srcSet='/assets/campus/Speciality-room.png'/>
-                                    <img src='/assets/campus/Speciality-room.webp' alt="image" className={styles.classroomImg + ' AnimeElement'} />
+                                    <img src='/assets/campus/Speciality-room.png' alt="image" className={styles.classroomImg + ' AnimeElement'} />
                                 </picture>
 
                             </div>

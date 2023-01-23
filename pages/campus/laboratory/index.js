@@ -64,7 +64,7 @@ const Laboratory = () => {
                                 <picture>
                                     <source srcSet='/assets/campus/lab1.webp' />
                                     <source srcSet ='/assets/campus/lab1.png'/>
-                                    <img src='/assets/campus/lab1.webp' alt="image" className={styles.labImg1 + ' AnimeElement'} />
+                                    <img src='/assets/campus/lab1.png' alt="image" className={styles.labImg1 + ' AnimeElement'} />
                                 </picture>
 
                             </div>

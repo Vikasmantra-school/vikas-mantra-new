@@ -62,7 +62,7 @@ const Security = () => {
                                 <picture>
                                     <source srcSet='/assets/campus/security.webp' />
                                     <source srcSet='/assets/campus/security.png'/>
-                                    <img src='/assets/campus/security.webp' alt="image" className={styles.securityImg + ' AnimeElement'} />
+                                    <img src='/assets/campus/security.png' alt="image" className={styles.securityImg + ' AnimeElement'} />
                                 </picture>
 
                             </div>

@@ -81,7 +81,7 @@ const Healthcare = () => {
                                 <picture>
                                     <source srcSet='/assets/campus/healthcare.webp' />
                                     <source srcSet ='/assets/campus/healthcare.png' />
-                                    <img src='/assets/campus/healthcare.webp' alt="image" className={styles.securityImg + ' AnimeElement'} />
+                                    <img src='/assets/campus/healthcare.png' alt="image" className={styles.securityImg + ' AnimeElement'} />
                                 </picture>
 
                             </div>

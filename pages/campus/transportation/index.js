@@ -61,7 +61,7 @@ const Transportation = () => {
                                 <picture>
                                     <source srcSet='/assets/campus/school-bus.webp' />
                                     <source srcSet='/assets/campus/school-bus.png'/>
-                                    <img src='/assets/campus/school-bus.webp' alt="image" className={styles.schlBusImg + ' AnimeElement'} />
+                                    <img src='/assets/campus/school-bus.png' alt="image" className={styles.schlBusImg + ' AnimeElement'} />
                                 </picture>
 
                             </div>

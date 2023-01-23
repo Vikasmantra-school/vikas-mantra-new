@@ -81,7 +81,7 @@ const FacilitiesAndInfrastructure = () => {
                                 <picture>
                                     <source srcSet='/assets/campus/school-building3.webp' />
                                     <source srcSet='/assets/campus/school-building3.png'/>
-                                    <img src='/assets/campus/school-building3.webp' alt="image" className={styles.schlBuildingImg + ' AnimeElement'} />
+                                    <img src='/assets/campus/school-building3.png' alt="image" className={styles.schlBuildingImg + ' AnimeElement'} />
                                 </picture>
 
                             </div>
