@@ -59,13 +59,7 @@ const Laboratory = () => {
 
                             <div className='imgBgColor2 pastelSkyBlue AnimeStarts'>
 
-                                {/* <img src='/assets/campus/lab1.png' alt="image" className={styles.labImg1 + ' AnimeElement'} /> */}
-
-                                <picture>
-                                    <source srcSet='/assets/campus/lab1.webp' />
-                                    <source srcSet ='/assets/campus/lab1.png'/>
-                                    <img src='/assets/campus/lab1.png' alt="image" className={styles.labImg1 + ' AnimeElement'} />
-                                </picture>
+                                <img src='/assets/campus/lab1.png' alt="image" className={styles.labImg1 + ' AnimeElement'} />
 
                             </div>
 
@@ -79,13 +73,7 @@ const Laboratory = () => {
 
                             <div className='imgBgColorLeft pastelLightGreen AnimeStarts'>
 
-                                {/* <img src='/assets/campus/lab2.png' alt="image" className={styles.labImg2 + ' AnimeElement'} /> */}
-
-                                <picture>
-                                    <source srcSet='/assets/campus/lab2.webp' />
-                                    <source srcSet ='/assets/campus/lab2.png'/>
-                                    <img src='/assets/campus/lab2.webp' alt="image" className={styles.labImg2 + ' AnimeElement'} />
-                                </picture>
+                                <img src='/assets/campus/lab2.png' alt="image" className={styles.labImg2 + ' AnimeElement'} />
 
                             </div>
 
@@ -137,13 +125,7 @@ const Laboratory = () => {
 
                             <div className='imgBgColor2 pastelGold AnimeStarts'>
 
-                                {/* <img src='/assets/campus/lab3.png' alt="image" className={styles.labImg3 + ' AnimeElement'} /> */}
-
-                                <picture>
-                                    <source srcSet='/assets/campus/lab3.webp' />
-                                    <source srcSet ='/assets/campus/lab3.png'/>
-                                    <img src='/assets/campus/lab3.webp' alt="image" className={styles.labImg3 + ' AnimeElement'} />
-                                </picture>
+                                <img src='/assets/campus/lab3.png' alt="image" className={styles.labImg3 + ' AnimeElement'} />
 
                             </div>
 

@@ -76,13 +76,7 @@ const Healthcare = () => {
 
                             <div className='imgBgColor imgUp pastelBlue2 bgImageMargin'>
 
-                                {/* <img src='/assets/campus/healthcare.png' alt="image" className={styles.securityImg + ' AnimeElement'} /> */}
-
-                                <picture>
-                                    <source srcSet='/assets/campus/healthcare.webp' />
-                                    <source srcSet ='/assets/campus/healthcare.png' />
-                                    <img src='/assets/campus/healthcare.png' alt="image" className={styles.securityImg + ' AnimeElement'} />
-                                </picture>
+                                <img src='/assets/campus/healthcare.png' alt="image" className={styles.securityImg + ' AnimeElement'} />
 
                             </div>
 

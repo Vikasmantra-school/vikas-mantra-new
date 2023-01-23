@@ -59,13 +59,7 @@ const Technology = () => {
 
                             <div className='imgBgColor pastelYellow imgUp bgImageMargin AnimeStarts'>
 
-                                {/* <img src='/assets/campus/technology.png' alt="image" className={styles.libraryImg + ' AnimeElement'} /> */}
-
-                                <picture>
-                                    <source srcSet='/assets/campus/technology.webp' />
-                                    <source srcSet='/assets/campus/technology.png' />
-                                    <img src='/assets/campus/technology.png' alt="image" className={styles.libraryImg + ' AnimeElement'} />
-                                </picture>
+                                <img src='/assets/campus/technology.png' alt="image" className={styles.libraryImg + ' AnimeElement'} />
 
                             </div>
 

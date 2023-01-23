@@ -73,18 +73,11 @@ const Classrooms = () => {
 
               <div className={styles.classroomImgDiv + ' imgBgColor imgUp pastelPurple AnimeStarts'}>
 
-                {/* <img
+                <img
                   src='/assets/campus/classroom.png'
                   alt='image'
                   className={styles.classroomImg + ' AnimeElement'}
-                /> */}
-
-
-                <picture>
-                  <source srcSet='/assets/campus/classroom.webp' type='image/webp' />
-                  <source srcSet='/assets/campus/classroom.png' type='image/png' />
-                  <img src='/assets/campus/classroom.png' alt="image" className={styles.classroomImg + ' AnimeElement'} />
-                </picture>
+                />
 
               </div>
 

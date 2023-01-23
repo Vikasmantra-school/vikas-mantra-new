@@ -95,13 +95,7 @@ const MessageFromPrincipal = () => {
 
                             <div className={'imgBgColor pastelBrown3 imgUp AnimeStarts ' + styles.ImgMargin}>
 
-                                {/* <img src='/assets/banners/principal.png' alt="image" className={styles.PrincipalImg + ' AnimeElement'} /> */}
-
-                                <picture>
-                                    <source srcSet='/assets/banners/principal.webp' />
-                                    <source srcSet='/assets/banners/principal.png' />
-                                    <img src='/assets/banners/principal.png' alt="image" className={styles.PrincipalImg + ' AnimeElement'} />
-                                </picture>
+                                <img src='/assets/banners/principal.png' alt="image" className={styles.PrincipalImg + ' AnimeElement'} />
 
                             </div>
 
