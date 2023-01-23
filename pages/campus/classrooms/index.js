@@ -78,6 +78,7 @@ const Classrooms = () => {
                   alt='image'
                   className={styles.classroomImg + ' AnimeElement'}
                 /> */}
+                
 
                 <picture>
                   <source srcSet='/assets/campus/classroom.webp' />
