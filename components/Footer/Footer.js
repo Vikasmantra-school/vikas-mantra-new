@@ -186,12 +186,29 @@ export const Footer = () => {
             </div>
           </div>
         </div>
+
+        <div className='row watsapp-icon'>
+
+          <div className='col-sm-12'>
+
+            <a href="" className="fixed-app callBtn">Admissions Enquiry</a>
+
+            <a className="whatsappDiv" target="_blank" href="https://api.whatsapp.com/send?phone=7092450450"><img src="/assets/icons/whatsapp.png" /></a>
+
+          </div>
+          
+        </div>
       </div>
 
       <hr className={styles.hrLine} />
       <p className={'text-center mt-4' + ' ' + styles.bottomText}>
         Vikas Mantra Public School © 2022 | All Rights Reserved | Coded by <Link href='https://benfy.co/' ><a target='_blank' rel="noopener noreferrer">Benfy</a></Link>
       </p>
+
     </div>
+
+
+  
+  
   )
 }

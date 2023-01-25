@@ -254,7 +254,7 @@ const Admissions = () => {
                       <div className='AdmissionAnimeStarts AnimeStarts'>
                         <h6 className='card-text pt-5 AdmissionScrollAnimeElement AnimeElement'>
                           At VIKAS MANTRA PUBLIC SCHOOL, admissions are open for
-                          the academic year 2022-23 from classes Lower KG to
+                          the academic year 2023-24 from classes Lower KG to
                           Grade 9. Each grade will have 3 divisions with class
                           strength of no more than 30 students. At VMPS ,we aim
                           to create a personalised education experience for each
@@ -339,10 +339,14 @@ const Admissions = () => {
                   <img
                     src='/assets/banners/student.png'
                     alt='image'
-                    className={
-                      styles.studentImg + ' AdmissionScrollAnimeElement'
-                    }
+                    className={ styles.studentImg + ' AdmissionScrollAnimeElement'}
                   />
+                  {/* <picture>
+                    <source srcSet='/assets/banners/student.webp' />
+                    <source srcSet='/assets/banners/student.png'/>
+                    <img src='/assets/banners/student.webp' alt="image" className={ styles.studentImg + ' AdmissionScrollAnimeElement'}/>
+                  </picture> */}
+
                 </div>
 
                 <div

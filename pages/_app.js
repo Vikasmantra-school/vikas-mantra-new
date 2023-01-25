@@ -26,8 +26,8 @@ function MyApp({ Component, pageProps }) {
           y: 50,
         },
         {
-          duration: 5,
-          delay: 0.5,
+          duration: 8,
+          delay: 0.8,
           y: 0,
           cssRule: {
             opacity: "1",
@@ -180,7 +180,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {/* <Anime /> */}
 
       <Nav />
 

@@ -58,7 +58,9 @@ const Laboratory = () => {
                         <div className='col-md-6 position-relative '>
 
                             <div className='imgBgColor2 pastelSkyBlue AnimeStarts'>
+
                                 <img src='/assets/campus/lab1.png' alt="image" className={styles.labImg1 + ' AnimeElement'} />
+
                             </div>
 
                         </div>

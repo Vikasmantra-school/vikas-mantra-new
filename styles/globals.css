@@ -2086,3 +2086,31 @@ tr {
     bottom: -15px;
   }
 }
+
+
+.callBtn {
+  padding: 10px 15px;
+  color:#202750 !important;
+  font-size: 17px;
+  background: #e9ef89;
+  border: 1px solid;
+  position: fixed;
+  bottom: 100px;
+  z-index: 9999;
+  right: 1em;
+  border-radius: 27px;
+}
+
+.watsapp-icon img {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  width: 55px;
+  box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
+  -webkit-box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
+  -moz-box-shadow: 0 6px 8px 2px rgba(0,0,0,.14);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}

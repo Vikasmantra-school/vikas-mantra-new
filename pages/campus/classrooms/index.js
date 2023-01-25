@@ -72,11 +72,13 @@ const Classrooms = () => {
             <div className={'col-lg-6 col-md-12 position-relative ' + styles.vmpsImg}>
 
               <div className={styles.classroomImgDiv + ' imgBgColor imgUp pastelPurple AnimeStarts'}>
+
                 <img
                   src='/assets/campus/classroom.png'
                   alt='image'
                   className={styles.classroomImg + ' AnimeElement'}
                 />
+
               </div>
 
             </div>

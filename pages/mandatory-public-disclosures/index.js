@@ -198,7 +198,7 @@ function MandatoryScreen() {
                       COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES
                     </td>
                     <td>
-                      <a href='/pdf/sanitary.pdf' target='_blank'>Annexure 8</a>
+                      <a href='/pdf/sanitary-certificate-2023-2024.pdf' target='_blank'>Annexure 8</a>
                     </td>
                   </tr>
                 </tbody>
