@@ -351,7 +351,7 @@
     bottom: -32vh;
 }
 
-.vectorImg5::after {
+/* .vectorImg5::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector10.png);
@@ -363,7 +363,7 @@
     width: 190px;
     right: 3vh;
     bottom: -56vh;
-}
+} */
 
 .vectorImg3::before {
     content: '';
@@ -379,7 +379,7 @@
     bottom: -41vh;
 }
 
-.vectorImg9::after {
+/* .vectorImg9::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector9.png);
@@ -391,7 +391,7 @@
     width: 190px;
     right: 0px;
     bottom: -200vh;
-}
+} */
 
 .vectorImg3Tab3::before {
     content: '';
@@ -407,7 +407,7 @@
     bottom: -140%;
 }
 
-.vectorImg6::after {
+/* .vectorImg6::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector6.png);
@@ -419,7 +419,7 @@
     width: 200px;
     right: 9%;
     bottom: -335%;
-}
+} */
 
 .vectorImg17::before {
     content: '';
@@ -435,7 +435,7 @@
     bottom: -30%;
 }
 
-.vectorImg11::after {
+/* .vectorImg11::after {
     content: '';
     position: absolute;
     background-image: url(/assets/vectors/Vector11.png);
@@ -447,7 +447,7 @@
     width: 190px;
     right: 0px;
     bottom: -150%;
-}
+} */
 
 .accordionExample {
     background-color: #F3F1F2;
