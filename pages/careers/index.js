@@ -6,7 +6,7 @@ import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
 import { useState, useRef } from 'react'
 
 function Career() {
-  
+
   const namecheck = useRef()
   const pageTitle = 'Career'
 
@@ -47,6 +47,7 @@ function Career() {
 
 
   const handleSubmit = (e) => {
+    ValidateEmail();
     e.preventDefault()
     setLoading(true)
 
@@ -246,7 +247,6 @@ function Career() {
                           className={styles.formText + ' ' + 'mb-5 AnimeElement'}
                           type='text'
                           name='Address'
-
                         />
 
                         <Form.Control
@@ -263,14 +263,28 @@ function Career() {
                         <div className='mb-5 AnimeStarts'>
                           <label className='AnimeElement'>Job Opening</label>
 
-                          <Form.Control
+                          {/* <Form.Control
                             className={styles.formText + ' AnimeElement'}
                             type='text'
                             name='Job Opening'
                             required
                             onChange={event => setJobOpening(event.target.value)}
                             value={jobOpening}
-                          />
+                          /> */}
+
+                          {/* <select className={styles.formText + ' AnimeElement form-select '} aria-label="Default select example">
+                            <option selected></option>
+                            <option value={jobOpening}  name='Job Opening' onChange={event => setJobOpening(event.target.value)} >One</option>
+                            <option value={jobOpening} name='Job Opening' onChange={event => setJobOpening(event.target.value)}>Two</option>
+                            <option value={jobOpening} name='Job Opening' onChange={event => setJobOpening(event.target.value)}>Three</option>
+                          </select> */}
+
+                          <Form.Select aria-label="Default select example" className={styles.formText + ' AnimeElement form-select '}>
+                            <option value={jobOpening} name='Job Opening' onChange={event => setJobOpening(event.target.value)} >One</option>
+                            <option value={jobOpening} name='Job Opening' onChange={event => setJobOpening(event.target.value)} >Two</option>
+                            <option value={jobOpening} name='Job Opening' onChange={event => setJobOpening(event.target.value)} >Three</option>
+                          </Form.Select>
+
                         </div>
                       </div>
 
