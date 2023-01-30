@@ -1,5 +1,6 @@
 import styles from './style.module.css'
 import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
+import { motion, useScroll } from "framer-motion";
 
 const OurTeam = () => {
 
@@ -17,14 +18,21 @@ const OurTeam = () => {
         { staffImage: '/assets/staffs/staff11.png', heading: 'Soundarrajan Venkatesan', para: 'HOD - Art & Craft', ImgContainer: 'ImgContainer11' },
     ];
 
-
     const pageTitle = 'About'
+
+    const exampleVariant = {
+        visible: { opacity: 1},
+        hidden: { opacity: 0},
+    }
+    // const { scrollYProgress } = useScroll();
+
     return (
 
         <>
             <Breadcrumb pageName={pageTitle} />
 
-            <section className={styles.rowPdng + ' py-4 position-relative ' + ' ' + styles.vectorImg6 + ' ' + styles.vectorImg8}>
+            <section
+                className={styles.rowPdng + ' py-4 position-relative ' + ' ' + styles.vectorImg6 + ' ' + styles.vectorImg8}   >
 
                 <div className='container'>
 
@@ -32,8 +40,8 @@ const OurTeam = () => {
 
                         <div className='col-md-12 position-relative'>
 
-                            <div className='AnimeStarts'>
-                                <h2 className='AnimeElement'>Our Team</h2>
+                            <div className='AnimeElement-x-x'>
+                                <h2 className='AnimeElement-x'>Our Team</h2>
                             </div>
 
                             <img src='/assets/vectors/Vector5.png' alt="image" className={styles.vectorImg5} />
@@ -44,25 +52,31 @@ const OurTeam = () => {
 
                             return (
 
-                                <div className=' col-sm-6 col-md-6 col-lg-4 py-4' key={i}>
+                                <motion.div className=' col-sm-6 col-md-6 col-lg-4 py-4'
+                                    key={i}
+                                    variants={exampleVariant}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true }}
+                                >
 
                                     <div className={item.ImgContainer + ' ImgContainer'}>
 
-                                        <div className='AnimeStarts'>
-                                            <img src={item.staffImage} alt='image' className={styles.staffImg + ' img-fluid AnimeElement'} />
+                                        <div className='AnimeElement-x-x'>
+                                            <img src={item.staffImage} alt='image' className={styles.staffImg + ' img-fluid AnimeElement-x'} />
                                         </div>
 
-                                        <div className='AnimeStarts'>
-                                            <h6 className='pt-4 text-center fw-bold AnimeElement '>{item.heading}</h6>
+                                        <div className='AnimeElement-x-x'>
+                                            <h6 className='pt-4 text-center fw-bold AnimeElement-x '>{item.heading}</h6>
                                         </div>
 
-                                        <div className='AnimeStarts'>
-                                            <p className='text-center pb-2 AnimeElement'>{item.para}</p>
+                                        <div className='AnimeElement-x-x'>
+                                            <p className='text-center pb-2 AnimeElement-x'>{item.para}</p>
                                         </div>
 
                                     </div>
 
-                                </div>
+                                </motion.div>
 
                             )
                         })}
