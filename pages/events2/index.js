@@ -55,3 +55,5 @@ const events2 = () =>{
     </>
   )
 }
+
+export default events2
