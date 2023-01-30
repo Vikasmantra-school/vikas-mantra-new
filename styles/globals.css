@@ -60,6 +60,19 @@ h4 {
   font-size: 30px !important;
   font-weight: 600;
 }
+.modal-footer{
+  padding: 0;
+}
+.modal-body{
+  padding: 0;
+}
+
+
+.btn-close:hover {
+  color: #E02D53 !important ;
+  text-decoration: none;
+  opacity: .75;
+}
 
 .outlineBtn {
   background-color: #F3F1F2;

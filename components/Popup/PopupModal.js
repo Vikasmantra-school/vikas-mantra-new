@@ -38,17 +38,20 @@ const PopupModal = () => {
         <>
             <Modal show={show} onHide={handleClose} animation={true}>
 
+                <Modal.Header closeButton>
+                </Modal.Header>
+
                 <Modal.Body >
                     <div>
                         <Image src={PopupImage} alt='popup' className={styles.sectionOut} />
                     </div>
                 </Modal.Body>
 
-                <Modal.Footer>
+                {/* <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                </Modal.Footer>
+                </Modal.Footer> */}
 
             </Modal>
 

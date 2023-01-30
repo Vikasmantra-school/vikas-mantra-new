@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { gsap, Power3 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import HomeSlider from '../components/HomeSlider'
+import PopupModal from '../components/Popup/PopupModal'
 
 function Home() {
 
@@ -67,7 +68,7 @@ function Home() {
     gsap.registerPlugin(ScrollTrigger)
     const parentTrigger = document.querySelectorAll('.parentAnimeStarts')
     parentTrigger.forEach(staggerAnimeFunc)
-    
+
     // titleAnime()
     function staggerAnimeFunc(elem) {
       let text = elem.querySelectorAll('.bottomToTop')
@@ -98,6 +99,8 @@ function Home() {
 
   return (
     <>
+
+      <PopupModal />
       <HomeSlider />
 
       <section
@@ -198,11 +201,11 @@ function Home() {
                 alt='image'
               /> */}
               <picture>
-                  <source srcSet='/assets/icons/holistic-approach.png' />
-                  <source srcSet='/assets/icons/holistic-approach.png' />
-                  <img src='/assets/icons/holistic-approach.png' alt="image"  width='81' height='74' className='bottomToTop'/>
-                </picture>
-              
+                <source srcSet='/assets/icons/holistic-approach.png' />
+                <source srcSet='/assets/icons/holistic-approach.png' />
+                <img src='/assets/icons/holistic-approach.png' alt="image" width='81' height='74' className='bottomToTop' />
+              </picture>
+
 
               <h4 className='bottomToTop'>Holistic Approach</h4>
 
@@ -401,7 +404,7 @@ function Home() {
             type="video/mp4"
             controls={controls}
             className='bottomToTop'
-            >
+          >
             <source src="/assets/videos/school-video.mp4" type='video/mp4' />
           </video>
 

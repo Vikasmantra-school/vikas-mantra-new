@@ -1,6 +1,5 @@
 import styles from './style.module.css'
 import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
-import PopupModal from '../../../components/Popup/PopupModal'
 
 const MessageFromChairMan = () => {
 
@@ -9,7 +8,6 @@ const MessageFromChairMan = () => {
     return (
 
         <>
-            <PopupModal />
 
             <Breadcrumb pageName={pageTitle} />
 
