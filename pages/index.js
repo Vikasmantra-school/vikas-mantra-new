@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { gsap, Power3 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import HomeSlider from '../components/HomeSlider'
-import PopupModal from '../components/Popup/PopupModal'
 
 function Home() {
 
@@ -99,8 +98,6 @@ function Home() {
 
   return (
     <>
-
-      <PopupModal />
       <HomeSlider />
 
       <section

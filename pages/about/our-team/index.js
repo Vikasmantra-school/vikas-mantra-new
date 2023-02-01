@@ -11,7 +11,7 @@ const OurTeam = () => {
         { staffImage: '/assets/staffs/staff4.png', heading: 'Raja Varadarajan', para: 'HOD - Maths', ImgContainer: 'ImgContainer4' },
         { staffImage: '/assets/staffs/staff5.png', heading: 'Shobana Kesavan', para: 'HOD - Computer Science', ImgContainer: 'ImgContainer5' },
         { staffImage: '/assets/staffs/staff6.png', heading: 'Sujatha Gangadharan', para: 'HOD - Tamil', ImgContainer: 'ImgContainer6' },
-        { staffImage: '/assets/staffs/staff7.png', heading: 'Sumathi Elumalai', para: 'HOD - Physical Education', ImgContainer: 'ImgContainer7' },
+        { staffImage: '/assets/staffs/staff7.png', heading: 'Prince sounderrajan K', para: 'HOD - Physical Education', ImgContainer: 'ImgContainer7' },
         { staffImage: '/assets/staffs/staff8.png', heading: 'Ms. Maheshwari', para: 'Pre-Primary Coordinator', ImgContainer: 'ImgContainer8' },
         { staffImage: '/assets/staffs/staff9.png', heading: 'Vivek Sathyan', para: 'HOD - Dance', ImgContainer: 'ImgContainer9' },
         { staffImage: '/assets/staffs/staff10.png', heading: 'Kavitha Yadav', para: 'HOD - Hindi', ImgContainer: 'ImgContainer10' },

@@ -138,7 +138,7 @@ const About = () => {
 
                             <div className='AnimeStarts'>
                                 <p className={styles.pLineHeight + ' AnimeElement'}>The school began its operations in the academic year June 2019.
-                                    At present the school offers classes from Lower
+                                    At present the school offers classes from
                                 </p>
                             </div>
 
@@ -147,7 +147,7 @@ const About = () => {
                         <div className={styles.bannercontent2 + ' col-lg-5 col-md-12 '}>
 
                             <div className='AnimeStarts'>
-                                <p className={styles.pLineHeight + ' AnimeElement '}>Kindergarten to Grade 9 with affiliation from the Central
+                                <p className={styles.pLineHeight + ' AnimeElement '}>pre kg to class 11 with affiliation from the Central
                                     Board of Secondary Education, New Delhi and will move to
                                     become a full-fledged  K 12 school before 2024.
                                 </p>
@@ -188,13 +188,13 @@ const About = () => {
 
                             <div className={'AnimeStarts '}>
 
-                                {/* <img src='/assets/banners/staff-group-photo.png' alt="image" className={styles.ResponsiveImage + ' AnimeElement'} /> */}
+                                <img src='/assets/banners/staff-group-photo-new.jpg' alt="image" className={styles.ResponsiveImage + ' AnimeElement'} />
 
-                                <picture>
+                                {/* <picture>
                                     <source srcSet='/assets/banners/staff-group-photo.webp' />
                                     <source srcSet='/assets/banners/staff-group-photo.png' />
                                     <img src='/assets/banners/staff-group-photo.png' alt="image" className={styles.ResponsiveImage + ' AnimeElement'} />
-                                </picture>
+                                </picture> */}
 
                             </div>
 

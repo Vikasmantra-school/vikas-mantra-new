@@ -1,36 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import styles from './style.module.css'
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Image from 'next/image'
 import PopupImage from '../../public/assets/Popups/Vikas-Social-Ad-2.png'
 
 const PopupModal = () => {
 
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    // const setTimeoutFunc = () => {
-    //     setTimeout(() => {
-    //         handleShow()
-    //     }, 2000)
-    // }
-
-    // useEffect(() => {
-    //     setTimeoutFunc()
-    // }), []
 
     useEffect(() => {
-        setTimeout(() => {
-            handleShow(true)
-        }, 2000)
-    }, [])
+        handleShow()
+        localStorage.setItem('Name', show);
 
-
-
-
+    }, [show])
 
     return (
 
@@ -47,21 +33,7 @@ const PopupModal = () => {
                     </div>
                 </Modal.Body>
 
-                {/* <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                </Modal.Footer> */}
-
             </Modal>
-
-            {/* <section className={styles.section}>
-                <div className='container'>
-                    <div className='col-md-6'>
-                        <Image src={PopupImage} alt='popup' className={styles.sectionOut} />
-                    </div>
-                </div>
-            </section> */}
 
 
         </>

@@ -60,7 +60,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>3</td>
                     <td>SCHOOL CODE (IF APPLICABLE)</td>
-                    <td></td>
+                    <td>56312</td>
                   </tr>
 
                   <tr>
@@ -121,7 +121,7 @@ function MandatoryScreen() {
                       EXTENSION OF AFFILIATION, IF ANY
                     </td>
                     <td>
-                      <a href='#'>Annexure 1</a>
+                      <a href='/pdf/upgradation-letter-and-recent-extension.pdf' target='_blank'>Annexure 1</a>
                     </td>
                   </tr>
 
@@ -256,7 +256,7 @@ function MandatoryScreen() {
                     <td>4</td>
                     <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS*</td>
                     <td>
-                    <a href='/pdf/pta-2022.pdf' target='_blank'>Annexure 12</a>
+                      <a href='/pdf/pta-2022.pdf' target='_blank'>Annexure 12</a>
                     </td>
                   </tr>
 
@@ -294,7 +294,7 @@ function MandatoryScreen() {
                   </tr>
 
                   <tr>
-                    <td rowspan='4'>2</td>
+                    <td rowSpan='4'>2</td>
                     <td>TOTAL NO. OF TEACHERS* </td>
                     <td>47</td>
                   </tr>
