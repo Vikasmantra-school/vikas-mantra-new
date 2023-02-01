@@ -134,35 +134,70 @@ function Career() {
 
               <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                 <tbody>
+
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>Pre-Primary</td>
+                    <td className='AnimeElement fw-bold'>POSITION</td>
                     <td className='AnimeElement'>
-                      <p className='AnimeElement'>Montessori trained </p>
+                      <p className='AnimeElement fw-bold'>CLASS</p>
                     </td>
                   </tr>
+
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>Music teacher</td>
+                    <td className='AnimeElement'>PGT-ENGLISH</td>
                     <td className='AnimeElement'>
-                      <p className='AnimeElement'>
-                        Classical and Western
-                        <br />
-                        Full time
-                        <br />
-                        Qualification: Any Bachelor’s degree
-                        <br />
-                        Experience : In teaching music (1 year preferred)
-                      </p>
+                      <p className='AnimeElement'>IX-XI</p>
                     </td>
                   </tr>
+
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>Primary teacher</td>
+                    <td className='AnimeElement'>PGT-COMMERCE</td>
                     <td className='AnimeElement'>
-                      <p className='AnimeElement'>
-                        Trained graduate with B.ed (minimum 2+ years experience,
-                        full time)
-                      </p>
+                      <p className='AnimeElement'>X&XI</p>
                     </td>
                   </tr>
+
+                  <tr className='AnimeStarts'>
+                    <td className='AnimeElement'>TGT-SOCIAL SCIENCE</td>
+                    <td className='AnimeElement'>
+                      <p className='AnimeElement'>VII-X</p>
+                    </td>
+                  </tr>
+
+                  <tr className='AnimeStarts'>
+                    <td className='AnimeElement'>PRT-HINDI</td>
+                    <td className='AnimeElement'>
+                      <p className='AnimeElement'>II-III</p>
+                    </td>
+                  </tr>
+
+                  <tr className='AnimeStarts'>
+                    <td className='AnimeElement'>LIBRARIAN</td>
+                    <td className='AnimeElement'>
+                      <p className='AnimeElement'>I-III</p>
+                    </td>
+                  </tr>
+
+                  <tr className='AnimeStarts'>
+                    <td className='AnimeElement'>PET</td>
+                    <td className='AnimeElement'>
+                      <p className='AnimeElement'>I-III</p>
+                    </td>
+                  </tr>
+
+                  <tr className='AnimeStarts'>
+                    <td className='AnimeElement'>YOGA INSTRUCTOR</td>
+                    <td className='AnimeElement'>
+                      <p className='AnimeElement'>I-X</p>
+                    </td>
+                  </tr>
+
+                  <tr className='AnimeStarts'>
+                    <td className='AnimeElement'>ART TEACHER</td>
+                    <td className='AnimeElement'>
+                      <p className='AnimeElement'>I-V</p>
+                    </td>
+                  </tr>
+
                 </tbody>
               </Table>
 
