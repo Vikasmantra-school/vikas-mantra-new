@@ -149,10 +149,10 @@ function HomeSlider({ ref }) {
 
                     <div className='d-none d-sm-block'>
                       <h1 className='box'>
-                        Best Emerging School ( Holistic)
+                        Sports Day
                       </h1>
                       <p className='box'>
-                        Vikas Mantra Public school received the Indian Icon of the year awards for Best Emerging School of the year 2021
+                        we grandly celebrated our annual sports meet with our indian cricket player Mr.Subramaniam Badrinath who is our chief guest.
                       </p>
                     </div>
                   </div>
@@ -168,11 +168,11 @@ function HomeSlider({ ref }) {
                     <div className='AnimeStarts py-4 '>
 
                       <h1 className='box AnimeElement'>
-                        Best Emerging School ( Holistic)
+                        Sports Day
                       </h1>
 
                       <p className='box AnimeElement'>
-                        Vikas Mantra Public school received the Indian Icon of the year awards for Best Emerging School of the year 2021
+                        we grandly celebrated our annual sports meet with our indian cricket player Mr.Subramaniam Badrinath who is our chief guest.
                       </p>
 
                     </div>
@@ -236,7 +236,7 @@ function HomeSlider({ ref }) {
 
           </SplideSlide>
 
-          <SplideSlide>
+          {/* <SplideSlide>
             <section className={styles.bannerSection + ' ' + styles.banner5}>
               <div className='container'>
                 <div className='row homeBanner'>
@@ -286,7 +286,7 @@ function HomeSlider({ ref }) {
               </div>
             </section>
 
-          </SplideSlide>
+          </SplideSlide> */}
 
         </Splide>
 

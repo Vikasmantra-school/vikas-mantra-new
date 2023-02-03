@@ -52,7 +52,9 @@
 .tableborder tr {
     border-color: #842029;
 }
-
+.tableborder p {
+    margin: 0;
+}
 .submitBtn {
     border: 0;
     color: #fff;

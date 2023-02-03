@@ -132,68 +132,67 @@ function Career() {
                 </p>
               </div>
 
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+              <Table bordered className={'mt-4' + ' ' + styles.tableborder} size="sm">
                 <tbody>
-
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement fw-bold'>POSITION</td>
-                    <td className='AnimeElement'>
+                    <th className='AnimeElement fw-bold ' width="50%" >POSITION</th>
+                    <th className='AnimeElement' width="50%" >
                       <p className='AnimeElement fw-bold'>CLASS</p>
-                    </td>
+                    </th>
                   </tr>
 
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>PGT-ENGLISH</td>
-                    <td className='AnimeElement'>
+                    <td className='AnimeElement' width="50%">PGT-ENGLISH</td>
+                    <td className='AnimeElement' width="50%">
                       <p className='AnimeElement'>IX-XI</p>
                     </td>
                   </tr>
 
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>PGT-COMMERCE</td>
-                    <td className='AnimeElement'>
+                    <td className='AnimeElement' width="50%">PGT-COMMERCE</td>
+                    <td className='AnimeElement' width="50%">
                       <p className='AnimeElement'>X&XI</p>
                     </td>
                   </tr>
 
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>TGT-SOCIAL SCIENCE</td>
-                    <td className='AnimeElement'>
+                    <td className='AnimeElement' width="50%" >TGT-SOCIAL SCIENCE</td>
+                    <td className='AnimeElement' width="50%">
                       <p className='AnimeElement'>VII-X</p>
                     </td>
                   </tr>
 
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>PRT-HINDI</td>
-                    <td className='AnimeElement'>
+                    <td className='AnimeElement' width="50%">PRT-HINDI</td>
+                    <td className='AnimeElement' width="50%">
                       <p className='AnimeElement'>II-III</p>
                     </td>
                   </tr>
 
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>LIBRARIAN</td>
-                    <td className='AnimeElement'>
+                    <td className='AnimeElement' width="50%">LIBRARIAN</td>
+                    <td className='AnimeElement' width="50%">
                       <p className='AnimeElement'>I-III</p>
                     </td>
                   </tr>
 
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>PET</td>
-                    <td className='AnimeElement'>
+                    <td className='AnimeElement' width="50%">PET</td>
+                    <td className='AnimeElement' width="50%">
                       <p className='AnimeElement'>I-III</p>
                     </td>
                   </tr>
 
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>YOGA INSTRUCTOR</td>
-                    <td className='AnimeElement'>
+                    <td className='AnimeElement' width="50%">YOGA INSTRUCTOR</td>
+                    <td className='AnimeElement' width="50%">
                       <p className='AnimeElement'>I-X</p>
                     </td>
                   </tr>
 
                   <tr className='AnimeStarts'>
-                    <td className='AnimeElement'>ART TEACHER</td>
-                    <td className='AnimeElement'>
+                    <td className='AnimeElement' width="50%">ART TEACHER</td>
+                    <td className='AnimeElement' width="50%">
                       <p className='AnimeElement'>I-V</p>
                     </td>
                   </tr>
