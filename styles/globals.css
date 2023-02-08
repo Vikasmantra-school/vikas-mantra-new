@@ -485,7 +485,20 @@ font-size: 30px;
 
 
 
-.home {
+/* .home {
+  position: absolute;
+} */
+
+.homeheader {
+  width: 100%;
+}
+.homeheader {
+  z-index: 2;
+  position: relative;
+}
+
+.homeheader.home {
+  z-index: 2;
   position: absolute;
 }
 
@@ -1575,6 +1588,11 @@ tr {
   --color-primary: #fc4a1a;
   --color-secondary: #f7b733;
   --color-third: #F27D49;
+}
+
+
+.position-relative{
+  position: relative;
 }
 
 

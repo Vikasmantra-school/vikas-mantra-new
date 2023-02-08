@@ -8,6 +8,7 @@ import { EventsNav } from '../../components/EventsNav'
 import { events } from '../../data/events'
 import { gsap, Power2 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import Image from 'next/image'
 
 const Events = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -61,7 +62,8 @@ const Events = () => {
             start: 'left center',
             end: 'right center',
             ease: Power2.easeOut,
-            toggleActions: 'play restart play none',
+            // toggleActions: 'play restart play none',
+            toggleActions: "play none none none"
           },
         }
       )
@@ -146,7 +148,9 @@ const Events = () => {
                                     className='eventGallery '
                                     key={index}
                                   >
-                                    <img
+                                    <Image
+                                      width={500}
+                                      height={500}
                                       src={data}
                                       alt='image'
                                       className='img-fluid eventsGallery leftToRight '

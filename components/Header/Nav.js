@@ -20,7 +20,7 @@ const Nav = () => {
 
   return (
     <>
-      <header className={styles.homeheader + ' ' + pageName + 'home'}>
+      <header className={'homeheader ' + ' ' + pageName +  ` ${pageName === '' ? 'home' : 'position-relative'}`}>
         <nav className={styles.navTransparent + ' navbar-expand-lg navbar'}>
           <div className='container'>
             <Link href='/' legacyBehavior>

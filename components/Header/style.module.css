@@ -20,17 +20,12 @@
     font-size: 14px;
 }
 
-.homeheader {
-    z-index: 2;
-}
 
 .navTransparent {
     z-index: 9999;
 }
 
-.homeheader {
-    width: 100%;
-}
+
 
 .callIcon {
     font-size: 13px;
