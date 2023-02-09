@@ -201,10 +201,10 @@ function HomeSlider({ ref }) {
 
                     <div className='d-none d-sm-block'>
                       <h1 className='box'>
-                        Investiture Ceremony
+                      kiddies annual sports meet
                       </h1>
                       <p className='box'>
-                        Vikas Mantra Public school  Investiture Ceremony
+                      A fabulous march past performed by our school kids on kiddies annual sports meet.
                       </p>
                     </div>
 
@@ -221,11 +221,11 @@ function HomeSlider({ ref }) {
                     <div className='AnimeStarts py-4 '>
 
                       <h1 className='box AnimeElement'>
-                        Investiture Ceremony
+                      kiddies annual sports meet
                       </h1>
 
                       <p className='box AnimeElement'>
-                        Vikas Mantra Public school  Investiture Ceremony
+                      A fabulous march past performed by our school kids on kiddies annual sports meet.
                       </p>
 
                     </div>

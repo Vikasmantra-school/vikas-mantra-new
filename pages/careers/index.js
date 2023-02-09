@@ -132,73 +132,62 @@ function Career() {
                 </p>
               </div>
 
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder} size="sm">
-                <tbody>
-                  <tr className='AnimeStarts'>
-                    <th className='AnimeElement fw-bold ' width="50%" >POSITION</th>
-                    <th className='AnimeElement' width="50%" >
-                      <p className='AnimeElement fw-bold'>CLASS</p>
-                    </th>
-                  </tr>
+              <div className={styles.tableContainer}>
+                <Table bordered className={'mt-4' + ' ' + styles.tableborder} >
+                  <tbody className='AnimeStarts'>
+                    <tr>
+                      <th className='AnimeElement fw-bold'>POSITION</th>
+                      <style jsx>
+                        {`
+                        th {
+                          background-color: #aa182c;
+                          color: #fff;
+                        }
+                      `}
+                      </style>
+                    </tr>
 
-                  <tr className='AnimeStarts'>
-                    <td className='AnimeElement' width="50%">PGT-ENGLISH</td>
-                    <td className='AnimeElement' width="50%">
-                      <p className='AnimeElement'>IX-XI</p>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td className='AnimeElement'>PGT-ENGLISH</td>
+                    </tr>
 
-                  <tr className='AnimeStarts'>
-                    <td className='AnimeElement' width="50%">PGT-COMMERCE</td>
-                    <td className='AnimeElement' width="50%">
-                      <p className='AnimeElement'>X&XI</p>
-                    </td>
-                  </tr>
+                    <tr className=''>
+                      <td className='AnimeElement'>PGT-COMMERCE</td>
+                    </tr>
 
-                  <tr className='AnimeStarts'>
-                    <td className='AnimeElement' width="50%" >TGT-SOCIAL SCIENCE</td>
-                    <td className='AnimeElement' width="50%">
-                      <p className='AnimeElement'>VII-X</p>
-                    </td>
-                  </tr>
+                    <tr className=''>
+                      <td className='AnimeElement' >TGT-SOCIAL SCIENCE</td>
+                    </tr>
 
-                  <tr className='AnimeStarts'>
-                    <td className='AnimeElement' width="50%">PRT-HINDI</td>
-                    <td className='AnimeElement' width="50%">
-                      <p className='AnimeElement'>II-III</p>
-                    </td>
-                  </tr>
+                    <tr className=''>
+                      <td className='AnimeElement'>PRT-HINDI</td>
+                    </tr>
 
-                  <tr className='AnimeStarts'>
-                    <td className='AnimeElement' width="50%">LIBRARIAN</td>
-                    <td className='AnimeElement' width="50%">
-                      <p className='AnimeElement'>I-III</p>
-                    </td>
-                  </tr>
+                    <tr className=''>
+                      <td className='AnimeElement'>LIBRARIAN</td>
+                    </tr>
 
-                  <tr className='AnimeStarts'>
-                    <td className='AnimeElement' width="50%">PET</td>
-                    <td className='AnimeElement' width="50%">
-                      <p className='AnimeElement'>I-III</p>
-                    </td>
-                  </tr>
+                    <tr className=''>
+                      <td className='AnimeElement'>PET</td>
+                    </tr>
 
-                  <tr className='AnimeStarts'>
-                    <td className='AnimeElement' width="50%">YOGA INSTRUCTOR</td>
-                    <td className='AnimeElement' width="50%">
-                      <p className='AnimeElement'>I-X</p>
-                    </td>
-                  </tr>
+                    <tr className=''>
+                      <td className='AnimeElement'>YOGA INSTRUCTOR</td>
+                    </tr>
 
-                  <tr className='AnimeStarts'>
-                    <td className='AnimeElement' width="50%">ART TEACHER</td>
-                    <td className='AnimeElement' width="50%">
-                      <p className='AnimeElement'>I-V</p>
-                    </td>
-                  </tr>
+                    <tr className=''>
+                      <td className='AnimeElement' >ART TEACHER</td>
+                    </tr>
+                    <tr className=''>
+                      <td className='AnimeElement' >ADMISSION COUNSELLOR</td>
+                    </tr>
+                    <tr className=''>
+                      <td className='AnimeElement' >JUNIOR ACCOUNTANT</td>
+                    </tr>
 
-                </tbody>
-              </Table>
+                  </tbody>
+                </Table>
+              </div>
 
               <div className='AnimeStarts'>
                 <p className='AnimeElement'>

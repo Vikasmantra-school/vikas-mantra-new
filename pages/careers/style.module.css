@@ -60,11 +60,17 @@
     color: #fff;
     padding: 5px 10px;
 }
+.tableContainer{
+    width: 400px;
+}
 
 @media only screen and (max-width: 660px) {
 
     .form {
         padding: 70px 0px 70px;
+    }
+    .tableContainer{
+        width: 300px;
     }
 }
 
