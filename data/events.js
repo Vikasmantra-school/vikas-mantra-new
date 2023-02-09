@@ -320,12 +320,12 @@ export const events = [
     dropdown: 'Sports day for kids',
     title: 'Sports day for kids',
     desc: 'Sports day Celebration for kids at vikas',
-    mainImage: '/assets/events/sports-day-kids/9.JPG',
+    mainImage: '/assets/events/sports-day-kids/9.jpg',
     gallery: [
-      '/assets/events/sports-day-kids/1.JPG', '/assets/events/sports-day-kids/2.JPG', '/assets/events/sports-day-kids/3.JPG','/assets/events/sports-day-kids/4.JPG','/assets/events/sports-day-kids/5.JPG', '/assets/events/sports-day-kids/6.JPG',
-      '/assets/events/sports-day-kids/7.JPG', '/assets/events/sports-day-kids/8.JPG', '/assets/events/sports-day-kids/9.JPG', '/assets/events/sports-day-kids/10.JPG', '/assets/events/sports-day-kids/11.JPG', '/assets/events/sports-day-kids/12.JPG',
-      '/assets/events/sports-day-kids/13.JPG', '/assets/events/sports-day-kids/14.JPG', '/assets/events/sports-day-kids/15.JPG', '/assets/events/sports-day-kids/16.JPG', '/assets/events/sports-day-kids/17.JPG', '/assets/events/sports-day-kids/18.JPG',
-      '/assets/events/sports-day-kids/19.JPG',
+      '/assets/events/sports-day-kids/1.jpg', '/assets/events/sports-day-kids/2.jpg', '/assets/events/sports-day-kids/3.jpg','/assets/events/sports-day-kids/4.jpg','/assets/events/sports-day-kids/5.jpg', '/assets/events/sports-day-kids/6.jpg',
+      '/assets/events/sports-day-kids/7.jpg', '/assets/events/sports-day-kids/8.jpg', '/assets/events/sports-day-kids/9.jpg', '/assets/events/sports-day-kids/10.jpg', '/assets/events/sports-day-kids/11.jpg', '/assets/events/sports-day-kids/12.jpg',
+      '/assets/events/sports-day-kids/13.jpg', '/assets/events/sports-day-kids/14.jpg', '/assets/events/sports-day-kids/15.jpg', '/assets/events/sports-day-kids/16.jpg', '/assets/events/sports-day-kids/17.jpg', '/assets/events/sports-day-kids/18.jpg',
+      '/assets/events/sports-day-kids/19.jpg',
     ]
   },
 
