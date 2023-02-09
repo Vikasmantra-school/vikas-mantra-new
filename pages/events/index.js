@@ -148,8 +148,9 @@ const Events = () => {
                                     className='eventGallery '
                                     key={index}
                                   >
-                                    <img
-                                      
+                                    <Image
+                                      width={500}
+                                      height={500}
                                       src={data}
                                       alt='image'
                                       className='img-fluid eventsGallery leftToRight '
