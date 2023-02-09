@@ -154,6 +154,7 @@ const Events = () => {
                                       src={data}
                                       alt='image'
                                       className='img-fluid eventsGallery leftToRight '
+                                      loading='lazy'
                                     />
                                   </SplideSlide>
                                 )
