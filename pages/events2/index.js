@@ -10,7 +10,7 @@ import { gsap, Power2 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 export async function getServerSideProps() {
-    const res = await fetch("http://localhost:3000/api/eventsData");
+    const res = await fetch("https://vikasmantra.edu.in/api/eventsData");
     const data = await res.json();
 
     return {
