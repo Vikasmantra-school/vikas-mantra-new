@@ -70,7 +70,7 @@ export default function eventsData(req, res) {
     id: 'six',
     dropdown: 'Girl Child Protection Day',
     title: 'Girl Child Protection Day',
-    desc: 'yet to come',
+    desc: 'Girl child protection Day awarness at vikasmantra ',
     mainImage: '/assets/events/girl-child-protection/1.jpeg',
     gallery: [
       '/assets/events/girl-child-protection/1.jpeg', '/assets/events/girl-child-protection/2.jpeg', '/assets/events/girl-child-protection/3.jpeg', '/assets/events/girl-child-protection/4.jpeg', '/assets/events/girl-child-protection/5.jpeg',
@@ -82,7 +82,7 @@ export default function eventsData(req, res) {
     id: 'seven',
     dropdown: 'Independence Day Celebrations',
     title: 'Independence Day Celebrations',
-    desc: 'yet to come',
+    desc: 'Independence day celebrations at vikasmantra',
     mainImage: '/assets/events/independence-day/4.jpg',
     gallery: [
       '/assets/events/independence-day/1.jpg', '/assets/events/independence-day/2.jpg', '/assets/events/independence-day/3.jpg', '/assets/events/independence-day/4.jpg', '/assets/events/independence-day/5.jpg',
@@ -106,7 +106,7 @@ export default function eventsData(req, res) {
     id: 'nine',
     dropdown: 'Investiture Ceremony',
     title: 'Investiture Ceremony',
-    desc: 'yet to come',
+    desc: 'Investiture ceremony at vikasmantra',
     mainImage: '/assets/events/investiture-ceremony/5.jpg',
     gallery: [
       '/assets/events/investiture-ceremony/1.jpg', '/assets/events/investiture-ceremony/2.jpg', '/assets/events/investiture-ceremony/3.jpg', '/assets/events/investiture-ceremony/4.jpg', '/assets/events/investiture-ceremony/5.jpg',
@@ -137,7 +137,7 @@ export default function eventsData(req, res) {
     id: 'ten',
     dropdown: 'Janmashtami celebrations',
     title: 'Janmashtami celebrations',
-    desc: 'yet to come',
+    desc: 'Janmashtami celebrations at vikasmantra',
     mainImage: '/assets/events/janmashtami/2.jpg',
     gallery: [
       '/assets/events/janmashtami/1.jpg', '/assets/events/janmashtami/2.jpg', '/assets/events/janmashtami/3.jpg', '/assets/events/janmashtami/4.jpg', '/assets/events/janmashtami/5.jpg',
@@ -149,7 +149,7 @@ export default function eventsData(req, res) {
     id: 'eleven',
     dropdown: 'KG Graduation',
     title: 'KG Graduation',
-    desc: 'yet to come',
+    desc: 'KG graduation at vikasmantra',
     mainImage: '/assets/events/kg-graduation/1.jpg',
     gallery: [
       '/assets/events/kg-graduation/1.jpg', '/assets/events/kg-graduation/2.jpg', '/assets/events/kg-graduation/3.jpg', '/assets/events/kg-graduation/4.jpg', '/assets/events/kg-graduation/5.jpg',
@@ -175,7 +175,7 @@ export default function eventsData(req, res) {
     id: 'thirteen',
     dropdown: 'Newspaper feature article',
     title: 'Newspaper feature article',
-    desc: 'yet to come',
+    desc: 'Newspaper feature article of our vikasmantra',
     mainImage: '/assets/events/newspaper-article/1.jpg',
     gallery: [
       '/assets/events/newspaper-article/1.jpg', '/assets/events/newspaper-article/2.jpg', '/assets/events/newspaper-article/3.jpg',
@@ -187,7 +187,7 @@ export default function eventsData(req, res) {
     id: 'forteen',
     dropdown: 'Science Expo',
     title: 'Science Expo',
-    desc: 'yet to come',
+    desc: 'Science expo at vikasmantra ',
     mainImage: '/assets/events/science-expo/1.jpg',
     gallery: [
       '/assets/events/science-expo/1.jpg', '/assets/events/science-expo/2.jpg', '/assets/events/science-expo/3.jpg', '/assets/events/science-expo/4.jpg', '/assets/events/science-expo/5.jpg',
@@ -259,7 +259,7 @@ export default function eventsData(req, res) {
     id: 'twenty',
     dropdown: 'KG - Yellow Day',
     title: 'KG - Yellow Day',
-    desc: 'yet to come',
+    desc: 'KG - Yellow Day at vikasmantra',
     mainImage: '/assets/events/yellow-day/2.jpg',
     gallery: [
       '/assets/events/yellow-day/1.jpg', '/assets/events/yellow-day/2.jpg', '/assets/events/yellow-day/3.jpg', '/assets/events/yellow-day/4.jpg', '/assets/events/yellow-day/5.jpg',
