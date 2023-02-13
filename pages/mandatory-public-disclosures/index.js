@@ -449,7 +449,7 @@ function MandatoryScreen() {
                       LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING
                       THE INFRASTRUCTURE OF THE SCHOOL
                     </td>
-                    <td><a href="https://youtu.be/H5cjJzSx_8A" target='_blank' >https://youtu.be/H5cjJzSx_8A</a></td>
+                    <td><a href="https://youtu.be/H5cjJzSx_8A" rel="noopener noreferrer" target="_blank" >https://youtu.be/H5cjJzSx_8A</a></td>
                   </tr>
                 </tbody>
               </Table>
