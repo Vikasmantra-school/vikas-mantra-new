@@ -1,0 +1,318 @@
+.textWhite {
+    color: #fff;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.campaignSection img {
+    width: 100%;
+}
+
+.formSection {
+    width: 100%;
+    position: relative;
+    background-image: url('/images/hero-bg.jpg');
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: animatedBackground 100s linear infinite;
+    padding: 60px 0px 75px 0px;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.formSection::before {
+    content: '';
+    position: absolute;
+    background: #78131bed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+}
+
+.formContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.formColumnContainer {
+    background-color: #fff;
+}
+
+.formTextContainer {
+    padding-right: 50px;
+}
+
+.formTextContainer h1 {
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.formTextContainer h4 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.formColumnContainer h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.formColumnContainer form .phone_link li:nth-child(1):before {
+    display: none;
+}
+
+.formColumnContainer form ul li input[type="submit"] {
+    background: linear-gradient(to top, #35ab44, #3fb563);
+    border-bottom: 1px solid #3ab054;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+.formColumnContainer h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.privacy {
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: underline;
+}
+
+.privacy i {
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.formColumnContainer form ul li {
+    list-style: none;
+}
+
+.formInputField {
+    width: 100%;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #d4d4d4;
+    line-height: 24px;
+    font-size: 14px;
+    outline: none;
+    height: 40px;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 25px 0;
+}
+
+.testBox {
+    width: 50%;
+    padding: 0px 20px;
+    margin-bottom: 70px;
+    background-color: #d4d4d4;
+}
+
+.textBoxCntr {
+    position: relative;
+    min-height: 240px;
+    background: #fff;
+    box-shadow: 0px 5px 20px -8px rgb(19 18 18 / 50%);
+    padding: 30px;
+    -webkit-box-shadow: 0 3px 35px 0.6px rgb(40 30 20 / 10%);
+    -moz-box-shadow: 0 3px 35px .6px rgba(40, 30, 20, .1);
+    box-shadow: 0 3px 35px 0.6px rgb(40 30 20 / 10%);
+    border-radius: 5px;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.textBoxCntr img {
+    width: 80px;
+    height: 80px;
+    -webkit-object-fit: cover;
+    -moz-object-fit: cover;
+    -o-object-fit: cover;
+    -ms-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -65px;
+    background: #fff;
+    border: 1px solid #1a2a38;
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.textBoxCntr h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.textBoxCntr p {
+    line-height: 26px;
+    color: #495e71;
+    font-size: 16px;
+}
+
+.textBoxCntr:hover p {
+    z-index: 1;
+    color: #Fff;
+    position: relative;
+}
+
+.textBoxCntr:hover h2 {
+    z-index: 1;
+    color: #Fff;
+    position: relative;
+}
+
+.textBoxCntr:hover img {
+    z-index: 1;
+    position: relative;
+}
+
+.textBoxCntr {
+    min-height: 240px;
+    margin: 20px 10px;
+}
+
+.textBoxCntr {
+    position: relative;
+}
+
+.la:hover {
+    background-image: url('/images/facilities/infrastructure.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.com:hover {
+    background-image: url('/images/facilities/essential-skills.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.extra:hover {
+    background-image: url('/images/facilities/faclities-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Conf:hover {
+    background-image: url('/images/facilities/transport.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textBoxCntr:hover:after {
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.textBoxCntr p {
+    font-size: 16px;
+}
+
+.textBoxCntr:hover.textBoxCntr img {
+    background: #fcb316;
+}
+
+.textBox {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.facilitySection h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.facilitySection {
+    background: #FBFBFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.facilityCard {
+    background: #FFFDFF;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 9%);
+    border-radius: 16px;
+}
+
+.bgWhite {
+    background-color: #fff;
+}
+
+.footerSection {
+    background-color: #fff;
+}
+
+.footerSection h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.footerSection h3 {
+    font-weight: 700;
+    font-size: 21px;
+    margin: 20px 0;
+}
+
+.footerSection h4 {
+    font-weight: 700;
+    font-size: 16px !important;
+    color: #495e71;
+    margin-top: 25px;
+}
+
+.footerSection p {
+    font-size: 16px !important;
+    color: #495e71;
+    margin: 5px 0;
+}
+
+
+.locationCol iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.copyText {
+    color: #687179;
+}
+
+.hrLine {
+    border: 0;
+    height: 1px;
+    background-color: #575757;
+}
