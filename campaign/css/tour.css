@@ -1,0 +1,1240 @@
+/*----------------------------------------- [MASTER STYLE SHEET] * Project: Landing Page HTML5 Template * Version: v1.1.1 * Copyright 2018-2020 Sends * Last Changes: 21/08/2018 * Author: RN53 Themes -----------------------------------------------*/
+/*--------------------------------------------- [TABLE OF CONTENT] 1. COMMON STYLES 2. PRE LOADING 3. CONTAINER SIZE 4. TOP SECTION 5. BANNER SECTION 6. BOOKING FORM 7. PACKAGES 8. CUSTOMER TESTIMONIALS 9. FOOTER 10. TRAVEL PLAN 11. MOBILE FRIENDLY STYLES(RESPONSIVE STYLES) ------------------------------------------------*/
+/*-------------------------------------------------*/
+/* = COMMON STYLES 
+/*-------------------------------------------------*/
+ body{
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     font-size: 14px;
+     background: #fff;
+     color: #1a2a38;
+}
+ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+     display: block;
+}
+ audio, canvas, progress, video {
+     display: inline-block;
+     vertical-align: baseline;
+}
+ audio:not([controls]) {
+     display: none;
+     height: 0;
+}
+ [hidden], template {
+     display: none;
+}
+ a {
+     text-decoration: none;
+}
+ a:active, a:hover {
+     outline: 0;
+}
+ abbr[title] {
+     border-bottom: 1px dotted;
+}
+ b, strong {
+     font-weight: bold;
+}
+ li{
+     list-style-type:none;
+}
+ ul{
+     padding:0px;
+     margin: 0px;
+}
+ h1, h2, h3, h4, h5, h6 {
+     margin-top: 0px;
+     margin-bottom: 0px;
+}
+ a {
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ a:hover {
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ div{
+     box-sizing: border-box;
+}
+ :before{
+     font-family: "Material Icons";
+     position: absolute;
+}
+ :after{
+     font-family: "Material Icons";
+     position: absolute;
+}
+/* fallback */
+ @font-face {
+     font-family: 'Material Icons';
+     font-style: normal;
+     font-weight: 400;
+     src: url(icon.woff2) format('woff2');
+}
+ input, textarea, select{
+     outline:none;
+     font-family: 'Poppins', sans-serif;
+}
+/* width */
+ ::-webkit-scrollbar {
+     width: 5px;
+}
+/* Track */
+ ::-webkit-scrollbar-track {
+     background: #f1f1f1;
+}
+/* Handle */
+ ::-webkit-scrollbar-thumb {
+     background: #888;
+}
+/* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+     background: #555;
+}
+/* Placeholder text color */
+ ::placeholder {
+     color: #1a2a38;
+     opacity: 1;
+    /* Firefox */
+}
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+     color: #1a2a38;
+}
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+     color: #1a2a38;
+}
+/*-------------------------------------------------*/
+/* PRE LOADING 
+/*-------------------------------------------------*/
+ #preloader {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #fff;
+    /* change if the mask should have another color then white */
+     z-index: 99999;
+    /* makes sure it stays on top */
+}
+ #status {
+     position: absolute;
+     left: 46%;
+    /* centers the loading animation horizontally one the screen */
+     top: 40%;
+     border: 5px solid #f3f3f3;
+     border-radius: 50%;
+     border-top: 5px solid #76cef1;
+     width: 100px;
+     height: 100px;
+     -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+     animation: spin 2s linear infinite;
+}
+/* Safari */
+ @-webkit-keyframes spin {
+     0% {
+         -webkit-transform: rotate(0deg);
+    }
+     100% {
+         -webkit-transform: rotate(360deg);
+    }
+}
+ @keyframes spin {
+     0% {
+         transform: rotate(0deg);
+    }
+     100% {
+         transform: rotate(360deg);
+    }
+}
+/*-------------------------------------------------*/
+/* = CONTAINER SIZE 
+/*-------------------------------------------------*/
+ .land-full{
+     width: 100%;
+     position: relative;
+     overflow: hidden;
+}
+ .land-container{
+     width: 1000px;
+     margin: 0 auto;
+     position: relative;
+}
+ .la-container-75{
+     width: 950px;
+}
+ .col1{
+     width:10%;
+     float:left;
+     padding:15px;
+}
+ .col15{
+     width:15%;
+     float:left;
+     padding:15px;
+}
+ .col2{
+     width:20%;
+     float:left;
+     padding:15px;
+}
+ .col25{
+     width:25%;
+     float:left;
+     padding:15px;
+}
+ .col3{
+     width:30%;
+     float:left;
+     padding:15px;
+}
+ .col35{
+     width:35%;
+     float:left;
+     padding:15px;
+}
+ .col4{
+     width:40%;
+     float:left;
+     padding:15px;
+}
+ .col45{
+     width:45%;
+     float:left;
+     padding:15px;
+}
+ .col5{
+     width:50%;
+     float:left;
+     padding:15px;
+}
+ .col55{
+     width:55%;
+     float:left;
+     padding:15px;
+}
+ .col6{
+     width:60%;
+     float:left;
+     padding:15px;
+}
+ .col65{
+     width:65%;
+     float:left;
+     padding:15px;
+}
+ .col7{
+     width:70%;
+     float:left;
+     padding:15px;
+}
+ .col75{
+     width:75%;
+     float:left;
+     padding:15px;
+}
+ .col8{
+     width:80%;
+     float:left;
+     padding:15px;
+}
+ .col85{
+     width:85%;
+     float:left;
+     padding:15px;
+}
+ .col9{
+     width:90%;
+     float:left;
+     padding:15px;
+}
+ .col95{
+     width:95%;
+     float:left;
+     padding:15px;
+}
+/*-------------------------------------------------*/
+/* = TOP SECTION 
+/*-------------------------------------------------*/
+ .land-3{
+}
+ .land-3-top-full{
+     background: #ffffff;
+     position: fixed;
+     display: inline-block;
+     width: 100%;
+     height: 55px;
+     padding: 10px 0px;
+     top: 0px;
+     z-index: 9;
+     box-shadow: 0 3px 35px 0.6px rgba(40, 30, 20, 0.29);
+    /* background: linear-gradient(to top, #262e3e, #999ca3);
+     */
+}
+ .land-3-top{
+}
+ .land-3-top-logo{
+     float: left;
+     width: 50%;
+}
+ .land-3-top-logo a{
+}
+ .land-3-top-logo a img{
+     margin-top: 2px;
+     width: 180px;
+     height: 32px;
+     -webkit-object-fit: cover;
+     -moz-object-fit: cover;
+     -o-object-fit: cover;
+     -ms-object-fit: cover;
+     object-fit: cover;
+}
+ .land-3-top-contact{
+     float: left;
+     width: 50%;
+}
+ .land-3-top-contact ul{
+     float: right;
+     padding-top: 7px;
+}
+ .land-3-top-contact ul li{
+     color: #262e3e;
+     float: left;
+     margin-left: 50px;
+     font-weight: 500;
+}
+ .land-3-top-contact ul li:before {
+     font-size: 18px;
+     margin-top: 1px;
+     margin-left: -26px;
+     color: #262e3e;
+     font-weight: 500;
+}
+ .land-3-top-contact ul li:nth-child(1):before {
+     content: "local_phone";
+}
+ .land-3-top-contact ul li:nth-child(2):before {
+     content: "mail";
+}
+ .land-3-banner-full{
+     position: relative;
+     background: url(../images/grass.png) no-repeat center bottom #e9f8fd;
+     background-size:100%;
+     padding: 65px 0px 65px 0px;
+     margin-top: 55px;
+}
+ .land-3-banner-full:before {
+     content: '';
+     position: absolute;
+     background: url(../images/family.png) no-repeat bottom left;
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     background-size: 500px;
+     background-position: 20% 100%;
+}
+ @keyframes animatedBackground {
+     from {
+         background-position: 0 0;
+    }
+     to {
+         background-position: 100% 0;
+    }
+}
+/*-------------------------------------------------*/
+/* = BANNER SECTION 
+/*-------------------------------------------------*/
+ .land-3-banner{
+}
+ .land-3-banner-conte{
+     float: left;
+     width: 60%;
+     color: #262e3e;
+     padding-right: 60px;
+}
+ .land-3-banner-conte h1{
+     font-size: 62px;
+     line-height: 62px;
+     margin-bottom: 15px;
+}
+ .land-3-banner-conte h4{
+     font-size: 20px;
+     line-height: 20px;
+     font-weight: 300;
+}
+ .land-3-banner-conte p{
+    /* color: #677082;
+     */
+    /* border-bottom: 1px solid #737fc5;
+     */
+     padding-bottom: 30px;
+     margin-bottom: 30px;
+}
+ .land-3-banner-conte ul{
+}
+ .land-3-banner-conte ul li{
+     color: #7e95a7;
+     padding-left: 30px;
+     margin-bottom: 15px;
+}
+ .land-3-banner-conte ul li:before{
+     content: '';
+     position: absolute;
+     background: #068ae6;
+     width: 7px;
+     height: 7px;
+     margin-left: -30px;
+     margin-top: 7px;
+     border-radius: 50px;
+}
+/*-------------------------------------------------*/
+/* = BOOKING FORM 
+/*-------------------------------------------------*/
+ .land-3-banner-form{
+     float: left;
+     width: 40%;
+     padding-left: 20px;
+}
+ .land-com-form{
+     background: #262e3e;
+     padding: 30px;
+     border-radius: 4px;
+     box-shadow: 0 2px 15px -5px rgba(0,0,0,0.76);
+}
+ .land-com-form h2{
+     font-size: 22px;
+     text-align: center;
+     margin-bottom: 18px;
+     color: #fff;
+     line-height: 22px;
+}
+ .land-com-form form{
+}
+ .land-com-form form ul{
+}
+ .land-com-form form ul li{
+     margin-bottom: 15px;
+     position: relative;
+     list-style-type: none;
+}
+ .land-com-form form ul li:before{
+     font-size: 18px;
+     margin-top: 12px;
+     margin-left: 10px;
+     color: #6a717f;
+     font-weight: 500;
+}
+ .land-com-form form ul li:nth-child(1):before{
+     content: "person";
+}
+ .land-com-form form ul li:nth-child(2):before{
+     content: "mail_outline";
+}
+ .land-com-form form ul li:nth-child(3):before{
+     content: "phone_iphone";
+}
+ .land-com-form form ul li:nth-child(4):before{
+     content: "date_range";
+}
+ .land-com-form form ul li:nth-child(5):before{
+     content: "people";
+}
+ .land-com-form form ul li input, select{
+     width: 100%;
+     display: block;
+     border: 0;
+     border: 1px solid #d4d4d4;
+     line-height: 24px;
+     font-size: 14px;
+     outline: none;
+     height: 40px;
+     background: #ffffff;
+     padding-left: 45px;
+     box-sizing: border-box;
+     border-radius: 3px;
+     color:#1a2a38;
+}
+ .land-com-form form ul li input[type="submit"]{
+     background: #f74d40;
+     color: #fff;
+     height: 50px;
+     line-height: 50px;
+     text-transform: uppercase;
+     font-weight: 600;
+     font-size: 16px;
+     text-align: center;
+     border-radius: 3px;
+     cursor: pointer;
+     padding-left: 0;
+     background: -webkit-linear-gradient(to top, #3547ab, #3F51B5);
+     background: linear-gradient(to top, #F44336, #fb5a4e);
+     border: 0px;
+     border-bottom: 1px solid #ea3224;
+}
+ .land-com-form form ul li:nth-child(6):before{
+     content: "send";
+     margin-left: 207px;
+     margin-top: 17px;
+     color: #fff;
+     font-size: 16px;
+     opacity:0;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .land-com-form form ul li:nth-child(6):hover:before{
+     opacity:1;
+     margin-left: 212px;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .land-com-form form ul li p{
+     margin-bottom: 0px;
+     color: #a1aab3;
+     font-size: 13px;
+     text-align: center;
+}
+ .land-com-form form ul li p a{
+     color: #ffffff;
+}
+ .land-com-form form ul li:last-child{
+     margin-bottom:0px;
+}
+ .land-3-dwn-full{
+    /* position: relative;
+     */
+     display: inline-block;
+     padding: 60px 0px;
+}
+ .land-3-dwn{
+}
+ .land-3-dwn-img{
+     float: left;
+     width: 40%;
+}
+ .land-3-dwn-img img{
+     width: 100%;
+     height: 350px;
+     -webkit-object-fit: cover;
+     -moz-object-fit: cover;
+     -o-object-fit: cover;
+     -ms-object-fit: cover;
+     object-fit: cover;
+}
+ .land-3-dwn-right{
+     float: left;
+     width: 60%;
+     padding-left: 100px;
+}
+ .land-3-dwn-right h2{
+     font-size: 48px;
+     line-height: 62px;
+}
+ .land-3-dwn-right p{
+     line-height: 26px;
+     color: #495e71;
+}
+ .land-3-dwn-right a{
+     margin-right: 15px;
+}
+ .buy-now-btn{
+     height: 50px;
+     background: #D63938;
+     margin: 0 auto;
+     display: inline-block;
+     border-radius: 3px;
+     line-height: 50px;
+     color: #fff;
+     font-weight: 700;
+     font-size: 20px;
+     padding: 0px 30px;
+     margin-top: 10px;
+     box-sizing: border-box;
+     text-align: center;
+     border: 1px solid #b32120;
+     text-transform: capitalize;
+     background: -webkit-linear-gradient(to top, #D63938, #ef4b4a);
+     background: linear-gradient(to top, #D63938, #ef4b4a);
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .dwn-now-btn{
+     height: 50px;
+     color: #1a2a38;
+     margin: 0 auto;
+     display: inline-block;
+     border-radius: 3px;
+     line-height: 50px;
+     font-weight: 700;
+     font-size: 20px;
+     padding: 0px 30px;
+     background: -webkit-linear-gradient(to right, #363795, #005C97);
+     border: 1px solid #1a2a38;
+     margin-top: 10px;
+     box-sizing: border-box;
+     text-align: center;
+     text-transform: capitalize;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .land-3-dwn-right a:hover{
+     border: 1px solid #cb2f2e;
+     color:#fff;
+     background: #D63938;
+     background: -webkit-linear-gradient(to top, #c72c2b, #ef4b4a);
+     background: linear-gradient(to top, #c72c2b, #ef4b4a);
+     border-bottom: 1px solid #bf2928;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+/*-------------------------------------------------*/
+/* = PACKAGES 
+/*-------------------------------------------------*/
+ .land-packages{
+     background: #e9f8fd;
+     margin-top: -6px;
+     border-bottom: 1px solid #cfe5ec;
+     border-top: 1px solid #cfe5ec;
+     padding: 80px 0px 75px 0px;
+}
+ .land-pack{
+     position: relative;
+     display: table;
+     width: 80%;
+     margin: 0 auto;
+}
+ .land-pack ul{
+     position: relative;
+     width: 100%;
+}
+ .land-pack ul li{
+     float: left;
+     width: 33.333%;
+     display: inline-block;
+}
+ .land-pack-grid{
+     display:inline-block;
+     width: 85%;
+     position:relative;
+     overflow:hidden;
+     height: auto;
+     margin: 0 7.5%;
+     box-sizing:border-box;
+}
+ .land-pack-grid:hover .land-pack-grid-text{
+     margin-top: -42px;
+     -webkit-transition:all .5s ease;
+     -moz-transition:all .5s ease;
+     -o-transition:all .5s ease;
+     transition:all .5s ease;
+}
+ .land-pack-grid:hover .land-pack-grid-btn{
+     height:40px;
+     -webkit-transition:all .5s ease;
+     -moz-transition:all .5s ease;
+     -o-transition:all .5s ease;
+     transition:all .5s ease 
+}
+ .land-pack-grid-img img{
+     width:100%;
+     -webkit-transition:all .5s ease;
+     -moz-transition:all .5s ease;
+     -o-transition:all .5s ease;
+     transition:all .5s ease 
+}
+ .land-pack-grid:hover .land-pack-grid-img img{
+     -webkit-transform:scale(1.05);
+     -moz-transform:scale(1.05);
+     transform:scale(1.05) 
+}
+ .land-pack-grid-text{
+     position:relative;
+     -webkit-transition:all .5s ease;
+     -moz-transition:all .5s ease;
+     -o-transition:all .5s ease;
+     transition:all .5s ease;
+     margin-top: -5px;
+}
+ .land-pack-grid-text h4{
+     margin:0;
+     background:#fff;
+     padding:15px;
+     font-size: 15px;
+     font-weight:600;
+     text-align: center;
+     font-family: 'Open Sans', sans-serif;
+}
+ .land-pack-grid-btn{
+     background:#17b599;
+     color:#fff !important;
+     text-align:center;
+     display:block;
+     height:2.5px;
+     line-height:42px;
+     box-sizing:border-box;
+     -webkit-transition:all .5s ease;
+     -moz-transition:all .5s ease;
+     -o-transition:all .5s ease;
+     transition:all .5s ease;
+     text-transform:uppercase;
+     text-decoration:none;
+     font-weight: 500;
+     font-size: 13px;
+     letter-spacing: 0.5px;
+}
+ .land-pack-grid-btn-red{
+     background:#df431f 
+}
+ .land-pack-grid-btn-yel{
+     background:#f3c438 
+}
+ .land-pack-grid-btn-blu{
+     background:#01a0d8 
+}
+/*-------------------------------------------------*/
+/* = CUSTOMER TESTIMONIALS 
+/*-------------------------------------------------*/
+ .land-3-cus-full{
+     padding: 80px 0px 0px 0px;
+     border-bottom: 1px solid #e6e4e4;
+}
+ .land-3-cus-tit{
+     text-align: center;
+     margin-bottom: 70px;
+}
+ .land-3-cus-tit h2{
+     font-size: 48px;
+     line-height: 48px;
+}
+ .land-3-cus-tit p{
+     margin-top: 4px;
+     letter-spacing: 4px;
+}
+ .land-3-cus-box{
+     float: left;
+     width: 50%;
+     padding: 0px 20px;
+     margin-bottom: 80px;
+}
+ .test-box{
+     background: #fff;
+     box-shadow: 0px 5px 20px -8px rgba(19, 18, 18, 0.5);
+     padding: 30px;
+    /* border: 1px solid #ecebeb;
+     */
+     -webkit-box-shadow: 0 3px 35px 0.6px rgba(40,30,20,.1);
+     -moz-box-shadow: 0 3px 35px .6px rgba(40,30,20,.1);
+     box-shadow: 0 3px 35px 0.6px rgba(40,30,20,.1);
+     border-radius: 5px;
+     text-align: center;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .test-box:hover{
+     background: #f2f4f7;
+     box-shadow: 0px 5px 20px -8px rgba(19, 18, 18, 0.5);
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .test-box:hover.test-box img{
+     background:#e14140;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .test-box h4{
+}
+ .test-box h6{
+     color: #495e71;
+     letter-spacing:1px;
+     font-size:13px;
+     font-weight:300;
+}
+ .test-box p{
+     line-height: 26px;
+     color: #495e71;
+     font-size: 14px;
+}
+ .test-box img{
+     width: 80px;
+     height: 80px;
+     -webkit-object-fit: cover;
+     -moz-object-fit: cover;
+     -o-object-fit: cover;
+     -ms-object-fit: cover;
+     object-fit: cover;
+     border-radius: 50%;
+     margin-top: -65px;
+     background: #fff;
+     border: 1px solid #1a2a38;
+     padding: 10px;
+     box-sizing: border-box;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+/*-------------------------------------------------*/
+/* = FOOTER 
+/*-------------------------------------------------*/
+ .land-1-foot-full{
+     background: #1a2a38;
+     padding: 10px 0px;
+}
+ .land-1-foot-text{
+}
+ .land-1-foot-text p{
+     text-align: center;
+     margin: 0px;
+     font-size: 14px;
+     color: #687179;
+}
+ .land-1-foot-text p a{
+     color: #c8dae6;
+}
+ .loca-add p{
+     margin-bottom:0px;
+}
+/*-------------------------------------------------*/
+/* = TRAVEL PLAN 
+/*-------------------------------------------------*/
+ .land-event-date{
+     position: relative;
+     display: inline-block;
+     width: 100%;
+}
+ .land-event-date-left{
+     float: left;
+     width: 70px;
+     height: 70px;
+     background: #fff;
+     border-radius: 2px;
+}
+ .land-event-date-left span{
+     display: block;
+}
+ .land-event-date-left span:nth-child(1){
+     color: #000;
+     text-align: center;
+     font-size: 32px;
+     font-weight: 600;
+     line-height: 45px;
+}
+ .land-event-date-left span:nth-child(2){
+     color: #000;
+     text-align: center;
+     font-size: 17px;
+     font-weight: 600;
+     background: #FFEB3B;
+     text-transform: uppercase;
+     margin-top: 1px;
+     border-radius: 0px 0px 2px 2px;
+}
+ .land-event-date-right{
+     float: left;
+     width: 300px;
+     height: 70px;
+     padding-left: 20px;
+}
+ .land-event-date-right h4{
+     text-transform: capitalize;
+     padding-top: 0px;
+     font-size: 24px;
+     font-weight: 500;
+}
+ .land-event-date-right span{
+     text-transform: capitalize;
+     letter-spacing: 2px;
+     font-weight: 300;
+}
+ .land-4-agen-full{
+     padding: 80px 0px 70px 0px;
+     border-bottom: 1px solid #e6e4e4;
+}
+ .land-3-agen{
+     position: relative;
+     display: inline-block;
+     width: 100%;
+}
+ .bor-top-0{
+     border-top:0px 
+}
+ .land-3-agen-left{
+     float: left;
+     width: 30%;
+}
+ .land-3-agen-left img{
+    width:100%;
+     margin-top: 25px;
+}
+ .land-3-agen-left h2{
+     font-size: 48px;
+     line-height: 48px;
+}
+ .land-3-agen-left p{
+     line-height: 26px;
+     color: #495e71;
+}
+ .land-3-agen-right{
+     float: left;
+     width: 70%;
+     padding-left: 70px;
+     position: relative;
+}
+ .land-3-agen-right ul{
+}
+ .land-3-agen-right ul li{
+     padding-left: 80px;
+}
+ .land-3-agen-right ul li h4{
+     font-size: 20px;
+     line-height: 24px;
+     margin-bottom: 8px;
+}
+ .land-3-agen-right ul li p{
+     line-height: 26px;
+     color: #495e71;
+     margin-top: 0px;
+     margin-bottom: 25px;
+}
+ .land-3-agen-right ul li:last-child p{
+     margin-bottom: 0px;
+}
+ .land-3-agen-right ul li:before{
+     content: '';
+     position: absolute;
+     width: 25px;
+     height: 25px;
+     background: #3a4cb0;
+     margin-left: -79px;
+     z-index: 2;
+     border-radius: 50px;
+     border: 5px solid #fff;
+     box-sizing: border-box;
+     margin-top: 2px;
+     box-shadow: 0 0px 10px 0.6px rgba(40, 30, 20, 0.08);
+}
+ .land-3-agen-right ul li:nth-child(odd):before{
+     background: #76cef1;
+}
+ .land-3-agen-right ul li:nth-child(even):before{
+     background: #6ae697;
+}
+ .land-3-agen-right ul::after {
+     content: '';
+     background: #ececec;
+     position: absolute;
+     width: 1px;
+     top: 5px;
+     bottom: 0;
+     height: 98%;
+     left: 82px;
+}
+ .land-3-agen-right iframe{
+     border:0px;
+     width:100%;
+     height:190px;
+     pointer-events: none;
+}
+ .land-3-agen-right iframe.clicked {
+     pointer-events: auto;
+}
+ .land-4-loca-full{
+     padding: 80px 0px 65px 0px;
+}
+ .vmr-btn{
+     background: #df431f;
+     color: #fff !important;
+     text-align: center;
+     display: block;
+     line-height: 42px;
+     box-sizing: border-box;
+     -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+     -o-transition: all .5s ease;
+     transition: all .5s ease;
+     text-transform: uppercase;
+     text-decoration: none;
+     font-weight: 500;
+     font-size: 13px;
+     letter-spacing: 0.5px;
+     border-radius: 2px;
+}
+ .vmr-btn:hover{
+     background: #cc3917;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+	text-align: center;
+}
+/*-------------------------------------------------*/
+/* = MOBILE FRIENDLY STYLES(RESPONSIVE STYLES) 
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/* = When the browser is between 0px and 1050px wide,below css will be applied. 
+/*-------------------------------------------------*/
+ @media screen and (max-width:1050px){
+     .land-container{
+         width: 85%;
+    }
+     .land-3-banner-conte{
+         width: 60%;
+         padding-right: 60px;
+         padding-left:0px;
+    }
+     .land-3-banner-form {
+         width: 40%;
+         padding-right: 0px;
+         padding-left:0px;
+    }
+     .land-3-top-logo {
+         width: 30%;
+    }
+     .land-3-top-contact{
+         width:70%;
+    }
+     .land-3-banner-form{
+        /* margin-top:35px;
+         */
+    }
+     .land-3-agen-left{
+         padding-bottom:30px;
+    }
+     .loca-add{
+         padding-bottom:0px;
+    }
+     .land-3-banner-conte h1{
+         font-size: 50px;
+         line-height: 50px;
+    }
+     .land-3-banner-conte h4{
+    }
+     .land-3-banner-conte p{
+         padding-bottom: 0px;
+         margin-bottom: 0px;
+    }
+     .land-event-date {
+         display: table;
+         width: auto;
+         margin: 0 auto;
+    }
+     .land-event-date-right h4{
+         text-align:left;
+    }
+     .land-3-banner-full:before{
+    }
+}
+/*-------------------------------------------------*/
+/* = When the browser is between 0px and 992px wide,below css will be applied. 
+/*-------------------------------------------------*/
+ @media screen and (max-width:992px){
+     .land-3-agen-left{
+         width:40%;
+         padding-left:0px;
+    }
+     .land-3-agen-right{
+         width:60%;
+         padding-left:0px;
+    }
+     .land-3-agen-left h2 {
+         font-size: 36px;
+         line-height: 36px;
+    }
+     .land-3-top-contact ul li {
+         margin-left: 40px;
+         font-size: 12px;
+    }
+     .land-3-agen-right ul li {
+         padding-left: 125px;
+    }
+     .land-3-agen-right ul li:before{
+         margin-left: -69px;
+    }
+     .land-3-agen-right ul::after{
+        left: 68px;
+    }
+     .land-3-banner-full {
+         padding: 60px 0px 60px 0px;
+    }
+     .land-pack{
+         width:100%;
+    }
+     .land-3-banner-full:before {
+         background-size: 400px;
+    }
+     .land-3-banner-conte{
+         width: 55%;
+    }
+     .land-3-banner-form {
+         width: 45%;
+    }
+     .land-packages {
+         padding: 60px 0px 55px 0px;
+    }
+     .land-pack-grid-text h4{
+         font-size:14px;
+    }
+     .land-4-agen-full {
+         padding: 60px 0px 50px 0px;
+    }
+     .land-3-cus-full {
+         padding: 60px 0px 0px 0px;
+    }
+     .land-3-cus-box {
+         margin-bottom: 70px;
+    }
+     .land-4-loca-full {
+         padding: 60px 0px 50px 0px;
+    }
+}
+/*-------------------------------------------------*/
+/* = When the browser is between 0px and 767px wide,below css will be applied. 
+/*-------------------------------------------------*/
+ @media screen and (max-width:767px){
+     .land-3-top-logo, .land-3-dwn-img, .land-3-dwn-right {
+         width: 100%;
+    }
+     .land-3-dwn-right{
+         padding-left:0px;
+         text-align: center;
+         margin-top: 35px;
+    }
+     .land-3-dwn-img img{
+         height:auto;
+    }
+     .land-3-top-contact{
+         display:none;
+    }
+     .land-3-top-logo a img {
+         margin: 0 auto;
+         display: table;
+    }
+     .land-3-cus-box {
+         float: left;
+         width: 100%;
+         padding: 0px 20px;
+         margin-bottom: 70px;
+    }
+     .land-3-banner-conte h1{
+         font-size: 36px;
+         line-height: 36px;
+         margin-bottom: 20px;
+    }
+     .land-3-agen-left{
+         text-align:center;
+         margin-bottom:5px;
+         width: 100%;
+    }
+     .land-3-agen-right{
+         width:100%;
+    }
+     .land-3-agen-right ul li {
+         padding-left: 65px;
+    }
+     .land-3-agen-right ul::after {
+         left: 8px;
+    }
+     .land-event-date-right{
+         width:auto;
+    }
+     .land-3-dwn-right h2 {
+         font-size: 36px;
+         line-height: 36px;
+    }
+     .land-3-cus-tit h2 {
+         font-size: 36px;
+         line-height: 36px;
+    }
+     .land-3-agen-left h2 {
+         font-size: 36px;
+         line-height: 36px;
+    }
+     .land-3-agen-left h2 {
+         font-size: 36px;
+         line-height: 36px;
+    }
+     .land-3-cus-box {
+         padding: 0px 0px;
+    }
+     .land-pack ul li {
+         width: 100%;
+         margin-bottom: 30px;
+    }
+     .land-pack ul li:last-child {
+         margin-bottom: 0px;
+    }
+     .land-3-banner-conte{
+         width: 100%;
+         text-align: center;
+         padding-right: 0px;
+         padding-bottom: 40px;
+    }
+     .land-3-banner-form {
+         width: 100%;
+    }
+     .land-3-banner-conte h4 {
+         font-size: 16px;
+         line-height: 20px;
+    }
+     .loca-add{
+         margin-bottom:30px;
+    }
+     .land-3-agen-right ul li h4 {
+         font-size: 16px;
+    }
+     .land-full p{
+        line-height:24px;
+    }
+     .land-3-agen-right ul li p{
+        line-height:24px;
+    }
+}
+/*-------------------------------------------------*/
+/* = When the browser is between 0px and 480px wide,below css will be applied. 
+/*-------------------------------------------------*/
+ @media screen and (max-width:480px){
+     .land-3-dwn-right a {
+         margin-right: 0px;
+         width: 100%;
+    }
+}
+/*-------------------------------------------------*/
+/* = When the browser is between 0px and 400px wide,below css will be applied. 
+/*-------------------------------------------------*/
+ @media screen and (max-width:400px){
+}
+ 
