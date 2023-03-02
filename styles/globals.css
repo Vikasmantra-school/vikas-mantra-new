@@ -2155,3 +2155,18 @@ tr {
 .sub-menu .dropdown-item{padding-bottom: 10px !important;}
 
 .dropdownSub{position: relative;}
+
+/*campaign page styles*/
+.campaignsplide .splide__arrow--prev{
+  left: -2.8em;
+}
+.campaignsplide .splide__arrow--next {
+  right: -2.8em;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

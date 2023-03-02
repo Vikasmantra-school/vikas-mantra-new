@@ -6,6 +6,10 @@
     font-weight: 700;
 }
 
+.campaignSection {
+    margin-top: 85px;
+}
+
 .campaignSection img {
     width: 100%;
 }
@@ -111,7 +115,6 @@
     width: 100%;
     display: block;
     border: 0;
-    border-bottom: 1px solid #d4d4d4;
     line-height: 24px;
     font-size: 14px;
     outline: none;
@@ -255,6 +258,7 @@
 .facilitySection h1 {
     font-weight: 700;
     font-size: 48px;
+    color: #1a2a38;
 }
 
 .facilitySection {
@@ -315,4 +319,103 @@
     border: 0;
     height: 1px;
     background-color: #575757;
+}
+
+.welcomeSection p {
+    color: #495e71;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.welcomeSection h1 {
+    font-weight: 700;
+    font-weight: 48px;
+    line-height: 64px;
+    color: #1a2a38;
+}
+
+.studentImg {
+    width: 100%;
+    height: 30rem;
+    object-fit: contain;
+}
+
+.footerSection h1 {
+    color: #1a2a38;
+}
+
+.footerSection h3 {
+    color: #1a2a38;
+}
+
+.formLi {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.formLi span {
+    padding: 0 10px;
+}
+
+.callIcon {
+    display: flex;
+    justify-content: center;
+}
+
+.MobBannerImg {
+    display: none;
+}
+
+.formColumnContainer {
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width:660px) {
+
+    .WebBannerImg {
+        display: none;
+    }
+
+    .MobBannerImg {
+        display: block;
+    }
+
+    .formTextContainer {
+        text-align: center;
+        padding: 0;
+    }
+
+    .formTextContainer h1 {
+        font-size: 42px;
+    }
+
+    .formTextContainer h4 {
+        margin-bottom: 25px;
+        font-size: 27px !important;
+    }
+
+    .welcomeSection {
+        text-align: center;
+    }
+
+    .welcomeSection h1 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .studentImg {
+        height: 38rem;
+    }
+
+    .startText {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .facilitySection h1 {
+        font-size: 36px;
+        line-height: 36px;
+    }
 }

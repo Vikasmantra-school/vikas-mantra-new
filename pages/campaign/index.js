@@ -2,6 +2,8 @@ import style from './style.module.css'
 import Navbar from '../../components/Header/CampaignNav'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
+import Link from 'next/link'
+
 
 const Campaign = () => {
     return (
@@ -9,23 +11,24 @@ const Campaign = () => {
             <Navbar />
 
             <section className={style.campaignSection}>
-                <img src="./images/banner/desktop-banner.png" class="img-fluid" />
+                <img src="./images/banner/desktop-banner.jpg" className={"img-fluid " + ' ' + style.WebBannerImg} alt='banner-image' />
+                <img src="./images/banner/mobile-banner.jpg" className={"img-fluid " + ' ' + style.MobBannerImg} alt='banner-image' />
             </section>
 
 
             <section className={style.formSection}>
-                <div class={style.formContainer + ' ' + ' container'}>
-                    <div class={style.formRow + ' ' + ' row align-items-center '}>
+                <div className={style.formContainer + ' ' + ' container'}>
+                    <div className={style.formRow + ' ' + ' row align-items-center '}>
 
-                        <div class="col-md-7 offset-md-1">
+                        <div className="col-md-7 offset-md-1">
                             <div className={style.formTextContainer}>
                                 <h1 className={style.textWhite}>Get ready for an unparalleled educational experience.</h1>
-                                <h4 className={style.textWhite}>Begin your child's path towards a bright future.</h4>
+                                <h4 className={style.textWhite}>Begin your child&apos;s path towards a bright future.</h4>
                             </div>
                         </div>
 
-                        <div class="col-md-4 text-center">
-                            <div class={style.formColumnContainer + ' p-4'}>
+                        <div className="col-md-4 text-center">
+                            <div className={style.formColumnContainer + ' p-4'}>
                                 <h2>Top CBSE School @Chengalpattu</h2>
 
                                 <form action="#" method="post">
@@ -33,19 +36,37 @@ const Campaign = () => {
                                     <input type="hidden" name="form_tools_form_id" value="2" />
 
                                     <ul className='p-0'>
-                                        <li><input className={style.formInputField} type="text" name="name" placeholder="Name" required /></li>
-                                        <li><input className={style.formInputField} type="text" name="email" placeholder="Email id" required /></li>
-                                        <li><input className={style.formInputField} type="text" name="phone" placeholder="Phone" required /></li>
-                                        <li><input className={style.formInputField + ' mb-2'} type="textarea" name="message" placeholder="Your Message" /></li>
-                                        <li><input className={style.formInputField} type="submit" name="submit" value="Register Now" /></li>
+                                        <li className={style.formLi}>
+                                            <span className="material-symbols-outlined">person</span>
+                                            <input className={style.formInputField + ' ' + style.inputName} type="text" name="name" placeholder="Name" required />
+                                        </li>
 
-                                        <li class={style.privacy}>We respect your privacy.</li>
+                                        <li className={style.formLi}>
+                                            <span className="material-symbols-rounded">mail</span>
+                                            <input className={style.formInputField + ' ' + style.inputEmail} type="text" name="email" placeholder="Email id" required />
+                                        </li>
+                                        <li className={style.formLi}>
+                                            <span className="material-symbols-rounded">phone_iphone</span>
+                                            <input className={style.formInputField + ' ' + style.inputPhone} type="text" name="phone" placeholder="Phone" required />
+                                        </li>
+                                        <li className={style.formLi}>
+                                            <span className="material-symbols-rounded">short_text</span>
+                                            <input className={style.formInputField + ' mb-2'} type="textarea" name="message" placeholder="Your Message" />
+                                        </li>
+                                        <li className='my-3'>
+                                            <input className={style.formInputField + ' ' + style.inputSubmit} type="submit" name="submit" value="Register Now" />
+                                        </li>
 
-                                        <a class={style.phone_link} href="tel:+917092450450">
-                                            <li>
-                                                <i class="material-icons"></i>: +91 7092 450 450
-                                            </li>
-                                        </a>
+                                        <li className={style.privacy}>We respect your privacy.</li>
+
+                                        <Link href="tel:+917092450450">
+                                            <a className={style.phone_link}>
+                                                <li className={style.callIcon}>
+                                                    <span className="material-symbols-outlined">phone_in_talk</span>
+                                                    <span>: +91 7092 450 450</span>
+                                                </li>
+                                            </a>
+                                        </Link>
 
 
                                     </ul>
@@ -58,11 +79,11 @@ const Campaign = () => {
                 </div>
             </section>
 
-            <section className={style.bgWhite + ' py-5'}>
+            <section className={style.bgWhite + ' py-5' + ' ' + style.welcomeSection}>
                 <div className='container'>
                     <div className='row align-items-center'>
                         <div className='col-md-6'>
-                            <img src='/images/fade.png' alt='vikas-mantra-student' className='img-fluid' />
+                            <img src='/images/fade.png' alt='vikas-mantra-student' className={style.studentImg} />
                         </div>
                         <div className='col-md-6'>
                             <h1>WELCOME TO VIKAS MANTRA PUBLIC SCHOOL</h1>
@@ -73,7 +94,7 @@ const Campaign = () => {
 
                     <div className='row py-5 align-items-center text-center'>
                         <div className='col-md-8 offset-md-2 '>
-                            <h2 className={style.fw700}>Start your child's journey towards exceptional learning</h2>
+                            <h2 className={style.fw700 + ' ' + style.startText}>Start your child&apos;s journey towards exceptional learning</h2>
                         </div>
                     </div>
 
@@ -82,7 +103,7 @@ const Campaign = () => {
 
                         <div className={style.textBox + ' col-md-6'}>
                             <div className={style.textBoxCntr + ' ' + style.la}>
-                                <img src="images/icon/infrastructure.png" />
+                                <img src="images/icon/infrastructure.png" alt='facilities-image' />
                                 <h2>Facilities & Infrastructure</h2>
                                 <p>Located in Mahindra city, our spacious and vibrant campus is spread over 4 acres to support an active learning environment.</p>
                             </div>
@@ -91,7 +112,7 @@ const Campaign = () => {
 
                         <div className={style.textBox + ' col-md-6'}>
                             <div className={style.textBoxCntr + ' ' + style.com}>
-                                <img src="images/icon/discussion.png" />
+                                <img src="images/icon/discussion.png" alt='facilities-image' />
                                 <h2>Essential Skills</h2>
                                 <p>We make sure to tap the untapped potential in each child, thereby fostering social, physical, and emotional development in our students. </p>
                             </div>
@@ -99,7 +120,7 @@ const Campaign = () => {
 
                         <div className={style.textBox + ' col-md-6'}>
                             <div className={style.textBoxCntr + ' ' + style.extra}>
-                                <img src="images/icon/ballet.png" />
+                                <img src="images/icon/ballet.png" alt='facilities-image' />
                                 <h2>Extracurricular Activities</h2>
                                 <p>Co-curricular activities that ensure an all-around growth and development in our students.</p>
                             </div>
@@ -107,7 +128,7 @@ const Campaign = () => {
 
                         <div className={style.textBox + ' col-md-6'}>
                             <div className={style.textBoxCntr + ' ' + style.Conf}>
-                                <img src="images/icon/school-bus.png" />
+                                <img src="images/icon/school-bus.png" alt='facilities-image' />
                                 <h2>Transportation</h2>
                                 <p>Our school has access to a fleet of buses for both students and staff transportation with facilities to track bus movements via SMS.</p>
                             </div>
@@ -124,7 +145,7 @@ const Campaign = () => {
             </section>
 
             <section className={style.facilitySection + ' ' + style.bgWhite}>
-                <div className='container'>
+                <div className='container campaignsplide'>
                     <div className='row text-center'>
                         <h1 className='pb-5'>School Facilities</h1>
                     </div>
@@ -136,13 +157,13 @@ const Campaign = () => {
                             <Splide
                                 options={{
                                     rewind: true,
-                                    gap: '2rem',
+                                    gap: '5rem',
                                     perPage: 3,
                                     pagination: false,
                                     arrows: true,
                                     breakpoints: {
-                                        992: {
-                                            perPage: 4,
+                                        660: {
+                                            perPage: 1,
                                         },
 
                                     },
@@ -201,9 +222,9 @@ const Campaign = () => {
 
 
             <section className={style.facilitySection + ' ' + style.bgWhite}>
-                <div className='container'>
+                <div className='container campaignsplide'>
                     <div className='row text-center'>
-                        <h1 className='pb-5'>School Facilities</h1>
+                        <h1 className='pb-5'>Testimonilas</h1>
                     </div>
 
                     <div className='row'>
@@ -218,8 +239,9 @@ const Campaign = () => {
                                     pagination: false,
                                     arrows: true,
                                     breakpoints: {
-                                        992: {
-                                            perPage: 4,
+                                        660: {
+                                            perPage: 1,
+                                            autoPlay: true
                                         },
 
                                     },
@@ -266,7 +288,7 @@ const Campaign = () => {
 
             <section className={style.bgWhite + ' py-5'}>
                 <div className='container'>
-                    <hr className={style.hrLine}/>
+                    <hr className={style.hrLine} />
                 </div>
             </section>
 
@@ -280,12 +302,12 @@ const Campaign = () => {
                             <p>S.No:168,168/3, Off Mahindra World City,<br /> Anjur 603204, Chengalpattu</p>
 
                             <h4>Phone:</h4>
-                            <p><a href='tel:+917092450450'>+91 - 7092 450 450</a></p>
-                            <p><a href='tel:+918148143834'>+91 - 8148 143 834</a></p>
+                            <p><Link href='tel:+917092450450'><a>+91 - 7092 450 450</a></Link></p>
+                            <p><Link href='tel:+918148143834'><a>+91 - 8148 143 834</a></Link></p>
 
                             <h4>Email:</h4>
-                            <p><a href='emailto:info@vikasmantra.org'>info@vikasmantra.org</a></p>
-                            <p><a href='emailto:admissions@vikasmantra.org'>admissions@vikasmantra.org</a></p>
+                            <p><Link href='emailto:info@vikasmantra.org'><a>info@vikasmantra.org</a></Link></p>
+                            <p><Link href='emailto:admissions@vikasmantra.org'><a>admissions@vikasmantra.org</a></Link></p>
 
                             <h4>Office hours:</h4>
                             <p>Monday - Friday -9.00 am - 4.00 pm</p>
@@ -294,7 +316,7 @@ const Campaign = () => {
                         </div>
 
                         <div className={'col-md-7 ' + style.locationCol}>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15567.054801096552!2d80.0215743!3d12.7288327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1945122a83ac015!2sVikas%20Mantra%20Public%20School!5e0!3m2!1sen!2sin!4v1663411503934!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15567.054801096552!2d80.0215743!3d12.7288327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1945122a83ac015!2sVikas%20Mantra%20Public%20School!5e0!3m2!1sen!2sin!4v1663411503934!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

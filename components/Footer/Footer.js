@@ -54,7 +54,7 @@ export const Footer = () => {
   return (
 
     <>
-      {/* <Modal show={show} onHide={handleClose} animation={true}>
+      <Modal show={show} onHide={handleClose} animation={true}>
 
         <Modal.Header closeButton>
         </Modal.Header>
@@ -65,7 +65,7 @@ export const Footer = () => {
           </div>
         </Modal.Body>
 
-      </Modal> */}
+      </Modal>
       <div className={styles.section + ' pt-5 pb-4 '}>
         <div className='container'>
           <div className='row '>
