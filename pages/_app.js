@@ -7,6 +7,8 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { CSSRulePlugin } from 'gsap/dist/CSSRulePlugin'
 import { Analytics } from '@vercel/analytics/react';
+import { useRouter } from 'next/router'
+
 
 
 gsap.registerPlugin(CSSRulePlugin)
@@ -178,14 +180,19 @@ function MyApp({ Component, pageProps }) {
   gsap.registerPlugin(ScrollTrigger)
   gsap.registerPlugin(CSSRulePlugin)
 
+
+
+  const router = useRouter();
+  const showHeader = router.pathname === '/campaign' ? false : true;
   return (
     <>
 
-      <Nav />
+      {showHeader && <Nav />}
 
       <Component {...pageProps} />
 
-      <Footer />
+      {showHeader && <Footer />}
+      
 
       <Analytics />
     </>
