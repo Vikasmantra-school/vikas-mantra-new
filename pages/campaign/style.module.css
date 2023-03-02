@@ -418,4 +418,13 @@
         font-size: 36px;
         line-height: 36px;
     }
+    .footerSection{
+        text-align: center;
+    }
+    .locationCol iframe {
+        width: 100%;
+        height: 50vh;
+        object-fit: contain;
+        margin-top: 40px;
+    }
 }
