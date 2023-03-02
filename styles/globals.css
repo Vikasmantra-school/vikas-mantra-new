@@ -2145,3 +2145,13 @@ tr {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
+
+.sub-menu{position: absolute;
+  right: -53%;
+  top: 0;background-color: #fff;list-style: none;
+  padding: 0;height: 195px;
+  overflow-y: scroll;}
+
+.sub-menu .dropdown-item{padding-bottom: 10px !important;}
+
+.dropdownSub{position: relative;}

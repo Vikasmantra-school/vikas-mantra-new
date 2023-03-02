@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useRef } from 'react'
 import { useRouter } from 'next/router'
 import Button from 'react-bootstrap/Button'
 import styles from './style.module.css'
@@ -9,6 +9,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
   const { asPath } = useRouter()
+  const dropdownSub = useRef('')
   var pageName = asPath.replace('/', '')
 
   function hamburgerMenu(e) {
@@ -16,6 +17,16 @@ const Nav = () => {
     let hamburgerMenu = document.getElementById('hamburger')
     menu.classList.toggle('mob-menu-hdden')
     hamburgerMenu.classList.toggle('is-active')
+  }
+
+  function showDropdownSub(){
+    dropdownSub.current.classList.remove('d-none')
+
+  }
+
+  function hideDropdownSub(){
+    dropdownSub.current.classList.add('d-none')
+
   }
 
   return (
@@ -251,7 +262,7 @@ const Nav = () => {
 
                     <li>
                       <Link
-                        href='/learning/curriculum-framework'
+                        href='/learnning/curriculum-framework'
                         legacyBehavior
                       >
                         <a className='dropdown-item'>Curriculum Framework</a>
@@ -263,6 +274,66 @@ const Nav = () => {
                         <a className='dropdown-item'>Online Classes</a>
                       </Link>
                     </li>
+
+                    <li className='dropdownSub ' onMouseOver={showDropdownSub} onMouseOut={hideDropdownSub}>
+
+                      <Link legacyBehavior href='#'>
+                        <a className='dropdown-item dropdown-toggle'>Newsletter</a>
+                      </Link>
+
+                      <ul className='sub-menu d-none'  ref={dropdownSub}>
+                        <li>
+                          <Link href='/pdf/newsletter19-20-vol1.pdf' legacyBehavior>
+                            <a className='dropdown-item'>
+                              2019 - 2020 : Vol 1
+                            </a>
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link href='/pdf/newsletter19-20-vol2.pdf' legacyBehavior>
+                            <a className='dropdown-item'>
+                              2019 - 2020 : Vol 2
+                            </a>
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link href='/pdf/newsletter20-21-vol1.pdf' legacyBehavior>
+                            <a className='dropdown-item'>
+                              2020 - 2021 : Vol 1
+                            </a>
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link href='/pdf/newsletter20-21-vol2.pdf' legacyBehavior>
+                            <a className='dropdown-item'>
+                              2020 - 2021 : Vol 2
+                            </a>
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link href='/pdf/newsletter21-22-vol1.pdf' legacyBehavior>
+                            <a className='dropdown-item'>
+                              2021 - 2022 : Vol 1
+                            </a>
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link href='/pdf/newsletter21-22-vol2.pdf' legacyBehavior>
+                            <a className='dropdown-item'>
+                              2021 - 2022 : Vol 2
+                            </a>
+                          </Link>
+                        </li>
+
+                      </ul>
+
+                    </li>
+
                   </ul>
                 </li>
 
