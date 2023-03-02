@@ -391,7 +391,7 @@
     }
 
     .formTextContainer {
-        text-align: center;
+        text-align: left;
         padding: 0;
     }
 
@@ -405,7 +405,7 @@
     }
 
     .welcomeSection {
-        text-align: center;
+        text-align: start;
     }
 
     .welcomeSection h1 {
@@ -427,7 +427,7 @@
         line-height: 36px;
     }
     .footerSection{
-        text-align: center;
+        text-align: start;
     }
     .locationCol iframe {
         width: 100%;
