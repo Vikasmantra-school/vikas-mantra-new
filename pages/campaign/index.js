@@ -58,7 +58,7 @@ const Campaign = () => {
 
                 <section className={style.campaignSection}>
                     <img src="./images/banner/desktop-banner.png" className={"img-fluid " + ' ' + style.WebBannerImg} alt='banner-image' />
-                    <img src="./images/banner/mobile-banner.jpg" className={"img-fluid " + ' ' + style.MobBannerImg} alt='banner-image' />
+                    <img src="./images/banner/mobile-banner.png" className={"img-fluid " + ' ' + style.MobBannerImg} alt='banner-image' />
                 </section>
 
 
@@ -452,7 +452,7 @@ const Campaign = () => {
                                     <img className='phoneImg' src="/assets/icons/phone-icon.png" alt='phone-icon' />
                                 </a>
 
-                                <a href="#form" className="fixed-app callBtn">Enquiry Now</a>
+                                <a href="#form" className="fixed-app callBtn">Enquire Now</a>
 
                             </div>
 

@@ -2134,7 +2134,7 @@ tr {
   background: #e9ef89;
   border: 1px solid;
   position: fixed;
-  bottom: 25px;
+  bottom: 40px;
   z-index: 9999;
   right: 1em;
   border-radius: 27px;
@@ -2142,7 +2142,7 @@ tr {
 
 .watsapp-icon .whatsappImg {
   position: fixed;
-  bottom: 165px ;
+  bottom: 155px ;
   right: 25px;
   z-index: 999;
   width: 55px;
