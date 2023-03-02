@@ -138,7 +138,7 @@ const Campaign = () => {
                         </div>
 
 
-                        <div className='row py-5 align-items-center text-center'>
+                        <div className='row py-5 align-items-center text-start'>
                             <div className='col-lg-12'>
                                 <h2 className={style.fw700 + ' ' + style.startText}>Start your child&apos;s journey towards<br /> exceptional learning</h2>
                                 <h4 className={style.fw700 + ' ' + ' py-2 ' + style.ExperienceText}>&quot;Experience our world-class Education&quot;</h4>
@@ -193,7 +193,7 @@ const Campaign = () => {
 
                 <section className={style.facilitySection + ' ' + style.bgWhite}>
                     <div className='container campaignsplide'>
-                        <div className='row text-center'>
+                        <div className='row text-start'>
                             <h1 className='pb-5'>School Facilities</h1>
                         </div>
 
@@ -327,7 +327,7 @@ const Campaign = () => {
 
                 <section className={style.facilitySection + ' ' + style.bgWhite}>
                     <div className='container campaignsplide'>
-                        <div className='row text-center'>
+                        <div className='row text-start'>
                             <h1 className='pb-5'>Testimonials</h1>
                         </div>
 
@@ -436,8 +436,6 @@ const Campaign = () => {
 
                             <div className='col-sm-12'>
 
-                                <a href="#form" className="fixed-app callBtn">Admissions Enquiry</a>
-
                                 <a className="whatsappDiv" rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=7092450450">
                                     <img className='whatsappImg' src="/assets/icons/whatsapp.png" alt='whatsapp-icon' />
                                 </a>
@@ -445,6 +443,8 @@ const Campaign = () => {
                                 <a className="phoneDiv" rel="noopener noreferrer" target="_blank" href='tel:+917092450450'>
                                     <img className='phoneImg' src="/assets/icons/phone-icon.png" alt='phone-icon' />
                                 </a>
+
+                                <a href="#form" className="fixed-app callBtn">Enquiry Now</a>
 
                             </div>
 
