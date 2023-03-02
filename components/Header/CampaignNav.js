@@ -6,46 +6,37 @@ const CampaignNav = () => {
         <>
             <section className={styles.CampaignNavSection}>
                 <div className='container'>
-                    <div className='row align-items-center py-1'>
-                        <div className={' col-md-3 col-sm-3'}>
-                            <a className={styles.mainLogo + ' ' + 'navbar-brand'}>
-                                <img src='/assets/vmps-color.png' alt='image' />
+                    <div className='row align-items-center'>
+
+                        <div className='col-md-2'>
+                            <a className={styles.CampaignLogo + ' ' + ' navbar-brand'}>
+                                <img src='/images/VMPS-Logo-1.png' alt='image' />
                             </a>
                         </div>
-                        <div className={styles.mobHide + ' col-md-3 col-sm-3'}>
-                            <a href="tel:7092 450 450>">
-                                Phone: +91 7092 450 450
-                            </a>
-                        </div>
-                        <div className={styles.mobHide + ' col-md-3 col-sm-3'}>
-                            <p><a href="info@vikasmantra.org" >Email: info@vikasmantra.org</a></p>
-                        </div>
-                        <div className={styles.mobHide + ' col-md-3 col-sm-3'}>
 
-                            <ul className='d-flex align-items-center list-unstyled'>
+                        <div className={styles.menuSection + ' col-md-10'}>
+                            <nav className="navbar float-end"> 
+                                <ul className="d-flex list-unstyled align-items-center">
+                                    <li className={styles.mobHide + ' ' + styles.NavPhone + ' d-flex align-items-center'}>
+                                        <span class="material-symbols-outlined mx-2">call</span>
+                                        <a href="tel:+917092450450"> Phone: +91 7092 450 450 </a>
+                                    </li>
 
-                                <li className={styles.star}>
-                                    <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
-                                </li>
+                                    <li className={styles.mobHide + ' ' + styles.NavPhone}>
+                                        <a href="mailto:info@vikasmantra.org" >Email: info@vikasmantra.org</a>
+                                    </li>
 
-                                <li className={styles.star}>
-                                    <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
-                                </li>
+                                    <li className={styles.mobHide + ' ' + styles.NavPhone + ' d-flex align-items-center'}>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star_half</span>
+                                        <span >(41+ Google Reviews)</span>
+                                    </li>
+                                </ul>
 
-                                <li className={styles.star}>
-                                    <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
-                                </li>
-
-                                <li className={styles.star}>
-                                    <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
-                                </li>
-
-                                <li className={styles.star}>
-                                    <FontAwesomeIcon icon={faStarHalf} className={styles.starIcon} />
-                                </li>
-
-                                <li className={styles.star}>(50+ Google Reviews)</li>
-                            </ul>
+                            </nav>
 
                         </div>
                     </div>

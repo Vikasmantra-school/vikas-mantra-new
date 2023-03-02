@@ -60,16 +60,18 @@ h4 {
   font-size: 30px !important;
   font-weight: 600;
 }
-.modal-footer{
+
+.modal-footer {
   padding: 0;
 }
-.modal-body{
+
+.modal-body {
   padding: 0;
 }
 
 
 .btn-close:hover {
-  color: #E02D53 !important ;
+  color: #E02D53 !important;
   text-decoration: none;
   opacity: .75;
 }
@@ -107,8 +109,8 @@ p {
   text-align: justify;
 }
 
-.mobileBanner h1{
-font-size: 30px;
+.mobileBanner h1 {
+  font-size: 30px;
 }
 
 .VectorLogo {
@@ -492,6 +494,7 @@ font-size: 30px;
 .homeheader {
   width: 100%;
 }
+
 .homeheader {
   z-index: 2;
   position: relative;
@@ -1591,7 +1594,7 @@ tr {
 }
 
 
-.position-relative{
+.position-relative {
   position: relative;
 }
 
@@ -1663,6 +1666,7 @@ tr {
     position: relative;
     z-index: 3;
   }
+
   .sectionContainer {
     padding-bottom: 50px;
   }
@@ -1759,6 +1763,7 @@ tr {
     left: 0;
     top: 20px;
   }
+
   .imgBgColorBlog1::after {
     content: '';
     position: absolute;
@@ -1804,6 +1809,7 @@ tr {
     transform: scale(1.4);
     z-index: 1;
   }
+
   .splide__pagination {
     bottom: 0.5em;
     left: 0;
@@ -1816,16 +1822,17 @@ tr {
 
   .home .hamburger .line {
     background-color: #842029;
-}
+  }
 
   .home {
     position: relative;
   }
-  .VectorSpiralCenter::after{
+
+  .VectorSpiralCenter::after {
     display: none;
   }
 
-  .mobile-heading-size{
+  .mobile-heading-size {
     font-size: 25px;
   }
 
@@ -2043,6 +2050,7 @@ tr {
     left: 10px;
     bottom: 10px;
   }
+
   .imgBgColorBlog1::after {
     content: '';
     position: absolute;
@@ -2121,18 +2129,18 @@ tr {
 
 .callBtn {
   padding: 10px 15px;
-  color:#202750 !important;
+  color: #202750 !important;
   font-size: 17px;
   background: #e9ef89;
   border: 1px solid;
   position: fixed;
-  bottom: 100px;
+  bottom: 165px;
   z-index: 9999;
   right: 1em;
   border-radius: 27px;
 }
 
-.watsapp-icon img {
+.watsapp-icon .whatsappImg {
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -2140,33 +2148,80 @@ tr {
   width: 55px;
   box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
   -webkit-box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
-  -moz-box-shadow: 0 6px 8px 2px rgba(0,0,0,.14);
+  -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
 
-.sub-menu{position: absolute;
+
+.watsapp-icon .phoneImg {
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+  z-index: 999;
+  width: 55px;
+  box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
+  -webkit-box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
+  -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.sub-menu {
+  position: absolute;
   right: -53%;
-  top: 0;background-color: #fff;list-style: none;
-  padding: 0;height: 195px;
-  overflow-y: scroll;}
+  top: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  height: 195px;
+  overflow-y: scroll;
+}
 
-.sub-menu .dropdown-item{padding-bottom: 10px !important;}
+.sub-menu .dropdown-item {
+  padding-bottom: 10px !important;
+}
 
-.dropdownSub{position: relative;}
+.dropdownSub {
+  position: relative;
+}
 
 /*campaign page styles*/
-.campaignsplide .splide__arrow--prev{
+.campaignsplide .splide__pagination {
+  bottom: -1.5em;
+  left: 90px;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.campaignsplide .splide__arrow--prev {
   left: -2.8em;
 }
+
 .campaignsplide .splide__arrow--next {
   right: -2.8em;
 }
+
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }
+
+@media only screen and (min-width:1400px) {
+  .campaignPage .container {
+    max-width: calc(100% - 28.5vw);
+  }
+}
+@media only screen and (min-width:1200px) {
+  .campaignPage .container {
+    max-width: calc(100% - 18vw);
+  }
+}
+

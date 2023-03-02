@@ -10,7 +10,12 @@
     margin-top: 85px;
 }
 
-.campaignSection img {
+.WebBannerImg {
+    width: 100%;
+    height: calc(100vh - 85px);
+    object-fit: cover;
+}
+.MobBannerImg {
     width: 100%;
 }
 
@@ -369,6 +374,9 @@
 
 .formColumnContainer {
     border-radius: 5px;
+}
+.ExperienceText{
+    font-size: 24px !important;
 }
 
 

@@ -183,7 +183,7 @@ function MyApp({ Component, pageProps }) {
 
 
   const router = useRouter();
-  const showHeader = router.pathname === '/campaign' ? false : true;
+  const showHeader = router.pathname === '/campaign' ||  router.pathname==='/thankyou' ? false : true;
   return (
     <>
 
