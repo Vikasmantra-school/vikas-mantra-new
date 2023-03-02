@@ -3,9 +3,49 @@ import Navbar from '../../components/Header/CampaignNav'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 import Link from 'next/link'
+import { useState, useRef } from 'react'
 
 
 const Campaign = () => {
+
+    //form-data-clear-after-submit
+
+    const [name, setName] = useState('')
+    const [mail, setEmail] = useState('')
+    const [number, setNumber] = useState('')
+    const [message, setMessage] = useState('')
+
+
+    //form-sheet-integration
+
+    const formRef = useRef(null)
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbwdOtOwrQ__QMCQHCMrTBpWA3mEogVND2a8ohsOq7wLCoTpOq1o7Ui5fHH-CWya57Xs/exec"
+    const [loading, setLoading] = useState(false)
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setLoading(true)
+
+        setName('');
+        setEmail('');
+        setNumber('');
+        setMessage('');
+
+        fetch(scriptUrl, {
+            method: 'POST',
+            body: new FormData(formRef.current),
+
+        }).then(res => {
+            alert('Our admission officer will contact you shortly');
+            setLoading(false)
+        })
+            .catch(err => console.log(err))
+    }
+
+
+
+
+
     return (
         <>
             <Navbar />
@@ -31,30 +71,30 @@ const Campaign = () => {
                             <div className={style.formColumnContainer + ' p-4'}>
                                 <h2>Top CBSE School @Chengalpattu</h2>
 
-                                <form action="#" method="post">
+                                <form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
 
                                     <input type="hidden" name="form_tools_form_id" value="2" />
 
                                     <ul className='p-0'>
                                         <li className={style.formLi}>
                                             <span className="material-symbols-outlined">person</span>
-                                            <input className={style.formInputField + ' ' + style.inputName} type="text" name="name" placeholder="Name" required />
+                                            <input className={style.formInputField + ' ' + style.inputName} type="text" name="Name" placeholder="Name" required onChange={(e) => { setName(e.target.value) }} value={name} />
                                         </li>
 
                                         <li className={style.formLi}>
                                             <span className="material-symbols-rounded">mail</span>
-                                            <input className={style.formInputField + ' ' + style.inputEmail} type="text" name="email" placeholder="Email id" required />
+                                            <input className={style.formInputField + ' ' + style.inputEmail} type="text" name="Email" placeholder="Email id" required onChange={(e) => { setEmail(e.target.value) }} value={mail} />
                                         </li>
                                         <li className={style.formLi}>
                                             <span className="material-symbols-rounded">phone_iphone</span>
-                                            <input className={style.formInputField + ' ' + style.inputPhone} type="text" name="phone" placeholder="Phone" required />
+                                            <input className={style.formInputField + ' ' + style.inputPhone} type="text" name="Phone" placeholder="Phone" required onChange={(e) => { setNumber(e.target.value) }} value={number} />
                                         </li>
                                         <li className={style.formLi}>
                                             <span className="material-symbols-rounded">short_text</span>
-                                            <input className={style.formInputField + ' mb-2'} type="textarea" name="message" placeholder="Your Message" />
+                                            <input className={style.formInputField + ' mb-2'} type="textarea" name="Message" placeholder="Your Message" onChange={(e) => { setMessage(e.target.value) }} value={message} />
                                         </li>
                                         <li className='my-3'>
-                                            <input className={style.formInputField + ' ' + style.inputSubmit} type="submit" name="submit" value="Register Now" />
+                                            <input className={style.formInputField + ' ' + style.inputSubmit} value={loading ? "Loading..." : "Send"} type="submit" name="submit" placeholder="Register Now" />
                                         </li>
 
                                         <li className={style.privacy}>We respect your privacy.</li>
@@ -224,7 +264,7 @@ const Campaign = () => {
             <section className={style.facilitySection + ' ' + style.bgWhite}>
                 <div className='container campaignsplide'>
                     <div className='row text-center'>
-                        <h1 className='pb-5'>Testimonilas</h1>
+                        <h1 className='pb-5'>Testimonials</h1>
                     </div>
 
                     <div className='row'>
