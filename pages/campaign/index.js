@@ -445,11 +445,11 @@ const Campaign = () => {
                             <div className='col-sm-12'>
 
                                 <a className="whatsappDiv" rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=7092450450">
-                                    <img className='whatsappImg' src="/assets/icons/whatsapp.png" alt='whatsapp-icon' />
+                                    <img className='CampaignwhatsappImg' src="/assets/icons/whatsapp.png" alt='whatsapp-icon' />
                                 </a>
 
                                 <a className="phoneDiv" rel="noopener noreferrer" target="_blank" href='tel:+917092450450'>
-                                    <img className='phoneImg' src="/assets/icons/phone-icon.png" alt='phone-icon' />
+                                    <img className='campaignphoneImg' src="/assets/icons/phone-icon.png" alt='phone-icon' />
                                 </a>
 
                                 <a href="#form" className="fixed-app callBtn">Enquire Now</a>

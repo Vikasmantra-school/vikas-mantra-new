@@ -2142,6 +2142,19 @@ tr {
 
 .watsapp-icon .whatsappImg {
   position: fixed;
+  bottom: 95px ;
+  right: 25px;
+  z-index: 999;
+  width: 55px;
+  box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
+  -webkit-box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
+  -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.watsapp-icon .CampaignwhatsappImg {
+  position: fixed;
   bottom: 155px ;
   right: 25px;
   z-index: 999;
@@ -2155,7 +2168,7 @@ tr {
 }
 
 
-.watsapp-icon .phoneImg {
+.watsapp-icon .campaignphoneImg {
   position: fixed;
   bottom: 95px;
   right: 25px;

@@ -221,7 +221,7 @@ export const Footer = () => {
 
               <a href="http://vikasmantra.benfy.co/" className="fixed-app callBtn">Admissions Enquiry</a>
 
-              <a className="whatsappDiv" rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=7092450450"><img src="/assets/icons/whatsapp.png" alt='whatsapp-icon' /></a>
+              <a className="whatsappDiv" rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=7092450450"><img  className='whatsappImg' src="/assets/icons/whatsapp.png" alt='whatsapp-icon' /></a>
 
             </div>
 
