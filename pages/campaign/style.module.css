@@ -390,8 +390,9 @@
         display: block;
     }
     .ExperienceText {
-        font-size: 22px !important;
+        font-size: 20px !important;
         font-weight: 600;
+        text-align: center;
     }
 
     .formTextContainer {
@@ -425,7 +426,7 @@
     .startText {
         font-size: 36px;
         line-height: 36px;
-        text-align: start;
+        text-align: center;
     }
 
     .facilitySection h1 {
