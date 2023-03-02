@@ -2197,6 +2197,14 @@ tr {
   right: 0;
   z-index: 1;
 }
+.testimonialslide .splide__pagination {
+  bottom: -1.5em;
+  left: 160px;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
 
 .campaignsplide .splide__arrow--prev {
   left: -2.8em;

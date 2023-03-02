@@ -186,7 +186,7 @@ const Campaign = () => {
                     </div>
                 </section>
 
-                <section className={style.bgWhite + ' py-5'}>
+                <section className={style.bgWhite + ' py-5 ' + ' ' + style.sectionPdng}>
                     <div className='container'>
                         <hr className={style.hrLine} />
                     </div>
@@ -319,7 +319,7 @@ const Campaign = () => {
                     </div>
                 </section>
 
-                <section className={style.bgWhite + ' py-5'}>
+                <section className={style.bgWhite + ' py-5 ' + ' ' + style.sectionPdng}>
                     <div className='container'>
                         <hr className={style.hrLine} />
                     </div>
@@ -327,12 +327,12 @@ const Campaign = () => {
 
 
                 <section className={style.facilitySection + ' ' + style.bgWhite}>
-                    <div className='container campaignsplide'>
+                    <div className='container campaignsplide testimonialslide'>
                         <div className='row text-center'>
                             <h1 className='pb-5'>Testimonials</h1>
                         </div>
 
-                        <div className='row'>
+                        <div className='row pb-4'>
 
                             <div className='col-md-12'>
 
@@ -346,7 +346,14 @@ const Campaign = () => {
                                         breakpoints: {
                                             660: {
                                                 perPage: 1,
-                                                autoPlay: true
+                                                arrows: false,
+                                                pagination: true
+                                            },
+                                            992: {
+                                                perPage: 1,
+                                            },
+                                            1200: {
+                                                perPage: 1,
                                             },
 
                                         },
@@ -391,7 +398,7 @@ const Campaign = () => {
                 </section>
 
 
-                <section className={style.bgWhite + ' py-5'}>
+                <section className={style.bgWhite + ' py-5 ' + ' ' + style.sectionPdng}>
                     <div className='container'>
                         <hr className={style.hrLine} />
                     </div>

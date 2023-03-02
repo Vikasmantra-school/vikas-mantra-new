@@ -389,10 +389,15 @@
     .MobBannerImg {
         display: block;
     }
+    .ExperienceText {
+        font-size: 20px !important;
+        font-weight: 600;
+    }
 
     .formTextContainer {
         text-align: left;
         padding: 0;
+        margin-bottom: 40px;
     }
 
     .formTextContainer h1 {
@@ -434,5 +439,8 @@
         height: 50vh;
         object-fit: contain;
         margin-top: 40px;
+    }
+    .sectionPdng{
+        padding: 20px 0 !important;
     }
 }
