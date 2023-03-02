@@ -284,7 +284,7 @@ const Nav = () => {
                       <ul className='sub-menu d-none'  ref={dropdownSub}>
                         <li>
                           <Link href='/pdf/newsletter19-20-vol1.pdf' legacyBehavior>
-                            <a className='dropdown-item'>
+                            <a className='dropdown-item' target="_blank">
                               2019 - 2020 : Vol 1
                             </a>
                           </Link>
@@ -292,7 +292,7 @@ const Nav = () => {
 
                         <li>
                           <Link href='/pdf/newsletter19-20-vol2.pdf' legacyBehavior>
-                            <a className='dropdown-item'>
+                            <a className='dropdown-item' target="_blank">
                               2019 - 2020 : Vol 2
                             </a>
                           </Link>
@@ -300,7 +300,7 @@ const Nav = () => {
 
                         <li>
                           <Link href='/pdf/newsletter20-21-vol1.pdf' legacyBehavior>
-                            <a className='dropdown-item'>
+                            <a className='dropdown-item' target="_blank">
                               2020 - 2021 : Vol 1
                             </a>
                           </Link>
@@ -308,7 +308,7 @@ const Nav = () => {
 
                         <li>
                           <Link href='/pdf/newsletter20-21-vol2.pdf' legacyBehavior>
-                            <a className='dropdown-item'>
+                            <a className='dropdown-item' target="_blank">
                               2020 - 2021 : Vol 2
                             </a>
                           </Link>
@@ -316,7 +316,7 @@ const Nav = () => {
 
                         <li>
                           <Link href='/pdf/newsletter21-22-vol1.pdf' legacyBehavior>
-                            <a className='dropdown-item'>
+                            <a className='dropdown-item' target="_blank">
                               2021 - 2022 : Vol 1
                             </a>
                           </Link>
@@ -324,7 +324,7 @@ const Nav = () => {
 
                         <li>
                           <Link href='/pdf/newsletter21-22-vol2.pdf' legacyBehavior>
-                            <a className='dropdown-item'>
+                            <a className='dropdown-item' target="_blank">
                               2021 - 2022 : Vol 2
                             </a>
                           </Link>
