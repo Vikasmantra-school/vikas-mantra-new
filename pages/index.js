@@ -31,11 +31,11 @@ function Home() {
 
     setCount(count + 1);
     if (count % 2 == 0) {
-      console.log('even')
+      // console.log('even')
       playVideo()
     }
     else {
-      console.log('odd')
+      // console.log('odd')
       pauseVideo()
     }
   }
@@ -61,7 +61,7 @@ function Home() {
       }
     }
     addAttrForMob()
-    console.log(controls + ' attrb');
+    // console.log(controls + ' attrb');
 
     /*------------------*/
     gsap.registerPlugin(ScrollTrigger)

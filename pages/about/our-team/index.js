@@ -6,7 +6,7 @@ const OurTeam = () => {
 
     const staffTeam = [
         { staffImage: '/assets/staffs/staff2.png', heading: 'Ms. Vidhya', para: 'Primary coordinator', ImgContainer: 'ImgContainer2' },
-        { staffImage: '/assets/staffs/staff3.png', heading: 'Primary coordinator', para: 'HOD - Science', ImgContainer: 'ImgContainer3' },
+        { staffImage: '/assets/staffs/staff3.png', heading: 'Ms. pratheeba', para: 'HOD - Science', ImgContainer: 'ImgContainer3' },
         { staffImage: '/assets/staffs/staff4.png', heading: 'Raja Varadarajan', para: 'HOD - Maths', ImgContainer: 'ImgContainer4' },
         { staffImage: '/assets/staffs/staff5.png', heading: 'Shobana Kesavan', para: 'HOD - Computer Science', ImgContainer: 'ImgContainer5' },
         { staffImage: '/assets/staffs/staff6.png', heading: 'Sujatha Gangadharan', para: 'HOD - Tamil', ImgContainer: 'ImgContainer6' },
@@ -15,6 +15,7 @@ const OurTeam = () => {
         { staffImage: '/assets/staffs/staff9.png', heading: 'Vivek Sathyan', para: 'HOD - Dance', ImgContainer: 'ImgContainer9' },
         { staffImage: '/assets/staffs/staff10.png', heading: 'Kavitha Yadav', para: 'HOD - Hindi', ImgContainer: 'ImgContainer10' },
         { staffImage: '/assets/staffs/staff11.png', heading: 'Soundarrajan Venkatesan', para: 'HOD - Art & Craft', ImgContainer: 'ImgContainer11' },
+        { staffImage: '/assets/staffs/staff12.jpg', heading: 'Ms.Gayathri', para: 'HOD - English', ImgContainer: 'ImgContainer1' },
     ];
 
     const pageTitle = 'About'
