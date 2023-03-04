@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { CSSRulePlugin } from 'gsap/dist/CSSRulePlugin'
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 import { useRouter } from 'next/router'
 
 
@@ -194,7 +194,7 @@ function MyApp({ Component, pageProps }) {
       {showHeader && <Footer />}
       
 
-      <Analytics />
+      {/* <Analytics /> */}
     </>
   )
 }

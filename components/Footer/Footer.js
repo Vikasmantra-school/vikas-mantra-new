@@ -16,7 +16,28 @@ export const Footer = () => {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    handleShow()
+
+
+    //checking if running locally or server
+
+    const isLocalhost = Boolean(
+      window.location.hostname === 'localhost' ||
+      // [::1] is the IPv6 localhost address.
+      window.location.hostname === '[::1]' ||
+      // 127.0.0.1/8 is considered localhost for IPv4.
+      window.location.hostname.match(
+        /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+      )
+    );
+    // console.log(isLocalhost);
+
+    if (isLocalhost == true) {
+      console.log('popup-hidden')
+    }
+    else {
+      handleShow()
+    }
+
   }, [])
 
 
@@ -61,7 +82,7 @@ export const Footer = () => {
 
         <Modal.Body >
           <div>
-            <Image src={PopupImage} alt='popup' className={styles.sectionOut} />
+            <Image src={PopupImage} alt='popup' priority className={styles.sectionOut} />
           </div>
         </Modal.Body>
 
@@ -221,7 +242,7 @@ export const Footer = () => {
 
               <a href="http://vikasmantra.benfy.co/" className="fixed-app callBtn">Admissions Enquiry</a>
 
-              <a className="whatsappDiv" rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=7092450450"><img  className='whatsappImg' src="/assets/icons/whatsapp.png" alt='whatsapp-icon' /></a>
+              <a className="whatsappDiv" rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=7092450450"><img className='whatsappImg' src="/assets/icons/whatsapp.png" alt='whatsapp-icon' /></a>
 
             </div>
 

@@ -1,6 +1,6 @@
 import styles from './style.module.css'
 import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 const OurTeam = () => {
 
@@ -21,8 +21,8 @@ const OurTeam = () => {
     const pageTitle = 'About'
 
     const exampleVariant = {
-        visible: { opacity: 1},
-        hidden: { opacity: 0},
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 },
     }
     // const { scrollYProgress } = useScroll();
 
@@ -52,15 +52,16 @@ const OurTeam = () => {
 
                             return (
 
-                                <motion.div className=' col-sm-6 col-md-6 col-lg-4 py-4'
-                                    key={i}
-                                    variants={exampleVariant}
-                                    initial="hidden"
-                                    whileInView="visible"
-                                    viewport={{ once: true }}
-                                >
+                                <div className=' col-sm-6 col-md-6 col-lg-4 py-4' key={i}>
 
-                                    <div className={item.ImgContainer + ' ImgContainer'}>
+                                    <motion.div initial={{ opacity: 0, scale: 0 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        transition={{
+                                            duration: 0.8,
+                                            delay: 0.5,
+                                            ease: [0, 0.71, 0.2, 1.01]
+                                        }}
+                                        className={item.ImgContainer + ' ImgContainer'}>
 
                                         <div className='AnimeElement-x-x'>
                                             <img src={item.staffImage} alt='image' className={styles.staffImg + ' img-fluid AnimeElement-x'} />
@@ -74,9 +75,9 @@ const OurTeam = () => {
                                             <p className='text-center pb-2 AnimeElement-x'>{item.para}</p>
                                         </div>
 
-                                    </div>
+                                    </motion.div>
 
-                                </motion.div>
+                                </div>
 
                             )
                         })}
