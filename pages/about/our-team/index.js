@@ -6,7 +6,7 @@ const OurTeam = () => {
 
     const staffTeam = [
         { staffImage: '/assets/staffs/staff2.png', heading: 'Ms. Vidhya', para: 'Primary coordinator', ImgContainer: 'ImgContainer2' },
-        { staffImage: '/assets/staffs/staff3.png', heading: 'Ms. pratheeba', para: 'HOD - Science', ImgContainer: 'ImgContainer3' },
+        { staffImage: '/assets/staffs/staff3.png', heading: 'Ms. Pratheeba', para: 'Primary Coordinator HOD - Science', ImgContainer: 'ImgContainer3' },
         { staffImage: '/assets/staffs/staff4.png', heading: 'Raja Varadarajan', para: 'HOD - Maths', ImgContainer: 'ImgContainer4' },
         { staffImage: '/assets/staffs/staff5.png', heading: 'Shobana Kesavan', para: 'HOD - Computer Science', ImgContainer: 'ImgContainer5' },
         { staffImage: '/assets/staffs/staff6.png', heading: 'Sujatha Gangadharan', para: 'HOD - Tamil', ImgContainer: 'ImgContainer6' },
