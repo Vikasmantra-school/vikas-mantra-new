@@ -1,30 +1,36 @@
 import styles from './style.module.css'
 import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
 import { motion } from "framer-motion";
+import Image from 'next/image'
+import staff1 from '../../../public/assets/staffs/staff2.png'
+import staff2 from '../../../public/assets/staffs/staff3.png'
+import staff3 from '../../../public/assets/staffs/staff4.png'
+import staff4 from '../../../public/assets/staffs/staff5.png'
+import staff5 from '../../../public/assets/staffs/staff6.png'
+import staff6 from '../../../public/assets/staffs/staff7.png'
+import staff7 from '../../../public/assets/staffs/staff8.png'
+import staff8 from '../../../public/assets/staffs/staff9.png'
+import staff9 from '../../../public/assets/staffs/staff10.png'
+import staff10 from '../../../public/assets/staffs/staff11.png'
+import staff11 from '../../../public/assets/staffs/staff12.jpg'
 
 const OurTeam = () => {
 
     const staffTeam = [
-        { staffImage: '/assets/staffs/staff2.png', heading: 'Ms. Vidhya', para: 'Primary coordinator', ImgContainer: 'ImgContainer2' },
-        { staffImage: '/assets/staffs/staff3.png', heading: 'Ms. Pratheeba', para: 'Primary Coordinator HOD - Science', ImgContainer: 'ImgContainer3' },
-        { staffImage: '/assets/staffs/staff4.png', heading: 'Raja Varadarajan', para: 'HOD - Maths', ImgContainer: 'ImgContainer4' },
-        { staffImage: '/assets/staffs/staff5.png', heading: 'Shobana Kesavan', para: 'HOD - Computer Science', ImgContainer: 'ImgContainer5' },
-        { staffImage: '/assets/staffs/staff6.png', heading: 'Sujatha Gangadharan', para: 'HOD - Tamil', ImgContainer: 'ImgContainer6' },
-        { staffImage: '/assets/staffs/staff7.png', heading: 'Prince Sounderrajan K', para: 'HOD - Physical Education', ImgContainer: 'ImgContainer7' },
-        { staffImage: '/assets/staffs/staff8.png', heading: 'Ms. Maheshwari', para: 'Pre-Primary Coordinator', ImgContainer: 'ImgContainer8' },
-        { staffImage: '/assets/staffs/staff9.png', heading: 'Vivek Sathyan', para: 'HOD - Dance', ImgContainer: 'ImgContainer9' },
-        { staffImage: '/assets/staffs/staff10.png', heading: 'Kavitha Yadav', para: 'HOD - Hindi', ImgContainer: 'ImgContainer10' },
-        { staffImage: '/assets/staffs/staff11.png', heading: 'Soundarrajan Venkatesan', para: 'HOD - Art & Craft', ImgContainer: 'ImgContainer11' },
-        { staffImage: '/assets/staffs/staff12.jpg', heading: 'Ms.Gayathri', para: 'HOD - English', ImgContainer: 'ImgContainer1' },
+        { staffImage: staff1, delay: 0.5, heading: 'Ms. Vidhya', para: 'Primary coordinator', ImgContainer: 'ImgContainer2' },
+        { staffImage: staff2, delay: 0.7, heading: 'Ms. Pratheeba', para: 'Primary Coordinator HOD - Science', ImgContainer: 'ImgContainer3' },
+        { staffImage: staff3, delay: 0.9, heading: 'Raja Varadarajan', para: 'HOD - Maths', ImgContainer: 'ImgContainer4' },
+        { staffImage: staff4, delay: 1, heading: 'Shobana Kesavan', para: 'HOD - Computer Science', ImgContainer: 'ImgContainer5' },
+        { staffImage: staff5, delay: 1.2, heading: 'Sujatha Gangadharan', para: 'HOD - Tamil', ImgContainer: 'ImgContainer6' },
+        { staffImage: staff6, delay: 1.4, heading: 'Prince Sounderrajan K', para: 'HOD - Physical Education', ImgContainer: 'ImgContainer7' },
+        { staffImage: staff7, delay: 1.6, heading: 'Ms. Maheshwari', para: 'Pre-Primary Coordinator', ImgContainer: 'ImgContainer8' },
+        { staffImage: staff8, delay: 1.8, heading: 'Vivek Sathyan', para: 'HOD - Dance', ImgContainer: 'ImgContainer9' },
+        { staffImage: staff9, delay: 2, heading: 'Kavitha Yadav', para: 'HOD - Hindi', ImgContainer: 'ImgContainer10' },
+        { staffImage: staff10, delay: 2.2, heading: 'Soundarrajan Venkatesan', para: 'HOD - Art & Craft', ImgContainer: 'ImgContainer11' },
+        { staffImage: staff11, delay: 2.4, heading: 'Ms.Gayathri', para: 'HOD - English', ImgContainer: 'ImgContainer1' },
     ];
 
     const pageTitle = 'About'
-
-    const exampleVariant = {
-        visible: { opacity: 1 },
-        hidden: { opacity: 0 },
-    }
-    // const { scrollYProgress } = useScroll();
 
     return (
 
@@ -52,19 +58,16 @@ const OurTeam = () => {
 
                             return (
 
-                                <div className=' col-sm-6 col-md-6 col-lg-4 py-4' key={i}>
+                                <div className=' col-sm-6 col-md-6 col-lg-4 col-xl-3 py-4' key={i}>
 
-                                    <motion.div initial={{ opacity: 0, scale: 0 }}
+                                    <motion.div
+                                        initial={{ opacity: 0, scale: 0 }}
                                         animate={{ opacity: 1, scale: 1 }}
-                                        transition={{
-                                            duration: 0.8,
-                                            delay: 0.5,
-                                            ease: [0, 0.71, 0.2, 1.01]
-                                        }}
-                                        className={item.ImgContainer + ' ImgContainer'}>
+                                        transition={{ duration: 0.8, delay: item.delay, ease: 'easeInOut' }}
+                                        className={item.ImgContainer + ' ImgContainer'} >
 
                                         <div className='AnimeElement-x-x'>
-                                            <img src={item.staffImage} alt='image' className={styles.staffImg + ' img-fluid AnimeElement-x'} />
+                                            <Image src={item.staffImage} alt='image'  className={styles.staffImg + ' img-fluid AnimeElement-x'} />
                                         </div>
 
                                         <div className='AnimeElement-x-x'>
