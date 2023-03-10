@@ -5,7 +5,7 @@ import styles from './style.module.css'
 import { gsap } from 'gsap'
 
 export const EventsNav = ({ events }) => {
-  const [active, setActive] = useState('Beach Day for Kg')
+  const [active, setActive] = useState('KG Convocation')
 
   function navLinkClick(e) {
     setActive(e.target.innerText)
