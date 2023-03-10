@@ -329,6 +329,17 @@ export const events = [
     ]
   },
 
+  {
+    id: 'twenty-six',
+    dropdown: 'KG convocation',
+    title: 'KG convocation',
+    desc: 'KG convocation at vikas',
+    mainImage: '/assets/events/kg-convocation/5.jpg',
+    gallery: [
+      '/assets/events/kg-convocation/1.jpg', '/assets/events/kg-convocation/2.jpg', '/assets/events/kg-convocation/3.jpg','/assets/events/kg-convocation/4.jpg'
+    ]
+  },
+
 
 
 
