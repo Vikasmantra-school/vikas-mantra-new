@@ -291,22 +291,6 @@ function Career() {
                         <div className='mb-5 AnimeStarts'>
                           <label className='AnimeElement'>Job Opening</label>
 
-                          {/* <Form.Control
-                            className={styles.formText + ' AnimeElement'}
-                            type='text'
-                            name='Job Opening'
-                            required
-                            onChange={event => setJobOpening(event.target.value)}
-                            value={jobOpening}
-                          /> */}
-
-                          {/* <select className={styles.formText + ' AnimeElement form-select '} aria-label="Default select example">
-                            <option selected></option>
-                            <option value={jobOpening}  name='Job Opening' onChange={event => setJobOpening(event.target.value)} >One</option>
-                            <option value={jobOpening} name='Job Opening' onChange={event => setJobOpening(event.target.value)}>Two</option>
-                            <option value={jobOpening} name='Job Opening' onChange={event => setJobOpening(event.target.value)}>Three</option>
-                          </select> */}
-
                           <Form.Select aria-label="Default select example" name="Job Opening" value={jobOpening} onChange={event => setJobOpening(event.target.value)} className={styles.formText + ' AnimeElement form-select '}>
                             <option value='PGT-ENGLISH'>PGT-ENGLISH (IX-XI)</option>
                             <option value='PGT-COMMERCE'>PGT-COMMERCE(X&XI)</option>
@@ -316,6 +300,8 @@ function Career() {
                             <option value='PET'>PET(I-III)</option>
                             <option value='YOGA INSTRUCTOR'>YOGA INSTRUCTOR(I-X)</option>
                             <option value='ART TEACHER'>ART TEACHER(I-V)</option>
+                            <option value='ART TEACHER'>ADMISSION COUNSELLOR</option>
+                            <option value='ART TEACHER'>JUNIOR ACCOUNTANT</option>
                           </Form.Select>
 
                         </div>

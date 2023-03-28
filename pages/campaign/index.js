@@ -428,7 +428,7 @@ const Campaign = () => {
                 </section>
 
                 <section className='text-center bg-dark py-2'>
-                    <p className={'m-0 ' + style.copyText}>Copyrights © 2022. All rights reserved.</p>
+                    <p className={'m-0 ' + style.copyText}>Copyrights © 2023. All rights reserved.</p>
                 </section>
 
                 <section>

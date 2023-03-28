@@ -84,7 +84,7 @@ const MessageFromPrincipal = () => {
                                 </div>
 
                                 <div className='AnimeStarts'>
-                                    <h4 className='AnimeElement'>Mrs. Priyanka Ghosh Jesuraj</h4>
+                                    <h4 className='AnimeElement'>Ms. Preetha Abraham</h4>
                                 </div>
 
                             </div>

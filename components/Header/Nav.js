@@ -262,7 +262,7 @@ const Nav = () => {
 
                     <li>
                       <Link
-                        href='/learnning/curriculum-framework'
+                        href='/learning/curriculum-framework'
                         legacyBehavior
                       >
                         <a className='dropdown-item'>Curriculum Framework</a>
