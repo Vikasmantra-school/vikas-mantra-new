@@ -240,9 +240,17 @@ export const Footer = () => {
 
             <div className='col-sm-12'>
 
-              <a href="http://vikasmantra.benfy.co/" className="fixed-app callBtn">Admissions Enquiry</a>
+              <Link href='/campaign' legacyBehavior>
+                <a className="fixed-app callBtn" target='_blank' rel="noopener noreferrer">
+                  Admissions Enquiry
+                </a>
+              </Link>
 
-              <a className="whatsappDiv" rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=7092450450"><img className='whatsappImg' src="/assets/icons/whatsapp.png" alt='whatsapp-icon' /></a>
+              <Link href="https://api.whatsapp.com/send?phone=7330098765">
+                <a className="whatsappDiv" target='_blank' rel="noopener noreferrer">
+                  <img className='whatsappImg' src="/assets/icons/whatsapp.png" alt='whatsapp-icon' />
+                </a>
+              </Link>
 
             </div>
 
