@@ -148,41 +148,11 @@ function Career() {
                     </tr>
 
                     <tr>
-                      <td className='AnimeElement'>PGT-ENGLISH</td>
+                      <td className='AnimeElement'>SPECIAL EDUCATOR</td>
                     </tr>
 
                     <tr className=''>
-                      <td className='AnimeElement'>PGT-COMMERCE</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement' >TGT-SOCIAL SCIENCE</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement'>PRT-HINDI</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement'>LIBRARIAN</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement'>PET</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement'>YOGA INSTRUCTOR</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement' >ART TEACHER</td>
-                    </tr>
-                    <tr className=''>
-                      <td className='AnimeElement' >ADMISSION COUNSELLOR</td>
-                    </tr>
-                    <tr className=''>
-                      <td className='AnimeElement' >JUNIOR ACCOUNTANT</td>
+                      <td className='AnimeElement'>NURSE</td>
                     </tr>
 
                   </tbody>
@@ -292,16 +262,8 @@ function Career() {
                           <label className='AnimeElement'>Job Opening</label>
 
                           <Form.Select aria-label="Default select example" name="Job Opening" value={jobOpening} onChange={event => setJobOpening(event.target.value)} className={styles.formText + ' AnimeElement form-select '}>
-                            <option value='PGT-ENGLISH'>PGT-ENGLISH (IX-XI)</option>
-                            <option value='PGT-COMMERCE'>PGT-COMMERCE(X&XI)</option>
-                            <option value='PGT-SOCIAL SCIENCE'>PGT-SOCIAL SCIENCE(VII&X)</option>
-                            <option value='PRT-HINDI'>PRT-HINDI(II,III)</option>
-                            <option value='LIBRARIAN'>LIBRARIAN(I-III)</option>
-                            <option value='PET'>PET(I-III)</option>
-                            <option value='YOGA INSTRUCTOR'>YOGA INSTRUCTOR(I-X)</option>
-                            <option value='ART TEACHER'>ART TEACHER(I-V)</option>
-                            <option value='ART TEACHER'>ADMISSION COUNSELLOR</option>
-                            <option value='ART TEACHER'>JUNIOR ACCOUNTANT</option>
+                            <option value='SPECIAL-EDUCATOR'>SPECIAL EDUCATOR</option>
+                            <option value='NURSE'>NURSE</option>
                           </Form.Select>
 
                         </div>
