@@ -232,7 +232,7 @@ function MandatoryScreen() {
                     <td>1</td>
                     <td>FEE STRUCTURE OF THE SCHOOL*</td>
                     <td>
-                      <a href='/pdf/vmps-fee-structure-2022.pdf' target='_blank'>Annexure 9</a>
+                      <a href='/pdf/vmps-fee-structure-2023.pdf' target='_blank'>Annexure 9</a>
                     </td>
                   </tr>
 
@@ -248,7 +248,7 @@ function MandatoryScreen() {
                     <td>3</td>
                     <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)*</td>
                     <td>
-                      <a href='/pdf/smc-1.pdf' target='_blank'>Annexure 11</a>
+                      <a href='/pdf/smc-1.docx' target='_blank'>Annexure 11</a>
                     </td>
                   </tr>
 
@@ -290,28 +290,28 @@ function MandatoryScreen() {
                   <tr>
                     <td>1</td>
                     <td>PRINCIPAL*</td>
-                    <td>MRS PRIYANKA GHOSH JESURAJ</td>
+                    <td>MRS Preetha Abraham MA B.Ed M.Phil</td>
                   </tr>
 
                   <tr>
                     <td rowSpan='4'>2</td>
-                    <td>TOTAL NO. OF TEACHERS* </td>
-                    <td>47</td>
-                  </tr>
-
-                  <tr>
-                    <td>PGT*</td>
-                    <td>0</td>
-                  </tr>
-
-                  <tr>
-                    <td>TGT*</td>
-                    <td>16</td>
+                    <td>NTT*</td>
+                    <td>11</td>
                   </tr>
 
                   <tr>
                     <td>PRT*</td>
-                    <td>11</td>
+                    <td>21</td>
+                  </tr>
+
+                  <tr>
+                    <td>TGT*</td>
+                    <td>8</td>
+                  </tr>
+
+                  <tr>
+                    <td>PGT*</td>
+                    <td>8</td>
                   </tr>
 
                   <tr>
@@ -322,15 +322,58 @@ function MandatoryScreen() {
 
                   <tr>
                     <td>4</td>
-                    <td>DETAILS OF SPECIAL EDUCATOR*</td>
-                    <td>MS LATHA BABU B.Sc B.Ed MDA SPECIAL EDUCATOR</td>
+                    <td>LIBRARIAN</td>
+                    <td>1</td>
                   </tr>
 
                   <tr>
                     <td>5</td>
-                    <td>DETAILS OF COUNSELLOR AND WELLNESS TEACHER*</td>
-                    <td>MS SHARMILI M.Sc COUNSELLING PSYCOLOGY</td>
+                    <td>DANCE</td>
+                    <td>1</td>
                   </tr>
+
+                  <tr>
+                    <td>6</td>
+                    <td>ART</td>
+                    <td>2</td>
+                  </tr>
+
+                  <tr>
+                    <td>7</td>
+                    <td>PET</td>
+                    <td>2</td>
+                  </tr>
+
+                  <tr>
+                    <td>8</td>
+                    <td>MUSIC</td>
+                    <td>1</td>
+                  </tr>
+
+                  <tr>
+                    <td>9</td>
+                    <td>PHYSICAL DIRECTOR</td>
+                    <td>1</td>
+                  </tr>
+
+                  <tr>
+                    <td>10</td>
+                    <td>SPECIAL EDUCATOR*</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>11</td>
+                    <td>STUDENT COUNSELLOR *</td>
+                    <td>1</td>
+                  </tr>
+
+                  <tr>
+                    <td></td>
+                    <td>TOTAL NO. OF TEACHERS* </td>
+                    <td>58</td>
+                  </tr>
+
                 </tbody>
               </Table>
             </div>
