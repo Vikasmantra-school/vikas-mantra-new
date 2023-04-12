@@ -75,13 +75,13 @@ function MandatoryScreen() {
                   <tr>
                     <td>5</td>
                     <td>PRINCIPAL NAME*</td>
-                    <td>MRS PRIYANKA GHOSH JESURAJ</td>
+                    <td>MS.PREETHA ABRAHAM </td>
                   </tr>
 
                   <tr>
                     <td>6</td>
                     <td>PRINCIPAL QUALIFICATION*</td>
-                    <td>M.COM B.ED</td>
+                    <td>MA B.Ed M.Phil</td>
                   </tr>
 
                   <tr>
@@ -248,7 +248,7 @@ function MandatoryScreen() {
                     <td>3</td>
                     <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)*</td>
                     <td>
-                      <a href='/pdf/smc-1.docx' target='_blank'>Annexure 11</a>
+                      <a href='/pdf/smc-1.pdf' target='_blank'>Annexure 11</a>
                     </td>
                   </tr>
 
@@ -290,7 +290,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>1</td>
                     <td>PRINCIPAL*</td>
-                    <td>MRS Preetha Abraham MA B.Ed M.Phil</td>
+                    <td>MS Preetha Abraham MA B.Ed M.Phil</td>
                   </tr>
 
                   <tr>
