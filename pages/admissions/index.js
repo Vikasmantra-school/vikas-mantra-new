@@ -71,6 +71,13 @@ const Admissions = () => {
       </style>
 
       <Breadcrumb pageName={pageTitle} />
+      {/* <Head>
+        <title>{pageTitle}| Vikasmantra Public School</title>
+        <meta
+          name="description"
+          content="VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu Kanchipuram is building a distinctive educational platform through a mix of international learning ..."
+        />
+      </Head> */}
 
       <section className='pt-4 greybg'>
         <div className='container position-relative'>
@@ -339,7 +346,7 @@ const Admissions = () => {
                   <img
                     src='/assets/banners/student.png'
                     alt='image'
-                    className={ styles.studentImg + ' AdmissionScrollAnimeElement'}
+                    className={styles.studentImg + ' AdmissionScrollAnimeElement'}
                   />
                   {/* <picture>
                     <source srcSet='/assets/banners/student.webp' />

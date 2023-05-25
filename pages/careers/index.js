@@ -148,11 +148,19 @@ function Career() {
                     </tr>
 
                     <tr>
-                      <td className='AnimeElement'>SPECIAL EDUCATOR</td>
+                      <td className='AnimeElement'>TGT Hindi</td>
                     </tr>
 
                     <tr className=''>
-                      <td className='AnimeElement'>NURSE</td>
+                      <td className='AnimeElement'>PGT computer science</td>
+                    </tr>
+
+                    <tr className=''>
+                      <td className='AnimeElement'>KG coordinator</td>
+                    </tr>
+
+                    <tr className=''>
+                      <td className='AnimeElement'>Student counsellor</td>
                     </tr>
 
                   </tbody>
@@ -262,8 +270,13 @@ function Career() {
                           <label className='AnimeElement'>Job Opening</label>
 
                           <Form.Select aria-label="Default select example" name="Job Opening" value={jobOpening} onChange={event => setJobOpening(event.target.value)} className={styles.formText + ' AnimeElement form-select '}>
-                            <option value='SPECIAL-EDUCATOR'>SPECIAL EDUCATOR</option>
-                            <option value='NURSE'>NURSE</option>
+                            {/* <option value='SPECIAL-EDUCATOR'>SPECIAL EDUCATOR</option>
+                            <option value='NURSE'>NURSE</option> */}
+
+                            <option value='TGT-HINDI'>TGT Hindi</option>
+                            <option value='PGT-COMPUTER-SCIENCE'>PGT computer science</option>
+                            <option value='KG-COORDINATOR'>KG coordinator</option>
+                            <option value='STUDENT-COUNSELLOR'>Student counsellor</option>
                           </Form.Select>
 
                         </div>
