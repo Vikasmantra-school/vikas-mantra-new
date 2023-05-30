@@ -149,33 +149,33 @@ function Career() {
                     </tr>
 
                     <tr>
-                      <td className='AnimeElement'>PRT HINDI</td>
-                      <td className='AnimeElement'>B.ED, 0-3 YRS EXPERIENCE</td>
+                      <td className='AnimeElement'>PRT Hindi</td>
+                      <td className='AnimeElement'>B.ED, 0-3 Years Experience</td>
                     </tr>
 
                     <tr>
                       <td className='AnimeElement'>TGT Hindi</td>
-                      <td className='AnimeElement'>PG With B.Ed, 3-5 yrs experience</td>
+                      <td className='AnimeElement'>PG With B.Ed, 3-5 Years Experience</td>
                     </tr>
 
                     <tr className=''>
                       <td className='AnimeElement'>NTT</td>
-                      <td className='AnimeElement'>MONTESSORI, 0-3 YRS EXPERIENCE</td>
+                      <td className='AnimeElement'>MONTESSORI, 0-3 Years Experience</td>
                     </tr>
 
                     <tr className=''>
                       <td className='AnimeElement'>PGT Computer science</td>
-                      <td className='AnimeElement'>PG With B.Ed, 3.5- 5 yrs & Above</td>
+                      <td className='AnimeElement'>PG With B.Ed, 3.5- 5 Years Experience & Above</td>
                     </tr>
 
                     <tr className=''>
                       <td className='AnimeElement'>KG Coordinator</td>
-                      <td className='AnimeElement'>MONTESSORI, 0-3 YRS EXPERIENCE</td>
+                      <td className='AnimeElement'>MONTESSORI, 0-3 Years Experience</td>
                     </tr>
 
                     <tr className=''>
-                      <td className='AnimeElement'>TGT social science</td>
-                      <td className='AnimeElement'>PG With B.Ed 3-5 yrs experience</td>
+                      <td className='AnimeElement'>TGT Social Science</td>
+                      <td className='AnimeElement'>PG With B.Ed 3-5 Years Experience</td>
                     </tr>
 
                   </tbody>
