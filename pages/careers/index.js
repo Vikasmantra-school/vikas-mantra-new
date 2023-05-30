@@ -137,6 +137,7 @@ function Career() {
                   <tbody className='AnimeStarts'>
                     <tr>
                       <th className='AnimeElement fw-bold'>POSITION</th>
+                      <th className='AnimeElement fw-bold'>REQUIREMENTS</th>
                       <style jsx>
                         {`
                         th {
@@ -148,19 +149,33 @@ function Career() {
                     </tr>
 
                     <tr>
+                      <td className='AnimeElement'>PRT HINDI</td>
+                      <td className='AnimeElement'>B.ED, 0-3 YRS EXPERIENCE</td>
+                    </tr>
+
+                    <tr>
                       <td className='AnimeElement'>TGT Hindi</td>
+                      <td className='AnimeElement'>PG With B.Ed, 3-5 yrs experience</td>
                     </tr>
 
                     <tr className=''>
-                      <td className='AnimeElement'>PGT computer science</td>
+                      <td className='AnimeElement'>NTT</td>
+                      <td className='AnimeElement'>MONTESSORI, 0-3 YRS EXPERIENCE</td>
                     </tr>
 
                     <tr className=''>
-                      <td className='AnimeElement'>KG coordinator</td>
+                      <td className='AnimeElement'>PGT Computer science</td>
+                      <td className='AnimeElement'>PG With B.Ed, 3.5- 5 yrs & Above</td>
                     </tr>
 
                     <tr className=''>
-                      <td className='AnimeElement'>Student counsellor</td>
+                      <td className='AnimeElement'>KG Coordinator</td>
+                      <td className='AnimeElement'>MONTESSORI, 0-3 YRS EXPERIENCE</td>
+                    </tr>
+
+                    <tr className=''>
+                      <td className='AnimeElement'>TGT social science</td>
+                      <td className='AnimeElement'>PG With B.Ed 3-5 yrs experience</td>
                     </tr>
 
                   </tbody>
@@ -274,9 +289,11 @@ function Career() {
                             <option value='NURSE'>NURSE</option> */}
 
                             <option value='TGT-HINDI'>TGT Hindi</option>
+                            <option value='PRT-HINDI'>PRT Hindi</option>
+                            <option value='NTT'>NTT</option>
                             <option value='PGT-COMPUTER-SCIENCE'>PGT computer science</option>
                             <option value='KG-COORDINATOR'>KG coordinator</option>
-                            <option value='STUDENT-COUNSELLOR'>Student counsellor</option>
+                            <option value='TGT-SOCIAL-SCIENCE'>TGT social science</option>
                           </Form.Select>
 
                         </div>
