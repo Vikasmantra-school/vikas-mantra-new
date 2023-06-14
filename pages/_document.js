@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
 
         <title>Vikasmantra Public School</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />

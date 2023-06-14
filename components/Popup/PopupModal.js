@@ -1,45 +1,46 @@
-import React, { useState, useEffect } from 'react';
-import styles from './style.module.css'
-import Modal from 'react-bootstrap/Modal';
-import Image from 'next/image'
-import PopupImage from '../../public/assets/Popups/Vikas-Social-Ad-2.png'
+// import React, { useState, useEffect } from 'react';
+// import styles from './style.module.css'
+// import Modal from 'react-bootstrap/Modal';
+// import Image from 'next/image'
+// import PopupImageOld from '../../public/assets/Popups/Vikas-Social-Ad-2.png'
+// import PopupImage from '../../public/assets/Popups/11th-admission.jpeg'
 
-const PopupModal = () => {
+// const PopupModal = () => {
 
-    const [show, setShow] = useState(false);
+//     const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-
-    useEffect(() => {
-        handleShow()
-        localStorage.setItem('Name', show);
-
-    }, [show])
-
-    return (
+//     const handleClose = () => setShow(false);
+//     const handleShow = () => setShow(true);
 
 
-        <>
-            <Modal show={show} onHide={handleClose} animation={true}>
+//     useEffect(() => {
+//         handleShow()
+//         localStorage.setItem('Name', show);
 
-                <Modal.Header closeButton>
-                </Modal.Header>
+//     }, [show])
 
-                <Modal.Body >
-                    <div>
-                        <Image src={PopupImage} alt='popup' className={styles.sectionOut} />
-                    </div>
-                </Modal.Body>
-
-            </Modal>
+//     return (
 
 
-        </>
+//         <>
+//             <Modal show={show} onHide={handleClose} animation={true}>
+
+//                 <Modal.Header closeButton>
+//                 </Modal.Header>
+
+//                 <Modal.Body >
+//                     <div>
+//                         <Image src={PopupImage} alt='popup' className={styles.sectionOut} />
+//                     </div>
+//                 </Modal.Body>
+
+//             </Modal>
 
 
-    );
-}
+//         </>
 
-export default PopupModal
+
+//     );
+// }
+
+// export default PopupModal

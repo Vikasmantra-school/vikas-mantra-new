@@ -4,7 +4,9 @@ import VikasLogo from '../../public/assets/VikasLogo.png'
 import styles from './style.module.css'
 import Link from 'next/link'
 import Modal from 'react-bootstrap/Modal';
-import PopupImage from '../../public/assets/Popups/Vikas-Social-Ad-2.png'
+import PopupImageOld from '../../public/assets/Popups/Vikas-Social-Ad-2.png'
+import PopupImage from '../../public/assets/Popups/11th-admission.jpeg'
+
 
 export const Footer = () => {
 
