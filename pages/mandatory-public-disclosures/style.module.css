@@ -1,67 +1,95 @@
-.disclosureCard{
-
-    background: #FFFFFF;
-    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.09);
-    padding: 25px;
-    height: 100%;
+.disclosureCard {
+  background: #ffffff;
+  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.09);
+  padding: 25px;
+  height: 100%;
 }
 
-.disclosureCard p{font-size: 21px;line-height: 24px;padding-right: 100px;}
-
-.mdBg{position: relative;}
-
-.mdBg::before{content: "";
-    position: absolute;
-    top: -202px;
-    left: -164px;
-    width: 247px;
-    height: 237px;
-    background: url(/assets/vectors/circle-vector.png);
-    background-size: 142px;
-    background-position: top right;
-    background-repeat: no-repeat;
-    z-index: 1;}
-
-.disclosueSection{position: relative;}
-
-.disclosueSection::after{content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 237px;
-    background: url(/assets/vectors/Vector9.png);
-    background-size: 142px;
-    background-position: top right;
-    background-repeat: no-repeat;
-    z-index: -1;}
-
-.disclosueSection::before{content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 100%;
-    height: 237px;
-    background: url(/assets/vectors/Vector5.png);
-    background-size: 142px;
-    background-position: top left;
-    background-repeat: no-repeat;
-    z-index: -1;}
-
-.tableBorderColor{background-image: linear-gradient(85.31deg, #A11D2A -39.85%, #E02D53 44.76%, #F27D49 117.87%);
-    color: #fff;
-    font-size: 17px;
-    font-weight: 700;}
-
-
-@media only screen and (max-width: 660px){
-
-
-    .mdBg::after{left: 0;}
-
-    .mdBg::before{z-index: -1;left: 0;}
+.disclosureCard p {
+  font-size: 21px;
+  line-height: 24px;
+  padding-right: 100px;
 }
 
+.mdBg {
+  position: relative;
+}
 
-@media only screen and (max-width: 992px){.disclosureCard p{padding-right: 0 !important;}}
+.mdBg::before {
+  content: "";
+  position: absolute;
+  top: -202px;
+  left: -164px;
+  width: 247px;
+  height: 237px;
+  background: url(/assets/vectors/circle-vector.png);
+  background-size: 142px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
 
+.disclosueSection {
+  position: relative;
+}
+
+.disclosueSection::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 237px;
+  background: url(/assets/vectors/Vector9.png);
+  background-size: 142px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.disclosueSection::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  height: 237px;
+  background: url(/assets/vectors/Vector5.png);
+  background-size: 142px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.tableBorderColor {
+  background-image: linear-gradient(
+    85.31deg,
+    #a11d2a -39.85%,
+    #e02d53 44.76%,
+    #f27d49 117.87%
+  );
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.queryTable td {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 660px) {
+  .mdBg::after {
+    left: 0;
+  }
+
+  .mdBg::before {
+    z-index: -1;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .disclosureCard p {
+    padding-right: 0 !important;
+  }
+}

@@ -498,6 +498,126 @@ function MandatoryScreen() {
               </Table>
             </div>
           </div>
+
+
+          <div className={'row pt60' + ' ' + styles.mdBg + ' ' + styles.queryTable}>
+            <h4>Queries</h4>
+
+            <div className='table-responsive'>
+              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+                <tbody>
+                  <tr className={styles.tableBorderColor}>
+                    <td>S.No</td>
+                    <td>QUERY </td>
+                    <td>FILES</td>
+                  </tr>
+
+                  <tr>
+                    <td>1</td>
+                    <td>six feet compound wall</td>
+                    <td>
+                      <a href='/pdf/Letter-from-panchayat-head.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>2</td>
+                    <td>Under taking letter by chairman for lift</td>
+                    <td>
+                      <a href='/pdf/Undertaking-letter-from-chairman-for-lift.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>3</td>
+                    <td>purchase order for lift</td>
+                    <td>
+                      <a href='/pdf/purchase-order-for-lift.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>4</td>
+                    <td>Senior secondary affiliation query-CWSN toilet ,Composite lab	</td>
+                    <td>
+                      <a href='https://youtu.be/kEd_AR1xqcM' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>5</td>
+                    <td>certification for land</td>
+                    <td>
+                      <a href='/pdf/land-certificate-final.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>6</td>
+                    <td>Form D</td>
+                    <td>
+                      <a href='/pdf/form-D-new.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>7</td>
+                    <td>Fire & rescue</td>
+                    <td>
+                      <a href='/pdf/Fire-Noc.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>8</td>
+                    <td>Under taking letter by chairman and principal for making correction in oasis</td>
+                    <td>
+                      <a href='/pdf/Under-taking-by-chairman-and-principal-for-making-correction-in-oasis.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>9</td>
+                    <td>Reply letter for the Queries</td>
+                    <td>
+                      <a href='/pdf/Reply-letter-for-the-Queries.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>10</td>
+                    <td>Panel engineer certified for building safety license</td>
+                    <td>
+                      <a href='/pdf/Panel-engineer-certified-for-building-safety-licence.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>11</td>
+                    <td>genuineness certificate for Form D</td>
+                    <td>
+                      <a href='/pdf/Office-Lens.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>12</td>
+                    <td>compound wall undertaking</td>
+                    <td>
+                      <a href='/pdf/compund-wall-certificate.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </Table>
+            </div>
+          </div>
         </div>
       </section>
     </>
