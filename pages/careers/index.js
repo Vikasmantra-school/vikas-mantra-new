@@ -13,7 +13,7 @@ function Career() {
   //form-data-clear-after-submit
 
   const getInitialState = () => {
-    const value = "PGT-ENGLISH";
+    const value = " TGT MATHEMATICS/COORDINATOR";
     return value;
   };
 
@@ -149,34 +149,10 @@ function Career() {
                     </tr>
 
                     <tr>
-                      <td className='AnimeElement'>PRT Hindi</td>
-                      <td className='AnimeElement'>B.ED, 0-3 Years Experience</td>
+                      <td className='AnimeElement'>TGT mathematics/coordinator</td>
+                      <td className='AnimeElement'>PG B.ed with 3-5years Experience</td>
                     </tr>
 
-                    <tr>
-                      <td className='AnimeElement'>TGT Hindi</td>
-                      <td className='AnimeElement'>PG With B.Ed, 3-5 Years Experience</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement'>NTT</td>
-                      <td className='AnimeElement'>MONTESSORI, 0-3 Years Experience</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement'>PGT Computer science</td>
-                      <td className='AnimeElement'>PG With B.Ed, 3.5- 5 Years Experience & Above</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement'>KG Coordinator</td>
-                      <td className='AnimeElement'>MONTESSORI, 0-3 Years Experience</td>
-                    </tr>
-
-                    <tr className=''>
-                      <td className='AnimeElement'>TGT Social Science</td>
-                      <td className='AnimeElement'>PG With B.Ed 3-5 Years Experience</td>
-                    </tr>
 
                   </tbody>
                 </Table>
@@ -192,7 +168,11 @@ function Career() {
                   size photo.
                 </p>
 
-                <p className='AnimeElement'>For more details, Call : +91 – 7092450450, +91 – 7330098765</p>
+                <p className='AnimeElement'>
+                  For more details, Call :
+                  <a href='tel:+917092450450'> +91 7092450450</a>,
+                  <a href='tel:+917330098765'>+91 7330098765</a>
+                </p>
 
               </div>
 
@@ -285,15 +265,7 @@ function Career() {
                           <label className='AnimeElement'>Job Opening</label>
 
                           <Form.Select aria-label="Default select example" name="Job Opening" value={jobOpening} onChange={event => setJobOpening(event.target.value)} className={styles.formText + ' AnimeElement form-select '}>
-                            {/* <option value='SPECIAL-EDUCATOR'>SPECIAL EDUCATOR</option>
-                            <option value='NURSE'>NURSE</option> */}
-
-                            <option value='TGT-HINDI'>TGT Hindi</option>
-                            <option value='PRT-HINDI'>PRT Hindi</option>
-                            <option value='NTT'>NTT</option>
-                            <option value='PGT-COMPUTER-SCIENCE'>PGT computer science</option>
-                            <option value='KG-COORDINATOR'>KG coordinator</option>
-                            <option value='TGT-SOCIAL-SCIENCE'>TGT social science</option>
+                            <option value='TGT MATHEMATICS/COORDINATOR'> TGT mathematics/coordinator</option>
                           </Form.Select>
 
                         </div>
