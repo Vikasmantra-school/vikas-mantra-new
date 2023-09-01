@@ -81,6 +81,8 @@ const Events = ({ todos }) => {
         ScrollTrigger.refresh()
     }, [])
 
+    console.log(todos , 'apii');
+
     return (
         <>
             <Breadcrumb pageName={pageTitle} />

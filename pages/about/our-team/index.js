@@ -2,7 +2,7 @@ import styles from './style.module.css'
 import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
 import { motion } from "framer-motion";
 import Image from 'next/image'
-import staff1 from '../../../public/assets/staffs/staff2.png'
+import staff1 from '../../../public/assets/staffs/staff13.jpg'
 import staff2 from '../../../public/assets/staffs/staff3.png'
 import staff3 from '../../../public/assets/staffs/staff4.png'
 import staff4 from '../../../public/assets/staffs/staff5.png'
@@ -17,7 +17,7 @@ import staff11 from '../../../public/assets/staffs/staff12.jpg'
 const OurTeam = () => {
 
     const staffTeam = [
-        { staffImage: staff1, delay: 0.5, heading: 'Ms. Vidhya', para: 'Primary coordinator', ImgContainer: 'ImgContainer2' },
+        { staffImage: staff1, delay: 0.5, heading: 'Divya L', para: 'Primary coordinator', ImgContainer: 'ImgContainer2' },
         { staffImage: staff2, delay: 0.7, heading: 'Ms. Pratheeba', para: 'Primary Coordinator HOD - Science', ImgContainer: 'ImgContainer3' },
         { staffImage: staff3, delay: 0.9, heading: 'Raja Varadarajan', para: 'HOD - Maths', ImgContainer: 'ImgContainer4' },
         { staffImage: staff4, delay: 1, heading: 'Shobana Kesavan', para: 'HOD - Computer Science', ImgContainer: 'ImgContainer5' },
