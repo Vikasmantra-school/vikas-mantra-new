@@ -15,6 +15,7 @@ import staff10 from '../../../public/assets/staffs/staff11.png'
 import staff11 from '../../../public/assets/staffs/staff12.jpg'
 
 const OurTeam = () => {
+    
 
     const staffTeam = [
         { staffImage: staff1, delay: 0.5, heading: 'Divya L', para: 'Primary coordinator', ImgContainer: 'ImgContainer2' },
