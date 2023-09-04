@@ -2,7 +2,7 @@ import styles from './style.module.css'
 import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
 import { motion } from "framer-motion";
 import Image from 'next/image'
-import staff1 from '../../../public/assets/staffs/staff13.jpg'
+import staff1 from '../../../public/assets/staffs/staff13.png'
 import staff2 from '../../../public/assets/staffs/staff3.png'
 import staff3 from '../../../public/assets/staffs/staff4.png'
 import staff4 from '../../../public/assets/staffs/staff5.png'

@@ -603,13 +603,13 @@ export default function eventsData(req, res) {
       dropdown: "KG Convocation",
       title: "KG Convocation",
       desc: "KG Convocation at vikas",
-      mainImage: "/assets/events/independence-day-2023/5.jpg",
+      mainImage: "/assets/events/kg-convocation/5.jpg",
       gallery: [
-        "/assets/events/independence-day-2023/1.jpg",
-        "/assets/events/independence-day-2023/2.jpg",
-        "/assets/events/independence-day-2023/3.jpg",
-        "/assets/events/independence-day-2023/4.jpg",
-        "/assets/events/independence-day-2023/5.jpg",
+        "/assets/events/kg-convocation/1.jpg",
+        "/assets/events/kg-convocation/2.jpg",
+        "/assets/events/kg-convocation/3.jpg",
+        "/assets/events/kg-convocation/4.jpg",
+        "/assets/events/kg-convocation/5.jpg",
       ],
     },
     {
@@ -632,8 +632,8 @@ export default function eventsData(req, res) {
     },
     {
       id: "twenty-eight",
-      dropdown: "Independece Day Celebration 2023",
-      title: "Independece Day",
+      dropdown: "Independence Day Celebration 2023",
+      title: "Independence Day",
       desc: "Independece Day at vikas",
       mainImage: "/assets/events/independence-day-2023/3.jpg",
       gallery: [
