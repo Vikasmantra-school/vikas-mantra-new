@@ -296,22 +296,22 @@ function MandatoryScreen() {
                   <tr>
                     <td rowSpan='4'>2</td>
                     <td>NTT*</td>
-                    <td>11</td>
+                    <td>13</td>
                   </tr>
 
                   <tr>
                     <td>PRT*</td>
-                    <td>21</td>
+                    <td>27</td>
                   </tr>
 
                   <tr>
                     <td>TGT*</td>
-                    <td>8</td>
+                    <td>11</td>
                   </tr>
 
                   <tr>
                     <td>PGT*</td>
-                    <td>8</td>
+                    <td>7</td>
                   </tr>
 
                   <tr>
@@ -341,7 +341,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>7</td>
                     <td>PET</td>
-                    <td>2</td>
+                    <td>4</td>
                   </tr>
 
                   <tr>
@@ -371,7 +371,7 @@ function MandatoryScreen() {
                   <tr>
                     <td></td>
                     <td>TOTAL NO. OF TEACHERS* </td>
-                    <td>58</td>
+                    <td>69</td>
                   </tr>
 
                 </tbody>
@@ -456,7 +456,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>2</td>
                     <td>NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)*</td>
-                    <td>38 and 41</td>
+                    <td>40 and 41</td>
                   </tr>
 
                   <tr>
@@ -465,7 +465,7 @@ function MandatoryScreen() {
                       NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN
                       SQ MTR)*{' '}
                     </td>
-                    <td>3 and 65</td>
+                    <td>5 and 65</td>
                   </tr>
 
                   <tr>
