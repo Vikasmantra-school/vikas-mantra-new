@@ -241,7 +241,7 @@ const Campaign = () => {
                                     </SplideSlide>
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/campaign/speciality-room.webp' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/Speciality-room.webp' className='img-fluid' alt='image' />
                                             <p>Large rooms for Dance, Music, Craft, and Art</p>
                                         </div>
                                     </SplideSlide>
@@ -262,7 +262,7 @@ const Campaign = () => {
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/lab3.webp' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/lab3.webp' className='img-fluid' alt='image' />
                                             <p>The Activity rooms are designed to make Learning more Enjoyable and Exciting</p>
                                         </div>
                                     </SplideSlide>
@@ -277,7 +277,7 @@ const Campaign = () => {
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/campaign/shool-bus.png' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/school-bus.png' className='img-fluid' alt='image' />
                                             <p>School bus services transport children to and from school</p>
                                         </div>
                                     </SplideSlide>
