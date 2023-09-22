@@ -13,7 +13,7 @@ const Campaign = () => {
     const router = useRouter();
 
     //form-data-clear-after-submit
-
+ 
     const [name, setName] = useState('')
     const [mail, setEmail] = useState('')
     const [number, setNumber] = useState('')
@@ -228,49 +228,48 @@ const Campaign = () => {
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/labs.jpg' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/lab2.png' className='img-fluid' alt='image' />
                                             <p>Well-equipped Chemistry, Physics, and Biology Laboratories</p>
                                         </div>
                                     </SplideSlide>
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/computer-lab.jpg' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/technology.webp' className='img-fluid' alt='image' />
                                             <p>Computer Lab equipped with sufficient number of Computers and Accessories</p>
                                         </div>
                                     </SplideSlide>
-
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/classroom.jpg' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/speciality-room.webp' className='img-fluid' alt='image' />
                                             <p>Large rooms for Dance, Music, Craft, and Art</p>
                                         </div>
                                     </SplideSlide>
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/medical-room.jpg' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/medical-room.jpeg' className='img-fluid' alt='image' />
                                             <p>Clean and well-maintained Medical room for students who become ill during the school day</p>
                                         </div>
                                     </SplideSlide>
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/library.jpg' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/library.webp' className='img-fluid' alt='image' />
                                             <p>Our Libraries contain a wide range of Books and Journals</p>
                                         </div>
                                     </SplideSlide>
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/parallax-bg.jpg' className='img-fluid' alt='image' />
+                                            <img src='/images/facilities/lab3.webp' className='img-fluid' alt='image' />
                                             <p>The Activity rooms are designed to make Learning more Enjoyable and Exciting</p>
                                         </div>
                                     </SplideSlide>
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/smart-class.jpg' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/classroom.webp' className='img-fluid' alt='image' />
                                             <p>Broad & Clean Classrooms with Cross Ventilation</p>
                                         </div>
                                     </SplideSlide>
@@ -278,7 +277,7 @@ const Campaign = () => {
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/1.png' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/shool-bus.png' className='img-fluid' alt='image' />
                                             <p>School bus services transport children to and from school</p>
                                         </div>
                                     </SplideSlide>
@@ -292,7 +291,7 @@ const Campaign = () => {
 
                                     <SplideSlide>
                                         <div className={style.facilityCard}>
-                                            <img src='/images/facilities/outdoor-game.JPG' className='img-fluid' alt='image' />
+                                            <img src='/images/campaign/skating.jpg' className='img-fluid' alt='image' />
                                             <p>Indoor and outdoor sports courts, as well as a sports area</p>
                                         </div>
                                     </SplideSlide>
