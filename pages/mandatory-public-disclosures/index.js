@@ -296,17 +296,17 @@ function MandatoryScreen() {
                   <tr>
                     <td rowSpan='4'>2</td>
                     <td>NTT*</td>
-                    <td>13</td>
+                    <td>12</td>
                   </tr>
 
                   <tr>
                     <td>PRT*</td>
-                    <td>27</td>
+                    <td>24</td>
                   </tr>
 
                   <tr>
                     <td>TGT*</td>
-                    <td>11</td>
+                    <td>8</td>
                   </tr>
 
                   <tr>
@@ -317,7 +317,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>3</td>
                     <td>TEACHERS SECTION RATIO*</td>
-                    <td>35:1</td>
+                    <td>1</td>
                   </tr>
 
                   <tr>
@@ -341,7 +341,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>7</td>
                     <td>PET</td>
-                    <td>4</td>
+                    <td>3</td>
                   </tr>
 
                   <tr>
@@ -359,19 +359,19 @@ function MandatoryScreen() {
                   <tr>
                     <td>10</td>
                     <td>SPECIAL EDUCATOR*</td>
-                    <td>-</td>
+                    <td>1</td>
                   </tr>
 
                   <tr>
                     <td>11</td>
-                    <td>STUDENT COUNSELLOR *</td>
+                    <td>STUDENT COUNSELLOR*</td>
                     <td>1</td>
                   </tr>
 
                   <tr>
                     <td></td>
                     <td>TOTAL NO. OF TEACHERS* </td>
-                    <td>69</td>
+                    <td>63</td>
                   </tr>
 
                 </tbody>
