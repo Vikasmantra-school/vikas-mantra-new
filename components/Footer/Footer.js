@@ -5,7 +5,7 @@ import styles from './style.module.css'
 import Link from 'next/link'
 import Modal from 'react-bootstrap/Modal';
 import PopupImageOld from '../../public/assets/Popups/Vikas-Social-Ad-2.png'
-import PopupImage from '../../public/assets/Popups/11th-admission.jpeg'
+import PopupImageNew from '../../public/assets/Popups/vikas-social-ad-popup.jpeg'
 
 
 export const Footer = () => {
@@ -84,7 +84,7 @@ export const Footer = () => {
 
         <Modal.Body >
           <div>
-            <Image src={PopupImage} alt='popup' priority className={styles.sectionOut} />
+            <Image src={PopupImageNew} alt='popup' priority className={styles.sectionOut} />
           </div>
         </Modal.Body>
 
