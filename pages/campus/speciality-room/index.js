@@ -166,9 +166,9 @@ const SpecialityRoom = () => {
 
 
                             <div className='AnimeStarts'>
-                                <p className='pt-5 AnimeElement'>'The Dance rooms is a place where
+                                <p className='pt-5 AnimeElement'> The Dance rooms is a place where
                                     students learn classical as well as contemporary dance. The performance
-                                    outputs of this room are a special attraction in the school functions.'
+                                    outputs of this room are a special attraction in the school functions.
                                 </p>
                             </div>
 
@@ -208,10 +208,10 @@ const SpecialityRoom = () => {
                             </div>
 
                             <div className='AnimeStarts'>
-                                <p className='pt-5 AnimeElement'>'Under the guidance of our dedicated educators, the chemistry lab
+                                <p className='pt-5 AnimeElement'> Under the guidance of our dedicated educators, the chemistry lab
                                     becomes a haven for exploration, experimentation, and enlightenment. It is here that students
                                     learn to navigate the periodic table, decipher the language of equations, and witness the beauty
-                                    of chemical transformations firsthand'.
+                                    of chemical transformations firsthand.
                                 </p>
                             </div>
 

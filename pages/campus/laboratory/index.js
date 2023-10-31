@@ -44,10 +44,10 @@ return (
 
 
                 <div className='AnimeStarts'>
-                    <p className='pt-5 AnimeElement'> 'Explore our state-of-the-art physics lab, where students engage in
+                    <p className='pt-5 AnimeElement'> Explore our state-of-the-art physics lab, where students engage in
                         hands-on experiments, discover the laws of the universe, and develop critical scientific skills.
                         Our well-equipped facility fosters curiosity and innovation, making learning physics an exciting
-                        journey.'
+                        journey.
                     </p>
                 </div>
 
@@ -85,10 +85,10 @@ return (
                 </div>
 
                 <div className='AnimeStarts'>
-                    <p className='pt-5 AnimeElement'> 'Under the guidance of our dedicated educators, the chemistry lab
+                    <p className='pt-5 AnimeElement'> Under the guidance of our dedicated educators, the chemistry lab
                         becomes a haven for exploration, experimentation, and enlightenment. It is here that students
                         learn to navigate the periodic table, decipher the language of equations, and witness the beauty
-                        of chemical transformations firsthand'.
+                        of chemical transformations firsthand.
                     </p>
                 </div>
 
@@ -106,10 +106,10 @@ return (
                 </div>
 
                 <div className='AnimeStarts'>
-                    <p className='pt-5 AnimeElement'> 'Here, in our meticulously designed laboratory, students embark on
+                    <p className='pt-5 AnimeElement'> Here, in our meticulously designed laboratory, students embark on
                         a captivating journey into the heart of biology. Surrounded by cutting-edge equipment and a
                         nurturing learning environment, our students delve into the intricacies of life itself, from the
-                        tiniest cells to the grand tapestry of ecosystems'.
+                        tiniest cells to the grand tapestry of ecosystems.
                     </p>
                 </div>
 
@@ -140,7 +140,7 @@ return (
 
             </div>
 
-            <div className={styles.order1 + ' col-md-6' }>
+            <div className={styles.order1 + ' col-md-6 ' }>
 
                 <div className='AnimeStarts'>
                     <h3 className='ulineRed AnimeElement'>Maths Lab
@@ -148,9 +148,9 @@ return (
                 </div>
 
                 <div className='AnimeStarts'>
-                    <p className='pt-5 AnimeElement'>'Vikas mantra has a Mathematics Laboratory where students can learn
+                    <p className='pt-5 AnimeElement'> Vikas mantra has a Mathematics Laboratory where students can learn
                         and explore mathematical concepts and verify mathematical facts and theorems through a variety
-                        of activities using different techniques.'
+                        of activities using different techniques.
                     </p>
                 </div>
 
