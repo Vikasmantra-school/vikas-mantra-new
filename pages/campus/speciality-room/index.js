@@ -29,7 +29,7 @@ const SpecialityRoom = () => {
 
             {/* <section className={'whitebg py-5 position-relative ' + styles.vectorImg10 + ' ' + styles.vectorImg12}>
 
-                <div className="container">
+                <div className='container'>
 
                     <div className=' row'>
 
@@ -55,7 +55,7 @@ const SpecialityRoom = () => {
 
             <div className='imgBgColor imgUp pastelBrown bgImageMargin AnimeStarts'>
 
-                <img src='/assets/campus/Speciality-room.png' alt="image" className={styles.classroomImg
+                <img src='/assets/campus/Speciality-room.png' alt='image' className={styles.classroomImg
                     + ' AnimeElement' } />
 
             </div>
@@ -83,7 +83,7 @@ const SpecialityRoom = () => {
 
                     <ul className='list-points AnimeStarts'>
                         <li className='AnimeElement'>
-                            <img src="/assets/icons/blue-point.png" alt='list-point' />
+                            <img src='/assets/icons/blue-point.png' alt='list-point' />
                             Audio Video Lab
                         </li>
                     </ul>
@@ -95,7 +95,7 @@ const SpecialityRoom = () => {
                     <ul className='list-points AnimeStarts'>
 
                         <li className='AnimeElement'>
-                            <img src="/assets/icons/pink-point.png" alt='list-point' />
+                            <img src='/assets/icons/pink-point.png' alt='list-point' />
                             Music and Dance studios
                         </li>
 
@@ -108,7 +108,7 @@ const SpecialityRoom = () => {
                     <ul className='list-points AnimeStarts'>
 
                         <li className='AnimeElement'>
-                            <img src="/assets/icons/yellow-point.png" alt='list-point' />
+                            <img src='/assets/icons/yellow-point.png' alt='list-point' />
                             Media Centre
                         </li>
 
@@ -121,7 +121,7 @@ const SpecialityRoom = () => {
                     <ul className='list-points AnimeStarts'>
 
                         <li className='AnimeElement'>
-                            <img src="/assets/icons/lightgreen-point.png" alt='list-point' />
+                            <img src='/assets/icons/lightgreen-point.png' alt='list-point' />
                             Multipurpose Hall
                         </li>
 
@@ -166,9 +166,9 @@ const SpecialityRoom = () => {
 
 
                             <div className='AnimeStarts'>
-                                <p className='pt-5 AnimeElement'>"The Dance rooms is a place where
+                                <p className='pt-5 AnimeElement'>'The Dance rooms is a place where
                                     students learn classical as well as contemporary dance. The performance
-                                    outputs of this room are a special attraction in the school functions."
+                                    outputs of this room are a special attraction in the school functions.'
                                 </p>
                             </div>
 
@@ -178,7 +178,7 @@ const SpecialityRoom = () => {
 
                             <div className='imgBgColor2 pastelSkyBlue AnimeStarts'>
 
-                                <img src='/assets/campus/lab3.png' alt="image" className={styles.labImg1 + ' AnimeElement'} />
+                                <img src='/assets/campus/lab3.png' alt='image' className={styles.labImg1 + ' AnimeElement'} />
 
                             </div>
 
@@ -194,7 +194,7 @@ const SpecialityRoom = () => {
 
                             <div className='imgBgColorLeft pastelLightGreen AnimeStarts'>
 
-                                <img src="/assets/campus/art-lab.png" alt="image" className={styles.labImg2 + ' AnimeElement'} />
+                                <img src='/assets/campus/art-lab.png' alt='image' className={styles.labImg2 + ' AnimeElement'} />
 
                             </div>
 
@@ -208,10 +208,10 @@ const SpecialityRoom = () => {
                             </div>
 
                             <div className='AnimeStarts'>
-                                <p className='pt-5 AnimeElement'>"Under the guidance of our dedicated educators, the chemistry lab
+                                <p className='pt-5 AnimeElement'>'Under the guidance of our dedicated educators, the chemistry lab
                                     becomes a haven for exploration, experimentation, and enlightenment. It is here that students
                                     learn to navigate the periodic table, decipher the language of equations, and witness the beauty
-                                    of chemical transformations firsthand".
+                                    of chemical transformations firsthand'.
                                 </p>
                             </div>
 
@@ -229,10 +229,10 @@ const SpecialityRoom = () => {
                             </div>
 
                             <div className='AnimeStarts'>
-                                <p className='pt-5 AnimeElement'> "The Music room is used as a place for
+                                <p className='pt-5 AnimeElement'> 'The Music room is used as a place for
                                     students to practice and play their preferred instruments. Students who
                                     choose to be part of the Music Club in Vikas mantra can join the music
-                                    club.".
+                                    club.'.
                                 </p>
                             </div>
 
@@ -242,7 +242,7 @@ const SpecialityRoom = () => {
 
                             <div className='imgBgColor2 pastelSkyBlue AnimeStarts'>
 
-                                <img src='/assets/campus/music-room.png' alt="image" className={styles.labImg1 + ' AnimeElement '
+                                <img src='/assets/campus/music-room.png' alt='image' className={styles.labImg1 + ' AnimeElement '
                                 } />
 
                             </div>
@@ -257,7 +257,7 @@ const SpecialityRoom = () => {
 
             <section className={'whitebg py-5 position-relative ' + styles.vectorImg10 + ' ' + styles.vectorImg12}>
 
-                <div className="container">
+                <div className='container'>
 
                     <div className=' row'>
 
@@ -280,7 +280,7 @@ const SpecialityRoom = () => {
 
                                 <ul className='list-points AnimeStarts'>
                                     <li className='AnimeElement'>
-                                        <img src="/assets/icons/blue-point.png" alt='list-point' />
+                                        <img src='/assets/icons/blue-point.png' alt='list-point' />
                                         Audio Video Lab
                                     </li>
                                 </ul>
@@ -292,7 +292,7 @@ const SpecialityRoom = () => {
                                 <ul className='list-points AnimeStarts'>
 
                                     <li className='AnimeElement'>
-                                        <img src="/assets/icons/pink-point.png" alt='list-point' />
+                                        <img src='/assets/icons/pink-point.png' alt='list-point' />
                                         Music and Dance studios
                                     </li>
 
@@ -305,7 +305,7 @@ const SpecialityRoom = () => {
                                 <ul className='list-points AnimeStarts'>
 
                                     <li className='AnimeElement'>
-                                        <img src="/assets/icons/yellow-point.png" alt='list-point' />
+                                        <img src='/assets/icons/yellow-point.png' alt='list-point' />
                                         Media Centre
                                     </li>
 
@@ -318,7 +318,7 @@ const SpecialityRoom = () => {
                                 <ul className='list-points AnimeStarts'>
 
                                     <li className='AnimeElement'>
-                                        <img src="/assets/icons/lightgreen-point.png" alt='list-point' />
+                                        <img src='/assets/icons/lightgreen-point.png' alt='list-point' />
                                         Multipurpose Hall
                                     </li>
 
