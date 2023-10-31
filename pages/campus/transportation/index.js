@@ -56,7 +56,7 @@ const Transportation = () => {
 
                             <div className='imgBgColor imgUp pastelBrown2 bgImageMargin AnimeStarts'>
 
-                                <img src='/assets/campus/school-bus.png' alt="image" className={styles.schlBusImg + ' AnimeElement'} />
+                                <img src='/assets/campus/transport-bus.png' alt="image" className={styles.schlBusImg + ' AnimeElement'} />
 
                             </div>
 
