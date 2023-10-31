@@ -229,10 +229,10 @@ const SpecialityRoom = () => {
                             </div>
 
                             <div className='AnimeStarts'>
-                                <p className='pt-5 AnimeElement'> 'The Music room is used as a place for
+                                <p className='pt-5 AnimeElement'> The Music room is used as a place for
                                     students to practice and play their preferred instruments. Students who
                                     choose to be part of the Music Club in Vikas mantra can join the music
-                                    club.'.
+                                    club.
                                 </p>
                             </div>
 
