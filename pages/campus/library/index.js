@@ -71,7 +71,7 @@ const Library = () => {
 
                             <div className='imgBgColor pastelPurple2 AnimeStarts '>
 
-                                <img src='/assets/campus/library.png' alt="image" className={styles.libraryImg + ' AnimeElement'} />
+                                <img src='/assets/campus/library.jpg' alt="image" className={styles.libraryImg + ' AnimeElement'} />
 
                             </div>
 

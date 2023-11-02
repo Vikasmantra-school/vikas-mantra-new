@@ -330,6 +330,22 @@ const Nav = () => {
                           </Link>
                         </li>
 
+                        <li>
+                          <Link href='/pdf/newsletter22-23-vol-1.pdf' legacyBehavior>
+                            <a className='dropdown-item' target="_blank">
+                              2022 - 2023 : Vol 1
+                            </a>
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link href='/pdf/newsletter22-23-vol-2.pdf' legacyBehavior>
+                            <a className='dropdown-item' target="_blank">
+                              2022 - 2023 : Vol 2
+                            </a>
+                          </Link>
+                        </li>
+
                       </ul>
 
                     </li>
