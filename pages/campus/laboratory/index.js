@@ -119,7 +119,7 @@ const Laboratory = () => {
 
                             <div className='imgBgColor2 pastelGold AnimeStarts'>
 
-                                <img src='/assets/campus/biology-lab.jpg' alt='image' className={styles.labImg3 + ' AnimeElement'
+                                <img src='/assets/campus/biology-lab.JPG' alt='image' className={styles.labImg3 + ' AnimeElement'
                                 } />
 
                             </div>

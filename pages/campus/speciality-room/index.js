@@ -178,7 +178,7 @@ const SpecialityRoom = () => {
 
                             <div className='imgBgColor2 pastelSkyBlue AnimeStarts'>
 
-                                <img src='/assets/campus/lab3.png' alt='image' className={styles.labImg1 + ' AnimeElement'} />
+                                <img src='/images/campaign/Speciality-room.webp' alt='image' className={styles.labImg1 + ' AnimeElement'} />
 
                             </div>
 
