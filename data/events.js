@@ -328,7 +328,6 @@ export const events = [
       '/assets/events/sports-day-kids/19.jpg',
     ]
   },
-
   {
     id: 'twenty-six',
     dropdown: 'KG convocation',
@@ -338,60 +337,6 @@ export const events = [
     gallery: [
       '/assets/events/kg-convocation/1.jpg',
       '/assets/events/kg-convocation/2.jpg', '/assets/events/kg-convocation/3.jpg', '/assets/events/kg-convocation/4.jpg'
-    ]
-  },
-
-  {
-    id: 'twenty-seven',
-    dropdown: "KG School's Got Talent",
-    title: "KG School's Got Talent",
-    desc: "KG School's Got Talent at vikas'",
-    mainImage: '/assets/events/kg-sgt-23/5.JPG',
-    gallery: [
-      '/assets/events/kg-sgt-23/1.JPG',
-      '/assets/events/kg-sgt-23/2.JPG',
-      '/assets/events/kg-sgt-23/3.JPG',
-      '/assets/events/kg-sgt-23/4.JPG',
-      '/assets/events/kg-sgt-23/5.JPG',
-      '/assets/events/kg-sgt-23/6.JPG',
-      '/assets/events/kg-sgt-23/7.JPG',
-      '/assets/events/kg-sgt-23/8.JPG',
-      '/assets/events/kg-sgt-23/9.JPG',
-      '/assets/events/kg-sgt-23/10.JPG',
-      '/assets/events/kg-sgt-23/11.JPG',
-      '/assets/events/kg-sgt-23/12.JPG',
-      '/assets/events/kg-sgt-23/13.JPG',
-      '/assets/events/kg-sgt-23/14.JPG',
-      '/assets/events/kg-sgt-23/15.JPG',
-      '/assets/events/kg-sgt-23/16.JPG',
-      '/assets/events/kg-sgt-23/17.JPG',
-      '/assets/events/kg-sgt-23/18.JPG',
-      '/assets/events/kg-sgt-23/19.JPG',
-      '/assets/events/kg-sgt-23/20.JPG',
-      '/assets/events/kg-sgt-23/21.JPG',
-      '/assets/events/kg-sgt-23/22.JPG',
-      '/assets/events/kg-sgt-23/23.JPG',
-      '/assets/events/kg-sgt-23/24.JPG',
-      '/assets/events/kg-sgt-23/25.JPG',
-      '/assets/events/kg-sgt-23/26.JPG',
-      '/assets/events/kg-sgt-23/27.JPG',
-      '/assets/events/kg-sgt-23/28.JPG',
-      '/assets/events/kg-sgt-23/29.JPG',
-      '/assets/events/kg-sgt-23/30.JPG',
-      '/assets/events/kg-sgt-23/31.JPG',
-      '/assets/events/kg-sgt-23/32.JPG',
-      '/assets/events/kg-sgt-23/33.JPG',
-      '/assets/events/kg-sgt-23/34.JPG',
-      '/assets/events/kg-sgt-23/35.JPG',
-      '/assets/events/kg-sgt-23/36.JPG',
-      '/assets/events/kg-sgt-23/37.JPG',
-      '/assets/events/kg-sgt-23/38.JPG',
-      '/assets/events/kg-sgt-23/39.JPG',
-      '/assets/events/kg-sgt-23/40.JPG',
-      '/assets/events/kg-sgt-23/41.JPG',
-      '/assets/events/kg-sgt-23/42.JPG',
-      '/assets/events/kg-sgt-23/43.JPG',
-      '/assets/events/kg-sgt-23/44.JPG',
     ]
   },
 
@@ -444,7 +389,6 @@ export const events = [
       '/assets/events/sgt-2023/40.JPG',
     ]
   },
-
   {
     id: 'twenty-nine',
     dropdown: 'Diwali Celebration',
@@ -480,7 +424,6 @@ export const events = [
       '/assets/events/diwali/26.JPG',
     ]
   },
-
   {
     id: 'thirty',
     dropdown: 'Library Week 2023',
@@ -517,7 +460,6 @@ export const events = [
       '/assets/events/library-23/27.JPG',
     ]
   },
-
   {
     id: 'thirty-one',
     dropdown: 'Sports Day 2023',
