@@ -702,7 +702,7 @@ export default function eventsData(req, res) {
       id: 'thirty-one',
       dropdown: "KG School's Got Talent",
       title: "KG School's Got Talent",
-      desc: "KG School's Got Talent at vikas'",
+      desc: "Tiny stars illuminated the stage with their sparkling talents at KG School's Got Talent, a delightful showcase of our little performers.",
       mainImage: '/assets/events/kg-sgt-23/5.JPG',
       gallery: [
         '/assets/events/kg-sgt-23/1.JPG',
@@ -756,7 +756,7 @@ export default function eventsData(req, res) {
       id: 'thirty-two',
       dropdown: "School's Got Talent 2023",
       title: "School's Got Talent 2023",
-      desc: "School's Got Talent 2023 at vikas",
+      desc: "A spectacular display of creativity and flair, School's Got Talent 2023 brought forth the extraordinary skills of our students, making hearts applaud with pride.",
       mainImage: '/assets/events/sgt-2023/2.JPG',
       gallery: [
         '/assets/events/sgt-2023/1.JPG',
@@ -806,7 +806,7 @@ export default function eventsData(req, res) {
       id: 'thirty-three',
       dropdown: 'Diwali Celebration',
       title: 'Diwali Celebration',
-      desc: 'Diwali Celebration at vikas',
+      desc: 'The festival of lights came alive at Vikas Mantra Public School, where students radiated joy and warmth in a vibrant Diwali celebration, spreading happiness throughout the school.',
       mainImage: '/assets/events/diwali/5.JPG',
       gallery: [
         '/assets/events/diwali/1.JPG',
@@ -841,7 +841,7 @@ export default function eventsData(req, res) {
       id: 'thirty-four',
       dropdown: 'Library Week 2023',
       title: 'Library Week 2023',
-      desc: 'Library Week 2023 at vikas',
+      desc: 'Pages came to life during Library Week 2023, as students immersed themselves in the world of books, discovering the magic and knowledge hidden within the shelves.',
       mainImage: '/assets/events/library-23/5.JPG',
       gallery: [
         '/assets/events/library-23/1.JPG',
@@ -877,7 +877,7 @@ export default function eventsData(req, res) {
       id: 'thirty-five',
       dropdown: 'Sports Day 2023',
       title: 'Sports Day 2023',
-      desc: 'Sports Day 2023 at vikas',
+      desc: 'In the spirit of camaraderie and athleticism, Sports Day 2023 saw our students sprinting, jumping, and cheering, creating memories of teamwork and healthy competition.',
       mainImage: '/assets/events/sports/5.jpg',
       gallery: [
         '/assets/events/sports/1.jpg',
