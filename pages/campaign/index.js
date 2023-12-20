@@ -47,18 +47,14 @@ const Campaign = () => {
             .catch(err => console.log(err))
     }
 
-
-
-
-
     return (
         <>
             <main className='campaignPage'>
                 <Navbar />
 
                 <section className={style.campaignSection}>
-                    <img src="./images/banner/desktop-banner.png" className={"img-fluid " + ' ' + style.WebBannerImg} alt='banner-image' />
-                    <img src="./images/banner/mobile-banner.png" className={"img-fluid " + ' ' + style.MobBannerImg} alt='banner-image' />
+                    <img src="./images/banner/desktop-banner-new.png" className={"img-fluid " + ' ' + style.WebBannerImg} alt='banner-image' />
+                    <img src="./images/banner/mobile-banner-new.png" className={"img-fluid " + ' ' + style.MobBannerImg} alt='banner-image' />
                 </section>
 
 
@@ -91,6 +87,7 @@ const Campaign = () => {
                                                 <span className="material-symbols-rounded">mail</span>
                                                 <input className={style.formInputField + ' ' + style.inputEmail} type="text" name="Email" placeholder="Email id" required onChange={(e) => { setEmail(e.target.value) }} value={mail} />
                                             </li>
+
                                             <li className={style.formLi}>
                                                 <span className="material-symbols-rounded">phone_iphone</span>
                                                 <input className={style.formInputField + ' ' + style.inputPhone} type="text" name="Phone" placeholder="Phone" required onChange={(e) => { setNumber(e.target.value) }} value={number} />
