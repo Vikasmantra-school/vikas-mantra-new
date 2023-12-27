@@ -426,7 +426,7 @@ const Admissions = () => {
                     <p className=' pt-3 AdmissionScrollAnimeElement'>
                       Please note that Admissions for the new academic year
                       2024-25 at VIKAS MANTRA PUBLIC SCHOOL will commence from
-                      23rd November 2022 and the admissions will for this
+                      21st December 2023 and the admissions will for this
                       academic year will be closed on 30th June 2024.
                     </p>
                   </div>
