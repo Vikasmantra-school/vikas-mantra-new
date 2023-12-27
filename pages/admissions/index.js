@@ -535,8 +535,7 @@ const Admissions = () => {
                           <p className='card-header-text3 AdmissionScrollAnimeElement'>
                             Visit the school , meet our admissions officer. Take
                             a tour of the school. Obtain the Admissions Kit from
-                            the Admissions Office for Rs.600, payable by cash or
-                            card.
+                            the Admissions Office.
                           </p>
                         </div>
                       </div>
