@@ -53,8 +53,8 @@ const Campaign = () => {
                 <Navbar />
 
                 <section className={style.campaignSection}>
-                    <img src="./images/banner/desktop-banner-new.png" className={"img-fluid " + ' ' + style.WebBannerImg} alt='banner-image' />
-                    <img src="./images/banner/mobile-banner-new.png" className={"img-fluid " + ' ' + style.MobBannerImg} alt='banner-image' />
+                    <img src="./images/banner/desktop-banner.png" className={"img-fluid " + ' ' + style.WebBannerImg} alt='banner-image' />
+                    <img src="./images/banner/mobile-banner.png" className={"img-fluid " + ' ' + style.MobBannerImg} alt='banner-image' />
                 </section>
 
 

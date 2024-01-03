@@ -484,7 +484,7 @@ const Admissions = () => {
                             className=''
                           />
                           Kindergarten – To be eligible for admission, the child
-                          must fall into the following age category as
+                          must fall into 3 years age category as
                           prescribed and suggested by the central board of
                           secondary education.
                         </li>
@@ -493,23 +493,23 @@ const Admissions = () => {
                             src='/assets/icons/pink-point.png'
                             alt='list-point'
                           />
-                          For Junior KG the child must have completed 3. 5 years
-                          as on May.
+                          For Junior KG the child must have completed 4 years
+                          as on 30th May.
                         </li>
                         <li className='pt-1 AdmissionScrollAnimeElement'>
                           <img
                             src='/assets/icons/pink-point.png'
                             alt='list-point'
                           />
-                          For Senior KG the child must have completed 4.5 years
-                          as on May.
+                          For Senior KG the child must have completed 5 years
+                          as on 30th May.
                         </li>
                         <li className='pt-1 AdmissionScrollAnimeElement'>
                           <img
                             src='/assets/icons/pink-point.png'
                             alt='list-point'
                           />
-                           For 1st Grade the child must have completed 6 years as on May.
+                           For 1st Grade the child must have completed 7 years as on 30th May.
                         </li>
                       </ul>
                     </div>
@@ -626,8 +626,8 @@ const Admissions = () => {
                           Admission Results
                         </h1>
                         <p className='card-header-text3 AdmissionScrollAnimeElement'>
-                          Admissions results emailed within 5 working days.
-                          After which parents can pay the fees within 7 days to
+                          Admissions results emailed within 3 working days.
+                          After which parents can pay the fees within 5 days to
                           confirm the slot.
                         </p>
                       </div>
