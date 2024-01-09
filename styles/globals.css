@@ -406,6 +406,10 @@ p {
   position: relative;
 }
 
+.VideoContainerMbl{
+  display: none;
+}
+
 .PlayIconContainer {
   position: absolute;
   top: 50%;
@@ -434,10 +438,6 @@ p {
 .playIconControls {
   opacity: 0;
 }
-
-
-
-
 
 /*svg-section-ends*/
 
@@ -1799,6 +1799,14 @@ tr {
 }
 
 @media only screen and (max-width: 660px) {
+
+  .VideoContainerMbl{
+    display: block;
+  }
+
+  .VideoContainer{
+    display: none;
+  }
 
   .PlayIconContainer {
     display: none !important;
