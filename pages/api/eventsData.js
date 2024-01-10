@@ -912,5 +912,34 @@ export default function eventsData(req, res) {
         '/assets/events/sports/30.jpg',
       ]
     },
+    {
+      id: 'thirty-six',
+      dropdown: 'VMPS Christmas 2023',
+      title: 'VMPS Christmas 2023',
+      desc: 'Memorable and joyous Christmas celebration at Vikas Mantra campus, where students and teachers came together, creating wonderful year-end memories.',
+      mainImage: '/assets/events/christmas-2023/xmas-5.JPG',
+      gallery: [
+        '/assets/events/christmas-2023/xmas-1.JPG',
+        '/assets/events/christmas-2023/xmas-2.JPG',
+        '/assets/events/christmas-2023/xmas-3.JPG',
+        '/assets/events/christmas-2023/xmas-4.JPG',
+        '/assets/events/christmas-2023/xmas-5.JPG',
+        '/assets/events/christmas-2023/xmas-6.JPG',
+        '/assets/events/christmas-2023/xmas-7.JPG',
+        '/assets/events/christmas-2023/xmas-8.JPG',
+        '/assets/events/christmas-2023/xmas-9.JPG',
+        '/assets/events/christmas-2023/xmas-10.JPG',
+        '/assets/events/christmas-2023/xmas-11.JPG',
+        '/assets/events/christmas-2023/xmas-12.JPG',
+        '/assets/events/christmas-2023/xmas-13.JPG',
+        '/assets/events/christmas-2023/xmas-14.JPG',
+        '/assets/events/christmas-2023/xmas-15.JPG',
+        '/assets/events/christmas-2023/xmas-16.JPG',
+        '/assets/events/christmas-2023/xmas-17.JPG',
+        '/assets/events/christmas-2023/xmas-18.JPG',
+        '/assets/events/christmas-2023/xmas-19.JPG',
+        '/assets/events/christmas-2023/xmas-20.JPG',
+      ]
+    },
   ]);
 }
