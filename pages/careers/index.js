@@ -137,7 +137,7 @@ function Career() {
                   <tbody className='AnimeStarts'>
                     <tr>
                       <th className='AnimeElement fw-bold'>POSITION</th>
-                      <th className='AnimeElement fw-bold'>REQUIREMENTS</th>
+                      {/* <th className='AnimeElement fw-bold'>REQUIREMENTS</th> */}
                       <style jsx>
                         {`
                         th {
@@ -149,9 +149,24 @@ function Career() {
                     </tr>
 
                     <tr>
-                      <td className='AnimeElement'>TGT mathematics/coordinator</td>
-                      <td className='AnimeElement'>PG B.ed with 3-5years Experience</td>
+                      <td className='AnimeElement'>
+                        WE ARE HIRING NTT/PRT/TGT/PGT in
+                        the Subjects</td>
+                      {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
                     </tr>
+
+                    <tr><td>HINDI</td></tr>
+                    <tr><td>SOCIAL SCIENCE</td></tr>
+                    <tr><td>ENGLISH</td></tr>
+                    <tr><td>MATHEMATICS</td></tr>
+                    <tr><td>TAMIL</td></tr>
+                    <tr><td>PHYSICS</td></tr>
+                    <tr><td>CHEMISTRY</td></tr>
+                    <tr><td>BIOLOGY</td></tr>
+                    <tr><td>COMPUTER SCIENCE</td></tr>
+                    <tr><td>KINDERGARTEN</td></tr>
+                    <tr><td>ACTIVITY TEACHER</td></tr>
+                    <tr><td>STUDENT COUNSELLOR</td></tr>
 
 
                   </tbody>
@@ -164,8 +179,7 @@ function Career() {
                 </p>
 
                 <p className='AnimeElement'>
-                  Apply with your resume to hr@vikasmantra.org with a passport
-                  size photo.
+                Apply with your resume and a passport size photo through our website or Email hr@vikasmantra.org.
                 </p>
 
                 <p className='AnimeElement'>
