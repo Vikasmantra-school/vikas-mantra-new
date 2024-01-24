@@ -943,9 +943,9 @@ export default function eventsData(req, res) {
     },
     {
       id: 'thirty-seven',
-      dropdown: 'VMPS Christmas 2023',
-      title: 'VMPS Christmas 2023',
-      desc: 'Memorable and joyous Christmas celebration at Vikas Mantra campus, where students and teachers came together, creating wonderful year-end memories.',
+      dropdown: 'VMPS 2024 Pongal Celebration Highlights',
+      title: 'VMPS 2024 Pongal Celebration Highlights',
+      desc: 'Vikas Mantra Public School came together to celebrate Pongal with vibrant traditions and festive unity!',
       mainImage: '/assets/events/christmas-2023/xmas-5.JPG',
       gallery: [
         '/assets/events/pongal-24/1.JPG',
