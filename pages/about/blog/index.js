@@ -159,7 +159,7 @@ const Blog = () => {
 
                             <div className={' pastelBlue4 imgBgColorBlog2 AnimeStarts ' + styles.order1}>
 
-                                <img src='/assets/blogs/blog-4.png' alt="image" className={styles.Blog2Img + ' AnimeElement'} />
+                                <img src='/assets/blogs/blog-6.png' alt="image" className={styles.Blog2Img + ' AnimeElement'} />
 
                             </div>
 
@@ -233,7 +233,7 @@ const Blog = () => {
 
                             <div className={' pastelBlue4 imgBgColorBlog2 AnimeStarts ' + styles.order1}>
 
-                                <img src='/assets/blogs/blog-6.png' alt="image" className={styles.Blog2Img + ' AnimeElement'} />
+                                <img src='/assets/blogs/blog-4.png' alt="image" className={styles.Blog2Img + ' AnimeElement'} />
 
                             </div>
 
