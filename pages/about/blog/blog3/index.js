@@ -18,7 +18,7 @@ const Blog3 = () => {
 
                         <div className='col-lg-6 col-md-10 AnimeStarts'>
 
-                            <h2 className='AnimeElement'>Experience Excellence at Vikas Mantra Public School: Your Child's Educational Journey</h2>
+                            <h2 className='AnimeElement'>Experience Excellence at Vikas Mantra Public School: Your Child&apos;s Educational Journey</h2>
 
                         </div>
 
@@ -123,14 +123,14 @@ const Blog3 = () => {
 
                                 <h4 className='AnimeElement'>Library: The Gateway to Knowledge </h4>
 
-                                <p className='AnimeElement'>Our library is more than just a room filled with books; it's a treasure trove of knowledge. With an extensive collection of books, reference materials, and digital resources, our library is a space where students can explore, learn, and expand their horizons. 
+                                <p className='AnimeElement'>Our library is more than just a room filled with books; it&apos;s a treasure trove of knowledge. With an extensive collection of books, reference materials, and digital resources, our library is a space where students can explore, learn, and expand their horizons. 
                                 </p>
 
                             </div>
 
                             <div className='AnimeStarts'>
 
-                                <h4 className='AnimeElement'>Technology: Preparing for the Digital Age In today's digital world, technological literacy is crucial. </h4>
+                                <h4 className='AnimeElement'>Technology: Preparing for the Digital Age In today&apos;s digital world, technological literacy is crucial. </h4>
 
                                 <p className='AnimeElement'>VMPS embraces this reality by integrating technology into the learning process. Our classrooms are equipped with modern teaching aids, and our computer labs allow students to develop essential tech skills.  
                                 </p>
@@ -163,7 +163,7 @@ const Blog3 = () => {
                                 </p>
 
                                 <p className='AnimeElement'>
-                                Choosing the right school for your child is a pivotal decision. Vikas Mantra Public School is committed to providing a holistic education that fosters excellence, character, and a lifelong love for learning. We invite you to explore our offerings and discover why we are the ideal choice for your child's educational journey.
+                                Choosing the right school for your child is a pivotal decision. Vikas Mantra Public School is committed to providing a holistic education that fosters excellence, character, and a lifelong love for learning. We invite you to explore our offerings and discover why we are the ideal choice for your child&apos;s educational journey.
                                 </p>
 
                             </div>

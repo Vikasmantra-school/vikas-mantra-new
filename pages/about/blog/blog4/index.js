@@ -39,7 +39,7 @@ const Blog4 = () => {
                             <div className='AnimeStarts'>
                                 
 
-                                <p className='AnimeElement'>In a world driven by achievement, competition is a constant companion in both personal and professional spheres. Whether you're striving for academic excellence, aiming to outperform competitors in business, or pursuing your passions, understanding the dynamics of competition and cultivating the right mindset are essential. This blog delves into competition tips and crucial factors to keep in mind for success in any competitive arena.
+                                <p className='AnimeElement'>In a world driven by achievement, competition is a constant companion in both personal and professional spheres. Whether you&apos;re striving for academic excellence, aiming to outperform competitors in business, or pursuing your passions, understanding the dynamics of competition and cultivating the right mindset are essential. This blog delves into competition tips and crucial factors to keep in mind for success in any competitive arena.
                                 </p>
 
                             </div>
@@ -75,7 +75,7 @@ const Blog4 = () => {
 
                                 <h4 className='AnimeElement'>Define Your Goals:</h4>
 
-                                <p className='AnimeElement'>Before entering any competition, it's vital to clarify your objectives. What are you aiming to achieve? Having clear, well-defined goals helps direct your efforts and gives you a sense of purpose.</p>
+                                <p className='AnimeElement'>Before entering any competition, it&apos;s vital to clarify your objectives. What are you aiming to achieve? Having clear, well-defined goals helps direct your efforts and gives you a sense of purpose.</p>
 
                             </div>
 
@@ -83,7 +83,7 @@ const Blog4 = () => {
 
                                 <h4 className='AnimeElement'>Know Your Competitors:</h4>
 
-                                <p className='AnimeElement'>Understanding your competition is a fundamental step. Research and analyze who you're up against. Recognize their strengths and weaknesses to strategize effectively.
+                                <p className='AnimeElement'>Understanding your competition is a fundamental step. Research and analyze who you&apos;re up against. Recognize their strengths and weaknesses to strategize effectively.
                                 </p>
 
                             </div>
@@ -92,7 +92,7 @@ const Blog4 = () => {
 
                                 <h4 className='AnimeElement'>Continuous Improvement:</h4>
 
-                                <p className='AnimeElement'>Competing is not just about winning; it's about growth. Always look for ways to improve and refine your skills, knowledge, and strategies. 
+                                <p className='AnimeElement'>Competing is not just about winning; it&apos;s about growth. Always look for ways to improve and refine your skills, knowledge, and strategies. 
                                 </p>
 
                             </div>
@@ -101,7 +101,7 @@ const Blog4 = () => {
 
                                 <h4 className='AnimeElement'>Embrace Failure as a Stepping Stone:</h4>
 
-                                <p className='AnimeElement'>Failure is an inherent part of competition. Don't fear it. Instead, view failures as opportunities to learn and grow. Each setback is a stepping stone toward success.
+                                <p className='AnimeElement'>Failure is an inherent part of competition. Don&apos;t fear it. Instead, view failures as opportunities to learn and grow. Each setback is a stepping stone toward success.
                                 </p>
 
                             </div>
@@ -200,7 +200,7 @@ const Blog4 = () => {
 
                                 <h4 className='AnimeElement'> Celebrate Achievements: </h4>
 
-                                <p className='AnimeElement'>Don't forget to celebrate your achievements, whether big or small. Recognizing your successes can boost motivation and satisfaction.
+                                <p className='AnimeElement'>Don&apos;t forget to celebrate your achievements, whether big or small. Recognizing your successes can boost motivation and satisfaction.
                                 </p>
 
                             </div>
@@ -209,11 +209,11 @@ const Blog4 = () => {
 
                                 <h4 className='AnimeElement'> Persevere with Patience:</h4>
 
-                                <p className='AnimeElement'>Patience is vital in competition. Understand that success often takes time and perseverance. Keep moving forward, even when results aren't immediate.
+                                <p className='AnimeElement'>Patience is vital in competition. Understand that success often takes time and perseverance. Keep moving forward, even when results aren&apos;t immediate.
                                 </p>
 
                                 <p>
-                                    In conclusion, mastering competition is a multi-faceted journey that requires a combination of strategic thinking, a growth mindset, and a strong work ethic. By following these tips and keeping these essential factors in mind, you'll be well-equipped to navigate the competitive landscape in a balanced and successful manner.
+                                    In conclusion, mastering competition is a multi-faceted journey that requires a combination of strategic thinking, a growth mindset, and a strong work ethic. By following these tips and keeping these essential factors in mind, you&apos;ll be well-equipped to navigate the competitive landscape in a balanced and successful manner.
                                 </p>
 
                             </div>

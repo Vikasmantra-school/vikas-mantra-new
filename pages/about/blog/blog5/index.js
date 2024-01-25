@@ -18,7 +18,7 @@ const Blog5 = () => {
 
                         <div className='col-lg-6 col-md-10 AnimeStarts'>
 
-                            <h2 className='AnimeElement'>Vikas Mantra Public School's Dedication to Supporting Emotional Health</h2>
+                            <h2 className='AnimeElement'>Vikas Mantra Public School&apos;s Dedication to Supporting Emotional Health</h2>
 
                         </div>
 
@@ -39,7 +39,7 @@ const Blog5 = () => {
                             <div className='AnimeStarts'>
                                 
 
-                                <p className='AnimeElement'>In the picturesque enclave of Mahindra World City, Vikas Mantra Public School stands as an educational sanctuary committed not only to academic excellence but, more importantly to the holistic development of each student's emotional well-being. In the bustling world of education, where the emphasis often leans towards grades and achievements, Vikas Mantra distinguishes itself by recognizing that emotional health is the cornerstone of a thriving and resilient individual.
+                                <p className='AnimeElement'>In the picturesque enclave of Mahindra World City, Vikas Mantra Public School stands as an educational sanctuary committed not only to academic excellence but, more importantly to the holistic development of each student&apos;s emotional well-being. In the bustling world of education, where the emphasis often leans towards grades and achievements, Vikas Mantra distinguishes itself by recognizing that emotional health is the cornerstone of a thriving and resilient individual.
                                 </p>
 
                             </div>
@@ -75,7 +75,7 @@ const Blog5 = () => {
 
                                 <h4 className='AnimeElement'>Creating a Supportive Environment:</h4>
 
-                                <p className='AnimeElement'>Beyond the structured classrooms and academic pursuits, Vikas Mantra prides itself on cultivating an environment that acts as a second home for students. Our educators aren't just disseminators of knowledge but mentors who actively promote open communication and the creation of a supportive community within the school. It's within this atmosphere that students feel encouraged to express their emotions, fostering a sense of belonging and security.</p>
+                                <p className='AnimeElement'>Beyond the structured classrooms and academic pursuits, Vikas Mantra prides itself on cultivating an environment that acts as a second home for students. Our educators aren&apos;t just disseminators of knowledge but mentors who actively promote open communication and the creation of a supportive community within the school. It&apos;s within this atmosphere that students feel encouraged to express their emotions, fostering a sense of belonging and security.</p>
 
                             </div>
 
@@ -119,7 +119,7 @@ const Blog5 = () => {
 
                                 <h4 className='AnimeElement'>Conclusion</h4>
 
-                                <p className='AnimeElement'>In a world where the pursuit of academic excellence often overshadows the importance of emotional health, Vikas Mantra Public School stands as a beacon of holistic education. With a commitment to nurturing hearts and minds, we empower our students with the resilience and emotional intelligence needed to confront life's challenges successfully. Join us on this transformative journey at Vikas Mantra Public School, Mahindra World City – where the well-being of every child is not just a priority but a fundamental aspect of education.
+                                <p className='AnimeElement'>In a world where the pursuit of academic excellence often overshadows the importance of emotional health, Vikas Mantra Public School stands as a beacon of holistic education. With a commitment to nurturing hearts and minds, we empower our students with the resilience and emotional intelligence needed to confront life&apos;s challenges successfully. Join us on this transformative journey at Vikas Mantra Public School, Mahindra World City – where the well-being of every child is not just a priority but a fundamental aspect of education.
                                 </p>
 
                             </div>

@@ -116,13 +116,13 @@ const Blog = () => {
                         <div className={'col-lg-6 col-md-12 ' + styles.colPdng1 + ' ' + styles.order2}>
 
                             <div className='AnimeStarts'>
-                                <h3 className='ulineRed AnimeElement'>Experience Excellence at Vikas Mantra Public School: Your Child's Educational Journey</h3>
+                                <h3 className='ulineRed AnimeElement'>Experience Excellence at Vikas Mantra Public School: Your Child&apos;s Educational Journey</h3>
                             </div>
 
                             <div className='AnimeStarts'>
                                 <p className='pt-5 AnimeElement'>Teaching our children the value of making eco-friendly
                                     decisions in their everyday lives can be difficult in
-                                    a culture that promotes mass consumption. But it’s more
+                                    a culture that promotes mass consumption. But it&apos;s more
                                     important than ever today to bring up ecologically
                                     conscious kids. Here we bring to you a few yet effective
                                     eco-friendly practices you can start …</p>
@@ -172,7 +172,7 @@ const Blog = () => {
                             </div>
 
                             <div className={'AnimeStarts ' + styles.order2}>
-                                <p className='pt-5 AnimeElement'>In a world driven by achievement, competition is a constant companion in both personal and professional spheres. Whether you're striving for academic excellence, aiming to outperform competitors in business, or pursuing your passions, understanding the dynamics of competition and cultivating the right mindset are essential. This blog delves into competition tips and crucial factors to keep in mind for success in any competitive arena.</p>
+                                <p className='pt-5 AnimeElement'>In a world driven by achievement, competition is a constant companion in both personal and professional spheres. Whether you&apos;re striving for academic excellence, aiming to outperform competitors in business, or pursuing your passions, understanding the dynamics of competition and cultivating the right mindset are essential. This blog delves into competition tips and crucial factors to keep in mind for success in any competitive arena.</p>
 
                                 <Link href='/about/blog/blog4'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
                             </div>
@@ -195,11 +195,11 @@ const Blog = () => {
                         <div className={'col-lg-6 col-md-12 ' + styles.colPdng1 + ' ' + styles.order2}>
 
                             <div className='AnimeStarts'>
-                                <h3 className='ulineRed AnimeElement'>Vikas Mantra Public School's Dedication to Supporting Emotional Health</h3>
+                                <h3 className='ulineRed AnimeElement'>Vikas Mantra Public School&apos;s Dedication to Supporting Emotional Health</h3>
                             </div>
 
                             <div className='AnimeStarts'>
-                                <p className='pt-5 AnimeElement'>In the picturesque enclave of Mahindra World City, Vikas Mantra Public School stands as an educational sanctuary committed not only to academic excellence but, more importantly to the holistic development of each student's emotional well-being. In the bustling world of education, where the emphasis often leans towards grades and achievements, Vikas Mantra distinguishes itself by recognizing that emotional health is the cornerstone of a thriving and resilient individual.</p>
+                                <p className='pt-5 AnimeElement'>In the picturesque enclave of Mahindra World City, Vikas Mantra Public School stands as an educational sanctuary committed not only to academic excellence but, more importantly to the holistic development of each student&apos;s emotional well-being. In the bustling world of education, where the emphasis often leans towards grades and achievements, Vikas Mantra distinguishes itself by recognizing that emotional health is the cornerstone of a thriving and resilient individual.</p>
 
                                 <Link href='/about/blog/blog5'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
                             </div>

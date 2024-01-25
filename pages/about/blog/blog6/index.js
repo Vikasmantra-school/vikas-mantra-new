@@ -83,7 +83,7 @@ const Blog5 = () => {
 
                                 <h4 className='AnimeElement'>Building a Sense of Belonging:</h4>
 
-                                <p className='AnimeElement'>In the hustle and bustle of academic life, celebrations offer moments of unity and belonging. Whether it's through festive decorations, collaborative performances, or shared meals, students and staff come together to create a sense of community. These shared experiences contribute to a positive school culture where everyone feels valued and connected.
+                                <p className='AnimeElement'>In the hustle and bustle of academic life, celebrations offer moments of unity and belonging. Whether it&apos;s through festive decorations, collaborative performances, or shared meals, students and staff come together to create a sense of community. These shared experiences contribute to a positive school culture where everyone feels valued and connected.
                                 </p>
 
                             </div>
@@ -118,7 +118,7 @@ const Blog5 = () => {
                                 </p>
 
                                 <p className='AnimeElement'>
-                                Here's to the many more celebrations that await, enriching our school community and creating memories that last a lifetime.s
+                                Here&apos;s to the many more celebrations that await, enriching our school community and creating memories that last a lifetime.s
                                 </p>
 
                             </div>
@@ -127,7 +127,7 @@ const Blog5 = () => {
 
                                 <h4 className='AnimeElement'>Conclusion</h4>
 
-                                <p className='AnimeElement'>In a world where the pursuit of academic excellence often overshadows the importance of emotional health, Vikas Mantra Public School stands as a beacon of holistic education. With a commitment to nurturing hearts and minds, we empower our students with the resilience and emotional intelligence needed to confront life's challenges successfully. Join us on this transformative journey at Vikas Mantra Public School, Mahindra World City – where the well-being of every child is not just a priority but a fundamental aspect of education.
+                                <p className='AnimeElement'>In a world where the pursuit of academic excellence often overshadows the importance of emotional health, Vikas Mantra Public School stands as a beacon of holistic education. With a commitment to nurturing hearts and minds, we empower our students with the resilience and emotional intelligence needed to confront life&apos;s challenges successfully. Join us on this transformative journey at Vikas Mantra Public School, Mahindra World City – where the well-being of every child is not just a priority but a fundamental aspect of education.
                                 </p>
 
                             </div>
