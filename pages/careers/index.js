@@ -13,7 +13,7 @@ function Career() {
   //form-data-clear-after-submit
 
   const getInitialState = () => {
-    const value = " TGT MATHEMATICS/COORDINATOR";
+    const value = "HINDI";
     return value;
   };
 
@@ -167,6 +167,9 @@ function Career() {
                     <tr><td>KINDERGARTEN</td></tr>
                     <tr><td>ACTIVITY TEACHER</td></tr>
                     <tr><td>STUDENT COUNSELLOR</td></tr>
+                    <tr>
+                      <td>ACCOUNTANT <span className={styles.add_color}>(Preferring experienced Accountant with Tally *)</span></td>
+                    </tr>
 
 
                   </tbody>
@@ -179,7 +182,7 @@ function Career() {
                 </p>
 
                 <p className='AnimeElement'>
-                Apply with your resume and a passport size photo through our website or Email hr@vikasmantra.org.
+                  Apply with your resume and a passport size photo through our website or Email hr@vikasmantra.org
                 </p>
 
                 <p className='AnimeElement'>
@@ -279,7 +282,19 @@ function Career() {
                           <label className='AnimeElement'>Job Opening</label>
 
                           <Form.Select aria-label="Default select example" name="Job Opening" value={jobOpening} onChange={event => setJobOpening(event.target.value)} className={styles.formText + ' AnimeElement form-select '}>
-                            <option value='TGT MATHEMATICS/COORDINATOR'> TGT mathematics/coordinator</option>
+                            <option value='HINDI'> HINDI </option>
+                            <option value='SOCIAL SCIENCE'>SOCIAL SCIENCE</option>
+                            <option value='ENGLIH'> ENGLIH</option>
+                            <option value='MATHEMATICS'>MATHEMATICS </option>
+                            <option value='TAMIL'>TAMIL </option>
+                            <option value='PHYICS'> PHYICS</option>
+                            <option value='CHEMISTRY'>CHEMISTRY </option>
+                            <option value='BIOLOGY'>BIOLOGY</option>
+                            <option value='COMPUTER SCIENCE'>COMPUTER SCIENCE</option>
+                            <option value='KINGERGARDEN'>KINGERGARDEN</option>
+                            <option value='ACTIVITY TEACHER'>ACTIVITY TEACHER</option>
+                            <option value='STUDENT COUNSELLOR'>STUDENT COUNSELLOR</option>
+                            <option value='ACCOUNTANT'>ACCOUNTANT </option>
                           </Form.Select>
 
                         </div>
