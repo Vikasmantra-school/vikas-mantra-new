@@ -967,5 +967,23 @@ export default function eventsData(req, res) {
         '/assets/events/pongal-24/17.JPG',
       ]
     },
+    {
+      id: 'thirty-eight',
+      dropdown: 'VMPS 2024 Annual Day Celebration',
+      title: 'Vikas Mantra Public School Annual Day Celebration 2024',
+      desc: 'Join us in celebrating a year of achievements, talents and memories at our Annual Day Celebration!',
+      mainImage: '/assets/events/christmas-2023/xmas-5.JPG',
+      gallery: [
+        '/assets/events/annual-day-2024/1.JPG',
+        '/assets/events/annual-day-2024/2.JPG',
+        '/assets/events/annual-day-2024/3.JPG',
+        '/assets/events/annual-day-2024/4.JPG',
+        '/assets/events/annual-day-2024/5.JPG',
+        '/assets/events/annual-day-2024/6.JPG',
+        '/assets/events/annual-day-2024/7.JPG',
+        '/assets/events/annual-day-2024/8.JPG',
+        '/assets/events/annual-day-2024/9.JPG',
+      ]
+    },
   ]);
 }
