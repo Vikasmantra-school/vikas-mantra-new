@@ -353,7 +353,8 @@ const Blog = () => {
                             </div>
 
                         </div>
-
+ 
+ 
                         <div className={'col-lg-6 col-md-12 position-relative ' + styles.order1}>
 
                             <div className={'imgBgColorBlog1 pastelGreen4 AnimeStarts'}>
