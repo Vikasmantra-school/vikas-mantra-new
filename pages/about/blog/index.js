@@ -40,7 +40,7 @@ const Blog = () => {
                             <div className='AnimeStarts'>
                                 <p className='pt-5 AnimeElement'>Teaching our children the value of making eco-friendly
                                     decisions in their everyday lives can be difficult in
-                                    a culture that promotes mass consumption. But it’s more
+                                    a culture that promotes mass consumption. But it&apos;s more
                                     important than ever today to bring up ecologically
                                     conscious kids. Here we bring to you a few yet effective
                                     eco-friendly practices you can start …</p>
@@ -269,11 +269,11 @@ const Blog = () => {
                         <div className={'col-lg-6 col-md-12 ' + styles.colPdng1 + ' ' + styles.order2}>
 
                             <div className='AnimeStarts'>
-                                <h3 className='ulineRed AnimeElement'>DISCOVER YOUR CHILD’S PRIMARY LEARNING STYLE</h3>
+                                <h3 className='ulineRed AnimeElement'>DISCOVER YOUR CHILD&apos;S PRIMARY LEARNING STYLE</h3>
                             </div>
 
                             <div className='AnimeStarts'>
-                                <p className='pt-5 AnimeElement'>According to research, every child is born with the ability to learn. But in the majority of cases, kids (and even adults) have a particular, individual learning style that changes throughout the course of their lives. A youngster can continue to learn in many different ways, but he or she will often favor one learning method over the others. . For instance, whereas you might be able to spell a word just by seeing it, your child might not be able to recall the spelling of some words unless he or she first writes them down word by word to spell them. </p>
+                                <p className='pt-5 AnimeElement'>According to research, every child is born with the ability to learn. But in the majority of cases, kids (and even adults) have a particular, individual learning style that changes throughout the course of their lives. A youngster can continue to learn in many different ways, but he or she will often favor one learning method over the others. For instance, whereas you might be able to spell a word just by seeing it, your child might not be able to recall the spelling of some words unless he or she first writes them down word by word to spell them. </p>
 
                                 <Link href='/about/blog/blog7'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
                             </div>
@@ -320,7 +320,7 @@ const Blog = () => {
                             </div>
 
                             <div className={'AnimeStarts ' + styles.order2}>
-                                <p className='pt-5 AnimeElement'>Parenting is a rewarding yet challenging journey filled with ups and downs. As parents, it's natural to encounter various dilemmas and uncertainties when it comes to raising our children. In this blog post, we address common questions and concerns that parents may have and provide practical solutions to help navigate the complexities of parenting and strengthen the bond with your child.</p>
+                                <p className='pt-5 AnimeElement'>Parenting is a rewarding yet challenging journey filled with ups and downs. As parents, it&apos;s natural to encounter various dilemmas and uncertainties when it comes to raising our children. In this blog post, we address common questions and concerns that parents may have and provide practical solutions to help navigate the complexities of parenting and strengthen the bond with your child.</p>
 
                                 <Link href='/about/blog/blog8'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
                             </div>
@@ -347,7 +347,7 @@ const Blog = () => {
                             </div>
 
                             <div className='AnimeStarts'>
-                                <p className='pt-5 AnimeElement'>As the temperatures rise and the school year draws to a close, parents may find themselves pondering how best to keep their children engaged and entertained during the long summer break. In today's fast-paced world, where screens often dominate free time, the traditional summer camp experience holds more value than ever before. At Vikas Mantra Public School in Chengalpattu, we understand the significance of summer camp in nurturing holistic development and fostering lifelong skills in children.</p>
+                                <p className='pt-5 AnimeElement'>As the temperatures rise and the school year draws to a close, parents may find themselves pondering how best to keep their children engaged and entertained during the long summer break. In today&apos;s fast-paced world, where screens often dominate free time, the traditional summer camp experience holds more value than ever before. At Vikas Mantra Public School in Chengalpattu, we understand the significance of summer camp in nurturing holistic development and fostering lifelong skills in children.</p>
 
                                 <Link href='/about/blog/blog9'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
                             </div>
