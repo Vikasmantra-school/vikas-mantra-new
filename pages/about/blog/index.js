@@ -259,6 +259,116 @@ const Blog = () => {
 
             </section>
 
+            {/* jan */}
+            <section className={' whitebg position-relative pt-2 pb-5 ' + ' ' + styles.vectorImg2}>
+
+                <div className='container'>
+
+                    <div className={'row p-4 align-items-center ' + styles.rowBox}>
+
+                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng1 + ' ' + styles.order2}>
+
+                            <div className='AnimeStarts'>
+                                <h3 className='ulineRed AnimeElement'>DISCOVER YOUR CHILD’S PRIMARY LEARNING STYLE</h3>
+                            </div>
+
+                            <div className='AnimeStarts'>
+                                <p className='pt-5 AnimeElement'>According to research, every child is born with the ability to learn. But in the majority of cases, kids (and even adults) have a particular, individual learning style that changes throughout the course of their lives. A youngster can continue to learn in many different ways, but he or she will often favor one learning method over the others. . For instance, whereas you might be able to spell a word just by seeing it, your child might not be able to recall the spelling of some words unless he or she first writes them down word by word to spell them. </p>
+
+                                <Link href='/about/blog/blog7'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
+                            </div>
+
+                        </div>
+
+                        <div className={'col-lg-6 col-md-12 position-relative ' + styles.order1}>
+
+                            <div className={'imgBgColorBlog1 pastelGreen4 AnimeStarts'}>
+
+                                <img src='/assets/blogs/blog-7.png' alt="image" className={styles.Blog1Img + ' AnimeElement'} />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            {/* feb */}
+            <section className={' whitebg position-relative py-5 ' + styles.vectorImg3 + ' ' + styles.sectionContainer} >
+
+                <div className='container'>
+
+                    <div className={'row p-4 align-items-center ' + styles.rowBox}>
+
+                        <div className={'col-lg-6 col-md-12 position-relative '}>
+
+                            <div className={' pastelBlue4 imgBgColorBlog2 AnimeStarts ' + styles.order1}>
+
+                                <img src='/assets/blogs/blog-8.png' alt="image" className={styles.Blog2Img + ' AnimeElement'} />
+
+                            </div>
+
+                        </div>
+
+                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng2}>
+
+                            <div className={'AnimeStarts ' + styles.order3}>
+                                <h3 className='ulineRed AnimeElement'>Parenting Queries: Tackling Common Concerns with Your Child</h3>
+                            </div>
+
+                            <div className={'AnimeStarts ' + styles.order2}>
+                                <p className='pt-5 AnimeElement'>Parenting is a rewarding yet challenging journey filled with ups and downs. As parents, it's natural to encounter various dilemmas and uncertainties when it comes to raising our children. In this blog post, we address common questions and concerns that parents may have and provide practical solutions to help navigate the complexities of parenting and strengthen the bond with your child.</p>
+
+                                <Link href='/about/blog/blog8'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            {/* mar */}
+            <section className={' whitebg position-relative pt-2 pb-5 ' + ' ' + styles.vectorImg2}>
+
+                <div className='container'>
+
+                    <div className={'row p-4 align-items-center ' + styles.rowBox}>
+
+                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng1 + ' ' + styles.order2}>
+
+                            <div className='AnimeStarts'>
+                                <h3 className='ulineRed AnimeElement'>The Importance of Summer Camp: </h3>
+                            </div>
+
+                            <div className='AnimeStarts'>
+                                <p className='pt-5 AnimeElement'>As the temperatures rise and the school year draws to a close, parents may find themselves pondering how best to keep their children engaged and entertained during the long summer break. In today's fast-paced world, where screens often dominate free time, the traditional summer camp experience holds more value than ever before. At Vikas Mantra Public School in Chengalpattu, we understand the significance of summer camp in nurturing holistic development and fostering lifelong skills in children.</p>
+
+                                <Link href='/about/blog/blog9'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
+                            </div>
+
+                        </div>
+
+                        <div className={'col-lg-6 col-md-12 position-relative ' + styles.order1}>
+
+                            <div className={'imgBgColorBlog1 pastelGreen4 AnimeStarts'}>
+
+                                <img src='/assets/blogs/blog-9.png' alt="image" className={styles.Blog1Img + ' AnimeElement'} />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
         </>
     )
 }
