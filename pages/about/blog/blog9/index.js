@@ -38,7 +38,7 @@ const Blog5 = () => {
                             <div className='AnimeStarts'>
                                 
 
-                                <p className='AnimeElement'>As the temperatures rise and the school year draws to a close, parents may find themselves pondering how best to keep their children engaged and entertained during the long summer break. In today's fast-paced world, where screens often dominate free time, the traditional summer camp experience holds more value than ever before. At Vikas Mantra Public School in Chengalpattu, we understand the significance of summer camp in nurturing holistic development and fostering lifelong skills in children.
+                                <p className='AnimeElement'>As the temperatures rise and the school year draws to a close, parents may find themselves pondering how best to keep their children engaged and entertained during the long summer break. In today&apos;s fast-paced world, where screens often dominate free time, the traditional summer camp experience holds more value than ever before. At Vikas Mantra Public School in Chengalpattu, we understand the significance of summer camp in nurturing holistic development and fostering lifelong skills in children.
                                 </p>
 
                             </div>
@@ -80,15 +80,15 @@ const Blog5 = () => {
                                     </li>
 
                                     <li><b>Personal Growth: </b>
-                                    Camp encourages children to step out of their comfort zones, take on new challenges, and discover their strengths and abilities. Whether it's conquering a high ropes course, performing in a talent show, or learning a new hobby, campers gain confidence, resilience, and a sense of accomplishment that extends beyond the campfire.
+                                    Camp encourages children to step out of their comfort zones, take on new challenges, and discover their strengths and abilities. Whether it&apos;s conquering a high ropes course, performing in a talent show, or learning a new hobby, campers gain confidence, resilience, and a sense of accomplishment that extends beyond the campfire.
                                     </li>
 
                                     <li><b>Physical Activity:  </b>
-                                    In today's digital age, where sedentary lifestyles are prevalent, summer camp offers a welcome opportunity for children to unplug and engage in physical activity. From outdoor adventures like hiking, swimming, and sports to creative pursuits like dance, yoga, and arts and crafts, camp provides ample opportunities for children to stay active, healthy, and energized.
+                                    In today&apos;s digital age, where sedentary lifestyles are prevalent, summer camp offers a welcome opportunity for children to unplug and engage in physical activity. From outdoor adventures like hiking, swimming, and sports to creative pursuits like dance, yoga, and arts and crafts, camp provides ample opportunities for children to stay active, healthy, and energized.
                                     </li>
 
                                     <li><b>Nature Connection:  </b>
-                                    Camp allows children to reconnect with nature, explore the great outdoors, and develop a deeper appreciation for the natural world. Whether it's roasting marshmallows around a campfire, stargazing under the night sky, or embarking on nature hikes and wildlife explorations, campers develop a sense of environmental stewardship and conservation ethics.
+                                    Camp allows children to reconnect with nature, explore the great outdoors, and develop a deeper appreciation for the natural world. Whether it&apos;s roasting marshmallows around a campfire, stargazing under the night sky, or embarking on nature hikes and wildlife explorations, campers develop a sense of environmental stewardship and conservation ethics.
                                     </li>
 
                                     <li><b>Life Skills:  </b>
@@ -111,7 +111,7 @@ const Blog5 = () => {
 
                                 <h4 className='AnimeElement'>Conclusion</h4>
 
-                                <p className='AnimeElement'>At Vikas Mantra Public School, we recognize the importance of summer camp in shaping well-rounded individuals and nurturing future leaders. That's why we host our annual summer camp every year, offering a diverse range of enriching activities and experiences for children of all ages. This year, our summer camp will be held from April 25th to May 11th, providing two weeks of fun-filled learning and adventure. Contact us today to learn more about our summer camp offerings and give your child the gift of a memorable summer experience.
+                                <p className='AnimeElement'>At Vikas Mantra Public School, we recognize the importance of summer camp in shaping well-rounded individuals and nurturing future leaders. That&apos;s why we host our annual summer camp every year, offering a diverse range of enriching activities and experiences for children of all ages. This year, our summer camp will be held from April 25th to May 11th, providing two weeks of fun-filled learning and adventure. Contact us today to learn more about our summer camp offerings and give your child the gift of a memorable summer experience.
                                 </p>
 
                                 <p className='AnimeElement'>Remember, the memories made at summer camp last a lifetime, and the lessons learned extend far beyond the summer months. So why wait? Enroll your child in summer camp today and watch them thrive!

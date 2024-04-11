@@ -38,7 +38,7 @@ const Blog5 = () => {
                             <div className='AnimeStarts'>
                                 
 
-                                <p className='AnimeElement'>Parenting is a rewarding yet challenging journey filled with ups and downs. As parents, it's natural to encounter various dilemmas and uncertainties when it comes to raising our children. In this blog post, we address common questions and concerns that parents may have and provide practical solutions to help navigate the complexities of parenting and strengthen the bond with your child.
+                                <p className='AnimeElement'>Parenting is a rewarding yet challenging journey filled with ups and downs. As parents, it&apos;s natural to encounter various dilemmas and uncertainties when it comes to raising our children. In this blog post, we address common questions and concerns that parents may have and provide practical solutions to help navigate the complexities of parenting and strengthen the bond with your child.
                                 </p>
 
                             </div>
@@ -72,26 +72,26 @@ const Blog5 = () => {
 
                             <div className='AnimeStarts'>
 
-                                <h4 className='AnimeElement'>Question: "How can I effectively communicate with my child and build a strong relationship?"</h4>
+                                <h4 className='AnimeElement'>Question: &quot;How can I effectively communicate with my child and build a strong relationship?&quot;</h4>
 
-                                <p className='AnimeElement'><b>Solution :</b>Effective communication is the foundation of a strong parent-child relationship. Take the time to listen actively to your child's thoughts, feelings, and concerns without judgment. Encourage open and honest dialogue, and validate your child's emotions by acknowledging their experiences. Set aside dedicated one-on-one time for meaningful conversations and activities that foster connection and trust. By prioritizing communication and actively engaging with your child, you can build a strong and lasting bond based on mutual respect and understanding.</p>
+                                <p className='AnimeElement'><b>Solution :</b>Effective communication is the foundation of a strong parent-child relationship. Take the time to listen actively to your child's thoughts, feelings, and concerns without judgment. Encourage open and honest dialogue, and validate your child&apos;s emotions by acknowledging their experiences. Set aside dedicated one-on-one time for meaningful conversations and activities that foster connection and trust. By prioritizing communication and actively engaging with your child, you can build a strong and lasting bond based on mutual respect and understanding.</p>
 
                             </div>
 
                             <div className='AnimeStarts'>
 
-                                <h4 className='AnimeElement'>Question: "How can I manage my child's screen time and ensure a healthy balance between technology and other activities?"</h4>
+                                <h4 className='AnimeElement'>Question: &quot;How can I manage my child&apos;s screen time and ensure a healthy balance between technology and other activities?&quot;</h4>
 
-                                <p className='AnimeElement'><b>Solution :</b>In today's digital age, managing screen time can be a common challenge for parents. Set clear and consistent rules around screen time limits and usage guidelines that align with your family values and priorities. Encourage a balanced lifestyle by promoting alternative activities such as outdoor play, hobbies, and family bonding time. Lead by example by modeling healthy screen habits and engaging in screen-free activities together as a family. By establishing boundaries and promoting a healthy balance between technology and other activities, you can help your child develop responsible digital habits and maintain overall well-being.
+                                <p className='AnimeElement'><b>Solution :</b>In today&apos;s digital age, managing screen time can be a common challenge for parents. Set clear and consistent rules around screen time limits and usage guidelines that align with your family values and priorities. Encourage a balanced lifestyle by promoting alternative activities such as outdoor play, hobbies, and family bonding time. Lead by example by modeling healthy screen habits and engaging in screen-free activities together as a family. By establishing boundaries and promoting a healthy balance between technology and other activities, you can help your child develop responsible digital habits and maintain overall well-being.
                                 </p>
 
                             </div>
 
                             <div className='AnimeStarts'>
 
-                                <h4 className='AnimeElement'>Question: "How can I support my child's academic success and motivate them to excel in school?"</h4>
+                                <h4 className='AnimeElement'>Question: &quot;How can I support my child&apos;s academic success and motivate them to excel in school?&quot;</h4>
 
-                                <p className='AnimeElement'><b>Solution : </b>Supporting your child's academic journey begins with creating a positive and supportive learning environment at home. Establish a designated study space free from distractions and provide the necessary resources and materials to support their learning. Encourage a growth mindset by praising effort, resilience, and progress rather than focusing solely on grades or outcomes. Celebrate achievements, both big and small, and offer encouragement and support during challenging times. Stay involved in your child's education by communicating regularly with teachers, attending parent-teacher meetings, and offering assistance with homework and assignments. By fostering a supportive home environment and instilling a love for learning, you can empower your child to reach their full academic potential.
+                                <p className='AnimeElement'><b>Solution : </b>Supporting your child&apos;s academic journey begins with creating a positive and supportive learning environment at home. Establish a designated study space free from distractions and provide the necessary resources and materials to support their learning. Encourage a growth mindset by praising effort, resilience, and progress rather than focusing solely on grades or outcomes. Celebrate achievements, both big and small, and offer encouragement and support during challenging times. Stay involved in your child&apos;s education by communicating regularly with teachers, attending parent-teacher meetings, and offering assistance with homework and assignments. By fostering a supportive home environment and instilling a love for learning, you can empower your child to reach their full academic potential.
                                 </p>
 
                             </div>
@@ -100,7 +100,7 @@ const Blog5 = () => {
 
                                 <h4 className='AnimeElement'>Conclusion</h4>
 
-                                <p className='AnimeElement'>Parenting is a journey filled with uncertainties, but with patience, understanding, and proactive problem-solving, you can navigate the challenges and strengthen the bond with your child. By prioritizing effective communication, promoting a healthy balance between technology and other activities, and supporting your child's academic success, you can create a nurturing and supportive environment that fosters growth, resilience, and happiness.
+                                <p className='AnimeElement'>Parenting is a journey filled with uncertainties, but with patience, understanding, and proactive problem-solving, you can navigate the challenges and strengthen the bond with your child. By prioritizing effective communication, promoting a healthy balance between technology and other activities, and supporting your child&apos;s academic success, you can create a nurturing and supportive environment that fosters growth, resilience, and happiness.
                                 </p>
 
                                 <p className='AnimeElement'>

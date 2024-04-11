@@ -38,7 +38,7 @@ const Blog5 = () => {
                             <div className='AnimeStarts'>
 
 
-                                <p className='AnimeElement'>According to research, every child is born with the ability to learn. But in the majority of cases, kids (and even adults) have a particular, individual learning style that changes throughout the course of their lives. A youngster can continue to learn in many different ways, but he or she will often favor one learning method over the others. For instance, whereas you might be able to spell a word just by seeing it, your child might not be able to recall the spelling of some words unless he or she first writes them down word by word to spell them. Yet, there is no such thing as a good or bad learning style in general. It's important to remember that parents' techniques for determining primary learning styles may be very different from those of your child or even from those of other people. In the models listed below, determine your child's preferred method of learning.
+                                <p className='AnimeElement'>According to research, every child is born with the ability to learn. But in the majority of cases, kids (and even adults) have a particular, individual learning style that changes throughout the course of their lives. A youngster can continue to learn in many different ways, but he or she will often favor one learning method over the others. For instance, whereas you might be able to spell a word just by seeing it, your child might not be able to recall the spelling of some words unless he or she first writes them down word by word to spell them. Yet, there is no such thing as a good or bad learning style in general. It&apos;s important to remember that parents&apos; techniques for determining primary learning styles may be very different from those of your child or even from those of other people. In the models listed below, determine your child&apos;s preferred method of learning.
                                 </p>
 
                             </div>
@@ -72,7 +72,7 @@ const Blog5 = () => {
 
                             <div className='AnimeStarts'>
 
-                                <h6 className='AnimeElement'>What is the VARK model?</h6>
+                                <h6 className='AnimeElement'>What is the VARK model ?</h6>
 
                                 <p className='AnimeElement'>Visual, Auditory, Read/Write, and kinesthetic!</p>
                                 <ul>
@@ -103,7 +103,7 @@ const Blog5 = () => {
 
                             <div className='AnimeStarts'>
 
-                                <h6 className='AnimeElement'>Once you've determined whether your child learns best using auditory methods, you can assist their preferred method of learning by offering them different study advice, like: </h6>
+                                <h6 className='AnimeElement'>Once you&apos;ve determined whether your child learns best using auditory methods, you can assist their preferred method of learning by offering them different study advice, like: </h6>
 
                                 <ul>
                                     <li>Teaching or explaining to a friend what they are learning </li>
@@ -123,7 +123,7 @@ const Blog5 = () => {
 
                             <div className='AnimeStarts'>
 
-                                <h6 className='AnimeElement'>Once you've determined whether your child learns best using Read/Write methods, you can assist their preferred method of learning by offering them different study advice, like: </h6>
+                                <h6 className='AnimeElement'>Once you&apos;ve determined whether your child learns best using Read/Write methods, you can assist their preferred method of learning by offering them different study advice, like: </h6>
 
                                 <ul>
                                     <li>Assisting your children with manuals, reports, and homework.</li>
@@ -142,7 +142,7 @@ const Blog5 = () => {
 
                             <div className='AnimeStarts'>
 
-                                <h4 className='AnimeElement'>Once you've determined whether your child learns best using kinesthetic methods, you can assist their preferred method of learning by offering them different study advice, like: </h4>
+                                <h4 className='AnimeElement'>Once you&apos;ve determined whether your child learns best using kinesthetic methods, you can assist their preferred method of learning by offering them different study advice, like: </h4>
 
                                 <ul>
                                     <li>Urge them to use their own experiences to obtain knowledge and put it into practice.</li>
