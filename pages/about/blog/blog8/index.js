@@ -74,7 +74,7 @@ const Blog5 = () => {
 
                                 <h4 className='AnimeElement'>Question: &quot;How can I effectively communicate with my child and build a strong relationship?&quot;</h4>
 
-                                <p className='AnimeElement'><b>Solution :</b>Effective communication is the foundation of a strong parent-child relationship. Take the time to listen actively to your child's thoughts, feelings, and concerns without judgment. Encourage open and honest dialogue, and validate your child&apos;s emotions by acknowledging their experiences. Set aside dedicated one-on-one time for meaningful conversations and activities that foster connection and trust. By prioritizing communication and actively engaging with your child, you can build a strong and lasting bond based on mutual respect and understanding.</p>
+                                <p className='AnimeElement'><b>Solution :</b>Effective communication is the foundation of a strong parent-child relationship. Take the time to listen actively to your child&apos;s thoughts, feelings, and concerns without judgment. Encourage open and honest dialogue, and validate your child&apos;s emotions by acknowledging their experiences. Set aside dedicated one-on-one time for meaningful conversations and activities that foster connection and trust. By prioritizing communication and actively engaging with your child, you can build a strong and lasting bond based on mutual respect and understanding.</p>
 
                             </div>
 

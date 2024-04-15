@@ -85,7 +85,7 @@ const Blog5 = () => {
 
                             <div className='AnimeStarts'>
 
-                                <h4 className='AnimeElement'>Once you've determined whether your child learns best using visual methods, you can assist their preferred method of learning by offering them different study advice, like: </h4>
+                                <h4 className='AnimeElement'>Once you&apos;ve determined whether your child learns best using visual methods, you can assist their preferred method of learning by offering them different study advice, like: </h4>
 
                                 <ul>
                                     <li>Encourage them in studying notes using color </li>
