@@ -13,7 +13,7 @@ function Career() {
   //form-data-clear-after-submit
 
   const getInitialState = () => {
-    const value = "HINDI";
+    const value = "CHEMISTRY";
     return value;
   };
 
@@ -155,22 +155,14 @@ function Career() {
                       {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
                     </tr>
 
-                    <tr><td>HINDI</td></tr>
-                    <tr><td>SOCIAL SCIENCE</td></tr>
-                    <tr><td>ENGLISH</td></tr>
-                    <tr><td>MATHEMATICS</td></tr>
-                    <tr><td>TAMIL</td></tr>
-                    <tr><td>PHYSICS</td></tr>
-                    <tr><td>CHEMISTRY</td></tr>
-                    <tr><td>BIOLOGY</td></tr>
-                    <tr><td>COMPUTER SCIENCE</td></tr>
-                    <tr><td>KINDERGARTEN</td></tr>
-                    <tr><td>ACTIVITY TEACHER</td></tr>
+                    <tr><td>CHEMISTRY <span className={styles.add_color}>(Min Qualification - BSC CHEMISTRY *)</span></td></tr>
+                    <tr><td>PHYSICS/BIOLOGY - BSC</td></tr>
+                    <tr><td>PGT MATHEMATICS</td></tr>
+                    <tr><td> PGT CHEMISTRY</td></tr>
                     <tr><td>STUDENT COUNSELLOR</td></tr>
                     <tr>
                       <td>ACCOUNTANT <span className={styles.add_color}>(Preferring experienced Accountant with Tally *)</span></td>
                     </tr>
-
 
                   </tbody>
                 </Table>
@@ -282,17 +274,11 @@ function Career() {
                           <label className='AnimeElement'>Job Opening</label>
 
                           <Form.Select aria-label="Default select example" name="Job Opening" value={jobOpening} onChange={event => setJobOpening(event.target.value)} className={styles.formText + ' AnimeElement form-select '}>
-                            <option value='HINDI'> HINDI </option>
-                            <option value='SOCIAL SCIENCE'>SOCIAL SCIENCE</option>
-                            <option value='ENGLIH'> ENGLIH</option>
-                            <option value='MATHEMATICS'>MATHEMATICS </option>
-                            <option value='TAMIL'>TAMIL </option>
-                            <option value='PHYICS'> PHYICS</option>
+
+                            <option value='PHYICS'> PHYSICS/BIOLOGY - BSC</option>
                             <option value='CHEMISTRY'>CHEMISTRY </option>
-                            <option value='BIOLOGY'>BIOLOGY</option>
-                            <option value='COMPUTER SCIENCE'>COMPUTER SCIENCE</option>
-                            <option value='KINGERGARDEN'>KINGERGARDEN</option>
-                            <option value='ACTIVITY TEACHER'>ACTIVITY TEACHER</option>
+                            <option value='BIOLOGY'>PGT MATHEMATICS</option>
+                            <option value='COMPUTER SCIENCE'>PGT CHEMISTRY</option>
                             <option value='STUDENT COUNSELLOR'>STUDENT COUNSELLOR</option>
                             <option value='ACCOUNTANT'>ACCOUNTANT </option>
                           </Form.Select>
