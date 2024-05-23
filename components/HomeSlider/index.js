@@ -26,7 +26,7 @@ function HomeSlider({ ref }) {
           }}
         >
 
-<SplideSlide>
+          {/* <SplideSlide>
             <section className={styles.bannerSection + ' ' + styles.bannerTopper + ' ' + ''}>
               <div className='container'>
                 <div className='row homeBanner'>
@@ -36,11 +36,11 @@ function HomeSlider({ ref }) {
                     <div className='AnimeStarts d-none d-sm-block '>
 
                       <h1 className='box AnimeElement'>
-                      Vikas Mantra is Y(our) Success Mantra
+                        Vikas Mantra is Y(our) Success Mantra
                       </h1>
 
                       <p className='box AnimeElement'>
-                      STD Xth Toppers & Top Achievers (2023-2024)
+                        STD Xth Toppers & Top Achievers (2023-2024)
                       </p>
 
                     </div>
@@ -58,11 +58,11 @@ function HomeSlider({ ref }) {
                     <div className='AnimeStarts py-2 '>
 
                       <h1 className='box AnimeElement'>
-                      Vikas Mantra is Y(our) Success Mantra
+                        Vikas Mantra is Y(our) Success Mantra
                       </h1>
 
                       <p className='box AnimeElement'>
-                      STD Xth Toppers & Top Achievers (2023-2024)
+                        STD Xth Toppers & Top Achievers (2023-2024)
                       </p>
 
                     </div>
@@ -71,7 +71,7 @@ function HomeSlider({ ref }) {
               </div>
             </section>
 
-          </SplideSlide>
+          </SplideSlide> */}
 
           <SplideSlide>
             <section className={styles.bannerSection + ' ' + styles.banner1 + ' ' + ''}>
@@ -249,10 +249,10 @@ function HomeSlider({ ref }) {
 
                     <div className='d-none d-sm-block'>
                       <h1 className='box'>
-                      kiddies annual sports meet
+                        kiddies annual sports meet
                       </h1>
                       <p className='box'>
-                      A fabulous march past performed by our school kids on kiddies annual sports meet.
+                        A fabulous march past performed by our school kids on kiddies annual sports meet.
                       </p>
                     </div>
 
@@ -269,11 +269,11 @@ function HomeSlider({ ref }) {
                     <div className='AnimeStarts py-4 '>
 
                       <h1 className='box AnimeElement'>
-                      kiddies annual sports meet
+                        kiddies annual sports meet
                       </h1>
 
                       <p className='box AnimeElement'>
-                      A fabulous march past performed by our school kids on kiddies annual sports meet.
+                        A fabulous march past performed by our school kids on kiddies annual sports meet.
                       </p>
 
                     </div>
