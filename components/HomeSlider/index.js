@@ -25,6 +25,54 @@ function HomeSlider({ ref }) {
             },
           }}
         >
+
+<SplideSlide>
+            <section className={styles.bannerSection + ' ' + styles.bannerTopper + ' ' + ''}>
+              <div className='container'>
+                <div className='row homeBanner'>
+                  <div ref={(el) => { title = el }}
+                    className={styles.bannercontent + ' ' + 'col-xl-6 col-lg-8 col-md-10 col-sm-12 '} >
+
+                    <div className='AnimeStarts d-none d-sm-block '>
+
+                      <h1 className='box AnimeElement'>
+                      Vikas Mantra is Y(our) Success Mantra
+                      </h1>
+
+                      <p className='box AnimeElement'>
+                      STD Xth Toppers & Top Achievers (2023-2024)
+                      </p>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className='d-block d-sm-none '>
+              <div className='container'>
+                <div className='row mobileBanner'>
+                  <div className='col-md-12'>
+
+                    <div className='AnimeStarts py-2 '>
+
+                      <h1 className='box AnimeElement'>
+                      Vikas Mantra is Y(our) Success Mantra
+                      </h1>
+
+                      <p className='box AnimeElement'>
+                      STD Xth Toppers & Top Achievers (2023-2024)
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </SplideSlide>
+
           <SplideSlide>
             <section className={styles.bannerSection + ' ' + styles.banner1 + ' ' + ''}>
               <div className='container'>
