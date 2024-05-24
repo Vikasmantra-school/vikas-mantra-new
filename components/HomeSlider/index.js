@@ -26,7 +26,7 @@ function HomeSlider({ ref }) {
           }}
         >
 
-          <SplideSlide>
+          {/* <SplideSlide>
             <section className={styles.bannerSection + ' ' + styles.bannerTopper + ' ' + ''}>
               <div className='container'>
                 <div className='row homeBanner'>
@@ -71,7 +71,7 @@ function HomeSlider({ ref }) {
               </div>
             </section>
 
-          </SplideSlide>
+          </SplideSlide> */}
 
           <SplideSlide>
             <section className={styles.bannerSection + ' ' + styles.banner1 + ' ' + ''}>
