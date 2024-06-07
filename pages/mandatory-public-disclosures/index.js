@@ -176,7 +176,7 @@ function MandatoryScreen() {
                       COMPETENT AUTHORITY*
                     </td>
                     <td>
-                      <a href='/pdf/fire-safety.pdf' target='_blank'>Annexure 6</a>
+                      <a href='/pdf/fire-safety-24.pdf' target='_blank'>Annexure 6</a>
                     </td>
                   </tr>
 
