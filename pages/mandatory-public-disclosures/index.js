@@ -176,7 +176,7 @@ function MandatoryScreen() {
                       COMPETENT AUTHORITY*
                     </td>
                     <td>
-                      <a href='/pdf/fire-safety-24.pdf' target='_blank'>Annexure 6</a>
+                      <a href='/pdf/fire-rescue.pdf' target='_blank'>Annexure 6</a>
                     </td>
                   </tr>
 
@@ -198,7 +198,7 @@ function MandatoryScreen() {
                       COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES
                     </td>
                     <td>
-                      <a href='/pdf/sanitary-certificate-2023-2024.pdf' target='_blank'>Annexure 8</a>
+                      <a href='/pdf/sanitory-certificate-24.pdf' target='_blank'>Annexure 8</a>
                     </td>
                   </tr>
                 </tbody>
@@ -551,7 +551,7 @@ function MandatoryScreen() {
                     <td>5</td>
                     <td>certification for land</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/land-certificate-final.pdf' target='_blank'>View</a>
+                      <a rel="noopener noreferrer" href='/pdf/new-land-certificate.pdf' target='_blank'>View</a>
                     </td>
                   </tr>
 
@@ -593,7 +593,7 @@ function MandatoryScreen() {
                     <td>10</td>
                     <td>Panel engineer certified for building safety license</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/Panel-engineer-certified-for-building-safety-licence.pdf' target='_blank'>View</a>
+                      <a rel="noopener noreferrer" href='/pdf/panel-engineer-certified.pdf' target='_blank'>View</a>
                     </td>
                   </tr>
 
@@ -611,6 +611,14 @@ function MandatoryScreen() {
                     <td>compound wall undertaking</td>
                     <td>
                       <a rel="noopener noreferrer" href='/pdf/compund-wall-certificate.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>13</td>
+                    <td>Form A to E</td>
+                    <td>
+                      <a rel="noopener noreferrer" href='/pdf/form-a-to-e.pdf' target='_blank'>View</a>
                     </td>
                   </tr>
 
