@@ -6,6 +6,12 @@
     top: -24px;
 }
 
+.chckflow {
+    overflow-x: hiden;
+}
+
+
+
 .vectorImg2::after {
     content: '';
     position: absolute;
@@ -20,6 +26,7 @@
     bottom: 0%;
 }
 
+
 .vmpsImg {
     position: absolute;
     right: -70px;
@@ -30,7 +37,7 @@
 
 .schoolBuildingImg {
     position: absolute;
-    right: -62px;
+    right: -60px;
     top: -115px;
     height: 500px;
 }
@@ -269,8 +276,9 @@
         height: auto;
         width: 100%;
     }
-    .headingPdng{
+
+    .headingPdng {
         padding-bottom: 0px;
     }
-    
+
 }

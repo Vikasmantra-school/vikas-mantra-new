@@ -406,7 +406,7 @@ p {
   position: relative;
 }
 
-.VideoContainerMbl{
+.VideoContainerMbl {
   display: none;
 }
 
@@ -730,6 +730,19 @@ p {
   background-repeat: no-repeat;
   background-size: var(--bs-accordion-btn-icon-width);
   transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button:focus {
+  box-shadow: unset;
+}
+
+.faq .accordion-body {
+  border-block-start: 1px solid #e1e1e1;
+}
+
+.faq .accordion-button::after {
+  margin-bottom: 0;
+  margin-top: .3125rem;
 }
 
 
@@ -1801,7 +1814,7 @@ tr {
 
 @media only screen and (max-width: 660px) {
 
-  .VideoContainerMbl{
+  .VideoContainerMbl {
     display: block;
   }
 
@@ -1810,7 +1823,7 @@ tr {
     position: unset;
   }
 
-  .VideoContainer{
+  .VideoContainer {
     display: none;
   }
 
@@ -2156,7 +2169,7 @@ tr {
 
 .watsapp-icon .whatsappImg {
   position: fixed;
-  bottom: 95px ;
+  bottom: 95px;
   right: 25px;
   z-index: 999;
   width: 55px;
@@ -2167,9 +2180,10 @@ tr {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
+
 .watsapp-icon .CampaignwhatsappImg {
   position: fixed;
-  bottom: 155px ;
+  bottom: 155px;
   right: 25px;
   z-index: 999;
   width: 55px;
@@ -2224,6 +2238,7 @@ tr {
   right: 0;
   z-index: 1;
 }
+
 .testimonialslide .splide__pagination {
   bottom: -1.5em;
   left: 160px;
@@ -2254,9 +2269,9 @@ tr {
     max-width: calc(100% - 28.5vw);
   }
 }
+
 @media only screen and (min-width:1200px) {
   .campaignPage .container {
     max-width: calc(100% - 18vw);
   }
 }
-
