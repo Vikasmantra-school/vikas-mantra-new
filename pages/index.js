@@ -125,7 +125,7 @@ function Home() {
               <h2 className='bottomToTop'>About VMPS</h2>
 
               <p className='bottomToTop'>
-                VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu
+                VIKAS MANTRA PUBLIC SCHOOL, A CBSE School in Chengalpattu
                 Kanchipuram is building a distinctive educational platform
                 through a mix of international learning techniques, experienced
                 academicians and modern facilities. By blending 21st century
