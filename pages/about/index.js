@@ -109,7 +109,7 @@ const About = () => {
 
             </section>
 
-            <section className="faq">
+            <section className="faq randx">
                 <div className="container">
                     <div className="row">
                         <div className='AnimeStarts pt-5'>
