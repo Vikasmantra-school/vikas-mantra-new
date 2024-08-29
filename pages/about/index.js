@@ -106,7 +106,6 @@ const About = () => {
                     </div>
 
                 </div>
-
             </section>
 
             <section className="faq randx">
