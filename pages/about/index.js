@@ -170,7 +170,7 @@ const About = () => {
                                         data-bs-parent='#accordionExample'
                                     >
                                         <div className='accordion-body AdmissionScrollAnimeElement'>
-                                            Vikas Mantra is committed to providing a nurturing environment where every child can thrive. We offer unique teaching methods and support programs to ensure your child's holistic development.
+                                            Vikas Mantra is committed to providing a nurturing environment where every child can thrive. We offer unique teaching methods and support programs to ensure your child&apos;s holistic development.
                                         </div>
                                     </div>
                                 </div>
