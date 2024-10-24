@@ -112,7 +112,7 @@ const About = () => {
                 <div className="container">
                     <div className="row">
                         <div className='AnimeStarts pt-5'>
-                            <h2 className='ulineRed AnimeElement'>FAQ's</h2>
+                            <h2 className='ulineRed AnimeElement'>FAQ&apos;s</h2>
                         </div>
                         <div className="col-md-10 AnimeStarts">
                             <div className={'accordion py-5 AnimeElement' + styles.accordionExample} id='accordionExample' >
