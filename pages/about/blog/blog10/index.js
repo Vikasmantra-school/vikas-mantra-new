@@ -99,7 +99,7 @@ const Blog2 = () => {
 
                                 <h4 className='AnimeElement'>5. Foundation for a Healthy Lifestyle</h4>
 
-                                <p className='AnimeElement'>Early exposure to the benefits of exercise instills habits that can lead to lifelong wellness. Understanding the importance of regular physical activity and balanced nutrition helps combat long-term health risks such as obesity, cardiovascular disease, and diabetes. By prioritizing physical education, schools invest in their students' future health, equipping them with the resilience to navigate life’s challenges.</p>
+                                <p className='AnimeElement'>Early exposure to the benefits of exercise instills habits that can lead to lifelong wellness. Understanding the importance of regular physical activity and balanced nutrition helps combat long-term health risks such as obesity, cardiovascular disease, and diabetes. By prioritizing physical education, schools invest in their students&apos; future health, equipping them with the resilience to navigate life&apos;s challenges.</p>
 
                             </div>
 
@@ -118,7 +118,7 @@ const Blog2 = () => {
 
                                 <p className='AnimeElement'>For younger students especially, physical activity plays an essential role in developing motor skills, coordination, and balance. Activities like running, jumping, and playing sports refine their agility and strength, preparing them for both physical challenges and the demands of their rapidly changing bodies.</p>
 
-                                <p className='AnimeElement'>At Vikas Mantra, we are committed to nurturing every dimension of our students' growth. By integrating physical activity with academic rigor, we strive to create an environment that supports their physical, mental, and emotional well-being. We encourage our community to embrace an active lifestyle, recognizing exercise as fundamental to cultivating resilient, empowered individuals who will shape the future.</p>
+                                <p className='AnimeElement'>At Vikas Mantra, we are committed to nurturing every dimension of our students&apos; growth. By integrating physical activity with academic rigor, we strive to create an environment that supports their physical, mental, and emotional well-being. We encourage our community to embrace an active lifestyle, recognizing exercise as fundamental to cultivating resilient, empowered individuals who will shape the future.</p>
 
                             </div>
 
