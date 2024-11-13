@@ -125,7 +125,7 @@ const Blog = () => {
                                     a culture that promotes mass consumption. But it&apos;s more
                                     important than ever today to bring up ecologically
                                     conscious kids. Here we bring to you a few yet effective
-                                    eco-friendly practices you can start …</p>
+                                    eco-friendly practices you can …</p>
 
                                 <Link href='/about/blog/blog3'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
                             </div>
