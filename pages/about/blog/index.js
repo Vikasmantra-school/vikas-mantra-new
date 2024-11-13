@@ -25,6 +25,42 @@ const Blog = () => {
 
             </section>
 
+            <section className={' whitebg position-relative py-5 ' + styles.vectorImg3 + ' ' + styles.sectionContainer} >
+
+                <div className='container'>
+
+                    <div className={'row p-4 align-items-center ' + styles.rowBox}>
+
+                        <div className={'col-lg-6 col-md-12 position-relative '}>
+
+                            <div className={' pastelBlue4 imgBgColorBlog2 AnimeStarts ' + styles.order1}>
+
+                                <img src='/assets/blogs/blog-10.png' alt="image" className={styles.Blog2Img + ' AnimeElement'} />
+
+                            </div>
+
+                        </div>
+
+                        <div className={'col-lg-6 col-md-12 ' + styles.colPdng2}>
+
+                            <div className={'AnimeStarts ' + styles.order3}>
+                                <h3 className='ulineRed AnimeElement'>The Vital Role of Exercise in Student Development</h3>
+                            </div>
+
+                            <div className={'AnimeStarts ' + styles.order2}>
+                                <p className='pt-5 AnimeElement'>Physical exercise is not merely a pathway to fitness; it is a cornerstone of holistic development, especially for students. At Vikas Mantra, we believe that a comprehensive approach to education intertwines intellectual learning with physical vitality, fostering well-rounded growth that extends beyond academics …</p>
+
+                                <Link href='/about/blog/blog10'><button className='btn outlineBtn AnimeElement'>Know More</button></Link>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
             <section className={' whitebg position-relative pt-2 pb-5 ' + ' ' + styles.vectorImg2}>
 
                 <div className='container'>
