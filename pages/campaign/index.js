@@ -13,7 +13,7 @@ const Campaign = () => {
     const router = useRouter();
 
     //form-data-clear-after-submit
- 
+
     const [name, setName] = useState('')
     const [mail, setEmail] = useState('')
     const [number, setNumber] = useState('')
@@ -53,8 +53,8 @@ const Campaign = () => {
                 <Navbar />
 
                 <section className={style.campaignSection}>
-                    <img src="./images/banner/desktop-banner.png" className={"img-fluid " + ' ' + style.WebBannerImg} alt='banner-image' />
-                    <img src="./images/banner/mobile-banner.png" className={"img-fluid " + ' ' + style.MobBannerImg} alt='banner-image' />
+                    <img src="/assets/banners/Admission-Open.png" className={"img-fluid " + ' ' + style.WebBannerImg} alt='banner-image' />
+                    <img src="/assets/mobile-banners/Admission-Open-Mob.png" className={"img-fluid " + ' ' + style.MobBannerImg} alt='banner-image' />
                 </section>
 
 

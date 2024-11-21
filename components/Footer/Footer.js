@@ -5,7 +5,8 @@ import styles from './style.module.css'
 import Link from 'next/link'
 import Modal from 'react-bootstrap/Modal';
 import PopupImageOld from '../../public/assets/Popups/Vikas-Social-Ad-2.png'
-import PopupImageNew from '../../public/assets/Popups/popup-creative.png'
+// import PopupImageNew from '../../public/assets/Popups/popup-creative.png'
+import PopupImageNew from '../../public/assets/Popups/Admission-Open-Popup.png'
 
 
 export const Footer = () => {

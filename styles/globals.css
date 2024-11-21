@@ -1814,6 +1814,11 @@ tr {
 
 @media only screen and (max-width: 660px) {
 
+  .callBtn.callBtn {
+    padding: 8px;
+    font-size: 15px;
+  }
+
   .VideoContainerMbl {
     display: block;
   }

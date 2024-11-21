@@ -26,7 +26,7 @@ function HomeSlider({ ref }) {
           }}
         >
 
-          {/* <SplideSlide>
+          <SplideSlide>
             <section className={styles.bannerSection + ' ' + styles.bannerTopper + ' ' + ''}>
               <div className='container'>
                 <div className='row homeBanner'>
@@ -34,14 +34,14 @@ function HomeSlider({ ref }) {
                     className={styles.bannercontent + ' ' + 'col-xl-6 col-lg-8 col-md-10 col-sm-12 '} >
 
                     <div className='AnimeStarts d-none d-sm-block '>
-
+                      {/* 
                       <h1 className='box AnimeElement'>
                         Vikas Mantra is Y(our) Success Mantra
                       </h1>
 
                       <p className='box AnimeElement'>
                         STD Xth Toppers & Top Achievers (2023-2024)
-                      </p>
+                      </p> */}
 
                     </div>
 
@@ -58,11 +58,12 @@ function HomeSlider({ ref }) {
                     <div className='AnimeStarts py-2 '>
 
                       <h1 className='box AnimeElement'>
-                        Vikas Mantra is Y(our) Success Mantra
+                        Creating Confident Learners and Leaders.
                       </h1>
 
                       <p className='box AnimeElement'>
-                        STD Xth Toppers & Top Achievers (2023-2024)
+                        We believe in nurturing success in every step and fostering excellence in every lesson.
+                        <b>Admissions Open 2025-26.</b>
                       </p>
 
                     </div>
@@ -71,7 +72,7 @@ function HomeSlider({ ref }) {
               </div>
             </section>
 
-          </SplideSlide> */}
+          </SplideSlide>
 
           <SplideSlide>
             <section className={styles.bannerSection + ' ' + styles.banner1 + ' ' + ''}>

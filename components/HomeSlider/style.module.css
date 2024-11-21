@@ -11,7 +11,7 @@
 }
 
 .bannerTopper {
-    background: url(/assets/banners/topper-24.png);
+    background: url(/assets/banners/Admission-Open.png);
 }
 
 .banner1 {
@@ -42,6 +42,11 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 7.4%, rgba(0, 0, 0, 0) 129.13%);
+}
+
+.bannerSection.bannerTopper::after {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .3) 21%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
 }
 
 .bannercontent {
@@ -88,8 +93,13 @@
         background-image: unset;
     }
 
+    .bannerSection.bannerTopper::after {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, .0) 21%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+    }
+
     .bannerTopper {
-        background: url(/assets/mobile-banners/topper-mbl-24.png);
+        background: url(/assets/mobile-banners/Admission-Open-Mob.png);
         background-size: contain !important;
 
     }
