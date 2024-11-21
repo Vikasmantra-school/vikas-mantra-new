@@ -38,7 +38,8 @@ export const Footer = () => {
       console.log('popup-hidden')
     }
     else {
-      handleShow()
+      // handleShow()
+      console.log('')
     }
 
   }, [])
