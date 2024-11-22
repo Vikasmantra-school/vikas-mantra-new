@@ -617,7 +617,7 @@ function MandatoryScreen() {
                   </tr>
 
                   <tr>
-                    <td>7</td>
+                    <td>11</td>
                     <td>Fire & rescue</td>
                     <td>
                       <a rel="noopener noreferrer" href='/pdf/Fire-Noc.pdf' target='_blank'>View</a>
