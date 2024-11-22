@@ -564,33 +564,27 @@ function MandatoryScreen() {
                     </td>
                   </tr>
 
+
+
+
                   <tr>
                     <td>7</td>
-                    <td>Fire & rescue</td>
-                    <td>
-                      <a rel="noopener noreferrer" href='/pdf/Fire-Noc.pdf' target='_blank'>View</a>
-                    </td>
-                  </tr>
-
-
-                  <tr>
-                    <td>8</td>
                     <td>Under taking letter by chairman and principal for making correction in oasis</td>
                     <td>
                       <a rel="noopener noreferrer" href='/pdf/Under-taking-by-chairman-and-principal-for-making-correction-in-oasis.pdf' target='_blank'>View</a>
                     </td>
                   </tr>
 
-                  <tr>
+                  {/* <tr>
                     <td>9</td>
                     <td>Reply letter for the Queries</td>
                     <td>
                       <a rel="noopener noreferrer" href='/pdf/Reply-letter-for-the-Queries.pdf' target='_blank'>View</a>
                     </td>
-                  </tr>
+                  </tr> */}
 
                   <tr>
-                    <td>10</td>
+                    <td>8</td>
                     <td>Panel engineer certified for building safety license</td>
                     <td>
                       <a rel="noopener noreferrer" href='/pdf/panel-engineer-certified.pdf' target='_blank'>View</a>
@@ -598,7 +592,7 @@ function MandatoryScreen() {
                   </tr>
 
                   <tr>
-                    <td>11</td>
+                    <td>9</td>
                     <td>genuineness certificate for Form D</td>
                     <td>
                       <a rel="noopener noreferrer" href='/pdf/Office-Lens.pdf' target='_blank'>View</a>
@@ -606,19 +600,27 @@ function MandatoryScreen() {
                   </tr>
 
 
-                  <tr>
+                  {/* <tr>
                     <td>12</td>
                     <td>compound wall undertaking</td>
                     <td>
                       <a rel="noopener noreferrer" href='/pdf/compund-wall-certificate.pdf' target='_blank'>View</a>
                     </td>
-                  </tr>
+                  </tr> */}
 
                   <tr>
-                    <td>13</td>
+                    <td>10</td>
                     <td>Form A to E</td>
                     <td>
                       <a rel="noopener noreferrer" href='/pdf/form-a-to-e.pdf' target='_blank'>View</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>7</td>
+                    <td>Fire & rescue</td>
+                    <td>
+                      <a rel="noopener noreferrer" href='/pdf/Fire-Noc.pdf' target='_blank'>View</a>
                     </td>
                   </tr>
 
