@@ -160,7 +160,7 @@ function Home() {
                 <picture>
                   <source srcSet='/assets/home-abt-vmps.png' />
                   <source srcSet='/assets/home-abt-vmps.png' />
-                  <img src='/assets/home-abt-vmps.png' alt="Flowers" className='img-fluid AnimeElement' />
+                  <img src='/assets/home-abt-vmps.png' alt="Our Students" className='img-fluid AnimeElement' />
                 </picture>
               </div>
             </div>
@@ -176,9 +176,9 @@ function Home() {
         <div className='container'>
           <div className={'row yy' + ' ' + 'mb-xl-5 mb-0'}>
             <div className={'z1' + ' ' + 'col-lg-8 col-md-10 col-sm-12'}>
-              <h2 className='bottomToTop'>
+              <h1 className='bottomToTop text-light'>
                 Welcome to Vikas Mantra Public School
-              </h2>
+              </h1>
               <p className='bottomToTop'>
                 Vikas Mantra Public School, is located in a sprawling campus of
                 5 acres in the serene Mahindra World City away from the hustle
@@ -208,7 +208,7 @@ function Home() {
               <picture>
                 <source srcSet='/assets/icons/holistic-approach.png' />
                 <source srcSet='/assets/icons/holistic-approach.png' />
-                <img src='/assets/icons/holistic-approach.png' alt="image" width='81' height='74' className='bottomToTop' />
+                <img src='/assets/icons/holistic-approach.png' alt="holistic logo" width='81' height='74' className='bottomToTop' />
               </picture>
 
 
@@ -230,7 +230,7 @@ function Home() {
                 width='81'
                 height='74'
                 src='/assets/icons/holistic-approach.png'
-                alt='image'
+                alt='holistic logo'
               ></img>
 
               <div className={styles.borderLeft}>
@@ -254,7 +254,7 @@ function Home() {
                 height='74'
                 className='bottomToTop'
                 src='/assets/icons/holistic-approach.png'
-                alt='image'
+                alt='holistic logo'
               ></img>
 
               <div className={styles.borderLeft}>
@@ -278,7 +278,7 @@ function Home() {
                 className='bottomToTop'
                 height='74'
                 src='/assets/icons/holistic-approach.png'
-                alt='image'
+                alt='holistic logo'
               ></img>
 
               <div className={styles.borderLeft}>
@@ -362,7 +362,7 @@ function Home() {
                       <div className='AnimeStarts'>
                         <img
                           src='/assets/home-happy-face.png'
-                          alt='image'
+                          alt='Environmental harmony'
                           className='img-fluid AnimeElement'
                         />
                       </div>
@@ -487,7 +487,7 @@ function Home() {
                 <SplideSlide>
                   <div className={styles.testimonialcard}>
                     <div>
-                      <img src='/assets/Parent-1.png' alt='image' />
+                      <img src='/assets/Parent-1.png' alt='parent Image' />
                     </div>
 
                     <div className={styles.testimonialcontent}>
@@ -508,7 +508,7 @@ function Home() {
                 <SplideSlide>
                   <div className={styles.testimonialcard}>
                     <div>
-                      <img src='/assets/Parent-2.png' alt='image' />
+                      <img src='/assets/Parent-2.png' alt='parent Image' />
                     </div>
 
                     <div className={styles.testimonialcontent}>
@@ -528,7 +528,7 @@ function Home() {
                 <SplideSlide>
                   <div className={styles.testimonialcard}>
                     <div>
-                      <img src='/assets/Parent-3.png' alt='image' />
+                      <img src='/assets/Parent-3.png' alt='parent Image' />
                     </div>
 
                     <div className={styles.testimonialcontent}>

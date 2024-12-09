@@ -42,7 +42,7 @@ const Nav = () => {
                     <img src='/assets/vmps-white-logo.png' alt='image' />
                   </picture>
                 ) : (
-                  <img src='/assets/vmps-color.png' alt='image' />
+                  <img src='/assets/vmps-color.png' alt='Vikas Mantra' />
                 )}
               </a>
             </Link>

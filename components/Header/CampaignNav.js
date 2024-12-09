@@ -10,7 +10,7 @@ const CampaignNav = () => {
 
                         <div className='col-md-2'>
                             <a className={styles.CampaignLogo + ' ' + ' navbar-brand'}>
-                                <img src='/images/VMPS-Logo-1.png' alt='image' />
+                                <img src='/images/VMPS-Logo-1.png' alt='vikas logo' />
                             </a>
                         </div>
 

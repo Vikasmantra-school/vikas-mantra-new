@@ -50,7 +50,7 @@ const Blog1 = () => {
               <div className='AnimeStarts'>
                 <img
                   src='/assets/blogs/blog1.png'
-                  alt='image'
+                  alt='blog image'
                   className='BlogCntImg AnimeElement'
                 />
               </div>

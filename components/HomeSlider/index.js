@@ -57,9 +57,9 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-2 '>
 
-                      <h1 className='box AnimeElement'>
+                      <h2 className='text-light box AnimeElement'>
                         Creating Confident Learners and Leaders.
-                      </h1>
+                      </h2>
 
                       <p className='box AnimeElement'>
                         We believe in nurturing success in every step and fostering excellence in every lesson.
@@ -83,10 +83,10 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts d-none d-sm-block '>
 
-                      <h1 className='box AnimeElement'>
+                      <h2 className='box AnimeElement text-light'>
                         To educate young minds to be lifelong learners in this dynamic
                         world
-                      </h1>
+                      </h2>
 
                       <p className='box AnimeElement'>
                         Vikas Mantra Public School offers CBSE Curriculum and was
@@ -107,10 +107,10 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-2 '>
 
-                      <h1 className='box AnimeElement'>
+                      <h2 className='box AnimeElement text-light' >
                         To educate young minds to be lifelong learners in this dynamic
                         world
-                      </h1>
+                      </h2>
 
                       <p className='box AnimeElement'>
                         Vikas Mantra Public School offers CBSE Curriculum and was
@@ -143,9 +143,9 @@ function HomeSlider({ ref }) {
 
                     <div className='d-none d-sm-block'>
 
-                      <h1 className='box'>
+                      <h2 className='box text-light'>
                         Award for Academic Excellence
-                      </h1>
+                      </h2>
                       <p className='box '>
                         VMPS received the International Education Award for Academic Excellence ( Private School ) of the year 2021 - 22
                       </p>
@@ -164,9 +164,9 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-4 '>
 
-                      <h1 className='box AnimeElement'>
+                      <h2 className='text-light box AnimeElement'>
                         Award for Academic Excellence
-                      </h1>
+                      </h2>
 
                       <p className='box AnimeElement'>
                         VMPS received the International Education Award for Academic Excellence ( Private School ) of the year 2021 - 22
@@ -197,9 +197,9 @@ function HomeSlider({ ref }) {
                   >
 
                     <div className='d-none d-sm-block'>
-                      <h1 className='box'>
+                      <h2 className='text-light box'>
                         Sports Day
-                      </h1>
+                      </h2>
                       <p className='box'>
                         we grandly celebrated our annual sports meet with our indian cricket player Mr.Subramaniam Badrinath who is our chief guest.
                       </p>
@@ -216,9 +216,9 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-4 '>
 
-                      <h1 className='box AnimeElement'>
+                      <h2 className='text-light box AnimeElement'>
                         Sports Day
-                      </h1>
+                      </h2>
 
                       <p className='box AnimeElement'>
                         we grandly celebrated our annual sports meet with our indian cricket player Mr.Subramaniam Badrinath who is our chief guest.
@@ -249,9 +249,9 @@ function HomeSlider({ ref }) {
                   >
 
                     <div className='d-none d-sm-block'>
-                      <h1 className='box'>
+                      <h2 className='text-light box'>
                         kiddies annual sports meet
-                      </h1>
+                      </h2>
                       <p className='box'>
                         A fabulous march past performed by our school kids on kiddies annual sports meet.
                       </p>
@@ -269,9 +269,9 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-4 '>
 
-                      <h1 className='box AnimeElement'>
+                      <h2 className='text-light box AnimeElement'>
                         kiddies annual sports meet
-                      </h1>
+                      </h2>
 
                       <p className='box AnimeElement'>
                         A fabulous march past performed by our school kids on kiddies annual sports meet.
