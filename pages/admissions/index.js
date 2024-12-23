@@ -388,7 +388,7 @@ const Admissions = () => {
                             Admissions Open
                           </td>
                           <td className='AdmissionScrollAnimeElement'>
-                            21st December 2023
+                            20th November 2024
                           </td>
                         </tr>
 
@@ -397,7 +397,7 @@ const Admissions = () => {
                             Application forms available from
                           </td>
                           <td className='AdmissionScrollAnimeElement'>
-                          21st December 2023
+                          20th November 2024
                           </td>
                         </tr>
 
@@ -406,7 +406,7 @@ const Admissions = () => {
                             Rolling-admissions start date
                           </td>
                           <td className='AdmissionScrollAnimeElement'>
-                          21st December 2023
+                          20th November 2024
                           </td>
                         </tr>
 
@@ -415,7 +415,7 @@ const Admissions = () => {
                             Admissions open till
                           </td>
                           <td className='AdmissionScrollAnimeElement'>
-                            30th June 2024
+                            30th June 2025
                           </td>
                         </tr>
                       </tbody>
