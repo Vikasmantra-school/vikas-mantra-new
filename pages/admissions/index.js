@@ -286,7 +286,7 @@ const Admissions = () => {
                             alt='list-point'
                           />
                           Please contact the Admission Coordinator between 8.30
-                          am and 4.30 pm., Mon-Sat | 9.00 am – 1.00 pm on
+                          am and 4.30 pm., Mon-Fri | 9.00 am – 1.00 pm on
                           Saturdays (Except 2nd Sat)
                         </li>
                       </ul>
@@ -426,8 +426,8 @@ const Admissions = () => {
                     <p className=' pt-3 AdmissionScrollAnimeElement'>
                       Please note that Admissions for the new academic year
                       2024-25 at VIKAS MANTRA PUBLIC SCHOOL will commence from
-                      21st December 2023 and the admissions will for this
-                      academic year will be closed on 30th June 2024.
+                      20st November 2024 and the admissions will for this
+                      academic year will be closed on 30th June 2025.
                     </p>
                   </div>
                 </div>
@@ -509,7 +509,7 @@ const Admissions = () => {
                             src='/assets/icons/pink-point.png'
                             alt='list-point'
                           />
-                           For 1st Grade the child must have completed 7 years as on 30th May.
+                           For 1st Grade the child must have completed 6 years as on 30th May.
                         </li>
                       </ul>
                     </div>

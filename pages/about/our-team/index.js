@@ -21,14 +21,14 @@ const OurTeam = () => {
         { staffImage: staff1, delay: 0.5, heading: 'Divya L', para: 'Primary School Co-ordinator', ImgContainer: 'ImgContainer2' },
         { staffImage: staff2, delay: 0.7, heading: 'Ms. Pratheeba', para: 'Mid Primary School Co-ordinator Department of Science', ImgContainer: 'ImgContainer3' },
         { staffImage: staff3, delay: 0.9, heading: 'Raja Varadarajan', para: 'Department of Maths', ImgContainer: 'ImgContainer4' },
-        { staffImage: staff4, delay: 1, heading: 'Anuradha Singh', para: 'Department of Computer Science', ImgContainer: 'ImgContainer5' },
+        // { staffImage: staff4, delay: 1, heading: 'Anuradha Singh', para: 'Department of Computer Science', ImgContainer: 'ImgContainer5' },
         { staffImage: staff5, delay: 1.2, heading: 'Sujatha Gangadharan', para: 'Department of Tamil', ImgContainer: 'ImgContainer6' },
         { staffImage: staff6, delay: 1.4, heading: 'Prince Sounderrajan K', para: 'Department of Physical Education', ImgContainer: 'ImgContainer7' },
         { staffImage: staff7, delay: 1.6, heading: 'Ms. Maheshwari', para: 'Pre-Primary Coordinator', ImgContainer: 'ImgContainer8' },
         { staffImage: staff8, delay: 1.8, heading: 'Vivek Sathyan', para: 'Department of Dance', ImgContainer: 'ImgContainer9' },
-        { staffImage: staff9, delay: 2, heading: 'Preeti Satsangi', para: 'Department of Hindi', ImgContainer: 'ImgContainer10' },
-        { staffImage: staff10, delay: 2.2, heading: 'Soundarrajan Venkatesan', para: 'Department of Art & Craft', ImgContainer: 'ImgContainer11' },
-        { staffImage: staff11, delay: 2.4, heading: 'Ms.Gayathri', para: 'Department of English', ImgContainer: 'ImgContainer1' },
+        // { staffImage: staff9, delay: 2, heading: 'Preeti Satsangi', para: 'Department of Hindi', ImgContainer: 'ImgContainer10' },
+        // { staffImage: staff10, delay: 2.2, heading: 'Soundarrajan Venkatesan', para: 'Department of Art & Craft', ImgContainer: 'ImgContainer11' },
+        // { staffImage: staff11, delay: 2.4, heading: 'Ms.Gayathri', para: 'Department of English', ImgContainer: 'ImgContainer1' },
     ];
 
     const pageTitle = 'About'

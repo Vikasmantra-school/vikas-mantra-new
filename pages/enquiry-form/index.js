@@ -259,7 +259,7 @@ const EnquiryForm = () => {
                     <div className='col-md-11'>
                       <Form.Group className='mb-5 AnimeStarts'>
                         <Form.Label className='mb-5 AnimeElement'>
-                          Admission of Communication
+                          Admission for Communication
                         </Form.Label>
                         <Form.Control
                           required
