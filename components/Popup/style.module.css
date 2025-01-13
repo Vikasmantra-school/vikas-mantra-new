@@ -1,3 +1,18 @@
 .sectionOut {
     z-index: 9999;
 }
+.desktopImage {
+    display: block;
+}
+.mobileImage {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktopImage {
+        display: none;
+    }
+    .mobileImage {
+        display: block;
+    }
+}
