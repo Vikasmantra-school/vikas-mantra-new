@@ -18,7 +18,7 @@ const Mambakkam = () => {
           <div className="row py-5">
             <div className="AnimeStarts">
               <h2 className={styles.headingPdng + " AnimeElement"}>
-                New Campus
+                Exciting News
               </h2>
             </div>
           </div>
@@ -38,7 +38,7 @@ const Mambakkam = () => {
             <div className="col-lg-5 col-md-12 position-relative ">
               <div className={styles.margin + " pb-5 "}>
                 <div className="AnimeStarts">
-                  <h2 className="ulineRed AnimeElement">At Mambakkam</h2>
+                  <h2 className="ulineRed AnimeElement">New Campus At Mambakkam</h2>
                 </div>
 
                 <div className="AnimeStarts">
@@ -130,7 +130,23 @@ const Mambakkam = () => {
                   </h3>
                 </div>
 
-                <div className="AnimeStarts pb-3">
+                
+                <div
+                  className={
+                    styles.ResponsiveGroupImageContainer + " AnimeStarts"
+                  }>
+                  <picture>
+                    <source srcSet="/assets/advisor/maalath-vikas.jpg" />
+                    <source srcSet="/assets/advisor/maalath-vikas.jpg" />
+                    <img
+                      src="/assets/advisor/maalath-vikas.jpg"
+                      alt="image"
+                      className={styles.ResponsiveGroupImage + " AnimeElement"}
+                    />
+                  </picture>
+                </div>
+
+                <div className="AnimeStarts pt-3">
                   <p className={styles.pLineHeight + "AnimeElement mt-3"}>
                     Dr. K R Maalathi is a renowned educationist and visionary
                     leader with over two decades of expertise in transforming
@@ -184,6 +200,7 @@ const Mambakkam = () => {
                 />
               </div>
             </div>
+            
           </div>
         </div>
       </section>
