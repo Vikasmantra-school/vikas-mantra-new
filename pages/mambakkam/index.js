@@ -2,14 +2,13 @@ import styles from "./style.module.css";
 import { Breadcrumb } from "../../components/Breadcrumb/Breadcrumb";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import PopupModal from "../../components/Popup/PopupModal";
+// import PopupModal from "../../components/Popup/PopupModal";
 
 const Mambakkam = () => {
   const pageTitle = "New campus";
 
   return (
     <>
-    <PopupModal />
 
       <Breadcrumb pageName={pageTitle} />
 
