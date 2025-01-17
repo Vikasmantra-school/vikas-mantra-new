@@ -57,7 +57,7 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-2 '>
 
-                      <h2 className='text-light box AnimeElement'>
+                      <h2 className='box AnimeElement'>
                         Creating Confident Learners and Leaders.
                       </h2>
 
