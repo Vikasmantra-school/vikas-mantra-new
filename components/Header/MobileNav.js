@@ -104,6 +104,12 @@ const MobileNav = () => {
               </li>
 
               <li className='nav__item'>
+                <Link href='/about/message-from-advisor' legacyBehavior>
+                  <a className='nav__link'> Our Advisor</a>
+                </Link>
+              </li>
+
+              <li className='nav__item'>
                 <Link href='/about/message-from-principal' legacyBehavior>
                   <a className='nav__link'>Principal’s Message</a>
                 </Link>

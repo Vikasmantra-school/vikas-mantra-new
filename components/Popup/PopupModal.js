@@ -32,7 +32,7 @@ const PopupModal = () => {
 
     return (
         <>
-            <Modal show={show} onHide={handleClose} animation={true}>
+            <Modal show={show} onHide={handleClose} animation={true} dialogClassName={styles.customDialog}  contentClassName={styles.customContent}>
                 <Modal.Header closeButton></Modal.Header>
                 <Modal.Body onClick={handleRedirect} style={{ cursor: 'pointer' }}>
                     <div>

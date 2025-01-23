@@ -7,6 +7,21 @@
 .mobileImage {
     display: none;
 }
+.customDialog{
+    height: 90vh;
+    max-width: 65vw;
+}
+.customContent{
+}
+.fade.modal.show{
+    padding: 0;
+}
+
+@media (max-width: 578px){
+    .customDialog{
+        max-width: unset;
+    }
+}
 
 @media (max-width: 768px) {
     .desktopImage {

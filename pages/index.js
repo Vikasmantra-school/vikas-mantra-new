@@ -110,6 +110,88 @@ function Home() {
       </Head>
       <HomeSlider />
 
+      
+      {/* <section style={{ paddingBlockStart:"calc(115px + 2rem)"}}>
+        <div className="container">
+        <div className="row">
+            <div className="col-lg-5 col-md-12 position-relative ">
+              <div>
+                <div className="AnimeStarts">
+                  <h3 className="ulineRed AnimeElement">
+                    Our Advisor
+                  </h3>
+                </div>
+
+                
+                <div
+                  className={
+                    styles.ResponsiveGroupImageContainer + " AnimeStarts"
+                  }>
+                  <picture>
+                    <source srcSet="/assets/advisor/maalath-vikas2.jpg" />
+                    <source srcSet="/assets/advisor/maalath-vikas2.jpg" />
+                    <img
+                      src="/assets/advisor/maalath-vikas2.jpg"
+                      alt="image"
+                      className={styles.ResponsiveGroupImage + " AnimeElement"}
+                    />
+                  </picture>
+                </div>
+
+                <div className="AnimeStarts pt-3">
+                  <p className={styles.pLineHeight + "AnimeElement mt-3"}>
+                    Dr. K R Maalathi is a renowned educationist and visionary
+                    leader with over two decades of expertise in transforming
+                    K-12 education. Passionate about fostering academic
+                    excellence and holistic development, she specializes in
+                    mentoring educators, designing innovative curricula, and
+                    empowering school leadership teams.
+                  </p>
+                </div>
+
+                <div className="AnimeStarts">
+                  <p className={styles.pLineHeight + "AnimeElement"}>
+                    As an education consultant, leadership coach, and curriculum
+                    expert, Dr. Maalathi has worked with schools across the
+                    globe to enhance teacher quality, implement future-ready
+                    strategies, and create engaging, child-centered learning
+                    environments. A prolific author and advocate for
+                    values-based education, she is dedicated to nurturing
+                    confident, creative, and compassionate learners who are
+                    prepared to excel in life.
+                  </p>
+                </div>
+
+                <div className="AnimeStarts">
+                  <p className={styles.pLineHeight + "AnimeElement"}>
+                    Vikas Mantra Public School is honoured to have Dr. Maalathi
+                    as the Advisor for our group, guiding us in our mission to
+                    deliver transformative education.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 offset-lg-1 col-md-12 position-relative">
+              <div className="AnimeStarts">
+                <picture>
+                  <source srcSet="/assets/advisor/maalath-vikas2.jpg" />
+                  <source srcSet="/assets/advisor/maalath-vikas2.jpg" />
+                  <img
+                    src="/assets/advisor/maalath-vikas2.jpg"
+                    alt="image"
+                    className={styles.schoolBuildingImg + " AnimeElement"}
+                  />
+                </picture>
+              </div>
+
+             
+            </div>
+            
+          </div> 
+
+        </div>
+      </section> */}
+
       <section
         className={
           styles.homeabout +
@@ -169,6 +251,7 @@ function Home() {
           </div>
         </div>
       </section>
+
 
       <section
         className={
@@ -329,7 +412,7 @@ function Home() {
                 <SplideSlide>
                   <div className='row align-items-center bottomToTop'>
                     <div className='col-xl-4 col-lg-5 col-md-12 col-sm-12'>
-                      <p className={styles.textdate}>June 28, 2022</p>
+                      <p className={styles.textdate}>December 20, 2024</p>
 
                       <h4 className={styles.uline}>
                         Holistic education for the 21st century

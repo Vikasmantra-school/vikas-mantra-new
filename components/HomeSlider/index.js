@@ -107,7 +107,7 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-2 '>
 
-                      <h2 className='box AnimeElement text-light' >
+                      <h2 className='box AnimeElement' >
                         To educate young minds to be lifelong learners in this dynamic
                         world
                       </h2>
@@ -164,7 +164,7 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-4 '>
 
-                      <h2 className='text-light box AnimeElement'>
+                      <h2 className=' box AnimeElement'>
                         Award for Academic Excellence
                       </h2>
 
@@ -216,7 +216,7 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-4 '>
 
-                      <h2 className='text-light box AnimeElement'>
+                      <h2 className=' box AnimeElement'>
                         Sports Day
                       </h2>
 
@@ -269,7 +269,7 @@ function HomeSlider({ ref }) {
 
                     <div className='AnimeStarts py-4 '>
 
-                      <h2 className='text-light box AnimeElement'>
+                      <h2 className='box AnimeElement'>
                         kiddies annual sports meet
                       </h2>
 

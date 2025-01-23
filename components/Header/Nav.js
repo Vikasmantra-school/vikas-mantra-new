@@ -125,6 +125,12 @@ const Nav = () => {
                     </li>
 
                     <li>
+                      <Link href='/about/message-from-advisor' legacyBehavior>
+                        <a className='dropdown-item'>Our Advisor </a>
+                      </Link>
+                    </li>
+
+                    <li>
                       <Link href='/about/message-from-principal' legacyBehavior>
                         <a className='dropdown-item'>Principal’s Message</a>
                       </Link>
