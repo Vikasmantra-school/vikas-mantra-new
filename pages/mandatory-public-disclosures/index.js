@@ -232,7 +232,7 @@ function MandatoryScreen() {
                     <td>1</td>
                     <td>FEE STRUCTURE OF THE SCHOOL*</td>
                     <td>
-                      <a href='/pdf/vmps-fee-structure-2023.pdf' target='_blank'>Annexure 9</a>
+                      <a href='/pdf/FEE STRUCTURE 24-25.pdf' target='_blank'>Annexure 9</a>
                     </td>
                   </tr>
 
@@ -240,7 +240,7 @@ function MandatoryScreen() {
                     <td>2</td>
                     <td>ANNUAL ACADEMIC CALENDER* </td>
                     <td>
-                      <a href='/pdf/academic-calendar.pdf' target='_blank'>Annexure 10</a>
+                      <a href='/pdf/1-Diary 2024-1.pdf' target='_blank'>Annexure 10</a>
                     </td>
                   </tr>
 
@@ -248,7 +248,7 @@ function MandatoryScreen() {
                     <td>3</td>
                     <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)*</td>
                     <td>
-                      <a href='/pdf/smc-1.pdf' target='_blank'>Annexure 11</a>
+                      <a href='/pdf/COMMITTEE-LIST-2024-25.pdf' target='_blank'>Annexure 11</a>
                     </td>
                   </tr>
 
@@ -391,16 +391,14 @@ function MandatoryScreen() {
                     <td>NO. OF REGISTERED STUDENTS</td>
                     <td>NO. OF STUDENTS PASSED</td>
                     <td>PASS PERCENTAGE</td>
-                    <td>REMARKS</td>
                   </tr>
 
                   <tr>
                     <td>1</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>EG. 78.56</td>
-                    <td></td>
+                    <td>22-23</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>100%</td>
                   </tr>
                 </tbody>
               </Table>
@@ -419,16 +417,14 @@ function MandatoryScreen() {
                     <td>NO. OF REGISTERED STUDENTS</td>
                     <td>NO. OF STUDENTS PASSED</td>
                     <td>PASS PERCENTAGE</td>
-                    <td>REMARKS</td>
                   </tr>
 
                   <tr>
                     <td>1</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>1 EG. 78.56</td>
-                    <td></td>
+                    <td>23-24</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>100%</td>
                   </tr>
                 </tbody>
               </Table>
