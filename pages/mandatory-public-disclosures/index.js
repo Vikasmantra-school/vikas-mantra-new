@@ -238,7 +238,7 @@ function MandatoryScreen() {
 
                   <tr>
                     <td>2</td>
-                    <td>ANNUAL ACADEMIC CALENDER* </td>
+                    <td>ANNUAL ACADEMIC CALENDAR* </td>
                     <td>
                       <a href='/pdf/1-Diary 2024-1.pdf' target='_blank'>Annexure 10</a>
                     </td>
@@ -248,7 +248,7 @@ function MandatoryScreen() {
                     <td>3</td>
                     <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)*</td>
                     <td>
-                      <a href='/pdf/COMMITTEE-LIST-2024-25.pdf' target='_blank'>Annexure 11</a>
+                      <a href='/pdf/COMMITTEE-LIST-2024-25_updated.pdf' target='_blank'>Annexure 11</a>
                     </td>
                   </tr>
 
