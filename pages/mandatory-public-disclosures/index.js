@@ -400,6 +400,13 @@ function MandatoryScreen() {
                     <td>12</td>
                     <td>100%</td>
                   </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>23-24</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>100%</td>
+                  </tr>
                 </tbody>
               </Table>
             </div>
@@ -421,10 +428,10 @@ function MandatoryScreen() {
 
                   <tr>
                     <td>1</td>
-                    <td>23-24</td>
-                    <td>18</td>
-                    <td>18</td>
-                    <td>100%</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </tbody>
               </Table>
