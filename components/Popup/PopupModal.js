@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import styles from './style.module.css';
 import Modal from 'react-bootstrap/Modal';
 import Image from 'next/image';
-import PopupImageDesktop from '../../public/assets/Popups/maambakkam.desktop-popup.png';
+import PopupImageDesktop from '../../public/assets/Popups/mindfull.jpg';
 import PopupImageMobile from '../../public/assets/Popups/maambakkam-mobile-popup.png';
 import { useRouter } from 'next/router';
+import styles from './style.module.css';
 
 const PopupModal = () => {
     const router = useRouter();
@@ -38,11 +38,11 @@ const PopupModal = () => {
                     <div>
                         {/* Desktop Image */}
                         <div className={styles.desktopImage}>
-                            <Image src={PopupImageDesktop} alt="popup-desktop" />
+                            <Image className={styles.deskimg} src={PopupImageDesktop} alt="popup-desktop" />
                         </div>
                         {/* Mobile Image */}
-                        <div className={styles.mobileImage}>
-                            <Image src={PopupImageMobile} alt="popup-mobile" />
+                        <div className={styles.mobileImage} >
+                            <Image src={PopupImageDesktop} alt="popup-mobile" />
                         </div>
                     </div>
                 </Modal.Body>
