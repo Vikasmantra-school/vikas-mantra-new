@@ -44,7 +44,7 @@ const Classrooms = () => {
                   MANTRA PUBLIC SCHOOL. Classrooms are designed to enable the
                   student to maximise his/her individual learning while at school.
                   A typical classroom at VIKAS MANTRA PUBLIC SCHOOL accommodates
-                  up to 30 students. Each classroom is air-conditioned and has
+                  up to 30 students. Each classroom has
                   student safe furniture with rounded edges to prevent injury. The
                   furniture design goes a step forward to ensure that the student
                   is comfortable and helps maintain correct posture at all times.
@@ -103,11 +103,11 @@ const Classrooms = () => {
               </ul>
             </div>
 
-            <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
+            {/* <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
               <ul className='list-points AnimeStarts'>
                 <li className='AnimeElement'><img src="/assets/icons/pink-point.png" alt='list-point' /> Air-conditioned classrooms.</li>
               </ul>
-            </div>
+            </div> */}
 
             <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4 '}>
               <ul className='list-points AnimeStarts'>
@@ -121,7 +121,7 @@ const Classrooms = () => {
               </ul>
             </div>
 
-            <div className={styles.pdngZero + ' col-md-3 pb-4'}>
+            <div className={styles.pdngZero + ' col-md-3 pt-5 pb-4'}>
               <ul className='list-points AnimeStarts'>
                 <li className='AnimeElement'>
                   <img src="/assets/icons/orange-point.png" alt='list-point' />
