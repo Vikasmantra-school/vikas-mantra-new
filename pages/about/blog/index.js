@@ -83,7 +83,7 @@ const Blog = () => {
 
               <div className="AnimeStarts">
                 <p className="pt-5 AnimeElement">
-                At Vikas Mantra Public School, we believe that celebrations are more than just festive occasions—they are essential to building a joyful, inclusive, and dynamic learning environment. While academics form the foundation of education, it's through celebrations that students truly connect, grow, and experience the richness of life beyo…
+                At Vikas Mantra Public School, we believe that celebrations are more than just festive occasions—they are essential to building a joyful, inclusive, and dynamic learning environment. While academics form the foundation of education, it&apos;s through celebrations that students truly connect, grow, and experience the richness of life beyo…
                 </p>
 
                 <Link href="/about/blog/blog12">
