@@ -51,10 +51,10 @@ const Blog13 = () => {
             <div className="col-lg-8 col-md-12 ">
               <div className="AnimeStarts">
                 <p className="AnimeElement">
-                  As a parent, identifying your child&apos;s primary learning style
-                  helps you support them more effectively at home. One helpful
-                  model to understand this is the VARK model, which outlines
-                  four main learning styles:
+                  As a parent, identifying your child&apos;s primary learning
+                  style helps you support them more effectively at home. One
+                  helpful model to understand this is the VARK model, which
+                  outlines four main learning styles:
                 </p>
               </div>
 
@@ -72,25 +72,32 @@ const Blog13 = () => {
                 <h4 className="AnimeElement">1. Visual Learners</h4>
 
                 <p className="AnimeElement">
-                  These children understand information best when it&apos;s presented
-                  visually.
+                  These children understand information best when it&apos;s
+                  presented visually.
                 </p>
                 <p className="AnimeElement">Common traits:</p>
                 <p className="AnimeElement">
-                  ● Love drawing, painting, and creative expression
-                </p>
-                <p className="AnimeElement">
-                  ● Have a strong sense of direction and enjoy looking at maps
+                  <ul>
+                    <li>Love drawing, painting, and creative expression</li>
+
+                    <li>
+                      Have a strong sense of direction and enjoy looking at maps
+                    </li>
+                    <li>
+                      Prefer watching videos or demonstrations over reading
+                      instructions
+                    </li>
+                  </ul>
                 </p>
                 <p className="AnimeElement">How to support them:</p>
                 <p className="AnimeElement">
-                  ● Use colorful notes, diagrams, and mind maps
-                </p>
-                <p className="AnimeElement">
-                  ● Suggest educational videos and documentaries
-                </p>
-                <p className="AnimeElement">
-                  ● Encourage the use of charts and visual aids while studying
+                  <ul>
+                    <li>Use colorful notes, diagrams, and mind maps</li>
+                    <li>Suggest educational videos and documentaries</li>
+                    <li>
+                      Encourage the use of charts and visual aids while studying
+                    </li>
+                  </ul>
                 </p>
               </div>
 
@@ -103,24 +110,25 @@ const Blog13 = () => {
                 </p>
                 <p className="AnimeElement">Common traits:</p>
                 <p className="AnimeElement">
-                  ● Enjoy conversations and group discussions
+                  <ul>
+                    <li>Enjoy conversations and group discussions</li>
+                    <li>
+                      Are often drawn to music and may memorize lyrics easily
+                    </li>
+                    <li>Notice subtle sounds or tones that others may not</li>
+                  </ul>
                 </p>
-                <p className="AnimeElement">
-                  ● Are often drawn to music and may memorize lyrics easily
-                </p>
-                <p className="AnimeElement">
-                  ● Notice subtle sounds or tones that others may not
-                </p>
+
                 <p className="AnimeElement">How to support them:</p>
                 <p className="AnimeElement">
-                  ● Let them teach or explain lessons to others
-                </p>
-                <p className="AnimeElement">
-                  ● Use discussions or debates to explore concepts
-                </p>
-                <p className="AnimeElement">
-                  ● Encourage them to record and listen to lessons or study
-                  notes
+                  <ul>
+                    <li>Let them teach or explain lessons to others</li>
+                    <li>Use discussions or debates to explore concepts</li>
+                    <li>
+                      Encourage them to record and listen to lessons or study
+                      notes
+                    </li>
+                  </ul>
                 </p>
               </div>
 
@@ -133,23 +141,27 @@ const Blog13 = () => {
                 </p>
                 <p className="AnimeElement">Common traits:</p>
                 <p className="AnimeElement">
-                  ● Prefer information presented in written words
+                  <ul>
+                    <li>Prefer information presented in written words</li>
+                    <li>Enjoy reading books, articles, and reports</li>
+                    <li>
+                      Gravitate toward journals, dictionaries, and online
+                      reading
+                    </li>
+                  </ul>
                 </p>
-                <p className="AnimeElement">
-                  ● Enjoy reading books, articles, and reports
-                </p>
-                <p className="AnimeElement">
-                  ● Gravitate toward journals, dictionaries, and online reading
-                </p>
+
                 <p className="AnimeElement">How to support them:</p>
                 <p className="AnimeElement">
-                  ● Provide a variety of books and writing materials
-                </p>
-                <p className="AnimeElement">
-                  ● Offer writing prompts or encourage essay/report writing
-                </p>
-                <p className="AnimeElement">
-                  ● Help them take notes, make lists, and rewrite key concepts
+                  <ul>
+                    <li>Provide a variety of books and writing materials</li>
+                    <li>
+                      Offer writing prompts or encourage essay/report writing
+                    </li>
+                    <li>
+                      Help them take notes, make lists, and rewrite key concepts
+                    </li>
+                  </ul>
                 </p>
               </div>
             </div>
