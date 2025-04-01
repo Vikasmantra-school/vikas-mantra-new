@@ -34,7 +34,7 @@ const Blog = () => {
                   " pastelBlue4 imgBgColorBlog2 AnimeStarts " + styles.order1
                 }>
                 <img
-                  src="/assets/blogs/blog-11.jpg"
+                  src="/assets/blogs/blog-11.JPG"
                   alt="image"
                   className={styles.Blog2Img + " AnimeElement"}
                 />
@@ -100,7 +100,7 @@ const Blog = () => {
               }>
               <div className={"imgBgColorBlog1 pastelGreen4 AnimeStarts"}>
                 <img
-                  src="/assets/blogs/blog-12.jpg"
+                  src="/assets/blogs/blog-12.JPG"
                   alt="image"
                   className={styles.Blog1Img + " AnimeElement"}
                 />
@@ -126,7 +126,7 @@ const Blog = () => {
                   " pastelBlue4 imgBgColorBlog2 AnimeStarts " + styles.order1
                 }>
                 <img
-                  src="/assets/blogs/blog-13.jpg"
+                  src="/assets/blogs/blog-13.JPG"
                   alt="image"
                   className={styles.Blog2Img + " AnimeElement"}
                 />
@@ -191,7 +191,7 @@ const Blog = () => {
               }>
               <div className={"imgBgColorBlog1 pastelGreen4 AnimeStarts"}>
                 <img
-                  src="/assets/blogs/blog-14.jpg"
+                  src="/assets/blogs/blog-14.JPG"
                   alt="image"
                   className={styles.Blog1Img + " AnimeElement"}
                 />

@@ -39,7 +39,7 @@ const Blog14 = () => {
 
             <div className="col-lg-6 col-md-12 position-relative AnimeStarts">
               <img
-                src="/assets/blogs/blog-14.jpg"
+                src="/assets/blogs/blog-14.JPG"
                 alt="image"
                 className="BlogCntImg AnimeElement"
               />
