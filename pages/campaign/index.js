@@ -93,7 +93,7 @@ const Campaign = () => {
                   <div className="col-md-4 text-center">
                     <div className={style.formColumnContainer + " p-4"}>
                       <h2>
-                        Vikas Mantra Public School – Now in Chengalpattu & Mambakkam{" "}
+                        Vikas Mantra Public School Now in Chengalpattu & Mambakkam{" "}
                       </h2>
     
                       <form
