@@ -177,37 +177,6 @@ function Career() {
                   </tbody>
                 </Table>
               </div>
-              <div className={styles.tableContainer}>
-                <Table bordered className={"mt-4" + " " + styles.tableborder}>
-                  <tbody className="AnimeStarts">
-                    <tr>
-                      <th className="AnimeElement fw-bold">
-                        IMMEDIATE REQUIREMENT
-                      </th>
-                      {/* <th className='AnimeElement fw-bold'>REQUIREMENTS</th> */}
-                      <style jsx>
-                        {`
-                          th {
-                            background-color: #aa182c;
-                            color: #fff;
-                          }
-                        `}
-                      </style>
-                    </tr>
-
-                    <tr>
-                      <td className="AnimeElement">PRO</td>
-                    </tr>
-
-                    <tr>
-                      <td className="AnimeElement">ADMISSION COUNSELLOR</td>
-                    </tr>
-                    <tr>
-                      <td className="AnimeElement">ACCOUNTANT</td>
-                    </tr>
-                  </tbody>
-                </Table>
-              </div>
 
               <div className="AnimeStarts">
                 <p className="AnimeElement">
