@@ -1,25 +1,21 @@
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import '../styles/globals.css'
-import Nav from '../components/Header/Nav'
-import { Footer } from '../components/Footer/Footer'
-import { useEffect } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-import { CSSRulePlugin } from 'gsap/dist/CSSRulePlugin'
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../styles/globals.css";
+import Nav from "../components/Header/Nav";
+import { Footer } from "../components/Footer/Footer";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { CSSRulePlugin } from "gsap/dist/CSSRulePlugin";
 // import { Analytics } from '@vercel/analytics/react';
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
+import PopupModal from "../components/Popup/PopupModal";
 
-
-
-gsap.registerPlugin(CSSRulePlugin)
+gsap.registerPlugin(CSSRulePlugin);
 function MyApp({ Component, pageProps }) {
-
   function Anime() {
-
-    const parentTrigger2 = document.querySelectorAll('.AnimeStarts')
-    parentTrigger2.forEach(fadeInAfter)
+    const parentTrigger2 = document.querySelectorAll(".AnimeStarts");
+    parentTrigger2.forEach(fadeInAfter);
     function fadeInAfter(elem) {
-
       const rule = CSSRulePlugin.getRule(".imgBgColor:after");
       gsap.fromTo(
         rule,
@@ -33,8 +29,9 @@ function MyApp({ Component, pageProps }) {
           y: 0,
           cssRule: {
             opacity: "1",
-          }
-        });
+          },
+        }
+      );
 
       const rule2 = CSSRulePlugin.getRule(".imgBgColor2:after");
       gsap.fromTo(
@@ -48,8 +45,9 @@ function MyApp({ Component, pageProps }) {
           y: 0,
           cssRule: {
             opacity: "1",
-          }
-        });
+          },
+        }
+      );
 
       const rule3 = CSSRulePlugin.getRule(".imgBgColorLeft:after");
       gsap.fromTo(
@@ -63,8 +61,9 @@ function MyApp({ Component, pageProps }) {
           y: 0,
           cssRule: {
             opacity: "1",
-          }
-        });
+          },
+        }
+      );
 
       const rule4 = CSSRulePlugin.getRule(".imgBgColorAdmission1:after");
       gsap.fromTo(
@@ -78,8 +77,9 @@ function MyApp({ Component, pageProps }) {
           y: 0,
           cssRule: {
             opacity: "1",
-          }
-        });
+          },
+        }
+      );
 
       const rule5 = CSSRulePlugin.getRule(".imgBgColorAdmission2:after");
       gsap.fromTo(
@@ -93,8 +93,9 @@ function MyApp({ Component, pageProps }) {
           y: 0,
           cssRule: {
             opacity: "1",
-          }
-        });
+          },
+        }
+      );
 
       const rule6 = CSSRulePlugin.getRule(".imgBgColorBlog1:after");
       gsap.fromTo(
@@ -108,8 +109,9 @@ function MyApp({ Component, pageProps }) {
           y: 0,
           cssRule: {
             opacity: "1",
-          }
-        });
+          },
+        }
+      );
 
       const rule7 = CSSRulePlugin.getRule(".imgBgColorBlog2:after");
       gsap.fromTo(
@@ -123,8 +125,9 @@ function MyApp({ Component, pageProps }) {
           y: 0,
           cssRule: {
             opacity: "1",
-          }
-        });
+          },
+        }
+      );
       const rule8 = CSSRulePlugin.getRule(".ContactImgBgColor:after");
       gsap.fromTo(
         rule8,
@@ -138,16 +141,15 @@ function MyApp({ Component, pageProps }) {
           y: 0,
           cssRule: {
             opacity: "1",
-          }
-        });
-
-
+          },
+        }
+      );
     }
 
-    const parentTrigger = document.querySelectorAll('.AnimeStarts')
-    parentTrigger.forEach(fadeIn)
+    const parentTrigger = document.querySelectorAll(".AnimeStarts");
+    parentTrigger.forEach(fadeIn);
     function fadeIn(elem) {
-      let text = elem.querySelectorAll('.AnimeElement')
+      let text = elem.querySelectorAll(".AnimeElement");
 
       gsap.fromTo(
         text,
@@ -163,40 +165,40 @@ function MyApp({ Component, pageProps }) {
           scrollTrigger: {
             trigger: elem,
             animation: text,
-            toggleActions: 'play none none none',
+            toggleActions: "play none none none",
             once: true,
           },
         }
-      )
+      );
     }
-
   }
 
   useEffect(() => {
-    Anime()
+    Anime();
 
-    import('../node_modules/bootstrap/dist/js/bootstrap')
-  }, [Anime])
-  gsap.registerPlugin(ScrollTrigger)
-  gsap.registerPlugin(CSSRulePlugin)
-
-
+    import("../node_modules/bootstrap/dist/js/bootstrap");
+  }, [Anime]);
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(CSSRulePlugin);
 
   const router = useRouter();
-  const showHeader = router.pathname === '/campaign' ||  router.pathname==='/thankyou' ? false : true;
+  const showHeader =
+    router.pathname === "/campaign" || router.pathname === "/thankyou"
+      ? false
+      : true;
   return (
     <>
+      <PopupModal />
 
       {showHeader && <Nav />}
 
       <Component {...pageProps} />
 
       {showHeader && <Footer />}
-      
 
       {/* <Analytics /> */}
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
