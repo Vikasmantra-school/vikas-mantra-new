@@ -260,13 +260,7 @@ const Admissions = () => {
 
                       <div className='AdmissionAnimeStarts AnimeStarts'>
                         <h6 className='card-text pt-5 AdmissionScrollAnimeElement AnimeElement'>
-                          At VIKAS MANTRA PUBLIC SCHOOL, admissions are open for
-                          the academic year 2025-26 from classes Lower KG to
-                          Grade 9. Each grade will have 3 divisions with class
-                          strength of no more than 30 students. At VMPS ,we aim
-                          to create a personalised education experience for each
-                          student and provide a platform to maximise each
-                          student’s learning and build on individual potential.
+                          At VIKAS MANTRA PUBLIC SCHOOL, admissions are open for the academic year 2025-26 from classes Lower KG to Grade 12. Each grade will have 3 divisions with class strength of no more than 30 students. At VMPS, We aim to create a personalized education experience for each student and provide a platform to maximize each student’s learning and build on individual potential.
                         </h6>
                       </div>
 
@@ -494,7 +488,7 @@ const Admissions = () => {
                             alt='list-point'
                           />
                           For Junior KG the child must have completed 4 years
-                          as on 30th May.
+                          as on 30th March.
                         </li>
                         <li className='pt-1 AdmissionScrollAnimeElement'>
                           <img
@@ -502,14 +496,14 @@ const Admissions = () => {
                             alt='list-point'
                           />
                           For Senior KG the child must have completed 5 years
-                          as on 30th May.
+                          as on 30th March.
                         </li>
                         <li className='pt-1 AdmissionScrollAnimeElement'>
                           <img
                             src='/assets/icons/pink-point.png'
                             alt='list-point'
                           />
-                           For 1st Grade the child must have completed 6 years as on 30th May.
+                           For 1st Grade the child must have completed 6 years as on 30th March.
                         </li>
                       </ul>
                     </div>
