@@ -32,12 +32,12 @@ const Campaign = () => {
     scriptUrl =
       selectedLocation === "chengalpattu"
         ? "https://script.google.com/macros/s/AKfycbyVyubaE6ub1Ydips6uiLN8xRm2HmJihPHvM3l_n9m-cXPAdrqSmYNiObtnFt43eY6Gmg/exec"
-        : "https://script.google.com/macros/s/AKfycbzMjqBdWWW6aLB3dhF5XNiYBPTn9ntX9XyFYvLmyI_qgpKW4fxO3qlD31Df2jWcSfgK/exec";
+        : "https://script.google.com/macros/s/AKfycbx1p4q0DJg0coIfzqVkiv32brd5ZU4rv-3iGHhwkKbM7ZdIWSDNJ7PNoCmr7sJ1Effp/exec";
 
     // https://script.google.com/macros/s/AKfycbyVyubaE6ub1Ydips6uiLN8xRm2HmJihPHvM3l_n9m-cXPAdrqSmYNiObtnFt43eY6Gmg/exec  --> mathuseelan@benfy.co
     // https://script.google.com/macros/s/AKfycbx_WrZhW68cvYm2CBAvNXX6mgLfg9T_pceoNNaDAAPvJiTdhk46GdyybeCHm4fH5JCdhw/exec  --> mathuseelan@benfy.co
     
-    // https://script.google.com/macros/s/AKfycbzMjqBdWWW6aLB3dhF5XNiYBPTn9ntX9XyFYvLmyI_qgpKW4fxO3qlD31Df2jWcSfgK/exec     -->admissions.mambakkam@vikasmantra.org
+    // https://script.google.com/macros/s/AKfycbx1p4q0DJg0coIfzqVkiv32brd5ZU4rv-3iGHhwkKbM7ZdIWSDNJ7PNoCmr7sJ1Effp/exec     -->admissions.mambakkam@vikasmantra.org
 
     setLoading(true);
 
