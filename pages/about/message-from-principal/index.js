@@ -20,7 +20,7 @@ const MessageFromPrincipal = () => {
                         <div className='col-md-6'>
 
                             <div className='AnimeStarts'>
-                                <h2 className='AnimeElement'>Message from Our Principal</h2>
+                                <h2 className='AnimeElement'>Message from the Principal</h2>
                             </div>
 
                         </div>
@@ -44,16 +44,11 @@ const MessageFromPrincipal = () => {
 
 
                                 <div className='AnimeStarts'>
-                                    <h3 className='ulineRed AnimeElement'>Dear all,</h3>
+                                    <h3 className='ulineRed AnimeElement'>Dear Parents & Wellwishers,</h3>
                                 </div>
 
                                 <div className='AnimeStarts'>
-                                    <p className='pt-5 AnimeElement'>It is my proud privilege to warmly welcome you into the portals of Learning
-                                        Community of Vikas Mantra Public School; dedicated to develop skilled/
-                                        outstanding students who can pursue their interests and strengths to the
-                                        best of their ability so that our enriched students emerge into the society
-                                        building a strong generation for a better world tomorrow through dynamic
-                                        education.
+                                    <p className='pt-5 AnimeElement'>At Vikas Mantra Public School, we believe that every child deserves a nurturing environment where learning is joyful, meaningful, and secure. Our dedicated team of educators are committed to delivering academic excellence while ensuring the safety and well-being of each student under our care.
                                     </p>
                                 </div>
 
@@ -67,24 +62,27 @@ const MessageFromPrincipal = () => {
 
                                 <div className='AnimeStarts'>
                                     <p className='AnimeElement'>
-                                        Vikas Mantra Public School believes that a child’s school is a home away
-                                        from home; schooling of a student is not targeted at enabling of the learner
-                                        to pass through the narrow tunnel of examination. We empower every child
-                                        to create a success story on his/her own. We visualize every child as a unique
-                                        storehouse of potential ideas and skills to be discovered and nurtured to
-                                        blossom. The extensive lush green campus with an infrastructure at par with global
-                                        standards provides the best ambient for a vibrant school career. We are very keen
-                                        to involve our community in our learning, developing true partnerships that value
-                                        each student.
+                                        We follow a future-ready curriculum that encourages critical thinking, creativity, and character building—empowering students to grow into confident, compassionate individuals. With strong safety protocols, structured routines, and a vibrant learning culture, we strive to make every school day enriching and reassuring for both students and parents.
+                                    </p>
+                                </div>
+                                 <div className='AnimeStarts'>
+                                    <p className='AnimeElement'>
+                                        Thank you for placing your trust in us. Together, let’s shape a brighter tomorrow for our children.
                                     </p>
                                 </div>
 
+                                
+
                                 <div className='AnimeStarts'>
-                                    <p className='AnimeElement'>Best Sincerely,</p>
+                                    <p className='AnimeElement'>Warm regards,</p>
                                 </div>
 
                                 <div className='AnimeStarts'>
-                                    <h4 className='AnimeElement'>Ms. Preetha Abraham</h4>
+                                    <h4 className='AnimeElement'>Mrs. C. S. Mahalakshmi</h4>
+                                    <h5 className='' style={{
+                                        fontStyle: 'italic'}}>Principal</h5>
+                                    <p className='mb-0'>Vikas Mantra Public School</p>
+                                    <p>Mahindra World City Campus</p>
                                 </div>
 
                             </div>
