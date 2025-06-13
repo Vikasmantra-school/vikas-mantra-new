@@ -32,10 +32,10 @@ const PopupModal = () => {
   };
 
   useEffect(() => {
-    const visited = localStorage.getItem("Name");
+    const visited = sessionStorage.getItem("Name");
     if (!visited || visited === "false") {
       setShowFirst(true);
-      localStorage.setItem("Name", "true");
+      sessionStorage.setItem("Name", "true");
     }
   }, []);
   return (
