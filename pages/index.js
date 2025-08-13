@@ -15,6 +15,7 @@ import BannerAdsVikasCommon from "../components/home/adsVikas";
 import WhyVikasSection from "../components/home/whyvikasSec";
 import VmpsLogin from "../components/home/vmpslogin";
 import SplitCards from "../components/home/stackCard";
+import Testimonials from "../components/home/testimonialSlider";
 // import PopupModal from "../components/Popup/PopupModal";
 
 function Home() {
@@ -271,6 +272,7 @@ function Home() {
       <WhyVikasSection />
       <VmpsLogin />
       <SplitCards />
+      <Testimonials/>
     </>
   );
 }

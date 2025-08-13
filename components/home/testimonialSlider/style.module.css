@@ -1,0 +1,67 @@
+.testimonials {
+  padding-block: 3rem;
+  background-color: #f7f9fa;
+}
+
+
+.testimonialHeading{
+    font-size: 2.375rem;
+    color: #E02D53;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 2rem;
+
+}
+
+.testimonialHeading::after{
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 4px;
+    border-radius: 18px;
+    bottom: -.5rem;
+    background-color: #E02D53;
+    left: 0;
+}
+
+.card {
+  max-width: 270px;
+  position: relative;
+}
+.card img {
+  position: absolute;
+  width: 50%;
+  right: -1rem;
+  top: -1rem;
+}
+
+.cardBody {
+  background-color: #FCF6F7;
+  margin: 5px;
+}
+.cardTitle {
+  font-size: 22px;
+  font-weight: 600;
+  width: 50%;
+  margin-top: 2rem;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #77c167 0%, #77c16700 70%) 1;
+  border-radius: 12px;
+  width: fit-content;
+  height: auto;
+}
+.cardRole {
+  font-size: 14px;
+  margin-block: 3px;
+}
+.tabPane {
+  padding-block: 1rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .tabContent .card {
+    max-width: 100%;
+    margin: 1rem;
+  }
+}
