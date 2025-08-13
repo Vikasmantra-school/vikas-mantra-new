@@ -1,0 +1,271 @@
+/* hero banner */
+.heroBanner {
+  background-color: #d4f7ffe5;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bannerTitle {
+  font-size: 4.5rem;
+  color: #155874;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.highlight {
+  background-color: #ffb800;
+  padding: 0 5px;
+}
+
+.admissionTag {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 6px 14px;
+  background-color: #dd2042;
+  color: white;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 15px;
+  max-width: 500px;
+  font-size: 16px;
+  color: #1d1d1d;
+  position: relative;
+}
+.subtitle::before {
+  position: absolute;
+  content: "";
+  top: -1.5rem;
+  left: 0;
+  background-color: #ffb800;
+  width: 84px;
+  height: 4px;
+  border-radius: 20px;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .bannerTitle {
+    font-size: 2.5rem;
+  }
+  .heroBanner {
+    height: auto;
+  }
+  
+.subtitle {
+  margin-top: 2rem;
+ 
+}
+}
+
+/* VMPS Story */
+.storyHeading span {
+  font-size: 4.625rem;
+  color: #e02d53;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@media only screen and (max-width:768px){
+  .storyHeading span{
+    font-size: 2.7rem;
+  }
+}
+
+/* Feature section */
+.featureSection .featureContainer {
+  max-width: 90%;
+  background-color: #f9ffd8;
+  margin-inline: auto;
+  border-radius: 29px;
+  padding-block: 2.5rem;
+}
+.featureSection .featureBlock h2 {
+  color: #fa5d7e;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-block: 1rem;
+}
+
+.featureSection .featureBlock {
+  font-size: 0.1034rem;
+  color: #474747;
+}
+
+@media only screen and (max-width:768px){
+  .featureSection .featureBlock{
+    padding: 1rem;
+  }
+}
+
+
+
+/* video section */
+.videoSection .videoContainer {
+  position: relative;
+}
+.playPauseBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: transparent;
+}
+
+.videoOverlayCont {
+  position: absolute;
+  bottom: 10px;
+  left: 2rem;
+  background-color: #ffffffd9;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 4px solid #e02d53;
+  width: 560px;
+  max-width: 100%;
+}
+
+.videoOverlayCont h2 {
+  color: #45458a;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+.videoOverlayCont p {
+  color: #474747;
+  margin: 0;
+}
+
+/* Journey swiper */
+.journeySwiper .swiperLeftCont {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  width: 70%;
+  padding-inline-start: 2em;
+}
+
+.journeySwiper .swiperLeftCont h2 {
+  font-size: 1.5rem;
+  color: #e02d53;
+  font-weight: 600;
+}
+.swiperWrapper {
+  width: 100%;
+  padding: 2rem;
+  margin: 0;
+  background-color: #faf3da;
+  position: relative;
+
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.swiperWrapper .swiperSlide .slideCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.swiperSlide .slideCont h3 {
+  font-size: 1.375rem;
+  color: #e02d53;
+  padding-block: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+.swiperSlide .slideCont img {
+  border-bottom-right-radius: 12px;
+}
+.swiperSlide .slideCont button {
+  width: fit-content;
+  padding: 6px 14px;
+  font-size: 0.875rem;
+  color: #3d3d3d;
+  background-color: #ffb800;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+}
+
+.customPrev,
+.customNext {
+  border-radius: 50%;
+  border: none;
+  background-color: #aa182c;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.customNext svg,
+.customPrev svg {
+  color: #ffffff;
+}
+.customPrev:hover,
+.customNext:hover {
+  background-color: #700e1b; /* hover background */
+  transform: scale(1.02);
+}
+.customNav {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  padding-inline-end: 2rem;
+  margin-top: 1rem;
+  position: absolute;
+  right: 2rem;
+  bottom: -3rem;
+}
+
+.customNav :global(.swiper-button-disabled) {
+  background-color: #e7e7e7;
+}
+.customNav :global(.swiper-button-disabled) svg {
+  color: #c9c9c9;
+}
+
+/* blog section */
+
+.blogSection .blogBlock {
+}
+.blogTitle {
+  color: #e02d53;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-block: 1.4rem;
+}
+
+.blogBlock h2 {
+  font-size: 1rem;
+  color: #fa5d7e;
+  font-weight: 600;
+  padding-block: 1rem;
+  border-bottom: 1px solid #ffcccc;
+}
+
+.blogBlock img {
+  width: 100%;
+}
+.blogBlock .block_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.block_bottom p {
+  margin: 0;
+}
+.viewAllBtn {
+  padding: 7px 22px;
+  border: 1px solid #ff9eb2;
+}

@@ -1,0 +1,40 @@
+.vmpsloginBanner {
+  margin-block: 60px;
+  height: 280px;
+  background: url("/images/bgs/vmps_login.png") no-repeat center center;
+  background-size: cover;
+}
+
+.vmpsloginTitle {
+  color: #ffb800;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.vmpsDesc {
+  color: white;
+  font-size: 16px;
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.vmpsloginwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.vmpsloginButton {
+  padding: 0.7rem 1.25rem;
+  background-color: #dd2042;
+  color: white;
+  border: none;
+  font-size: 24px;
+  outline-color: #ffb800;
+  outline-offset: 3px;
+}

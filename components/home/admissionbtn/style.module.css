@@ -1,0 +1,21 @@
+.admissioncheck {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  margin-top: 1rem;
+  margin-block-start: 1rem;
+}
+
+.schoolName,
+.admissionBtn {
+  padding: 6px 10px;
+  font-weight: bold;
+}
+.admissionBtn {
+  background-color: #ffb800;
+  color: black;
+  border: none;
+  outline-offset: 3px;
+  outline-color: #ffb800;
+}

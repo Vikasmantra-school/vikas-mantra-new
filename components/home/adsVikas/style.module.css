@@ -1,0 +1,36 @@
+.bannerSectionVikas {
+  height: 503px;
+  margin-block: 60px;
+  padding-block: 3rem;
+  background: url("/images/bgs/adsBanner.png") no-repeat center center;
+  background-size: cover;
+}
+
+.mainContentAdsVikas {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainContentAdsVikas h3 {
+  font-weight: bold;
+  font-size: 34px;
+  color: white;
+}
+
+.cribes {
+  display: block;
+  position: relative;
+  margin-bottom: 05px;
+}
+
+.cribes::after {
+  content: " ";
+  position: absolute;
+  background: url("/images/bgs/cribles.svg") no-repeat center center;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  bottom: -10px;
+}

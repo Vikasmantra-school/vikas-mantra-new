@@ -1,0 +1,55 @@
+.whyVikasSection {
+  padding-block: 60px;
+}
+
+.whyVikasTitle {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  margin-bottom: 3rem;
+}
+
+.GridWrapper {
+  display: grid;
+  gap: 3rem;
+}
+
+.gridTitle {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  color: #e02d53;
+  margin-bottom: 0.2em;
+}
+
+.gridDesc {
+  line-height: 1.2;
+}
+
+.gridImage {
+  margin-bottom: 1.2rem;
+  margin-block-end: 1.2rem;
+  overflow: hidden;
+  transition: border-radius 0.3s ease;
+}
+
+.GridItem {
+  margin-inline: 1rem;
+}
+
+.GridItem:hover .gridImage {
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.gridImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

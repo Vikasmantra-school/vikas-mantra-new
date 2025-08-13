@@ -1,0 +1,50 @@
+.swiperCont {
+  padding: 4rem 2rem;
+  overflow: hidden;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sliderImagesWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.sliderImagesWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.sliderImageduo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sliderContentWrapper {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.sliderContentWrapper h2 {
+  color: inherit;
+  line-height: 0.95;
+  width: 470px;
+  max-width: 100%;
+  font-size: 38px;
+}
