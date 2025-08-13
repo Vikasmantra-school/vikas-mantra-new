@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-import Navbar from "../../components/Header/CampaignNav";
+import Navbar from "/components/Header/CampaignNav";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Link from "next/link";
@@ -36,7 +36,7 @@ const Campaign = () => {
 
     // https://script.google.com/macros/s/AKfycbyVyubaE6ub1Ydips6uiLN8xRm2HmJihPHvM3l_n9m-cXPAdrqSmYNiObtnFt43eY6Gmg/exec  --> mathuseelan@benfy.co
     // https://script.google.com/macros/s/AKfycbx_WrZhW68cvYm2CBAvNXX6mgLfg9T_pceoNNaDAAPvJiTdhk46GdyybeCHm4fH5JCdhw/exec  --> mathuseelan@benfy.co
-    
+
     // https://script.google.com/macros/s/AKfycbx1p4q0DJg0coIfzqVkiv32brd5ZU4rv-3iGHhwkKbM7ZdIWSDNJ7PNoCmr7sJ1Effp/exec     -->admissions.mambakkam@vikasmantra.org
 
     setLoading(true);
@@ -99,7 +99,8 @@ const Campaign = () => {
                   <form
                     ref={formRef}
                     onSubmit={handleSubmit}
-                    name="google-sheet">
+                    name="google-sheet"
+                  >
                     <input type="hidden" name="form_tools_form_id" value="2" />
 
                     <ul className="p-0">
@@ -114,7 +115,8 @@ const Campaign = () => {
                           onChange={(e) => {
                             setCity(e.target.value);
                           }}
-                          value={city}>
+                          value={city}
+                        >
                           <option value="" disabled>
                             Select Location
                           </option>
@@ -226,7 +228,8 @@ const Campaign = () => {
         </section>
 
         <section
-          className={style.bgWhite + " py-5" + " " + style.welcomeSection}>
+          className={style.bgWhite + " py-5" + " " + style.welcomeSection}
+        >
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
@@ -261,7 +264,8 @@ const Campaign = () => {
                 <h4
                   className={
                     style.fw700 + " " + " py-2 " + style.ExperienceText
-                  }>
+                  }
+                >
                   &quot;Experience our world-class Education&quot;
                 </h4>
               </div>
@@ -361,7 +365,8 @@ const Campaign = () => {
                         perPage: 3,
                       },
                     },
-                  }}>
+                  }}
+                >
                   <SplideSlide>
                     <div className={style.facilityCard}>
                       <img
@@ -547,7 +552,8 @@ const Campaign = () => {
                         perPage: 1,
                       },
                     },
-                  }}>
+                  }}
+                >
                   <SplideSlide>
                     <div className={style.testimonialcard}>
                       <p>
@@ -660,7 +666,8 @@ const Campaign = () => {
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15567.054801096552!2d80.0215743!3d12.7288327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1945122a83ac015!2sVikas%20Mantra%20Public%20School!5e0!3m2!1sen!2sin!4v1663411503934!5m2!1sen!2sin"
                   allowFullScreen=""
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -680,7 +687,8 @@ const Campaign = () => {
                   className="whatsappDiv"
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://api.whatsapp.com/send?phone=7330098765">
+                  href="https://api.whatsapp.com/send?phone=7330098765"
+                >
                   <img
                     className="CampaignwhatsappImg"
                     src="/assets/icons/whatsapp.png"
@@ -692,7 +700,8 @@ const Campaign = () => {
                   className="phoneDiv"
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="tel:+917092450450">
+                  href="tel:+917092450450"
+                >
                   <img
                     className="campaignphoneImg"
                     src="/assets/icons/phone-icon.png"

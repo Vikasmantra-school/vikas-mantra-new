@@ -1,10 +1,10 @@
-import React from 'react'
-import styles from './style.module.css'
-import { Breadcrumb } from '/components/Breadcrumb/Breadcrumb';
-import Table from 'react-bootstrap/Table'
+import React from "react";
+import styles from "./style.module.css";
+import { Breadcrumb } from "/components/Breadcrumb/Breadcrumb";
+import Table from "react-bootstrap/Table";
 
 function MandatoryScreen() {
-  const pageTitle = 'Mandatory Public Disclosures'
+  const pageTitle = "Mandatory Public Disclosures";
 
   return (
     <>
@@ -18,11 +18,11 @@ function MandatoryScreen() {
 
       <Breadcrumb pageName={pageTitle} />
 
-      <section className={'pt60' + ' ' + 'pb60'}>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-5'>
-              <h2 className='ulineRed'>
+      <section className={"pt60" + " " + "pb60"}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-5">
+              <h2 className="ulineRed">
                 Mandatory
                 <br /> Public Disclosures
               </h2>
@@ -31,13 +31,13 @@ function MandatoryScreen() {
         </div>
       </section>
 
-      <section className={'pb60' + ' ' + styles.disclosueSection}>
-        <div className={'container'}>
-          <div className={'row'}>
+      <section className={"pb60" + " " + styles.disclosueSection}>
+        <div className={"container"}>
+          <div className={"row"}>
             <h4>General Information</h4>
 
-            <div className='table-responsive'>
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+            <div className="table-responsive">
+              <Table bordered className={"mt-4" + " " + styles.tableborder}>
                 <tbody>
                   <tr className={styles.tableBorderColor}>
                     <td>S.No</td>
@@ -100,11 +100,11 @@ function MandatoryScreen() {
             </div>
           </div>
 
-          <div className={'row pt60'}>
+          <div className={"row pt60"}>
             <h4>Documents and Information</h4>
 
-            <div className='table-responsive'>
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+            <div className="table-responsive">
+              <Table bordered className={"mt-4" + " " + styles.tableborder}>
                 <tbody>
                   <tr className={styles.tableBorderColor}>
                     <td>S.No</td>
@@ -121,7 +121,12 @@ function MandatoryScreen() {
                       EXTENSION OF AFFILIATION, IF ANY
                     </td>
                     <td>
-                      <a href='/pdf/upgradation-letter-and-recent-extension.pdf' target='_blank'>Annexure 1</a>
+                      <a
+                        href="/pdf/upgradation-letter-and-recent-extension.pdf"
+                        target="_blank"
+                      >
+                        Annexure 1
+                      </a>
                     </td>
                   </tr>
 
@@ -132,7 +137,12 @@ function MandatoryScreen() {
                       CERTIFICATE, AS APPLICABLE*
                     </td>
                     <td>
-                      <a href='/pdf/trust-registration-certificate.pdf' target='_blank'>Annexure 2</a>
+                      <a
+                        href="/pdf/trust-registration-certificate.pdf"
+                        target="_blank"
+                      >
+                        Annexure 2
+                      </a>
                     </td>
                   </tr>
 
@@ -143,7 +153,9 @@ function MandatoryScreen() {
                       APPLICABLE, BY THE STATE GOVT./UT*
                     </td>
                     <td>
-                      <a href='/pdf/noc.pdf' target='_blank'>Annexure 3</a>
+                      <a href="/pdf/noc.pdf" target="_blank">
+                        Annexure 3
+                      </a>
                     </td>
                   </tr>
 
@@ -154,7 +166,9 @@ function MandatoryScreen() {
                       IT&apos;S RENEWAL IF APPLICABLE*
                     </td>
                     <td>
-                      <a href='/pdf/certificate-of-recognition.pdf'>Annexure 4</a>
+                      <a href="/pdf/certificate-of-recognition.pdf">
+                        Annexure 4
+                      </a>
                     </td>
                   </tr>
 
@@ -165,7 +179,9 @@ function MandatoryScreen() {
                       NATIONAL BUILDING CODE*
                     </td>
                     <td>
-                      <a href='/pdf/building-safety.pdf' target='_blank'>Annexure 5</a>
+                      <a href="/pdf/building-safety.pdf" target="_blank">
+                        Annexure 5
+                      </a>
                     </td>
                   </tr>
 
@@ -176,7 +192,9 @@ function MandatoryScreen() {
                       COMPETENT AUTHORITY*
                     </td>
                     <td>
-                      <a href='/pdf/fire-rescue.pdf' target='_blank'>Annexure 6</a>
+                      <a href="/pdf/fire-rescue.pdf" target="_blank">
+                        Annexure 6
+                      </a>
                     </td>
                   </tr>
 
@@ -188,7 +206,9 @@ function MandatoryScreen() {
                       CERTIFICATION BY SCHOOL*
                     </td>
                     <td>
-                      <a href='/pdf/deo.pdf' target='_blank'>Annexure 7</a>
+                      <a href="/pdf/deo.pdf" target="_blank">
+                        Annexure 7
+                      </a>
                     </td>
                   </tr>
 
@@ -198,7 +218,12 @@ function MandatoryScreen() {
                       COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES
                     </td>
                     <td>
-                      <a href='/pdf/sanitory-certificate-24.pdf' target='_blank'>Annexure 8</a>
+                      <a
+                        href="/pdf/sanitory-certificate-24.pdf"
+                        target="_blank"
+                      >
+                        Annexure 8
+                      </a>
                     </td>
                   </tr>
                 </tbody>
@@ -213,11 +238,11 @@ function MandatoryScreen() {
               AS PER NORMS.
             </p>
           </div>
-          <div className={'row pt60'}>
+          <div className={"row pt60"}>
             <h4>Results and Academics</h4>
 
-            <div className='table-responsive'>
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+            <div className="table-responsive">
+              <Table bordered className={"mt-4" + " " + styles.tableborder}>
                 <tbody>
                   <tr className={styles.tableBorderColor}>
                     <td>S.No</td>
@@ -232,7 +257,9 @@ function MandatoryScreen() {
                     <td>1</td>
                     <td>FEE STRUCTURE OF THE SCHOOL*</td>
                     <td>
-                      <a href='/pdf/FEE STRUCTURE 24-25.pdf' target='_blank'>Annexure 9</a>
+                      <a href="/pdf/FEE STRUCTURE 24-25.pdf" target="_blank">
+                        Annexure 9
+                      </a>
                     </td>
                   </tr>
 
@@ -240,7 +267,9 @@ function MandatoryScreen() {
                     <td>2</td>
                     <td>ANNUAL ACADEMIC CALENDAR* </td>
                     <td>
-                      <a href='/pdf/1-Diary 2024-1.pdf' target='_blank'>Annexure 10</a>
+                      <a href="/pdf/1-Diary 2024-1.pdf" target="_blank">
+                        Annexure 10
+                      </a>
                     </td>
                   </tr>
 
@@ -248,7 +277,12 @@ function MandatoryScreen() {
                     <td>3</td>
                     <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)*</td>
                     <td>
-                      <a href='/pdf/COMMITTEE-LIST-2024-25_updated.pdf' target='_blank'>Annexure 11</a>
+                      <a
+                        href="/pdf/COMMITTEE-LIST-2024-25_updated.pdf"
+                        target="_blank"
+                      >
+                        Annexure 11
+                      </a>
                     </td>
                   </tr>
 
@@ -256,7 +290,9 @@ function MandatoryScreen() {
                     <td>4</td>
                     <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS*</td>
                     <td>
-                      <a href='/pdf/pta-2022.pdf' target='_blank'>Annexure 12</a>
+                      <a href="/pdf/pta-2022.pdf" target="_blank">
+                        Annexure 12
+                      </a>
                     </td>
                   </tr>
 
@@ -267,7 +303,7 @@ function MandatoryScreen() {
                       APPLICABILITY
                     </td>
                     <td>
-                      <a href='#'>Annexure 13</a>
+                      <a href="#">Annexure 13</a>
                     </td>
                   </tr>
                 </tbody>
@@ -275,11 +311,11 @@ function MandatoryScreen() {
             </div>
           </div>
 
-          <div className={'row pt60' + ' ' + styles.mdBg}>
+          <div className={"row pt60" + " " + styles.mdBg}>
             <h4>Staff(Teaching)</h4>
 
-            <div className='table-responsive'>
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+            <div className="table-responsive">
+              <Table bordered className={"mt-4" + " " + styles.tableborder}>
                 <tbody>
                   <tr className={styles.tableBorderColor}>
                     <td>S.No</td>
@@ -294,7 +330,7 @@ function MandatoryScreen() {
                   </tr>
 
                   <tr>
-                    <td rowSpan='4'>2</td>
+                    <td rowSpan="4">2</td>
                     <td>NTT*</td>
                     <td>12</td>
                   </tr>
@@ -373,17 +409,16 @@ function MandatoryScreen() {
                     <td>TOTAL NO. OF TEACHERS* </td>
                     <td>63</td>
                   </tr>
-
                 </tbody>
               </Table>
             </div>
           </div>
 
-          <div className={'row pt60'}>
+          <div className={"row pt60"}>
             <h4>Result Class : X</h4>
 
-            <div className='table-responsive'>
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+            <div className="table-responsive">
+              <Table bordered className={"mt-4" + " " + styles.tableborder}>
                 <tbody>
                   <tr className={styles.tableBorderColor}>
                     <td>S.No</td>
@@ -412,11 +447,11 @@ function MandatoryScreen() {
             </div>
           </div>
 
-          <div className={'row pt60'}>
+          <div className={"row pt60"}>
             <h4>Result Class : XII</h4>
 
-            <div className='table-responsive'>
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+            <div className="table-responsive">
+              <Table bordered className={"mt-4" + " " + styles.tableborder}>
                 <tbody>
                   <tr className={styles.tableBorderColor}>
                     <td>S.No</td>
@@ -438,11 +473,11 @@ function MandatoryScreen() {
             </div>
           </div>
 
-          <div className={'row pt60' + ' ' + styles.mdBg}>
+          <div className={"row pt60" + " " + styles.mdBg}>
             <h4>School and Infrastructure</h4>
 
-            <div className='table-responsive'>
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+            <div className="table-responsive">
+              <Table bordered className={"mt-4" + " " + styles.tableborder}>
                 <tbody>
                   <tr className={styles.tableBorderColor}>
                     <td>S.No</td>
@@ -466,7 +501,7 @@ function MandatoryScreen() {
                     <td>3</td>
                     <td>
                       NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN
-                      SQ MTR)*{' '}
+                      SQ MTR)*{" "}
                     </td>
                     <td>5 and 65</td>
                   </tr>
@@ -495,19 +530,28 @@ function MandatoryScreen() {
                       LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING
                       THE INFRASTRUCTURE OF THE SCHOOL
                     </td>
-                    <td><a href="https://youtu.be/H5cjJzSx_8A" rel="noopener noreferrer" target="_blank" >https://youtu.be/H5cjJzSx_8A</a></td>
+                    <td>
+                      <a
+                        href="https://youtu.be/H5cjJzSx_8A"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        https://youtu.be/H5cjJzSx_8A
+                      </a>
+                    </td>
                   </tr>
                 </tbody>
               </Table>
             </div>
           </div>
 
-
-          <div className={'row pt60' + ' ' + styles.mdBg + ' ' + styles.queryTable}>
+          <div
+            className={"row pt60" + " " + styles.mdBg + " " + styles.queryTable}
+          >
             <h4>Queries</h4>
 
-            <div className='table-responsive'>
-              <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
+            <div className="table-responsive">
+              <Table bordered className={"mt-4" + " " + styles.tableborder}>
                 <tbody>
                   <tr className={styles.tableBorderColor}>
                     <td>S.No</td>
@@ -519,34 +563,58 @@ function MandatoryScreen() {
                     <td>1</td>
                     <td>six feet compound wall</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/Letter-from-panchayat-head.pdf' target='_blank'>View</a>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/Letter-from-panchayat-head.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
-
 
                   <tr>
                     <td>2</td>
                     <td>Under taking letter by chairman for lift</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/Undertaking-letter-from-chairman-for-lift.pdf' target='_blank'>View</a>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/Undertaking-letter-from-chairman-for-lift.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
-
 
                   <tr>
                     <td>3</td>
                     <td>purchase order for lift</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/purchase-order-for-lift.pdf' target='_blank'>View</a>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/purchase-order-for-lift.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
 
-
                   <tr>
                     <td>4</td>
-                    <td>Senior secondary affiliation query-CWSN toilet ,Composite lab	</td>
                     <td>
-                      <a rel="noopener noreferrer" href='https://youtu.be/kEd_AR1xqcM' target='_blank'>View</a>
+                      Senior secondary affiliation query-CWSN toilet ,Composite
+                      lab{" "}
+                    </td>
+                    <td>
+                      <a
+                        rel="noopener noreferrer"
+                        href="https://youtu.be/kEd_AR1xqcM"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
 
@@ -554,27 +622,44 @@ function MandatoryScreen() {
                     <td>5</td>
                     <td>certification for land</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/new-land-certificate.pdf' target='_blank'>View</a>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/new-land-certificate.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
-
 
                   <tr>
                     <td>6</td>
                     <td>Form D</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/form-D-new.pdf' target='_blank'>View</a>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/form-D-new.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
 
-
-
-
                   <tr>
                     <td>7</td>
-                    <td>Under taking letter by chairman and principal for making correction in oasis</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/Under-taking-by-chairman-and-principal-for-making-correction-in-oasis.pdf' target='_blank'>View</a>
+                      Under taking letter by chairman and principal for making
+                      correction in oasis
+                    </td>
+                    <td>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/Under-taking-by-chairman-and-principal-for-making-correction-in-oasis.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
 
@@ -588,9 +673,17 @@ function MandatoryScreen() {
 
                   <tr>
                     <td>8</td>
-                    <td>Panel engineer certified for building safety license</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/panel-engineer-certified.pdf' target='_blank'>View</a>
+                      Panel engineer certified for building safety license
+                    </td>
+                    <td>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/panel-engineer-certified.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
 
@@ -598,10 +691,15 @@ function MandatoryScreen() {
                     <td>9</td>
                     <td>genuineness certificate for Form D</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/Office-Lens.pdf' target='_blank'>View</a>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/Office-Lens.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
-
 
                   {/* <tr>
                     <td>12</td>
@@ -615,7 +713,13 @@ function MandatoryScreen() {
                     <td>10</td>
                     <td>Form A to E</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/form-a-to-e.pdf' target='_blank'>View</a>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/form-a-to-e.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
 
@@ -623,10 +727,15 @@ function MandatoryScreen() {
                     <td>11</td>
                     <td>Fire & rescue</td>
                     <td>
-                      <a rel="noopener noreferrer" href='/pdf/Fire-Noc.pdf' target='_blank'>View</a>
+                      <a
+                        rel="noopener noreferrer"
+                        href="/pdf/Fire-Noc.pdf"
+                        target="_blank"
+                      >
+                        View
+                      </a>
                     </td>
                   </tr>
-
                 </tbody>
               </Table>
             </div>
@@ -634,7 +743,7 @@ function MandatoryScreen() {
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default MandatoryScreen
+export default MandatoryScreen;
