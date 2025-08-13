@@ -18,7 +18,7 @@ export const mambakkamMenu = [
     title: "Life of  Campus",
     href: "/campus",
     children: [
-      { title: "Classrooms", href: "/campus/classrooms" },
+      { title: "Classrooms", href: "./campus/classrooms" },
       { title: "Laboratories", href: "/campus/laboratory" },
       { title: "Speciality Rooms", href: "/campus/speciality-room" },
       { title: "Technology", href: "/campus/technology" },

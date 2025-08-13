@@ -1,0 +1,200 @@
+.homeIcon {
+    color: #AA182C;
+    margin-right: 10px;
+}
+
+.classroomImg {
+    width: 100%;
+    position: relative;
+}
+
+.classroomImgDiv {
+    position: relative;
+}
+
+
+.vectorImg10::before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector17.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    z-index: 0;
+    background-size: 85px;
+    height: 125px;
+    left: 0;
+    width: 100px;
+    top: 350px;
+}
+
+.vectorImg9::after {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector9.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 0;
+    background-size: 120px;
+    height: 155px;
+    width: 140px;
+    right: 0;
+    bottom: 0;
+}
+
+.vmpsImg::after {
+
+    content: '';
+    position: absolute;
+    background-image: url(/assets/VMPS.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 0;
+    background-size: 285px;
+    height: 120px;
+    right: 0;
+    width: 290px;
+    top: unset;
+    bottom: 0;
+}
+
+
+@media only screen and (max-width: 660px) {
+
+    .pdngZero {
+        padding: 0px 12px !important;
+    }
+
+    .classroomImg {
+        width: 100%;
+        height: 100%;
+        position: unset;
+        padding: 0px;
+    }
+
+    .vectorImg9::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector9.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+        background-size: 75px;
+        height: 127px;
+        width: 100px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .vectorImg10::before {
+
+        display: none;
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        z-index: 0;
+        background-size: 70px;
+        height: 127px;
+        right: 0;
+        width: 130px;
+        top: 25%;
+        z-index: 1;
+        left: 0;
+    }
+
+    .classroomImgDiv {
+        position: relative;
+        top: 0;
+        margin: 25px 0;
+    }
+
+    .vmpsImg::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/VMPS.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: 0;
+        background-size: 85px;
+        height: 93px;
+        right: 0px;
+        width: 120px;
+        bottom: 0;
+    }
+
+    .ulineMargin {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media screen and (min-width: 661px) and (max-width: 767px) {
+    .vmpsImg::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/VMPS.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: 0;
+        background-size: 85px;
+        height: 93px;
+        right: 0px;
+        width: 120px;
+        bottom: 0;
+    }
+
+    .classroomImgDiv {
+        position: relative;
+        top: 0;
+    }
+
+    .pdngZero {
+        padding: 0px 12px !important;
+    }
+
+    .ulineMargin {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .vectorImg10::before {
+        display: none;
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector17.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        z-index: 0;
+        background-size: 120px;
+        height: 170px;
+        left: unset;
+        width: 150px;
+        top: 350px;
+        right: 0;
+    }
+
+    .vmpsImg::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/VMPS.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        z-index: 0;
+        background-size: 285px;
+        height: 120px;
+        right: 0;
+        width: 300px;
+        top: unset;
+        left: unset;
+        bottom: 0;
+    }
+    .pdngZero {
+        padding: 0px 12px !important;
+    }
+    .ulineMargin {
+        margin-bottom: 40px;
+    }
+}

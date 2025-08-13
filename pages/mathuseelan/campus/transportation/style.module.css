@@ -1,0 +1,76 @@
+.homeIcon {
+    color: #AA182C;
+    margin-right: 10px;
+}
+
+.schlBusImg {
+    width: 100%;
+    position: absolute;
+    top: -185px;
+
+}
+
+.vectorImg11::before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/vector15.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 1;
+    background-size: 151px;
+    height: 177px;
+    width: 151px;
+    bottom: 10%;
+    left: 0;
+}
+
+.sectionPdng {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+@media only screen and (max-width: 660px) {
+
+    .sectionPdng {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .schlBusImg {
+        width: 100%;
+        position: unset;
+        top: 0;
+        right: 0;
+    }
+
+    .vectorImg11::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector15.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        z-index: 1;
+        background-size: 62px;
+        height: 228px;
+        width: 114px;
+        bottom: 0%;
+    }
+
+}
+
+@media screen and (min-width: 661px) and (max-width: 990px) {
+    .vectorImg11::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector15.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        z-index: 1;
+        background-size: 62px;
+        height: 228px;
+        width: 114px;
+        bottom: 0%;
+    }
+}

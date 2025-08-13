@@ -60,7 +60,7 @@ const Nav = () => {
           key={index}
           className={item.children ? "nav-item dropdown" : "nav-item"}
         >
-          <Link href={item.href || "#"} legacyBehavior>
+          <Link href={`/mathuseelan/${item.href}` || "#"} legacyBehavior>
             <a
               className={
                 item.children
@@ -275,10 +275,12 @@ const Nav = () => {
                               href="/about/message-from-advisor"
                               legacyBehavior
                             >
-                              <a className="dropdown-item">Our Advisor </a>
+                              {/* <a className="dropdown-item">Our Advisor </a> */}
+                              <a className="dropdown-item">Advisor's Message </a>
+
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link
                               href="/about/message-from-principal"
                               legacyBehavior
@@ -297,7 +299,7 @@ const Nav = () => {
                             <Link href="/about/blog" legacyBehavior>
                               <a className="dropdown-item">Blog</a>
                             </Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
                       <li
@@ -311,7 +313,7 @@ const Nav = () => {
                           <a className="nav-link">Admissions</a>
                         </Link>
                       </li>
-                      <li className="nav-item dropdown">
+                      {/* <li className="nav-item dropdown">
                         <Link href="/campus" legacyBehavior>
                           <a
                             className="nav-link dropdown-toggle"
@@ -374,7 +376,7 @@ const Nav = () => {
                             </Link>
                           </li>
                         </ul>
-                      </li>
+                      </li> */}
                       <li className="nav-item dropdown">
                         <Link href="/learning" legacyBehavior>
                           <a
@@ -417,7 +419,7 @@ const Nav = () => {
                               </a>
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link
                               legacyBehavior
                               href="/learning/online-classes"
@@ -517,10 +519,10 @@ const Nav = () => {
                                 </Link>
                               </li>
                             </ul>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
-                      <li
+                      {/* <li
                         className={
                           pageName === "enquiry-form"
                             ? "active nav-item"
@@ -529,6 +531,17 @@ const Nav = () => {
                       >
                         <Link legacyBehavior href="/enquiry-form">
                           <a className="nav-link">Enquiry Form</a>
+                        </Link>
+                      </li> */}
+                      <li
+                        className={
+                          pageName === "enquiry-form"
+                            ? "active nav-item"
+                            : "nav-item"
+                        }
+                      >
+                        <Link legacyBehavior href="#">
+                          <a className="nav-link">VMPS Login</a>
                         </Link>
                       </li>
                       {/* <li

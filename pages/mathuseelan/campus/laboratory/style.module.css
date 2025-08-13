@@ -1,0 +1,184 @@
+.homeIcon {
+    color: #AA182C;
+    margin-right: 10px;
+}
+
+.labImg1 {
+    /* height: 440px; */
+    /* position: absolute;
+    top: -260px;
+    left: -50px; */
+    width: 100%;
+}
+
+.labImg2 {
+    /* right: 212px;
+    position: relative; */
+    width: 100%;
+}
+
+.labImg3 {
+    /* right: -35px;
+    position: relative; */
+    width: 100%;
+}
+
+.sectionPdng {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.vectorImg5::before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector5.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 1;
+    background-size: 135px;
+    height: 210px;
+    right: 10vh;
+    width: 190px;
+    top: 52vh;
+}
+
+.vectorImg10::after {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector3.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 0;
+    background-size: 90px;
+    height: 227px;
+    left: 0;
+    width: 247px;
+    bottom: 52vh;
+}
+
+.sectionPdngBtm {
+    padding-bottom: 5rem !important;
+}
+
+
+
+@media only screen and (max-width: 660px) {
+
+
+    .labImg1,
+    .labImg2,
+    .labImg3 {
+        position: unset;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sectionPdng {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .order1 {
+        order: 1;
+    }
+
+    .order2 {
+        order: 2;
+    }
+
+    .vectorImg10::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector10.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 0;
+        background-size: 70px;
+        height: 100px;
+        left: 0;
+        width: 100px;
+        bottom: 0;
+    }
+
+    .vectorImg5::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector5.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        z-index: 1;
+        background-size: 70px;
+        height: 210px;
+        right: 0px;
+        width: 190px;
+        top: 50px;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+
+    .labImg1,
+    .labImg2,
+    .labImg3 {
+        position: unset;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sectionPdng {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .order1 {
+        order: 1;
+    }
+
+    .order2 {
+        order: 2;
+    }
+    .vectorImg5::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector5.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        z-index: 1;
+        background-size: 90px;
+        height: 100px;
+        right: 0;
+        width: 100px;
+        top: 200px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .order1 {
+        order: 2;
+    }
+    .vectorImg10::after{
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector3.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 0;
+        background-size: 90px;
+        height: 227px;
+        left: 0;
+        width: 247px;
+        top: 200px;
+    }
+    .vectorImg5::before{
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector5.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        z-index: 1;
+        background-size: 67px;
+        height: 200px;
+        right: 0;
+        width: 190px;
+        bottom: 200px;
+    }
+}

@@ -535,7 +535,8 @@ p {
 }
 
 #mainMenu .navbar-nav {
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap:1.5rem;
   flex: 0 0 100%;
 }
 
