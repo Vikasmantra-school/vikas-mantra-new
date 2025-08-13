@@ -1,0 +1,112 @@
+.mainLogo img {
+    width: 165px !important;
+}
+
+.firstbtn {
+    background: #D8FF3E;
+    border: 0.5px solid #D8FF3E;
+    border-radius: 1px;
+    color: #474747;
+    padding: 5px 18px;
+    font-size: 14px;
+}
+
+.secondtbtn {
+    background: linear-gradient(85.31deg, #A11D2A -39.85%, #E02D53 44.76%, #F27D49 117.87%);
+    border-radius: 1px;
+    color: #FFFFFF;
+    border: unset;
+    padding: 5px 18px;
+    font-size: 14px;
+}
+
+
+.navTransparent {
+    z-index: 999;
+}
+
+.callIcon {
+    font-size: 13px;
+    margin-right: 4px;
+    width: 12px;
+}
+
+.firstbtn:hover {
+    background: #D8FF3E;
+    border: 0.5px solid #D8FF3E;
+    color: #474747 !important;
+}
+
+.secondtbtn:hover {
+    color: #fff !important;
+    background: linear-gradient(85.31deg, #A11D2A -39.85%, #E02D53 44.76%, #F27D49 117.87%);
+}
+
+
+
+
+
+
+/*campaign css*/
+.CampaignNavSection {
+    width: 100%;
+    height: 85px;
+    background: #fff !important;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 3px 35px 0.6px rgb(40 30 20 / 29%)
+}
+
+.CampaignNavSection p {
+    margin: 0;
+}
+
+.CampaignNavSection ul {
+    margin: 0;
+}
+
+.CampaignNavSection a {
+    font-weight: 600;
+}
+
+.CampaignNavSection p {
+    font-weight: 600;
+}
+
+.CampaignNavSection li {
+    font-weight: 600;
+}
+
+.star {
+    margin-left: 0px !important;
+    margin-top: 2px;
+}
+
+.NavPhone {
+    margin-left: 1.4em;
+}
+
+.CampaignLogo img {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    object-fit: cover;
+}
+
+.CampaignNavSection a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 990px) {
+    .menuSection {
+        display: none;
+    }
+
+    .star {
+        display: none;
+    }
+}

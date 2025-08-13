@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { useRouter } from 'next/router'
 import Button from 'react-bootstrap/Button'
-import styles from './style.module.css'
+import styles from './changalpattu.module.css'
 import Link from 'next/link'
 import MobileNav from '../Header/MobileNav'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,6 +11,7 @@ const ChengalpattuNav = () => {
   const { asPath } = useRouter()
   const dropdownSub = useRef('')
   var pageName = asPath.replace('/', '')
+  var isChengalpattu = asPath === '/chengalpattu-site';
 
   function hamburgerMenu(e) {
     let menu = document.getElementById('mobMenu')
@@ -31,7 +32,7 @@ const ChengalpattuNav = () => {
 
   return (
     <>
-      <header className={'homeheader ' + ' ' + pageName +  ` ${pageName === '' ? 'home' : 'position-relative'}`}>
+      <header className={'homeheader ' + ' ' + pageName +  ` ${isChengalpattu ? 'home' : 'position-relative'}` +' ' + (isChengalpattu ? `chengalpattu-unique` : '')}>
         <nav className={styles.navTransparent + ' navbar-expand-lg navbar'}>
           <div className='container'>
             <Link href='/' legacyBehavior>
@@ -57,7 +58,7 @@ const ChengalpattuNav = () => {
               </Button>
 
               <Button className={styles.secondtbtn}>
-                <Link href='/enquiry-form' legacyBehavior>
+                <Link href='/chengalpattu-site/enquiry-form' legacyBehavior>
                   <a>
                     Enroll
                   </a>
@@ -77,7 +78,7 @@ const ChengalpattuNav = () => {
         </nav>
 
         <nav
-          id='mainMenu'
+          id='mainMenu2'
           className={styles.navTransparent + ' ' + 'navbar navbar-expand-lg'}
         >
           <div className='container'>
@@ -94,7 +95,7 @@ const ChengalpattuNav = () => {
                 </li>
 
                 <li className='nav-item dropdown'>
-                  <Link href='/about' legacyBehavior>
+                  <Link href='/chengalpattu-site/about' legacyBehavior>
                     <a
                       className='nav-link dropdown-toggle'
                       role='button'
@@ -107,43 +108,43 @@ const ChengalpattuNav = () => {
 
                   <ul className='dropdown-menu'>
                     <li>
-                      <Link href='/about' legacyBehavior>
+                      <Link href='/chengalpattu-site/about' legacyBehavior>
                         <a className='dropdown-item'>About Vikas Mantra</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/about/vision-and-philosophy' legacyBehavior>
+                      <Link href='/chengalpattu-site/about/vision-and-philosophy' legacyBehavior>
                         <a className='dropdown-item'>Our Vision & Philosophy</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/about/message-from-chairman' legacyBehavior>
+                      <Link href='/chengalpattu-site/about/message-from-chairman' legacyBehavior>
                         <a className='dropdown-item'>Chairman’s Message</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/about/message-from-advisor' legacyBehavior>
+                      <Link href='/chengalpattu-site/about/message-from-advisor' legacyBehavior>
                         <a className='dropdown-item'>Our Advisor </a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/about/message-from-principal' legacyBehavior>
+                      <Link href='/chengalpattu-site/about/message-from-principal' legacyBehavior>
                         <a className='dropdown-item'>Principal’s Message</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/about/our-team' legacyBehavior>
+                      <Link href='/chengalpattu-site/about/our-team' legacyBehavior>
                         <a className='dropdown-item'>Our Team</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/about/blog' legacyBehavior>
+                      <Link href='/chengalpattu-site/about/blog' legacyBehavior>
                         <a className='dropdown-item'>Blog</a>
                       </Link>
                     </li>
@@ -155,13 +156,13 @@ const ChengalpattuNav = () => {
                     pageName === 'admissions' ? 'active nav-item' : 'nav-item'
                   }
                 >
-                  <Link legacyBehavior href='/admissions'>
+                  <Link legacyBehavior href='/chengalpattu-site/admissions'>
                     <a className='nav-link'>Admissions</a>
                   </Link>
                 </li>
 
                 <li className='nav-item dropdown'>
-                  <Link href='/campus' legacyBehavior>
+                  <Link href='/chengalpattu-site/campus' legacyBehavior>
                     <a
                       className='nav-link dropdown-toggle'
                       role='button'
@@ -173,14 +174,14 @@ const ChengalpattuNav = () => {
                   </Link>
                   <ul className='dropdown-menu'>
                     <li>
-                      <Link href='/campus/classrooms' legacyBehavior>
+                      <Link href='/chengalpattu-site/campus/classrooms' legacyBehavior>
                         <a className='dropdown-item'>Classrooms</a>
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        href='/campus/facilities-and-Infrastructure'
+                        href='/chengalpattu-site/campus/facilities-and-Infrastructure'
                         legacyBehavior
                       >
                         <a className='dropdown-item'>
@@ -190,43 +191,43 @@ const ChengalpattuNav = () => {
                     </li>
 
                     <li>
-                      <Link href='/campus/laboratory' legacyBehavior>
+                      <Link href='/chengalpattu-site/campus/laboratory' legacyBehavior>
                         <a className='dropdown-item'>Laboratories</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/campus/speciality-room' legacyBehavior>
+                      <Link href='/chengalpattu-site/campus/speciality-room' legacyBehavior>
                         <a className='dropdown-item'>Speciality Rooms</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/campus/library' legacyBehavior>
+                      <Link href='/chengalpattu-site/campus/library' legacyBehavior>
                         <a className='dropdown-item'>Library</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/campus/technology' legacyBehavior>
+                      <Link href='/chengalpattu-site/campus/technology' legacyBehavior>
                         <a className='dropdown-item'>Technology</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/campus/security' legacyBehavior>
+                      <Link href='/chengalpattu-site/campus/security' legacyBehavior>
                         <a className='dropdown-item'>Security</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/campus/healthcare' legacyBehavior>
+                      <Link href='/chengalpattu-site/campus/healthcare' legacyBehavior>
                         <a className='dropdown-item'>Healthcare</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/campus/transportation' legacyBehavior>
+                      <Link href='/chengalpattu-site/campus/transportation' legacyBehavior>
                         <a className='dropdown-item'>Transportation</a>
                       </Link>
                     </li>
@@ -234,7 +235,7 @@ const ChengalpattuNav = () => {
                 </li>
 
                 <li className='nav-item dropdown'>
-                  <Link href='/learning' legacyBehavior>
+                  <Link href='/chengalpattu-site/learning' legacyBehavior>
                     <a
                       className='nav-link dropdown-toggle'
                       role='button'
@@ -247,7 +248,7 @@ const ChengalpattuNav = () => {
 
                   <ul className='dropdown-menu'>
                     <li>
-                      <Link href='/learning' legacyBehavior>
+                      <Link href='/chengalpattu-site/learning' legacyBehavior>
                         <a className='dropdown-item'>
                           Why VIKAS MANTRA PUBLIC SCHOOL
                         </a>
@@ -255,20 +256,20 @@ const ChengalpattuNav = () => {
                     </li>
 
                     <li>
-                      <Link href='/learning/curriculum' legacyBehavior>
+                      <Link href='/chengalpattu-site/learning/curriculum' legacyBehavior>
                         <a className='dropdown-item'>Curriculum</a>
                       </Link>
                     </li>
 
                     <li>
-                      <Link href='/learning/pre-primary-years' legacyBehavior>
+                      <Link href='/chengalpattu-site/learning/pre-primary-years' legacyBehavior>
                         <a className='dropdown-item'>Pre-Primary Years</a>
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        href='/learning/curriculum-framework'
+                        href='/chengalpattu-site/learning/curriculum-framework'
                         legacyBehavior
                       >
                         <a className='dropdown-item'>Curriculum Framework</a>
@@ -276,7 +277,7 @@ const ChengalpattuNav = () => {
                     </li>
 
                     <li>
-                      <Link legacyBehavior href='/learning/online-classes'>
+                      <Link legacyBehavior href='/chengalpattu-site/learning/online-classes'>
                         <a className='dropdown-item'>Online Classes</a>
                       </Link>
                     </li>
@@ -364,7 +365,7 @@ const ChengalpattuNav = () => {
                     pageName === 'enquiry-form' ? 'active nav-item' : 'nav-item'
                   }
                 >
-                  <Link legacyBehavior href='/enquiry-form'>
+                  <Link legacyBehavior href='/chengalpattu-site/enquiry-form'>
                     <a className='nav-link'>Enquiry Form</a>
                   </Link>
                 </li>
@@ -376,7 +377,7 @@ const ChengalpattuNav = () => {
                       : 'nav-item'
                   }
                 >
-                  <Link legacyBehavior href='/mandatory-public-disclosures'>
+                  <Link legacyBehavior href='/chengalpattu-site/mandatory-public-disclosures'>
                     <a className='nav-link'>Mandatory Public Disclosures</a>
                   </Link>
                 </li>
@@ -386,7 +387,7 @@ const ChengalpattuNav = () => {
                     pageName === 'events' ? 'active nav-item' : 'nav-item'
                   }
                 >
-                  <Link legacyBehavior href='/events'>
+                  <Link legacyBehavior href='/chengalpattu-site/events'>
                     <a className='nav-link'>Events</a>
                   </Link>
                 </li>
@@ -396,7 +397,7 @@ const ChengalpattuNav = () => {
                     pageName === 'contact' ? 'active nav-item' : 'nav-item'
                   }
                 >
-                  <Link legacyBehavior href='/contact'>
+                  <Link legacyBehavior href='/chengalpattu-site/contact'>
                     <a className='nav-link'>Contact Us</a>
                   </Link>
                 </li>
@@ -406,7 +407,7 @@ const ChengalpattuNav = () => {
                     pageName === 'careers' ? 'active nav-item' : 'nav-item'
                   }
                 >
-                  <Link legacyBehavior href='/careers'>
+                  <Link legacyBehavior href='/chengalpattu-site/careers'>
                     <a className='nav-link'>Careers</a>
                   </Link>
                 </li>

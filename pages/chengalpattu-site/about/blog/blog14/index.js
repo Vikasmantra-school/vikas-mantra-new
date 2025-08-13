@@ -1,6 +1,6 @@
 // import styles from './style.module.css'
 import { BlogDates } from "../../../../components/BlogDates/BlogDates";
-import { Breadcrumb } from "../../../../components/Breadcrumb/Breadcrumb";
+import { Breadcrumb } from '/components/Breadcrumb/Breadcrumb';
 
 const Blog14 = () => {
   const pageTitle = "About";

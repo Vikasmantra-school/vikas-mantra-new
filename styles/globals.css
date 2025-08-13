@@ -488,6 +488,11 @@ p {
   position: relative;
 }
 
+.chengalpattu-unique.home{
+  z-index: 2;
+  position: absolute !important;
+}
+
 /* .homeheader.home {
   z-index: 2;
   position: absolute;
@@ -539,12 +544,22 @@ p {
   gap:1.5rem;
   flex: 0 0 100%;
 }
+#mainMenu2 .navbar-nav{
+  justify-content: space-between;
+  flex: 0 0 100%;
+border-bottom: 1px solid #fff;
+}
+.home #mainMenu2 .navbar-nav .nav-link{
+  color: #fff;
+}
 
-#mainMenu li.nav-item.active .nav-link {
+#mainMenu li.nav-item.active .nav-link,
+#mainMenu2 li.nav-item.active .nav-link {
   position: relative;
 }
 
-#mainMenu li.nav-item.active .nav-link::after {
+#mainMenu li.nav-item.active .nav-link::after,
+#mainMenu2 li.nav-item.active .nav-link::after {
   content: "";
   border: unset;
   border-bottom: 5px solid #aa182c;
@@ -561,7 +576,7 @@ p {
   border-bottom: 1px solid #f3f3f3;
 }
 
-.home .navbar-nav {
+#mainMenu2 .navbar-nav {
   border-bottom: 1px solid #fff;
 }
 

@@ -1,5 +1,5 @@
 import { BlogDates } from '../../../../components/BlogDates/BlogDates'
-import { Breadcrumb } from '../../../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '/components/Breadcrumb/Breadcrumb';
 
 const Blog1 = () => {
   const pageTitle = 'About'

@@ -1,18 +1,18 @@
 import styles from './style.module.css'
-import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '/components/Breadcrumb/Breadcrumb';
 import { motion } from "framer-motion";
 import Image from 'next/image'
-import staff1 from '../../../public/assets/staffs/staff13.png'
-import staff2 from '../../../public/assets/staffs/staff3.png'
-import staff3 from '../../../public/assets/staffs/staff4.png'
-import staff4 from '../../../public/assets/staffs/staff5.png'
-import staff5 from '../../../public/assets/staffs/staff6.png'
-import staff6 from '../../../public/assets/staffs/staff7.png'
-import staff7 from '../../../public/assets/staffs/staff8.png'
-import staff8 from '../../../public/assets/staffs/staff9.png'
-import staff9 from '../../../public/assets/staffs/staff10.png'
-import staff10 from '../../../public/assets/staffs/staff11.png'
-import staff11 from '../../../public/assets/staffs/staff12.jpg'
+import staff1 from '/public/assets/staffs/staff13.png'
+import staff2 from '/public/assets/staffs/staff3.png'
+import staff3 from '/public/assets/staffs/staff4.png'
+import staff4 from '/public/assets/staffs/staff5.png'
+import staff5 from '/public/assets/staffs/staff6.png'
+import staff6 from '/public/assets/staffs/staff7.png'
+import staff7 from '/public/assets/staffs/staff8.png'
+import staff8 from '/public/assets/staffs/staff9.png'
+import staff9 from '/public/assets/staffs/staff10.png'
+import staff10 from '/public/assets/staffs/staff11.png'
+import staff11 from '/public/assets/staffs/staff12.jpg'
 
 const OurTeam = () => {
     

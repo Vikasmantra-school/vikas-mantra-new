@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import styles from './style.module.css'
 import Link from 'next/link'
-import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
-import { timeline } from '../../../components/Timeline/Timeline'
+import { Breadcrumb } from '/components/Breadcrumb/Breadcrumb'
+import { timeline } from '/components/Timeline/Timeline'
 
 function CurriculumFrameWork() {
   const pageTitle = 'Learning'
