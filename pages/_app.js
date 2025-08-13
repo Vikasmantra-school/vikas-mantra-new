@@ -9,6 +9,8 @@ import { CSSRulePlugin } from "gsap/dist/CSSRulePlugin";
 // import { Analytics } from '@vercel/analytics/react';
 import { useRouter } from "next/router";
 import PopupModal from "../components/Popup/PopupModal";
+import { Router } from "react-router-dom";
+import ChengalpattuNav from "../components/Header/ChengalpattuNav";
 
 gsap.registerPlugin(CSSRulePlugin);
 function MyApp({ Component, pageProps }) {
@@ -186,11 +188,18 @@ function MyApp({ Component, pageProps }) {
     router.pathname === "/campaign" || router.pathname === "/thankyou"
       ? false
       : true;
+
+
+
+      let NavComponent = Nav;
+      if(router.pathname.startsWith("/chengalpattu-site")){
+        NavComponent = ChengalpattuNav;
+      }
   return (
     <>
       <PopupModal />
 
-      {showHeader && <Nav />}
+      {showHeader && <NavComponent />}
 
       <Component {...pageProps} />
 

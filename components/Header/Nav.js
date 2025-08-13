@@ -14,8 +14,8 @@ import { act } from "react";
 const Nav = () => {
   const { asPath } = useRouter();
   const dropdownSub = useRef("");
-  const isMambakkam = asPath.startsWith("/mathuseelan");
-  const isChengalpattu = asPath.startsWith("/eabishen");
+  const isMambakkam = asPath.startsWith("/mambakkam-site");
+  const isChengalpattu = asPath.startsWith("/chengalpattu-site");
   var pageName = asPath.replace("/", "");
 
   const [selectedCampus, setSelectedCampus] = useState(
@@ -59,7 +59,7 @@ const Nav = () => {
           key={index}
           className={item.children ? "nav-item dropdown" : "nav-item"}
         >
-          <Link href={`/mathuseelan/${item.href}` || "#"} legacyBehavior>
+          <Link href={`/mambakkam-site/${item.href}` || "#"} legacyBehavior>
             <a
               className={
                 item.children
@@ -184,7 +184,7 @@ const Nav = () => {
                         >
                           <li>
                             <Link
-                              href="/mathuseelan"
+                              href="/mambakkam-site"
                               onClick={() => handleCampusSelect("Mambakkam")}
                             >
                               <a className="dropdown-item py-1 px-2">
@@ -194,7 +194,7 @@ const Nav = () => {
                           </li>
                           <li>
                             <Link
-                              href="/eabishen"
+                              href="/chengalpattu-site"
                               onClick={() => handleCampusSelect("Chengalpattu")}
                             >
                               <a className="dropdown-item py-1 px-2">
