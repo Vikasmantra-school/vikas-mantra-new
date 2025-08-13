@@ -1,0 +1,117 @@
+.homeIcon {
+    color: #AA182C;
+    margin-right: 10px;
+}
+
+.sectionContainer {
+    padding: 50px 0px;
+}
+
+.vectorImg1::before{
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: 140px;
+    height: 210px;
+    left: -1%;
+    width: 190px;
+    top: -3%;
+}
+.vectorImg2::after{
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 1;
+    background-size: 160px;
+    height: 210px;
+    right: 3%;
+    width: 190px;
+    bottom: 3%;
+}
+
+.PrincipalImg {
+    width: 100%;
+    top: -200px;
+    right: -20px;
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+}
+.pdngRight{
+padding-right: 75px;
+}
+.vmpsImg{
+    position: absolute;
+    bottom: -60px;
+    right: 25px;
+    height: 75px;
+}
+
+@media only screen and (max-width: 660px) {
+
+    .PrincipalImg {
+        position: unset;
+        width: 100%;
+        height: 100%;
+        padding-top: 0px;
+        right: unset;
+    }
+    .vmpsImg{
+        display: none;
+    }
+
+    .sectionContainer {
+        padding: 0px;
+    }
+    .vectorImg1::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector1.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: 1;
+        background-size: 100px;
+        height: 210px;
+        left: -1%;
+        width: 190px;
+        top: -2%;
+    }
+    .vectorImg2::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector2.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 1;
+        background-size: 100px;
+        height: 210px;
+        right: 0;
+        width: 190px;
+        bottom: 0;
+    }
+    .pdngRight{
+        padding: 0;
+    }
+}
+
+
+@media only screen and (min-width: 661px) and (max-width: 990px) {
+
+    .PrincipalImg {
+        position: unset;
+        right: unset;
+        height: 100%;
+    }
+    .ImgMargin{
+        margin-top: 35px;
+    }
+    .pdngRight{
+        padding: 0;
+    }
+}
+

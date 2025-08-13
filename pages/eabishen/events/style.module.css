@@ -1,0 +1,31 @@
+.eventGallery{position: relative;}
+
+.eventGallery::after{content: "";
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    height: 230px;
+    background: url(/assets/vectors/greenhalfspiral.png);
+    background-size: 100px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    z-index: 1;}
+
+.tabSpace{padding: 0;overflow-x: hidden;}
+
+.eventText{margin-left: 67px;}
+
+.eventSectionPdng{
+    padding: 120px 0;
+}
+
+
+@media only screen and (max-width: 660px) {
+
+    .eventText {
+        
+        margin-left: 12px;
+    }
+  
+  }

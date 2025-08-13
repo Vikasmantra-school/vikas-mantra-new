@@ -1,0 +1,113 @@
+.form .formText {
+    border: none;
+    border-bottom: 1.5px solid #b0b0b0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.formCenter {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form {
+    text-align: left;
+    padding: 70px 0px 70px 70px;
+    background: #fff;
+}
+
+
+.formPb {
+    padding-bottom: 25px;
+}
+
+.schoolLogo {
+    position: relative;
+}
+
+.eqBg {
+    position: relative;
+}
+
+.eqBg::after {
+    content: "";
+    position: absolute;
+    bottom: -70%;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/vectors/Vector9.png);
+    background-size: 142px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.formTop {
+    z-index: 1;
+}
+
+.submitBtn {
+    border: 0;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+
+@media only screen and (max-width: 660px) {
+
+    .schoolLogo img {
+        width: 100%;
+    }
+
+    .schoolLogo::before {
+        background-size: 100px;
+        left: 0;
+    }
+
+    .form {
+        padding: 70px 0px 70px 0px;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+
+    .schoolLogo img {
+        width: 100%;
+    }
+
+    .schoolLogo::before {
+        background-size: 100px;
+        left: 0;
+    }
+
+    .form {
+      
+        top: 0;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .formTop {
+        top: 0rem;
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+   
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 991px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

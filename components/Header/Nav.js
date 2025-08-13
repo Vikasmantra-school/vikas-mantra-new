@@ -19,8 +19,7 @@ const Nav = () => {
   var pageName = asPath.replace("/", "");
 
   const [selectedCampus, setSelectedCampus] = useState(
-    isMambakkam
-      ? "Mambakkam"
+    isMambakkam ? "Mambakkam"
       : isChengalpattu
       ? "Chengalpattu"
       : "Select Campus"

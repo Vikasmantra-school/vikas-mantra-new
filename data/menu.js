@@ -6,11 +6,11 @@ export const mambakkamMenu = [
     children:[
       {
         title:"Principal's Message",
-        href:"#"
+        href:"/about/message-from-principal"
       },
       {
         title:"Blog",
-        href:"#"
+        href:"/about/blog"
       }
     ]
   },

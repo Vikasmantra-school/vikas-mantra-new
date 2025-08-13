@@ -1,0 +1,72 @@
+.copyText {
+    color: #687179;
+}
+
+.formSection {
+    width: 100%;
+    position: relative;
+    background-image: url('/images/hero-bg.jpg');
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: animatedBackground 100s linear infinite;
+    padding: 60px 0px 75px 0px;
+    height: 95vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+}
+
+.formSection::before {
+    content: '';
+    position: absolute;
+    background: #78131bed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+}
+
+.formContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.thankyou {
+    font-size: 57px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 55px;
+    color: #fff;
+}
+
+.contact {
+    margin-top: 20px;
+    font-size: 27px;
+    font-weight: 600;
+    color: #fff;
+}
+.goHome{
+    background: #222;
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all ease .5s;
+}
+.goHome:hover{
+    background: #fff;
+    color: #222;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
