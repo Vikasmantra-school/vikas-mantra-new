@@ -8,7 +8,8 @@
 }
 
 .bannerTitle {
-  font-size: 4.5rem;
+  font-family: "Golos Text", sans-serif;
+  font-size: 3.5625rem;
   color: #155874;
   font-weight: 700;
   line-height: 1;
@@ -20,6 +21,7 @@
 }
 
 .admissionTag {
+  font-family: "Golos Text", sans-serif;
   display: inline-block;
   margin-top: 20px;
   padding: 6px 14px;
@@ -60,24 +62,33 @@
   .heroBanner {
     height: auto;
   }
-  
-.subtitle {
-  margin-top: 2rem;
- 
-}
+
+  .subtitle {
+    margin-top: 2rem;
+  }
 }
 
 /* VMPS Story */
+.vmpsStory p {
+  font-family: "Golos Text", sans-serif;
+}
 .storyHeading span {
+  font-family: "Golos Text", sans-serif;
   font-size: 4.625rem;
   color: #e02d53;
   font-weight: 400;
   line-height: 1;
 }
 
-@media only screen and (max-width:768px){
-  .storyHeading span{
+@media only screen and (max-width: 768px) {
+  .storyHeading span {
     font-size: 2.7rem;
+  }
+  .vmpsStory .vmpsBanner {
+    width: 100%;
+  }
+  .storyHeading svg {
+    width: 75%;
   }
 }
 
@@ -101,13 +112,15 @@
   color: #474747;
 }
 
-@media only screen and (max-width:768px){
-  .featureSection .featureBlock{
+.featureSection .featureBlock img {
+  width: 80px;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .featureSection .featureBlock {
     padding: 1rem;
   }
 }
-
-
 
 /* video section */
 .videoSection .videoContainer {
@@ -143,17 +156,32 @@
   margin: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .videoOverlayCont {
+    width: auto;
+    left: 0;
+  }
+}
 /* Journey swiper */
 .journeySwiper .swiperLeftCont {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: end;
-  width: 70%;
+  width: 75%;
   padding-inline-start: 2em;
+}
+.swiperLeftCont .svgArrow {
+  position: absolute;
+  top: -9rem;
+  right: -4rem;
+  width: 120px;
 }
 
 .journeySwiper .swiperLeftCont h2 {
+  font-family: "Golos Text", sans-serif;
+
+  position: relative;
   font-size: 1.5rem;
   color: #e02d53;
   font-weight: 600;
@@ -161,6 +189,7 @@
 .swiperWrapper {
   width: 100%;
   padding: 2rem;
+  padding-inline-end: 0;
   margin: 0;
   background-color: #faf3da;
   position: relative;
@@ -235,11 +264,21 @@
   color: #c9c9c9;
 }
 
+@media only screen and (max-width: 768px) {
+  .swiperLeftCont .svgArrow {
+    top: -4rem;
+    right: -9rem;
+  }
+}
+
 /* blog section */
 
 .blogSection .blogBlock {
+  margin-block-end: 2rem;
 }
 .blogTitle {
+  font-family: "Golos Text", sans-serif;
+
   color: #e02d53;
   font-size: 1.5rem;
   font-weight: 600;
@@ -247,6 +286,8 @@
 }
 
 .blogBlock h2 {
+  font-family: "Golos Text", sans-serif;
+
   font-size: 1rem;
   color: #fa5d7e;
   font-weight: 600;

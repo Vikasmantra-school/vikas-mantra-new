@@ -85,7 +85,7 @@ const main = () => {
             {/* Right Side Image */}
             <div className="col-lg-6 col-md-12 order-1 order-lg-2 text-center">
               <img
-                src="/assets/blogs/blog2.png"
+                src="/images/banner/mambakkam-hero-banner.png"
                 alt="School Girl"
                 className={styles.heroImage}
               />
@@ -98,7 +98,10 @@ const main = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="mb-5 col-lg-6 col-md-12 col-sm-12">
-              <img src="/assets/icons/whatsapp.png" />
+              <img
+                className={styles.vmpsBanner}
+                src="/images/banner/vmps-stoy-banner.png"
+              />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 ">
               <h2 className={styles.storyHeading}>
@@ -119,7 +122,7 @@ const main = () => {
                 <span>Story</span>
               </h2>
 
-              <p>
+              <p className="mt-3">
                 VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu
                 Kanchipuram is building a distinctive educational platform
                 through a mix of international learning techniques, experienced
@@ -147,7 +150,7 @@ const main = () => {
             <div className="row">
               <div className="col-lg-3">
                 <div className={styles.featureBlock}>
-                  <img src="/assets/icons/whatsapp.png" />
+                  <img src="/images/icon/mambakkam/holisitic-icon.png" />
                   <h2>Holistic Approach</h2>
                   <p>
                     We place equal emphasis on academic excellence and on the
@@ -157,31 +160,34 @@ const main = () => {
               </div>
               <div className="col-lg-3">
                 <div className={styles.featureBlock}>
-                  <img src="/assets/icons/whatsapp.png" />
-                  <h2>Holistic Approach</h2>
+                  <img src="/images/icon/mambakkam/global-icon.png" />
+                  <h2>Global Outlook</h2>
                   <p>
-                    We place equal emphasis on academic excellence and on the
-                    social, physical emotional and development of our students.
+                    Blending 21st century education techniques with the best
+                    from traditional methods of teaching, Vikas Mantra offers a
+                    unique programme for students of the emerging India.
                   </p>
                 </div>
               </div>
               <div className="col-lg-3">
                 <div className={styles.featureBlock}>
-                  <img src="/assets/icons/whatsapp.png" />
-                  <h2>Holistic Approach</h2>
+                  <img src="/images/icon/mambakkam/person-icon.png" />
+                  <h2>Talented Faculty</h2>
                   <p>
-                    We place equal emphasis on academic excellence and on the
-                    social, physical emotional and development of our students.
+                    VIKAS MANTRA PUBLIC SCHOOL faculty have been handpicked to
+                    ensure that they bring the right attitude and approach in
+                    engaging with students.
                   </p>
                 </div>
               </div>
               <div className="col-lg-3">
                 <div className={styles.featureBlock}>
-                  <img src="/assets/icons/whatsapp.png" />
-                  <h2>Holistic Approach</h2>
+                  <img src="/images/icon/mambakkam/per-hand-icon.png" />
+                  <h2>Rich Curriculum</h2>
                   <p>
-                    We place equal emphasis on academic excellence and on the
-                    social, physical emotional and development of our students.
+                    VIKAS MANTRA PUBLIC SCHOOL offers a unique curriculum which
+                    comprises of a rigorous academic programme that deepens and
+                    broadens knowledge of our students.
                   </p>
                 </div>
               </div>
@@ -253,11 +259,24 @@ const main = () => {
 
       <section className={styles.journeySwiper + " " + "pb60 pt60"}>
         <div>
-          <div className="row w-100">
+          <div className="row g-0 w-100">
             <div className="col-lg-3 d-flex justify-content-start">
               <div className={styles.swiperLeftCont}>
                 <h2>
                   Journey of <br /> education at VMPS
+                  <div className={styles.svgArrow}>
+                    <svg
+                      width="126"
+                      height="126"
+                      viewBox="0 0 126 126"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M40.7595 88.9116L81.8877 47.7833V70.9542H87.2083V38.7917H55.0458V44.1123H78.0437L37.0884 85.0676L40.7595 88.9116ZM63.0225 125.25C54.4412 125.25 46.3839 123.617 38.8505 120.35C31.3171 117.083 24.7186 112.62 19.055 106.962C13.3914 101.304 8.92492 94.7123 5.65564 87.1859C2.38521 79.6594 0.75 71.6049 0.75 63.0225C0.75 54.4147 2.38349 46.3216 5.65046 38.7432C8.91743 31.166 13.3798 24.5745 19.0377 18.9685C24.6955 13.3625 31.2877 8.92492 38.8141 5.65564C46.3406 2.38521 54.3951 0.75 62.9775 0.75C71.5853 0.75 79.6784 2.38349 87.2568 5.65046C94.834 8.91743 101.426 13.351 107.032 18.9512C112.637 24.5514 117.075 31.1372 120.344 38.7087C123.615 46.279 125.25 54.3686 125.25 62.9775C125.25 71.5588 123.617 79.6161 120.35 87.1495C117.083 94.6829 112.649 101.281 107.049 106.945C101.449 112.609 94.8628 117.075 87.2913 120.344C79.721 123.615 71.6314 125.25 63.0225 125.25ZM63 119.929C78.8369 119.929 92.2846 114.394 103.343 103.322C114.401 92.2512 119.929 78.8103 119.929 63C119.929 47.1631 114.401 33.7154 103.343 22.6568C92.2846 11.5994 78.8369 6.07065 63 6.07065C47.1897 6.07065 33.7488 11.5994 22.6776 22.6568C11.6063 33.7154 6.07065 47.1631 6.07065 63C6.07065 78.8103 11.6063 92.2512 22.6776 103.322C33.7488 114.394 47.1897 119.929 63 119.929Z"
+                        fill="#e02d5494"
+                      />
+                    </svg>
+                  </div>
                 </h2>
                 <p>There’s so many things that make our school unique</p>
               </div>
@@ -268,6 +287,28 @@ const main = () => {
                   modules={[Navigation, Autoplay]}
                   spaceBetween={20}
                   slidesPerView={3.2}
+                  breakpoints={{
+                    0: {
+                      slidesPerView: 1.2,
+                      spaceBetween: 10,
+                    },
+                    576: {
+                      slidesPerView: 2.2,
+                      spaceBetween: 15,
+                    },
+                    768: {
+                      slidesPerView: 3.2,
+                      spaceBetween: 20,
+                    },
+                    992: {
+                      slidesPerView: 4.2,
+                      spaceBetween: 20,
+                    },
+                    1200: {
+                      slidesPerView: 5.2,
+                      spaceBetween: 25,
+                    },
+                  }}
                   navigation={{
                     prevEl: ".swiper-prev-custom",
                     nextEl: ".swiper-next-custom",
@@ -327,7 +368,7 @@ const main = () => {
           <div className="row">
             <div className="col-lg-4">
               <div className={styles.blogBlock}>
-                <img src="/assets/blogs/blog2.png" />
+                <img src="/assets/blogs/blog-11.JPG" />
                 <h2>
                   Nurturing Balance Through Yoga: A Path to Inner and Outer
                   Growth
@@ -341,10 +382,10 @@ const main = () => {
             </div>
             <div className="col-lg-4">
               <div className={styles.blogBlock}>
-                <img src="/assets/blogs/blog2.png" />
+                <img src="/assets/blogs/blog-12.JPG" />
                 <h2>
-                  Nurturing Balance Through Yoga: A Path to Inner and Outer
-                  Growth
+                  Celebrations at Vikas Mantra Public School: Nurturing Joy,
+                  Unity & Learning
                 </h2>
 
                 <div className={styles.block_bottom}>
@@ -355,11 +396,8 @@ const main = () => {
             </div>
             <div className="col-lg-4">
               <div className={styles.blogBlock}>
-                <img src="/assets/blogs/blog2.png" />
-                <h2>
-                  Nurturing Balance Through Yoga: A Path to Inner and Outer
-                  Growth
-                </h2>
+                <img src="/assets/blogs/blog-13.JPG" />
+                <h2>Discover Your Child's Unique Learning Style</h2>
 
                 <div className={styles.block_bottom}>
                   <p>10-March-2025</p>

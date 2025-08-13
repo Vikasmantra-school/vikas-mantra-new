@@ -27,7 +27,11 @@
   overflow: hidden;
 }
 
+.videoWrapper{
+  position: relative;
+}
 .sliderContainer video {
+  cursor: pointer;
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -36,4 +40,31 @@
 
 .tab {
   overflow: hidden;
+}
+.sliderContainer{
+  position: relative;
+}
+
+.playBtn{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+.endSvg{
+    background: url("/images/bgs/bottomTab.png") no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 30px;
+  height: 35px;
+  width: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -1px;
 }
