@@ -7,6 +7,12 @@
   position: relative;
 }
 
+.homeLeftIcon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  left: 0;
+}
 .bannerTitle {
   font-family: "Golos Text", sans-serif;
   font-size: 3.5625rem;
@@ -185,6 +191,19 @@
   font-size: 1.5rem;
   color: #e02d53;
   font-weight: 600;
+}
+
+.journeySwiper .swiperSvg1{
+  position: absolute;
+    left: -6rem;
+    z-index: 1;
+}
+
+.journeySwiper .swiperSvg2{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    bottom: 0;
 }
 .swiperWrapper {
   width: 100%;

@@ -40,7 +40,7 @@ const TabsHome = () => {
         <div className={styles.upperContainer}>
           <div className={styles.shapes}></div>
           <div className={styles.rightContent}>
-            <h3>Shining the Spotlight</h3>
+            <h3 className={styles.rightHeading}>Shining the Spotlight</h3>
             <p>
               Celebrating the talents, achievements, and cultural spirit of our
               young Vikas Mantra stars.

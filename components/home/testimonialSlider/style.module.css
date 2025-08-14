@@ -58,6 +58,9 @@
   padding-block: 1rem;
   width: 100%;
 }
+.testimonialSvg{
+  position: absolute;
+}
 
 @media only screen and (max-width: 768px) {
   .tabContent .card {
