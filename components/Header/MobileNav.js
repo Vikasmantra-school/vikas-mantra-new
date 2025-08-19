@@ -1,355 +1,456 @@
-import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { chengalpattuMenu, mambakkamMenu } from "../../data/menu";
 
-const MobileNav = () => {
-  const router = useRouter()
+const MobileNav = ({  }) => {
+  const router = useRouter();
+
+  const { asPath } = useRouter();
+
+  const isMambakkam = asPath.startsWith("/mambakkam-site");
+  const isChengalpattu = asPath.startsWith("/chengalpattu-site");
+
+
+  const activeMenu = isMambakkam
+  ? mambakkamMenu
+  : [];
+
+
+  let subMenu = null;
+  if (isMambakkam) {
+    subMenu = {
+      bg: "#45458A",
+      color: "#fff",
+      headText: "Mambakkam",
+      afflNo: "1930634",
+    };
+  } 
+  // else if (isChengalpattu) {
+  //   subMenu = {
+  //     bg: "#FFB800",
+  //     color: "#1D1D1D",
+  //     headText: "Chengalpattu",
+  //     afflNo: "1931307",
+  //   };
+  // }
+
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      let menu = document.getElementById('mobMenu')
-      menu.classList.add('mob-menu-hdden')
-      let hamburger = document.getElementById('hamburger')
-      hamburger.classList.remove('is-active')
-    }
+      let menu = document.getElementById("mobMenu");
+      menu.classList.add("mob-menu-hdden");
+      let hamburger = document.getElementById("hamburger");
+      hamburger.classList.remove("is-active");
+    };
 
-    router.events.on('routeChangeStart', handleRouteChange)
+    router.events.on("routeChangeStart", handleRouteChange);
 
     return () => {
-      router.events.off('routeChangeStart', handleRouteChange)
-    }
-  }, [router.events])
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, [router.events]);
 
   function navLink(e) {
-    const sibling = e.target.nextSibling
-    sibling.classList.add('is-active')
+    const sibling = e.target.nextSibling;
+    sibling.classList.add("is-active");
   }
 
   function subClose(e) {
-    e.target.parentElement.parentElement.classList.remove('is-active')
+    e.target.parentElement.parentElement.classList.remove("is-active");
   }
+
 
   return (
     <>
-      <div id='mobMenu' className='mob-menu mob-menu-hdden'>
-        <ul className='nav'>
-          <li className='nav__item'>
-            <Link href='/' legacyBehavior>
-              <a className='nav__link' aria-current='page'>
+      <div id="mobMenu" className="mob-menu mob-menu-hdden">
+        <ul className="nav">
+          <li className="nav__item">
+            <Link href="/" legacyBehavior>
+              <a className="nav__link" aria-current="page">
                 Home
               </a>
             </Link>
           </li>
-          <li className='nav__item'>
-            <a className='nav__link hasDropdown' onClick={(e) => navLink(e)}>
-              About{' '}
+          <li className="nav__item">
+            <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
+              About{" "}
               <svg
-                width='29px'
-                height='27px'
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
+                width="29px"
+                height="27px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
                 strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-6 h-6'
-              >
+                stroke="currentColor"
+                className="w-6 h-6">
                 <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>
             </a>
-            <ul className='nav__sub'>
-              <li className='nav__item'>
+            <ul className="nav__sub">
+              <li className="nav__item">
                 <a
                   onClick={(e) => subClose(e)}
-                  className='nav__link sub__close hasDropdown'
-                  href='#'
-                >
+                  className="nav__link sub__close hasDropdown"
+                  href="#">
                   Back
                   <svg
-                    width='29px'
-                    height='27px'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
+                    width="29px"
+                    height="27px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
                     strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-6 h-6'
-                  >
+                    stroke="currentColor"
+                    className="w-6 h-6">
                     <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
                     />
                   </svg>
                 </a>
               </li>
-              <li className='nav__item'>
-                <Link href='/about' legacyBehavior>
-                  <a className='nav__link'>About Vikas Mantra</a>
+              <li className="nav__item">
+                <Link href="/about" legacyBehavior>
+                  <a className="nav__link">About Vikas Mantra</a>
                 </Link>
               </li>
-              <li className='nav__item'>
-                <Link href='/about/vision-and-philosophy' legacyBehavior>
-                  <a className='nav__link'>Our Vision & Philosophy</a>
-                </Link>
-              </li>
-
-              <li className='nav__item'>
-                <Link href='/about/message-from-chairman' legacyBehavior>
-                  <a className='nav__link'>Chairman’s Message</a>
+              <li className="nav__item">
+                <Link href="/about/vision-and-philosophy" legacyBehavior>
+                  <a className="nav__link">Our Vision & Philosophy</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/about/message-from-advisor' legacyBehavior>
-                  <a className='nav__link'> Our Advisor</a>
+              <li className="nav__item">
+                <Link href="/about/message-from-chairman" legacyBehavior>
+                  <a className="nav__link">Chairman’s Message</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/about/message-from-principal' legacyBehavior>
-                  <a className='nav__link'>Principal’s Message</a>
+              <li className="nav__item">
+                <Link href="/about/message-from-advisor" legacyBehavior>
+                  <a className="nav__link"> Our Advisor</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/about/our-team' legacyBehavior>
-                  <a className='nav__link'>Our Team</a>
+              <li className="nav__item">
+                <Link href="/about/message-from-principal" legacyBehavior>
+                  <a className="nav__link">Principal’s Message</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/about/blog' legacyBehavior>
-                  <a className='nav__link'>Blog</a>
+              <li className="nav__item">
+                <Link href="/about/our-team" legacyBehavior>
+                  <a className="nav__link">Our Team</a>
+                </Link>
+              </li>
+
+              <li className="nav__item">
+                <Link href="/about/blog" legacyBehavior>
+                  <a className="nav__link">Blog</a>
                 </Link>
               </li>
             </ul>
           </li>
-          <li className='nav__item'>
-            <Link href='/admissions' legacyBehavior>
-              <a className='nav__link' aria-current='page'>
+          <li className="nav__item">
+            <Link href="/admissions" legacyBehavior>
+              <a className="nav__link" aria-current="page">
                 Admissions
               </a>
             </Link>
           </li>
-          <li className='nav__item'>
-            <a className='nav__link hasDropdown' onClick={(e) => navLink(e)}>
-              Campus{' '}
+          <li className="nav__item">
+            <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
+              Campus{" "}
               <svg
-                width='29px'
-                height='27px'
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
+                width="29px"
+                height="27px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
                 strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-6 h-6'
-              >
+                stroke="currentColor"
+                className="w-6 h-6">
                 <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>
             </a>
-            <ul className='nav__sub'>
-              <li className='nav__item'>
+            <ul className="nav__sub">
+              <li className="nav__item">
                 <a
                   onClick={(e) => subClose(e)}
-                  className='nav__link sub__close hasDropdown'
-                  href='#'
-                >
+                  className="nav__link sub__close hasDropdown"
+                  href="#">
                   Back
                   <svg
-                    width='29px'
-                    height='27px'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
+                    width="29px"
+                    height="27px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
                     strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-6 h-6'
-                  >
+                    stroke="currentColor"
+                    className="w-6 h-6">
                     <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
                     />
                   </svg>
                 </a>
               </li>
-              <li className='nav__item'>
-                <Link href='/campus/classrooms' legacyBehavior>
-                  <a className='nav__link'>Classrooms</a>
+              <li className="nav__item">
+                <Link href="/campus/classrooms" legacyBehavior>
+                  <a className="nav__link">Classrooms</a>
                 </Link>
               </li>
-              <li className='nav__item'>
+              <li className="nav__item">
                 <Link
-                  href='/campus/facilities-and-Infrastructure'
-                  legacyBehavior
-                >
-                  <a className='nav__link'>Facilities and Infrastructure</a>
+                  href="/campus/facilities-and-Infrastructure"
+                  legacyBehavior>
+                  <a className="nav__link">Facilities and Infrastructure</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/campus/laboratory' legacyBehavior>
-                  <a className='nav__link'>Laboratories</a>
+              <li className="nav__item">
+                <Link href="/campus/laboratory" legacyBehavior>
+                  <a className="nav__link">Laboratories</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/campus/speciality-room' legacyBehavior>
-                  <a className='nav__link'>Speciality Rooms</a>
+              <li className="nav__item">
+                <Link href="/campus/speciality-room" legacyBehavior>
+                  <a className="nav__link">Speciality Rooms</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/campus/library' legacyBehavior>
-                  <a className='nav__link'>Library</a>
+              <li className="nav__item">
+                <Link href="/campus/library" legacyBehavior>
+                  <a className="nav__link">Library</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/campus/technology' legacyBehavior>
-                  <a className='nav__link'>Technology</a>
+              <li className="nav__item">
+                <Link href="/campus/technology" legacyBehavior>
+                  <a className="nav__link">Technology</a>
                 </Link>
               </li>
-              <li className='nav__item'>
-                <Link href='/campus/security' legacyBehavior>
-                  <a className='nav__link'>Security</a>
+              <li className="nav__item">
+                <Link href="/campus/security" legacyBehavior>
+                  <a className="nav__link">Security</a>
                 </Link>
               </li>
-              <li className='nav__item'>
-                <Link href='/campus/healthcare' legacyBehavior>
-                  <a className='nav__link'>Healthcare</a>
+              <li className="nav__item">
+                <Link href="/campus/healthcare" legacyBehavior>
+                  <a className="nav__link">Healthcare</a>
                 </Link>
               </li>
-              <li className='nav__item'>
-                <Link href='/campus/transportation' legacyBehavior>
-                  <a className='nav__link'>Transportation</a>
+              <li className="nav__item">
+                <Link href="/campus/transportation" legacyBehavior>
+                  <a className="nav__link">Transportation</a>
                 </Link>
               </li>
             </ul>
           </li>
-          <li className='nav__item'>
-            <a className='nav__link hasDropdown' onClick={(e) => navLink(e)}>
-              Learning{' '}
+          <li className="nav__item">
+            <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
+              Learning{" "}
               <svg
-                width='29px'
-                height='27px'
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
+                width="29px"
+                height="27px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
                 strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-6 h-6'
-              >
+                stroke="currentColor"
+                className="w-6 h-6">
                 <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>
             </a>
-            <ul className='nav__sub'>
-              <li className='nav__item'>
+            <ul className="nav__sub">
+              <li className="nav__item">
                 <a
                   onClick={(e) => subClose(e)}
-                  className='nav__link sub__close hasDropdown'
-                  href='#'
-                >
+                  className="nav__link sub__close hasDropdown"
+                  href="#">
                   Back
                   <svg
-                    width='29px'
-                    height='27px'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
+                    width="29px"
+                    height="27px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
                     strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-6 h-6'
-                  >
+                    stroke="currentColor"
+                    className="w-6 h-6">
                     <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18'
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
                     />
                   </svg>
                 </a>
               </li>
-              <li className='nav__item'>
-                <Link href='/learning' legacyBehavior>
-                  <a className='nav__link'>Why VIKAS MANTRA PUBLIC SCHOOL</a>
+              <li className="nav__item">
+                <Link href="/learning" legacyBehavior>
+                  <a className="nav__link">Why VIKAS MANTRA PUBLIC SCHOOL</a>
                 </Link>
               </li>
-              <li className='nav__item'>
-                <Link href='/learning/curriculum' legacyBehavior>
-                  <a className='nav__link'>Curriculum</a>
-                </Link>
-              </li>
-
-              <li className='nav__item'>
-                <Link href='/learning/pre-primary-years' legacyBehavior>
-                  <a className='nav__link'>Pre-Primary Years</a>
+              <li className="nav__item">
+                <Link href="/learning/curriculum" legacyBehavior>
+                  <a className="nav__link">Curriculum</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/learning/curriculum-framework' legacyBehavior>
-                  <a className='nav__link'>Curriculum Framework</a>
+              <li className="nav__item">
+                <Link href="/learning/pre-primary-years" legacyBehavior>
+                  <a className="nav__link">Pre-Primary Years</a>
                 </Link>
               </li>
 
-              <li className='nav__item'>
-                <Link href='/learning/online-classes' legacyBehavior>
-                  <a className='nav__link'>Online Classes</a>
+              <li className="nav__item">
+                <Link href="/learning/curriculum-framework" legacyBehavior>
+                  <a className="nav__link">Curriculum Framework</a>
+                </Link>
+              </li>
+
+              <li className="nav__item">
+                <Link href="/learning/online-classes" legacyBehavior>
+                  <a className="nav__link">Online Classes</a>
                 </Link>
               </li>
             </ul>
           </li>
-          <li className='nav__item'>
-            <Link href='/enquiry-form' legacyBehavior>
-              <a className='nav__link' aria-current='page'>
+          <li className="nav__item">
+            <Link href="/enquiry-form" legacyBehavior>
+              <a className="nav__link" aria-current="page">
                 Enquiry Form
               </a>
             </Link>
           </li>
-          <li className='nav__item'>
-            <Link href='/mandatory-public-disclosures' legacyBehavior>
-              <a className='nav__link' aria-current='page'>
+          <li className="nav__item">
+            <Link href="/mandatory-public-disclosures" legacyBehavior>
+              <a className="nav__link" aria-current="page">
                 Mandatory Public Disclosures
               </a>
             </Link>
           </li>
-          <li className='nav__item'>
-            <Link href='/events' legacyBehavior>
-              <a className='nav__link' aria-current='page'>
+          <li className="nav__item">
+            <Link href="/events" legacyBehavior>
+              <a className="nav__link" aria-current="page">
                 Events
               </a>
             </Link>
           </li>
-          <li className='nav__item'>
-            <Link href='/contact' legacyBehavior>
-              <a className='nav__link' aria-current='page'>
+          <li className="nav__item">
+            <Link href="/contact" legacyBehavior>
+              <a className="nav__link" aria-current="page">
                 Contact Us
               </a>
             </Link>
           </li>
-          <li className='nav__item'>
-            <Link href='/careers' legacyBehavior>
-              <a className='nav__link' aria-current='page'>
+          <li className="nav__item">
+            <Link href="/careers" legacyBehavior>
+              <a className="nav__link" aria-current="page">
                 Career
               </a>
             </Link>
           </li>
         </ul>
+
+        {activeMenu && (
+          <ul
+            className="nav"
+            style={{
+              backgroundColor: subMenu?.bg || "#f5f5f5",
+            }}>
+            {activeMenu?.map((menu, i) => (
+              <li className="nav__item" key={i}>
+                {menu?.children?.length > 0 ? (
+                  <>
+                    <a
+                      className="nav__link hasDropdown"
+                      onClick={(e) => navLink(e)}>
+                      {menu.title}
+                      <svg
+                        width="29px"
+                        height="27px"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-6">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                        />
+                      </svg>
+                    </a>
+                    <ul
+                      className="nav__sub"
+                      style={{
+                        backgroundColor: subMenu?.bg || "#f5f5f5",
+                      }}>
+                      <li className="nav__item">
+                        <a
+                          onClick={(e) => subClose(e)}
+                          className="nav__link sub__close hasDropdown"
+                          href="#">
+                          Back
+                          <svg
+                            width="29px"
+                            height="27px"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-6 h-6">
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      {menu?.children?.map((child, ind) => (
+                        <li className="nav__item" key={ind}>
+                          <Link href={child.href} legacyBehavior>
+                            <a className="nav__link">{child.title}</a>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <Link href={menu.href} legacyBehavior>
+                    <a className="nav__link" aria-current="page">
+                      {menu.title}
+                    </a>
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MobileNav
+export default MobileNav;
