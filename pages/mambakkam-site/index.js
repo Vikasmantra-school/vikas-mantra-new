@@ -9,10 +9,47 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import ModalFn from "../../components/mambakkam/modal/ModalFn";
+import gsap from "gsap";
 
 const main = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
+
+  const containerRef = useRef(null);
+  const arrowRef = useRef(null);
+
+  const handleMouseMove = (e) => {
+    if (e.target.closest(".childToIgnore")) return;
+    const container = containerRef.current;
+    const arrow = arrowRef.current;
+    if (!container || !arrow) return;
+
+    const rect = container.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    const angleRad = Math.atan2(mouseY - centerY, mouseX - centerX);
+    const angleDeg = angleRad * (180 / Math.PI);
+
+    gsap.to(arrow, {
+      rotate: angleDeg,
+      duration: 0.3,
+      ease: "ease.inOut",
+      transformOrigin: "50% 50%",
+    });
+  };
+
+  const handleMouseLeave = () => {
+    gsap.to(arrowRef.current, {
+      rotate: 0,
+      duration: 0.5,
+      ease: "ease.inOut",
+      transformOrigin: "50% 50%",
+    });
+  };
 
   const togglePlayPause = () => {
     if (!videoRef.current) return;
@@ -29,32 +66,27 @@ const main = () => {
     {
       id: 1,
       image: "/assets/blogs/blog2.png",
-      title: "Foundational Stage",
+      title: "Upper Primary",
       description: "(Nursery, Kindergarten to II)",
+      message:
+        "Emphasis is placed on the development of reading skills and the children are given the opportunity to read widely from an early age. In addition to these skills we work to develop the child’s ability to observe carefully, record accurately and with sensitivity and to gain an understanding of their environment in a natural, geographic, historical and social way.",
     },
+
     {
       id: 2,
       image: "/assets/blogs/blog2.png",
-      title: "Upper Primary",
-      description: "(Grades III – V)",
+      title: "Middle Year",
+      description: "(Grades VI – VIII)",
+      message:
+        "Utmost importance is given to the development of the intellectual skills, which are essential in all our work. It is vital that the children learn to convey the meaning clearly and accurately through spoken and written English and that they learn to manipulate numbers with confidence and understand and solve problems mathematically using appropriate concepts. ",
     },
     {
       id: 3,
       image: "/assets/blogs/blog2.png",
-      title: "Middle Year",
-      description: "(Grades VI – VIII)",
-    },
-    {
-      id: 4,
-      image: "/assets/blogs/blog2.png",
-      title: "Middle Year",
-      description: "(Grades VI – VIII)",
-    },
-    {
-      id: 5,
-      image: "/assets/blogs/blog2.png",
-      title: "Middle Year",
-      description: "(Grades VI – VIII)",
+      title: "Secondary",
+      description: "(Grade X)",
+      message:
+        "Children are oriented & prepared for board exams. Study of the second language will continue till Grade X. Emphasis on Health and Physical education are continued with dedicated time for the same.",
     },
   ];
 
@@ -274,15 +306,25 @@ const main = () => {
         </div>
       </section>
 
-      <section className={styles.journeySwiper + " " + "pb60 pt60"}>
+      <section
+        ref={containerRef}
+        className={styles.journeySwiper + " " + "pb60 pt60"}
+      >
         <div>
           <div className="row g-0 w-100">
             <div className="col-lg-3 d-flex justify-content-start">
               <div className={styles.swiperLeftCont}>
                 <h2>
                   Journey of <br /> education at VMPS
-                  <div className={styles.svgArrow}>
+                  <div
+                    style={{ display: "inline-block" }}
+                    onMouseMove={handleMouseMove}
+                    onMouseLeave={handleMouseLeave}
+                    className={styles.svgArrow}
+                  >
                     <svg
+                      ref={arrowRef}
+                      style={{ display: "block" }}
                       width="126"
                       height="126"
                       viewBox="0 0 126 126"
@@ -373,7 +415,7 @@ const main = () => {
                         <img src={slide.image} alt={slide.title} />
                         <h3>{slide.title}</h3>
                         <p>{slide.description}</p>
-                        {/* <button>Read More</button> */}
+                        <ModalFn data={slidesData} dataID={slide.id} />
                       </div>
                     </SwiperSlide>
                   ))}

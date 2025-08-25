@@ -216,6 +216,10 @@
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
+
+.swiperWrapper .swiperSlide {
+  flex: 1;
+}
 .swiperWrapper .swiperSlide .slideCont {
   display: flex;
   flex-direction: column;
@@ -223,6 +227,7 @@
   padding: 1rem;
   background-color: #fff;
   border-radius: 12px;
+  width: 100%;
 }
 
 .swiperSlide .slideCont h3 {

@@ -1,0 +1,31 @@
+/* Modal */
+.modal {
+}
+.modal .modalBody {
+  padding: 1rem !important;
+}
+/* Modal */
+.modalTitle {
+  font-family: "Golos Text", sans-serif;
+  color: #e02d53;
+  font-weight: 700;
+  font-size: 18px;
+  width: fit-content;
+}
+
+.modalBG {
+  width: 60px;
+  position: absolute;
+  opacity: 0.6;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.modalUnderline {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  transform: rotate(-1.5deg);
+}
