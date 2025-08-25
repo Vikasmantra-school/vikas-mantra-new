@@ -3,40 +3,40 @@
   background-color: #f7f9fa;
 }
 
-
-.testimonialHeading{
-    font-size: 2.375rem;
-    color: #E02D53;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 2rem;
-
+.testimonialHeading {
+  font-size: 2.375rem;
+  color: #e02d53;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
-.testimonialHeading::after{
-    content: "";
-    position: absolute;
-    width: 84px;
-    height: 4px;
-    border-radius: 18px;
-    bottom: -.5rem;
-    background-color: #E02D53;
-    left: 0;
+.testimonialHeading::after {
+  content: "";
+  position: absolute;
+  width: 84px;
+  height: 4px;
+  border-radius: 18px;
+  bottom: -0.5rem;
+  background-color: #e02d53;
+  left: 0;
 }
 
 .card {
-  max-width: 270px;
+  max-width: 360px;
   position: relative;
+  min-height: 264px;
 }
 .card img {
   position: absolute;
-  width: 50%;
+  width: 120px;
+  height: auto;
   right: -1rem;
   top: -1rem;
 }
 
 .cardBody {
-  background-color: #FCF6F7;
+  background-color: #fcf6f7;
   margin: 5px;
 }
 .cardTitle {
@@ -58,7 +58,7 @@
   padding-block: 1rem;
   width: 100%;
 }
-.testimonialSvg{
+.testimonialSvg {
   position: absolute;
 }
 

@@ -13,66 +13,66 @@ const Testimonials = () => {
     {
       id: 1,
       image: "/images/test-vikas.png",
-      name: "John Doe",
-      role: "Software Engineer",
+      name: " Parent of Kavitha ",
+      role: "SR.KG",
       starRating: 4, // 1 to 5 scale
       description:
-        "John is an experienced software engineer specializing in front-end development and UI/UX design.",
+        "The event is very nice to bring up hidden talents of the kids and also helps to shed their shyness and inhibitions to face number of people. Keep up the good work.",
     },
     {
       id: 2,
       image: "/images/test-vikas.png",
-      name: "Jane Smith",
-      role: "Project Manager",
+      name: "Parent of Anirudhi ",
+      role: "Grade – II",
       starRating: 5,
       description:
-        "Jane has managed several large-scale projects, leading cross-functional teams to success.",
+        "It’s a very good platform for the students to show cast their ideas, thoughts and skills without any fear to elaborate themselves in front of all hands…",
     },
     {
       id: 3,
       image: "/images/test-vikas.png",
-      name: "Alice Johnson",
-      role: "UI/UX Designer",
+      name: "Parent of Riddhi",
+      role: "Grade – II",
       starRating: 3,
       description:
-        "Alice specializes in creating seamless user interfaces and delivering memorable user experiences Alice specializes in creating seamless user interfaces and delivering memorable user experiences",
+        "It’s a very good opportunity to the students to their extracurricular skills n to know about themselves where they are good at..!",
     },
-    {
-      id: 4,
-      image: "/images/test-vikas.png",
-      name: "Alice Johnson",
-      role: "UI/UX Designer",
-      starRating: 3,
-      description:
-        "Alice specializes in creating seamless user interfaces and delivering memorable user experiences Alice specializes in creating seamless user interfaces and delivering memorable user experiences",
-    },
-    {
-      id: 5,
-      image: "/images/test-vikas.png",
-      name: "Alice Johnson",
-      role: "UI/UX Designer",
-      starRating: 3,
-      description:
-        "Alice specializes in creating seamless user interfaces and delivering memorable user experiences Alice specializes in creating seamless user interfaces and delivering memorable user experiences",
-    },
-    {
-      id: 6,
-      image: "/images/test-vikas.png",
-      name: "Alice Johnson",
-      role: "UI/UX Designer",
-      starRating: 3,
-      description:
-        "Alice specializes in creating seamless user interfaces and delivering memorable user experiences Alice specializes in creating seamless user interfaces and delivering memorable user experiences",
-    },
-    {
-      id: 7,
-      image: "/images/test-vikas.png",
-      name: "Alice Johnson",
-      role: "UI/UX Designer",
-      starRating: 3,
-      description:
-        "Alice specializes in creating seamless user interfaces and delivering memorable user experiences Alice specializes in creating seamless user interfaces and delivering memorable user experiences",
-    },
+    // {
+    //   id: 4,
+    //   image: "/images/test-vikas.png",
+    //   name: "Alice Johnson",
+    //   role: "UI/UX Designer",
+    //   starRating: 3,
+    //   description:
+    //     "Alice specializes in creating seamless user interfaces and delivering memorable user experiences Alice specializes in creating seamless user interfaces and delivering memorable user experiences",
+    // },
+    // {
+    //   id: 5,
+    //   image: "/images/test-vikas.png",
+    //   name: "Alice Johnson",
+    //   role: "UI/UX Designer",
+    //   starRating: 3,
+    //   description:
+    //     "Alice specializes in creating seamless user interfaces and delivering memorable user experiences Alice specializes in creating seamless user interfaces and delivering memorable user experiences",
+    // },
+    // {
+    //   id: 6,
+    //   image: "/images/test-vikas.png",
+    //   name: "Alice Johnson",
+    //   role: "UI/UX Designer",
+    //   starRating: 3,
+    //   description:
+    //     "Alice specializes in creating seamless user interfaces and delivering memorable user experiences Alice specializes in creating seamless user interfaces and delivering memorable user experiences",
+    // },
+    // {
+    //   id: 7,
+    //   image: "/images/test-vikas.png",
+    //   name: "Alice Johnson",
+    //   role: "UI/UX Designer",
+    //   starRating: 3,
+    //   description:
+    //     "Alice specializes in creating seamless user interfaces and delivering memorable user experiences Alice specializes in creating seamless user interfaces and delivering memorable user experiences",
+    // },
   ];
 
   // Function to render the stars based on the rating
@@ -86,7 +86,8 @@ const Testimonials = () => {
           height="15"
           viewBox="0 0 16 15"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M7.90909 0.818115L10.1801 5.41964L15.2582 6.15753L11.5836 9.73932L12.4511 14.7969L7.90909 12.409L3.36711 14.7969L4.23455 9.73932L0.560016 6.15753L5.6381 5.41964L7.90909 0.818115Z"
             fill="#D9A215"
@@ -104,7 +105,8 @@ const Testimonials = () => {
       </Container>
       <div
         className="position-relative"
-        style={{ paddingInlineStart: "4.3vw" }}>
+        style={{ paddingInlineStart: "4.3vw" }}
+      >
         <div className={styles.swiperWrapper}>
           <Swiper
             modules={[Navigation, Autoplay]}
@@ -120,29 +122,31 @@ const Testimonials = () => {
                 spaceBetween: 10,
               },
               576: {
-                slidesPerView: 2.2,
+                slidesPerView: 2,
                 spaceBetween: 15,
               },
               768: {
-                slidesPerView: 3.2,
+                slidesPerView: 3,
                 spaceBetween: 20,
               },
               992: {
-                slidesPerView: 4.2,
+                slidesPerView: 3,
                 spaceBetween: 20,
               },
               1200: {
-                slidesPerView: 5.2,
+                slidesPerView: 4,
                 spaceBetween: 25,
               },
-            }}>
+            }}
+          >
             <div className={styles.testimonialSvg}>
               <svg
                 width="247"
                 height="227"
                 viewBox="0 0 247 227"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M108.018 0.573402C110.37 0.744435 112.852 0.904189 115.215 1.1999C117.837 1.47305 120.211 1.89345 122.544 3.32257C125.006 4.74041 127.682 5.63697 130.25 6.79418C130.788 6.99843 131.218 7.4633 131.766 7.79223C131.637 7.80351 131.519 7.93948 131.262 7.96204C131.607 8.93692 131.952 9.91182 132.426 10.8754C133.837 13.6416 135.741 16.1133 136.519 19.0605C139.908 31.0762 137.194 41.6158 127.011 49.9194C124.951 51.6073 122.88 53.1705 120.497 54.1329C116.729 55.5934 112.895 56.3058 108.683 55.6692C103.559 54.987 98.5629 54.2934 94.723 50.4834C93.8733 49.6783 92.8838 48.7599 92.4099 47.7962C91.9469 46.9573 91.8378 45.7105 91.7505 44.7131C91.4579 42.8541 91.2943 40.9839 91.1306 39.1137C90.956 37.1188 90.7815 35.1239 90.7358 33.1177C90.7447 31.735 91.2909 30.5564 92.5033 29.5709C92.9861 29.1517 92.8988 28.1543 92.9623 27.3949C92.9493 25.7628 92.6786 24.1532 92.6656 22.5211C92.6963 21.3877 93.2644 20.4585 94.6603 20.0851C95.1758 20.04 95.7765 19.4849 95.8727 19.0996C96.5042 17.411 96.8779 15.7451 97.3804 14.0678C97.2406 13.9544 97.1118 13.9657 96.972 13.8523C95.7486 14.7132 94.5252 15.574 93.3019 16.4349C93.1621 16.3215 93.0332 16.3328 92.8934 16.2194C93.1928 15.1881 93.3633 14.1681 93.6626 13.1368C95.214 8.60381 98.0235 5.09143 102.511 2.93988C103.756 2.32838 104.979 1.46749 106.213 0.731298C106.729 0.686184 107.373 0.629794 108.018 0.573402ZM112.168 50.967C112.179 51.0917 112.308 51.0804 112.319 51.2051C114.584 50.3787 117.011 49.9151 118.975 48.6125C122.42 46.4265 124.854 43.0726 126.61 39.4011C126.942 38.7438 126.726 37.7577 126.65 36.8849C126.038 37.3153 125.169 37.7683 124.708 38.4368C122.65 41.6322 119.871 44.0112 116.812 46.1634C116.083 46.7297 115.052 46.82 114.171 47.1483C112.142 47.7028 110.241 48.246 108.223 48.9252C107.847 49.0837 107.633 49.605 107.268 49.8882C107.677 50.1037 108.107 50.5686 108.494 50.5347C109.697 50.9319 110.868 50.9552 112.168 50.967ZM112.696 12.4763C112.567 12.4876 112.438 12.4989 112.18 12.5215C112.215 14.4029 112.25 16.2844 112.413 18.1546C112.501 19.1521 112.599 20.2742 114.285 20.2523C114.672 20.2184 114.984 20.8193 115.414 21.2842C115.705 21.6357 115.995 21.9871 116.437 22.5767C117.333 17.9754 115.009 15.1635 112.696 12.4763ZM131.148 27.4455C130.847 26.9693 130.685 26.6065 130.406 26.3797C130.041 26.6629 129.676 26.9461 129.569 27.2068C128.949 29.02 128.468 30.9466 127.976 32.7485C127.88 33.1338 128.321 33.7234 128.494 34.2108C128.987 33.9164 129.739 33.5993 129.824 33.0893C130.445 31.2761 130.797 29.3608 131.148 27.4455ZM135.093 29.4873C133.538 31.0054 132.845 34.9608 133.911 36.752C135.37 35.6192 136.148 31.1539 135.093 29.4873Z"
                   fill="#FFCCCC"

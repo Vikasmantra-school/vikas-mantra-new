@@ -24,17 +24,26 @@ const Stats = () => {
                   </div>
                 </div>
                 <p className={styles.abtPara}>
-                  VIKAS MANTRA PUBLIC SCHOOL, a CBSE institution in Chengalpattu
-                  Kanchipuram, builds a distinctive learning environment
-                  blending international techniques with traditional Indian
-                  values.{" "}
+                  At Vikas Mantra Public School, our philosophy is rooted in the
+                  belief that true education goes beyond textbooks — it shapes
+                  minds, builds character, and inspires a lifelong journey of
+                  growth. “Inspiring Learning and Empowering Lives” is more than
+                  a motto; it defines our purpose.
                 </p>
                 <p>
-                  We empower students to think freely, dream big, and stay
-                  rooted in reality. Learning goes beyond books and classrooms,
-                  nurturing holistic development. Students are encouraged to
-                  explore their interests and showcase talents through diverse
-                  co-curricular activities.
+                  We inspire learning by nurturing curiosity, encouraging
+                  creativity, and fostering academic excellence in every
+                  student. Our classrooms are dynamic spaces where learners are
+                  empowered to ask questions, explore ideas, and develop a love
+                  for knowledge.
+                </p>
+                <p>
+                  We empower lives by instilling strong values, confidence, and
+                  resilience — equipping students not just for exams, but for
+                  life. Through holistic education and a supportive environment,
+                  we guide our students to become thoughtful, responsible, and
+                  compassionate individuals ready to make a positive impact on
+                  the world.
                 </p>
                 <button className={styles.abtBtn}>
                   <span>Know More</span>

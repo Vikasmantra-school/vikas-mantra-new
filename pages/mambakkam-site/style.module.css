@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.homeLeftIcon{
+.homeLeftIcon {
   position: absolute;
   top: 50%;
   transform: translateY(-70%);
@@ -173,7 +173,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: end;
+  justify-content: flex-end;
   width: 75%;
   padding-inline-start: 2em;
 }
@@ -193,17 +193,17 @@
   font-weight: 600;
 }
 
-.journeySwiper .swiperSvg1{
+.journeySwiper .swiperSvg1 {
   position: absolute;
-    left: -6rem;
-    z-index: 1;
+  left: -6rem;
+  z-index: 1;
 }
 
-.journeySwiper .swiperSvg2{
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    bottom: 0;
+.journeySwiper .swiperSvg2 {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  bottom: 0;
 }
 .swiperWrapper {
   width: 100%;
@@ -268,7 +268,7 @@
 .customNav {
   display: flex;
   gap: 1rem;
-  justify-content: end;
+  justify-content: flex-end;
   padding-inline-end: 2rem;
   margin-top: 1rem;
   position: absolute;
