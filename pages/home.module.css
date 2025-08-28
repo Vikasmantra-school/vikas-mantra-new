@@ -48,3 +48,46 @@
   max-width: 100%;
   font-size: 38px;
 }
+
+.floatingLinks {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1rem;
+  top: 40%;
+  z-index: 3;
+  border-radius: 6px;
+  gap: 1px;
+  width: 100px;
+}
+.floatingLinks a {
+  background-color: #eb3a3a;
+  text-align: center;
+  line-height: 1;
+  gap:0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 1rem 0.5rem;
+  width: 100%;
+}
+.floatingLinks a:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.floatingLinks a:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+@media only screen and (max-width:576px){
+  .floatingLinks{
+    width: 80px;
+  }
+  .floatingLinks a{
+    font-size: 12px;
+  }
+}
