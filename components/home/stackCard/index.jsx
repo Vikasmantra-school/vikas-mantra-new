@@ -5,62 +5,64 @@ import { Container } from "react-bootstrap";
 
 export default function SplitCards() {
   return (
-    <Container>
-      <div className={styles.mainContent}>
-        <Splide
-          options={{
-            spacing: 0,
-            type: "loop",
-            // pauseOnHover: true,
-            // pauseOnFocus: false,
-            pagination: true,
-            arrows: false,
-            autoplay: true,
-            interval: 6000,
-            loop: true,
-            lazyLoad: "nearby",
-          }}
-          aria-label="My Favorite Images"
-        >
-          <SplideSlide>
-            <div className={styles.gridCardContent}>
-              <div className={styles.Cardxcontainer}>
-                <div className={`${styles.card} ${styles.topleft}`}>
-                  <img
-                    src="/images/spitcardImages/g1.png"
-                    alt="Smart Classrooms"
-                  />
-                  <div className={styles.caption}>Smart Classrooms</div>
+    <section className={styles.ourFacilities}>
+      <Container>
+        <h3 className={styles.rightHeading}>Our Facilities</h3>
+        <div className={styles.mainContent}>
+          <Splide
+            options={{
+              spacing: 0,
+              type: "loop",
+              // pauseOnHover: true,
+              // pauseOnFocus: false,
+              pagination: true,
+              arrows: false,
+              autoplay: true,
+              interval: 6000,
+              loop: true,
+              lazyLoad: "nearby",
+            }}
+            aria-label="My Favorite Images">
+            <SplideSlide>
+              <div className={styles.gridCardContent}>
+                <div className={styles.Cardxcontainer}>
+                  <div className={`${styles.card} ${styles.topleft}`}>
+                    <img
+                      src="/images/spitcardImages/g1.png"
+                      alt="Smart Classrooms"
+                    />
+                    <div className={styles.caption}>Smart Classrooms</div>
+                  </div>
+                  <div
+                    className={`${styles.card} ${styles.topright} ${styles.right}`}>
+                    <img
+                      src="/images/spitcardImages/g2.png"
+                      alt="Co-Curricular Activities"
+                    />
+                    <div className={styles.caption}>
+                      Co-Curricular Activities
+                    </div>
+                  </div>
                 </div>
-                <div
-                  className={`${styles.card} ${styles.topright} ${styles.right}`}
-                >
-                  <img
-                    src="/images/spitcardImages/g2.png"
-                    alt="Co-Curricular Activities"
-                  />
-                  <div className={styles.caption}>Co-Curricular Activities</div>
+                <div className={styles.Cardxcontainer}>
+                  <div className={`${styles.card} ${styles.bottomleft}`}>
+                    <img
+                      src="/images/spitcardImages/g3.png"
+                      alt="Transportation"
+                    />
+                    <div className={styles.caption}>Transportation</div>
+                  </div>
+                  <div
+                    className={`${styles.card} ${styles.bottomright} ${styles.right}`}>
+                    <img src="/images/spitcardImages/g4.png" alt="Library" />
+                    <div className={styles.caption}>Library</div>
+                  </div>
                 </div>
               </div>
-              <div className={styles.Cardxcontainer}>
-                <div className={`${styles.card} ${styles.bottomleft}`}>
-                  <img
-                    src="/images/spitcardImages/g3.png"
-                    alt="Transportation"
-                  />
-                  <div className={styles.caption}>Transportation</div>
-                </div>
-                <div
-                  className={`${styles.card} ${styles.bottomright} ${styles.right}`}
-                >
-                  <img src="/images/spitcardImages/g4.png" alt="Library" />
-                  <div className={styles.caption}>Library</div>
-                </div>
-              </div>
-            </div>
-          </SplideSlide>
-        </Splide>
-      </div>
-    </Container>
+            </SplideSlide>
+          </Splide>
+        </div>
+      </Container>
+    </section>
   );
 }

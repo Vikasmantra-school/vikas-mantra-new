@@ -1,8 +1,33 @@
-.mainContent {
-  overflow: hidden;
-  padding-block: 60px;
+.ourFacilities{
+  background-color: #FFF8FB;
+  padding-block: 3rem;
 }
 
+.mainContent {
+  overflow: hidden;
+  padding-block:30px 60px;
+}
+
+.rightHeading {
+  font-family: "Nunito";
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  position: relative;
+
+  width: fit-content;
+}
+.rightHeading::before {
+  content: " ";
+  position: absolute;
+  background: url("/images/icon/homepage/underline-pink.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 14px;
+  bottom: -16px;
+  left: 10px;
+}
 .gridCardContent {
   display: grid;
   gap: 2rem;

@@ -38,3 +38,8 @@
   outline-color: #ffb800;
   outline-offset: 3px;
 }
+@media only screen and (max-width:576px){
+  .vmpsloginBanner{
+    background-position: 70% center;
+  }
+}

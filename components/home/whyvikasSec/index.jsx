@@ -23,13 +23,8 @@ const WhyVikasSection = () => {
           </Col>
           <Col lg={6}>
             <div className={styles.GridWrapper}>
-              <div
+              <div className={styles.dummySpace}
                 aria-hidden="true"
-                style={{
-                  height: "100px",
-                  visibility: "hidden",
-                  pointerEvents: "none",
-                }}
               ></div>
               {vikasdataGrid2.map((item, index) => (
                 <div className={styles.GridItem} key={item.id}>

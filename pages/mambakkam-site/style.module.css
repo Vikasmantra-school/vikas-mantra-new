@@ -19,11 +19,22 @@
   color: #155874;
   font-weight: 700;
   line-height: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .highlight {
-  background-color: #ffb800;
   padding: 0 5px;
+  position: relative;
+}
+.highlight::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  inset: 0;
+  top: 2px;
+  background-color: #ffb800;
+  z-index: -1;
 }
 
 .admissionTag {
@@ -298,7 +309,12 @@
 /* blog section */
 
 .blogSection .blogBlock {
-  margin-block-end: 2rem;
+  margin-block-end: 0;
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
 }
 .blogTitle {
   font-family: "Golos Text", sans-serif;
@@ -311,21 +327,23 @@
 
 .blogBlock h2 {
   font-family: "Golos Text", sans-serif;
-
+  margin: 0;
   font-size: 1rem;
   color: #fa5d7e;
   font-weight: 600;
   padding-block: 1rem;
-  border-bottom: 1px solid #ffcccc;
 }
 
 .blogBlock img {
   width: 100%;
 }
 .blogBlock .block_bottom {
+  border-top: 1px solid #ffcccc;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 0.64rem;
+  margin-top: auto;
 }
 .block_bottom p {
   margin: 0;

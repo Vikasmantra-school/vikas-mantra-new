@@ -2,6 +2,12 @@
   padding-block: 3rem;
   background-color: #f7f9fa;
 }
+.swiperSvg {
+  position: absolute;
+  right: 15%;
+  top: -31%;
+  z-index: 0;
+}
 
 .testimonialHeading {
   font-size: 2.375rem;
@@ -9,6 +15,7 @@
   font-weight: 700;
   position: relative;
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .testimonialHeading::after {
@@ -66,5 +73,8 @@
   .tabContent .card {
     max-width: 100%;
     margin: 1rem;
+  }
+  .swiperSvg{
+    right: 0;
   }
 }

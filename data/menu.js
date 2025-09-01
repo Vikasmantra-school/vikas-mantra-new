@@ -1,5 +1,6 @@
 // menus.js
 export const mambakkamMenu = [
+  { title: "Home", href: "/" },
   {
     title: "About Us",
     href:"#",
