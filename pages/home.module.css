@@ -65,7 +65,7 @@
   background-color: #eb3a3a;
   text-align: center;
   line-height: 1;
-  gap:0.8rem;
+  gap: 0.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,17 +83,19 @@
   border-bottom-right-radius: 6px;
 }
 
-@media only screen and (max-width:576px){
-  .floatingLinks{
+@media only screen and (max-width: 576px) {
+  .floatingLinks {
     width: 80px;
   }
-  .floatingLinks a{
+  .floatingLinks a {
     font-size: 12px;
     padding: 8px;
     gap: 5px;
-
   }
-  .floatingLinks svg{
+  .floatingLinks svg {
     width: 30px;
+  }
+  .swiperCont {
+    height: calc(100dvh - 105px);
   }
 }

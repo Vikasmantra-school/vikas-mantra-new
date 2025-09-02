@@ -29,9 +29,65 @@ export const mambakkamMenu = [
       { title: "Healthcare", href: "/campus/healthcare" },
     ],
   },
+  // {
+  //   title: "Mandatory Public Disclosures",
+  //   href: "/mandatory-public-disclosures",
+  // },
   {
-    title: "Mandatory Public Disclosures",
-    href: "/mandatory-public-disclosures",
+    title: "Learning",
+    href: "/learning",
+    children: [
+      { title: "Why VIKAS MANTRA PUBLIC SCHOOL", href: "/learning" },
+      { title: "Curriculum", href: "/learning/curriculum" },
+      { title: "Pre-Primary Years", href: "/learning/pre-primary-years" },
+      { title: "Curriculum Framework", href: "/learning/curriculum-framework" },
+      { title: "Online Classes", href: "/learning/online-classes" },
+      // {
+      //   title: "Newsletter",
+      //   children: [
+      //     {
+      //       title: "2019 - 2020 : Vol 1",
+      //       href: "/pdf/newsletter19-20-vol1.pdf",
+      //       target: "_blank",
+      //     },
+      //     {
+      //       title: "2019 - 2020 : Vol 2",
+      //       href: "/pdf/newsletter19-20-vol2.pdf",
+      //       target: "_blank",
+      //     },
+      //     {
+      //       title: "2020 - 2021 : Vol 1",
+      //       href: "/pdf/newsletter20-21-vol1.pdf",
+      //       target: "_blank",
+      //     },
+      //     {
+      //       title: "2020 - 2021 : Vol 2",
+      //       href: "/pdf/newsletter20-21-vol2.pdf",
+      //       target: "_blank",
+      //     },
+      //     {
+      //       title: "2021 - 2022 : Vol 1",
+      //       href: "/pdf/newsletter21-22-vol1.pdf",
+      //       target: "_blank",
+      //     },
+      //     {
+      //       title: "2021 - 2022 : Vol 2",
+      //       href: "/pdf/newsletter21-22-vol2.pdf",
+      //       target: "_blank",
+      //     },
+      //     {
+      //       title: "2022 - 2023 : Vol 1",
+      //       href: "/pdf/newsletter22-23-vol-1.pdf",
+      //       target: "_blank",
+      //     },
+      //     {
+      //       title: "2022 - 2023 : Vol 2",
+      //       href: "/pdf/newsletter22-23-vol-2.pdf",
+      //       target: "_blank",
+      //     },
+      //   ],
+      // },
+    ],
   },
   { title: "Events", href: "/events" },
 ];

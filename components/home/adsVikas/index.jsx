@@ -19,6 +19,9 @@ const BannerAdsVikasCommon = () => {
                 backgroundColor: "#E02D53",
                 color: "white",
               }}
+              fontSize = {{
+                fontSize:"16px",
+              }}
             />
           </div>
         </div>

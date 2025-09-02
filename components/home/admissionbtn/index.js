@@ -5,6 +5,7 @@ const AdmissionsBtnWrapper = ({
   bgStyles,
   buttonlink = "/",
   buttonInfo = "Admission Open  2025 - 2026",
+  fontSize =""
 }) => {
   return (
     <div className={styles.admissioncheck}>
@@ -13,7 +14,7 @@ const AdmissionsBtnWrapper = ({
           {schoolName}
         </div>
       )}
-      <a style={{ textDecoration: "none", color: "inherit" }} href={buttonlink}>
+      <a style={{ textDecoration: "none", color: "inherit", fontSize}} href={buttonlink}>
         <button className={styles.admissionBtn}>{buttonInfo}</button>
       </a>
     </div>

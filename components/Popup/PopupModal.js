@@ -15,6 +15,8 @@ const PopupModal = () => {
   const [showFirst, setShowFirst] = useState(false);
   const [showSecond, setShowSecond] = useState(false);
 
+  
+
   const handleCloseFirst = () => {
     setShowFirst(false);
     localStorage.setItem("Name", false);
@@ -31,13 +33,20 @@ const PopupModal = () => {
     router.push("/mambakkam");
   };
 
+  const isExcluded = router.pathname.startsWith("/mambakkam-site");
+
   useEffect(() => {
+    if (isExcluded) return; 
+
     const visited = sessionStorage.getItem("Name");
     if (!visited || visited === "false") {
       setShowFirst(true);
       sessionStorage.setItem("Name", "true");
     }
-  }, []);
+  }, [router.pathname, isExcluded]);
+   if (isExcluded) {
+    return null; 
+  }
   return (
     <>
       <Modal
