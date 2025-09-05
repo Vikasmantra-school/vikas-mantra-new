@@ -115,7 +115,7 @@ const Nav = () => {
               <div className="col-5 col-lg-3 d-flex align-items-center">
                 <Link href="/" legacyBehavior>
                   <a className={styles.mainLogo + " " + "navbar-brand"}>
-                    <img src="/assets/vmps-color.png" alt="Vikas Mantra" />
+                    <img src="/assets/common-logo.png" alt="Vikas Mantra" />
                     {/* {pageName === "" ? (
                       <picture>
                         <source
@@ -331,8 +331,8 @@ const Nav = () => {
                             ? "active nav-item"
                             : "nav-item"
                         }>
-                        <Link legacyBehavior href="#">
-                          <a className="nav-link">VMPS Login</a>
+                        <Link legacyBehavior href="https://www.parentsalarmapp.com/" >
+                          <a className="nav-link" target="_blank" rel="noopener noreferrer">VMPS Login</a>
                         </Link>
                       </li>
                      
@@ -440,7 +440,7 @@ const Nav = () => {
             className={styles.navTransparent + " " + "navbar-expand-lg py-2"}>
             <div className="container">
               <div className="row">
-                <div className="col-lg-3">
+                <div className="col-lg-3 d-flex align-items-center">
                   <div className={styles.submenuHead}>
                     <h3
                       style={{
@@ -449,14 +449,14 @@ const Nav = () => {
                       className="m-0">
                       {subMenu.headText}
                     </h3>
-                    <small
+                    {/* <small
                       style={{
                         color: subMenu.color,
                       }}
                       className="m-0">
                       CBSE Affiliation No:
                       {subMenu.afflNo}
-                    </small>
+                    </small> */}
                   </div>
                 </div>
                 <div className="col-lg-9">
@@ -744,7 +744,7 @@ const Nav = () => {
                               ? "active nav-item"
                               : "nav-item"
                           }>
-                          <Link legacyBehavior href="/mambakkam-site/enquiry-form">
+                          <Link legacyBehavior href="/mambakkam-site/events">
                             <a className="nav-link text-white">Events</a>
                           </Link>
                         </li>

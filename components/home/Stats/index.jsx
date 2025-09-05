@@ -8,7 +8,7 @@ const Stats = () => {
       <div className={styles.aboutVikasSmall}>
         <Container fluid="xl">
           <Row>
-            <Col lg={6}>
+            <Col lg={7}>
               <div className={styles.statMain}>
                 <div className={styles.abtHeading}>
                   <h2>
@@ -46,11 +46,13 @@ const Stats = () => {
                   the world.
                 </p>
                 <button className={styles.abtBtn}>
-                  <span>Know More</span>
+                  <span>
+                    <a href="/about">Know More</a>
+                  </span>
                 </button>
               </div>
             </Col>
-            <Col lg={6}>
+            <Col lg={5}>
               <div className={styles.rightStatWrapper}>
                 <div className={styles.statImg}>
                   <img src="/images/bgs/statsImg.png" alt="AboutImage" />
@@ -80,7 +82,7 @@ const Stats = () => {
           <Row className="justify-content-center">
             {stats.map((stat, index) => {
               return (
-                <Col lg={2} key={stat.id}>
+                <Col xs={6} lg={2}  key={stat.id}>
                   <div className={styles.statCard}>
                     <h3>{stat.title}</h3>
                     <small>{stat.caption}</small>

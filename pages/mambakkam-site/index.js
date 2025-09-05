@@ -88,6 +88,7 @@ const main = () => {
       message:
         "Children are oriented & prepared for board exams. Study of the second language will continue till Grade X. Emphasis on Health and Physical education are continued with dedicated time for the same.",
     },
+    
   ];
 
   return (
@@ -170,14 +171,14 @@ const main = () => {
                 <span>Story</span>
               </h2>
 
-              <p className="mt-3">
+              <p className={styles.desc}>
                 VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Mambakkam Chennai
                 is building a distinctive educational platform through a mix of
                 international learning techniques, experienced academicians and
                 modern facilities.
               </p>
 
-              <p>
+              <p className={styles.desc}>
                 By blending 21st century learning methodologies and traditional
                 Indian values, we equip our students to think freely, dream big
                 and pursue their passions, yet remain firmly connected to ground
@@ -195,12 +196,12 @@ const main = () => {
       <section className={styles.featureSection + " " + "pb60 pt60"}>
         <div className={styles.featureContainer}>
           <div className="container">
-            <div className="row">
+            <div className="row gx-5">
               <div className="col-lg-3">
                 <div className={styles.featureBlock}>
                   <img src="/images/icon/mambakkam/holisitic-icon.png" />
                   <h2>Holistic Approach</h2>
-                  <p>
+                  <p className={styles.desc}>
                     We place equal emphasis on academic excellence and on the
                     social, physical emotional and development of our students.
                   </p>
@@ -210,7 +211,7 @@ const main = () => {
                 <div className={styles.featureBlock}>
                   <img src="/images/icon/mambakkam/global-icon.png" />
                   <h2>Global Outlook</h2>
-                  <p>
+                  <p className={styles.desc}>
                     Blending 21st century education techniques with the best
                     from traditional methods of teaching, Vikas Mantra offers a
                     unique programme for students of the emerging India.
@@ -221,7 +222,7 @@ const main = () => {
                 <div className={styles.featureBlock}>
                   <img src="/images/icon/mambakkam/person-icon.png" />
                   <h2>Talented Faculty</h2>
-                  <p>
+                  <p className={styles.desc}>
                     VIKAS MANTRA PUBLIC SCHOOL faculty have been handpicked to
                     ensure that they bring the right attitude and approach in
                     engaging with students.
@@ -232,7 +233,7 @@ const main = () => {
                 <div className={styles.featureBlock}>
                   <img src="/images/icon/mambakkam/per-hand-icon.png" />
                   <h2>Rich Curriculum</h2>
-                  <p>
+                 <p className={styles.desc}>
                     VIKAS MANTRA PUBLIC SCHOOL offers a unique curriculum which
                     comprises of a rigorous academic programme that deepens and
                     broadens knowledge of our students.
@@ -461,11 +462,11 @@ const main = () => {
       </section>
 
       <section className={styles.blogSection + " " + "pb60 pt60"}>
-        <div className="container">
+        <div className={styles.cust_container}>
           <div className="row">
             <h2 className={styles.blogTitle}>What’s Happening</h2>
           </div>
-          <div className="row">
+          <div className="row gy-5">
             <div className="col-lg-4">
               <div className={styles.blogBlock}>
                 <img src="/assets/blogs/blog-11.JPG" />
@@ -476,7 +477,7 @@ const main = () => {
 
                 <div className={styles.block_bottom}>
                   <p>10-March-2025</p>
-                  <a href="/mambakkam-site/about/blog">Read more</a>
+                  <a href="/mambakkam-site/about/blog/blog11">Read more</a>
                 </div>
               </div>
             </div>
@@ -490,7 +491,7 @@ const main = () => {
 
                 <div className={styles.block_bottom}>
                   <p>10-March-2025</p>
-                  <a href="/mambakkam-site/about/blog">Read more</a>
+                  <a href="/mambakkam-site/about/blog/blog12">Read more</a>
                 </div>
               </div>
             </div>
@@ -501,7 +502,7 @@ const main = () => {
 
                 <div className={styles.block_bottom}>
                   <p>10-March-2025</p>
-                  <a href="/mambakkam-site/about/blog">Read more</a>
+                  <a href="/mambakkam-site/about/blog/blog13">Read more</a>
                 </div>
               </div>
             </div>

@@ -13,11 +13,11 @@ const Testimonials = () => {
     {
       id: 1,
       image: "/images/test-vikas.png",
-      name: " Parent of Kavitha ",
+      name: " Parent of  Kavitha (SR.KG)",
       role: "SR.KG",
-      starRating: 4, // 1 to 5 scale
+      // starRating: 4, 
       description:
-        "It’s not just about resumes and interviews. They actually care about our growth, teach us real-world skills, and connect us with companies that value fresh talent.",
+        "The event is very nice to bring up hidden talents of the kids and also helps to shed their shyness and inhibitions to face number of people. Keep up the good work.",
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const Testimonials = () => {
       role: "Grade – II",
       starRating: 5,
       description:
-        "It’s not just about resumes and interviews. They actually care about our growth, teach us real-world skills, and connect us with companies that value fresh talent.",
+        "It’s a very good platform for the students to show cast their ideas, thoughts and skills without any fear to elaborate themselves in front of all hands….",
     },
     {
       id: 3,
@@ -35,44 +35,9 @@ const Testimonials = () => {
       role: "Grade – II",
       starRating: 3,
       description:
-        "It’s not just about resumes and interviews. They actually care about our growth, teach us real-world skills, and connect us with companies that value fresh talent.",
+        "It’s a very good opportunity to the students to enhance their extracurricular skills n to know about themselves where they are good at..!",
     },
-    {
-      id: 4,
-      image: "/images/test-vikas.png",
-      name: "Alice Johnson",
-      role: "UI/UX Designer",
-      starRating: 3,
-      description:
-        "It’s not just about resumes and interviews. They actually care about our growth, teach us real-world skills, and connect us with companies that value fresh talent.",
-    },
-    {
-      id: 5,
-      image: "/images/test-vikas.png",
-      name: "Alice Johnson",
-      role: "UI/UX Designer",
-      starRating: 3,
-      description:
-        "It’s not just about resumes and interviews. They actually care about our growth, teach us real-world skills, and connect us with companies that value fresh talent.",
-    },
-    {
-      id: 6,
-      image: "/images/test-vikas.png",
-      name: "Alice Johnson",
-      role: "UI/UX Designer",
-      starRating: 3,
-      description:
-        "It’s not just about resumes and interviews. They actually care about our growth, teach us real-world skills, and connect us with companies that value fresh talent.",
-    },
-    {
-      id: 7,
-      image: "/images/test-vikas.png",
-      name: "Alice Johnson",
-      role: "UI/UX Designer",
-      starRating: 3,
-      description:
-        "It’s not just about resumes and interviews. They actually care about our growth, teach us real-world skills, and connect us with companies that value fresh talent.",
-    },
+    
   ];
 
   // Function to render the stars based on the rating
@@ -215,6 +180,40 @@ const Testimonials = () => {
             ))}
           </Swiper>
         </div>
+          <div className={styles.customNav}>
+                <button
+                  className={styles.customPrev + " " + "swiper-prev-custom"}
+                >
+                  <svg
+                    width="15"
+                    height="23"
+                    viewBox="0 0 15 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.3947 22.2324L0.674805 11.4882L12.3947 0.744049L14.3492 2.53454L4.58099 11.4882L14.3492 20.4419L12.3947 22.2324Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button
+                  className={styles.customNext + " " + "swiper-next-custom"}
+                >
+                  <svg
+                    width="15"
+                    height="23"
+                    viewBox="0 0 15 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.58279 22.2324L14.3027 11.4882L2.58279 0.744049L0.628316 2.53454L10.3965 11.4882L0.628316 20.4419L2.58279 22.2324Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
       </div>
     </section>
   );

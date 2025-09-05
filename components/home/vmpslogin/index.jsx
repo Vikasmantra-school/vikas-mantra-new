@@ -12,7 +12,7 @@ const VmpsLogin = () => {
               Welcome to the Vikas Mantra Admissions Portal your gateway to
               providing your child with a meaningful and future-ready education.
             </p>
-            <a style={{ textDecoration: "none", color: "inherit" }} href="/">
+            <a style={{ textDecoration: "none", color: "inherit" }} href="https://www.parentsalarmapp.com/" target="_blank">
               <button className={styles.vmpsloginButton}>Apply Now</button>
             </a>
           </div>

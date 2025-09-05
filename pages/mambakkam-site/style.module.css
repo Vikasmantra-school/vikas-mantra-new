@@ -26,6 +26,7 @@
 .highlight {
   padding: 0 5px;
   position: relative;
+  white-space: nowrap;
 }
 .highlight::after{
   position: absolute;
@@ -50,7 +51,7 @@
 .subtitle {
   margin-top: 15px;
   max-width: 500px;
-  font-size: 16px;
+  font-size: 1rem !important;
   color: #1d1d1d;
   position: relative;
 }
@@ -72,7 +73,7 @@
   object-fit: cover;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .bannerTitle {
     font-size: 2.5rem;
   }
@@ -86,7 +87,8 @@
 }
 
 /* VMPS Story */
-.vmpsStory p {
+.vmpsStory .desc {
+  font-size: 0.875rem !important;
   font-family: "Golos Text", sans-serif;
 }
 .storyHeading span {
@@ -96,8 +98,11 @@
   font-weight: 400;
   line-height: 1;
 }
+.vmpsStory .vmpsBanner{
+  max-width: 100%;
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .storyHeading span {
     font-size: 2.7rem;
   }
@@ -110,6 +115,9 @@
 }
 
 /* Feature section */
+.featureSection{
+  font-family: "Golos Text", sans-serif;
+}
 .featureSection .featureContainer {
   max-width: 90%;
   background-color: #f9ffd8;
@@ -127,6 +135,11 @@
 .featureSection .featureBlock {
   font-size: 0.1034rem;
   color: #474747;
+}
+
+.featureSection .featureBlock .desc{
+  font-size: 0.75rem !important;
+  font-weight: 400 !important;
 }
 
 .featureSection .featureBlock img {
@@ -186,7 +199,7 @@
   align-items: start;
   justify-content: flex-end;
   width: 75%;
-  padding-inline-start: 2em;
+  padding-inline-start: calc(100vw - 95vw);
 }
 .swiperLeftCont .svgArrow {
   position: absolute;
@@ -316,6 +329,10 @@
   height: 100%;
 
 }
+.blogSection .cust_container{
+  max-width: 90%;
+  margin-inline:auto ;
+}
 .blogTitle {
   font-family: "Golos Text", sans-serif;
 
@@ -347,6 +364,9 @@
 }
 .block_bottom p {
   margin: 0;
+}
+.block_bottom p:first-of-type{
+  visibility: hidden;
 }
 .viewAllBtn {
   padding: 7px 22px;

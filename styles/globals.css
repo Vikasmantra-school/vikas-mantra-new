@@ -2321,3 +2321,15 @@ tr {
 .spotlightTabX .splide {
   padding-block: 2rem;
 }
+
+/* To REmove spin button number input */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

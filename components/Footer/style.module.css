@@ -41,6 +41,25 @@ input.formInput::placeholder {
 
     font-size: 15px !important;
 }
+.socialRow {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.socialRow a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.socialRow a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
 
 
 @media only screen and (max-width: 660px) {

@@ -633,7 +633,7 @@ const MobileNav = ({}) => {
             </li>
 
             <li className="nav__item">
-              <Link href="/mambakkam-site/enquiry-form" legacyBehavior>
+              <Link href="/mambakkam-site/events" legacyBehavior>
                 <a className="nav__link" aria-current="page">
                   Events
                 </a>

@@ -88,9 +88,11 @@
   overflow: hidden;
 }
 
-.abtBtn span {
+.abtBtn a {
   position: relative;
   z-index: 1;
+  color: inherit;
+  text-decoration: none;
 }
 
 .abtBtn::after {
@@ -237,11 +239,25 @@
 }
 
 
-@media only screen and (max-width:576px){
+@media only screen and (max-width:991px){
   .statCard{
     width: 200px;
     margin-inline: auto;
     max-width: 200px;
-    padding-inline: 2rem;
+    padding-inline: 1rem 1.2rem;
+    align-items: center;
+  }
+  .statCard small{
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width:576px){
+  .statCard{
+    width: 160px;
+    margin-inline: auto;
+    max-width: 200px;
+    padding-inline: 1rem 1.2rem;
   }
 }
