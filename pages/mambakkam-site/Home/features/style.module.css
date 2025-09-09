@@ -1,0 +1,38 @@
+
+/* Feature section */
+.featureSection{
+  font-family: "Golos Text", sans-serif;
+}
+.featureSection .featureContainer {
+  max-width: 90%;
+  background-color: #f9ffd8;
+  margin-inline: auto;
+  border-radius: 29px;
+  padding-block: 2.5rem;
+}
+.featureSection .featureBlock h2 {
+  color: #fa5d7e;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-block: 1rem;
+}
+
+.featureSection .featureBlock {
+  font-size: 0.1034rem;
+  color: #474747;
+}
+
+.featureSection .featureBlock .desc{
+  font-size: 0.75rem !important;
+  font-weight: 400 !important;
+}
+
+.featureSection .featureBlock img {
+  width: 80px;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .featureSection .featureBlock {
+    padding: 1rem;
+  }
+}

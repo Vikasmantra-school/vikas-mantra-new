@@ -138,6 +138,18 @@ const Nav = () => {
                   </div>
                   <div>
                     <button className={styles.callBtn}>
+                      { isMambakkam ? ( 
+                        <Link href="tel:+9174484508450" legacyBehavior>
+                        <a>
+                          <FontAwesomeIcon
+                            icon={faPhone}
+                            className={styles.callIcon}
+                          />
+                          +91 744845 08450
+                        </a>
+                      </Link>
+                      ): (
+                        
                       <Link href="tel:+91-7092450450" legacyBehavior>
                         <a>
                           <FontAwesomeIcon
@@ -146,7 +158,8 @@ const Nav = () => {
                           />
                           +91 70924 50450
                         </a>
-                      </Link>
+                      </Link>)
+                      }
                     </button>
                   </div>
 
@@ -572,7 +585,7 @@ const Nav = () => {
                             </li>
                           </ul>
                         </li>
-
+{/*     
                         <li className="nav-item dropdown">
                           <Link href="/mambakkam-site/learning" legacyBehavior>
                             <a
@@ -736,7 +749,7 @@ const Nav = () => {
                               </ul>
                             </li>
                           </ul>
-                        </li>
+                        </li> */}
 
                         <li
                           className={
@@ -745,7 +758,7 @@ const Nav = () => {
                               : "nav-item"
                           }>
                           <Link legacyBehavior href="/mambakkam-site/events">
-                            <a className="nav-link text-white">Events</a>
+                            <a className="nav-link text-white">Gallery</a>
                           </Link>
                         </li>
                       </ul>

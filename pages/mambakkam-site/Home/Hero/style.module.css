@@ -1,0 +1,87 @@
+/* hero banner */
+.heroBanner {
+  background-color: #d4f7ffe5;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.homeLeftIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  left: 0;
+}
+.bannerTitle {
+  font-family: "Golos Text", sans-serif;
+  font-size: 3.5625rem;
+  color: #155874;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight {
+  padding: 0 5px;
+  position: relative;
+  white-space: nowrap;
+}
+.highlight::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  inset: 0;
+  top: 2px;
+  background-color: #ffb800;
+  z-index: -1;
+}
+
+.admissionTag {
+  font-family: "Golos Text", sans-serif;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 6px 14px;
+  background-color: #dd2042;
+  color: white;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 15px;
+  max-width: 500px;
+  font-size: 1rem !important;
+  color: #1d1d1d;
+  position: relative;
+}
+.subtitle::before {
+  position: absolute;
+  content: "";
+  top: -1.5rem;
+  left: 0;
+  background-color: #ffb800;
+  width: 84px;
+  height: 4px;
+  border-radius: 20px;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 991px) {
+  .bannerTitle {
+    font-size: 2.5rem;
+  }
+  .heroBanner {
+    height: auto;
+  }
+
+  .subtitle {
+    margin-top: 2rem;
+  }
+}

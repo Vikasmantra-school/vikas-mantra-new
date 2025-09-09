@@ -13,7 +13,7 @@
     background-image: url(/assets/vectors/Vector1.png);
     background-repeat: no-repeat;
     background-position: top left;
-    z-index: 1;
+    z-index: 0;
     background-size: 140px;
     height: 210px;
     left: -1%;
@@ -74,7 +74,7 @@ padding-right: 75px;
         background-image: url(/assets/vectors/Vector1.png);
         background-repeat: no-repeat;
         background-position: top left;
-        z-index: 1;
+        z-index: 0;
         background-size: 100px;
         height: 210px;
         left: -1%;

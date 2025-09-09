@@ -11,8 +11,14 @@ import InstaLogo from "../../public/assets/icons/InstaLogo.png";
 import FbLogo from "../../public/assets/icons/FbLogo.png";
 import YtLogo from "../../public/assets/icons/YtLogo.png";
 import LinkedInLogo from "../../public/assets/icons/LinkedInLogo.png";
+import { useRouter } from "next/router";
 
 export const Footer = () => {
+  const { asPath } = useRouter();
+
+  const isMambakkam = asPath.startsWith("/mambakkam-site");
+  const isChengalpattu = asPath.startsWith("/chengalpattu-site");
+
   //popup-integration
 
   const [show, setShow] = useState(false);
@@ -182,10 +188,21 @@ export const Footer = () => {
                 <div className={" col-md-6"}>
                   <div className={styles.contactUs}>
                     <h3>CONTACT US</h3>
-                    <p> S.No:168,168/3, Off Mahindra World City, </p>
-                    <p> Anjur 603204, Chengalpattu</p>
-                    <p> info@vikasmantra.org</p>
-                    <p> admissions@vikasmantra.org</p>
+                    {isMambakkam ? (
+                      <>
+                        <p> Vandalur, Kelambakkam Road,  </p>
+                        <p> Mambakkam, Chennai - 600127.</p>
+                        <p> info.mambakkam@vikasmantra.org</p>
+                        <p> +91 74 484 50 450</p>
+                      </>
+                    ) : (
+                      <>
+                        <p> S.No:168,168/3, Off Mahindra World City, </p>
+                        <p> Anjur 603204, Chengalpattu</p>
+                        <p> info@vikasmantra.org</p>
+                        <p> admissions@vikasmantra.org</p>
+                      </>
+                    )}
                   </div>
                 </div>
 
@@ -241,7 +258,7 @@ export const Footer = () => {
 
               <div className={styles.socialRow}>
                 <a
-                  href="https://www.instagram.com/"
+                  href=" https://www.instagram.com/vikasmantra_publicschool/"
                   target="_blank"
                   rel="noopener noreferrer">
                   <Image
@@ -252,7 +269,7 @@ export const Footer = () => {
                   />
                 </a>
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/profile.php?id=61577256500472"
                   target="_blank"
                   rel="noopener noreferrer">
                   <Image src={FbLogo} alt="Facebook" width={32} height={32} />

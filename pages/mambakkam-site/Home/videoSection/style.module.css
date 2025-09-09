@@ -1,0 +1,40 @@
+/* video section */
+.videoSection .videoContainer {
+  position: relative;
+}
+.playPauseBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: transparent;
+}
+
+.videoOverlayCont {
+  position: absolute;
+  bottom: 10px;
+  left: 2rem;
+  background-color: #ffffffd9;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 4px solid #e02d53;
+  width: 560px;
+  max-width: 100%;
+}
+
+.videoOverlayCont h2 {
+  color: #45458a;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+.videoOverlayCont p {
+  color: #474747;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .videoOverlayCont {
+    width: auto;
+    left: 0;
+  }
+}

@@ -28,7 +28,7 @@
     background-image: url(/assets/vectors/Vector12.png);
     background-repeat: no-repeat;
     background-position: top left;
-    z-index: 1;
+    z-index: 0;
     background-size: 65px;
     height: 228px;
     width: 114px;
@@ -66,7 +66,7 @@
         background-image: url(/assets/vectors/Vector12.png);
         background-repeat: no-repeat;
         background-position: top left;
-        z-index: 1;
+        z-index:0;
         background-size: 50px;
         height: 228px;
         width: 114px;
@@ -96,7 +96,7 @@
         background-image: url(/assets/vectors/Vector12.png);
         background-repeat: no-repeat;
         background-position: top left;
-        z-index: 1;
+        z-index: 0;
         background-size: 65px;
         height: 228px;
         width: 114px;

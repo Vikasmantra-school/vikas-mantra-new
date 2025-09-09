@@ -56,7 +56,7 @@ const TabsHome = () => {
             <Tab
               className={styles.tab + " spotlightTabX"}
               eventKey="mahendra"
-              title="Mahendra World City">
+              title="Chengalpattu ">
               <Splide
                 ref={primaryRef}
                 options={{

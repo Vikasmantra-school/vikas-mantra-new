@@ -28,6 +28,7 @@ const ModalFn = ({
         className={styles.modal}
         show={show}
         onHide={handleClose}
+        dialogClassName="vert-modal"
       >
         <svg
           className={styles.modalBG}
