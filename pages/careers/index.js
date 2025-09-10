@@ -4,8 +4,10 @@ import Table from "react-bootstrap/Table";
 import Form from "react-bootstrap/Form";
 import { Breadcrumb } from "../../components/Breadcrumb/Breadcrumb";
 import { useState, useRef } from "react";
+import { Nav, Tab } from "react-bootstrap";
 
 function Career() {
+  const [activeKey, setActiveKey] = useState("tab1");
   const namecheck = useRef();
   const pageTitle = "Career";
 
@@ -17,6 +19,7 @@ function Career() {
   };
 
   const [jobOpening, setJobOpening] = useState(getInitialState);
+  const [campus, setCampus] = useState("")
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [address, setAddress] = useState("");
@@ -90,7 +93,6 @@ function Career() {
               <div className="AnimeStarts">
                 <h2 className="ulineRed AnimeElement">WE ARE HIRING! </h2>
               </div>
-
               <div className="AnimeStarts">
                 <p className="pt-4 AnimeElement">
                   At the VIKAS MANTRA PUBLIC SCHOOL the teachers are handpicked
@@ -99,7 +101,6 @@ function Career() {
                   also their student handling abilities.
                 </p>
               </div>
-
               <div className="AnimeStarts">
                 <p className="AnimeElement">
                   We are committed to building great careers for our students.
@@ -107,60 +108,74 @@ function Career() {
                   faculty.
                 </p>
               </div>
-
               <div className="AnimeStarts">
                 <p className="AnimeElement">
                   Remuneration & perks will be the best in the Industry and be
                   commensurate with qualification and experience.
                 </p>
               </div>
+              <Tab.Container
+                activeKey={activeKey}
+                onSelect={(e) => setActiveKey(e)}>
+                <Nav variant="pills" className={styles.customPills}>
+                  <Nav.Item>
+                    <Nav.Link eventKey="tab1">Chengalpattu </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="tab2">Mambakkam</Nav.Link>
+                  </Nav.Item>
+                </Nav>
 
-              <div className="AnimeStarts">
-                <p className={styles.textBold + " AnimeElement"}>
-                  Vikas Mantra Public School is looking for qualified, dedicated
-                  and learner centric EDUCATORS to join our team in the
-                  following positions
-                </p>
-              </div>
+                <Tab.Content>
+                  <Tab.Pane eventKey="tab1">
+                    <div className="AnimeStarts">
+                      <p className={styles.textBold + " AnimeElement"}>
+                        Vikas Mantra Public School - Mahindra City is looking for qualified, dedicated and learner centric EDUCATORS to join our team in the following positions :
+                      </p>
+                    </div>
+                    
+                      <div className={styles.tableContainer}>
+                        <Table
+                          bordered
+                          className={"mt-4" + " " + styles.tableborder}>
+                          <tbody className="AnimeStarts">
+                            <tr>
+                              <th className="AnimeElement fw-bold">POSITION</th>
+                              {/* <th className='AnimeElement fw-bold'>REQUIREMENTS</th> */}
+                              <style jsx>
+                                {`
+                                  th {
+                                    background-color: #aa182c;
+                                    color: #fff;
+                                  }
+                                `}
+                              </style>
+                            </tr>
 
-              <div className={styles.tableContainer}>
-                <Table bordered className={"mt-4" + " " + styles.tableborder}>
-                  <tbody className="AnimeStarts">
-                    <tr>
-                      <th className="AnimeElement fw-bold">POSITION</th>
-                      {/* <th className='AnimeElement fw-bold'>REQUIREMENTS</th> */}
-                      <style jsx>
-                        {`
-                          th {
-                            background-color: #aa182c;
-                            color: #fff;
-                          }
-                        `}
-                      </style>
-                    </tr>
-
-                    <tr>
-                      <td className="AnimeElement">PGT- ENGLISH</td>
-                      {/* <td className='AnimeElement'>
+                            <tr>
+                              <td className="AnimeElement">PGT- ENGLISH</td>
+                              {/* <td className='AnimeElement'>
                       ART</td> */}
-                      {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
-                    </tr>
-                    <tr>
-                      <td className="AnimeElement">
-                        PSYCHOLOGIST- STUDENT COUNSELOR
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="AnimeElement">TGT- CHEMISTRY</td>
-                    </tr>
-                    <tr>
-                      <td className="AnimeElement">NTT- KG COORDINATOR</td>
-                    </tr>
-                    <tr>
-                      <td className="AnimeElement">PET/YOGA TEACHER</td>
-                    </tr>
+                              {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
+                            </tr>
+                            <tr>
+                              <td className="AnimeElement">
+                                PSYCHOLOGIST- STUDENT COUNSELOR
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="AnimeElement">TGT- CHEMISTRY</td>
+                            </tr>
+                            <tr>
+                              <td className="AnimeElement">
+                                NTT- KG COORDINATOR
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="AnimeElement">PET/YOGA TEACHER</td>
+                            </tr>
 
-                    {/* 
+                            {/* 
                     <tr><td>PRT & TGT- HINDI</td></tr>
                     <tr><td>TGT – ENGLISH</td></tr>
                     <tr><td>PRT – ENGLISH</td></tr>
@@ -174,10 +189,79 @@ function Career() {
                     <tr><td>SPECIAL EDUCATOR</td></tr>
                     <tr><td>LAB ATTENDANT <span className={styles.add_color}>(BIOLOGY, CHEMISTRY,PHYSICS)</span></td></tr>
                     */}
-                  </tbody>
-                </Table>
-              </div>
+                          </tbody>
+                        </Table>
+                      </div>
+                    
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="tab2">
+                    <div className="AnimeStarts">
+                      <p className={styles.textBold + " AnimeElement"}>
+                        Vikas Mantra Public School - Mambakkam is looking for qualified, dedicated and learner centric EDUCATORS to join our team in the following positions :
+                      </p>
+                    </div>
+                    
+                      <div className={styles.tableContainer}>
+                        <Table
+                          bordered
+                          className={"mt-4" + " " + styles.tableborder}>
+                          <tbody className="AnimeStarts">
+                            <tr>
+                              <th className="AnimeElement fw-bold">POSITION</th>
+                              {/* <th className='AnimeElement fw-bold'>REQUIREMENTS</th> */}
+                              <style jsx>
+                                {`
+                                  th {
+                                    background-color: #aa182c;
+                                    color: #fff;
+                                  }
+                                `}
+                              </style>
+                            </tr>
 
+                            <tr>
+                              <td className="AnimeElement">PGT- ENGLISH</td>
+                              {/* <td className='AnimeElement'>
+                      ART</td> */}
+                              {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
+                            </tr>
+                            <tr>
+                              <td className="AnimeElement">
+                                PSYCHOLOGIST- STUDENT COUNSELOR
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="AnimeElement">TGT- CHEMISTRY</td>
+                            </tr>
+                            <tr>
+                              <td className="AnimeElement">
+                                NTT- KG COORDINATOR
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="AnimeElement">PET/YOGA TEACHER</td>
+                            </tr>
+
+                            {/* 
+                    <tr><td>PRT & TGT- HINDI</td></tr>
+                    <tr><td>TGT – ENGLISH</td></tr>
+                    <tr><td>PRT – ENGLISH</td></tr>
+                    <tr><td> PRT- HOME ROOM TEACHER</td></tr>
+                    <tr><td>TGT - SOCIAL SCIENCE</td></tr>
+                    <tr>
+                      <td>PGT - CHEMISTRY</td>
+                    </tr>
+                    <tr><td>PGT - PHYSICS</td></tr>
+                    <tr><td>PGT - BIOLOGY</td></tr>
+                    <tr><td>SPECIAL EDUCATOR</td></tr>
+                    <tr><td>LAB ATTENDANT <span className={styles.add_color}>(BIOLOGY, CHEMISTRY,PHYSICS)</span></td></tr>
+                    */}
+                          </tbody>
+                        </Table>
+                      </div>
+                  </Tab.Pane>
+                </Tab.Content>
+              </Tab.Container>
               <div className="AnimeStarts">
                 <p className="AnimeElement">
                   Salary will not be a limiting factor for the right candidate.{" "}
@@ -202,8 +286,7 @@ function Career() {
                   "imgUp imgBgColor pastelLightPink AnimeStarts " +
                   " " +
                   styles.careerImg
-                }
-              >
+                }>
                 <img
                   src="/assets/banners/we-are-hiring.png"
                   alt="image"
@@ -224,21 +307,20 @@ function Career() {
           "pb60" +
           " " +
           styles.careerBg
-        }
-      >
+        }>
         <div className="container">
           <Form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
             <div className={"row"}>
               <div className={"col-md-10" + " " + styles.formCenter}>
                 <div className={styles.enquiryForm}>
-                  <div className={"row" + " " + styles.form}>
+                  <div className={"row gx-0 gx-md-5" + " " + styles.form}>
                     <div className="col-md-12">
                       <div className="AnimeStarts">
                         <h5 className="mb-5 AnimeElement">Candidate </h5>
                       </div>
                     </div>
 
-                    <div className="col-md-12 col-lg-5 col-sm-12">
+                    <div className="col-md-12 col-lg-4 col-sm-12">
                       <div className="mb-5 AnimeStarts">
                         <label className="AnimeElement">
                           Name of the Candidate{" "}
@@ -288,9 +370,10 @@ function Career() {
                       </div>
                     </div>
 
-                    <div className="col-md-12 col-lg-5 col-sm-12 offset-lg-1">
+                    <div className="col-md-12 col-lg-8 col-sm-12">
                       <div className={styles.formPb}>
-                        <div className="mb-5 AnimeStarts">
+                        
+                        <div className="mb-md-5 AnimeStarts">
                           <label className="AnimeElement">Job Opening</label>
 
                           <Form.Select
@@ -302,8 +385,7 @@ function Career() {
                             }
                             className={
                               styles.formText + " AnimeElement form-select "
-                            }
-                          >
+                            }>
                             <option value="PGT ENGLISH">PGT- ENGLISH</option>
                             <option value="PSYCHOLOGIST- STUDENT COUNSELOR">
                               PSYCHOLOGIST- STUDENT COUNSELOR
@@ -332,6 +414,26 @@ function Career() {
                             <option value="ACCOUNTANT">ACCOUNTANT </option>
                           </Form.Select>
                         </div>
+                        <div className={styles.campusInput}>
+
+                          <Form.Select
+                            aria-label="Default select example"
+                            name="Campus"
+                            value={campus}
+                            onChange={(event) =>
+                              setCampus(event.target.value)
+                            }
+                            className={
+                              styles.formText + " AnimeElement form-select "
+                            }>
+                              <option  value="" disabled hidden> Campus</option>
+                            <option value="CHENGALPATTU">Chengalpattu</option>
+                            <option value="MAMBAKKAM">
+                              Mambakkam
+                            </option>
+                           
+                          </Form.Select>
+                        </div>
                       </div>
 
                       <div className="mb-3 AnimeStarts">
@@ -350,8 +452,7 @@ function Career() {
 
                           <label
                             className="form-check-label AnimeElement"
-                            htmlFor="flexRadioDefault2"
-                          >
+                            htmlFor="flexRadioDefault2">
                             Email
                           </label>
                         </div>
@@ -366,8 +467,7 @@ function Career() {
 
                           <label
                             className="form-check-label AnimeElement"
-                            htmlFor="flexRadioDefault1"
-                          >
+                            htmlFor="flexRadioDefault1">
                             Phone
                           </label>
                         </div>
@@ -376,8 +476,7 @@ function Career() {
                         <div className="mb-3 mail-check">
                           <label
                             htmlFor="exampleInputEmail1"
-                            className="form-label AnimeElement"
-                          >
+                            className="form-label AnimeElement">
                             Email
                           </label>
 
@@ -400,8 +499,7 @@ function Career() {
                         <div className="mb-3 phone-check">
                           <label
                             htmlFor="exampleInputPassword1 AnimeElement "
-                            className="form-label"
-                          >
+                            className="form-label">
                             Phone
                           </label>
                           <input

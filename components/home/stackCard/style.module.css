@@ -79,3 +79,10 @@
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+@media only screen and (max-width:768px){
+ .mainContent{
+  padding-block: 1.3rem 0;
+
+ }
+}

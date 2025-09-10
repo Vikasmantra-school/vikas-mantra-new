@@ -2340,3 +2340,11 @@ input[type=number] {
 .vert-modal{
   max-width: 375px;
 }
+@media only screen and (max-width:768px){
+  .watsapp-icon .whatsappImg{
+    bottom: 130px;
+  }
+  .callBtn{
+    bottom: 77px;
+  }
+}

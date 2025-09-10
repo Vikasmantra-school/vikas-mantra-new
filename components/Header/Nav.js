@@ -383,7 +383,7 @@ const Nav = () => {
                           role="button"
                           data-bs-toggle="dropdown"
                           aria-expanded="false">
-                          campus
+                         { isMambakkam ? ("Mambakkam"):("Campus")}
                           <svg
                             width="22"
                             height="22"
@@ -423,9 +423,9 @@ const Nav = () => {
                       </li>
                     </Button>
 
-                    <button className={styles.drpDownValue}>
+                    {/* <button className={styles.drpDownValue}>
                       {subMenu?.headText || "Select Campus"}
-                    </button>
+                    </button> */}
                   </div>
                   <div
                     onClick={(e) => hamburgerMenu(e)}

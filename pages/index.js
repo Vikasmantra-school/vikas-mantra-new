@@ -115,7 +115,7 @@ function Home() {
 
   return (
     <>
-      {/* <PopupModal /> */}
+    
       <Head>
         <title>Home | Vikasmantra Public School</title>
         <meta

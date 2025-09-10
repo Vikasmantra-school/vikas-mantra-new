@@ -34,3 +34,39 @@
   left: 0;
   bottom: -10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .bannerSectionVikas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+
+  }
+  .bannerSectionVikas .mainContentAdsVikas{
+    position: relative;
+    z-index: 1;
+  }
+
+  .bannerSectionVikas::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 10%,
+      rgba(10, 10, 10, 0.5) 100%
+    );
+    z-index: 0;
+  }
+  .mainContentAdsVikas h3{
+    font-size: 30px;
+  } 
+  .bannerSectionVikas {
+  height: 400px;
+}
+
+
+
+}

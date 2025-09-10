@@ -19,9 +19,9 @@ const BannerAdsVikasCommon = () => {
                 backgroundColor: "#E02D53",
                 color: "white",
               }}
-              fontSize = {{
-                fontSize:"16px",
-              }}
+              fontSize ="18px"
+              buttonlink="/admissions"
+    
             />
           </div>
         </div>

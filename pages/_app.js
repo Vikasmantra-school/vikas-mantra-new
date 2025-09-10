@@ -197,7 +197,7 @@ function MyApp({ Component, pageProps }) {
       }
   return (
     <>
-      <PopupModal />
+      {/* <PopupModal /> */}
 
       {showHeader && <NavComponent />}
 

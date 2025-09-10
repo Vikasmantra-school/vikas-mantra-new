@@ -3,6 +3,7 @@ import { Container, Tab, Tabs } from "react-bootstrap";
 import styles from "./style.module.css";
 import { useEffect, useRef, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import dummy from './../../../public/images/bgs/topTab.png'
 
 const TabsHome = () => {
   const [key, setKey] = useState("mahendra");
@@ -38,7 +39,9 @@ const TabsHome = () => {
     <div className={styles.tabSection}>
       <Container>
         <div className={styles.upperContainer}>
-          <div className={styles.shapes}></div>
+          <div className={styles.shapes}>
+          <img  src="/images/bgs/topTab.png" alt="image" /></div>
+          
           <div className={styles.rightContent}>
             <h3 className={styles.rightHeading}>Shining the Spotlight</h3>
             <p>
@@ -52,9 +55,14 @@ const TabsHome = () => {
             id="spotlight"
             activeKey={key}
             onSelect={(k) => setKey(k)}
-            className="mb-2">
+            className={styles.spotlightTabTop}>
+
             <Tab
               className={styles.tab + " spotlightTabX"}
+              style={{
+                position:"relative",
+                top:"-30px"
+              }}
               eventKey="mahendra"
               title="Chengalpattu ">
               <Splide
@@ -151,7 +159,10 @@ const TabsHome = () => {
                 </SplideSlide>
               </Splide>
             </Tab>
-            <Tab eventKey="mambakkam" title="Mambakkam">
+            <Tab className={styles.tab + " spotlightTabX"} style={{
+                position:"relative",
+                top:"-30px"
+              }}  eventKey="mambakkam" title="Mambakkam">
               <Splide
                 ref={secondaryRef}
                 options={{

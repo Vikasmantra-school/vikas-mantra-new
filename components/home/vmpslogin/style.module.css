@@ -38,8 +38,30 @@
   outline-color: #ffb800;
   outline-offset: 3px;
 }
-@media only screen and (max-width:576px){
-  .vmpsloginBanner{
+@media only screen and (max-width: 576px) {
+  .vmpsloginBanner {
+    background: url("/images/bgs/vmps_login_mob.png") no-repeat center center;
     background-position: 70% center;
+    height: 333px;
+    background-size: cover;
+    position: relative;
+    margin-block: 0;
+  }
+  .vmpsloginwrapper {
+    justify-content: flex-end;
+    padding-block-end: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  .vmpsloginBanner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 10%,
+      rgba(10, 10, 10, 0.5) 100%
+    );
+    z-index: 0;
   }
 }

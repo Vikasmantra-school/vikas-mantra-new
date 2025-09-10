@@ -10,8 +10,8 @@ const AdmissionsBtnWrapper = ({
   return (
     <div className={styles.admissioncheck}>
       {schoolName && (
-        <div className={styles.schoolName} style={bgStyles}>
-          {schoolName}
+        <div className={styles.schoolName} style={{...bgStyles, fontSize}} >
+          <a href={buttonlink}>{schoolName}</a>
         </div>
       )}
       <a style={{ textDecoration: "none", color: "inherit", fontSize}} href={buttonlink}>

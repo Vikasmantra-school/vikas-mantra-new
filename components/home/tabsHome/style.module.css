@@ -35,16 +35,28 @@
   top: -1.5rem;
   right: -1.5rem;
 }
-
 .shapes {
-  background: url("/images/bgs/topTab.png") no-repeat;
-  background-size: contain;
+  /* background: url("/images/bgs/topTab.png") no-repeat; */
+  /* background-size: contain; */
   position: relative;
-  top: 30px;
+  top: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
-
+.shapes img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom;
+}
 .upperContainer > div {
   flex: 1;
+}
+
+.spotlightTabTop{
+  position: relative;
+  top:-50px;
+  left:-44px;
 }
 
 .bottomContainer {
@@ -53,12 +65,15 @@
   background-color: #e02d53;
   border-radius: 60px;
   border-top-left-radius: 0;
-  overflow: hidden;
+  overflow: visible;
+  padding-bottom: 0;
 }
 
 .videoWrapper {
   position: relative;
 }
+
+
 .sliderContainer video {
   cursor: pointer;
   border-radius: 10px;
@@ -66,6 +81,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 
 .tab {
   overflow: hidden;
@@ -100,20 +116,21 @@
 
 @media only screen and (max-width:576px){
   .upperContainer{
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
   }
   .shapes{
     order: 2;
+    width: 75%;
     
-    background-size: contain;
+    /* background-size: contain;
     position: relative;
    
     height: 50px;
     width: 190px;
     flex: auto !important;
     align-self: self-start;
-    top:22px;
+    top:22px; */
   }
   .rightHeading{
     font-size: 1.375rem;
@@ -121,4 +138,10 @@
   .rightContent p{
     margin: 0;
   }
+}
+
+@media only screen and (min-width:768px){
+  .spotlightTabTop{
+  left:-20px;
+}
 }

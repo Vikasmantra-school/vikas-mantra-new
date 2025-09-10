@@ -162,5 +162,5 @@
     font-weight: 500;
 }
 .customDropdownToggle::after {
-  display: none !important; /* remove default caret */
+  display: none !important; 
 }

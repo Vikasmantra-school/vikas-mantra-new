@@ -343,7 +343,7 @@
     background-image: url(/assets/vectors/Vector16.png);
     background-repeat: no-repeat;
     background-position: top left;
-    z-index: 1;
+    z-index: 0;
     background-size: 100px;
     height: 210px;
     width: 190px;
@@ -427,7 +427,7 @@
     background-image: url(/assets/vectors/Vector17.png);
     background-repeat: no-repeat;
     background-position: bottom left;
-    z-index: 1;
+    z-index: 0;
     background-size: 138px;
     height: 210px;
     width: 190px;
@@ -557,7 +557,7 @@
         background-image: url(/assets/vectors/Vector16.png);
         background-repeat: no-repeat;
         background-position: top left;
-        z-index: 1;
+        z-index: 0;
         background-size: 50px;
         height: 210px;
         width: 190px;
@@ -660,7 +660,7 @@
         background-image: url(/assets/vectors/Vector17.png);
         background-repeat: no-repeat;
         background-position: bottom left;
-        z-index: 1;
+        z-index: 0;
         background-size: 100px;
         height: 210px;
         width: 190px;
@@ -732,7 +732,7 @@
         background-image: url(/assets/vectors/Vector16.png);
         background-repeat: no-repeat;
         background-position: top left;
-        z-index: 1;
+        z-index: 0;
         background-size: 50px;
         height: 120px;
         width: 130px;
@@ -868,7 +868,7 @@
         background-image: url(/assets/vectors/Vector17.png);
         background-repeat: no-repeat;
         background-position: bottom left;
-        z-index: 1;
+        z-index: 0;
         background-size: 100px;
         height: 140px;
         width: 110px;
@@ -881,7 +881,7 @@
         background-image: url(/assets/vectors/Vector11.png);
         background-repeat: no-repeat;
         background-position: bottom left;
-        z-index: 1;
+        z-index: 0;
         background-size: 100px;
         height: 110px;
         width: 100px;
