@@ -139,3 +139,9 @@
         display: none;
     }
 }
+
+@media only screen and (max-width:576px){
+    .mainLogo img {
+    width: 120px !important;
+}
+}

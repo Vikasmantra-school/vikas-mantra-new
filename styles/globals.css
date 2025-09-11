@@ -789,9 +789,9 @@ p {
   list-style-type: none;
 }
 
-.mob-menu {
+/* .mob-menu {
   width: 100%;
-}
+} */
 
 .mob-menu .nav {
   position: relative;
@@ -2044,8 +2044,14 @@ tr {
   .mob-menu {
     height: auto;
     z-index: 9999;
-    position: relative;
-    width: 100%;
+    position: fixed;
+    top:100px;
+    left:1rem;
+    right: 1rem;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: auto  ;
+
   }
 
   .imgUpAdmission1 img {

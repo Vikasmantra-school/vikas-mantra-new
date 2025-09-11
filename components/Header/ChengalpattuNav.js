@@ -18,6 +18,13 @@ const ChengalpattuNav = () => {
     let hamburgerMenu = document.getElementById("hamburger");
     menu.classList.toggle("mob-menu-hdden");
     hamburgerMenu.classList.toggle("is-active");
+
+    if(hamburgerMenu.classList.contains("is-active")){
+      document.body.style.overflow= "hidden"
+    }
+    else{
+      document.body.style.overflow = "";
+    }
   }
 
   function showDropdownSub() {

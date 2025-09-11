@@ -1,6 +1,11 @@
 .mainLogo img {
     width: 165px !important;
 }
+@media only screen and (max-width:576px){
+    .mainLogo img {
+    width: 120px !important;
+}
+}
 
 .firstbtn {
     background: #D8FF3E;

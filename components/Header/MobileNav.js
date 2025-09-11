@@ -56,6 +56,285 @@ const MobileNav = ({}) => {
   return (
     <>
       <div id="mobMenu" className="mob-menu mob-menu-hdden">
+        {isMambakkam ? (
+          <ul
+            className="nav"
+            style={{
+              backgroundColor: subMenu?.bg || "#f5f5f5",
+              
+            }}>
+            <li className="nav__item">
+              <Link href="/mambakkam-site" legacyBehavior>
+                <a className="nav__link" aria-current="page">
+                  Home
+                </a>
+              </Link>
+            </li>
+            <li className="nav__item">
+              <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
+                About Us
+                <svg
+                  width="29px"
+                  height="27px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </a>
+              <ul
+                className="nav__sub"
+                style={{
+                  backgroundColor: subMenu?.bg || "#f5f5f5",
+                }}>
+                <li className="nav__item">
+                  <a
+                    onClick={(e) => subClose(e)}
+                    className="nav__link sub__close hasDropdown"
+                    href="#">
+                    Back
+                    <svg
+                      width="29px"
+                      height="27px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <Link
+                    href="/mambakkam-site/about/message-from-principal"
+                    legacyBehavior>
+                    <a className="nav__link">Principal's Message</a>
+                  </Link>
+                </li>
+                <li className="nav__item">
+                  <Link href="/mambakkam-site/about/blog" legacyBehavior>
+                    <a className="nav__link">Blog</a>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li
+              className="nav__item"
+              style={{
+                backgroundColor: subMenu?.bg || "#f5f5f5",
+              }}>
+              <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
+                Life of Campus
+                <svg
+                  width="29px"
+                  height="27px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </a>
+              <ul
+                className="nav__sub"
+                style={{
+                  backgroundColor: subMenu?.bg || "#f5f5f5",
+                }}>
+                <li className="nav__item">
+                  <a
+                    onClick={(e) => subClose(e)}
+                    className="nav__link sub__close hasDropdown"
+                    href="#">
+                    Back
+                    <svg
+                      width="29px"
+                      height="27px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <Link href="/learning" legacyBehavior>
+                    <a className="nav__link">Why VIKAS MANTRA PUBLIC SCHOOL</a>
+                  </Link>
+                </li>
+                <li className="nav__item">
+                  <Link href="/mambakkam-site/campus/classrooms" legacyBehavior>
+                    <a className="nav__link">Classrooms</a>
+                  </Link>
+                </li>
+
+                <li className="nav__item">
+                  <Link href="/mambakkam-site/campus/laboratory" legacyBehavior>
+                    <a className="nav__link">Laboratories</a>
+                  </Link>
+                </li>
+
+                <li className="nav__item">
+                  <Link
+                    href="/mambakkam-site/campus/speciality-room"
+                    legacyBehavior>
+                    <a className="nav__link">Speciality Rooms</a>
+                  </Link>
+                </li>
+
+                <li className="nav__item">
+                  <Link
+                    href="/mambakkam-site/campus/technologys"
+                    legacyBehavior>
+                    <a className="nav__link">Technology</a>
+                  </Link>
+                </li>
+
+                <li className="nav__item">
+                  <Link href="/mambakkam-site/campus/security" legacyBehavior>
+                    <a className="nav__link">Security</a>
+                  </Link>
+                </li>
+
+                <li className="nav__item">
+                  <Link href="/mambakkam-site/campus/healthcare" legacyBehavior>
+                    <a className="nav__link">Healthcare</a>
+                  </Link>
+                </li>
+
+                <li className="nav__item">
+                  <Link
+                    href="/mambakkam-site/campus/transportation"
+                    legacyBehavior>
+                    <a className="nav__link">Transportation</a>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li
+              className="nav__item"
+              style={{
+                backgroundColor: subMenu?.bg || "#f5f5f5",
+              }}>
+              <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
+                Learning
+                <svg
+                  width="29px"
+                  height="27px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </a>
+              <ul
+                className="nav__sub"
+                style={{
+                  backgroundColor: subMenu?.bg || "#f5f5f5",
+                }}>
+                <li className="nav__item">
+                  <a
+                    onClick={(e) => subClose(e)}
+                    className="nav__link sub__close hasDropdown"
+                    href="#">
+                    Back
+                    <svg
+                      width="29px"
+                      height="27px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <Link href="/mambakkam-site/learning" legacyBehavior>
+                    <a className="nav__link">Why VIKAS MANTRA PUBLIC SCHOOL</a>
+                  </Link>
+                </li>
+                <li className="nav__item">
+                  <Link
+                    href="/mambakkam-site/learning/curriculum"
+                    legacyBehavior>
+                    <a className="nav__link">Curriculum</a>
+                  </Link>
+                </li>
+
+                <li className="nav__item">
+                  <Link
+                    href="/mambakkam-site/learning/pre-primary-years"
+                    legacyBehavior>
+                    <a className="nav__link">Pre-Primary Years</a>
+                  </Link>
+                </li>
+
+                <li className="nav__item">
+                  <Link
+                    href="/mambakkam-site/learning/curriculum-framework"
+                    legacyBehavior>
+                    <a className="nav__link">Curriculum Framework</a>
+                  </Link>
+                </li>
+
+                <li className="nav__item">
+                  <Link
+                    href="/mambakkam-site/learning/online-classes"
+                    legacyBehavior>
+                    <a className="nav__link">Online Classes</a>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+            <li className="nav__item">
+              <Link href="/mambakkam-site/events" legacyBehavior>
+                <a className="nav__link" aria-current="page">
+                  Events
+                </a>
+              </Link>
+            </li>
+          </ul>
+        ) :(
         <ul className="nav">
           <li className="nav__item">
             <Link href="/" legacyBehavior>
@@ -361,285 +640,6 @@ const MobileNav = ({}) => {
             </Link>
           </li>
         </ul>
-
-        {isMambakkam && (
-          <ul
-            className="nav"
-            style={{
-              backgroundColor: subMenu?.bg || "#f5f5f5",
-              height:"720px"
-            }}>
-            <li className="nav__item">
-              <Link href="/mambakkam-site" legacyBehavior>
-                <a className="nav__link" aria-current="page">
-                  Home
-                </a>
-              </Link>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                About Us
-                <svg
-                  width="29px"
-                  height="27px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </a>
-              <ul
-                className="nav__sub"
-                style={{
-                  backgroundColor: subMenu?.bg || "#f5f5f5",
-                }}>
-                <li className="nav__item">
-                  <a
-                    onClick={(e) => subClose(e)}
-                    className="nav__link sub__close hasDropdown"
-                    href="#">
-                    Back
-                    <svg
-                      width="29px"
-                      height="27px"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li className="nav__item">
-                  <Link
-                    href="/mambakkam-site/about/message-from-principal"
-                    legacyBehavior>
-                    <a className="nav__link">Principal's Message</a>
-                  </Link>
-                </li>
-                <li className="nav__item">
-                  <Link href="/mambakkam-site/about/blog" legacyBehavior>
-                    <a className="nav__link">Blog</a>
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li
-              className="nav__item"
-              style={{
-                backgroundColor: subMenu?.bg || "#f5f5f5",
-              }}>
-              <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                Life of Campus
-                <svg
-                  width="29px"
-                  height="27px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </a>
-              <ul
-                className="nav__sub"
-                style={{
-                  backgroundColor: subMenu?.bg || "#f5f5f5",
-                }}>
-                <li className="nav__item">
-                  <a
-                    onClick={(e) => subClose(e)}
-                    className="nav__link sub__close hasDropdown"
-                    href="#">
-                    Back
-                    <svg
-                      width="29px"
-                      height="27px"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li className="nav__item">
-                  <Link href="/learning" legacyBehavior>
-                    <a className="nav__link">Why VIKAS MANTRA PUBLIC SCHOOL</a>
-                  </Link>
-                </li>
-                <li className="nav__item">
-                  <Link href="/mambakkam-site/campus/classrooms" legacyBehavior>
-                    <a className="nav__link">Classrooms</a>
-                  </Link>
-                </li>
-
-                <li className="nav__item">
-                  <Link href="/mambakkam-site/campus/laboratory" legacyBehavior>
-                    <a className="nav__link">Laboratories</a>
-                  </Link>
-                </li>
-
-                <li className="nav__item">
-                  <Link
-                    href="/mambakkam-site/campus/speciality-room"
-                    legacyBehavior>
-                    <a className="nav__link">Speciality Rooms</a>
-                  </Link>
-                </li>
-
-                <li className="nav__item">
-                  <Link
-                    href="/mambakkam-site/campus/technologys"
-                    legacyBehavior>
-                    <a className="nav__link">Technology</a>
-                  </Link>
-                </li>
-
-                <li className="nav__item">
-                  <Link href="/mambakkam-site/campus/security" legacyBehavior>
-                    <a className="nav__link">Security</a>
-                  </Link>
-                </li>
-
-                <li className="nav__item">
-                  <Link href="/mambakkam-site/campus/healthcare" legacyBehavior>
-                    <a className="nav__link">Healthcare</a>
-                  </Link>
-                </li>
-
-                <li className="nav__item">
-                  <Link
-                    href="/mambakkam-site/campus/transportation"
-                    legacyBehavior>
-                    <a className="nav__link">Transportation</a>
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li
-              className="nav__item"
-              style={{
-                backgroundColor: subMenu?.bg || "#f5f5f5",
-              }}>
-              <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                Learning
-                <svg
-                  width="29px"
-                  height="27px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </a>
-              <ul
-                className="nav__sub"
-                style={{
-                  backgroundColor: subMenu?.bg || "#f5f5f5",
-                }}>
-                <li className="nav__item">
-                  <a
-                    onClick={(e) => subClose(e)}
-                    className="nav__link sub__close hasDropdown"
-                    href="#">
-                    Back
-                    <svg
-                      width="29px"
-                      height="27px"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li className="nav__item">
-                  <Link href="/mambakkam-site/learning" legacyBehavior>
-                    <a className="nav__link">Why VIKAS MANTRA PUBLIC SCHOOL</a>
-                  </Link>
-                </li>
-                <li className="nav__item">
-                  <Link
-                    href="/mambakkam-site/learning/curriculum"
-                    legacyBehavior>
-                    <a className="nav__link">Curriculum</a>
-                  </Link>
-                </li>
-
-                <li className="nav__item">
-                  <Link
-                    href="/mambakkam-site/learning/pre-primary-years"
-                    legacyBehavior>
-                    <a className="nav__link">Pre-Primary Years</a>
-                  </Link>
-                </li>
-
-                <li className="nav__item">
-                  <Link
-                    href="/mambakkam-site/learning/curriculum-framework"
-                    legacyBehavior>
-                    <a className="nav__link">Curriculum Framework</a>
-                  </Link>
-                </li>
-
-                <li className="nav__item">
-                  <Link
-                    href="/mambakkam-site/learning/online-classes"
-                    legacyBehavior>
-                    <a className="nav__link">Online Classes</a>
-                  </Link>
-                </li>
-              </ul>
-            </li>
-
-            <li className="nav__item">
-              <Link href="/mambakkam-site/events" legacyBehavior>
-                <a className="nav__link" aria-current="page">
-                  Events
-                </a>
-              </Link>
-            </li>
-          </ul>
         )}
       </div>
     </>
