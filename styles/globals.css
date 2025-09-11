@@ -491,9 +491,11 @@ p {
   position: relative;
 }
 
-.chengalpattu-unique.home {
+@media only screen and (min-width:768px){
+  .chengalpattu-unique.home {
   z-index: 2;
   position: absolute !important;
+}
 }
 
 /* .homeheader.home {

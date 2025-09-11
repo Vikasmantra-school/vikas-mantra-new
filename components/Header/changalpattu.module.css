@@ -1,6 +1,14 @@
 .mainLogo img {
     width: 165px !important;
 }
+.homeheader.home {
+  z-index: 2;
+  position: absolute;
+}
+
+/* .home .navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+} */
 
 .firstbtn {
     background: #D8FF3E;
@@ -24,8 +32,8 @@
     border-radius: 1px;
     color: #FFFFFF;
     border: unset;
-    padding: 5px 18px;
-    padding: 6px 18px;
+    /* padding: 5px 18px; */
+    padding: 7px 18px;
     font-size: 14px;
 }
 .drpDownValue{
@@ -43,6 +51,7 @@
 
 .navTransparent {
     z-index: 999;
+    overflow: visible;
 }
 
 .callIcon {
