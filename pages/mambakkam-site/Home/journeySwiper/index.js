@@ -86,7 +86,7 @@ const JourneySwiper = () => {
     <>
       <section
         ref={containerRef}
-        className={styles.journeySwiper + " " + "pb60 pt60"}>
+        className={styles.journeySwiper + " " + "mbkm-section-padding"}>
         <div>
           <div className="row g-0 w-100">
             <div className="col-lg-3 d-flex justify-content-start">

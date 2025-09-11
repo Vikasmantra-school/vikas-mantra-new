@@ -42,7 +42,7 @@ const ChengalpattuNav = () => {
           "homeheader " +
           " " +
           pageName +
-          ` ${isChengalpattu ? "home" : "position-relative"}` +
+          ` ${isChengalpattu ? "home" : "position-sticky"}` +
           " " +
           (isChengalpattu ? `chengalpattu-unique` : "")
         }>
@@ -199,7 +199,7 @@ const ChengalpattuNav = () => {
 
         <nav
           id="mainMenu2"
-          className={styles.navTransparent + " " + "navbar navbar-expand-lg"}>
+          className={styles.navTransparent + " " + "navbar navbar-expand-lg p-0"}>
           <div className="container">
             <div className="collapse navbar-collapse desktop-menu" id="">
               <ul className="navbar-nav mb-2 mb-lg-0">

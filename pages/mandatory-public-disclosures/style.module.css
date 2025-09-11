@@ -93,3 +93,9 @@
     padding-right: 0 !important;
   }
 }
+.tableborder a{
+  color: rgb(224, 45, 83);
+}
+.tableborder a:hover{
+  text-decoration: underline;
+}

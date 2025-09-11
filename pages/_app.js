@@ -195,6 +195,19 @@ function MyApp({ Component, pageProps }) {
       if(router.pathname.startsWith("/chengalpattu-site")){
         NavComponent = ChengalpattuNav;
       }
+
+
+
+      useEffect(() =>{
+        const handleRouteChange = () => {
+          document.body.style.overflow="";
+        }
+        router.events.on("routeChangeStart", handleRouteChange);
+
+        return ()=>{
+          router.events.off("routeChangeStart", handleRouteChange)
+        }
+      },[router.events])
   return (
     <>
       {/* <PopupModal /> */}

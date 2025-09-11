@@ -10,7 +10,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: inherit;
 }
 
@@ -222,7 +222,7 @@ p {
   background-image: url(/assets/vectors/pinkspiral.png);
   background-repeat: no-repeat;
   background-position: bottom right;
-  z-index: 1;
+  z-index: 0;
   background-size: 110px;
   height: 210px;
   right: 0;
@@ -491,11 +491,11 @@ p {
   position: relative;
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width: 768px) {
   .chengalpattu-unique.home {
-  z-index: 2;
-  position: absolute !important;
-}
+    z-index: 2;
+    position: absolute !important;
+  }
 }
 
 /* .homeheader.home {
@@ -615,7 +615,7 @@ p {
 }
 
 .vmpsslide .splide__arrow {
-  top: 103%;
+  top: 117%;
 }
 
 .splide__track {
@@ -1009,6 +1009,12 @@ tr {
 
 .table-bordered > :not(caption) > * > * {
   border-width: unset;
+}
+
+@media only screen and (max-width: 576px) {
+  .table-bordered > :not(caption) > * > * {
+    padding: 0.5rem 0.1rem;
+  }
 }
 
 .table > tbody {
@@ -2045,15 +2051,26 @@ tr {
     height: auto;
     z-index: 9999;
     position: fixed;
-    top:100px;
-    left:1rem;
-    right: 1rem;
+    top: 77px;
+    left: 0rem;
+    right: 0rem;
     bottom: 0;
     overflow: hidden;
-    overflow-y: auto  ;
-
+    overflow-y: auto;
+    width: unset !important;
+    padding-inline: 1rem;
   }
+  .mob-menu::after {
+    content: "";
+    position: absolute;
+    inset: 0;
 
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    height: 100%;
+    z-index: -1;
+  }
   .imgUpAdmission1 img {
     top: 0px;
     right: 0;
@@ -2334,25 +2351,44 @@ tr {
 }
 
 /* To REmove spin button number input */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* For Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.vert-modal{
+.vert-modal {
   max-width: 375px;
 }
-@media only screen and (max-width:768px){
-  .watsapp-icon .whatsappImg{
+@media only screen and (max-width: 768px) {
+  .watsapp-icon .whatsappImg {
     bottom: 130px;
   }
-  .callBtn{
+  .callBtn {
     bottom: 77px;
+  }
+}
+
+.mbkm-section-padding {
+  padding-block: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .mbkm-section-padding {
+    padding-block: 1.5rem;
+  }
+}
+
+
+@media only screen and (max-width:991px)
+{
+  .homeheader{
+    position: sticky !important;
+    top:0;
+    background-color:#fff ;
   }
 }

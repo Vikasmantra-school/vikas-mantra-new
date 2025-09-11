@@ -5,7 +5,7 @@ import styles from "./style.module.css";
 const VmpsStory = () => {
   return (
     <>
-      <section className={styles.vmpsStory + " " + "pb60 pt60"}>
+      <section className={styles.vmpsStory + " " + "mbkm-section-padding"}>
         <div className="container">
           <div className="row align-items-center">
             <div className="mb-5 col-lg-6 col-md-12 col-sm-12">

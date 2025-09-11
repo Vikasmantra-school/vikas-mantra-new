@@ -33,7 +33,7 @@ const Library = () => {
 
                     <div className='row'>
 
-                        <div className='col-lg-6 col-md-12 position-relative'>
+                        <div className='col-lg-6 col-md-12 position-relative' style={{ zIndex:'1'}}>
 
                             <div className='AnimeStarts'>
                                 <h3 className='ulineRed AnimeElement'>The library is at the heart of

@@ -40,7 +40,7 @@ function MandatoryScreen() {
               <Table bordered className={'mt-4' + ' ' + styles.tableborder}>
                 <tbody>
                   <tr className={styles.tableBorderColor}>
-                    <td>S.No</td>
+                    <td>S. <br className='d-block d-md-none'/>No</td>
                     <td>Information</td>
                     <td>Details</td>
                   </tr>
@@ -87,7 +87,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>7</td>
                     <td>SCHOOL EMAIL ID*</td>
-                    <td>info@vikasmantra.org</td>
+                    <td>info@ <br className='d-block d-md-none'/>vikasmantra.org</td>
                   </tr>
 
                   <tr>

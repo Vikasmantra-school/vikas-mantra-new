@@ -14,7 +14,7 @@ import gsap from "gsap";
 const Blog = () => {
   return (
     <>
-      <section className={styles.blogSection + " " + "pb60 pt60"}>
+      <section className={styles.blogSection + " " + "mbkm-section-padding"}>
         <div className={styles.cust_container}>
           <div className="row">
             <h2 className={styles.blogTitle}>What’s Happening</h2>

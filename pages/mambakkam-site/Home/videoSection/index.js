@@ -22,7 +22,7 @@ const VideoSection = () => {
     <>
       <section
         className={
-          `${styles.SchoolVideoSection} parentAnimeStarts` + " " + "pb60 pt60"
+          `${styles.SchoolVideoSection} parentAnimeStarts` + " " + "mbkm-section-padding"
         }>
         <div className="videoContainer" style={{ position: "relative" }}>
           <video

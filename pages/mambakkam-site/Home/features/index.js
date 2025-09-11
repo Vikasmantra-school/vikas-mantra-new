@@ -14,7 +14,7 @@ import gsap from "gsap";
 const Features = () => {
   return (
     <>
-      <section className={styles.featureSection + " " + "pb60 pt60"}>
+      <section className={styles.featureSection + " " + "mbkm-section-padding"}>
         <div className={styles.featureContainer}>
           <div className="container">
             <Swiper
