@@ -8,7 +8,7 @@ export default function SplitCards() {
     <section className={styles.ourFacilities}>
       <Container>
         <h3 className={styles.rightHeading}>Our Facilities</h3>
-        <div className={styles.mainContent}>
+        <div className={`${styles.mainContent} d-none d-md-block`}>
           <Splide
             options={{
               spacing: 0,
@@ -58,6 +58,54 @@ export default function SplitCards() {
                     <div className={styles.caption}>Library</div>
                   </div>
                 </div>
+              </div>
+            </SplideSlide>
+          </Splide>
+        </div>
+
+        <div className={`${styles.mainContentMob} d-block d-md-none`}>
+          <Splide
+            options={{
+              spacing: 20,
+              type: "loop",
+              
+              pagination: true,
+              arrows: false,
+              autoplay: true,
+              interval: 6000,
+              loop: true,
+              lazyLoad: "nearby",
+            }}
+            aria-label="My Favorite Images">
+            <SplideSlide>
+              <div className={`${styles.card}`}>
+                <img
+                  src="/images/spitcardImages/g1.png"
+                  alt="Smart Classrooms"
+                />
+                <div className={styles.caption}>Smart Classrooms</div>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className={`${styles.card} `}>
+                <img
+                  src="/images/spitcardImages/g2.png"
+                  alt="Co-Curricular Activities"
+                />
+                <div className={styles.caption}>Co-Curricular Activities</div>
+              </div>
+            </SplideSlide>
+
+            <SplideSlide>
+              <div className={`${styles.card}`}>
+                <img src="/images/spitcardImages/g3.png" alt="Transportation" />
+                <div className={styles.caption}>Transportation</div>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className={`${styles.card} `}>
+                <img src="/images/spitcardImages/g4.png" alt="Library" />
+                <div className={styles.caption}>Library</div>
               </div>
             </SplideSlide>
           </Splide>

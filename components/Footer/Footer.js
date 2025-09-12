@@ -53,6 +53,7 @@ export const Footer = () => {
   const [name, setName] = useState("");
   const [mail, setEmail] = useState("");
   const [number, setNumber] = useState("");
+  const [dropdownValue, setDropdownValue] = useState("");
 
   //form-sheet-integration
 
@@ -68,6 +69,7 @@ export const Footer = () => {
     setName("");
     setEmail("");
     setNumber("");
+    setDropdownValue("");
 
     fetch(scriptUrl, {
       method: "POST",
@@ -145,6 +147,19 @@ export const Footer = () => {
                   </div>
 
                   <div className="mb-3">
+                    <select
+                      className={styles.formInput + " form-control"}
+                      required
+                      name="Campus"
+                      onChange={(event) => setDropdownValue(event.target.value)}
+                      value={dropdownValue}>
+                      <option value="" disabled>Select Campus</option>
+                      <option value="Chengalpattu">Chengalpattu</option>
+                      <option value="Mambakkam">Mambakkam</option>
+                    </select>
+                  </div>
+
+                  <div className="mb-3">
                     <input
                       type="submit"
                       value={loading ? "Loading..." : "Send"}
@@ -190,7 +205,7 @@ export const Footer = () => {
                     <h3>CONTACT US</h3>
                     {isMambakkam ? (
                       <>
-                        <p> Vandalur, Kelambakkam Road,  </p>
+                        <p> Vandalur, Kelambakkam Road, </p>
                         <p> Mambakkam, Chennai - 600127.</p>
                         <p> info.mambakkam@vikasmantra.org</p>
                         <p> +91 74 484 50 450</p>
@@ -297,14 +312,14 @@ export const Footer = () => {
 
           <div className="row watsapp-icon">
             <div className="col-sm-12">
-              <Link href="/campaign" legacyBehavior>
+              {/* <Link href="/campaign" legacyBehavior>
                 <a
                   className="fixed-app callBtn"
                   target="_blank"
                   rel="noopener noreferrer">
                   Admissions Enquiry
                 </a>
-              </Link>
+              </Link> */}
 
               <Link href="https://api.whatsapp.com/send?phone=7330098765">
                 <a

@@ -14,7 +14,7 @@ const Blog11 = () => {
           <div className="row py-5">
             <div className="col-lg-6 col-md-10 AnimeStarts">
               <h2 className="AnimeElement">
-                Nurturing Balance Through Yoga: A Path to Inner and Outer Growth
+                Nurturing Balance Through Yoga: A Path to Inner and Outer Growt
               </h2>
             </div>
           </div>

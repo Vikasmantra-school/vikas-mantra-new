@@ -190,7 +190,7 @@
 
 .cardXWrapper {
   position: relative;
-  bottom: 70px;
+  bottom: 30px;
   inset-inline: 0;
 }
 
@@ -205,11 +205,12 @@
   mask-repeat: no-repeat;
   mask-image: url(/images/bgs/cardbg.svg); */
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   text-align: left;
   flex-direction: column;
   position: relative;
+  aspect-ratio: 1 / 1 ;
 }
 
 .statCard h3 {
@@ -238,26 +239,27 @@
   object-fit: contain;
 }
 
-
-@media only screen and (max-width:991px){
-  .statCard{
+@media only screen and (max-width: 991px) {
+  .statCard {
     width: 200px;
     margin-inline: auto;
     max-width: 200px;
     padding-inline: 1rem 1.2rem;
     align-items: center;
   }
-  .statCard small{
+  .statCard small {
     text-align: center;
   }
 }
 
-
-@media only screen and (max-width:576px){
-  .statCard{
+@media only screen and (max-width: 576px) {
+  .statCard {
     width: 160px;
     margin-inline: auto;
     max-width: 200px;
     padding-inline: 1rem 1.2rem;
+  }
+  .aboutVikasSmall {
+    padding-block: 60px;
   }
 }

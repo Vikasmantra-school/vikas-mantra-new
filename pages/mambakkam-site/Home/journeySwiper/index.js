@@ -94,7 +94,7 @@ const JourneySwiper = () => {
                 <h2>
                   Journey of <br /> education at VMPS
                   <div
-                    style={{ display: "inline-block" }}
+                    
                     onMouseMove={handleMouseMove}
                     onMouseLeave={handleMouseLeave}
                     className={styles.svgArrow}>

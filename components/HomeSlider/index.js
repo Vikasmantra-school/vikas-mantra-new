@@ -1,21 +1,21 @@
-import React, { useRef } from 'react'
-import styles from './style.module.css'
-import { Splide, SplideSlide } from '@splidejs/react-splide'
-import '@splidejs/react-splide/css'
+import React, { useRef } from "react";
+import styles from "./style.module.css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 
 function HomeSlider({ ref }) {
-  let title = useRef(null)
+  let title = useRef(null);
   return (
     <>
-
-      <div className='homeBanner'>
-
+      <div className="homeBanner">
         <Splide
           options={{
             rewind: false,
-            gap: '0rem',
+            gap: "0rem",
             perPage: 1,
-            autoplay: false,
+            autoplay: true,
+            interval: 3000,
+            loop: true,
             pagination: true,
             arrows: false,
             breakpoints: {
@@ -23,17 +23,24 @@ function HomeSlider({ ref }) {
                 perPage: 1,
               },
             },
-          }}
-        >
-
+          }}>
           <SplideSlide>
-            <section className={styles.bannerSection + ' ' + styles.bannerTopper + ' ' + ''}>
-              <div className='container'>
-                <div className='row homeBanner'>
-                  <div ref={(el) => { title = el }}
-                    className={styles.bannercontent + ' ' + 'col-xl-6 col-lg-8 col-md-10 col-sm-12 '} >
-
-                    <div className='AnimeStarts d-none d-sm-block '>
+            <section
+              className={
+                styles.bannerSection + " " + styles.bannerTopper + " " + ""
+              }>
+              <div className="container">
+                <div className="row homeBanner">
+                  <div
+                    ref={(el) => {
+                      title = el;
+                    }}
+                    className={
+                      styles.bannercontent +
+                      " " +
+                      "col-xl-6 col-lg-8 col-md-10 col-sm-12 "
+                    }>
+                    <div className="AnimeStarts d-none d-sm-block ">
                       {/* 
                       <h1 className='box AnimeElement'>
                         Vikas Mantra is Y(our) Success Mantra
@@ -42,114 +49,112 @@ function HomeSlider({ ref }) {
                       <p className='box AnimeElement'>
                         STD Xth Toppers & Top Achievers (2023-2024)
                       </p> */}
-
                     </div>
-
                   </div>
                 </div>
               </div>
             </section>
 
-            <section className='d-block d-sm-none '>
-              <div className='container'>
-                <div className='row mobileBanner'>
-                  <div className='col-md-12'>
-
-                    <div className='AnimeStarts py-2 '>
-
-                      <h2 className='box AnimeElement'>
+            <section className="d-block d-sm-none ">
+              <div className="container">
+                <div className="row mobileBanner">
+                  <div className="col-md-12">
+                    <div className="AnimeStarts py-2 ">
+                      <h2 className="box AnimeElement">
                         Creating Confident Learners and Leaders.
                       </h2>
 
-                      <p className='box AnimeElement'>
-                        We believe in nurturing success in every step and fostering excellence in every lesson.
-                        <b>Admissions Open 2025-26.</b>
+                      <p className="box AnimeElement">
+                        We believe in nurturing success in every step and
+                        fostering excellence in every lesson.
                       </p>
-
+                        <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-
           </SplideSlide>
 
           <SplideSlide>
-            <section className={styles.bannerSection + ' ' + styles.banner1 + ' ' + ''}>
-              <div className='container'>
-                <div className='row homeBanner'>
-                  <div ref={(el) => { title = el }}
-                    className={styles.bannercontent + ' ' + 'col-xl-6 col-lg-8 col-md-10 col-sm-12 '} >
-
-                    <div className='AnimeStarts d-none d-sm-block '>
-
-                      <h2 className='box AnimeElement text-light'>
-                        To educate young minds to be lifelong learners in this dynamic
-                        world
-                      </h2>
-
-                      <p className='box AnimeElement'>
-                        Vikas Mantra Public School offers CBSE Curriculum and was
-                        launched in the academic year 2019-22.
-                      </p>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section className='d-block d-sm-none '>
-              <div className='container'>
-                <div className='row mobileBanner'>
-                  <div className='col-md-12'>
-
-                    <div className='AnimeStarts py-2 '>
-
-                      <h2 className='box AnimeElement' >
-                        To educate young minds to be lifelong learners in this dynamic
-                        world
-                      </h2>
-
-                      <p className='box AnimeElement'>
-                        Vikas Mantra Public School offers CBSE Curriculum and was
-                        launched in the academic year 2019-22.
-                      </p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-          </SplideSlide>
-
-          <SplideSlide>
-            <section className={styles.bannerSection + ' ' + styles.banner2 + ' ' + ''}>
-              <div className='container'>
-                <div className='row homeBanner'>
-
+            <section
+              className={
+                styles.bannerSection + " " + styles.banner1 + " " + ""
+              }>
+              <div className="container">
+                <div className="row homeBanner">
                   <div
                     ref={(el) => {
-                      title = el
+                      title = el;
                     }}
                     className={
                       styles.bannercontent +
-                      ' ' +
-                      'col-xl-6 col-lg-8 col-md-10 col-sm-12'
-                    }
-                  >
+                      " " +
+                      "col-xl-6 col-lg-8 col-md-10 col-sm-12 "
+                    }>
+                    <div className="AnimeStarts d-none d-sm-block ">
+                      <h2 className="box AnimeElement text-light">
+                        To educate young minds to be lifelong learners in this
+                        dynamic world
+                      </h2>
 
-                    <div className='d-none d-sm-block'>
+                      <p className="box AnimeElement">
+                        Vikas Mantra Public School offers CBSE Curriculum and
+                        was launched in the academic year 2019-22.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-                      <h2 className='box text-light'>
+            <section className="d-block d-sm-none ">
+              <div className="container">
+                <div className="row mobileBanner">
+                  <div className="col-md-12">
+                    <div className="AnimeStarts py-2 ">
+                      <h2 className="box AnimeElement">
+                        To educate young minds to be lifelong learners in this
+                        dynamic world
+                      </h2>
+
+                      <p className="box AnimeElement">
+                        Vikas Mantra Public School offers CBSE Curriculum and
+                        was launched in the academic year 2019-22.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </SplideSlide>
+
+          <SplideSlide>
+            <section
+              className={
+                styles.bannerSection + " " + styles.banner2 + " " + ""
+              }>
+              <div className="container">
+                <div className="row homeBanner">
+                  <div
+                    ref={(el) => {
+                      title = el;
+                    }}
+                    className={
+                      styles.bannercontent +
+                      " " +
+                      "col-xl-6 col-lg-8 col-md-10 col-sm-12"
+                    }>
+                    <div className="d-none d-sm-block">
+                      <h2 className="box text-light">
                         Award for Academic Excellence
                       </h2>
-                      <p className='box '>
-                        VMPS received the International Education Award for Academic Excellence ( Private School ) of the year 2021 - 22
+                      <p className="box ">
+                        VMPS received the International Education Award for
+                        Academic Excellence ( Private School ) of the year 2021
+                        - 22
                       </p>
-
+                     <a href="/enquiry-form" className={`${styles.bannerCta} mt-3`}>Admissions Open 2025-26.</a>
                     </div>
 
                   </div>
@@ -157,51 +162,46 @@ function HomeSlider({ ref }) {
               </div>
             </section>
 
-            <section className='d-block d-sm-none '>
-              <div className='container'>
-                <div className='row mobileBanner'>
-                  <div className='col-md-12'>
-
-                    <div className='AnimeStarts py-4 '>
-
-                      <h2 className=' box AnimeElement'>
+            <section className="d-block d-sm-none ">
+              <div className="container">
+                <div className="row mobileBanner">
+                  <div className="col-md-12">
+                    <div className="AnimeStarts py-4 ">
+                      <h2 className=" box AnimeElement">
                         Award for Academic Excellence
                       </h2>
 
-                      <p className='box AnimeElement'>
-                        VMPS received the International Education Award for Academic Excellence ( Private School ) of the year 2021 - 22
+                      <p className="box AnimeElement">
+                        VMPS received the International Education Award for
+                        Academic Excellence ( Private School ) of the year 2021
+                        - 22
                       </p>
-
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-
           </SplideSlide>
 
           <SplideSlide>
-            <section className={styles.bannerSection + ' ' + styles.banner3}>
-              <div className='container'>
-                <div className='row homeBanner'>
-
+            <section className={styles.bannerSection + " " + styles.banner3}>
+              <div className="container">
+                <div className="row homeBanner">
                   <div
                     ref={(el) => {
-                      title = el
+                      title = el;
                     }}
                     className={
                       styles.bannercontent +
-                      ' ' +
-                      'col-xl-6 col-lg-8 col-md-10 col-sm-12'
-                    }
-                  >
-
-                    <div className='d-none d-sm-block'>
-                      <h2 className='text-light box'>
-                        Sports Day
-                      </h2>
-                      <p className='box'>
-                        we grandly celebrated our annual sports meet with our indian cricket player Mr.Subramaniam Badrinath who is our chief guest.
+                      " " +
+                      "col-xl-6 col-lg-8 col-md-10 col-sm-12"
+                    }>
+                    <div className="d-none d-sm-block">
+                      <h2 className="text-light box">Sports Day</h2>
+                      <p className="box">
+                        we grandly celebrated our annual sports meet with our
+                        indian cricket player Mr.Subramaniam Badrinath who is
+                        our chief guest.
                       </p>
                     </div>
                   </div>
@@ -209,80 +209,70 @@ function HomeSlider({ ref }) {
               </div>
             </section>
 
-            <section className='d-block d-sm-none '>
-              <div className='container'>
-                <div className='row mobileBanner'>
-                  <div className='col-md-12'>
+            <section className="d-block d-sm-none ">
+              <div className="container">
+                <div className="row mobileBanner">
+                  <div className="col-md-12">
+                    <div className="AnimeStarts py-4 ">
+                      <h2 className=" box AnimeElement">Sports Day</h2>
 
-                    <div className='AnimeStarts py-4 '>
-
-                      <h2 className=' box AnimeElement'>
-                        Sports Day
-                      </h2>
-
-                      <p className='box AnimeElement'>
-                        we grandly celebrated our annual sports meet with our indian cricket player Mr.Subramaniam Badrinath who is our chief guest.
+                      <p className="box AnimeElement">
+                        we grandly celebrated our annual sports meet with our
+                        indian cricket player Mr.Subramaniam Badrinath who is
+                        our chief guest.
                       </p>
-
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-
           </SplideSlide>
 
           <SplideSlide>
-            <section className={styles.bannerSection + ' ' + styles.banner4}>
-              <div className='container'>
-                <div className='row homeBanner'>
-
+            <section className={styles.bannerSection + " " + styles.banner4}>
+              <div className="container">
+                <div className="row homeBanner">
                   <div
                     ref={(el) => {
-                      title = el
+                      title = el;
                     }}
                     className={
                       styles.bannercontent +
-                      ' ' +
-                      'col-xl-6 col-lg-8 col-md-10 col-sm-12'
-                    }
-                  >
-
-                    <div className='d-none d-sm-block'>
-                      <h2 className='text-light box'>
+                      " " +
+                      "col-xl-6 col-lg-8 col-md-10 col-sm-12"
+                    }>
+                    <div className="d-none d-sm-block">
+                      <h2 className="text-light box">
                         kiddies annual sports meet
                       </h2>
-                      <p className='box'>
-                        A fabulous march past performed by our school kids on kiddies annual sports meet.
+                      <p className="box">
+                        A fabulous march past performed by our school kids on
+                        kiddies annual sports meet.
                       </p>
                     </div>
-
                   </div>
                 </div>
               </div>
             </section>
 
-            <section className='d-block d-sm-none '>
-              <div className='container'>
-                <div className='row mobileBanner'>
-                  <div className='col-md-12'>
-
-                    <div className='AnimeStarts py-4 '>
-
-                      <h2 className='box AnimeElement'>
+            <section className="d-block d-sm-none ">
+              <div className="container">
+                <div className="row mobileBanner">
+                  <div className="col-md-12">
+                    <div className="AnimeStarts py-4 ">
+                      <h2 className="box AnimeElement">
                         kiddies annual sports meet
                       </h2>
 
-                      <p className='box AnimeElement'>
-                        A fabulous march past performed by our school kids on kiddies annual sports meet.
+                      <p className="box AnimeElement">
+                        A fabulous march past performed by our school kids on
+                        kiddies annual sports meet.
                       </p>
-
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-
           </SplideSlide>
 
           {/* <SplideSlide>
@@ -336,15 +326,10 @@ function HomeSlider({ ref }) {
             </section>
 
           </SplideSlide> */}
-
         </Splide>
-
       </div>
-
-
-
     </>
-  )
+  );
 }
 
-export default HomeSlider
+export default HomeSlider;

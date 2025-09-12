@@ -12,7 +12,7 @@ const BannerAdsVikasCommon = () => {
               <span>Admissions Open for the Academic Year 2025-26</span>
               <span className={styles.cribes}>Pre-KG to XI</span>
             </h3>
-            <AdmissionsBtnWrapper
+            {/* <AdmissionsBtnWrapper
               schoolName="Enroll Now"
               buttonInfo="Download Prospectus"
               bgStyles={{
@@ -22,7 +22,10 @@ const BannerAdsVikasCommon = () => {
               fontSize ="18px"
               buttonlink="/admissions"
     
-            />
+            /> */}
+            <a style={{ textDecoration: "none", color: "inherit" }} href="/enquiry-form">
+              <button className={styles.enrollNowBtn}>Enroll Now</button>
+            </a>
           </div>
         </div>
       </Container>

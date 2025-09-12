@@ -26,7 +26,7 @@ const Blog = () => {
               slidesPerView={3}
               breakpoints={{
                 0: {
-                  slidesPerView: 1.2,
+                  slidesPerView: 1,
                   spaceBetween: 10,
                 },
                 576: {

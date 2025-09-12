@@ -7,16 +7,16 @@ const WhyVikasSection = () => {
     <div className={styles.whyVikasSection}>
       <Container>
         <h3 className={styles.whyVikasTitle}>Why Vikas Mantra?</h3>
-        <Row className="gx-5">
+        <Row className="gx-0 gx-md-5">
           <Col lg={6}>
             <div className={styles.GridWrapper}>
               {vikasdataGrid1.map((item, index) => (
-                <div className={styles.GridItem} key={item.id}>
-                  <div className={styles.gridImage}>
+                <div className={`${styles.GridItem} AnimeStarts`} key={item.id}>
+                  <div className={`${styles.gridImage} AnimeElement`}>
                     <img src={item.imgUrl} alt={item.title} />
                   </div>
-                  <h3 className={styles.gridTitle}>{item.title}</h3>
-                  <div className={styles.gridDesc}>{item.desc}</div>
+                  <h3 className={`${styles.gridTitle} AnimeElement`}>{item.title}</h3>
+                  <div className={`${styles.gridDesc} AnimeElement`}>{item.desc}</div>
                 </div>
               ))}
             </div>
@@ -27,12 +27,12 @@ const WhyVikasSection = () => {
                 aria-hidden="true"
               ></div>
               {vikasdataGrid2.map((item, index) => (
-                <div className={styles.GridItem} key={item.id}>
-                  <div className={styles.gridImage}>
+                <div className={`${styles.GridItem} AnimeStarts`} key={item.id}>
+                  <div className={`${styles.gridImage} AnimeElement`}>
                     <img src={item.imgUrl} alt={item.title} />
                   </div>
-                  <h3 className={styles.gridTitle}>{item.title}</h3>
-                  <div className={styles.gridDesc}>{item.desc}</div>
+                  <h3 className={`${styles.gridTitle} AnimeElement`}>{item.title}</h3>
+                  <div className={`${styles.gridDesc} AnimeElement`}>{item.desc}</div>
                 </div>
               ))}
             </div>

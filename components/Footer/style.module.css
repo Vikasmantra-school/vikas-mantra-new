@@ -32,6 +32,25 @@
     padding: 15px;
 }
 
+
+/* Style the select box itself */
+.formInput {
+  background-color: #fff; 
+  color: #00000063; 
+  cursor: pointer;         
+}
+
+
+.formInput option {
+  background-color: #fff; 
+  color: #000;            
+}
+
+/* Placeholder specifically */
+.formInput option[value=""] {
+  color: #888; 
+}
+
 input.formInput::placeholder {
     /* Chrome/Opera/Safari */
     color: #AEAEAE;

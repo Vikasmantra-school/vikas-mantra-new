@@ -2,14 +2,13 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "./style.module.css";
 import { stats } from "../../../data/homepageData";
 
-
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { delay } from "framer-motion";
 
 const Stats = () => {
   return (
@@ -89,19 +88,56 @@ const Stats = () => {
       <div className={styles.cardXWrapper}>
         <Container fluid="xl">
           <Row className="justify-content-center">
-            {stats.map((stat, index) => {
-              return (
-                <Col xs={6} lg={2}  key={stat.id}>
-                  <div className={styles.statCard}>
-                    <h3>{stat.title}</h3>
-                    <small>{stat.caption}</small>
-                    <div className={styles.statsIcon}>
-                      <img src={stat.icon} alt="Icons" />
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={2}
+              loop={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              navigation={{
+                prevEl: ".swiper-prev-stat",
+                nextEl: ".swiper-next-stat",
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                576: {
+                  slidesPerView: 2,
+                  spaceBetween: 25,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+
+                991: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
+                1200: {
+                  slidesPerView: 5,
+                  spaceBetween: 25,
+                },
+              }}>
+              {stats.map((stat, index) => {
+                return (
+                  <SwiperSlide xs={6} lg={2} key={stat.id}>
+                    <div className={styles.statCard}>
+                      <h3>{stat.title}</h3>
+                      <small>{stat.caption}</small>
+                      <div className={styles.statsIcon}>
+                        <img src={stat.icon} alt="Icons" />
+                      </div>
                     </div>
-                  </div>
-                </Col>
-              );
-            })}
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </Row>
         </Container>
       </div>

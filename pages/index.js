@@ -115,7 +115,6 @@ function Home() {
 
   return (
     <>
-    
       <Head>
         <title>Home | Vikasmantra Public School</title>
         <meta
@@ -127,7 +126,7 @@ function Home() {
       <section>
         <Container fluid className="p-0">
           <Row className="g-0">
-            <Col md={6}>
+            <Col md={6} className="d-none d-md-block">
               <div className="overflow-hidden">
                 <Splide
                   ref={primaryRef}
@@ -158,7 +157,8 @@ function Home() {
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
                         <AdmissionsBtnWrapper
-                          schoolName="Mahendran World City"
+                        buttonlink="/enquiry-form"
+                          schoolName="Chengalpattu"
                           bgStyles={{
                             backgroundColor: "#9AEDFFE5",
                             color: "black",
@@ -181,7 +181,9 @@ function Home() {
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
                         <AdmissionsBtnWrapper
-                          schoolName="Mahendran World City"
+                        buttonlink="/enquiry-form"
+
+                          schoolName="Chengalpattu"
                           bgStyles={{
                             backgroundColor: "#9AEDFFE5",
                             color: "black",
@@ -193,7 +195,7 @@ function Home() {
                 </Splide>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} className="d-none d-md-block">
               <div className="overflow-hidden">
                 <Splide
                   ref={secondaryRef}
@@ -226,6 +228,8 @@ function Home() {
                           momentum.
                         </h2>
                         <AdmissionsBtnWrapper
+                        buttonlink="/enquiry-form"
+
                           schoolName="Mambakkam"
                           bgStyles={{
                             backgroundColor: "#E02D53",
@@ -250,6 +254,129 @@ function Home() {
                           momentum.
                         </h2>
                         <AdmissionsBtnWrapper
+                        buttonlink="/enquiry-form"
+
+                          schoolName="Mambakkam"
+                          bgStyles={{
+                            backgroundColor: "#E02D53",
+                            color: "white",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </SplideSlide>
+                </Splide>
+              </div>
+            </Col>
+
+            <Col xs={12} className="d-block d-md-none">
+              <div className="overflow-hidden">
+                <Splide
+                  options={{
+                    spacing: 0,
+                    type: "loop",
+                    pagination: true,
+                    arrows: false,
+                    autoplay: true,
+                    interval: 6000,
+                    loop: true,
+                    lazyLoad: "nearby",
+                  }}
+                  aria-label="My Favorite Images">
+                  <SplideSlide key="slide-1">
+                    <div className={styles.swiperCont}>
+                      <div className={styles.sliderImagesWrapper}>
+                        <img
+                          className={styles.sliderImageduo}
+                          src="/assets/banners/homebannernew.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div className={styles.sliderContentWrapper}>
+                        <h2>
+                          Success in wanted Steps,Excellence in Every Lesson
+                        </h2>
+                        <AdmissionsBtnWrapper
+                        buttonlink="/enquiry-form"
+
+                          schoolName="Chengalpattu"
+                          bgStyles={{
+                            backgroundColor: "#9AEDFFE5",
+                            color: "black",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide key="slide-2">
+                    <div className={styles.swiperCont}>
+                      <div className={styles.sliderImagesWrapper}>
+                        <img
+                          className={styles.sliderImageduo}
+                          src="/assets/banners/homebannernew2.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div className={styles.sliderContentWrapper}>
+                        <h2>
+                          Every child’s growth is guided with meaning and
+                          momentum.
+                        </h2>
+                        <AdmissionsBtnWrapper
+                        buttonlink="/enquiry-form"
+
+                          schoolName="Mambakkam"
+                          bgStyles={{
+                            backgroundColor: "#E02D53",
+                            color: "white",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </SplideSlide>
+                  <SplideSlide key="slide-3">
+                    <div className={styles.swiperCont}>
+                      <div className={styles.sliderImagesWrapper}>
+                        <img
+                          className={styles.sliderImageduo}
+                          src="/assets/banners/homebannernew.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div className={styles.sliderContentWrapper}>
+                        <h2>
+                          Success in wanted Steps,Excellence in Every Lesson
+                        </h2>
+                        <AdmissionsBtnWrapper
+                        buttonlink="/enquiry-form"
+
+                          schoolName="Chengalpattu"
+                          bgStyles={{
+                            backgroundColor: "#9AEDFFE5",
+                            color: "black",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </SplideSlide>
+                  <SplideSlide key="slide-4">
+                    <div className={styles.swiperCont}>
+                      <div className={styles.sliderImagesWrapper}>
+                        <img
+                          className={styles.sliderImageduo}
+                          src="/assets/banners/homebannernew2.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div className={styles.sliderContentWrapper}>
+                        <h2>
+                          Every child’s growth is guided with meaning and
+                          momentum.
+                        </h2>
+                        <AdmissionsBtnWrapper
+                        buttonlink="/enquiry-form"
+
                           schoolName="Mambakkam"
                           bgStyles={{
                             backgroundColor: "#E02D53",
@@ -274,7 +401,7 @@ function Home() {
       <TabsHome />
       <Testimonials />
       <div className={styles.floatingLinks}>
-        <Link href="/campaign" legacyBehavior>
+        <Link href="/enquiry-form" legacyBehavior>
           <a className="" target="_blank" rel="noopener noreferrer">
             <svg
               width="40"
@@ -306,7 +433,7 @@ function Home() {
           </a>
         </Link>
 
-        <Link href="/campaign" legacyBehavior>
+        <Link href="/enquiry-form" legacyBehavior>
           <a className="" target="_blank" rel="noopener noreferrer">
             <svg
               width="40"

@@ -797,8 +797,8 @@ p {
   position: relative;
   width: 100%;
   background-color: #452c2c;
-  /* height: 100%; */
-  height: fit-content;
+  height: 98%;
+  /* height: fit-content; */
   overflow: hidden;
   display: flow-root;
 }
@@ -1837,7 +1837,7 @@ tr {
   }
 
   .homeheader.home {
-    z-index: 2;
+    z-index: 10000;
     position: unset;
   }
 
@@ -2367,7 +2367,7 @@ input[type="number"] {
 }
 @media only screen and (max-width: 768px) {
   .watsapp-icon .whatsappImg {
-    bottom: 130px;
+    bottom: 100px;
   }
   .callBtn {
     bottom: 77px;
@@ -2384,11 +2384,13 @@ input[type="number"] {
 }
 
 
-@media only screen and (max-width:991px)
-{
+
   .homeheader{
     position: sticky !important;
     top:0;
     background-color:#fff ;
   }
+
+  .dropdown-menu.show{
+    z-index: 10000;
 }

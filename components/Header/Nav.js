@@ -156,16 +156,18 @@ const Nav = () => {
                         </a>
                       </Link>
                       ): (
+                        ""
                         
-                      <Link href="tel:+91-7092450450" legacyBehavior>
-                        <a>
-                          <FontAwesomeIcon
-                            icon={faPhone}
-                            className={styles.callIcon}
-                          />
-                          +91 70924 50450
-                        </a>
-                      </Link>)
+                      // <Link href="tel:+91-7092450450" legacyBehavior>
+                      //   <a>
+                      //     <FontAwesomeIcon
+                      //       icon={faPhone}
+                      //       className={styles.callIcon}
+                      //     />
+                      //     +91 70924 50450
+                      //   </a>
+                      // </Link>
+                      )
                       }
                     </button>
                   </div>
