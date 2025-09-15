@@ -104,7 +104,7 @@ const MessageFromPrincipal = () => {
                 }
               >
                 <img
-                  src="/assets/banners/principal.png"
+                  src="/assets/banners/Principal-mambakkam.jpeg"
                   alt="image"
                   className={styles.PrincipalImg + " AnimeElement"}
                 />

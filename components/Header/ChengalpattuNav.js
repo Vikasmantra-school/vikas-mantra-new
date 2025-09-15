@@ -111,7 +111,7 @@ const ChengalpattuNav = () => {
                 </Button>
 
                 <button className={styles.drpDownValue}>
-                  {isChengalpattu && "Chengalpattu"}
+                  {isChengalpattu ? ( "Chengalpattu") : ("Chengalpattu")}
                 </button>
               </div>
               <Button className={styles.firstbtn}>

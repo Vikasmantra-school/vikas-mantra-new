@@ -111,10 +111,10 @@ const Nav = () => {
     <>
       <header
         className={
-          "homeheader " +
+          "homeheader stickyHeader" +
           " " +
           pageName +
-          ` ${pageName === "" ? "home" : "position-sticky"}`
+          ` ${pageName === "" ? "home" : "position-relative"}`
         }>
         <nav className={styles.navTransparent + " navbar-expand-lg py-2"}>
           <div className="container">

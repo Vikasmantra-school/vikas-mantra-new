@@ -1,32 +1,37 @@
 export const stats = [
   {
     id: 1,
-    title: "1500+",
+    value: 1500,
+    suffix:"+",
     caption: "Students Enrolled",
     icon: "/images/icon/homepage/local_library.png",
   },
 
   {
     id: 2,
-    title: "60+",
+    value: 60,
+    suffix:"+",
     caption: "60 + classrooms",
     icon: "/images/icon/homepage/activity_zone.png",
   },
   {
     id: 4,
-    title: "1:32",
+    value:1,
+    suffix:":32",
     caption: "Teacher–Student Ratio(Primary to Senior Secondary)",
     icon: "/images/icon/homepage/av_timer.png",
   },
   {
     id: 3,
-    title: "1:16",
+    value:1,
+    suffix:":16",
     caption: "Teacher–Student Ratio(Primary to Senior Secondary)",
     icon: "/images/icon/homepage/safety_divider.png",
   },
   {
     id: 5,
-    title: "2K +",
+    value:2,
+    suffix:"K +",
     caption: "Happy parents",
     icon: "/images/icon/homepage/grouped_bar_chart.png",
   },

@@ -10,7 +10,42 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { delay } from "framer-motion";
 
+import { useEffect, useRef } from "react";
+
 const Stats = () => {
+  const countersRef = useRef([]);
+
+useEffect(() => {
+  (async () => {
+    const gsap = (await import("gsap")).default;
+    const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+    gsap.registerPlugin(ScrollTrigger);
+
+    countersRef.current.forEach((el, i) => {
+      if (!el) return;
+      const end = stats[i].value;
+      const suffix = stats[i].suffix || "";
+
+      let obj = { val: 0 };
+
+      gsap.to(obj, {
+        val: end,
+        duration: 2,
+        ease: "power1.out",
+        onUpdate: () => {
+          el.innerText = Math.floor(obj.val) + suffix;
+        },
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          once: true,
+        },
+      });
+    });
+  })();
+}, []);
+
+
   return (
     <section className={styles.homeaboutSection}>
       <div className={styles.aboutVikasSmall}>
@@ -128,7 +163,10 @@ const Stats = () => {
                 return (
                   <SwiperSlide xs={6} lg={2} key={stat.id}>
                     <div className={styles.statCard}>
-                      <h3>{stat.title}</h3>
+                      <h3 ref={(el) => (countersRef.current[index] = el)}>
+                        {stat.value}
+                        {stat.suffix}
+                      </h3>
                       <small>{stat.caption}</small>
                       <div className={styles.statsIcon}>
                         <img src={stat.icon} alt="Icons" />

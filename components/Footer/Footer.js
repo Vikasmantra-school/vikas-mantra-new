@@ -153,7 +153,9 @@ export const Footer = () => {
                       name="Campus"
                       onChange={(event) => setDropdownValue(event.target.value)}
                       value={dropdownValue}>
-                      <option value="" disabled>Select Campus</option>
+                      <option value="" disabled>
+                        Select Campus
+                      </option>
                       <option value="Chengalpattu">Chengalpattu</option>
                       <option value="Mambakkam">Mambakkam</option>
                     </select>
@@ -205,17 +207,40 @@ export const Footer = () => {
                     <h3>CONTACT US</h3>
                     {isMambakkam ? (
                       <>
-                        <p> Vandalur, Kelambakkam Road, </p>
-                        <p> Mambakkam, Chennai - 600127.</p>
-                        <p> info.mambakkam@vikasmantra.org</p>
-                        <p> +91 74 484 50 450</p>
+                        <p>Vikas Mantra Public School </p>
+                        <p> Vandalur to Kelambakkam Road, </p>
+                        <p> Mambakkam, Chennai,</p>
+                        <p>Tamil Nadu 600127</p>
+                        <p>
+                          Landline:{" "}
+                          <a href="tel:+914427471689">044-2747-1689</a>
+                        </p>
+                        <p>
+                          Mobile: <a href="tel:+917448450450">7448 450 450</a>
+                        </p>
+
+                        <p>
+                          <a
+                            href="mailto:admissions.mambakkam@vikasmantra.org "
+                            target="_blank">
+                            admissions.mambakkam@vikasmantra.org
+                          </a>
+                        </p>
+                        
                       </>
                     ) : (
                       <>
                         <p> S.No:168,168/3, Off Mahindra World City, </p>
                         <p> Anjur 603204, Chengalpattu</p>
                         <p> info@vikasmantra.org</p>
-                        <p> admissions@vikasmantra.org</p>
+
+                        <p>
+                          <a
+                            href="mailto:info.mambakkam@vikasmantra.org "
+                            target="_blank">
+                            info.mambakkam@vikasmantra.org
+                          </a>
+                        </p>
                       </>
                     )}
                   </div>
@@ -290,13 +315,13 @@ export const Footer = () => {
                   <Image src={FbLogo} alt="Facebook" width={32} height={32} />
                 </a>
                 <a
-                  href="https://www.youtube.com/"
+                  href="http://www.youtube.com/@vikasmantrapublicschool"
                   target="_blank"
                   rel="noopener noreferrer">
                   <Image src={YtLogo} alt="YouTube" width={32} height={32} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/company/vikas-mantra-public-school/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bcp2CcnmFQCG8whcGAXfijQ%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer">
                   <Image

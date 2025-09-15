@@ -48,7 +48,7 @@ function HomeSlider({ ref }) {
 
                       <p className='box AnimeElement'>
                         STD Xth Toppers & Top Achievers (2023-2024)
-                      </p> */}
+                      </p> */}<a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
                     </div>
                   </div>
                 </div>
@@ -102,6 +102,7 @@ function HomeSlider({ ref }) {
                         Vikas Mantra Public School offers CBSE Curriculum and
                         was launched in the academic year 2019-22.
                       </p>
+                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
                     </div>
                   </div>
                 </div>
@@ -122,6 +123,7 @@ function HomeSlider({ ref }) {
                         Vikas Mantra Public School offers CBSE Curriculum and
                         was launched in the academic year 2019-22.
                       </p>
+                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
                     </div>
                   </div>
                 </div>
@@ -176,6 +178,7 @@ function HomeSlider({ ref }) {
                         Academic Excellence ( Private School ) of the year 2021
                         - 22
                       </p>
+                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
                     </div>
                   </div>
                 </div>
@@ -203,6 +206,7 @@ function HomeSlider({ ref }) {
                         indian cricket player Mr.Subramaniam Badrinath who is
                         our chief guest.
                       </p>
+                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
                     </div>
                   </div>
                 </div>
@@ -221,6 +225,7 @@ function HomeSlider({ ref }) {
                         indian cricket player Mr.Subramaniam Badrinath who is
                         our chief guest.
                       </p>
+                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
                     </div>
                   </div>
                 </div>
@@ -249,6 +254,7 @@ function HomeSlider({ ref }) {
                         A fabulous march past performed by our school kids on
                         kiddies annual sports meet.
                       </p>
+                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
                     </div>
                   </div>
                 </div>
@@ -268,6 +274,7 @@ function HomeSlider({ ref }) {
                         A fabulous march past performed by our school kids on
                         kiddies annual sports meet.
                       </p>
+                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
                     </div>
                   </div>
                 </div>
