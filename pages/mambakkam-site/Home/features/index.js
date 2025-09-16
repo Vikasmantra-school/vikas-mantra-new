@@ -21,6 +21,14 @@ const Features = () => {
               modules={[Navigation, Autoplay, Pagination]}
               spaceBetween={20}
               slidesPerView={2.1}
+              loop={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              style={{
+                height: "300px",
+              }}
               breakpoints={{
                 0: {
                   slidesPerView: 1,
@@ -34,20 +42,18 @@ const Features = () => {
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
-                991: {
+                1100: {
                   slidesPerView: 4,
                   spaceBetween: 20,
                 },
-                
-
               }}
               navigation={{
                 prevEl: ".swiper-prev-blog",
                 nextEl: ".swiper-next-blog",
               }}
-               pagination={{
-              clickable: true, 
-            }}>
+              pagination={{
+                clickable: true,
+              }}>
               <SwiperSlide>
                 <div className={styles.featureBlock}>
                   <img src="/images/icon/mambakkam/holisitic-icon.png" />

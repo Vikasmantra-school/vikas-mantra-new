@@ -13,7 +13,7 @@ const Testimonials = () => {
     {
       id: 1,
       image: "/images/test-vikas.png",
-      name: " Parent of  Kavitha (SR.KG)",
+      name: " Parent of  Kavitha",
       role: "SR.KG",
       // starRating: 4, 
       description:

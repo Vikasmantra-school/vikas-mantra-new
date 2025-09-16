@@ -30,7 +30,7 @@ useEffect(() => {
 
       gsap.to(obj, {
         val: end,
-        duration: 2,
+        duration: 1.35,
         ease: "power1.out",
         onUpdate: () => {
           el.innerText = Math.floor(obj.val) + suffix;

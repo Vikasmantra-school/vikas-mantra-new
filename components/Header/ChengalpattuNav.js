@@ -74,7 +74,7 @@ const ChengalpattuNav = () => {
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false">
-                      campus
+                      Campus
                       <svg
                         width="22"
                         height="22"
@@ -142,7 +142,7 @@ const ChengalpattuNav = () => {
                           role="button"
                           data-bs-toggle="dropdown"
                           aria-expanded="false">
-                         { isChengalpattu ? ("Chengalpattu"):("Campus")}
+                         { isChengalpattu ? ("Chengalpattu"):("Chengalpattu")}
                           <svg
                             width="22"
                             height="22"

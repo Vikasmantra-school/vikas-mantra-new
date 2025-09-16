@@ -38,20 +38,21 @@
 }
 
 .drpDownValue{
-    background: transparent;
-    border: 1px solid #DCDCDC;
-    padding: 7px 18px;
+    background: rgba(255, 255, 255, 0.562);
+    backdrop-filter: blur(8px);
+    border: none;
+    padding: 8px 18px;
     font-size: 14px;
     border-radius: 1px;
-    border-left: none;
-    color: #fff;
+  
+    color: rgba(0, 0, 0, 0.822);
 }
 .customDropdownToggle::after {
   display: none !important; 
 }
 
 .navTransparent {
-    z-index: 999;
+    /* z-index: 999; */
     overflow: visible;
 }
 

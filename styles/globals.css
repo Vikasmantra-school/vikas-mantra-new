@@ -799,7 +799,8 @@ p {
   background-color: #452c2c;
   height: 98%;
   /* height: fit-content; */
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x:hidden;
   display: flow-root;
 }
 
@@ -838,8 +839,12 @@ p {
 
 .mob-menu .nav__sub.is-active {
   opacity: 1;
+  overflow-y: scroll;
   visibility: visible;
   transform: translateX(0%);
+}
+.mob-menu .nav__sub.is-active .nav{
+  overflow: hidden !important;
 }
 
 /* hamburger menu  */
