@@ -85,7 +85,7 @@ const EnquiryForm = () => {
       </section>
 
       <section
-        className={"VectorDot position-relative pb80" + " " + styles.formTop}>
+        className={" position-relative pb80" + " " + styles.formTop}>
         <div className="container">
           <div className="row">
             <div

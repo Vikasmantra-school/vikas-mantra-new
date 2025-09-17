@@ -33,7 +33,7 @@
 .red { background-color: rgba(255, 148, 148, 1); }
 .grey { background-color: rgba(201, 201, 201, 1); } */
 
-.vectorSpiral{position: relative;}
+.vectorSpiral{position: relative; overflow: hidden;}
 
 
 .vectorSpiral::before{

@@ -92,9 +92,9 @@ input.formInput::placeholder {
   .quickLinksCol,
   .aboutCol,
   .logoCol,
-  .formCol,
-  .socialRow {
-    padding: 10px 20px;
+  .formCol
+   {
+    padding: 15px 20px;
   }
 
   .bottomText {

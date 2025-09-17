@@ -207,6 +207,7 @@ export const Footer = () => {
                     <h3>CONTACT US</h3>
                     {isMambakkam ? (
                       <>
+                      
                         <p>Vikas Mantra Public School </p>
                         <p> Vandalur to Kelambakkam Road, </p>
                         <p> Mambakkam, Chennai,</p>
@@ -335,6 +336,7 @@ export const Footer = () => {
                       </>
                     ) : (
                       <>
+                      <h5>Mambakkam</h5>
                         <p>Vikas Mantra Public School </p>
                         <p> Vandalur to Kelambakkam Road, </p>
                         <p> Mambakkam, Chennai,</p>
@@ -401,6 +403,7 @@ export const Footer = () => {
                           </a>
                         </div>
                         <br />
+                         <h5>Chengalpattu</h5>
                         <p> S.No:168,168/3, Off Mahindra World City, </p>
                         <p> Anjur 603204, Chengalpattu</p>
                         <p> info@vikasmantra.org</p>
