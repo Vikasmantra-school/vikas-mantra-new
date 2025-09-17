@@ -548,7 +548,7 @@ const ChengalpattuNav = () => {
                     pageName === "events" ? "active nav-item" : "nav-item"
                   }>
                   <Link legacyBehavior href="/chengalpattu-site/events">
-                    <a className="nav-link">Events</a>
+                    <a className="nav-link">Gallery</a>
                   </Link>
                 </li>
 

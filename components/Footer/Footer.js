@@ -487,7 +487,7 @@ export const Footer = () => {
                         </Link>
 
                         <Link href="/events" legacyBehavior>
-                          <a className="nav-link">Events</a>
+                          <a className="nav-link">Gallery</a>
                         </Link>
 
                         <Link href="/admissions" legacyBehavior>
@@ -526,7 +526,7 @@ export const Footer = () => {
                           <a className="nav-link">EnquiryForm</a>
                         </Link>
                         <Link href="/events" legacyBehavior>
-                          <a className="nav-link">Events</a>
+                          <a className="nav-link">Gallery</a>
                         </Link>
                       </div>
 
