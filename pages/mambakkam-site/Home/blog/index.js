@@ -17,9 +17,19 @@ const Blog = () => {
       <section className={styles.blogSection + " " + "mbkm-section-padding"}>
         <div className={styles.cust_container}>
           <div className="row">
+            <div className="col-8 col-md-12">
             <h2 className={styles.blogTitle}>What’s Happening</h2>
+
+            </div>
+            <div className="col d-md-none d-flex justify-content-center align-items-center">
+              <a
+                className={styles.viewAllBtnMob}
+                href="/mambakkam-site/about/blog">
+                View all
+              </a>
+            </div>
           </div>
-          <div className="position-relative"> 
+          <div className="position-relative">
             <Swiper
               modules={[Navigation, Autoplay]}
               spaceBetween={20}
@@ -128,7 +138,7 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row ">
             <div className="mt-5 d-flex align-items-end justify-content-end">
               <a
                 className={styles.viewAllBtn}

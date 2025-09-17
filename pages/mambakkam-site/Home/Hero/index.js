@@ -27,7 +27,7 @@ const HeroBanner = () => {
               <div>
                 <h1 className={styles.bannerTitle}>
                   Young Minds To <br />
-                  Explore, Discover & <br />
+                  Explore, Discover & <br className="d-none d-md-block"/>
                   Grow <span className={styles.highlight}>Every Day!</span>
                 </h1>
                 <div className={styles.admissionTag}>

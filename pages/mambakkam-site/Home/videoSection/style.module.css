@@ -36,5 +36,6 @@
   .videoOverlayCont {
     width: auto;
     left: 0;
+    display: none;
   }
 }

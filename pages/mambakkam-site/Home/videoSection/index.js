@@ -34,12 +34,24 @@ const VideoSection = () => {
             loop
             playsInline
             onClick={togglePlayPause}
-            className="bottomToTop">
+            className="bottomToTop d-block d-md-none">
             <source
               src="/assets/videos/school-video-mbl.mp4"
               type="video/mp4"
-              media="(max-width: 767px)"
+              
             />
+          </video>
+          <video
+            ref={videoRef}
+            width="100%"
+            height="auto"
+            autoPlay
+            muted
+            loop
+            playsInline
+            onClick={togglePlayPause}
+            className="bottomToTop d-none d-md-block">
+
             <source
               src="/assets/videos/school-video-new.mp4"
               type="video/mp4"

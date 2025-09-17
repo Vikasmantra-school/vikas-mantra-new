@@ -10,7 +10,7 @@ const MessageFromPrincipal = () => {
 
       <section className="pt-4 AnimeStarts">
         <div className="container position-relative">
-          <div className={styles + "row py-5"}>
+          <div className={"row py-3 py-md-5"}>
             <div className="col-md-6">
               <div className="AnimeStarts">
                 <h2 className="AnimeElement">Message from the Principal</h2>
@@ -41,7 +41,7 @@ const MessageFromPrincipal = () => {
                 </div>
 
                 <div className="AnimeStarts">
-                  <p className="pt-5 AnimeElement">
+                  <p className="pt-3 AnimeElement">
                     Greetings from Vikas Mantra Public School!
                   </p>
                 </div>
@@ -99,12 +99,24 @@ const MessageFromPrincipal = () => {
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative">
               <div
                 className={
-                  "imgBgColor pastelBrown3 imgUp AnimeStarts " +
+                  "imgBgColor pastelBrown3 imgUp AnimeStarts d-none d-md-block " +
                   styles.ImgMargin
                 }
               >
                 <img
                   src="/assets/banners/Principal-mambakkam.jpeg"
+                  alt="image"
+                  className={styles.PrincipalImg + " AnimeElement"}
+                />
+              </div>
+               <div
+                className={
+                  "imgBgColor pastelBrown3 imgUp AnimeStarts d-block d-md-none" +
+                  styles.ImgMargin
+                }
+              >
+                <img
+                  src="/assets/banners/Principal-mambakkam-mob.jpeg"
                   alt="image"
                   className={styles.PrincipalImg + " AnimeElement"}
                 />

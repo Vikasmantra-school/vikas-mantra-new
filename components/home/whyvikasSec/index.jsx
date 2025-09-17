@@ -12,9 +12,11 @@ const WhyVikasSection = () => {
             <div className={styles.GridWrapper}>
               {vikasdataGrid1.map((item, index) => (
                 <div className={`${styles.GridItem} AnimeStarts`} key={item.id}>
-                  <div className={`${styles.gridImage} AnimeElement`}>
+                  <a href="/learning">
+                    <div className={`${styles.gridImage} AnimeElement`}>
                     <img src={item.imgUrl} alt={item.title} />
                   </div>
+                  </a>
                   <h3 className={`${styles.gridTitle} AnimeElement`}>{item.title}</h3>
                   <div className={`${styles.gridDesc} AnimeElement`}>{item.desc}</div>
                 </div>
@@ -28,9 +30,11 @@ const WhyVikasSection = () => {
               ></div>
               {vikasdataGrid2.map((item, index) => (
                 <div className={`${styles.GridItem} AnimeStarts`} key={item.id}>
-                  <div className={`${styles.gridImage} AnimeElement`}>
+                  <a href="/learning">
+                    <div className={`${styles.gridImage} AnimeElement`}>
                     <img src={item.imgUrl} alt={item.title} />
                   </div>
+                  </a>
                   <h3 className={`${styles.gridTitle} AnimeElement`}>{item.title}</h3>
                   <div className={`${styles.gridDesc} AnimeElement`}>{item.desc}</div>
                 </div>

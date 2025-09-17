@@ -48,7 +48,7 @@ const ChengalpattuNav = () => {
         }>
         <nav className={styles.navTransparent + " navbar-expand-lg navbar"}>
           <div className="container">
-            <Link href="/" legacyBehavior>
+            <Link href="/chengalpattu-site" legacyBehavior>
               <a className={styles.mainLogo + " " + "navbar-brand"}>
                 {pageName === "" ? (
                   <picture>
@@ -68,7 +68,7 @@ const ChengalpattuNav = () => {
                 <Button className={styles.drpDownBtn}>
                   <li className="nav-item dropdown m-0 p-0">
                     <a
-                      className={` d-flex align-items-center gap-2 text-white nav-link dropdown-toggle m-0 p-0 ${styles.customDropdownToggle}`}
+                      className={` d-flex align-items-center gap-2 text-white nav-link dropdown-toggle m-0  ${styles.customDropdownToggle}`}
                       href="#"
                       id="campusDropdown"
                       role="button"

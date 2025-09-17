@@ -167,7 +167,7 @@ useEffect(() => {
                         {stat.value}
                         {stat.suffix}
                       </h3>
-                      <small>{stat.caption}</small>
+                      <small className="text-center">{stat.caption}</small>
                       <div className={styles.statsIcon}>
                         <img src={stat.icon} alt="Icons" />
                       </div>

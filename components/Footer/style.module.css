@@ -1,68 +1,66 @@
 .contactUs p {
-    margin: 0px;
+  margin: 0px;
 }
 
 .quickLink a {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 .section {
-    background-color: #452C2C;
-    color: #fff;
+  background-color: #452c2c;
+  color: #fff;
 }
 
 .section * {
-    color: #fff;
+  color: #fff;
 }
 
 .hrLine {
-    height: 2px;
-    color: #fff;
-    font-weight: 400;
-    margin-top: 35px;
+  height: 2px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 0 !important;
 }
 
 .sendBtn {
-    padding: 5px 35px;
-    color: #AEAEAE;
+  padding: 5px 35px;
+  color: #000;
 }
 
 .formInput {
-    color: #222;
-    padding: 15px;
+  color: #222;
+  padding: 15px;
 }
-
 
 /* Style the select box itself */
 .formInput {
-  background-color: #fff; 
-  color: #00000063; 
-  cursor: pointer;         
+  background-color: #fff;
+  color: #00000063;
+  cursor: pointer;
 }
 
-
 .formInput option {
-  background-color: #fff; 
-  color: #000;            
+  background-color: #fff;
+  color: #000;
 }
 
 /* Placeholder specifically */
 .formInput option[value=""] {
-  color: #888; 
+  color: #888;
 }
 
 input.formInput::placeholder {
-    /* Chrome/Opera/Safari */
-    color: #AEAEAE;
+  /* Chrome/Opera/Safari */
+  color: #aeaeae;
 }
 
 .bottomText {
-
-    font-size: 15px !important;
+  font-size: 15px !important;
 }
 .socialRow {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
   margin-top: 1rem;
@@ -80,46 +78,45 @@ input.formInput::placeholder {
   opacity: 0.8;
 }
 
-
 @media only screen and (max-width: 660px) {
+ .socialRow {
+    padding-block: 0 !important;
+   
+    justify-content: flex-start;
+  }
+  .bottomText {
+    padding: 10px;
+  }
 
-    .contactUs,
-    .quickLinksCol,
-    .aboutCol,
-    .logoCol,
-    .formCol {
-        padding: 20px;
-    }
+  .contactUs,
+  .quickLinksCol,
+  .aboutCol,
+  .logoCol,
+  .formCol,
+  .socialRow {
+    padding: 10px 20px;
+  }
 
-    .bottomText {
-        padding: 10px;
-    }
-
-    .contactUs,
-    .quickLinksCol,
-    .aboutCol,
-    .logoCol,
-    .formCol {
-        padding: 20px;
-    }
-
-    .bottomText {
-        padding: 10px;
-    }
+  .bottomText {
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width: 661px) and (max-width: 767px) {
+  .contactUs,
+  .quickLinksCol,
+  .aboutCol,
+  .logoCol,
+  .formCol,
+  .socialRow {
+    padding: 20px;
+  }
+   
 
-    .contactUs,
-    .quickLinksCol,
-    .aboutCol,
-    .logoCol,
-    .formCol {
-        padding: 20px;
-    }
 }
 
+@media only screen and (min-width: 991px) {
+}
 
-@media only screen and (min-width: 991px) {}
-
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}

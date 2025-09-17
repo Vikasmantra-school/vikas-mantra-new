@@ -162,7 +162,7 @@ const Testimonials = () => {
             {cardsContent.map((card) => (
               <SwiperSlide className="py-4" key={card.id}>
                 <Card className={styles.card}>
-                  <Card.Img variant="top" src={card.image} />
+                  {/* <Card.Img variant="top" src={card.image} /> */}
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={`${styles.cardTitle}`}>
                       {card.name}

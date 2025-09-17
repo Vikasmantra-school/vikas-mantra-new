@@ -88,10 +88,9 @@ const Nav = () => {
     menu.classList.toggle("mob-menu-hdden");
     hamburgerMenu.classList.toggle("is-active");
 
-    if(hamburgerMenu.classList.contains("is-active")){
-      document.body.style.overflow= "hidden"
-    }
-    else{
+    if (hamburgerMenu.classList.contains("is-active")) {
+      document.body.style.overflow = "hidden";
+    } else {
       document.body.style.overflow = "";
     }
   }
@@ -120,7 +119,15 @@ const Nav = () => {
           <div className="container">
             <div className="row">
               <div className="col-5 col-lg-3 d-flex align-items-center">
-                <Link href="/" legacyBehavior>
+                <Link
+                  href={
+                    isChengalpattu
+                      ? " /chengalpattu-site"
+                      : isMambakkam
+                      ? "/mambakkam-site"
+                      : "/"
+                  }
+                  legacyBehavior>
                   <a className={styles.mainLogo + " " + "navbar-brand"}>
                     <img src="/assets/common-logo.png" alt="Vikas Mantra" />
                     {/* {pageName === "" ? (
@@ -145,44 +152,43 @@ const Nav = () => {
                   </div>
                   <div>
                     <button className={styles.callBtn}>
-                      { isMambakkam ? ( 
+                      {isMambakkam ? (
                         <Link href="tel:+9174484508450" legacyBehavior>
-                        <a>
-                          <FontAwesomeIcon
-                            icon={faPhone}
-                            className={styles.callIcon}
-                          />
-                          +91 744845 08450
-                        </a>
-                      </Link>
-                      ): (
+                          <a>
+                            <FontAwesomeIcon
+                              icon={faPhone}
+                              className={styles.callIcon}
+                            />
+                            +91 744845 08450
+                          </a>
+                        </Link>
+                      ) : (
                         ""
-                        
-                      // <Link href="tel:+91-7092450450" legacyBehavior>
-                      //   <a>
-                      //     <FontAwesomeIcon
-                      //       icon={faPhone}
-                      //       className={styles.callIcon}
-                      //     />
-                      //     +91 70924 50450
-                      //   </a>
-                      // </Link>
-                      )
-                      }
+
+                        // <Link href="tel:+91-7092450450" legacyBehavior>
+                        //   <a>
+                        //     <FontAwesomeIcon
+                        //       icon={faPhone}
+                        //       className={styles.callIcon}
+                        //     />
+                        //     +91 70924 50450
+                        //   </a>
+                        // </Link>
+                      )}
                     </button>
                   </div>
 
                   <div>
                     <Button className={styles.drpDownBtn}>
-                      <li className="nav-item dropdown m-0 p-0">
+                      <li className="nav-item dropdown m-0">
                         <a
-                          className={` d-flex align-items-center gap-2 text-white nav-link dropdown-toggle m-0 p-0 ${styles.customDropdownToggle}`}
+                          className={` d-flex align-items-center gap-2 text-white nav-link dropdown-toggle m-0 ${styles.customDropdownToggle}`}
                           href="#"
                           id="campusDropdown"
                           role="button"
                           data-bs-toggle="dropdown"
                           aria-expanded="false">
-                          campus
+                          Campus
                           <svg
                             width="22"
                             height="22"
@@ -290,7 +296,6 @@ const Nav = () => {
                               </a>
                             </Link>
                           </li>
-                         
                         </ul>
                       </li>
                       <li
@@ -303,7 +308,7 @@ const Nav = () => {
                           <a className="nav-link">Admissions</a>
                         </Link>
                       </li>
-                      
+
                       <li className="nav-item dropdown">
                         <Link href="/learning" legacyBehavior>
                           <a
@@ -343,21 +348,27 @@ const Nav = () => {
                               </a>
                             </Link>
                           </li>
-                          
                         </ul>
                       </li>
-                      
+
                       <li
                         className={
                           pageName === "enquiry-form"
                             ? "active nav-item"
                             : "nav-item"
                         }>
-                        <Link legacyBehavior href="https://www.parentsalarmapp.com/" >
-                          <a className="nav-link" target="_blank" rel="noopener noreferrer">VMPS Login</a>
+                        <Link
+                          legacyBehavior
+                          href="https://www.parentsalarmapp.com/">
+                          <a
+                            className="nav-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            VMPS Login
+                          </a>
                         </Link>
                       </li>
-                     
+
                       <li
                         className={
                           pageName === "contact"
@@ -381,7 +392,7 @@ const Nav = () => {
                     </ul>
                   </div>
                 </nav>
-                <div className="d-lg-none d-flex align-items-center justify-content-around">
+                <div className="d-lg-none d-flex align-items-center justify-content-around h-100">
                   <div className="d-flex flex-column">
                     <Button className={styles.drpDownBtn}>
                       <li className="nav-item dropdown m-0 p-0 list-unstyled">
@@ -392,7 +403,7 @@ const Nav = () => {
                           role="button"
                           data-bs-toggle="dropdown"
                           aria-expanded="false">
-                         { isMambakkam ? ("Mambakkam"):("Campus")}
+                          {isMambakkam ? "Mambakkam" : "Campus"}
                           <svg
                             width="22"
                             height="22"
@@ -447,7 +458,7 @@ const Nav = () => {
                 </div>
               </div>
 
-              <MobileNav subMenu={subMenu}  selectedCampus={selectedCampus} />
+              <MobileNav subMenu={subMenu} selectedCampus={selectedCampus} />
             </div>
           </div>
         </nav>
@@ -486,7 +497,7 @@ const Nav = () => {
                     className=" h-100 collapse navbar-collapse desktop-menu justify-content-end"
                     id="">
                     {isMambakkam && (
-                      <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end gap-5" >
+                      <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end gap-5">
                         <li
                           className={
                             pageName === "" ? "active nav-item" : "nav-item"
@@ -513,7 +524,9 @@ const Nav = () => {
 
                           <ul className="dropdown-menu">
                             <li>
-                              <Link href="/mambakkam-site/about/message-from-principal" legacyBehavior>
+                              <Link
+                                href="/mambakkam-site/about/message-from-principal"
+                                legacyBehavior>
                                 <a className="dropdown-item">
                                   Principal's Message
                                 </a>
@@ -542,15 +555,17 @@ const Nav = () => {
                           </Link>
                           <ul className="dropdown-menu">
                             <li>
-                              <Link href="/mambakkam-site/campus/classrooms" legacyBehavior>
+                              <Link
+                                href="/mambakkam-site/campus/classrooms"
+                                legacyBehavior>
                                 <a className="dropdown-item">Classrooms</a>
                               </Link>
                             </li>
 
-                      
-
                             <li>
-                              <Link href="/mambakkam-site/campus/laboratory" legacyBehavior>
+                              <Link
+                                href="/mambakkam-site/campus/laboratory"
+                                legacyBehavior>
                                 <a className="dropdown-item">Laboratories</a>
                               </Link>
                             </li>
@@ -565,22 +580,26 @@ const Nav = () => {
                               </Link>
                             </li>
 
-                          
-
                             <li>
-                              <Link href="/mambakkam-site/campus/technology" legacyBehavior>
+                              <Link
+                                href="/mambakkam-site/campus/technology"
+                                legacyBehavior>
                                 <a className="dropdown-item">Technology</a>
                               </Link>
                             </li>
 
                             <li>
-                              <Link href="/mambakkam-site/campus/security" legacyBehavior>
+                              <Link
+                                href="/mambakkam-site/campus/security"
+                                legacyBehavior>
                                 <a className="dropdown-item">Security</a>
                               </Link>
                             </li>
 
                             <li>
-                              <Link href="/mambakkam-site/campus/healthcare" legacyBehavior>
+                              <Link
+                                href="/mambakkam-site/campus/healthcare"
+                                legacyBehavior>
                                 <a className="dropdown-item">Healthcare</a>
                               </Link>
                             </li>
@@ -594,7 +613,7 @@ const Nav = () => {
                             </li>
                           </ul>
                         </li>
-{/*     
+                        {/*     
                         <li className="nav-item dropdown">
                           <Link href="/mambakkam-site/learning" legacyBehavior>
                             <a

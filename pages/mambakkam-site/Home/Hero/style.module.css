@@ -41,7 +41,7 @@
 .admissionTag {
   font-family: "Golos Text", sans-serif;
   display: inline-block;
-  margin-top: 20px;
+  margin-block: 20px;
   padding: 6px 14px;
   background-color: #dd2042;
   color: white;
@@ -82,6 +82,11 @@
   }
 
   .subtitle {
-    margin-top: 2rem;
+    margin-block: 2rem;
   }
+  .subtitle::before {
+  
+  top: -1rem;
+}
+
 }

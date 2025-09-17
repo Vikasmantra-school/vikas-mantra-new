@@ -62,6 +62,12 @@
   border: 1px solid #ff9eb2;
   margin-top:2rem;
 }
+.viewAllBtnMob{
+  color: #ff325c;
+}
+.viewAllBtnMob:focus{
+  text-decoration: underline;
+}
 
 
 .customPrev,
@@ -98,4 +104,13 @@
 }
 .customNav :global(.swiper-button-disabled) svg {
   color: #c9c9c9;
+}
+
+@media only screen and (max-width:576px){
+  .viewAllBtn{
+    display:none;
+  }
+  .blogSection .cust_container{
+  padding-top: 2rem;
+}
 }

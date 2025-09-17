@@ -98,7 +98,7 @@ const TabsHome = () => {
                       preload="metadata"
                       onClick={() => handlePlayPause(0)}>
                       <source
-                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        src="/assets/videos/school-video-new.mp4"
                         type="video/mp4"
                       />
                     </video>
@@ -134,7 +134,7 @@ const TabsHome = () => {
                       preload="metadata"
                       onClick={() => handlePlayPause(1)}>
                       <source
-                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        src="/assets/videos/school-video-new.mp4"
                         type="video/mp4"
                       />
                     </video>
@@ -196,7 +196,7 @@ const TabsHome = () => {
                       preload="metadata"
                       onClick={() => handlePlayPause(2)}>
                       <source
-                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        src="/assets/videos/school-video-new.mp4"
                         type="video/mp4"
                       />
                     </video>
@@ -231,7 +231,7 @@ const TabsHome = () => {
                       preload="metadata"
                       onClick={() => handlePlayPause(3)}>
                       <source
-                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        src="/assets/videos/school-video-new.mp4"
                         type="video/mp4"
                       />
                     </video>

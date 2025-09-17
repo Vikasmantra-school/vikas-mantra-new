@@ -433,8 +433,8 @@ function Home() {
           </a>
         </Link>
 
-        <Link href="/enquiry-form" legacyBehavior>
-          <a className="" target="_blank" rel="noopener noreferrer">
+        <Link href="#footer" legacyBehavior>
+          <a className="" rel="noopener noreferrer">
             <svg
               width="40"
               height="40"
