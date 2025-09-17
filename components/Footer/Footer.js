@@ -414,7 +414,7 @@ export const Footer = () => {
                         </p>
                         <div className={`${styles.socialRow}`}>
                           <a
-                            href=" https://www.instagram.com/vikasmantra_publicschool/"
+                            href="https://www.instagram.com/vikasmantra_public_school/"
                             target="_blank"
                             rel="noopener noreferrer">
                             <Image
@@ -425,7 +425,7 @@ export const Footer = () => {
                             />
                           </a>
                           <a
-                            href="https://www.facebook.com/profile.php?id=61577256500472"
+                            href="https://www.facebook.com/vikasmantrapublicschool"
                             target="_blank"
                             rel="noopener noreferrer">
                             <Image
