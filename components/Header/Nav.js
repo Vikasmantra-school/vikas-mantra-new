@@ -17,7 +17,9 @@ const Nav = () => {
   const isMambakkam = asPath.startsWith("/mambakkam-site");
   const isChengalpattu = asPath.startsWith("/chengalpattu-site");
   var pageName = asPath.replace("/", "");
-
+  const [campusDropdownAria,setCampusDropdownAria] = useState(false)
+  const [dropDownMenu,setDropDownMenu] = useState(false)
+  
   const [selectedCampus, setSelectedCampus] = useState(
     isMambakkam
       ? "Mambakkam"
@@ -106,6 +108,11 @@ const Nav = () => {
     dropdownSub.current.classList.add("d-none");
   }
 
+  const selectCampus = () => {
+    setCampusDropdownAria(!campusDropdownAria)
+    setDropDownMenu(!dropDownMenu)
+  }
+
   return (
     <>
       <header
@@ -187,7 +194,7 @@ const Nav = () => {
                           id="campusDropdown"
                           role="button"
                           data-bs-toggle="dropdown"
-                          aria-expanded="false">
+                          aria-expanded={campusDropdownAria}>
                           Campus
                           <svg
                             width="22"
@@ -202,7 +209,7 @@ const Nav = () => {
                           </svg>
                         </a>
                         <ul
-                          className="dropdown-menu"
+                          className={`dropdown-menu ${dropDownMenu ? 'show' : ''}`}
                           aria-labelledby="campusDropdown">
                           <li>
                             <Link
@@ -228,7 +235,7 @@ const Nav = () => {
                       </li>
                     </Button>
 
-                    <button className={styles.drpDownValue}>
+                    <button className={styles.drpDownValue} onClick={selectCampus}>
                       {subMenu?.headText || "Select Campus"}
                     </button>
                   </div>
