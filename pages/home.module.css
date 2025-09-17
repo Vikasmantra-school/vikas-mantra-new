@@ -99,6 +99,7 @@
   .floatingLinks a {
     font-size: 12px;
     padding: 8px;
+    border-radius: 0 !important;
     gap: 0;
   }
   .floatingLinks svg {

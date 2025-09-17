@@ -45,7 +45,8 @@ function Career() {
 
   const formRef = useRef(null);
   const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbw3cVmLmrjniePfI9yHuKwUil6I7y8mSoDK7GLbD5_QL4JQz9wfpXVXKnYJtRJWJiPF4g/exec";
+  "https://script.google.com/macros/s/AKfycbwa06PaU7zhvjhvroNN43k5rMtlrHtCxY46Mad79jjc74OU0q-Ce7VlkS2OnZYKi0kzcA/exec";
+    // "https://script.google.com/macros/s/AKfycbw3cVmLmrjniePfI9yHuKwUil6I7y8mSoDK7GLbD5_QL4JQz9wfpXVXKnYJtRJWJiPF4g/exec";
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
@@ -53,6 +54,7 @@ function Career() {
     e.preventDefault();
     setLoading(true);
 
+    setCampus("");
     setName("");
     setAddress("");
     setNumber("");

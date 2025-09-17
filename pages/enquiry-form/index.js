@@ -1,64 +1,64 @@
-import React from 'react'
-import styles from './style.module.css'
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form'
-import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
-import { useState, useRef } from 'react'
-
+import React from "react";
+import styles from "./style.module.css";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import { Breadcrumb } from "../../components/Breadcrumb/Breadcrumb";
+import { useState, useRef } from "react";
 
 const EnquiryForm = () => {
-  const pageTitle = 'Enquiry Form'
+  const pageTitle = "Enquiry Form";
 
   //form-data-clear-after-submit
 
-  const [name, setName] = useState('');
-  const [dob, setDob] = useState('');
-  const [lastClass, setLastClass] = useState('');
-  const [currentSchool, setCurrentSchool] = useState('');
-  const [admissionSeeking, setAdmissionSeeking] = useState('');
-  const [fatherName, setFatherName] = useState('');
-  const [fatherEmail, setFatherEmail] = useState('');
-  const [fatherNumber, setFatherNumber] = useState('');
-  const [motherName, setMotherName] = useState('');
-  const [motherEmail, setMotherEmail] = useState('');
-  const [motherNumber, setMotherNumber] = useState('');
-  const [admissionCommunication, setAdmissionCommunication] = useState('');
-
+  const [name, setName] = useState("");
+  const [dob, setDob] = useState("");
+  const [campus, setCampus] = useState('');
+  const [lastClass, setLastClass] = useState("");
+  const [currentSchool, setCurrentSchool] = useState("");
+  const [admissionSeeking, setAdmissionSeeking] = useState("");
+  const [fatherName, setFatherName] = useState("");
+  const [fatherEmail, setFatherEmail] = useState("");
+  const [fatherNumber, setFatherNumber] = useState("");
+  const [motherName, setMotherName] = useState("");
+  const [motherEmail, setMotherEmail] = useState("");
+  const [motherNumber, setMotherNumber] = useState("");
+  const [admissionCommunication, setAdmissionCommunication] = useState("");
 
   //form-sheet-integration
-  const formRef = useRef(null)
-  const scriptUrl = "https://script.google.com/macros/s/AKfycbx03T_Gd3qn7GKJ99OrxmuXC4JkQ-hNbfJBpC3iuukhSvwI90YyscbgN4ZCrnRK72JRRQ/exec"
-  const [loading, setLoading] = useState(false)
+  const formRef = useRef(null);
+  const scriptUrl =
+    "https://script.google.com/macros/s/AKfycbx03T_Gd3qn7GKJ99OrxmuXC4JkQ-hNbfJBpC3iuukhSvwI90YyscbgN4ZCrnRK72JRRQ/exec";
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setLoading(true)
+    e.preventDefault();
+    setLoading(true);
 
     //form-data-clear-after-submit
-    setName('');
-    setDob('');
-    setLastClass('');
-    setCurrentSchool('');
-    setAdmissionSeeking('');
-    setFatherEmail('');
-    setFatherName('');
-    setFatherNumber('');
-    setMotherName('');
-    setMotherEmail('');
-    setMotherNumber('');
-    setAdmissionCommunication('');
+    setName("");
+    setDob("");
+    setCampus('');
+    setLastClass("");
+    setCurrentSchool("");
+    setAdmissionSeeking("");
+    setFatherEmail("");
+    setFatherName("");
+    setFatherNumber("");
+    setMotherName("");
+    setMotherEmail("");
+    setMotherNumber("");
+    setAdmissionCommunication("");
 
     fetch(scriptUrl, {
-      method: 'POST',
+      method: "POST",
       body: new FormData(formRef.current),
-
-    }).then(res => {
-      alert('Thank You :) Our admission officer will contact you shortly')
-      setLoading(false)
     })
-      .catch(err => console.log(err))
-  }
-
+      .then((res) => {
+        alert("Thank You :) Our admission officer will contact you shortly");
+        setLoading(false);
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <>
@@ -72,183 +72,221 @@ const EnquiryForm = () => {
 
       <Breadcrumb pageName={pageTitle} />
 
-      <section className={'pt60 pb60 ' + ' ' + ' ' + styles.eqBg}>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-6'>
-
-              <div className='AnimeStarts'>
-                <h2 className='AnimeElement'>
-                  Admissions Enquiry Form
-                </h2>
+      <section className={"pt60 pb60 " + " " + " " + styles.eqBg}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="AnimeStarts">
+                <h2 className="AnimeElement">Admissions Enquiry Form</h2>
               </div>
-
             </div>
           </div>
         </div>
       </section>
 
-      <section className={'VectorDot position-relative pb80' + ' ' + styles.formTop}>
-        <div className='container'>
-          <div className='row'>
+      <section
+        className={"VectorDot position-relative pb80" + " " + styles.formTop}>
+        <div className="container">
+          <div className="row">
             <div
               className={
-                'col-xl-10 col-lg-11 col-md-12 col-sm-12 mt-xs-5' +
-                ' ' +
+                "col-xl-10 col-lg-11 col-md-12 col-sm-12 mt-xs-5" +
+                " " +
                 styles.formCenter
-              }
-            >
+              }>
               <div className={styles.enquiryForm}>
                 <Form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
-                  <div className={'row' + ' ' + styles.form}>
-                    <div className='col-md-5'>
-
-                      <div className='AnimeStarts'>
-                        <h5 className='mb-5 AnimeElement'>Child Information</h5>
+                  <div className={"row" + " " + styles.form}>
+                    <div className="col-md-5">
+                      <div className="AnimeStarts">
+                        <h5 className="mb-5 AnimeElement">Child Information</h5>
                       </div>
 
-                      <Form.Group className='mb-5 AnimeStarts' controlId='formBasicEmail'>
-                        <Form.Label className='AnimeElement'>Name of the Child</Form.Label>
+                      <Form.Group
+                        className="mb-5 AnimeStarts"
+                        controlId="formBasicEmail">
+                        <Form.Label className="AnimeElement">
+                          Name of the Child
+                        </Form.Label>
                         <Form.Control
                           required
-                          name='Name'
+                          name="Name"
                           className={styles.formText}
-                          type='text'
+                          type="text"
                           value={name}
-                          onChange={event => setName(event.target.value)} />
+                          onChange={(event) => setName(event.target.value)}
+                        />
                       </Form.Group>
 
-                      <Form.Group className='mb-5 AnimeStarts'>
-                        <Form.Label className='AnimeElement'>Student Date of Birth</Form.Label>
+                      <Form.Group className="mb-5 AnimeStarts">
+                        <Form.Label className="AnimeElement">
+                          Student Date of Birth
+                        </Form.Label>
                         <Form.Control
                           required
-                          name='DOB'
+                          name="DOB"
                           className={styles.formText}
-                          type='date'
+                          type="date"
                           value={dob}
-                          onChange={event => setDob(event.target.value)} />
+                          onChange={(event) => setDob(event.target.value)}
+                        />
                       </Form.Group>
 
-                      <Form.Group className='mb-5 AnimeStarts'>
-                        <Form.Label className='AnimeElement'>Last Class Studied</Form.Label>
+                      <Form.Group className="mb-5 AnimeStarts">
+                        <Form.Label className="AnimeElement">
+                          Last Class Studied
+                        </Form.Label>
                         <Form.Control
                           required
-                          name='Last Class Studied'
+                          name="Last Class Studied"
                           className={styles.formText}
-                          type='text'
+                          type="text"
                           value={lastClass}
-                          onChange={event => setLastClass(event.target.value)} />
+                          onChange={(event) => setLastClass(event.target.value)}
+                        />
                       </Form.Group>
 
-                      <Form.Group className='mb-5 AnimeStarts'>
-                        <Form.Label className='AnimeElement'>Name of the Current school</Form.Label>
+                      <Form.Group className="mb-5 AnimeStarts">
+                        <Form.Label className="AnimeElement">
+                          Name of the Current school
+                        </Form.Label>
                         <Form.Control
                           required
-                          name='Name Of The Current School'
+                          name="Name Of The Current School"
                           className={styles.formText}
-                          type='text'
+                          type="text"
                           value={currentSchool}
-                          onChange={event => setCurrentSchool(event.target.value)} />
+                          onChange={(event) =>
+                            setCurrentSchool(event.target.value)
+                          }
+                        />
                       </Form.Group>
 
-                      <Form.Group className='mb-5 AnimeStarts'>
-                        <Form.Label className='AnimeElement'>Admission seeking for</Form.Label>
+                      <Form.Group className="mb-5 AnimeStarts">
+                        <Form.Label className="AnimeElement">
+                          Admission seeking for
+                        </Form.Label>
                         <Form.Control
                           required
-                          name='Admission Seeking For'
+                          name="Admission Seeking For"
                           className={styles.formText}
-                          type='text'
+                          type="text"
                           value={admissionSeeking}
-                          onChange={event => setAdmissionSeeking(event.target.value)}
+                          onChange={(event) =>
+                            setAdmissionSeeking(event.target.value)
+                          }
                         />
                       </Form.Group>
                     </div>
 
-                    <div className='col-md-5 offset-md-1'>
+                    <div className="col-md-5 offset-md-1">
                       <div className={styles.formPb}>
-
-                        <div className='AnimeStarts'>
-                        <h5 className='mb-5 AnimeElement'>Parent Information : Father</h5>
+                        <div className="AnimeStarts">
+                          <h5 className="mb-5 AnimeElement">
+                            Parent Information : Father
+                          </h5>
                         </div>
 
-                        <Form.Group className='mb-5 AnimeStarts'>
-                          <Form.Label className='AnimeElement'>Name</Form.Label>
+                        <Form.Group className="mb-5 AnimeStarts">
+                          <Form.Label className="AnimeElement">Name</Form.Label>
                           <Form.Control
                             required
-                            name='Father Name'
+                            name="Father Name"
                             className={styles.formText}
-                            type='text'
+                            type="text"
                             value={fatherName}
-                            onChange={event => setFatherName(event.target.value)}
+                            onChange={(event) =>
+                              setFatherName(event.target.value)
+                            }
                           />
                         </Form.Group>
 
-                        <div className='mb-5'>
-                          <div className='row'>
-                            <Form.Group className='col-md-6 mb-5 AnimeStarts'>
-                              <Form.Label className='AnimeElement'>Phone Number</Form.Label>
+                        <div className="mb-5">
+                          <div className="row">
+                            <Form.Group className="col-md-6 mb-5 AnimeStarts">
+                              <Form.Label className="AnimeElement">
+                                Phone Number
+                              </Form.Label>
                               <Form.Control
                                 required
-                                name='Father Number'
+                                name="Father Number"
                                 className={styles.formText}
-                                type='number'
+                                type="number"
                                 value={fatherNumber}
-                                onChange={event => setFatherNumber(event.target.value)}
+                                onChange={(event) =>
+                                  setFatherNumber(event.target.value)
+                                }
                               />
                             </Form.Group>
 
-                            <Form.Group className='col-md-6 mb-5 AnimeStarts'>
-                              <Form.Label className='AnimeElement'>Email</Form.Label>
+                            <Form.Group className="col-md-6 mb-5 AnimeStarts">
+                              <Form.Label className="AnimeElement">
+                                Email
+                              </Form.Label>
                               <Form.Control
                                 required
-                                name='Father Email'
+                                name="Father Email"
                                 className={styles.formText}
-                                type='email'
+                                type="email"
                                 value={fatherEmail}
-                                onChange={event => setFatherEmail(event.target.value)}
+                                onChange={(event) =>
+                                  setFatherEmail(event.target.value)
+                                }
                               />
                             </Form.Group>
                           </div>
                         </div>
                       </div>
 
-                      <div className='AnimeStarts'>
-                        <h5 className='mb-5 AnimeElement'>Parent Information : Mother</h5>
-                        <Form.Group className='mb-5'>
-                          <Form.Label className='AnimeElement'>Name</Form.Label>
+                      <div className="AnimeStarts">
+                        <h5 className="mb-5 AnimeElement">
+                          Parent Information : Mother
+                        </h5>
+                        <Form.Group className="mb-5">
+                          <Form.Label className="AnimeElement">Name</Form.Label>
                           <Form.Control
                             required
-                            name='Mother Name'
+                            name="Mother Name"
                             className={styles.formText}
-                            type='text'
+                            type="text"
                             value={motherName}
-                            onChange={event => setMotherName(event.target.value)}
+                            onChange={(event) =>
+                              setMotherName(event.target.value)
+                            }
                           />
                         </Form.Group>
 
-                        <div className='mb-5'>
-                          <div className='row'>
-                            <Form.Group className='col-md-6 mb-5 AnimeStarts'>
-                              <Form.Label className='AnimeElement'>Phone Number</Form.Label>
+                        <div className="mb-5">
+                          <div className="row">
+                            <Form.Group className="col-md-6 mb-5 AnimeStarts">
+                              <Form.Label className="AnimeElement">
+                                Phone Number
+                              </Form.Label>
                               <Form.Control
                                 required
-                                name='Mother Number'
+                                name="Mother Number"
                                 className={styles.formText}
-                                type='number'
+                                type="number"
                                 value={motherNumber}
-                                onChange={event => setMotherNumber(event.target.value)}
+                                onChange={(event) =>
+                                  setMotherNumber(event.target.value)
+                                }
                               />
                             </Form.Group>
 
-                            <Form.Group className='col-md-6 mb-5 AnimeStarts'>
-                              <Form.Label className='AnimeElement'>Email</Form.Label>
+                            <Form.Group className="col-md-6 mb-5 AnimeStarts">
+                              <Form.Label className="AnimeElement">
+                                Email
+                              </Form.Label>
                               <Form.Control
                                 required
-                                name='Mother Email'
+                                name="Mother Email"
                                 className={styles.formText}
-                                type='email'
+                                type="email"
                                 value={motherEmail}
-                                onChange={event => setMotherEmail(event.target.value)}
+                                onChange={(event) =>
+                                  setMotherEmail(event.target.value)
+                                }
                               />
                             </Form.Group>
                           </div>
@@ -256,22 +294,51 @@ const EnquiryForm = () => {
                       </div>
                     </div>
 
-                    <div className='col-md-11'>
-                      <Form.Group className='mb-5 AnimeStarts'>
-                        <Form.Label className='mb-5 AnimeElement'>
+                    <div className="col-md-11">
+                      <Form.Group className="mb-5 AnimeStarts">
+                        {/* <Form.Label className=" AnimeElement">
+                          Campus
+                        </Form.Label> */}
+                        <Form.Select
+                          required
+                          name="admissionCommunication"
+                          className={styles.formText}
+                          value={campus}
+                          onChange={(event) =>
+                            setCampus(event.target.value)
+                          }>
+                          <option value="" disabled>
+                            -- Select Campus --
+                          </option>
+                          <option value="Mambakkam">Mambakkam</option>
+                          <option value="Chengalpattu">Chengalpattu</option>
+                        </Form.Select>
+                      </Form.Group>
+                    </div>
+
+                    <div className="col-md-11">
+                      <Form.Group className="mb-5 AnimeStarts">
+                        <Form.Label className="mb-5 AnimeElement">
                           Address for Communication
                         </Form.Label>
                         <Form.Control
                           required
-                          name='Admission Of Communication'
+                          name="Admission Of Communication"
                           className={styles.formText}
-                          type='text'
+                          type="text"
                           value={admissionCommunication}
-                          onChange={event => setAdmissionCommunication(event.target.value)} />
+                          onChange={(event) =>
+                            setAdmissionCommunication(event.target.value)
+                          }
+                        />
                       </Form.Group>
 
-                      <a href='#'>
-                        <input type="submit" className={'brownBtn ' + styles.submitBtn} value={loading ? "Loading..." : "Submit"} />
+                      <a href="#">
+                        <input
+                          type="submit"
+                          className={"brownBtn " + styles.submitBtn}
+                          value={loading ? "Loading..." : "Submit"}
+                        />
                         {/* < className={'brownBtn'} type="submit" value={loading ? "Loading..." : "Send"}>Submit</Button> */}
                       </a>
                     </div>
@@ -283,7 +350,7 @@ const EnquiryForm = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
 export default EnquiryForm;
