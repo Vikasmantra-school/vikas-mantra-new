@@ -1,0 +1,37 @@
+/* SlideIn.module.css */
+
+.animateSlide {
+  opacity: 0;
+  transform: translateX(0);
+  will-change: transform, opacity;
+}
+
+.slideInLeft {
+  animation: slideInFromLeft 0.6s cubic-bezier(.22,.9,.35,1) forwards;
+}
+
+.slideInRight {
+  animation: slideInFromRight 0.6s cubic-bezier(.22,.9,.35,1) forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

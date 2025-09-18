@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./style.module.css";
 import { vikasdataGrid1, vikasdataGrid2 } from "../../../data/whyvikasData";
+import SlideIn from "../../Animation/SlideIn";
 
 const WhyVikasSection = () => {
   return (
@@ -14,29 +15,40 @@ const WhyVikasSection = () => {
                 <div className={`${styles.GridItem} AnimeStarts`} key={item.id}>
                   <a href="/learning">
                     <div className={`${styles.gridImage} AnimeElement`}>
-                    <img src={item.imgUrl} alt={item.title} />
-                  </div>
+                      <img src={item.imgUrl} alt={item.title} />
+                    </div>
                   </a>
-                  <h3 className={`${styles.gridTitle} AnimeElement`}>{item.title}</h3>
-                  <div className={`${styles.gridDesc} AnimeElement`}>{item.desc}</div>
+                  <SlideIn direction="left">
+                    <h3 className={`${styles.gridTitle} AnimeElement`}>
+                      {item.title}
+                    </h3>
+
+                    <div className={`${styles.gridDesc} AnimeElement`}>
+                      {item.desc}
+                    </div>
+                  </SlideIn>
                 </div>
               ))}
             </div>
           </Col>
           <Col lg={6}>
             <div className={styles.GridWrapper}>
-              <div className={styles.dummySpace}
-                aria-hidden="true"
-              ></div>
+              <div className={styles.dummySpace} aria-hidden="true"></div>
               {vikasdataGrid2.map((item, index) => (
                 <div className={`${styles.GridItem} AnimeStarts`} key={item.id}>
                   <a href="/learning">
                     <div className={`${styles.gridImage} AnimeElement`}>
-                    <img src={item.imgUrl} alt={item.title} />
-                  </div>
+                      <img src={item.imgUrl} alt={item.title} />
+                    </div>
                   </a>
-                  <h3 className={`${styles.gridTitle} AnimeElement`}>{item.title}</h3>
-                  <div className={`${styles.gridDesc} AnimeElement`}>{item.desc}</div>
+                  <SlideIn direction="right">
+                    <h3 className={`${styles.gridTitle} AnimeElement`}>
+                      {item.title}
+                    </h3>
+                    <div className={`${styles.gridDesc} AnimeElement`}>
+                      {item.desc}
+                    </div>
+                  </SlideIn>
                 </div>
               ))}
             </div>
