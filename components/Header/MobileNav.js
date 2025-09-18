@@ -650,7 +650,7 @@ const MobileNav = ({}) => {
                 </a>
               </Link>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
                 Campus{" "}
                 <svg
@@ -745,7 +745,7 @@ const MobileNav = ({}) => {
                   </Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
                 Learning{" "}
@@ -820,26 +820,33 @@ const MobileNav = ({}) => {
               </ul>
             </li>
             <li className="nav__item">
+              <Link href="https://www.parentsalarmapp.com/" legacyBehavior>
+                <a className="nav__link" target="_blank" aria-current="page">
+                  VMPS Login
+                </a>
+              </Link>
+            </li>
+            {/* <li className="nav__item">
               <Link href="/enquiry-form" legacyBehavior>
                 <a className="nav__link" aria-current="page">
                   Enquiry Form
                 </a>
               </Link>
-            </li>
-            <li className="nav__item">
+            </li> */}
+            {/* <li className="nav__item">
               <Link href="/mandatory-public-disclosures" legacyBehavior>
                 <a className="nav__link" aria-current="page">
                   Mandatory Public Disclosures
                 </a>
               </Link>
-            </li>
-            <li className="nav__item">
+            </li> */}
+            {/* <li className="nav__item">
               <Link href="/events" legacyBehavior>
                 <a className="nav__link" aria-current="page">
                   Events
                 </a>
               </Link>
-            </li>
+            </li> */}
             <li className="nav__item">
               <Link href="/contact" legacyBehavior>
                 <a className="nav__link" aria-current="page">
