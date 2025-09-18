@@ -12,7 +12,7 @@ const EnquiryForm = () => {
 
   const [name, setName] = useState("");
   const [dob, setDob] = useState("");
-  const [campus, setCampus] = useState('');
+  const [campus, setCampus] = useState("");
   const [lastClass, setLastClass] = useState("");
   const [currentSchool, setCurrentSchool] = useState("");
   const [admissionSeeking, setAdmissionSeeking] = useState("");
@@ -27,7 +27,9 @@ const EnquiryForm = () => {
   //form-sheet-integration
   const formRef = useRef(null);
   const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbx03T_Gd3qn7GKJ99OrxmuXC4JkQ-hNbfJBpC3iuukhSvwI90YyscbgN4ZCrnRK72JRRQ/exec";
+    "https://script.google.com/macros/s/AKfycbyVhNnoCfhBoJ1CCHftf23kN8E_ltUnH-aifTnzT0_0D8KOy4tWx0_EIoGCC9oDAMSiIA/exec";
+  // above is matheen
+  // "https://script.google.com/macros/s/AKfycbx03T_Gd3qn7GKJ99OrxmuXC4JkQ-hNbfJBpC3iuukhSvwI90YyscbgN4ZCrnRK72JRRQ/exec"; original
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
@@ -37,7 +39,7 @@ const EnquiryForm = () => {
     //form-data-clear-after-submit
     setName("");
     setDob("");
-    setCampus('');
+    setCampus("");
     setLastClass("");
     setCurrentSchool("");
     setAdmissionSeeking("");
@@ -84,8 +86,7 @@ const EnquiryForm = () => {
         </div>
       </section>
 
-      <section
-        className={" position-relative pb80" + " " + styles.formTop}>
+      <section className={" position-relative pb80" + " " + styles.formTop}>
         <div className="container">
           <div className="row">
             <div
@@ -294,19 +295,17 @@ const EnquiryForm = () => {
                       </div>
                     </div>
 
-                    <div className="col-md-11">
+                    <div className="col-md-5">
                       <Form.Group className="mb-5 AnimeStarts">
                         {/* <Form.Label className=" AnimeElement">
                           Campus
                         </Form.Label> */}
                         <Form.Select
                           required
-                          name="admissionCommunication"
+                          name="campus"
                           className={styles.formText}
                           value={campus}
-                          onChange={(event) =>
-                            setCampus(event.target.value)
-                          }>
+                          onChange={(event) => setCampus(event.target.value)}>
                           <option value="" disabled>
                             -- Select Campus --
                           </option>

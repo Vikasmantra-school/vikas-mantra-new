@@ -54,12 +54,15 @@ export const Footer = () => {
   const [mail, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [dropdownValue, setDropdownValue] = useState("");
+  const [campus, setCampus] = useState("");
 
   //form-sheet-integration
 
   const formRef = useRef(null);
   const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec";
+    "https://script.google.com/macros/s/AKfycbxyDMEsVuTZ1UI_Q0IR5OC8C6dr-AqjYrclp364Df-170anM0Z8RSEvkYBs5a6okfJc3w/exec";
+    // above is matheen
+    // "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec"; original
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
@@ -70,6 +73,7 @@ export const Footer = () => {
     setEmail("");
     setNumber("");
     setDropdownValue("");
+    setCampus("");
 
     fetch(scriptUrl, {
       method: "POST",
@@ -207,7 +211,6 @@ export const Footer = () => {
                     <h3>CONTACT US</h3>
                     {isMambakkam ? (
                       <>
-                      
                         <p>Vikas Mantra Public School </p>
                         <p> Vandalur to Kelambakkam Road, </p>
                         <p> Mambakkam, Chennai,</p>
@@ -336,7 +339,7 @@ export const Footer = () => {
                       </>
                     ) : (
                       <>
-                      <h5>Mambakkam</h5>
+                        <h5>Mambakkam</h5>
                         <p>Vikas Mantra Public School </p>
                         <p> Vandalur to Kelambakkam Road, </p>
                         <p> Mambakkam, Chennai,</p>
@@ -403,7 +406,7 @@ export const Footer = () => {
                           </a>
                         </div>
                         <br />
-                         <h5>Chengalpattu</h5>
+                        <h5>Chengalpattu</h5>
                         <p> S.No:168,168/3, Off Mahindra World City, </p>
                         <p> Anjur 603204, Chengalpattu</p>
                         <p> info@vikasmantra.org</p>
@@ -568,18 +571,35 @@ export const Footer = () => {
                 </a>
               </Link> */}
 
-              <Link href="https://api.whatsapp.com/send?phone=7330098765">
-                <a
-                  className="whatsappDiv"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <img
-                    className="whatsappImg"
-                    src="/assets/icons/whatsapp.png"
-                    alt="whatsapp-icon"
-                  />
-                </a>
-              </Link>
+              {isMambakkam ? (
+                <Link href="https://api.whatsapp.com/send?phone=7448450450">
+                  <a
+                    className="whatsappDiv"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img
+                      className="whatsappImg"
+                      src="/assets/icons/whatsapp.png"
+                      alt="whatsapp-icon"
+                    />
+                  </a>
+                </Link>
+              ) : isChengalpattu ? (
+                <Link href="https://api.whatsapp.com/send?phone=7092450450">
+                  <a
+                    className="whatsappDiv"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img
+                      className="whatsappImg"
+                      src="/assets/icons/whatsapp.png"
+                      alt="whatsapp-icon"
+                    />
+                  </a>
+                </Link>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>

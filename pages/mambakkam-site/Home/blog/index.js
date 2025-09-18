@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ModalFn from "/components/mambakkam/modal/ModalFn";
 import gsap from "gsap";
+import { delay } from "framer-motion";
 
 const Blog = () => {
   return (
@@ -21,18 +22,24 @@ const Blog = () => {
             <h2 className={styles.blogTitle}>What’s Happening</h2>
 
             </div>
-            <div className="col d-md-none d-flex justify-content-center align-items-center">
+            {/* <div className="col d-md-none d-flex justify-content-center align-items-center">
               <a
                 className={styles.viewAllBtnMob}
                 href="/mambakkam-site/about/blog">
                 View all
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="position-relative">
             <Swiper
-              modules={[Navigation, Autoplay]}
+              modules={[Navigation, Autoplay, Pagination]}
               spaceBetween={20}
+              loop={true}
+              autoplay={{
+                disableOnInteraction:false,
+                delay:2500
+              }
+              }
               slidesPerView={3}
               breakpoints={{
                 0: {
@@ -47,6 +54,9 @@ const Blog = () => {
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
+              }}
+              pagination={{
+                clickable: true,
               }}
               navigation={{
                 prevEl: ".swiper-prev-blog",
@@ -108,7 +118,7 @@ const Blog = () => {
               </SwiperSlide>
             </Swiper>
 
-            <div className={styles.customNav}>
+            {/* <div className={styles.customNav}>
               <button className={styles.customPrev + " " + "swiper-prev-blog"}>
                 <svg
                   width="15"
@@ -135,11 +145,11 @@ const Blog = () => {
                   />
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div className="row ">
-            <div className="mt-5 d-flex align-items-end justify-content-end">
+            <div className="mt-3 d-flex align-items-end justify-content-end">
               <a
                 className={styles.viewAllBtn}
                 href="/mambakkam-site/about/blog">

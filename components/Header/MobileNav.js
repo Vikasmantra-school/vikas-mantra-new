@@ -530,7 +530,7 @@ const MobileNav = ({}) => {
             <li className="nav__item">
               <Link href="/chengalpattu-site/events" legacyBehavior>
                 <a className="nav__link" aria-current="page">
-                  Events
+                  Gallery
                 </a>
               </Link>
             </li>
@@ -624,23 +624,23 @@ const MobileNav = ({}) => {
                   </Link>
                 </li>
 
-                <li className="nav__item">
+                {/* <li className="nav__item">
                   <Link href="/about/message-from-principal" legacyBehavior>
                     <a className="nav__link">Principal’s Message</a>
                   </Link>
-                </li>
+                </li> */}
 
-                <li className="nav__item">
+                {/* <li className="nav__item">
                   <Link href="/about/our-team" legacyBehavior>
                     <a className="nav__link">Our Team</a>
                   </Link>
-                </li>
+                </li> */}
 
-                <li className="nav__item">
+                {/* <li className="nav__item">
                   <Link href="/about/blog" legacyBehavior>
                     <a className="nav__link">Blog</a>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li className="nav__item">
@@ -812,11 +812,11 @@ const MobileNav = ({}) => {
                   </Link>
                 </li>
 
-                <li className="nav__item">
+                {/* <li className="nav__item">
                   <Link href="/learning/online-classes" legacyBehavior>
                     <a className="nav__link">Online Classes</a>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li className="nav__item">
@@ -843,7 +843,7 @@ const MobileNav = ({}) => {
             {/* <li className="nav__item">
               <Link href="/events" legacyBehavior>
                 <a className="nav__link" aria-current="page">
-                  Events
+                  Gallery
                 </a>
               </Link>
             </li> */}

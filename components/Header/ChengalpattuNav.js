@@ -48,7 +48,7 @@ const ChengalpattuNav = () => {
         }>
         <nav className={styles.navTransparent + " navbar-expand-lg navbar"}>
           <div className="container">
-            <Link href="/chengalpattu-site" legacyBehavior>
+            <Link href="/" legacyBehavior>
               <a className={styles.mainLogo + " " + "navbar-brand"}>
                 {pageName === "" ? (
                   <picture>

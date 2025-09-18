@@ -127,13 +127,14 @@ const Nav = () => {
             <div className="row">
               <div className="col-5 col-lg-3 d-flex align-items-center">
                 <Link
-                  href={
-                    isChengalpattu
-                      ? " /chengalpattu-site"
-                      : isMambakkam
-                      ? "/mambakkam-site"
-                      : "/"
-                  }
+                  // href={
+                  //   isChengalpattu
+                  //     ? " /chengalpattu-site"
+                  //     : isMambakkam
+                  //     ? "/mambakkam-site"
+                  //     : "/"
+                  // }
+                  href='/'
                   legacyBehavior>
                   <a className={styles.mainLogo + " " + "navbar-brand"}>
                     <img src="/assets/common-logo.png" alt="Vikas Mantra" />

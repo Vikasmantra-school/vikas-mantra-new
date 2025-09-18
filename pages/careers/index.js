@@ -45,7 +45,9 @@ function Career() {
 
   const formRef = useRef(null);
   const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbw3cVmLmrjniePfI9yHuKwUil6I7y8mSoDK7GLbD5_QL4JQz9wfpXVXKnYJtRJWJiPF4g/exec";
+  "https://script.google.com/macros/s/AKfycbwSQ-HDhi9718SFb6L0Yxeqv0rvytpsnRxCb9q7NdXVvi6BsaVUbKxLRJ2CsEtZ8WJx/exec";
+  // above is matheen 
+    // "https://script.google.com/macros/s/AKfycbw3cVmLmrjniePfI9yHuKwUil6I7y8mSoDK7GLbD5_QL4JQz9wfpXVXKnYJtRJWJiPF4g/exec"; original
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
@@ -273,11 +275,11 @@ function Career() {
                   website or Email hr@vikasmantra.org
                 </p>
 
-                <p className="AnimeElement">
+                {/* <p className="AnimeElement">
                   For more details, Call :
                   <a className={styles.tel} href="tel:+917092450450"> +91 7092450450</a>,
                   <a className={styles.tel} href="tel:+917330098765">+91 7330098765</a>
-                </p>
+                </p> */}
               </div>
             </div>
 

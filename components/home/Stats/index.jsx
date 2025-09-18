@@ -16,6 +16,7 @@ const Stats = () => {
   const countersRef = useRef([]);
 
 useEffect(() => {
+  if (window.innerWidth < 768) return;
   (async () => {
     const gsap = (await import("gsap")).default;
     const { ScrollTrigger } = await import("gsap/ScrollTrigger");

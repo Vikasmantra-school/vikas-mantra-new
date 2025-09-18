@@ -80,7 +80,7 @@ const Events = () => {
           <Tab.Container id='left-tabs-example' defaultActiveKey='first'>
             <div className='row pt-5'>
               <div className={'col-md-5' + ' ' + styles.eventText}>
-                <h2 className='bottomToTop'>Events</h2>
+                <h2 className='bottomToTop'>Gallery</h2>
                 <EventsNav events={events} />
               </div>
             </div>

@@ -5,7 +5,7 @@ import "@splidejs/react-splide/css";
 import Tab from "react-bootstrap/Tab";
 import { Breadcrumb } from "/components/Breadcrumb/Breadcrumb";
 import { EventsNav } from "/components/EventsNav";
-// import { events } from '../../data/events'
+// import { events } from '/data/events'
 import { gsap, Power2 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -20,6 +20,11 @@ export async function getServerSideProps() {
   };
 }
 
+function chunkArray(array, size) {
+  return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
+    array.slice(i * size, i * size + size)
+  );
+}
 const Events = ({ todos }) => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -104,7 +109,7 @@ const Events = ({ todos }) => {
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <div className="row pt-5">
               <div className={"col-md-5" + " " + styles.eventText}>
-                <h2 className="bottomToTop">Events</h2>
+                <h2 className="bottomToTop">Gallery</h2>
                 <EventsNav events={todos} />
               </div>
             </div>
@@ -115,8 +120,7 @@ const Events = ({ todos }) => {
                   <Tab.Pane eventKey={data.id}>
                     <section
                       id={data.id}
-                      className="whitebg pt60 pb60 parentAnimeStarts "
-                    >
+                      className="whitebg pt60 pb60 parentAnimeStarts ">
                       <div className="container">
                         <div className="row">
                           <div className="col-md-6">
@@ -146,16 +150,15 @@ const Events = ({ todos }) => {
                         styles.eventGallery +
                         " " +
                         styles.eventSectionPdng
-                      }
-                    >
+                      }>
                       <div className="container">
                         <div className="row vmpsslide">
                           <div className="col-md-12">
                             <Splide
                               options={{
                                 rewind: true,
-                                gap: "1rem",
-                                perPage: 4,
+                                gap: "10rem",
+                                perPage: 1,
                                 autoplay: true,
                                 pagination: false,
                                 arrows: true,
@@ -164,22 +167,29 @@ const Events = ({ todos }) => {
                                     perPage: 1,
                                   },
                                 },
-                              }}
-                            >
-                              {data.gallery?.map((data, index) => {
-                                return (
-                                  <SplideSlide
-                                    className="eventGallery "
-                                    key={index}
-                                  >
-                                    <img
-                                      src={data}
-                                      alt="image"
-                                      className="img-fluid eventsGallery leftToRight "
-                                    />
-                                  </SplideSlide>
-                                );
-                              })}
+                              }}>
+                              {chunkArray(data.gallery || [], 6).map(
+                                (group, slideIndex) => {
+                                  return (
+                                    <SplideSlide
+                                      className="eventGallery "
+                                      key={slideIndex}>
+                                      <div className="row">
+                                        {group.map((img, i) => (
+                                            <div className="col-6 col-md-4 mb-3">
+
+                                          <img
+                                            src={img}
+                                            alt="image"
+                                            className="img-fluid  leftToRight "
+                                            />
+                                            </div>
+                                        ))}
+                                      </div>
+                                    </SplideSlide>
+                                  );
+                                }
+                              )}
                             </Splide>
                           </div>
                         </div>

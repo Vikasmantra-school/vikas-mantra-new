@@ -114,6 +114,12 @@
 }
 
 
+/* Style active bullet */
+.tabSection :global(.swiper-pagination-bullet-active) {
+  background:#FDF631; /* your active color */
+  
+}
+
 @media only screen and (max-width:576px){
   .upperContainer{
     align-items: flex-start;

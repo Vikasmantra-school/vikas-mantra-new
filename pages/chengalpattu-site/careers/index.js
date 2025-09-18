@@ -188,11 +188,11 @@ function Career() {
                   website or Email hr@vikasmantra.org
                 </p>
 
-                <p className="AnimeElement">
+                {/* <p className="AnimeElement">
                   For more details, Call :
                   <a href="tel:+917092450450"> +91 7092450450</a>,
                   <a href="tel:+917330098765">+91 7330098765</a>
-                </p>
+                </p> */}
               </div>
             </div>
 
