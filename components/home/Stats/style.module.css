@@ -193,6 +193,7 @@
   position: relative;
   bottom: 30px;
   inset-inline: 0;
+  padding-block: 0.7rem;
 }
 
 .statCard {
@@ -212,6 +213,11 @@
   flex-direction: column;
   position: relative;
   aspect-ratio: 1 / 1 ;
+   transition: transform 0.5s ease;
+   cursor: pointer;
+}
+.statCard:hover{
+  transform: scale(1.04);
 }
 
 .statCard h3 {

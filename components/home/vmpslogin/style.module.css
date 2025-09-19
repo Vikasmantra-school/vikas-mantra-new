@@ -39,6 +39,9 @@
   outline-color: #ffb800;
   outline-offset: 3px;
 }
+.vmpsloginButton:hover{
+   background-color: #9e0d28;
+}
 @media only screen and (max-width: 576px) {
   .vmpsloginBanner {
     background: url("/images/bgs/vmps_login_mob.png") no-repeat center center;

@@ -39,7 +39,7 @@ const TabsHome = () => {
   };
 
   return (
-    <div className={styles.tabSection}>
+    <div className={`${styles.tabSection} AnimeStarts`}>
       <Container>
         <div className={styles.upperContainer}>
           <div className={styles.shapes}>
@@ -47,8 +47,8 @@ const TabsHome = () => {
           </div>
 
           <div className={styles.rightContent}>
-            <h3 className={styles.rightHeading}>Shining the Spotlight</h3>
-            <p>
+            <h3 className={`${styles.rightHeading} AnimeElement`}>Shining the Spotlight</h3>
+            <p className="AnimeElement">
               Celebrating the talents, achievements, and cultural spirit of our
               young Vikas Mantra stars.
             </p>

@@ -61,8 +61,8 @@ export const Footer = () => {
   const formRef = useRef(null);
   const scriptUrl =
     "https://script.google.com/macros/s/AKfycbxyDMEsVuTZ1UI_Q0IR5OC8C6dr-AqjYrclp364Df-170anM0Z8RSEvkYBs5a6okfJc3w/exec";
-    // above is matheen
-    // "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec"; original
+  // above is matheen
+  // "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec"; original
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
@@ -562,14 +562,14 @@ export const Footer = () => {
 
           <div className="row watsapp-icon">
             <div className="col-sm-12">
-              {/* <Link href="/campaign" legacyBehavior>
+              <Link href="/campaign" legacyBehavior>
                 <a
                   className="fixed-app callBtn"
                   target="_blank"
                   rel="noopener noreferrer">
-                  Admissions Enquiry
+                  Admission Open 2025 - 2026
                 </a>
-              </Link> */}
+              </Link>
 
               {isMambakkam ? (
                 <Link href="https://api.whatsapp.com/send?phone=7448450450">

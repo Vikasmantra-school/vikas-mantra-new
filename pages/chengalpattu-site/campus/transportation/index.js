@@ -1,4 +1,4 @@
-import { Breadcrumb } from '../../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '/components/Breadcrumb/Breadcrumb'
 import styles from './style.module.css'
 
 const Transportation = () => {
@@ -56,7 +56,7 @@ const Transportation = () => {
 
                             <div className='imgBgColor imgUp pastelBrown2 bgImageMargin AnimeStarts'>
 
-                                <img src='/assets/campus/transport-bus.png' alt="image" className={styles.schlBusImg + ' AnimeElement'} />
+                                <img src='/assets/campus/transport-bus-new.png' alt="image" className={styles.schlBusImg + ' AnimeElement'} />
 
                             </div>
 

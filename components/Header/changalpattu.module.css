@@ -1,5 +1,5 @@
 .mainLogo img {
-  width: 165px !important;
+  width: 140px !important;
 }
 .homeheader.home {
   z-index: 10000;
@@ -11,12 +11,10 @@
 } */
 
 .firstbtn {
-  background: #d8ff3e;
-  border: 0.5px solid #d8ff3e;
-  border-radius: 1px;
-  color: #474747;
-  padding: 5px 18px;
-  font-size: 14px;
+ background-color: transparent;
+    border: unset;
+    color: #1D1D1D;
+    padding: 5px 18px;
 }
 
 .secondtbtn {
@@ -82,8 +80,8 @@
 }
 
 .firstbtn:hover {
-  background: #d8ff3e;
-  border: 0.5px solid #d8ff3e;
+  background: transparent;
+  border: none;
   color: #474747 !important;
 }
 

@@ -1,15 +1,15 @@
-.ourFacilities{
-  background-color: #FFF8FB;
+.ourFacilities {
+  background-color: #fff8fb;
   padding-block: 3rem;
 }
 
 .mainContent {
   overflow: hidden;
-  padding-block:30px 60px;
+  padding-block: 30px 60px;
 }
-.mainContentMob{
+.mainContentMob {
   overflow: hidden;
-   padding-block:30px 30px;
+  padding-block: 30px 30px;
 }
 
 .rightHeading {
@@ -53,10 +53,29 @@
   height: 100%;
   object-fit: cover;
   display: block;
+   transition: transform 0.5s ease;
+
+}
+.card:hover img{
+  transform: scale(1.1);
+  
 }
 
 .topleft {
   clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+}
+.topleft,
+.topright,
+.bottomleft,
+.bottomright {
+  transition: clip-path 0.3s ease;
+}
+.topleft:hover,
+.topright:hover,
+.bottomleft:hover,
+.bottomright:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  cursor: pointer;
 }
 
 .topright {
@@ -84,11 +103,10 @@
   font-size: 1.1rem;
 }
 
-@media only screen and (max-width:768px){
- .mainContent{
-  padding-block: 1.3rem 0;
-
- }
+@media only screen and (max-width: 768px) {
+  .mainContent {
+    padding-block: 1.3rem 0;
+  }
 }
 
 /* Base dots (scoped via :global) */
@@ -97,13 +115,12 @@
   transition: all 0.3s ease;
 }
 .mainContentMob :global(.splide__pagination__page) {
- 
   border-radius: 0;
-  background: #FBA1B4 !important; 
+  background: #fba1b4 !important;
   margin: 0;
   transition: all 0.3s ease;
 }
-.mainContentMob :global(.splide__pagination){
+.mainContentMob :global(.splide__pagination) {
   bottom: -1.5rem;
   right: 0 !important;
   justify-content: flex-end;
@@ -111,8 +128,8 @@
 
 /* Active dot (pill style) */
 .mainContentMob :global(.splide__pagination__page.is-active) {
-  width: 46px;      
+  width: 46px;
   margin: 0 5px;
   border-radius: 0;
-  background: #E02D53 !important; 
+  background: #e02d53 !important;
 }

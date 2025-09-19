@@ -124,11 +124,11 @@ const Events = ({ todos }) => {
                       <div className="container">
                         <div className="row">
                           <div className="col-md-6">
-                            <h2 className="ulineRed bottomToTop ">
+                            {/* <h2 className="ulineRed bottomToTop ">
                               {data.title}
                             </h2>
 
-                            <p className="pt-4 bottomToTop ">{data.desc}</p>
+                            <p className="pt-4 bottomToTop ">{data.desc}</p> */}
                           </div>
 
                           <div className="col-md-6">

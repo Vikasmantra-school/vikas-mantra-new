@@ -5,17 +5,17 @@ import styles from "./style.module.css";
 const VmpsStory = () => {
   return (
     <>
-      <section className={styles.vmpsStory + " " + "mbkm-section-padding"}>
+      <section className={styles.vmpsStory + " " + "mbkm-section-padding AnimeStarts"}>
         <div className="container">
-          <div className="row align-items-center">
-            <div className="mb-5 col-lg-6 col-md-12 col-sm-12">
+          <div className="row align-items-center ">
+            <div className="mb-5 col-lg-6 col-md-12 col-sm-12 AnimeStarts ">
               <img
-                className={styles.vmpsBanner}
+                className={`${styles.vmpsBanner} AnimeElement`}
                 src="/images/banner/vmps-stoy-banner.png"
               />
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 ">
-              <h2 className={styles.storyHeading}>
+            <div className="col-lg-6 col-md-12 col-sm-12 AnimeStarts">
+              <h2 className={`${styles.storyHeading} AnimeElement`}>
                 <span className="d-flex flex-column">
                   The VMPS <br /> Mambakkam
                   <svg
@@ -33,21 +33,21 @@ const VmpsStory = () => {
                 <span>Story</span>
               </h2>
 
-              <p className={styles.desc}>
+              <p className={`${styles.desc} AnimeElement`}>
                 VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Mambakkam Chennai
                 is building a distinctive educational platform through a mix of
                 international learning techniques, experienced academicians and
                 modern facilities.
               </p>
 
-              <p className={styles.desc}>
+               <p className={`${styles.desc} AnimeElement`}>
                 By blending 21st century learning methodologies and traditional
                 Indian values, we equip our students to think freely, dream big
                 and pursue their passions, yet remain firmly connected to ground
                 realities.
               </p>
 
-              <button class="outlineBtn btn bottomToTop">
+              <button class="outlineBtn btn bottomToTop AnimeElement">
                 <a href="/about">Know More</a>
               </button>
             </div>

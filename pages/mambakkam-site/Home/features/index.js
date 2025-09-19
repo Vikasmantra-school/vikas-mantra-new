@@ -14,7 +14,7 @@ import gsap from "gsap";
 const Features = () => {
   return (
     <>
-      <section className={styles.featureSection + " " + "mbkm-section-padding"}>
+      <section className={styles.featureSection + " " + "mbkm-section-padding AnimeStarts"}>
         <div className={styles.featureContainer}>
           <div className="container">
             <Swiper
@@ -55,10 +55,10 @@ const Features = () => {
                 clickable: true,
               }}>
               <SwiperSlide>
-                <div className={styles.featureBlock}>
-                  <img src="/images/icon/mambakkam/holisitic-icon.png" />
-                  <h2>Holistic Approach</h2>
-                  <p className={styles.desc}>
+                <div className={`${styles.featureBlock} `}>
+                  <img className="AnimeElement" src="/images/icon/mambakkam/holisitic-icon.png" />
+                  <h2 className="AnimeElement">Holistic Approach</h2>
+                  <p className={`${styles.desc} AnimeElement`}>
                     We place equal emphasis on academic excellence and on the
                     social, physical emotional and development of our students.
                   </p>
@@ -66,9 +66,9 @@ const Features = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className={styles.featureBlock}>
-                  <img src="/images/icon/mambakkam/global-icon.png" />
-                  <h2>Global Outlook</h2>
-                  <p className={styles.desc}>
+                  <img className="AnimeElement" src="/images/icon/mambakkam/global-icon.png" />
+                  <h2 className="AnimeElement">Global Outlook</h2>
+                  <p className={`${styles.desc} AnimeElement`}>
                     Blending 21st century education techniques with the best
                     from traditional methods of teaching, Vikas Mantra offers a
                     unique programme for students of the emerging India.
@@ -77,9 +77,9 @@ const Features = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className={styles.featureBlock}>
-                  <img src="/images/icon/mambakkam/person-icon.png" />
-                  <h2>Talented Faculty</h2>
-                  <p className={styles.desc}>
+                  <img className="AnimeElement" src="/images/icon/mambakkam/person-icon.png" />
+                  <h2 className="AnimeElement">Talented Faculty</h2>
+                  <p className={`${styles.desc} AnimeElement`}>
                     VIKAS MANTRA PUBLIC SCHOOL faculty have been handpicked to
                     ensure that they bring the right attitude and approach in
                     engaging with students.
@@ -88,9 +88,9 @@ const Features = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className={styles.featureBlock}>
-                  <img src="/images/icon/mambakkam/per-hand-icon.png" />
-                  <h2>Rich Curriculum</h2>
-                  <p className={styles.desc}>
+                  <img className="AnimeElement" src="/images/icon/mambakkam/per-hand-icon.png" />
+                  <h2 className="AnimeElement">Rich Curriculum</h2>
+                  <p className={`${styles.desc} AnimeElement`}>
                     VIKAS MANTRA PUBLIC SCHOOL offers a unique curriculum which
                     comprises of a rigorous academic programme that deepens and
                     broadens knowledge of our students.

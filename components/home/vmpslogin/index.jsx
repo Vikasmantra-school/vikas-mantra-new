@@ -3,10 +3,10 @@ import styles from "./style.module.css";
 
 const VmpsLogin = () => {
   return (
-    <div className={styles.vmpsloginBanner}>
+    <div className={`${styles.vmpsloginBanner} AnimeStarts`}>
       <Container className="h-100">
         <Col sm={6} className="h-100">
-          <div className={styles.vmpsloginwrapper}>
+          <div className={`${styles.vmpsloginwrapper} AnimeElement`}>
             <h2 className={styles.vmpsloginTitle}>VMPS login</h2>
             <p className={styles.vmpsDesc}>
               Welcome to the Vikas Mantra Admissions Portal your gateway to

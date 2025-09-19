@@ -555,7 +555,7 @@ p {
   border-bottom: 1px solid #fff;
 }
 .home #mainMenu2 .navbar-nav .nav-link {
-  color: #fff;
+  /* color: #fff; */
 }
 
 #mainMenu li.nav-item.active .nav-link,
@@ -2199,7 +2199,8 @@ tr {
   padding: 10px 15px;
   color: #202750 !important;
   font-size: 17px;
-  background: #e9ef89;
+  /* background: #e9ef89; */
+  background: #FFB800;
   border: 1px solid;
   position: fixed;
   bottom: 40px;

@@ -4,11 +4,11 @@ import styles from "./style.module.css";
 
 const BannerAdsVikasCommon = () => {
   return (
-    <div className={styles.bannerSectionVikas}>
+    <div className={`${styles.bannerSectionVikas} AnimeStarts`}>
       <Container>
         <div className={styles.bannerTitle}>
           <div className={styles.mainContentAdsVikas}>
-            <h3>
+            <h3 className="AnimeElement">
               <span>Admissions Open for the Academic Year 2025-26</span>
               <span className={styles.cribes}>Pre-KG to XI</span>
             </h3>
@@ -23,7 +23,7 @@ const BannerAdsVikasCommon = () => {
               buttonlink="/admissions"
     
             /> */}
-            <a style={{ textDecoration: "none", color: "inherit" }} href="/enquiry-form">
+            <a className="AnimeElement" style={{ textDecoration: "none", color: "inherit" }} href="/enquiry-form">
               <button className={styles.enrollNowBtn}>Enroll Now</button>
             </a>
           </div>

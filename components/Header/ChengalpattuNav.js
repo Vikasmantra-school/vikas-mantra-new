@@ -6,6 +6,7 @@ import Link from "next/link";
 import MobileNav from "../Header/MobileNav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import CampusDropdown from "./campusDropdown";
 
 const ChengalpattuNav = () => {
   const { asPath } = useRouter();
@@ -39,12 +40,12 @@ const ChengalpattuNav = () => {
     <>
       <header
         className={
-          "homeheader " +
+          "homeheader stickyHeader" +
           " " +
           pageName +
           ` ${isChengalpattu ? "home" : "position-sticky"}` +
-          " " +
-          (isChengalpattu ? `chengalpattu-unique` : "")
+          " " 
+          // + (isChengalpattu ? `chengalpattu-unique` : "")
         }>
         <nav className={styles.navTransparent + " navbar-expand-lg navbar"}>
           <div className="container">
@@ -64,8 +65,29 @@ const ChengalpattuNav = () => {
               </a>
             </Link>
             <ul className="m-hide navbar-nav ms-auto mb-2 mb-lg-0 call-btn">
-              <div className="me-md-3">
-                <Button className={styles.drpDownBtn}>
+              
+              <Button className={styles.firstbtn}>
+                <Link href="tel:+91-7092450450" legacyBehavior>
+                  <a>
+                    <FontAwesomeIcon
+                      icon={faPhone}
+                      className={styles.callIcon}
+                    />
+                    70924 50450
+                  </a>
+                </Link>
+              </Button>
+
+              {/* <Button className={`${styles.secondtbtn} me-md-3`}>
+                <Link href="/chengalpattu-site/enquiry-form" legacyBehavior>
+                  <a>Enroll</a>
+                </Link>
+              </Button> */}
+
+              <div >
+
+                <CampusDropdown/>
+                {/* <Button className={styles.drpDownBtn}>
                   <li className="nav-item dropdown m-0 p-0">
                     <a
                       className={` d-flex align-items-center gap-2 text-white nav-link dropdown-toggle m-0  ${styles.customDropdownToggle}`}
@@ -74,7 +96,7 @@ const ChengalpattuNav = () => {
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false">
-                      Campus
+                      {ismam}
                       <svg
                         width="22"
                         height="22"
@@ -108,32 +130,15 @@ const ChengalpattuNav = () => {
                       </li>
                     </ul>
                   </li>
-                </Button>
+                </Button> */}
 
-                <button className={styles.drpDownValue}>
+                {/* <button className={styles.drpDownValue}>
                   {isChengalpattu ? ( "Chengalpattu") : ("Chengalpattu")}
-                </button>
+                </button> */}
               </div>
-              <Button className={styles.firstbtn}>
-                <Link href="tel:+91-7092450450" legacyBehavior>
-                  <a>
-                    <FontAwesomeIcon
-                      icon={faPhone}
-                      className={styles.callIcon}
-                    />
-                    70924 50450
-                  </a>
-                </Link>
-              </Button>
-
-              <Button className={styles.secondtbtn}>
-                <Link href="/chengalpattu-site/enquiry-form" legacyBehavior>
-                  <a>Enroll</a>
-                </Link>
-              </Button>
             </ul>
             <div className="d-flex d-lg-none flex-column">
-                    <Button className={styles.drpDownBtn}>
+                    {/* <Button className={styles.drpDownBtn}>
                       <li className="nav-item dropdown m-0 p-0 list-unstyled">
                         <a
                           className={` d-flex align-items-center gap-2 text-white nav-link dropdown-toggle m-0 p-0 ${styles.customDropdownToggle}`}
@@ -180,7 +185,7 @@ const ChengalpattuNav = () => {
                           </li>
                         </ul>
                       </li>
-                    </Button>
+                    </Button> */}
 
                     {/* <button className={styles.drpDownValue}>
                       {subMenu?.headText || "Select Campus"}
@@ -548,7 +553,7 @@ const ChengalpattuNav = () => {
                     pageName === "events" ? "active nav-item" : "nav-item"
                   }>
                   <Link legacyBehavior href="/chengalpattu-site/events">
-                    <a className="nav-link">Gallery</a>
+                    <a className="nav-link">Events</a>
                   </Link>
                 </li>
 

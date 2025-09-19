@@ -76,8 +76,18 @@
   font-weight: 500;
   margin: 0;
 }
+.swiperSlide .imgWrapper {
+  overflow: hidden;
+ 
+  cursor: pointer;
+}
 .swiperSlide .slideCont img {
+  width: 100%;
   border-bottom-right-radius: 12px;
+  transition: transform 0.5s ease;
+}
+.swiperSlide .imgWrapper:hover img {
+  transform: scale(1.1) !important;
 }
 .swiperSlide .slideCont button {
   width: fit-content;
@@ -89,6 +99,16 @@
   border-radius: 1px;
   border: none;
   font-weight: 500;
+  transition: all 0.5s ease;
+}
+.swiperSlide .slideCont button:hover {
+  background: linear-gradient(
+    85.31deg,
+    #a11d2a -39.85%,
+    #e02d53 44.76%,
+    #f27d49 117.87%
+  );
+  color: #fff;
 }
 
 .customPrev,
@@ -130,9 +150,8 @@
 
 @media only screen and (max-width: 768px) {
   .swiperLeftCont .svgArrow {
-   display: none;
+    display: none;
   }
-  
 }
 
 @media only screen and (min-width: 1400px) {

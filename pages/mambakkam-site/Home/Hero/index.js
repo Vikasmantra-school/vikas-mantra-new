@@ -5,8 +5,8 @@ import styles from "./style.module.css";
 const HeroBanner = () => {
   return (
     <>
-      <section className={`${styles.heroBanner} container-fluid`}>
-        <div className={styles.homeLeftIcon}>
+      <section className={`${styles.heroBanner} AnimeStarts container-fluid`}>
+        <div className={`${styles.homeLeftIcon} AnimeElement`}>
           <svg
             width="80"
             height="191"
@@ -25,16 +25,16 @@ const HeroBanner = () => {
             {/* Left Side Content */}
             <div className="col-lg-6 col-md-12 h-100 order-2 order-lg-1 d-flex flex-column justify-content-around">
               <div>
-                <h1 className={styles.bannerTitle}>
+                <h1 className={`${styles.bannerTitle} AnimeElement`}>
                   Young Minds To <br />
                   Explore, Discover & <br className="d-none d-md-block"/>
                   Grow <span className={styles.highlight}>Every Day!</span>
                 </h1>
-                <div className={styles.admissionTag}>
+                <div className={`${styles.admissionTag} AnimeElement`}>
                   <a href="/admissions">Admissions Open for 2025 - 2026</a>
                 </div>
               </div>
-              <p className={styles.subtitle}>
+              <p className={`${styles.subtitle} AnimeElement`}>
                 From Foundational to Senior Secondary, we nurture young minds
                 with skills, knowledge, and values to shape future-ready
                 leaders.
@@ -42,11 +42,11 @@ const HeroBanner = () => {
             </div>
 
             {/* Right Side Image */}
-            <div className="col-lg-6 col-md-12 order-1 order-lg-2 text-center">
+            <div className="col-lg-6 col-md-12 order-1 order-lg-2 text-center ">
               <img
                 src="/images/banner/mambakkam-hero-banner.png"
                 alt="School Girl"
-                className={styles.heroImage}
+                className={`${styles.heroImage} AnimeElement`}
               />
             </div>
           </div>

@@ -12,11 +12,7 @@ import "swiper/css/pagination";
 import ModalFn from "/components/mambakkam/modal/ModalFn";
 import gsap from "gsap";
 
-
-
 const JourneySwiper = () => {
-  
-
   const containerRef = useRef(null);
   const arrowRef = useRef(null);
 
@@ -52,12 +48,10 @@ const JourneySwiper = () => {
     });
   };
 
-
-
   const slidesData = [
     {
       id: 1,
-      image: "/assets/blogs/blog2.png",
+      image: "/images/journeyswiper.png",
       title: "Upper Primary",
       description: "(Nursery, Kindergarten to II)",
       message:
@@ -66,7 +60,7 @@ const JourneySwiper = () => {
 
     {
       id: 2,
-      image: "/assets/blogs/blog2.png",
+      image: "/images/journeyswiper.png",
       title: "Middle Year",
       description: "(Grades VI – VIII)",
       message:
@@ -74,27 +68,27 @@ const JourneySwiper = () => {
     },
     {
       id: 3,
-      image: "/assets/blogs/blog2.png",
+      image: "/images/journeyswiper.png",
       title: "Secondary",
       description: "(Grade X)",
       message:
         "Children are oriented & prepared for board exams. Study of the second language will continue till Grade X. Emphasis on Health and Physical education are continued with dedicated time for the same.",
     },
-    
   ];
   return (
     <>
       <section
         ref={containerRef}
-        className={styles.journeySwiper + " " + "mbkm-section-padding"}>
+        className={
+          styles.journeySwiper + " " + "mbkm-section-padding AnimeStarts"
+        }>
         <div>
           <div className="row g-0 w-100">
             <div className="col-lg-3 d-flex justify-content-start">
               <div className={styles.swiperLeftCont}>
-                <h2>
+                <h2 className="AnimeElement">
                   Journey of <br /> education at VMPS
                   <div
-                    
                     onMouseMove={handleMouseMove}
                     onMouseLeave={handleMouseLeave}
                     className={styles.svgArrow}>
@@ -113,11 +107,13 @@ const JourneySwiper = () => {
                     </svg>
                   </div>
                 </h2>
-                <p>There’s so many things that make our school unique</p>
+                <p className="AnimeElement">
+                  There’s so many things that make our school unique
+                </p>
               </div>
             </div>
             <div className="col-lg-9 position-relative">
-              <div className={styles.swiperSvg2}>
+              <div className={`${styles.swiperSvg2} AnimeElement`}>
                 <svg
                   width="179"
                   height="210"
@@ -137,7 +133,7 @@ const JourneySwiper = () => {
                   />
                 </svg>
               </div>
-              <div className={styles.swiperSvg1}>
+              <div className={`${styles.swiperSvg1} AnimeElement`}>
                 <svg
                   width="224"
                   height="228"
@@ -181,16 +177,22 @@ const JourneySwiper = () => {
                   {slidesData.map((slide) => (
                     <SwiperSlide className={styles.swiperSlide} key={slide.id}>
                       <div className={styles.slideCont}>
-                        <img src={slide.image} alt={slide.title} />
-                        <h3>{slide.title}</h3>
-                        <p>{slide.description}</p>
+                        <div className={styles.imgWrapper}>
+                          <img
+                            className="AnimeElement"
+                            src={slide.image}
+                            alt={slide.title}
+                          />
+                        </div>
+                        <h3 className="AnimeElement"> {slide.title}</h3>
+                        <p className="AnimeElement">{slide.description}</p>
                         <ModalFn data={slidesData} dataID={slide.id} />
                       </div>
                     </SwiperSlide>
                   ))}
                 </Swiper>
               </div>
-              <div className={styles.customNav}>
+              <div className={`${styles.customNav} AnimeElement`}>
                 <button
                   className={styles.customPrev + " " + "swiper-prev-custom"}>
                   <svg

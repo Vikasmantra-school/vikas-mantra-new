@@ -15,12 +15,11 @@ import { delay } from "framer-motion";
 const Blog = () => {
   return (
     <>
-      <section className={styles.blogSection + " " + "mbkm-section-padding"}>
+      <section className={styles.blogSection + " " + "mbkm-section-padding AnimeStarts"}>
         <div className={styles.cust_container}>
           <div className="row">
             <div className="col-8 col-md-12">
-            <h2 className={styles.blogTitle}>What’s Happening</h2>
-
+              <h2 className={`${styles.blogTitle} AnimeElement`}>What’s Happening</h2>
             </div>
             {/* <div className="col d-md-none d-flex justify-content-center align-items-center">
               <a
@@ -36,10 +35,9 @@ const Blog = () => {
               spaceBetween={20}
               loop={true}
               autoplay={{
-                disableOnInteraction:false,
-                delay:2500
-              }
-              }
+                disableOnInteraction: false,
+                delay: 2500,
+              }}
               slidesPerView={3}
               breakpoints={{
                 0: {
@@ -64,7 +62,9 @@ const Blog = () => {
               }}>
               <SwiperSlide>
                 <div className={styles.blogBlock}>
-                  <img src="/assets/blogs/blog-11.JPG" />
+                  <div className={styles.imgWrapper}>
+                    <img src="/assets/blogs/blog-11.JPG" />
+                  </div>
                   <h2>
                     Nurturing Balance Through Yoga: A Path to Inner and Outer
                     Growth
@@ -83,7 +83,9 @@ const Blog = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className={styles.blogBlock}>
-                  <img src="/assets/blogs/blog-12.JPG" />
+                  <div className={styles.imgWrapper}>
+                    <img src="/assets/blogs/blog-12.JPG" />
+                  </div>
                   <h2>
                     Celebrations at Vikas Mantra Public School: Nurturing Joy,
                     Unity & Learning
@@ -102,7 +104,9 @@ const Blog = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className={styles.blogBlock}>
-                  <img src="/assets/blogs/blog-13.JPG" />
+                  <div className={styles.imgWrapper}>
+                    <img src="/assets/blogs/blog-13.JPG" />
+                  </div>
                   <h2>Discover Your Child's Unique Learning Style</h2>
 
                   <div className={styles.block_bottom}>

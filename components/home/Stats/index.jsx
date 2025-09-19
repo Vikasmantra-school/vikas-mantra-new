@@ -48,14 +48,14 @@ useEffect(() => {
 
 
   return (
-    <section className={styles.homeaboutSection}>
+    <section className={`${styles.homeaboutSection} AnimeStarts` }>
       <div className={styles.aboutVikasSmall}>
         <Container fluid="xl">
           <Row>
             <Col lg={7}>
               <div className={styles.statMain}>
                 <div className={styles.abtHeading}>
-                  <h2>
+                  <h2 className="AnimeElement">
                     <span>Inspiring Learning,</span> <br />
                     <span className={styles.underLined}>Empowering Lives!</span>
                   </h2>
@@ -67,21 +67,21 @@ useEffect(() => {
                     />
                   </div>
                 </div>
-                <p className={styles.abtPara}>
+                <p className={`${styles.abtPara} AnimeElement`}>
                   At Vikas Mantra Public School, our philosophy is rooted in the
                   belief that true education goes beyond textbooks — it shapes
                   minds, builds character, and inspires a lifelong journey of
                   growth. “Inspiring Learning and Empowering Lives” is more than
                   a motto; it defines our purpose.
                 </p>
-                <p>
+                  <p className={`${styles.abtPara} AnimeElement`}>
                   We inspire learning by nurturing curiosity, encouraging
                   creativity, and fostering academic excellence in every
                   student. Our classrooms are dynamic spaces where learners are
                   empowered to ask questions, explore ideas, and develop a love
                   for knowledge.
                 </p>
-                <p>
+                 <p className={`${styles.abtPara} AnimeElement`}>
                   We empower lives by instilling strong values, confidence, and
                   resilience — equipping students not just for exams, but for
                   life. Through holistic education and a supportive environment,
@@ -89,7 +89,7 @@ useEffect(() => {
                   compassionate individuals ready to make a positive impact on
                   the world.
                 </p>
-                <button className={styles.abtBtn}>
+                <button className={`${styles.abtBtn} AnimeElement`}>
                   <span>
                     <a href="/about">Know More</a>
                   </span>

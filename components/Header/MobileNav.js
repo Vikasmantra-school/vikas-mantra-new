@@ -530,7 +530,7 @@ const MobileNav = ({}) => {
             <li className="nav__item">
               <Link href="/chengalpattu-site/events" legacyBehavior>
                 <a className="nav__link" aria-current="page">
-                  Gallery
+                  Events
                 </a>
               </Link>
             </li>

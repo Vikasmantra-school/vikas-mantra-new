@@ -10,23 +10,28 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { mambakkamMenu } from "../../data/menu";
 import { chengalpattuMenu } from "../../data/menu";
 import { act } from "react";
+import { useCampus } from "../../hooks/useCampus";
+import CampusDropdown from "./campusDropdown";
 
 const Nav = () => {
   const { asPath } = useRouter();
   const dropdownSub = useRef("");
-  const isMambakkam = asPath.startsWith("/mambakkam-site");
-  const isChengalpattu = asPath.startsWith("/chengalpattu-site");
+
   var pageName = asPath.replace("/", "");
-  const [campusDropdownAria,setCampusDropdownAria] = useState(false)
-  const [dropDownMenu,setDropDownMenu] = useState(false)
-  
-  const [selectedCampus, setSelectedCampus] = useState(
-    isMambakkam
-      ? "Mambakkam"
-      : isChengalpattu
-      ? "Chengalpattu"
-      : "Select Campus"
-  );
+
+  const { campus, isMambakkam, isChengalpattu } = useCampus();
+
+  const [selectedCampus, setSelectedCampus] = useState("Select campus");
+
+  useEffect(() => {
+    if (campus === "mambakkam") {
+      setSelectedCampus("Mambakkam");
+    } else if (campus === "chengalpattu") {
+      setSelectedCampus("Chengalpattu");
+    } else {
+      setSelectedCampus("Select Campus");
+    }
+  }, [campus]);
 
   let subMenu = null;
   if (isMambakkam) {
@@ -36,7 +41,8 @@ const Nav = () => {
       headText: "Mambakkam",
       afflNo: "1930634",
     };
-  } else if (isChengalpattu) {
+  } 
+  else if (isChengalpattu) {
     subMenu = {
       bg: "#FFB800",
       color: "#1D1D1D",
@@ -45,45 +51,6 @@ const Nav = () => {
     };
   }
 
-  //  let activeMenu = [];
-  //   if (isMambakkam) {
-  //     activeMenu = mambakkamMenu;
-  //   } else if (isChengalpattu) {
-  //     activeMenu = chengalpattuMenu;
-  //   }
-
-  // const renderMenu = (items, level = 0) => (
-  //   <ul
-  //     className={` justify-content-end gap-5
-  //       ${level === 0 ? "navbar-nav mb-2 mb-lg-0 w-100" : "dropdown-menu "} `}>
-  //     {items.map((item, index) => (
-  //       <li
-  //         key={index}
-  //         className={item.children ? "nav-item dropdown" : "nav-item"}>
-  //         <Link href={`/mambakkam-site/${item.href}` || "#"} legacyBehavior>
-  //           <a
-  //             className={
-  //               item.children
-  //                 ? level === 0
-  //                   ? "nav-link dropdown-toggle text-white"
-  //                   : "dropdown-item dropdown-toggle"
-  //                 : level === 0
-  //                 ? "nav-link text-white"
-  //                 : "dropdown-item"
-  //             }
-  //             role={item.children ? "button" : undefined}
-  //             data-bs-toggle={item.children ? "dropdown" : undefined}
-  //             aria-expanded="false"
-  //             target={item.target || "_self"}>
-  //             {item.title}
-  //           </a>
-  //         </Link>
-
-  //         {item.children && renderMenu(item.children, level + 1)}
-  //       </li>
-  //     ))}
-  //   </ul>
-  // );
   function hamburgerMenu(e) {
     let menu = document.getElementById("mobMenu");
     let hamburgerMenu = document.getElementById("hamburger");
@@ -97,20 +64,12 @@ const Nav = () => {
     }
   }
 
-  const handleCampusSelect = (label) => {
-    setSelectedCampus(label);
-  };
   function showDropdownSub() {
     dropdownSub.current.classList.remove("d-none");
   }
 
   function hideDropdownSub() {
     dropdownSub.current.classList.add("d-none");
-  }
-
-  const selectCampus = () => {
-    setCampusDropdownAria(!campusDropdownAria)
-    setDropDownMenu(!dropDownMenu)
   }
 
   return (
@@ -134,7 +93,7 @@ const Nav = () => {
                   //     ? "/mambakkam-site"
                   //     : "/"
                   // }
-                  href='/'
+                  href="/"
                   legacyBehavior>
                   <a className={styles.mainLogo + " " + "navbar-brand"}>
                     <img src="/assets/common-logo.png" alt="Vikas Mantra" />
@@ -155,9 +114,9 @@ const Nav = () => {
 
               <div className="col-7 col-lg-9">
                 <ul className="m-hide navbar-nav ms-auto mb-2 mb-lg-0 call-btn justify-content-end align-items-center">
-                  <div className={styles.announcementPatch}>
+                  {/* <div className={styles.announcementPatch}>
                     Admission Open 2025 - 2026
-                  </div>
+                  </div> */}
                   <div>
                     <button className={styles.callBtn}>
                       {isMambakkam ? (
@@ -187,7 +146,8 @@ const Nav = () => {
                   </div>
 
                   <div>
-                    <Button className={styles.drpDownBtn}>
+                    <CampusDropdown />
+                    {/* <Button className={styles.drpDownBtn}>
                       <li className="nav-item dropdown m-0">
                         <a
                           className={` d-flex align-items-center gap-2 text-white nav-link dropdown-toggle m-0 ${styles.customDropdownToggle}`}
@@ -196,7 +156,7 @@ const Nav = () => {
                           role="button"
                           data-bs-toggle="dropdown"
                           aria-expanded={campusDropdownAria}>
-                          Campus
+                          {isMambakkam ? "Mambakkam" : "Campus"}
                           <svg
                             width="22"
                             height="22"
@@ -210,35 +170,61 @@ const Nav = () => {
                           </svg>
                         </a>
                         <ul
-                          className={`dropdown-menu ${dropDownMenu ? 'show' : ''}`}
+                          className={`dropdown-menu ${
+                            dropDownMenu ? "show" : ""
+                          }`}
                           aria-labelledby="campusDropdown">
-                          <li>
-                            <Link
-                              href="/mambakkam-site"
-                              onClick={() => handleCampusSelect("Mambakkam")}>
-                              <a className="dropdown-item py-1 px-2">
-                                Mambakkam
-                              </a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/chengalpattu-site"
-                              onClick={() =>
-                                handleCampusSelect("Chengalpattu")
-                              }>
-                              <a className="dropdown-item py-1 px-2">
-                                Chengalpattu
-                              </a>
-                            </Link>
-                          </li>
+                          {isChengalpattu ? (
+                            <li>
+                              <Link
+                                href="/mambakkam-site"
+                                onClick={() => handleCampusSelect("Mambakkam")}>
+                                <a className="dropdown-item py-1 px-2">
+                                  Mambakkam
+                                </a>
+                              </Link>
+                            </li>
+                          ) : isMambakkam ? (
+                            <li>
+                              <Link
+                                href="/chengalpattu-site"
+                                onClick={() =>
+                                  handleCampusSelect("Chengalpattu")
+                                }>
+                                <a className="dropdown-item py-1 px-2">
+                                  Chengalpattu
+                                </a>
+                              </Link>
+                            </li>
+                          ) : (
+                            <>
+                              <li>
+                                <Link
+                                  href="/mambakkam-site"
+                                  onClick={() =>
+                                    handleCampusSelect("Mambakkam")
+                                  }>
+                                  <a className="dropdown-item py-1 px-2">
+                                    Mambakkam
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  href="/chengalpattu-site"
+                                  onClick={() =>
+                                    handleCampusSelect("Chengalpattu")
+                                  }>
+                                  <a className="dropdown-item py-1 px-2">
+                                    Chengalpattu
+                                  </a>
+                                </Link>
+                              </li>
+                            </>
+                          )}
                         </ul>
                       </li>
-                    </Button>
-
-                    <button className={styles.drpDownValue} onClick={selectCampus}>
-                      {subMenu?.headText || "Select Campus"}
-                    </button>
+                    </Button> */}
                   </div>
                 </ul>
                 <nav
@@ -402,7 +388,8 @@ const Nav = () => {
                 </nav>
                 <div className="d-lg-none d-flex align-items-center justify-content-around h-100">
                   <div className="d-flex flex-column">
-                    <Button className={styles.drpDownBtn}>
+                    <CampusDropdown />
+                    {/* <Button className={styles.drpDownBtn}>
                       <li className="nav-item dropdown m-0 p-0 list-unstyled">
                         <a
                           className={` d-flex align-items-center gap-2 text-white nav-link dropdown-toggle m-0 p-0 ${styles.customDropdownToggle}`}
@@ -449,7 +436,7 @@ const Nav = () => {
                           </li>
                         </ul>
                       </li>
-                    </Button>
+                    </Button> */}
 
                     {/* <button className={styles.drpDownValue}>
                       {subMenu?.headText || "Select Campus"}
@@ -466,7 +453,7 @@ const Nav = () => {
                 </div>
               </div>
 
-              <MobileNav subMenu={subMenu} selectedCampus={selectedCampus} />
+              <MobileNav />
             </div>
           </div>
         </nav>

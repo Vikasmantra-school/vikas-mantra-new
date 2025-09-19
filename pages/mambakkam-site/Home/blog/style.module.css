@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
 }
 .blogSection .cust_container {
   max-width: 90%;
@@ -40,6 +41,13 @@
 
 .blogBlock img {
   width: 100%;
+  transition: transform 0.5s ease;
+}
+.imgWrapper{
+  overflow: hidden;
+}
+.blogBlock:hover img{
+  transform: scale(1.1);
 }
 .blogBlock .block_bottom {
   border-top: 1px solid #ffcccc;
@@ -61,6 +69,10 @@
   color: #ff325c;
   border: none;
   margin-top: 1rem;
+}
+.viewAllBtn:hover{
+  text-decoration: underline;
+  color: #d1002a;
 }
 
 .viewAllBtnMob:focus {

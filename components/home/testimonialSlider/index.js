@@ -63,12 +63,12 @@ const Testimonials = () => {
   };
 
   return (
-    <section className={styles.testimonials}>
+    <section className={`${styles.testimonials} AnimeStarts`}>
       <Container>
-        <h2 className={styles.testimonialHeading}>What Parents Says</h2>
+        <h2 className={`${styles.testimonialHeading} AnimeElement`}>What Parents Says</h2>
       </Container>
       <div
-        className="position-relative"
+        className="position-relative AnimeElement"
         style={{ paddingInlineStart: "4.3vw" }}>
         <div className={styles.swiperSvg}>
           <svg
