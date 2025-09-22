@@ -68,9 +68,9 @@
 
 .heroImage {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 12px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media only screen and (max-width: 991px) {

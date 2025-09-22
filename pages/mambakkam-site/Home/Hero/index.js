@@ -21,13 +21,13 @@ const HeroBanner = () => {
           </svg>
         </div>
         <div className="container h-100">
-          <div className="row h-100 align-items-center">
+          <div className="row h-100 ">
             {/* Left Side Content */}
             <div className="col-lg-6 col-md-12 h-100 order-2 order-lg-1 d-flex flex-column justify-content-around">
               <div>
                 <h1 className={`${styles.bannerTitle} AnimeElement`}>
-                  Young Minds To <br />
-                  Explore, Discover & <br className="d-none d-md-block"/>
+                  Young Minds To 
+                  Explore, Discover & 
                   Grow <span className={styles.highlight}>Every Day!</span>
                 </h1>
                 <div className={`${styles.admissionTag} AnimeElement`}>

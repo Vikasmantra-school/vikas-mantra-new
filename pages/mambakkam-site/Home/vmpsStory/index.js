@@ -48,7 +48,7 @@ const VmpsStory = () => {
               </p>
 
               <button class="outlineBtn btn bottomToTop AnimeElement">
-                <a href="/about">Know More</a>
+                <a href="/about">Read More</a>
               </button>
             </div>
           </div>

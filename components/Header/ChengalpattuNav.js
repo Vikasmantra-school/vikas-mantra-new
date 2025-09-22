@@ -7,6 +7,7 @@ import MobileNav from "../Header/MobileNav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import CampusDropdown from "./campusDropdown";
+import CustomCaret from "../svg/CustomCaret";
 
 const ChengalpattuNav = () => {
   const { asPath } = useRouter();
@@ -20,10 +21,9 @@ const ChengalpattuNav = () => {
     menu.classList.toggle("mob-menu-hdden");
     hamburgerMenu.classList.toggle("is-active");
 
-    if(hamburgerMenu.classList.contains("is-active")){
-      document.body.style.overflow= "hidden"
-    }
-    else{
+    if (hamburgerMenu.classList.contains("is-active")) {
+      document.body.style.overflow = "hidden";
+    } else {
       document.body.style.overflow = "";
     }
   }
@@ -44,7 +44,7 @@ const ChengalpattuNav = () => {
           " " +
           pageName +
           ` ${isChengalpattu ? "home" : "position-sticky"}` +
-          " " 
+          " "
           // + (isChengalpattu ? `chengalpattu-unique` : "")
         }>
         <nav className={styles.navTransparent + " navbar-expand-lg navbar"}>
@@ -65,7 +65,6 @@ const ChengalpattuNav = () => {
               </a>
             </Link>
             <ul className="m-hide navbar-nav ms-auto mb-2 mb-lg-0 call-btn">
-              
               <Button className={styles.firstbtn}>
                 <Link href="tel:+91-7092450450" legacyBehavior>
                   <a>
@@ -84,9 +83,8 @@ const ChengalpattuNav = () => {
                 </Link>
               </Button> */}
 
-              <div >
-
-                <CampusDropdown/>
+              <div>
+                <CampusDropdown />
                 {/* <Button className={styles.drpDownBtn}>
                   <li className="nav-item dropdown m-0 p-0">
                     <a
@@ -138,7 +136,7 @@ const ChengalpattuNav = () => {
               </div>
             </ul>
             <div className="d-flex d-lg-none flex-column">
-                    {/* <Button className={styles.drpDownBtn}>
+              {/* <Button className={styles.drpDownBtn}>
                       <li className="nav-item dropdown m-0 p-0 list-unstyled">
                         <a
                           className={` d-flex align-items-center gap-2 text-white nav-link dropdown-toggle m-0 p-0 ${styles.customDropdownToggle}`}
@@ -187,7 +185,7 @@ const ChengalpattuNav = () => {
                       </li>
                     </Button> */}
 
-                    {/* <button className={styles.drpDownValue}>
+              {/* <button className={styles.drpDownValue}>
                       {subMenu?.headText || "Select Campus"}
                     </button> */}
             </div>
@@ -204,7 +202,9 @@ const ChengalpattuNav = () => {
 
         <nav
           id="mainMenu2"
-          className={styles.navTransparent + " " + "navbar navbar-expand-lg p-0"}>
+          className={
+            styles.navTransparent + " " + "navbar navbar-expand-lg p-0"
+          }>
           <div className="container">
             <div className="collapse navbar-collapse desktop-menu" id="">
               <ul className="navbar-nav mb-2 mb-lg-0">
@@ -226,6 +226,7 @@ const ChengalpattuNav = () => {
                       aria-expanded="false">
                       About
                     </a>
+                    
                   </Link>
 
                   <ul className="dropdown-menu">

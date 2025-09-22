@@ -12,6 +12,7 @@ import { chengalpattuMenu } from "../../data/menu";
 import { act } from "react";
 import { useCampus } from "../../hooks/useCampus";
 import CampusDropdown from "./campusDropdown";
+import CustomCaret from "../svg/CustomCaret";
 
 const Nav = () => {
   const { asPath } = useRouter();
@@ -252,6 +253,7 @@ const Nav = () => {
                             data-bs-toggle="dropdown"
                             aria-expanded="false">
                             About
+                            <CustomCaret color="black" />
                           </a>
                         </Link>
                         <ul className="dropdown-menu">
@@ -311,6 +313,7 @@ const Nav = () => {
                             data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Learning
+                            <CustomCaret color="black" />
                           </a>
                         </Link>
                         <ul className="dropdown-menu">
@@ -492,7 +495,7 @@ const Nav = () => {
                     className=" h-100 collapse navbar-collapse desktop-menu justify-content-end"
                     id="">
                     {isMambakkam && (
-                      <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end gap-5">
+                      <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end gap-5 mambakkam-menu">
                         <li
                           className={
                             pageName === "" ? "active nav-item" : "nav-item"
@@ -514,6 +517,7 @@ const Nav = () => {
                               data-bs-toggle="dropdown"
                               aria-expanded="false">
                               About Us
+                            <CustomCaret color="white" />
                             </a>
                           </Link>
 
@@ -546,6 +550,7 @@ const Nav = () => {
                               data-bs-toggle="dropdown"
                               aria-expanded="false">
                               Life of Campus
+                              <CustomCaret color="white" />
                             </a>
                           </Link>
                           <ul className="dropdown-menu">

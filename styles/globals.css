@@ -2405,3 +2405,48 @@ input[type="number"] {
   .dropdown-menu.show{
     z-index: 10000;
 }
+
+
+.nav-item.dropdown .dropdown-toggle::after{
+  display: none !important;
+}
+/* 
+.nav-item.dropdown .dropdown-toggle::before {
+  display: inline-block;
+  margin-left: 0.25rem;
+  background-image: url('./../public/assets/icons/dropdown-arrow.png'); 
+  background-size: contain;
+      background-repeat: no-repeat;
+    content: "";
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+    width: 10px;
+    color: blue;
+    height: 10px;
+    cursor: row-resize;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    right: -24px;
+    cursor: pointer;
+}
+
+
+.nav-item.show .dropdown-toggle::after {
+  transform: rotate(180deg);
+} */
+
+.nav-item.dropdown a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mambakkam-menu.navbar-nav .nav-item:hover .nav-link{
+  text-decoration: underline;
+  transform: scale(1.02);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  
+}
