@@ -115,11 +115,11 @@ const MessageFromPrincipal = () => {
                   styles.ImgMargin
                 }
               >
-                <img
+                {/* <img
                   src="/assets/banners/Principal-mambakkam-mob.jpeg"
                   alt="image"
                   className={styles.PrincipalImg + " AnimeElement"}
-                />
+                /> */}
               </div>
 
               <img
