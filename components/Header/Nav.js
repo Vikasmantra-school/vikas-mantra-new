@@ -360,7 +360,7 @@ const Nav = () => {
                 </div>
                 <div className="col-lg-6">
                   <div
-                    className=" h-100 collapse navbar-collapse desktop-menu justify-content-end"
+                    className=" h-100 collapse navbar-collapse desktop-menu justify-content-center"
                     id="">
                     {isMambakkam && (
                       <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end gap-5 mambakkam-menu">
@@ -669,7 +669,7 @@ const Nav = () => {
                     className={`${styles.announcementPatch} d-none d-md-block`}>
                     Admission Open 2025 - 2026
                   </div>
-                  <div className="subHamburger">menu</div>
+                  {/* <div className="subHamburger">menu</div> */}
                 </div>
               </div>
             </div>
