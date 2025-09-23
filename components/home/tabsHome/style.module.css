@@ -62,7 +62,7 @@
 .bottomContainer {
   padding: 3rem;
   padding-top: 1rem;
-  background-color: #e02d53;
+  background-color: #A4EFFF;
   border-radius: 60px;
   border-top-left-radius: 0;
   overflow: visible;
@@ -102,7 +102,7 @@
   cursor: pointer;
 }
 .endSvg {
-  background: url("/images/bgs/bottomTab.png") no-repeat;
+  background: url("/images/bgs/bottomTabNew.png") no-repeat;
   background-size: contain;
   position: relative;
   top: 30px;
@@ -127,7 +127,8 @@
   }
   .shapes{
     order: 2;
-    width: 75%;
+    width: 85%;
+    top: 20px;
     
     /* background-size: contain;
     position: relative;

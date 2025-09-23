@@ -39,12 +39,14 @@
 .Cardxcontainer {
   display: flex;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .card {
   position: relative;
   flex: 1;
+  border-radius: 8px;
+
   overflow: hidden;
 }
 
@@ -97,10 +99,12 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: #fccc7e;
-  padding: 10px;
+  background: #E02D53;
+  padding: 10px 1rem;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {

@@ -508,7 +508,8 @@ p {
 } */
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: rgba(29, 29, 29, 1);
+  color: #1d1d1d;
+  font-weight: 700;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -536,7 +537,7 @@ p {
 }
 
 .nav-link {
-  font-size: 1rem;
+  font-size: .875rem;
 }
 
 .dropdown-menu .dropdown-item:last-child {
@@ -545,7 +546,7 @@ p {
 }
 
 #mainMenu .navbar-nav {
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1.5rem;
   flex: 0 0 100%;
 }
@@ -565,7 +566,7 @@ p {
 
 #mainMenu li.nav-item.active .nav-link::after,
 #mainMenu2 li.nav-item.active .nav-link::after {
-  content: "";
+  /* content: ""; */
   border: unset;
   border-bottom: 5px solid #aa182c;
   position: absolute;
@@ -2318,7 +2319,8 @@ tr {
 }
 
 .spotlightTabs .nav-tabs .nav-link {
-  color: white;
+  color: #1D1D1D;
+  padding-inline: 10px;
 }
 
 .spotlightTabs .nav-tabs .nav-link.active {
@@ -2326,6 +2328,8 @@ tr {
   background: transparent !important;
   font-weight: normal;
   position: relative;
+   color: #1D1D1D !important;
+  font-weight: 700;
 }
 
 .spotlightTabs .nav-tabs .nav-link.active::after {
@@ -2399,6 +2403,7 @@ input[type="number"] {
   .stickyHeader{
     position: sticky !important;
     top:0;
+    box-shadow: 0px 4px 8.5px rgba(0, 0, 0, 0.16);
     background-color:#fff ;
   }
 

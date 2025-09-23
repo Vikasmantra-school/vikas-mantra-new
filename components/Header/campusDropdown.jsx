@@ -13,7 +13,7 @@ const CampusDropdown = () => {
       ? "Mambakkam"
       : campus === "chengalpattu"
       ? "Chengalpattu"
-      : "Campus";
+      : "Our Campus";
   return (
     <div>
       <Button className={styles.drpDownBtn}>

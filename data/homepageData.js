@@ -35,4 +35,11 @@ export const stats = [
     caption: "Happy parents",
     icon: "/images/icon/homepage/grouped_bar_chart.png",
   },
+  {
+    id: 6,
+    value:2,
+    suffix:"",
+    caption: "Acres Campus",
+    icon: "/images/icon/homepage/ink_selection.png",
+  },
 ];

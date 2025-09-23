@@ -7,7 +7,7 @@ import Link from "next/link";
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import HomeSlider from "../components/HomeSlider";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import AdmissionsBtnWrapper from "../components/home/admissionbtn";
 import { _colorExp } from "gsap/gsap-core";
 import Stats from "../components/home/Stats";
@@ -125,7 +125,20 @@ function Home() {
 
       <section>
         <Container fluid className="p-0">
-          <Row className="g-0">
+          <Row className="g-0 position-relative">
+            <div className={styles.centerSvg}>
+              <svg
+                width="304"
+                height="298"
+                viewBox="0 0 304 298"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M155.826 178.472C161.287 177.754 167.438 178.057 171.878 178.029C174.609 177.67 178.688 174.911 177.636 171.158C175.828 157.5 176.519 158.521 187.407 152.643C190.467 150.573 191.454 145.441 188.363 143.068C178.397 134.93 170.832 128.143 181.689 117.822C184.387 113.021 180.243 106.896 175.802 106.924C153.599 107.064 151.889 106.733 157.878 84.8241C158.537 81.4026 154.064 76.9883 149.294 78.727C125.445 87.4209 113.505 89.5467 97.9817 68.7988C95.2192 64.7154 88.0484 65.1024 86.0411 70.9246C84.0662 81.1891 81.4006 90.4327 79.4256 100.697C78.7673 104.119 77.0891 108.23 77.1214 112.673C78.535 119.157 76.4954 120.536 69.2923 116.481C60.082 118.248 52.2205 117.614 43.7008 120.402C38.931 122.14 37.9435 127.273 41.7258 130.666C50.3102 136.763 58.8945 142.86 67.4788 148.957C67.1174 146.226 66.0653 142.473 65.7038 139.742C55.8674 149.372 46.7217 160.024 36.8853 169.654C33.4967 173.435 35.9301 179.229 40.3707 179.201C44.4821 180.884 71.158 185.158 73.2299 188.22C79.4455 197.408 68.9185 206.018 63.8519 213.91C60.4633 217.69 63.5873 224.505 69.0477 223.787C76.2185 223.4 102.107 213.327 106.218 215.009C112.731 218.044 112.628 250.851 115.422 259.377C116.475 263.129 123.316 264.453 125.685 261.362C130.752 253.471 136.509 246.6 143.977 240.059C155.852 229.049 151.412 229.077 160.028 239.616C165.883 246.072 166.935 249.825 175.158 253.19C178.578 253.852 180.289 254.183 182.658 251.093C192.494 241.462 191.377 228.825 196.773 219.222C204.538 206.529 222.365 215.302 236.016 213.507C239.766 212.458 242.134 209.367 241.082 205.615C238.978 198.11 236.183 189.584 234.079 182.079C230.232 169.801 229.245 174.933 238.094 170.435C245.923 166.627 253.455 168.971 260.594 164.142C262.633 162.762 263.291 159.341 262.93 156.609C262.865 147.724 252.571 141.296 248.065 132.44C243.889 121.872 250.04 122.175 253.397 113.952C253.726 112.242 254.384 108.82 252.674 108.489C246.458 99.3015 239.616 97.9777 233.039 86.0585C231.264 76.8428 232.549 65.5575 228.405 59.4324C226.333 56.3698 224.623 56.0389 222.222 54.6871C219.821 53.3353 216.761 55.405 214.36 54.0533C204.427 50.3569 196.895 48.0122 193.738 36.7549C192.686 33.0025 188.575 31.3197 185.845 31.6787C179.035 34.7973 176.996 36.1771 170.877 40.3165C164.758 44.456 171.665 54.6644 177.783 50.525C181.863 47.7654 185.612 46.7165 189.692 43.9569C187.291 42.6051 184.89 41.2533 182.489 39.9015C185.283 48.4273 186.729 59.3536 194.623 64.4299C207.319 72.2096 211.333 60.5653 215.574 80.0175C217.71 91.9647 217.052 95.3862 227.018 103.525C230.8 106.918 236.951 107.221 238.694 111.995C239.384 113.015 232.575 116.134 232.936 118.866C231.981 128.44 231.981 128.44 236.486 137.297C241.682 147.174 252.274 147.449 243.457 156.39C238.029 161.55 231.846 156.805 226.056 159.234C207.668 167.21 227.367 198.525 230.523 209.782C231.872 207.382 234.241 204.291 235.59 201.891C223.649 204.016 202.369 190.139 191.513 200.46C177.926 211.14 194.269 250.678 166.773 227.613C162.3 223.199 163.288 218.067 154.407 218.123C140.065 218.897 121.806 244.642 115.719 253.224C119.14 253.886 122.561 254.547 125.982 255.209C122.826 243.952 128.06 212.138 117.074 204.689C105.399 196.219 80.5622 210.045 66.9112 211.84C68.9831 214.903 70.0352 218.655 72.107 221.718C80.9236 212.777 91.0892 201.435 93.3933 189.46C94.0517 186.039 92.6704 183.997 90.2694 182.645C77.5736 174.865 58.43 172.936 43.3654 168.247C44.4175 171.999 46.4894 175.062 46.8508 177.793C56.6872 168.163 65.833 157.511 75.6694 147.88C78.0381 144.79 75.9663 141.727 72.8746 139.355C64.9809 134.278 56.3966 128.181 49.5226 122.415C48.8643 125.837 48.206 129.258 47.5477 132.68C60.1465 127.133 67.6788 129.477 78.961 130.773C81.6912 130.414 84.4214 130.055 85.7704 127.654C94.8839 112.56 95.413 91.3695 98.7046 74.262C94.9546 75.3109 91.2047 76.3597 86.7641 76.3878C92.289 84.5545 100.609 101.247 111.562 104.254C123.206 108.281 143.601 94.4828 152.45 89.9844C151.069 87.9427 147.977 85.57 144.886 83.1974C142.22 92.4411 137.515 103.065 138.961 113.991C139.322 116.723 140.703 118.764 144.124 119.426C154.387 121.412 166.327 119.286 176.919 119.561C174.847 116.498 173.795 112.746 171.723 109.683C166.986 115.865 160.867 120.004 157.84 126.516C156.491 128.917 156.852 131.648 157.543 132.669C163.068 140.836 172.672 146.243 179.546 152.009C180.204 148.588 180.863 145.166 180.501 142.435C162.803 151.431 161.422 149.39 165.004 172.263C168.064 170.194 169.413 167.793 171.452 166.413C165.992 167.131 159.841 166.828 155.4 166.856C146.519 166.912 147.636 179.549 155.826 178.472Z"
+                  fill="#B5FBDD"
+                />
+              </svg>
+            </div>
             <Col md={6} className="d-none d-md-block">
               <div className="overflow-hidden">
                 <Splide
@@ -157,7 +170,7 @@ function Home() {
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
                         <AdmissionsBtnWrapper
-                        buttonlink="/enquiry-form"
+                          buttonlink="/enquiry-form"
                           schoolName="Chengalpattu"
                           bgStyles={{
                             backgroundColor: "#9AEDFFE5",
@@ -181,8 +194,7 @@ function Home() {
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
                         <AdmissionsBtnWrapper
-                        buttonlink="/enquiry-form"
-
+                          buttonlink="/enquiry-form"
                           schoolName="Chengalpattu"
                           bgStyles={{
                             backgroundColor: "#9AEDFFE5",
@@ -193,6 +205,72 @@ function Home() {
                     </div>
                   </SplideSlide>
                 </Splide>
+              </div>
+            </Col>
+
+            <Col className="d-none d-md-block" md={6}>
+              <div
+                className={styles.bannerSideWrapper}
+                style={{ backgroundColor: "#FFEBEB" }}>
+                <div className={`${styles.innercont} AnimeStarts `}>
+                  <h2 className="AnimeElement">
+                    Success in Every Step, Excellence in Every Lesson
+                  </h2>
+
+                  <a
+                    href="/chengalpattu-site"
+                    className={`${styles.innerBtn1} AnimeElement`}>
+                    <span className={styles.txt}>
+                      Visit Mahendran World City Campus
+                    </span>
+                    <span className={styles.arrow}>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.84625 11.6538L8.79225 10.5693L12.6115 6.75H0.5V5.25H12.6115L8.79225 1.43075L9.84625 0.346252L15.5 6L9.84625 11.6538Z"
+                          fill="#1C1B1F"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </Col>
+
+            <Col className="d-none d-md-block" md={6}>
+              <div
+                className={styles.bannerSideWrapper}
+                style={{
+                  backgroundColor: "#FFFEF0",
+                }}>
+                <div className={`${styles.innercont} AnimeStarts`}>
+                  <h2 className="AnimeElement">
+                    Every child’s growth is guided with meaning and momentum.
+                  </h2>
+
+                 <a
+                    href="/mambakkam-site"
+                    className={`${styles.innerBtn2} AnimeElement`}>
+                    <span className={styles.txt}>Visit Mambakkam Campus</span>
+                    <span className={styles.arrow}>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.84625 11.6537L8.79225 10.5692L12.6115 6.74994H0.5V5.24994H12.6115L8.79225 1.43069L9.84625 0.346191L15.5 5.99994L9.84625 11.6537Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
               </div>
             </Col>
             <Col md={6} className="d-none d-md-block">
@@ -228,8 +306,7 @@ function Home() {
                           momentum.
                         </h2>
                         <AdmissionsBtnWrapper
-                        buttonlink="/enquiry-form"
-
+                          buttonlink="/enquiry-form"
                           schoolName="Mambakkam"
                           bgStyles={{
                             backgroundColor: "#E02D53",
@@ -254,8 +331,7 @@ function Home() {
                           momentum.
                         </h2>
                         <AdmissionsBtnWrapper
-                        buttonlink="/enquiry-form"
-
+                          buttonlink="/enquiry-form"
                           schoolName="Mambakkam"
                           bgStyles={{
                             backgroundColor: "#E02D53",
@@ -297,8 +373,7 @@ function Home() {
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
                         <AdmissionsBtnWrapper
-                        buttonlink="/enquiry-form"
-
+                          buttonlink="/enquiry-form"
                           schoolName="Chengalpattu"
                           bgStyles={{
                             backgroundColor: "#9AEDFFE5",
@@ -324,8 +399,7 @@ function Home() {
                           momentum.
                         </h2>
                         <AdmissionsBtnWrapper
-                        buttonlink="/enquiry-form"
-
+                          buttonlink="/enquiry-form"
                           schoolName="Mambakkam"
                           bgStyles={{
                             backgroundColor: "#E02D53",
@@ -349,8 +423,7 @@ function Home() {
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
                         <AdmissionsBtnWrapper
-                        buttonlink="/enquiry-form"
-
+                          buttonlink="/enquiry-form"
                           schoolName="Chengalpattu"
                           bgStyles={{
                             backgroundColor: "#9AEDFFE5",
@@ -375,8 +448,7 @@ function Home() {
                           momentum.
                         </h2>
                         <AdmissionsBtnWrapper
-                        buttonlink="/enquiry-form"
-
+                          buttonlink="/enquiry-form"
                           schoolName="Mambakkam"
                           bgStyles={{
                             backgroundColor: "#E02D53",

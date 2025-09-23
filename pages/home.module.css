@@ -1,3 +1,10 @@
+.centerSvg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+}
 .swiperCont {
   padding: 4rem 2rem;
   overflow: hidden;
@@ -84,6 +91,47 @@
   border-bottom-right-radius: 6px;
 }
 
+.bannerSideWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.innercont{
+  padding-inline: 4rem;
+}
+.innercont h2{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1D1D1D;
+}
+.bannerSideWrapper a{
+  font-weight: 800;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.bannerSideWrapper span{
+  padding: 0.3125rem 1rem;
+}
+.bannerSideWrapper .innerBtn1 .txt{
+  background-color: #FFB800;
+  color: #1D1D1D;
+}
+.bannerSideWrapper .innerBtn1 .arrow{
+  background-color: #FFD79AE5;
+}
+
+.bannerSideWrapper .innerBtn2 .txt{
+  background-color: #45458A;
+  color: #FFFFFF;
+}
+.bannerSideWrapper .innerBtn2 .arrow{
+  background-color: #7272C3;
+}
 @media only screen and (max-width: 768px) {
   .floatingLinks {
     top: auto;
@@ -106,7 +154,7 @@
     width: 30px;
   }
   .swiperCont {
-     padding: 2rem 1rem;
+    padding: 2rem 1rem;
     height: calc(100dvh - 9rem);
   }
 

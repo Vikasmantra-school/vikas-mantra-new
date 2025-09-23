@@ -2,8 +2,10 @@
   height: 503px;
   margin-block: 60px;
   padding-block: 3rem;
-  background: url("/images/bgs/adsBanner.png") no-repeat center center;
+  background: url("/images/bgs/adsBannerNew.png") no-repeat center center;
   background-size: cover;
+  display: flex;
+ align-items: flex-end;
 }
 
 .mainContentAdsVikas {
@@ -56,7 +58,7 @@
   .bannerSectionVikas {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     position: relative;
     margin: 0;
 

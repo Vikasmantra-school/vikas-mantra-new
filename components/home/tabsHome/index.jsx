@@ -43,7 +43,7 @@ const TabsHome = () => {
       <Container>
         <div className={styles.upperContainer}>
           <div className={styles.shapes}>
-            <img src="/images/bgs/topTab.png" alt="image" />
+            <img src="/images/bgs/topTabNew.png" alt="image" />
           </div>
 
           <div className={styles.rightContent}>
