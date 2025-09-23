@@ -64,6 +64,19 @@ const Nav = () => {
     }
   }
 
+  function subHamburgerMenu(e) {
+    let menu = document.getElementById("mobSubMenu");
+    let hamburgerMenu = document.querySelector(".mobSubHamburger");
+    menu.classList.toggle("mob-menu-hdden");
+    hamburgerMenu.classList.toggle("is-active");
+
+    if (hamburgerMenu.classList.contains("is-active")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }
+
   function showDropdownSub() {
     dropdownSub.current.classList.remove("d-none");
   }
@@ -113,7 +126,7 @@ const Nav = () => {
                 </Link>
               </div>
 
-              <div className="d-none d-md-flex col-7 col-lg-8 d-flex align-items-center justify-content-center">
+              <div className="d-none d-lg-flex col-7 col-lg-8 d-flex align-items-center justify-content-center">
                 <nav
                   id="mainMenu"
                   className={
@@ -339,7 +352,7 @@ const Nav = () => {
             className={styles.navTransparent + " " + "navbar-expand-lg py-2"}>
             <div className="container">
               <div className="row">
-                <div className="col-lg-3 d-flex align-items-center">
+                <div className=" col-6 col-lg-3 d-flex align-items-center">
                   <div className={styles.submenuHead}>
                     <h3
                       style={{
@@ -352,13 +365,13 @@ const Nav = () => {
                       style={{
                         color: subMenu.color,
                       }}
-                      className="m-0 d-none d-md-block">
+                      className="m-0 d-none d-lg-block">
                       CBSE Affiliation No:
                       {subMenu.afflNo}
                     </small>
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 d-none d-lg-block">
                   <div
                     className=" h-100 collapse navbar-collapse desktop-menu justify-content-center"
                     id="">
@@ -664,12 +677,21 @@ const Nav = () => {
                   {/* <MobileNav selectedCampus={selectedCampus} /> */}
                 </div>
 
-                <div className="col-lg-3 d-flex align-items-center justify-content-end">
+                <div className="col-6 col-lg-3 d-flex align-items-center justify-content-end">
                   <div
-                    className={`${styles.announcementPatch} d-none d-md-block`}>
+                    className={`${styles.announcementPatch} d-none d-lg-block`}>
                     Admission Open 2025 - 2026
                   </div>
-                  {/* <div className="subHamburger">menu</div> */}
+                  <div
+                    onClick={(e) => subHamburgerMenu(e)}
+                    className="d-flex d-lg-none mobSubHamburger flex-column justify-content-center align-items-center">
+                    <div className="dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <p>MENU</p>
+                  </div>
                 </div>
               </div>
             </div>

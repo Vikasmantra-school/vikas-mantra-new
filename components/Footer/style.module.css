@@ -1,5 +1,17 @@
 .contactUs p {
   margin: 0px;
+  font-size: 0.875rem !important;
+}
+
+.footerTags p{
+  margin: 0;
+  font-size: 0.875rem !important;
+  color: #fff;
+  font-weight: 400;
+  border: 1px solid #674A4A;
+  padding: 5px 8px;
+  margin-block: 1.125rem;
+  width: fit-content;
 }
 
 .quickLink a {
