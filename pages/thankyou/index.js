@@ -1,5 +1,5 @@
 import style from './style.module.css'
-import Navbar from '../../components/Header/CampaignNav'
+import Navbar from '/components/Header/CampaignNav'
 import Link from 'next/link'
 
 

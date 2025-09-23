@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./style.module.css"
 import Button from 'react-bootstrap/Button';
-import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from '/components/Breadcrumb/Breadcrumb'
 
 function MandatoryScreen() {
 
