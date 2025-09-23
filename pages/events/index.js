@@ -176,7 +176,7 @@ const Events = ({ todos }) => {
                                       key={slideIndex}>
                                       <div className="row">
                                         {group.map((img, i) => (
-                                            <div className="col-6 col-md-4 mb-3">
+                                            <div key={i} className="col-6 col-md-4 mb-3">
 
                                           <img
                                             src={img}

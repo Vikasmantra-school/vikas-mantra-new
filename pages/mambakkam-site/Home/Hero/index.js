@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./style.module.css";
+import Link from "next/link";
 
 const HeroBanner = () => {
   return (
@@ -26,12 +27,13 @@ const HeroBanner = () => {
             <div className="col-lg-6 col-md-12 h-100 order-2 order-lg-1 d-flex flex-column justify-content-around">
               <div>
                 <h1 className={`${styles.bannerTitle} AnimeElement`}>
-                  Young Minds To 
-                  Explore, Discover & 
-                  Grow <span className={styles.highlight}>Every Day!</span>
+                  Young Minds To Explore, Discover & Grow{" "}
+                  <span className={styles.highlight}>Every Day!</span>
                 </h1>
                 <div className={`${styles.admissionTag} AnimeElement`}>
-                  <a href="/admissions">Admissions Open for 2025 - 2026</a>
+                  <Link href="/admissions" passHref>
+                    <a>Admissions Open for 2025 - 2026</a>
+                  </Link>
                 </div>
               </div>
               <p className={`${styles.subtitle} AnimeElement`}>

@@ -11,15 +11,21 @@ import "swiper/css/pagination";
 import ModalFn from "/components/mambakkam/modal/ModalFn";
 import gsap from "gsap";
 import { delay } from "framer-motion";
+import Link from "next/link";
 
 const Blog = () => {
   return (
     <>
-      <section className={styles.blogSection + " " + "mbkm-section-padding AnimeStarts"}>
+      <section
+        className={
+          styles.blogSection + " " + "mbkm-section-padding AnimeStarts"
+        }>
         <div className={styles.cust_container}>
           <div className="row">
             <div className="col-8 col-md-12">
-              <h2 className={`${styles.blogTitle} AnimeElement`}>What’s Happening</h2>
+              <h2 className={`${styles.blogTitle} AnimeElement`}>
+                What’s Happening
+              </h2>
             </div>
             {/* <div className="col d-md-none d-flex justify-content-center align-items-center">
               <a
@@ -63,7 +69,7 @@ const Blog = () => {
               <SwiperSlide>
                 <div className={styles.blogBlock}>
                   <div className={styles.imgWrapper}>
-                    <img src="/assets/blogs/blog-11.JPG" />
+                    <img src="/assets/blogs/blog-11.JPG" alt="blog" />
                   </div>
                   <h2>
                     Nurturing Balance Through Yoga: A Path to Inner and Outer
@@ -76,7 +82,9 @@ const Blog = () => {
                     <button
                       className="outlineBtn btn bottomToTop"
                       style={{ border: "1px solid #ffcccc" }}>
-                      <a href="/mambakkam-site/about/blog/blog11">Read more</a>
+                      <Link href="/mambakkam-site/about/blog/blog11" passHref>
+                        <a>Read more</a>
+                      </Link>
                     </button>
                   </div>
                 </div>
@@ -84,7 +92,7 @@ const Blog = () => {
               <SwiperSlide>
                 <div className={styles.blogBlock}>
                   <div className={styles.imgWrapper}>
-                    <img src="/assets/blogs/blog-12.JPG" />
+                    <img src="/assets/blogs/blog-12.JPG" alt="blog" />
                   </div>
                   <h2>
                     Celebrations at Vikas Mantra Public School: Nurturing Joy,
@@ -97,7 +105,9 @@ const Blog = () => {
                     <button
                       className="outlineBtn btn bottomToTop"
                       style={{ border: "1px solid #ffcccc" }}>
-                      <a href="/mambakkam-site/about/blog/blog12">Read more</a>
+                      <Link href="/mambakkam-site/about/blog/blog12" passHref>
+                        <a>Read more</a>
+                      </Link>
                     </button>
                   </div>
                 </div>
@@ -105,9 +115,9 @@ const Blog = () => {
               <SwiperSlide>
                 <div className={styles.blogBlock}>
                   <div className={styles.imgWrapper}>
-                    <img src="/assets/blogs/blog-13.JPG" />
+                    <img src="/assets/blogs/blog-13.JPG" alt="blog" />
                   </div>
-                  <h2>Discover Your Child's Unique Learning Style</h2>
+                  <h2>Discover Your Child&apos;s Unique Learning Style</h2>
 
                   <div className={styles.block_bottom}>
                     <p>10-March-2025</p>
@@ -115,7 +125,9 @@ const Blog = () => {
                     <button
                       className="outlineBtn btn bottomToTop"
                       style={{ border: "1px solid #ffcccc" }}>
-                      <a href="/mambakkam-site/about/blog/blog13">Read more</a>
+                      <Link href="/mambakkam-site/about/blog/blog13" passHref>
+                        <a>Read more</a>
+                      </Link>
                     </button>
                   </div>
                 </div>
@@ -154,11 +166,9 @@ const Blog = () => {
 
           <div className="row ">
             <div className="mt-3 d-flex align-items-end justify-content-end">
-              <a
-                className={styles.viewAllBtn}
-                href="/mambakkam-site/about/blog">
-                View all
-              </a>
+              <Link href="/mambakkam-site/about/blog" passHref>
+                <a className={styles.viewAllBtn}>View all</a>
+              </Link>
             </div>
           </div>
         </div>

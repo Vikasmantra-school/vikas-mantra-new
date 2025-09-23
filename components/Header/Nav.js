@@ -174,7 +174,7 @@ const Nav = () => {
                               legacyBehavior>
                               {/* <a className="dropdown-item">Our Advisor </a> */}
                               <a className="dropdown-item">
-                                Advisor's Message{" "}
+                                Advisor&apos;s Message{" "}
                               </a>
                             </Link>
                           </li>
@@ -395,7 +395,7 @@ const Nav = () => {
                                 href="/mambakkam-site/about/message-from-principal"
                                 legacyBehavior>
                                 <a className="dropdown-item">
-                                  Principal's Message
+                                  Principal&apos;s Message
                                 </a>
                               </Link>
                             </li>

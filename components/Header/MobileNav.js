@@ -120,7 +120,7 @@ const MobileNav = ({}) => {
                   <Link
                     href="/mambakkam-site/about/message-from-principal"
                     legacyBehavior>
-                    <a className="nav__link">Principal's Message</a>
+                    <a className="nav__link">Principal&apos;s Message</a>
                   </Link>
                 </li>
                 <li className="nav__item">

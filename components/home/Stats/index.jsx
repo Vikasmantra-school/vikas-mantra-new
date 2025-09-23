@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import { delay } from "framer-motion";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 const Stats = () => {
   const countersRef = useRef([]);
@@ -93,7 +94,9 @@ const Stats = () => {
                   </p>
                   <button className={`${styles.abtBtn} AnimeElement`}>
                     <span>
-                      <a href="/about">Know More</a>
+                      <Link href="/about">
+                        <a>Know More</a>
+                      </Link>
                     </span>
                   </button>
                 </div>
@@ -127,7 +130,7 @@ const Stats = () => {
       <Container className="d-block d-md-none">
         <Row>
           <Col>
-            <div >
+            <div>
               <p className={`${styles.abtPara} AnimeElement`}>
                 At Vikas Mantra Public School, our philosophy is rooted in the
                 belief that true education goes beyond textbooks — it shapes
@@ -152,7 +155,9 @@ const Stats = () => {
               </p>
               <button className={`${styles.abtBtn} AnimeElement`}>
                 <span>
-                  <a href="/about">Know More</a>
+                  <Link href="/about" passHref>
+                    <a>Know More</a>
+                  </Link>
                 </span>
               </button>
             </div>

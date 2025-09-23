@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import AdmissionsBtnWrapper from "../admissionbtn";
 import styles from "./style.module.css";
+import Link from "next/link";
 
 const BannerAdsVikasCommon = () => {
   return (
@@ -23,9 +24,13 @@ const BannerAdsVikasCommon = () => {
               buttonlink="/admissions"
     
             /> */}
-            <a className="AnimeElement" style={{ textDecoration: "none", color: "inherit" }} href="/enquiry-form">
-              <button className={styles.enrollNowBtn}>Enroll Now</button>
-            </a>
+            <Link href="/enquiry-form" passHref >
+              <a
+                className="AnimeElement"
+                style={{ textDecoration: "none", color: "inherit" }}>
+                <button className={styles.enrollNowBtn}>Enroll Now</button>
+              </a>
+            </Link>
           </div>
         </div>
       </Container>

@@ -226,7 +226,7 @@ export const Footer = () => {
                         <p>
                           <a
                             href="mailto:admissions.mambakkam@vikasmantra.org "
-                            target="_blank">
+                           >
                             admissions.mambakkam@vikasmantra.org
                           </a>
                         </p>
@@ -286,7 +286,7 @@ export const Footer = () => {
                         <p>
                           <a
                             href="mailto:info.mambakkam@vikasmantra.org "
-                            target="_blank">
+                            >
                             info.mambakkam@vikasmantra.org
                           </a>
                         </p>
@@ -355,7 +355,7 @@ export const Footer = () => {
                         <p>
                           <a
                             href="mailto:admissions.mambakkam@vikasmantra.org "
-                            target="_blank">
+                            >
                             admissions.mambakkam@vikasmantra.org
                           </a>
                         </p>
@@ -414,7 +414,7 @@ export const Footer = () => {
                         <p>
                           <a
                             href="mailto:info.mambakkam@vikasmantra.org "
-                            target="_blank">
+                            >
                             info.mambakkam@vikasmantra.org
                           </a>
                         </p>

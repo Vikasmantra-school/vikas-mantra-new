@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Modal, ModalTitle } from "react-bootstrap";
+import { Button, Modal, ModalTitle } from "react-bootstrap";
 import styles from "./style.module.css";
 
 const ModalFn = ({

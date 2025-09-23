@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import styles from "./style.module.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import Link from "next/link";
 
 function HomeSlider({ ref }) {
   let title = useRef(null);
@@ -48,7 +49,12 @@ function HomeSlider({ ref }) {
 
                       <p className='box AnimeElement'>
                         STD Xth Toppers & Top Achievers (2023-2024)
-                      </p> */}<a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
+                      </p> */}
+                      <Link href="/enquiry-form" passHref>
+                        <a className={styles.bannerCta}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -68,7 +74,11 @@ function HomeSlider({ ref }) {
                         We believe in nurturing success in every step and
                         fostering excellence in every lesson.
                       </p>
-                        <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
+                      <Link href="/enquiry-form" passHref>
+                        <a className={styles.bannerCta}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -102,7 +112,11 @@ function HomeSlider({ ref }) {
                         Vikas Mantra Public School offers CBSE Curriculum and
                         was launched in the academic year 2019-22.
                       </p>
-                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
+                      <Link href="/enquiry-form" passHref>
+                        <a className={styles.bannerCta}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -123,7 +137,11 @@ function HomeSlider({ ref }) {
                         Vikas Mantra Public School offers CBSE Curriculum and
                         was launched in the academic year 2019-22.
                       </p>
-                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
+                      <Link href="/enquiry-form" passHref>
+                        <a className={styles.bannerCta}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -156,9 +174,12 @@ function HomeSlider({ ref }) {
                         Academic Excellence ( Private School ) of the year 2021
                         - 22
                       </p>
-                     <a href="/enquiry-form" className={`${styles.bannerCta} mt-3`}>Admissions Open 2025-26.</a>
+                      <Link href="/enquiry-form" passHref>
+                        <a className={`${styles.bannerCta} mt-3`}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -178,7 +199,11 @@ function HomeSlider({ ref }) {
                         Academic Excellence ( Private School ) of the year 2021
                         - 22
                       </p>
-                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
+                      <Link href="/enquiry-form" passHref>
+                        <a className={styles.bannerCta}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -206,7 +231,11 @@ function HomeSlider({ ref }) {
                         indian cricket player Mr.Subramaniam Badrinath who is
                         our chief guest.
                       </p>
-                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
+                      <Link href="/enquiry-form" passHref>
+                        <a className={styles.bannerCta}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -225,7 +254,11 @@ function HomeSlider({ ref }) {
                         indian cricket player Mr.Subramaniam Badrinath who is
                         our chief guest.
                       </p>
-                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
+                      <Link href="/enquiry-form" passHref>
+                        <a className={styles.bannerCta}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -254,7 +287,11 @@ function HomeSlider({ ref }) {
                         A fabulous march past performed by our school kids on
                         kiddies annual sports meet.
                       </p>
-                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
+                      <Link href="/enquiry-form" passHref>
+                        <a className={styles.bannerCta}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -274,7 +311,11 @@ function HomeSlider({ ref }) {
                         A fabulous march past performed by our school kids on
                         kiddies annual sports meet.
                       </p>
-                      <a href="/enquiry-form" className={styles.bannerCta}>Admissions Open 2025-26.</a>
+                      <Link href="/enquiry-form" passHref>
+                        <a className={styles.bannerCta}>
+                          Admissions Open 2025-26.
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

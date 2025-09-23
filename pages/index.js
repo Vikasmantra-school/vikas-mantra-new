@@ -161,7 +161,7 @@ function Home() {
                       <div className={styles.sliderImagesWrapper}>
                         <img
                           className={styles.sliderImageduo}
-                          src="/assets/banners/homebannernew.png"
+                          src="/assets/banners/homeBannerChengal.jpg"
                           alt="Image 1"
                         />
                       </div>
@@ -217,26 +217,26 @@ function Home() {
                     Success in Every Step, Excellence in Every Lesson
                   </h2>
 
-                  <a
-                    href="/chengalpattu-site"
-                    className={`${styles.innerBtn1} AnimeElement`}>
-                    <span className={styles.txt}>
-                      Visit Mahendran World City Campus
-                    </span>
-                    <span className={styles.arrow}>
-                      <svg
-                        width="16"
-                        height="12"
-                        viewBox="0 0 16 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M9.84625 11.6538L8.79225 10.5693L12.6115 6.75H0.5V5.25H12.6115L8.79225 1.43075L9.84625 0.346252L15.5 6L9.84625 11.6538Z"
-                          fill="#1C1B1F"
-                        />
-                      </svg>
-                    </span>
-                  </a>
+                  <Link href="/chengalpattu-site" passHref>
+                    <a className={`${styles.innerBtn1} AnimeElement`}>
+                      <span className={styles.txt}>
+                        Visit Mahendran World City Campus
+                      </span>
+                      <span className={styles.arrow}>
+                        <svg
+                          width="16"
+                          height="12"
+                          viewBox="0 0 16 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.84625 11.6538L8.79225 10.5693L12.6115 6.75H0.5V5.25H12.6115L8.79225 1.43075L9.84625 0.346252L15.5 6L9.84625 11.6538Z"
+                            fill="#1C1B1F"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </Col>
@@ -252,24 +252,24 @@ function Home() {
                     Every child’s growth is guided with meaning and momentum.
                   </h2>
 
-                 <a
-                    href="/mambakkam-site"
-                    className={`${styles.innerBtn2} AnimeElement`}>
-                    <span className={styles.txt}>Visit Mambakkam Campus</span>
-                    <span className={styles.arrow}>
-                      <svg
-                        width="16"
-                        height="12"
-                        viewBox="0 0 16 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M9.84625 11.6537L8.79225 10.5692L12.6115 6.74994H0.5V5.24994H12.6115L8.79225 1.43069L9.84625 0.346191L15.5 5.99994L9.84625 11.6537Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </span>
-                  </a>
+                  <Link href="/mambakkam-site" passHref>
+                    <a className={`${styles.innerBtn2} AnimeElement`}>
+                      <span className={styles.txt}>Visit Mambakkam Campus</span>
+                      <span className={styles.arrow}>
+                        <svg
+                          width="16"
+                          height="12"
+                          viewBox="0 0 16 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.84625 11.6537L8.79225 10.5692L12.6115 6.74994H0.5V5.24994H12.6115L8.79225 1.43069L9.84625 0.346191L15.5 5.99994L9.84625 11.6537Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </Col>
@@ -364,7 +364,7 @@ function Home() {
                       <div className={styles.sliderImagesWrapper}>
                         <img
                           className={styles.sliderImageduo}
-                          src="/assets/banners/homebannernew.png"
+                          src="/assets/banners/homeBannerChengal.jpg"
                           alt="Image 1"
                         />
                       </div>

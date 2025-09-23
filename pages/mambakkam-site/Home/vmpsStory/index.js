@@ -1,17 +1,19 @@
-
 "use client";
+import Link from "next/link";
 import styles from "./style.module.css";
 
 const VmpsStory = () => {
   return (
     <>
-      <section className={styles.vmpsStory + " " + "mbkm-section-padding AnimeStarts"}>
+      <section
+        className={styles.vmpsStory + " " + "mbkm-section-padding AnimeStarts"}>
         <div className="container">
           <div className="row align-items-center ">
             <div className="mb-5 col-lg-6 col-md-12 col-sm-12 AnimeStarts ">
               <img
                 className={`${styles.vmpsBanner} AnimeElement`}
                 src="/images/banner/vmps-stoy-banner.png"
+                alt="banner"
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 AnimeStarts">
@@ -40,7 +42,7 @@ const VmpsStory = () => {
                 modern facilities.
               </p>
 
-               <p className={`${styles.desc} AnimeElement`}>
+              <p className={`${styles.desc} AnimeElement`}>
                 By blending 21st century learning methodologies and traditional
                 Indian values, we equip our students to think freely, dream big
                 and pursue their passions, yet remain firmly connected to ground
@@ -48,7 +50,9 @@ const VmpsStory = () => {
               </p>
 
               <button class="outlineBtn btn bottomToTop AnimeElement">
-                <a href="/about">Read More</a>
+                <Link href="/about">
+                  <a>Read More</a>
+                </Link>
               </button>
             </div>
           </div>

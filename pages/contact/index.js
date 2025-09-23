@@ -202,8 +202,7 @@ const Contact = () => {
                 <div className="ContactAnimeStarts">
                   <p className="m-0 AnimeElement1">
                     <a
-                      href="mailto:admissions.mambakkam@vikasmantra.org "
-                      target="_blank">
+                      href="mailto:admissions.mambakkam@vikasmantra.org ">
                       admissions.mambakkam@vikasmantra.org
                     </a>
                   </p>
@@ -235,7 +234,7 @@ const Contact = () => {
                   <p className="m-0 AnimeElement1">
                     <a
                       href="mailto:info.mambakkam@vikasmantra.org "
-                      target="_blank">
+                      >
                       info.mambakkam@vikasmantra.org
                     </a>
                   </p>
@@ -273,7 +272,7 @@ const Contact = () => {
                   <p className="m-0 AnimeElement1">
                     <a
                       href="mailto:admissions.mambakkam@vikasmantra.org "
-                      target="_blank">
+                      >
                       admissions.mambakkam@vikasmantra.org
                     </a>
                   </p>
@@ -287,8 +286,7 @@ const Contact = () => {
                 <div className="ContactAnimeStarts">
                   <p className="m-0 AnimeElement1">
                     <a
-                      href="mailto:info.mambakkam@vikasmantra.org "
-                      target="_blank">
+                      href="mailto:info.mambakkam@vikasmantra.org ">
                       info.mambakkam@vikasmantra.org
                     </a>
                   </p>
