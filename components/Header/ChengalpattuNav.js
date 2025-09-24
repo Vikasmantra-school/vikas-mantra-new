@@ -8,12 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import CampusDropdown from "./campusDropdown";
 import CustomCaret from "../svg/CustomCaret";
+import { useCampus } from "../../hooks/useCampus";
 
 const ChengalpattuNav = () => {
   const { asPath } = useRouter();
   const dropdownSub = useRef("");
   var pageName = asPath.replace("/", "");
-  var isChengalpattu = asPath === "/chengalpattu-site";
+  const { campus, isMambakkam, isChengalpattu } = useCampus();
 
   function hamburgerMenu(e) {
     let menu = document.getElementById("mobMenu");
@@ -209,15 +210,24 @@ const ChengalpattuNav = () => {
             <div className="collapse navbar-collapse desktop-menu" id="">
               <ul className="navbar-nav mb-2 mb-lg-0">
                 <li
-                  className={pageName === "" ? "active nav-item" : "nav-item"}>
-                  <Link href="/" legacyBehavior>
+                  className={
+                    pageName === "chengalpattu-site"
+                      ? "active nav-item"
+                      : "nav-item"
+                  }>
+                  <Link href="/chengalpattu-site" legacyBehavior>
                     <a className="nav-link" aria-current="page">
                       Home
                     </a>
                   </Link>
                 </li>
 
-                <li className="nav-item dropdown">
+                <li
+                  className={
+                    pageName.startsWith("chengalpattu-site/about")
+                      ? "active nav-item dropdown"
+                      : "nav-item dropdown"
+                  }>
                   <Link href="/chengalpattu-site/about" legacyBehavior>
                     <a
                       className="nav-link dropdown-toggle"
@@ -225,8 +235,8 @@ const ChengalpattuNav = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false">
                       About
+                      <CustomCaret color="black" />
                     </a>
-                    
                   </Link>
 
                   <ul className="dropdown-menu">
@@ -286,14 +296,14 @@ const ChengalpattuNav = () => {
 
                 <li
                   className={
-                    pageName === "admissions" ? "active nav-item" : "nav-item"
+                    pageName.startsWith("chengalpattu-site/admissions")  ? "active nav-item" : "nav-item"
                   }>
                   <Link legacyBehavior href="/chengalpattu-site/admissions">
                     <a className="nav-link">Admissions</a>
                   </Link>
                 </li>
 
-                <li className="nav-item dropdown">
+                <li className={ pageName.startsWith("chengalpattu-site/campus") ? "active nav-item dropdown" : "nav-item dropdown"}>
                   <Link href="/chengalpattu-site/campus" legacyBehavior>
                     <a
                       className="nav-link dropdown-toggle"
@@ -301,6 +311,7 @@ const ChengalpattuNav = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false">
                       Campus
+                      <CustomCaret color="black" />
                     </a>
                   </Link>
                   <ul className="dropdown-menu">
@@ -380,7 +391,7 @@ const ChengalpattuNav = () => {
                   </ul>
                 </li>
 
-                <li className="nav-item dropdown">
+                <li className={pageName.startsWith("chengalpattu-site/learning") ? "active nav-item dropdown" :"nav-item dropdown"}>
                   <Link href="/chengalpattu-site/learning" legacyBehavior>
                     <a
                       className="nav-link dropdown-toggle"
@@ -388,6 +399,7 @@ const ChengalpattuNav = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false">
                       Learning
+                      <CustomCaret color="black" />
                     </a>
                   </Link>
 
@@ -529,7 +541,7 @@ const ChengalpattuNav = () => {
 
                 <li
                   className={
-                    pageName === "enquiry-form" ? "active nav-item" : "nav-item"
+                    pageName.startsWith("chengalpattu-site/enquiry-form")  ? "active nav-item" : "nav-item"
                   }>
                   <Link legacyBehavior href="/chengalpattu-site/enquiry-form">
                     <a className="nav-link">Enquiry Form</a>
@@ -538,7 +550,7 @@ const ChengalpattuNav = () => {
 
                 <li
                   className={
-                    pageName === "mandatory-public-disclosures"
+                    pageName.startsWith("chengalpattu-site/mandatory-public-disclosures") 
                       ? "active nav-item"
                       : "nav-item"
                   }>
@@ -551,7 +563,7 @@ const ChengalpattuNav = () => {
 
                 <li
                   className={
-                    pageName === "events" ? "active nav-item" : "nav-item"
+                    pageName.startsWith("chengalpattu-site/events")  ? "active nav-item" : "nav-item"
                   }>
                   <Link legacyBehavior href="/chengalpattu-site/events">
                     <a className="nav-link">Events</a>
@@ -560,7 +572,7 @@ const ChengalpattuNav = () => {
 
                 <li
                   className={
-                    pageName === "contact" ? "active nav-item" : "nav-item"
+                    pageName.startsWith("chengalpattu-site/contact")  ? "active nav-item" : "nav-item"
                   }>
                   <Link legacyBehavior href="/chengalpattu-site/contact">
                     <a className="nav-link">Contact Us</a>
@@ -569,7 +581,7 @@ const ChengalpattuNav = () => {
 
                 <li
                   className={
-                    pageName === "careers" ? "active nav-item" : "nav-item"
+                    pageName.startsWith("chengalpattu-site/careers")  ? "active nav-item" : "nav-item"
                   }>
                   <Link legacyBehavior href="/chengalpattu-site/careers">
                     <a className="nav-link">Careers</a>

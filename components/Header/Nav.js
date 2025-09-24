@@ -144,7 +144,12 @@ const Nav = () => {
                           </a>
                         </Link>
                       </li>
-                      <li className="nav-item dropdown">
+                      <li
+                        className={
+                          pageName.startsWith("about")
+                            ? "active nav-item dropdown"
+                            : "nav-item dropdown"
+                        }>
                         <Link href="/about" legacyBehavior>
                           <a
                             className="nav-link dropdown-toggle"
@@ -204,7 +209,12 @@ const Nav = () => {
                         </Link>
                       </li>
 
-                      <li className="nav-item dropdown">
+                      <li
+                        className={
+                          pageName.startsWith("learning")
+                            ? "active nav-item dropdown"
+                            : " nav-item dropdown"
+                        }>
                         <Link href="/learning" legacyBehavior>
                           <a
                             className="nav-link dropdown-toggle"

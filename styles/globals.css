@@ -553,6 +553,8 @@ p {
 }
 #mainMenu2 .navbar-nav {
   justify-content: space-between;
+  align-items: center;
+
   flex: 0 0 100%;
   border-bottom: 1px solid #fff;
 }
@@ -2500,9 +2502,9 @@ input[type="number"] {
     border-radius: 50%;
 }
 
-.home-btn{
+.nav-item.active .nav-link{
   background: linear-gradient(90deg, #E02D53 0%, rgba(224, 45, 83, 0) 100%);
-  display: block;
-  padding: 2px 5px !important;
+  /* display: block; */
+  padding: 3px 8px !important;
   color: white !important;
 }
