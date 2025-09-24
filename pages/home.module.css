@@ -9,7 +9,7 @@
   padding: 4rem 2rem;
   overflow: hidden;
   height: 100vh;
-  height: calc(100dvh - 6.8rem);
+  height: calc(100dvh - 5.15rem);
   display: flex;
   align-items: flex-end;
 }

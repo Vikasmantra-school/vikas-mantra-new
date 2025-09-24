@@ -484,7 +484,7 @@ export const Footer = () => {
                       <p> S.No:168,168/3, Off Mahindra World City, </p>
                       <p> Anjur 603204, Chengalpattu</p>
                       <p> info@vikasmantra.org</p>
-                      <p>mathu</p>
+                      {/* <p>mathu</p> */}
 
                       <p>
                         <a href="mailto:info.mambakkam@vikasmantra.org ">
