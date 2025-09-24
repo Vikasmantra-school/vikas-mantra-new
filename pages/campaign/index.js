@@ -674,7 +674,7 @@ const Campaign = () => {
 
         <section>
           <div className="container">
-            <div className="row watsapp-icon">
+            {/* <div className="row fixed-cta">
               <div className="col-sm-12">
                 <a
                   className="whatsappDiv"
@@ -704,7 +704,7 @@ const Campaign = () => {
                   Enquire Now
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>

@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { chengalpattuMenu, mambakkamMenu } from "../../data/menu";
+import { useCampus } from "../../hooks/useCampus";
 
 const MobileNav = ({}) => {
   const router = useRouter();
 
   const { asPath } = useRouter();
 
-  const isMambakkam = asPath.startsWith("/mambakkam-site");
-  const isChengalpattu = asPath.startsWith("/chengalpattu-site");
+  const { campus, isMambakkam, isChengalpattu } = useCampus();
 
   let subMenu = null;
   if (isMambakkam) {

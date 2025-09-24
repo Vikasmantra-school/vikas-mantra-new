@@ -139,7 +139,7 @@ const Nav = () => {
                           pageName === "" ? "active nav-item" : "nav-item"
                         }>
                         <Link href="/" legacyBehavior>
-                          <a className="nav-link" aria-current="page">
+                          <a className="nav-link home-btn" aria-current="page">
                             Home
                           </a>
                         </Link>
@@ -331,7 +331,7 @@ const Nav = () => {
                       className="hamburger"
                       id="hamburger">
                       <span className="line"></span>
-                      <span className="line"></span>
+                      {/* <span className="line"></span> */}
                       <span className="line"></span>
                     </div>
                   </div>
@@ -678,10 +678,12 @@ const Nav = () => {
                 </div>
 
                 <div className="col-6 col-lg-3 d-flex align-items-center justify-content-end">
-                  <div
-                    className={`${styles.announcementPatch} d-none d-lg-block`}>
-                    Admission Open 2025 - 2026
-                  </div>
+                  <Link href="/enquiry-form">
+                    <a
+                      className={`${styles.announcementPatch} d-none d-lg-block`}>
+                      Admission Open 2025 - 2026
+                    </a>
+                  </Link>
                   <div
                     onClick={(e) => subHamburgerMenu(e)}
                     className="d-flex d-lg-none mobSubHamburger flex-column justify-content-center align-items-center">

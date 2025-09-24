@@ -12,12 +12,12 @@ import FbLogo from "../../public/assets/icons/FbLogo.png";
 import YtLogo from "../../public/assets/icons/YtLogo.png";
 import LinkedInLogo from "../../public/assets/icons/LinkedInLogo.png";
 import { useRouter } from "next/router";
+import { useCampus } from "../../hooks/useCampus";
 
 export const Footer = () => {
   const { asPath } = useRouter();
 
-  const isMambakkam = asPath.startsWith("/mambakkam-site");
-  const isChengalpattu = asPath.startsWith("/chengalpattu-site");
+  const { campus, isMambakkam, isChengalpattu } = useCampus();
 
   //popup-integration
 
@@ -54,7 +54,6 @@ export const Footer = () => {
   const [mail, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [dropdownValue, setDropdownValue] = useState("");
-  const [campus, setCampus] = useState("");
 
   //form-sheet-integration
 
@@ -73,7 +72,6 @@ export const Footer = () => {
     setEmail("");
     setNumber("");
     setDropdownValue("");
-    setCampus("");
 
     fetch(scriptUrl, {
       method: "POST",
@@ -104,7 +102,9 @@ export const Footer = () => {
 
       <div className={styles.section + " pt-5 m-0"} id="footer">
         <div className="container footer-container">
-          <div className="row py-4" style={{ borderBottom:"1px solid #674A4A"}}>
+          <div
+            className="row py-4"
+            style={{ borderBottom: "1px solid #674A4A" }}>
             <h3>Vikas Mantra, Mambakkam</h3>
 
             <div className="col-md-3">
@@ -142,7 +142,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="row py-4" style={{ borderBottom:"1px solid #fff"}}>
+          <div className="row py-4" style={{ borderBottom: "1px solid #fff" }}>
             <h3>Vikas Mantra, Chengalpattu</h3>
 
             <div className="col-md-3">
@@ -635,47 +635,49 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="row watsapp-icon">
-            <div className="col-sm-12">
-              <Link href="/campaign" legacyBehavior>
+          <div className="fixed-cta" style={{ bottom: isMambakkam || isChengalpattu ?" 1rem " : "5rem"}}>
+            {isMambakkam ? (
+              <Link
+                href="https://api.whatsapp.com/send?phone=7448450450"
+                passHref>
                 <a
-                  className="fixed-app callBtn"
+                  className="whatsapp-cta"
                   target="_blank"
                   rel="noopener noreferrer">
-                  Admission Open 2025 - 2026
+                  <img
+                    className="whatsappImg"
+                    src="/assets/icons/whatsapp.png"
+                    alt="whatsapp-icon"
+                  />
                 </a>
               </Link>
+            ) : isChengalpattu ? (
+              <Link
+                href="https://api.whatsapp.com/send?phone=7092450450"
+                passHref>
+                <a
+                  className="whatsapp-cta"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    className="whatsappImg"
+                    src="/assets/icons/whatsapp.png"
+                    alt="whatsapp-icon"
+                  />
+                </a>
+              </Link>
+            ) : (
+              ""
+            )}
 
-              {isMambakkam ? (
-                <Link href="https://api.whatsapp.com/send?phone=7448450450">
-                  <a
-                    className="whatsappDiv"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <img
-                      className="whatsappImg"
-                      src="/assets/icons/whatsapp.png"
-                      alt="whatsapp-icon"
-                    />
-                  </a>
-                </Link>
-              ) : isChengalpattu ? (
-                <Link href="https://api.whatsapp.com/send?phone=7092450450">
-                  <a
-                    className="whatsappDiv"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <img
-                      className="whatsappImg"
-                      src="/assets/icons/whatsapp.png"
-                      alt="whatsapp-icon"
-                    />
-                  </a>
-                </Link>
-              ) : (
-                ""
-              )}
-            </div>
+            <Link href="/enquiry-form" legacyBehavior passHref>
+              <a
+                className="enquiry-cta"
+                target="_blank"
+                rel="noopener noreferrer">
+                Enquire Now
+              </a>
+            </Link>
           </div>
         </div>
 

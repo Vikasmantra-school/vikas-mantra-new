@@ -1,193 +1,521 @@
 .homeIcon {
-    color: #AA182C;
-    margin-right: 10px;
+  color: #aa182c;
+  margin-right: 10px;
+}
+.vectorImg5 img{
+    width: 100%;
 }
 
 .vectorImg1 {
-    width: auto;
-    height: 280px;
-    position: absolute;
-    right: -104px;
-    top: -30px;
-    padding: 0px;
-    z-index: 1;
+  width: auto;
+  height: 280px;
+  position: absolute;
+  right: -104px;
+  top: -30px;
+  padding: 0px;
+  z-index: 1;
 }
 
 .classroomImg {
-    width: 100%;
-    position: absolute;
-    top: -185px;
+  width: 100%;
+  position: absolute;
+  top: -185px;
 }
 
 .vectorImg12::before {
+  bottom: 0;
+  content: "";
+  position: absolute;
+  background-image: url(/assets/vectors/Vector12.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  z-index: 0;
+  background-size: 11vh;
+  height: 228px;
+  width: 114px;
+  top: 23vh;
+  left: 0;
+}
+
+.vectorImg10::after {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/vectors/Vector10.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 0;
+  background-size: 28vh;
+  height: 227px;
+  width: 247px;
+  bottom: 6vh;
+  right: 6vh;
+}
+
+.sectionPdng {
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 660px) {
+  .sectionPdng {
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+  }
+
+  .classroomImg {
+    width: 100%;
+    position: unset;
+  }
+
+  .pdngZero {
+    padding: 0% !important;
+  }
+
+  .vectorImg12::before {
     bottom: 0;
-    content: '';
+    content: "";
     position: absolute;
     background-image: url(/assets/vectors/Vector12.png);
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 0;
-    background-size: 11vh;
+    background-size: 38px;
     height: 228px;
     width: 114px;
-    top: 23vh;
+    top: 70px;
     left: 0;
-}
+  }
 
-.vectorImg10::after {
-    content: '';
+  .vectorImg10::after {
+    content: "";
     position: absolute;
     background-image: url(/assets/vectors/Vector10.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index: 0;
-    background-size: 28vh;
+    background-size: 80px;
     height: 227px;
     width: 247px;
-    bottom: 6vh;
-    right: 6vh;
-}
+    bottom: 10px;
+    right: 0;
+  }
 
-.sectionPdng {
-    padding-bottom: 50px;
-}
+  .classroomImg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
-@media only screen and (max-width: 660px) {
-
-    .sectionPdng {
-        padding-right: 10px;
-        padding-top: 30px;
-        padding-bottom: 0px;
-        padding-left: 10px;
-    }
-
-    .classroomImg {
-        width: 100%;
-        position: unset;
-    }
-
-    .pdngZero {
-        padding: 0% !important;
-    }
-
-    .vectorImg12::before {
-        bottom: 0;
-        content: '';
-        position: absolute;
-        background-image: url(/assets/vectors/Vector12.png);
-        background-repeat: no-repeat;
-        background-position: top left;
-        z-index: 0;
-        background-size: 38px;
-        height: 228px;
-        width: 114px;
-        top: 70px;
-        left: 0;
-    }
-
-    .vectorImg10::after {
-        content: '';
-        position: absolute;
-        background-image: url(/assets/vectors/Vector10.png);
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        z-index: 0;
-        background-size: 80px;
-        height: 227px;
-        width: 247px;
-        bottom: 10px;
-        right: 0;
-    }
-
-    .classroomImg {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .uLineMargin {
-        margin: 40px 0;
-    }
-
+  .uLineMargin {
+    margin: 40px 0;
+  }
 }
 
 @media screen and (min-width: 661px) and (max-width: 768px) {
-    .vectorImg12::before {
-        bottom: 0;
-        content: '';
-        position: absolute;
-        background-image: url(/assets/vectors/Vector12.png);
-        background-repeat: no-repeat;
-        background-position: top left;
-        z-index: 0;
-        background-size: 50px;
-        height: 100px;
-        width: 100px;
-        top: 90px;
-        left: 0;
-    }
+  .vectorImg12::before {
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background-image: url(/assets/vectors/Vector12.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 0;
+    background-size: 50px;
+    height: 100px;
+    width: 100px;
+    top: 90px;
+    left: 0;
+  }
 
-    .vectorImg10::after {
-        content: '';
-        position: absolute;
-        background-image: url(/assets/vectors/Vector10.png);
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        z-index: 0;
-        background-size: 140px;
-        height: 227px;
-        width: 247px;
-        bottom: 0;
-        right: 0;
-    }
+  .vectorImg10::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/vectors/Vector10.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 0;
+    background-size: 140px;
+    height: 227px;
+    width: 247px;
+    bottom: 0;
+    right: 0;
+  }
 
-    .pdngZero {
-        padding: 0% !important;
-    }
+  .pdngZero {
+    padding: 0% !important;
+  }
 
-    .uLineMargin {
-        margin: 40px 0;
-    }
-
+  .uLineMargin {
+    margin: 40px 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
+  .sectionPdng {
+    padding-top: 50px;
+  }
+  .pdngZero {
+    padding: 0% !important;
+  }
+  .uLineMargin {
+    margin: 40px 0;
+  }
+  .vectorImg10::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/vectors/Vector10.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 0;
+    background-size: 110px;
+    height: 227px;
+    width: 247px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .vectorImg12::before {
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background-image: url(/assets/vectors/Vector9.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 0;
+    background-size: 78px;
+    height: 115px;
+    width: 70px;
+    top: 0;
+    left: unset;
+    right: 0;
+  }
+}
+
+/* splide  */
+.ourRooms {
+  background-color: #fff;
+  padding-block: 3rem;
+}
+
+.mainContent {
+  overflow: hidden;
+  padding-block: 30px 60px;
+}
+.mainContentMob {
+  overflow: hidden;
+  padding-block: 30px 30px;
+}
+
+.rightHeading {
+  font-family: "Nunito";
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  position: relative;
+
+  width: fit-content;
+}
+.rightHeading::before {
+  content: " ";
+  position: absolute;
+  background: url("/images/icon/homepage/underline-pink.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 14px;
+  bottom: -16px;
+  left: 10px;
+}
+.gridCardContent {
+  display: grid;
+  gap: 2rem;
+}
+.Cardxcontainer {
+  display: flex;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.topleft {
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+}
+.topleft,
+.topright,
+.bottomleft,
+.bottomright {
+  transition: clip-path 0.3s ease;
+}
+/* .topleft:hover,
+.topright:hover,
+.bottomleft:hover,
+.bottomright:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  cursor: pointer;
+} */
+
+.topright {
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+}
+.bottomleft {
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+}
+
+.bottomright {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+}
+
+.right .caption {
+  text-align: end;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #e02d53;
+  padding: 10px 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainContent {
+    padding-block: 1.3rem 0;
+  }
+}
+
+/* Base dots (scoped via :global) */
+.mainContentMob :global(.splide__pagination li) {
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.mainContentMob :global(.splide__pagination__page) {
+  border-radius: 0;
+  background: #fba1b4 !important;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+.mainContentMob :global(.splide__pagination) {
+  bottom: -1.5rem;
+  right: 0 !important;
+  justify-content: flex-end;
+}
+
+/* Active dot (pill style) */
+.mainContentMob :global(.splide__pagination__page.is-active) {
+  width: 46px;
+  margin: 0 5px;
+  border-radius: 0;
+  background: #e02d53 !important;
+}
+
+
+
+
+/* laboratory room style */
+.homeIcon {
+    color: #AA182C;
+    margin-right: 10px;
+}
+
+.labImg1 {
+    /* height: 440px; */
+    /* position: absolute;
+    top: -260px;
+    left: -50px; */
+    width: 100%;
+}
+
+.labImg2 {
+    /* right: 212px;
+    position: relative; */
+    width: 100%;
+}
+
+.labImg3 {
+    /* right: -35px;
+    position: relative; */
+    width: 100%;
+}
+
+.sectionPdng {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.vectorImg5::before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector5.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 0;
+    background-size: 135px;
+    height: 210px;
+    right: 10vh;
+    width: 190px;
+    top: 52vh;
+}
+
+.vectorImg10::after {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/vectors/Vector3.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 0;
+    background-size: 90px;
+    height: 227px;
+    left: 0;
+    width: 247px;
+    bottom: 52vh;
+}
+
+.sectionPdngBtm {
+    padding-bottom: 5rem !important;
+}
+
+
+
+@media only screen and (max-width: 660px) {
+
+
+    .labImg1,
+    .labImg2,
+    .labImg3 {
+        position: unset;
+        width: 100%;
+        height: 100%;
+    }
+
     .sectionPdng {
-        padding-top: 50px;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
-    .pdngZero {
-        padding: 0% !important;
+
+    .order1 {
+        order: 1;
     }
-    .uLineMargin {
-        margin: 40px 0;
+
+    .order2 {
+        order: 2;
     }
+
     .vectorImg10::after {
         content: '';
         position: absolute;
         background-image: url(/assets/vectors/Vector10.png);
         background-repeat: no-repeat;
-        background-position: bottom right;
+        background-position: bottom left;
         z-index: 0;
-        background-size: 110px;
-        height: 227px;
-        width: 247px;
-        bottom: 15px;
-        right: 15px;
-    }
-    .vectorImg12::before {
+        background-size: 70px;
+        height: 100px;
+        left: 0;
+        width: 100px;
         bottom: 0;
+    }
+
+    .vectorImg5::before {
         content: '';
         position: absolute;
-        background-image: url(/assets/vectors/Vector9.png);
+        background-image: url(/assets/vectors/Vector5.png);
         background-repeat: no-repeat;
-        background-position: top left;
+        background-position: top right;
         z-index: 0;
-        background-size: 78px;
-        height: 115px;
-        width: 70px;
-        top: 0;
-        left: unset;
+        background-size: 70px;
+        height: 210px;
+        right: 0px;
+        width: 190px;
+        top: 50px;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+
+    .labImg1,
+    .labImg2,
+    .labImg3 {
+        position: unset;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sectionPdng {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .order1 {
+        order: 1;
+    }
+
+    .order2 {
+        order: 2;
+    }
+    .vectorImg5::before {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector5.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        z-index: 0;
+        background-size: 90px;
+        height: 100px;
         right: 0;
+        width: 100px;
+        top: 200px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .order1 {
+        order: 2;
+    }
+    .vectorImg10::after{
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector3.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 0;
+        background-size: 90px;
+        height: 227px;
+        left: 0;
+        width: 247px;
+        top: 200px;
+    }
+    .vectorImg5::before{
+        content: '';
+        position: absolute;
+        background-image: url(/assets/vectors/Vector5.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        z-index: 0;
+        background-size: 67px;
+        height: 200px;
+        right: 0;
+        width: 190px;
+        bottom: 200px;
     }
 }

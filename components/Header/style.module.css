@@ -130,6 +130,9 @@
     border-radius: 0;
     background-color: #FFB800;
 }
+.announcementPatch:hover{
+    color: black;
+}
 
 .callBtn{
     background-color: transparent;

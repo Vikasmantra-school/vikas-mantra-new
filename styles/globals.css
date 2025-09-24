@@ -547,6 +547,7 @@ p {
 
 #mainMenu .navbar-nav {
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   flex: 0 0 100%;
 }
@@ -909,19 +910,25 @@ p {
 /* #hamburger.is-active .line {
   width: 23px;
 } */
-
+/* 
 #hamburger.is-active .line:nth-child(2) {
-  opacity: 0;
-}
+  opacity: 0;<== for 3 line  old hamburger
+} */
 
-#hamburger.is-active .line:nth-child(1) {
+/* #hamburger.is-active .line:nth-child(1) {
   -webkit-transform: translateY(10px) rotate(45deg);
   -ms-transform: translateY(10px) rotate(45deg);
   -o-transform: translateY(10px) rotate(45deg);
-  transform: translateY(10px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg); <== for 3 line  old hamburger
+} */
+ #hamburger.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(0px) rotate(45deg);
+  -ms-transform: translateY(0px) rotate(45deg);
+  -o-transform: translateY(0px) rotate(45deg);
+  transform: translateY(0px) rotate(45deg);
 }
 
-.hamburger.is-active .line:nth-child(3) {
+.hamburger.is-active .line:nth-child(2) {
   -webkit-transform: translateY(-10px) rotate(-45deg);
   -ms-transform: translateY(-10px) rotate(-45deg);
   -o-transform: translateY(-10px) rotate(-45deg);
@@ -1863,10 +1870,7 @@ tr {
 }
 
 @media only screen and (max-width: 660px) {
-  .callBtn.callBtn {
-    padding: 8px;
-    font-size: 15px;
-  }
+  
 
   .VideoContainerMbl {
     display: block;
@@ -2199,35 +2203,53 @@ tr {
   }
 }
 
-.callBtn {
-  padding: 10px 15px;
+.fixed-cta {
+ padding: 0;
   color: #202750 !important;
   font-size: 17px;
   /* background: #e9ef89; */
-  background: #ffb800;
+  background: transparent;
   border: 1px solid;
   position: fixed;
-  bottom: 40px;
-  z-index: 9999;
-  right: 1em;
-  border-radius: 27px;
+  bottom: 5rem;
+  right: 1rem;
+  z-index: 4;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 1.5678rem;
+}
+.fixed-cta .whatsapp-cta{
+  width: 60px;
+  height: 60px;
+
+}
+.fixed-cta .enquiry-cta{
+  background-color: #97EDC3;
+  border-radius: 5px;
+  color: #282828;
+  padding: 7px 14px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
 }
 
-.watsapp-icon .whatsappImg {
-  position: fixed;
-  bottom: 95px;
-  right: 25px;
-  z-index: 999;
-  width: 55px;
+.fixed-cta .whatsappImg {
   box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
   -webkit-box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
   -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, 0.14);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
-.watsapp-icon .CampaignwhatsappImg {
+/* .fixed-cta .CampaignwhatsappImg {
   position: fixed;
   bottom: 155px;
   right: 25px;
@@ -2239,9 +2261,9 @@ tr {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-}
+} */
 
-.watsapp-icon .campaignphoneImg {
+/* .fixed-cta .campaignphoneImg {
   position: fixed;
   bottom: 95px;
   right: 25px;
@@ -2253,7 +2275,7 @@ tr {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-}
+} */
 
 .sub-menu {
   position: absolute;
@@ -2384,11 +2406,8 @@ input[type="number"] {
   max-width: 375px;
 }
 @media only screen and (max-width: 768px) {
-  .watsapp-icon .whatsappImg {
+  .fixed-cta .whatsappImg {
     bottom: 100px;
-  }
-  .callBtn {
-    bottom: 77px;
   }
 }
 
@@ -2479,4 +2498,11 @@ input[type="number"] {
     background-color: #FFB800;
     margin-inline: 5px;
     border-radius: 50%;
+}
+
+.home-btn{
+  background: linear-gradient(90deg, #E02D53 0%, rgba(224, 45, 83, 0) 100%);
+  display: block;
+  padding: 2px 5px !important;
+  color: white !important;
 }
