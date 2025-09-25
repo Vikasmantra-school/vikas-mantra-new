@@ -3,7 +3,7 @@
 }
 
 .whyVikasTitle {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-weight: 700;
   font-size: 38px;
   line-height: 1;
@@ -11,9 +11,9 @@
   margin-bottom: 3rem;
 }
 .dummySpace {
-  height: "100px";
-  visibility: "hidden";
-  pointer-events: "none";
+  height: '100px';
+  visibility: 'hidden';
+  pointer-events: 'none';
 }
 
 .GridWrapper {
@@ -22,35 +22,112 @@
 }
 
 .gridTitle {
-  font-family: "Golos Text", sans-serif;
+  font-family: 'Golos Text', sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.18;
   letter-spacing: -0.01em;
   color: #e02d53;
-  margin-bottom: 0.2em;
+  margin-bottom: 1em;
+  position: relative;
+  width: fit-content;
+  max-width: 280px;
+}
+
+.gridTitle::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  left: 0;
+  bottom: -8px;
+}
+.gridTitle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(
+    85.31deg,
+    #a11d2a -39.85%,
+    #e02d53 44.76%,
+    #f27d49 117.87%
+  );
+  left: 0;
+  bottom: -8px;
+  transition: width 0.2s linear 0ms;
+  transform-origin: left;
+}
+
+.GridItem:hover .gridTitle::after {
+  width: 100%;
 }
 
 .gridDesc {
   line-height: 1.2;
+  width: 48ch;
 }
 
 .gridImage {
-  margin-bottom: 1.2rem;
-  margin-block-end: 1.2rem;
   overflow: hidden;
   transition: border-radius 0.3s ease;
+  position: relative;
+}
+
+.gridImage::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: url('/images/bgs/wavedesign.svg');
+  background-repeat: repeat-x;
 }
 
 .GridItem {
   margin-inline: 1rem;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.GridItem:hover .gridImage {
-  border-top-right-radius: 4rem;
+.contentG {
+  padding: 1rem;
+}
+
+.gridImage {
+  position: relative;
+}
+
+.GridItem:nth-child(2) .gridImage:before {
+  background-color: #9747ff61;
+}
+.GridItem:nth-child(3) .gridImage:before {
+  background-color: #f27d4973;
+}
+.gridImage:first-of-type:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  left: 0;
+  bottom: 0;
+  background-color: #85d0ff33;
+  transition: height 0.2s linear 0ms;
+  transform-origin: bottom;
+}
+
+.GridItem:hover .gridImage::before {
+  height: 100%;
+  /* border-top-right-radius: 4rem;
   border-bottom-right-radius: 4rem;
   border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 100px; */
 }
 
 .gridImage img {
@@ -58,8 +135,8 @@
   height: 100%;
   object-fit: cover;
 }
-@media only screen and (max-width:576px){
-  .dummySpace{
+@media only screen and (max-width: 576px) {
+  .dummySpace {
     /* display: none; */
     height: 1px;
   }
