@@ -6,7 +6,7 @@
   padding-block: 120px;
   /* min-height: 100vh; */
   background-color: #fbe7b5;
-  background: url("/images/bgs/bg-check.png") no-repeat center center;
+  background: url('/images/bgs/bg-check.png') no-repeat center center;
   background-size: 100% 100%;
   /* mask-image: url("/images/bgs/bg-check.png");
   mask-position: top center;
@@ -65,7 +65,7 @@
 }
 
 .underLined::after {
-  content: " ";
+  content: ' ';
   background: #dd2042;
   position: absolute;
   left: 0;
@@ -97,7 +97,7 @@
 }
 
 .abtBtn::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 100px;
   height: 100%;
@@ -125,7 +125,7 @@
 
 .statImg {
   position: relative;
-  width: 360px;
+  /* width: 360px; */
   max-width: 100%;
   height: auto;
   margin-inline: auto;
@@ -156,7 +156,7 @@
   transform: translateX(-50%);
   width: 140px;
   height: auto;
-  animation: stickerAnim 8s linear infinite;
+  animation: stickerAnim 5s linear infinite;
 }
 
 @keyframes stickerAnim {
@@ -212,11 +212,11 @@
   text-align: left;
   flex-direction: column;
   position: relative;
-  aspect-ratio: 1 / 1 ;
-   transition: transform 0.5s ease;
-   cursor: pointer;
+  aspect-ratio: 1 / 1;
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
-.statCard:hover{
+.statCard:hover {
   transform: scale(1.04);
 }
 
@@ -267,9 +267,15 @@
     padding-inline: 1rem 1.2rem;
   }
   .aboutVikasSmall {
+    background: url('/images/bgs/bg-check-mob.png') no-repeat center center;
     padding-block: 60px;
+    margin-bottom: 80px;
+    padding-block-end: 0;
   }
-  .abtBtn{
+  .statImg {
+    top: 20px;
+  }
+  .abtBtn {
     margin-bottom: 2rem;
   }
 }
