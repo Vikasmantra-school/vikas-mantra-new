@@ -55,11 +55,13 @@
   height: 100%;
   object-fit: cover;
   display: block;
-   transition: transform 0.5s ease;
+
+   transition: transform 8s ease-in-out; 
 
 }
 .card:hover img{
-  transform: scale(1.1);
+  transform: scale(1.2) translate(5%, 5%);
+  cursor: pointer;
   
 }
 
@@ -72,13 +74,13 @@
 .bottomright {
   transition: clip-path 0.3s ease;
 }
-.topleft:hover,
+/* .topleft:hover,
 .topright:hover,
 .bottomleft:hover,
 .bottomright:hover {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   cursor: pointer;
-}
+} */
 
 .topright {
   clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
