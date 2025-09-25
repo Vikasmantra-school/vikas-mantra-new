@@ -1,101 +1,118 @@
-import React, { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/router";
-import Button from "react-bootstrap/Button";
-import styles from "./style.module.css";
-import Link from "next/link";
-import MobileNav from "../Header/MobileNav";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/router';
+import Button from 'react-bootstrap/Button';
+import styles from './style.module.css';
+import Link from 'next/link';
+import MobileNav from '../Header/MobileNav';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import { mambakkamMenu } from "../../data/menu";
-import { chengalpattuMenu } from "../../data/menu";
-import { act } from "react";
-import { useCampus } from "../../hooks/useCampus";
-import CampusDropdown from "./campusDropdown";
-import CustomCaret from "../svg/CustomCaret";
+import { mambakkamMenu } from '../../data/menu';
+import { chengalpattuMenu } from '../../data/menu';
+import { act } from 'react';
+import { useCampus } from '../../hooks/useCampus';
+import CampusDropdown from './campusDropdown';
+import CustomCaret from '../svg/CustomCaret';
 
 const Nav = () => {
   const { asPath } = useRouter();
-  const dropdownSub = useRef("");
+  const dropdownSub = useRef('');
 
-  var pageName = asPath.replace("/", "");
+  var pageName = asPath.replace('/', '');
 
   const { campus, isMambakkam, isChengalpattu } = useCampus();
 
-  const [selectedCampus, setSelectedCampus] = useState("Select campus");
+  const [selectedCampus, setSelectedCampus] = useState('Select campus');
 
   useEffect(() => {
-    if (campus === "mambakkam") {
-      setSelectedCampus("Mambakkam");
-    } else if (campus === "chengalpattu") {
-      setSelectedCampus("Chengalpattu");
+    if (campus === 'mambakkam') {
+      setSelectedCampus('Mambakkam');
+    } else if (campus === 'chengalpattu') {
+      setSelectedCampus('Chengalpattu');
     } else {
-      setSelectedCampus("Select Campus");
+      setSelectedCampus('Select Campus');
     }
   }, [campus]);
 
   let subMenu = null;
   if (isMambakkam) {
     subMenu = {
-      bg: "#45458A",
-      color: "#fff",
-      headText: "Mambakkam",
-      afflNo: "1930634",
+      bg: '#45458A',
+      color: '#fff',
+      headText: 'Mambakkam',
+      afflNo: '1930634',
     };
   } else if (isChengalpattu) {
     subMenu = {
-      bg: "#FFB800",
-      color: "#1D1D1D",
-      headText: "Chengalpattu",
-      afflNo: "1931307",
+      bg: '#FFB800',
+      color: '#1D1D1D',
+      headText: 'Chengalpattu',
+      afflNo: '1931307',
     };
   }
-
   function hamburgerMenu(e) {
-    let menu = document.getElementById("mobMenu");
-    let hamburgerMenu = document.getElementById("hamburger");
-    menu.classList.toggle("mob-menu-hdden");
-    hamburgerMenu.classList.toggle("is-active");
+    let menu = document.getElementById('mobMenu');
+    let hamburgerMenu = document.getElementById('hamburger');
+    let subMenu = document.getElementById('mobSubMenu');
+    let subHamburger = document.querySelector('.mobSubHamburger');
 
-    if (hamburgerMenu.classList.contains("is-active")) {
-      document.body.style.overflow = "hidden";
+    if (!subMenu.classList.contains('mob-menu-hdden')) {
+      subMenu.classList.add('mob-menu-hdden');
+      subHamburger.classList.remove('is-active');
+    }
+
+    menu.classList.toggle('mob-menu-hdden');
+    hamburgerMenu.classList.toggle('is-active');
+
+    if (hamburgerMenu.classList.contains('is-active')) {
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = "";
+      document.body.style.overflow = '';
     }
   }
 
   function subHamburgerMenu(e) {
-    let menu = document.getElementById("mobSubMenu");
-    let hamburgerMenu = document.querySelector(".mobSubHamburger");
-    menu.classList.toggle("mob-menu-hdden");
-    hamburgerMenu.classList.toggle("is-active");
+    let menu = document.getElementById('mobSubMenu');
+    let hamburgerMenu = document.querySelector('.mobSubHamburger');
+    let mainMenu = document.getElementById('mobMenu');
+    let mainHamburger = document.getElementById('hamburger');
 
-    if (hamburgerMenu.classList.contains("is-active")) {
-      document.body.style.overflow = "hidden";
+    if (!mainMenu.classList.contains('mob-menu-hdden')) {
+      mainMenu.classList.add('mob-menu-hdden');
+      mainHamburger.classList.remove('is-active');
+    }
+
+    menu.classList.toggle('mob-menu-hdden');
+    hamburgerMenu.classList.toggle('is-active');
+
+    if (hamburgerMenu.classList.contains('is-active')) {
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = "";
+      document.body.style.overflow = '';
     }
   }
 
   function showDropdownSub() {
-    dropdownSub.current.classList.remove("d-none");
+    dropdownSub.current.classList.remove('d-none');
   }
 
   function hideDropdownSub() {
-    dropdownSub.current.classList.add("d-none");
+    dropdownSub.current.classList.add('d-none');
   }
 
   return (
     <>
       <header
         className={
-          "homeheader stickyHeader" +
-          " " +
+          'homeheader stickyHeader' +
+          ' ' +
           pageName +
-          ` ${pageName === "" ? "home" : "position-relative"}`
-        }>
+          ` ${pageName === '' ? 'home' : 'position-relative'}`
+        }
+      >
         <nav
-          className={styles.navTransparent + " navbar-expand-lg py-2 py-md-0"}>
+          className={styles.navTransparent + ' navbar-expand-lg py-2 py-md-0'}
+        >
           <div className="container">
             <div className="row">
               <div className="col-5 col-lg-2 d-flex align-items-center">
@@ -108,8 +125,9 @@ const Nav = () => {
                   //     : "/"
                   // }
                   href="/"
-                  legacyBehavior>
-                  <a className={styles.mainLogo + " " + "navbar-brand"}>
+                  legacyBehavior
+                >
+                  <a className={styles.mainLogo + ' ' + 'navbar-brand'}>
                     <img src="/assets/common-logo.png" alt="Vikas Mantra" />
                     {/* {pageName === "" ? (
                       <picture>
@@ -130,14 +148,16 @@ const Nav = () => {
                 <nav
                   id="mainMenu"
                   className={
-                    styles.navTransparent + " " + "navbar-expand-lg py-2"
-                  }>
+                    styles.navTransparent + ' ' + 'navbar-expand-lg py-2'
+                  }
+                >
                   <div className="collapse navbar-collapse desktop-menu" id="">
                     <ul className="navbar-nav mb-2 mb-lg-0">
                       <li
                         className={
-                          pageName === "" ? "active nav-item" : "nav-item"
-                        }>
+                          pageName === '' ? 'active nav-item' : 'nav-item'
+                        }
+                      >
                         <Link href="/" legacyBehavior>
                           <a className="nav-link home-btn" aria-current="page">
                             Home
@@ -146,16 +166,18 @@ const Nav = () => {
                       </li>
                       <li
                         className={
-                          pageName.startsWith("about")
-                            ? "active nav-item dropdown"
-                            : "nav-item dropdown"
-                        }>
+                          pageName.startsWith('about')
+                            ? 'active nav-item dropdown'
+                            : 'nav-item dropdown'
+                        }
+                      >
                         <Link href="/about" legacyBehavior>
                           <a
                             className="nav-link dropdown-toggle"
                             role="button"
                             data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                            aria-expanded="false"
+                          >
                             About
                             <CustomCaret color="black" />
                           </a>
@@ -171,7 +193,8 @@ const Nav = () => {
                           <li>
                             <Link
                               href="/about/vision-and-philosophy"
-                              legacyBehavior>
+                              legacyBehavior
+                            >
                               <a className="dropdown-item">
                                 Our Vision & Philosophy
                               </a>
@@ -180,7 +203,8 @@ const Nav = () => {
                           <li>
                             <Link
                               href="/about/message-from-chairman"
-                              legacyBehavior>
+                              legacyBehavior
+                            >
                               <a className="dropdown-item">
                                 Chairman’s Message
                               </a>
@@ -189,10 +213,11 @@ const Nav = () => {
                           <li>
                             <Link
                               href="/about/message-from-advisor"
-                              legacyBehavior>
+                              legacyBehavior
+                            >
                               {/* <a className="dropdown-item">Our Advisor </a> */}
                               <a className="dropdown-item">
-                                Advisor&apos;s Message{" "}
+                                Advisor&apos;s Message{' '}
                               </a>
                             </Link>
                           </li>
@@ -200,10 +225,11 @@ const Nav = () => {
                       </li>
                       <li
                         className={
-                          pageName === "admissions"
-                            ? "active nav-item"
-                            : "nav-item"
-                        }>
+                          pageName === 'admissions'
+                            ? 'active nav-item'
+                            : 'nav-item'
+                        }
+                      >
                         <Link legacyBehavior href="/admissions">
                           <a className="nav-link">Admissions</a>
                         </Link>
@@ -211,16 +237,18 @@ const Nav = () => {
 
                       <li
                         className={
-                          pageName.startsWith("learning")
-                            ? "active nav-item dropdown"
-                            : " nav-item dropdown"
-                        }>
+                          pageName.startsWith('learning')
+                            ? 'active nav-item dropdown'
+                            : ' nav-item dropdown'
+                        }
+                      >
                         <Link href="/learning" legacyBehavior>
                           <a
                             className="nav-link dropdown-toggle"
                             role="button"
                             data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                            aria-expanded="false"
+                          >
                             Learning
                             <CustomCaret color="black" />
                           </a>
@@ -241,14 +269,16 @@ const Nav = () => {
                           <li>
                             <Link
                               href="/learning/pre-primary-years"
-                              legacyBehavior>
+                              legacyBehavior
+                            >
                               <a className="dropdown-item">Pre-Primary Years</a>
                             </Link>
                           </li>
                           <li>
                             <Link
                               href="/learning/curriculum-framework"
-                              legacyBehavior>
+                              legacyBehavior
+                            >
                               <a className="dropdown-item">
                                 Curriculum Framework
                               </a>
@@ -259,17 +289,20 @@ const Nav = () => {
 
                       <li
                         className={
-                          pageName === "enquiry-form"
-                            ? "active nav-item"
-                            : "nav-item"
-                        }>
+                          pageName === 'enquiry-form'
+                            ? 'active nav-item'
+                            : 'nav-item'
+                        }
+                      >
                         <Link
                           legacyBehavior
-                          href="https://www.parentsalarmapp.com/">
+                          href="https://www.parentsalarmapp.com/"
+                        >
                           <a
                             className="nav-link"
                             target="_blank"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer"
+                          >
                             VMPS Login
                           </a>
                         </Link>
@@ -277,20 +310,22 @@ const Nav = () => {
 
                       <li
                         className={
-                          pageName === "contact"
-                            ? "active nav-item"
-                            : "nav-item"
-                        }>
+                          pageName === 'contact'
+                            ? 'active nav-item'
+                            : 'nav-item'
+                        }
+                      >
                         <Link legacyBehavior href="/contact">
                           <a className="nav-link">Contact Us</a>
                         </Link>
                       </li>
                       <li
                         className={
-                          pageName === "careers"
-                            ? "active nav-item"
-                            : "nav-item"
-                        }>
+                          pageName === 'careers'
+                            ? 'active nav-item'
+                            : 'nav-item'
+                        }
+                      >
                         <Link legacyBehavior href="/careers">
                           <a className="nav-link">Careers</a>
                         </Link>
@@ -339,7 +374,8 @@ const Nav = () => {
                     <div
                       onClick={(e) => hamburgerMenu(e)}
                       className="hamburger"
-                      id="hamburger">
+                      id="hamburger"
+                    >
                       <span className="line"></span>
                       {/* <span className="line"></span> */}
                       <span className="line"></span>
@@ -357,9 +393,10 @@ const Nav = () => {
             style={{
               backgroundColor: subMenu.bg,
               color: subMenu.color,
-              zIndex: "1",
+              zIndex: '1',
             }}
-            className={styles.navTransparent + " " + "navbar-expand-lg py-2"}>
+            className={styles.navTransparent + ' ' + 'navbar-expand-lg py-2'}
+          >
             <div className="container">
               <div className="row">
                 <div className=" col-6 col-lg-3 d-flex align-items-center">
@@ -368,14 +405,16 @@ const Nav = () => {
                       style={{
                         color: subMenu.color,
                       }}
-                      className="m-0">
+                      className="m-0"
+                    >
                       {subMenu.headText}
                     </h3>
                     <small
                       style={{
                         color: subMenu.color,
                       }}
-                      className="m-0 d-none d-lg-block">
+                      className="m-0 d-none d-lg-block"
+                    >
                       CBSE Affiliation No:
                       {subMenu.afflNo}
                     </small>
@@ -384,17 +423,20 @@ const Nav = () => {
                 <div className="col-lg-6 d-none d-lg-block">
                   <div
                     className=" h-100 collapse navbar-collapse desktop-menu justify-content-center"
-                    id="">
+                    id=""
+                  >
                     {isMambakkam && (
                       <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end gap-5 mambakkam-menu">
                         <li
                           className={
-                            pageName === "" ? "active nav-item" : "nav-item"
-                          }>
+                            pageName === '' ? 'active nav-item' : 'nav-item'
+                          }
+                        >
                           <Link href="/mambakkam-site" legacyBehavior>
                             <a
                               className="nav-link text-white"
-                              aria-current="page">
+                              aria-current="page"
+                            >
                               Our Campus
                             </a>
                           </Link>
@@ -406,7 +448,8 @@ const Nav = () => {
                               className="nav-link dropdown-toggle text-white"
                               role="button"
                               data-bs-toggle="dropdown"
-                              aria-expanded="false">
+                              aria-expanded="false"
+                            >
                               About Us
                               <CustomCaret color="white" />
                             </a>
@@ -416,7 +459,8 @@ const Nav = () => {
                             <li>
                               <Link
                                 href="/mambakkam-site/about/message-from-principal"
-                                legacyBehavior>
+                                legacyBehavior
+                              >
                                 <a className="dropdown-item">
                                   Principal&apos;s Message
                                 </a>
@@ -426,7 +470,8 @@ const Nav = () => {
                             <li>
                               <Link
                                 href="/mambakkam-site/about/blog"
-                                legacyBehavior>
+                                legacyBehavior
+                              >
                                 <a className="dropdown-item">Blog</a>
                               </Link>
                             </li>
@@ -439,7 +484,8 @@ const Nav = () => {
                               className="nav-link dropdown-toggle text-white"
                               role="button"
                               data-bs-toggle="dropdown"
-                              aria-expanded="false">
+                              aria-expanded="false"
+                            >
                               Life of Campus
                               <CustomCaret color="white" />
                             </a>
@@ -448,7 +494,8 @@ const Nav = () => {
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/classrooms"
-                                legacyBehavior>
+                                legacyBehavior
+                              >
                                 <a className="dropdown-item">Classrooms</a>
                               </Link>
                             </li>
@@ -456,7 +503,8 @@ const Nav = () => {
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/laboratory"
-                                legacyBehavior>
+                                legacyBehavior
+                              >
                                 <a className="dropdown-item">Laboratories</a>
                               </Link>
                             </li>
@@ -464,7 +512,8 @@ const Nav = () => {
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/speciality-room"
-                                legacyBehavior>
+                                legacyBehavior
+                              >
                                 <a className="dropdown-item">
                                   Speciality Rooms
                                 </a>
@@ -474,7 +523,8 @@ const Nav = () => {
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/technology"
-                                legacyBehavior>
+                                legacyBehavior
+                              >
                                 <a className="dropdown-item">Technology</a>
                               </Link>
                             </li>
@@ -482,7 +532,8 @@ const Nav = () => {
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/security"
-                                legacyBehavior>
+                                legacyBehavior
+                              >
                                 <a className="dropdown-item">Security</a>
                               </Link>
                             </li>
@@ -490,7 +541,8 @@ const Nav = () => {
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/healthcare"
-                                legacyBehavior>
+                                legacyBehavior
+                              >
                                 <a className="dropdown-item">Healthcare</a>
                               </Link>
                             </li>
@@ -498,7 +550,8 @@ const Nav = () => {
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/transportation"
-                                legacyBehavior>
+                                legacyBehavior
+                              >
                                 <a className="dropdown-item">Transportation</a>
                               </Link>
                             </li>
@@ -672,10 +725,11 @@ const Nav = () => {
 
                         <li
                           className={
-                            pageName === "enquiry-form"
-                              ? "active nav-item"
-                              : "nav-item"
-                          }>
+                            pageName === 'enquiry-form'
+                              ? 'active nav-item'
+                              : 'nav-item'
+                          }
+                        >
                           <Link legacyBehavior href="/mambakkam-site/events">
                             <a className="nav-link text-white">Gallery</a>
                           </Link>
@@ -690,13 +744,15 @@ const Nav = () => {
                 <div className="col-6 col-lg-3 d-flex align-items-center justify-content-end">
                   <Link href="/enquiry-form">
                     <a
-                      className={`${styles.announcementPatch} d-none d-lg-block`}>
+                      className={`${styles.announcementPatch} d-none d-lg-block`}
+                    >
                       Admission Open 2025 - 2026
                     </a>
                   </Link>
                   <div
                     onClick={(e) => subHamburgerMenu(e)}
-                    className="d-flex d-lg-none mobSubHamburger flex-column justify-content-center align-items-center">
+                    className="d-flex d-lg-none mobSubHamburger flex-column justify-content-center align-items-center"
+                  >
                     <div className="dots">
                       <span></span>
                       <span></span>

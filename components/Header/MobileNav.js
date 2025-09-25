@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { chengalpattuMenu, mambakkamMenu } from "../../data/menu";
-import { useCampus } from "../../hooks/useCampus";
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { chengalpattuMenu, mambakkamMenu } from '../../data/menu';
+import { useCampus } from '../../hooks/useCampus';
 
 const MobileNav = ({}) => {
   const router = useRouter();
@@ -14,10 +14,10 @@ const MobileNav = ({}) => {
   let subMenu = null;
   if (isMambakkam) {
     subMenu = {
-      bg: "#45458A",
-      color: "#fff",
-      headText: "Mambakkam",
-      afflNo: "1930634",
+      bg: '#45458A',
+      color: '#fff',
+      headText: 'Mambakkam',
+      afflNo: '1930634',
     };
   }
   // else if (isChengalpattu) {
@@ -31,26 +31,26 @@ const MobileNav = ({}) => {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      let menu = document.getElementById("mobMenu");
-      menu.classList.add("mob-menu-hdden");
-      let hamburger = document.getElementById("hamburger");
-      hamburger.classList.remove("is-active");
+      let menu = document.getElementById('mobMenu');
+      menu.classList.add('mob-menu-hdden');
+      let hamburger = document.getElementById('hamburger');
+      hamburger.classList.remove('is-active');
     };
 
-    router.events.on("routeChangeStart", handleRouteChange);
+    router.events.on('routeChangeStart', handleRouteChange);
 
     return () => {
-      router.events.off("routeChangeStart", handleRouteChange);
+      router.events.off('routeChangeStart', handleRouteChange);
     };
   }, [router.events]);
 
   function navLink(e) {
     const sibling = e.target.nextSibling;
-    sibling.classList.add("is-active");
+    sibling.classList.add('is-active');
   }
 
   function subClose(e) {
-    e.target.parentElement.parentElement.classList.remove("is-active");
+    e.target.parentElement.parentElement.classList.remove('is-active');
   }
 
   return (
@@ -66,7 +66,7 @@ const MobileNav = ({}) => {
           </li>
           <li className="nav__item">
             <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-              About{" "}
+              About{' '}
               <svg
                 width="29px"
                 height="27px"
@@ -75,7 +75,8 @@ const MobileNav = ({}) => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6">
+                className="w-6 h-6"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -88,7 +89,8 @@ const MobileNav = ({}) => {
                 <a
                   onClick={(e) => subClose(e)}
                   className="nav__link sub__close hasDropdown"
-                  href="#">
+                  href="#"
+                >
                   Back
                   <svg
                     width="29px"
@@ -98,7 +100,8 @@ const MobileNav = ({}) => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6">
+                    className="w-6 h-6"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -254,7 +257,7 @@ const MobileNav = ({}) => {
             </li> */}
           <li className="nav__item">
             <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-              Learning{" "}
+              Learning{' '}
               <svg
                 width="29px"
                 height="27px"
@@ -263,7 +266,8 @@ const MobileNav = ({}) => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6">
+                className="w-6 h-6"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -276,7 +280,8 @@ const MobileNav = ({}) => {
                 <a
                   onClick={(e) => subClose(e)}
                   className="nav__link sub__close hasDropdown"
-                  href="#">
+                  href="#"
+                >
                   Back
                   <svg
                     width="29px"
@@ -286,7 +291,8 @@ const MobileNav = ({}) => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6">
+                    className="w-6 h-6"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -370,16 +376,20 @@ const MobileNav = ({}) => {
         </ul>
       </div>
 
-      <div id="mobSubMenu" className="mob-menu mob-submenu mob-menu-hdden">
+      <div
+        id="mobSubMenu"
+        className="mob-menu otherMob mob-submenu mob-menu-hdden"
+      >
         {isMambakkam ? (
           <ul
             className="nav"
             style={{
-              backgroundColor: subMenu?.bg || "#f5f5f5",
-            }}>
+              backgroundColor: subMenu?.bg || '#f5f5f5',
+            }}
+          >
             <li className="nav__item">
               <Link href="/mambakkam-site" legacyBehavior>
-                <a className="nav__link" aria-current="page">
+                <a className="nav__link pt-0" aria-current="page">
                   Home
                 </a>
               </Link>
@@ -395,7 +405,8 @@ const MobileNav = ({}) => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6">
+                  className="w-6 h-6"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -406,13 +417,15 @@ const MobileNav = ({}) => {
               <ul
                 className="nav__sub"
                 style={{
-                  backgroundColor: subMenu?.bg || "#f5f5f5",
-                }}>
+                  backgroundColor: subMenu?.bg || '#f5f5f5',
+                }}
+              >
                 <li className="nav__item">
                   <a
                     onClick={(e) => subClose(e)}
                     className="nav__link sub__close hasDropdown"
-                    href="#">
+                    href="#"
+                  >
                     Back
                     <svg
                       width="29px"
@@ -422,7 +435,8 @@ const MobileNav = ({}) => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6">
+                      className="w-6 h-6"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -434,7 +448,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/mambakkam-site/about/message-from-principal"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Principal&apos;s Message</a>
                   </Link>
                 </li>
@@ -448,8 +463,9 @@ const MobileNav = ({}) => {
             <li
               className="nav__item"
               style={{
-                backgroundColor: subMenu?.bg || "#f5f5f5",
-              }}>
+                backgroundColor: subMenu?.bg || '#f5f5f5',
+              }}
+            >
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
                 Life of Campus
                 <svg
@@ -460,7 +476,8 @@ const MobileNav = ({}) => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6">
+                  className="w-6 h-6"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -471,13 +488,15 @@ const MobileNav = ({}) => {
               <ul
                 className="nav__sub"
                 style={{
-                  backgroundColor: subMenu?.bg || "#f5f5f5",
-                }}>
+                  backgroundColor: subMenu?.bg || '#f5f5f5',
+                }}
+              >
                 <li className="nav__item">
                   <a
                     onClick={(e) => subClose(e)}
                     className="nav__link sub__close hasDropdown"
-                    href="#">
+                    href="#"
+                  >
                     Back
                     <svg
                       width="29px"
@@ -487,7 +506,8 @@ const MobileNav = ({}) => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6">
+                      className="w-6 h-6"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -516,7 +536,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/mambakkam-site/campus/speciality-room"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Speciality Rooms</a>
                   </Link>
                 </li>
@@ -524,7 +545,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/mambakkam-site/campus/technologys"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Technology</a>
                   </Link>
                 </li>
@@ -544,7 +566,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/mambakkam-site/campus/transportation"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Transportation</a>
                   </Link>
                 </li>
@@ -569,7 +592,7 @@ const MobileNav = ({}) => {
             </li>
             <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                About{" "}
+                About{' '}
                 <svg
                   width="29px"
                   height="27px"
@@ -578,7 +601,8 @@ const MobileNav = ({}) => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6">
+                  className="w-6 h-6"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -591,7 +615,8 @@ const MobileNav = ({}) => {
                   <a
                     onClick={(e) => subClose(e)}
                     className="nav__link sub__close hasDropdown"
-                    href="#">
+                    href="#"
+                  >
                     Back
                     <svg
                       width="29px"
@@ -601,7 +626,8 @@ const MobileNav = ({}) => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6">
+                      className="w-6 h-6"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -618,7 +644,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/about/vision-and-philosophy"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Our Vision & Philosophy</a>
                   </Link>
                 </li>
@@ -626,7 +653,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/about/message-from-chairman"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Chairman’s Message</a>
                   </Link>
                 </li>
@@ -634,7 +662,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/about/message-from-advisor"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link"> Our Advisor</a>
                   </Link>
                 </li>
@@ -667,7 +696,7 @@ const MobileNav = ({}) => {
             </li>
             <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                Campus{" "}
+                Campus{' '}
                 <svg
                   width="29px"
                   height="27px"
@@ -676,7 +705,8 @@ const MobileNav = ({}) => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6">
+                  className="w-6 h-6"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -689,7 +719,8 @@ const MobileNav = ({}) => {
                   <a
                     onClick={(e) => subClose(e)}
                     className="nav__link sub__close hasDropdown"
-                    href="#">
+                    href="#"
+                  >
                     Back
                     <svg
                       width="29px"
@@ -699,7 +730,8 @@ const MobileNav = ({}) => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6">
+                      className="w-6 h-6"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -711,14 +743,16 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/campus/classrooms"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Classrooms</a>
                   </Link>
                 </li>
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/campus/facilities-and-Infrastructure"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Facilities and Infrastructure</a>
                   </Link>
                 </li>
@@ -726,7 +760,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/campus/laboratory"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Laboratories</a>
                   </Link>
                 </li>
@@ -734,7 +769,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/campus/speciality-room"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Speciality Rooms</a>
                   </Link>
                 </li>
@@ -748,28 +784,32 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/campus/technology"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Technology</a>
                   </Link>
                 </li>
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/campus/security"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Security</a>
                   </Link>
                 </li>
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/campus/healthcare"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Healthcare</a>
                   </Link>
                 </li>
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/campus/transportation"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Transportation</a>
                   </Link>
                 </li>
@@ -777,7 +817,7 @@ const MobileNav = ({}) => {
             </li>
             <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                Learning{" "}
+                Learning{' '}
                 <svg
                   width="29px"
                   height="27px"
@@ -786,7 +826,8 @@ const MobileNav = ({}) => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6">
+                  className="w-6 h-6"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -799,7 +840,8 @@ const MobileNav = ({}) => {
                   <a
                     onClick={(e) => subClose(e)}
                     className="nav__link sub__close hasDropdown"
-                    href="#">
+                    href="#"
+                  >
                     Back
                     <svg
                       width="29px"
@@ -809,7 +851,8 @@ const MobileNav = ({}) => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6">
+                      className="w-6 h-6"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -826,7 +869,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/learning/curriculum"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Curriculum</a>
                   </Link>
                 </li>
@@ -834,7 +878,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/learning/pre-primary-years"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Pre-Primary Years</a>
                   </Link>
                 </li>
@@ -842,7 +887,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/learning/curriculum-framework"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Curriculum Framework</a>
                   </Link>
                 </li>
@@ -850,7 +896,8 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link
                     href="/chengalpattu-site/learning/online-classes"
-                    legacyBehavior>
+                    legacyBehavior
+                  >
                     <a className="nav__link">Online Classes</a>
                   </Link>
                 </li>
@@ -866,7 +913,8 @@ const MobileNav = ({}) => {
             <li className="nav__item">
               <Link
                 href="/chengalpattu-site/mandatory-public-disclosures"
-                legacyBehavior>
+                legacyBehavior
+              >
                 <a className="nav__link" aria-current="page">
                   Mandatory Public Disclosures
                 </a>
@@ -905,7 +953,7 @@ const MobileNav = ({}) => {
             </li>
             <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                About{" "}
+                About{' '}
                 <svg
                   width="29px"
                   height="27px"
@@ -914,7 +962,8 @@ const MobileNav = ({}) => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6">
+                  className="w-6 h-6"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -927,7 +976,8 @@ const MobileNav = ({}) => {
                   <a
                     onClick={(e) => subClose(e)}
                     className="nav__link sub__close hasDropdown"
-                    href="#">
+                    href="#"
+                  >
                     Back
                     <svg
                       width="29px"
@@ -937,7 +987,8 @@ const MobileNav = ({}) => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6">
+                      className="w-6 h-6"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -980,7 +1031,7 @@ const MobileNav = ({}) => {
 
             <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                Learning{" "}
+                Learning{' '}
                 <svg
                   width="29px"
                   height="27px"
@@ -989,7 +1040,8 @@ const MobileNav = ({}) => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6">
+                  className="w-6 h-6"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -1002,7 +1054,8 @@ const MobileNav = ({}) => {
                   <a
                     onClick={(e) => subClose(e)}
                     className="nav__link sub__close hasDropdown"
-                    href="#">
+                    href="#"
+                  >
                     Back
                     <svg
                       width="29px"
@@ -1012,7 +1065,8 @@ const MobileNav = ({}) => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6">
+                      className="w-6 h-6"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
