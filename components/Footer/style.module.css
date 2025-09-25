@@ -3,19 +3,33 @@
   font-size: 0.875rem !important;
 }
 
-.footerTags p{
+.footerTags p {
   margin: 0;
   font-size: 0.875rem !important;
   color: #fff;
   font-weight: 400;
-  border: 1px solid #674A4A;
+  border: 1px solid #674a4a;
   padding: 5px 8px;
   margin-block: 1.125rem;
   width: fit-content;
 }
 
+.footerTags p:last-of-type {
+  margin: 0;
+}
 .quickLink a {
   margin: 10px 0px;
+}
+
+.logoCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.logoCol .logo{
+  width: auto;
+  height: 100%;
 }
 
 .section {
@@ -91,23 +105,22 @@ input.formInput::placeholder {
 }
 
 @media only screen and (max-width: 660px) {
- .socialRow {
+  .socialRow {
     padding-block: 0 !important;
-   
+
     justify-content: flex-start;
   }
   .bottomText {
     padding: 10px;
   }
 
-  .contactUs,
+  /* .contactUs,
   .quickLinksCol,
   .aboutCol,
   .logoCol,
-  .formCol
-   {
+  .formCol {
     padding: 15px 20px;
-  }
+  } */
 
   .bottomText {
     padding: 10px;
@@ -123,8 +136,6 @@ input.formInput::placeholder {
   .socialRow {
     padding: 20px;
   }
-   
-
 }
 
 @media only screen and (min-width: 991px) {

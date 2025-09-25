@@ -269,149 +269,184 @@ export const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="row py-3 align-items-center">
-                <div className="col-2"></div>
-                <div className="col-md-10">
-                  <h3>CONTACT US</h3>
-                </div>
-              </div>
 
-              <div className="row align-items-end">
-                <div className={"col-md-2 "}>
-                  <div className={styles.logoCol}>
-                    <Image
-                      src={VikasLogo}
-                      alt="image"
-                      className={styles.logo}
-                    />
-                  </div>
-                </div>
+              {isMambakkam ? (
+                <>
+                  <div className="row py-3 align-items-center"></div>
+                  <div className="row align-items-end">
+                    <div className={"col-md-5"}>
+                      <div className={styles.logoCol}>
+                        <Image
+                          src={VikasLogo}
+                          alt="image"
+                          className={styles.logo}
+                          fill
+                        />
+                      </div>
+                    </div>
+                    <div className={`${styles.contactUs} col-md-5`}>
+                      <h3>CONTACT US</h3>
+                      <p>Vikas Mantra Public School </p>
+                      <p> Vandalur to Kelambakkam Road, </p>
+                      <p> Mambakkam, Chennai,</p>
+                      <p>Tamil Nadu 600127</p>
+                      <p>
+                        Landline: <a href="tel:+914427471689">044-2747-1689</a>
+                      </p>
+                      <p>
+                        Mobile: <a href="tel:+917448450450">7448 450 450</a>
+                      </p>
 
-                {isMambakkam ? (
-                  <div className={`${styles.contactUs} col-md-5`}>
-                    <p>Vikas Mantra Public School </p>
-                    <p> Vandalur to Kelambakkam Road, </p>
-                    <p> Mambakkam, Chennai,</p>
-                    <p>Tamil Nadu 600127</p>
-                    <p>
-                      Landline: <a href="tel:+914427471689">044-2747-1689</a>
-                    </p>
-                    <p>
-                      Mobile: <a href="tel:+917448450450">7448 450 450</a>
-                    </p>
-
-                    <p>
-                      <a href="mailto:admissions.mambakkam@vikasmantra.org ">
-                        admissions.mambakkam@vikasmantra.org
-                      </a>
-                    </p>
-                    <div className={`${styles.socialRow}`}>
-                      <a
-                        href="https://www.instagram.com/vikasmantra_publicschool/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <Image
-                          src={InstaLogo}
-                          alt="Instagram"
-                          width={32}
-                          height={32}
-                        />
-                      </a>
-                      <a
-                        href="https://www.facebook.com/profile.php?id=61577256500472"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <Image
-                          src={FbLogo}
-                          alt="Facebook"
-                          width={32}
-                          height={32}
-                        />
-                      </a>
-                      <a
-                        href="http://www.youtube.com/@vikasmantrapublicschool"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <Image
-                          src={YtLogo}
-                          alt="YouTube"
-                          width={32}
-                          height={32}
-                        />
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/company/vikas-mantra-public-school/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bcp2CcnmFQCG8whcGAXfijQ%3D%3D"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <Image
-                          src={LinkedInLogo}
-                          alt="LinkedIn"
-                          width={32}
-                          height={32}
-                        />
-                      </a>
+                      <p>
+                        <a href="mailto:admissions.mambakkam@vikasmantra.org ">
+                          admissions.mambakkam@vikasmantra.org
+                        </a>
+                      </p>
+                      <div className={`${styles.socialRow}`}>
+                        <a
+                          href="https://www.instagram.com/vikasmantra_publicschool/"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Image
+                            src={InstaLogo}
+                            alt="Instagram"
+                            width={32}
+                            height={32}
+                          />
+                        </a>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=61577256500472"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Image
+                            src={FbLogo}
+                            alt="Facebook"
+                            width={32}
+                            height={32}
+                          />
+                        </a>
+                        <a
+                          href="http://www.youtube.com/@vikasmantrapublicschool"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Image
+                            src={YtLogo}
+                            alt="YouTube"
+                            width={32}
+                            height={32}
+                          />
+                        </a>
+                        <a
+                          href="https://www.linkedin.com/company/vikas-mantra-public-school/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bcp2CcnmFQCG8whcGAXfijQ%3D%3D"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Image
+                            src={LinkedInLogo}
+                            alt="LinkedIn"
+                            width={32}
+                            height={32}
+                          />
+                        </a>
+                      </div>
                     </div>
                   </div>
-                ) : isChengalpattu ? (
-                  <div className={`${styles.contactUs} col-md-5`}>
-                    <p> S.No:168,168/3, Off Mahindra World City, </p>
-                    <p> Anjur 603204, Chengalpattu</p>
-                    <p> info@vikasmantra.org</p>
+                </>
+              ) : isChengalpattu ? (
+                <>
+                  <div className="row py-3 align-items-center">
+                    
+                  </div>
+                  <div className="row align-items-end">
+                    <div className={"col-md-5"}>
+                      <div className={styles.logoCol}>
+                        <Image
+                          src={VikasLogo}
+                          alt="image"
+                          className={styles.logo}
+                          fill
+                        />
+                      </div>
+                    </div>
+                    <div className={`${styles.contactUs} col-md-5`}>
+                       <h3>CONTACT US</h3>
+                      <p> S.No:168,168/3,</p>
+                      <p> Off Mahindra World City, </p>
+                      <p> Anjur 603204, Chengalpattu</p>
+                      <p> info@vikasmantra.org</p>
 
-                    <p>
-                      <a href="mailto:info.mambakkam@vikasmantra.org ">
-                        info.mambakkam@vikasmantra.org
-                      </a>
-                    </p>
-                    <div className={`${styles.socialRow}`}>
-                      <a
-                        href="https://www.instagram.com/vikasmantra_public_school/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <Image
-                          src={InstaLogo}
-                          alt="Instagram"
-                          width={32}
-                          height={32}
-                        />
-                      </a>
-                      <a
-                        href="https://www.facebook.com/vikasmantrapublicschool"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <Image
-                          src={FbLogo}
-                          alt="Facebook"
-                          width={32}
-                          height={32}
-                        />
-                      </a>
-                      <a
-                        href="http://www.youtube.com/@vikasmantrapublicschool"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <Image
-                          src={YtLogo}
-                          alt="YouTube"
-                          width={32}
-                          height={32}
-                        />
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/company/vikas-mantra-public-school/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bcp2CcnmFQCG8whcGAXfijQ%3D%3D"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <Image
-                          src={LinkedInLogo}
-                          alt="LinkedIn"
-                          width={32}
-                          height={32}
-                        />
-                      </a>
+                      <p>
+                        <a href="mailto:info.mambakkam@vikasmantra.org ">
+                          info.mambakkam@vikasmantra.org
+                        </a>
+                      </p>
+                      <div className={`${styles.socialRow}`}>
+                        <a
+                          href="https://www.instagram.com/vikasmantra_public_school/"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Image
+                            src={InstaLogo}
+                            alt="Instagram"
+                            width={32}
+                            height={32}
+                          />
+                        </a>
+                        <a
+                          href="https://www.facebook.com/vikasmantrapublicschool"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Image
+                            src={FbLogo}
+                            alt="Facebook"
+                            width={32}
+                            height={32}
+                          />
+                        </a>
+                        <a
+                          href="http://www.youtube.com/@vikasmantrapublicschool"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Image
+                            src={YtLogo}
+                            alt="YouTube"
+                            width={32}
+                            height={32}
+                          />
+                        </a>
+                        <a
+                          href="https://www.linkedin.com/company/vikas-mantra-public-school/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bcp2CcnmFQCG8whcGAXfijQ%3D%3D"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Image
+                            src={LinkedInLogo}
+                            alt="LinkedIn"
+                            width={32}
+                            height={32}
+                          />
+                        </a>
+                      </div>
                     </div>
                   </div>
-                ) : (
-                  <>
+                </>
+              ) : (
+                <>
+                  <div className="row py-3 align-items-center">
+                    <div className="col-2"></div>
+                    <div className="col-md-10">
+                      <h3>CONTACT US</h3>
+                    </div>
+                  </div>
+                  <div className="row align-items-end">
+                    <div className={"col-md-2"}>
+                      <div className={styles.logoCol}>
+                        <Image
+                          src={VikasLogo}
+                          alt="image"
+                          fill
+                          className={styles.logo}
+                        />
+                      </div>
+                    </div>
                     <div className={`${styles.contactUs} col-md-5 pe-4`}>
                       <h5>Mambakkam</h5>
 
@@ -481,7 +516,8 @@ export const Footer = () => {
                     <div
                       className={`${styles.contactUs} footer-col-bl col-md-5 ps-4`}>
                       <h5>Chengalpattu</h5>
-                      <p> S.No:168,168/3, Off Mahindra World City, </p>
+                      <p> S.No:168,168/3,</p>
+                      <p> Off Mahindra World City, </p>
                       <p> Anjur 603204, Chengalpattu</p>
                       <p> info@vikasmantra.org</p>
                       {/* <p>mathu</p> */}
@@ -538,9 +574,9 @@ export const Footer = () => {
                         </a>
                       </div>
                     </div>
-                  </>
-                )}
-              </div>
+                  </div>
+                </>
+              )}
 
               <div className="row align-items-center py-4">
                 <div className="col-md-4">
@@ -635,7 +671,11 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="fixed-cta" style={{ bottom: isMambakkam || isChengalpattu ?" 1rem " : "5rem"}}>
+          <div
+            className="fixed-cta"
+            style={{
+              bottom: isMambakkam || isChengalpattu ? " 1rem " : "5rem",
+            }}>
             {isMambakkam ? (
               <Link
                 href="https://api.whatsapp.com/send?phone=7448450450"
