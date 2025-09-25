@@ -107,6 +107,13 @@ const Testimonials = () => {
               modules={[Navigation, Autoplay, Pagination]}
               spaceBetween={20}
               pagination={{ clickable: true }}
+              loop={true}
+              autoplay={
+                {
+                  delay:2500,
+                  disableOnInteraction:false
+                }
+              }
               slidesPerView={2}
               navigation={{
                 prevEl: ".swiper-prev-custom",
