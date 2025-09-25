@@ -672,10 +672,7 @@ export const Footer = () => {
           </div>
 
           <div
-            className="fixed-cta"
-            style={{
-              bottom: isMambakkam || isChengalpattu ? " 1rem " : "5rem",
-            }}>
+            className={`fixed-cta ${isMambakkam || isChengalpattu ? 'btm' : ""}`}>
             {isMambakkam ? (
               <Link
                 href="https://api.whatsapp.com/send?phone=7448450450"

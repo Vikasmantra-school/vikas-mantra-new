@@ -2216,7 +2216,7 @@ tr {
   background: transparent;
   border: 1px solid;
   position: fixed;
-  bottom: 5rem;
+  bottom: 1rem;
   right: 1rem;
   z-index: 4;
   border: none;
@@ -2225,6 +2225,18 @@ tr {
   align-items: flex-end;
   flex-direction: column;
   gap: 1.5678rem;
+}
+.fixed-cta.btm{
+  bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px){
+  .fixed-cta.btm {
+    bottom: 1rem; 
+  }
+  .fixed-cta{
+    bottom: 5rem;
+  }
 }
 .fixed-cta .whatsapp-cta {
   width: 60px;
