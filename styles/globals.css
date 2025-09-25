@@ -2348,6 +2348,7 @@ tr {
 .spotlightTabs .nav-tabs .nav-link {
   color: #1d1d1d;
   padding-inline: 10px;
+  font-size: 1.125rem !important;
 }
 
 .spotlightTabs .nav-tabs .nav-link.active {
