@@ -201,41 +201,8 @@ const Contact = () => {
 
                 <div className="ContactAnimeStarts">
                   <p className="m-0 AnimeElement1">
-                    <a
-                      href="mailto:admissions.mambakkam@vikasmantra.org ">
+                    <a href="mailto:admissions.mambakkam@vikasmantra.org ">
                       admissions.mambakkam@vikasmantra.org
-                    </a>
-                  </p>
-                </div>
-                <br />
-                <h5>Chengalpattu</h5>
-
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1"></p>
-                </div>
-
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1">
-                    S.No:168,168/3, Off Mahindra World City,
-                  </p>
-                </div>
-
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1">
-                    Anjur 603204, Chengalpattu
-                  </p>
-                </div>
-
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
-                </div>
-
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1">
-                    <a
-                      href="mailto:info.mambakkam@vikasmantra.org "
-                      >
-                      info.mambakkam@vikasmantra.org
                     </a>
                   </p>
                 </div>
@@ -270,27 +237,14 @@ const Contact = () => {
 
                 <div className="ContactAnimeStarts">
                   <p className="m-0 AnimeElement1">
-                    <a
-                      href="mailto:admissions.mambakkam@vikasmantra.org "
-                      >
+                    <a href="mailto:admissions.mambakkam@vikasmantra.org ">
                       admissions.mambakkam@vikasmantra.org
                     </a>
                   </p>
                 </div>
-                <br/>
-                <h5> Chengalpattu</h5>
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
-                </div>
+               
 
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1">
-                    <a
-                      href="mailto:info.mambakkam@vikasmantra.org ">
-                      info.mambakkam@vikasmantra.org
-                    </a>
-                  </p>
-                </div>
+               
               </div>
             </div>
 
@@ -325,6 +279,58 @@ const Contact = () => {
 
                 <div className="ContactAnimeStarts3">
                   <p className="m-0 AnimeElement3"> 9.00 am - 1.00 pm</p>
+                </div>
+              </div>
+            </div>
+            {/*  */}
+
+            <div className={"col-md-4 " + " " + styles.mobColPdng}>
+              <div className={styles.paraAlign}>
+                <h5>Chengalpattu</h5>
+
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1"></p>
+                </div>
+
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">
+                    S.No:168,168/3, Off Mahindra World City,
+                  </p>
+                </div>
+
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">
+                    Anjur 603204, Chengalpattu
+                  </p>
+                </div>
+
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
+                </div>
+
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">
+                    <a href="mailto:info.mambakkam@vikasmantra.org ">
+                      info.mambakkam@vikasmantra.org
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className={"col-md-4 " + " " + styles.mobColPdng}>
+              <div className={styles.paraAlign}>
+                <h5> Chengalpattu</h5>
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
+                </div>
+
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">
+                    <a href="mailto:info.mambakkam@vikasmantra.org ">
+                      info.mambakkam@vikasmantra.org
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>

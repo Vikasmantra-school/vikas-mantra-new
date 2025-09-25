@@ -15,7 +15,7 @@ export default function SplitCards() {
               type: "loop",
               // pauseOnHover: true,
               // pauseOnFocus: false,
-              pagination: true,
+              pagination: true ,
               arrows: false,
               autoplay: true,
               interval: 6000,
@@ -44,6 +44,10 @@ export default function SplitCards() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className={styles.gridCardContent}>
                 <div className={styles.Cardxcontainer}>
                   <div className={`${styles.card} ${styles.bottomleft}`}>
                     <img
@@ -68,7 +72,7 @@ export default function SplitCards() {
             options={{
               spacing: 20,
               type: "loop",
-              
+
               pagination: true,
               arrows: false,
               autoplay: true,

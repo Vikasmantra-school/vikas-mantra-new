@@ -1,5 +1,5 @@
 .vmpsloginBanner {
-  margin-block: 60px;
+  margin-block-start: 60px;
   height: 280px;
   background: url("/images/bgs/vmps_login.png") no-repeat center center;
   background-size: cover;
