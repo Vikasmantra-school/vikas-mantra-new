@@ -20,6 +20,9 @@ const Nav = () => {
 
   var pageName = asPath.replace('/', '');
 
+  const isActive = (path) =>
+    pageName === path ? 'active nav-item' : 'nav-item';
+
   const { campus, isMambakkam, isChengalpattu } = useCampus();
 
   const [selectedCampus, setSelectedCampus] = useState('Select campus');
@@ -426,23 +429,20 @@ const Nav = () => {
                     id=""
                   >
                     {isMambakkam && (
-                      <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end gap-5 mambakkam-menu">
-                        <li
-                          className={
-                            pageName === '' ? 'active nav-item' : 'nav-item'
-                          }
-                        >
+                      <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end gap-3 mambakkam-menu">
+                        <li className={isActive('mambakkam-site')}>
                           <Link href="/mambakkam-site" legacyBehavior>
-                            <a
-                              className="nav-link text-white"
-                              aria-current="page"
-                            >
-                              Our Campus
-                            </a>
+                            <a className="nav-link text-white">Our Campus</a>
                           </Link>
                         </li>
 
-                        <li className="nav-item dropdown">
+                        <li
+                          className={`nav-item dropdown ${
+                            pageName.startsWith('mambakkam-site/about')
+                              ? 'active'
+                              : ''
+                          }`}
+                        >
                           <Link href="#" legacyBehavior>
                             <a
                               className="nav-link dropdown-toggle text-white"
@@ -454,7 +454,6 @@ const Nav = () => {
                               <CustomCaret color="white" />
                             </a>
                           </Link>
-
                           <ul className="dropdown-menu">
                             <li>
                               <Link
@@ -466,7 +465,6 @@ const Nav = () => {
                                 </a>
                               </Link>
                             </li>
-
                             <li>
                               <Link
                                 href="/mambakkam-site/about/blog"
@@ -478,7 +476,13 @@ const Nav = () => {
                           </ul>
                         </li>
 
-                        <li className="nav-item dropdown">
+                        <li
+                          className={`nav-item dropdown ${
+                            pageName.startsWith('mambakkam-site/campus')
+                              ? 'active'
+                              : ''
+                          }`}
+                        >
                           <Link href="/mambakkam-site/campus" legacyBehavior>
                             <a
                               className="nav-link dropdown-toggle text-white"
@@ -499,7 +503,6 @@ const Nav = () => {
                                 <a className="dropdown-item">Classrooms</a>
                               </Link>
                             </li>
-
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/laboratory"
@@ -508,7 +511,6 @@ const Nav = () => {
                                 <a className="dropdown-item">Laboratories</a>
                               </Link>
                             </li>
-
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/speciality-room"
@@ -519,7 +521,6 @@ const Nav = () => {
                                 </a>
                               </Link>
                             </li>
-
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/technology"
@@ -528,7 +529,6 @@ const Nav = () => {
                                 <a className="dropdown-item">Technology</a>
                               </Link>
                             </li>
-
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/security"
@@ -537,7 +537,6 @@ const Nav = () => {
                                 <a className="dropdown-item">Security</a>
                               </Link>
                             </li>
-
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/healthcare"
@@ -546,7 +545,6 @@ const Nav = () => {
                                 <a className="dropdown-item">Healthcare</a>
                               </Link>
                             </li>
-
                             <li>
                               <Link
                                 href="/mambakkam-site/campus/transportation"
@@ -557,180 +555,9 @@ const Nav = () => {
                             </li>
                           </ul>
                         </li>
-                        {/*     
-                        <li className="nav-item dropdown">
-                          <Link href="/mambakkam-site/learning" legacyBehavior>
-                            <a
-                              className="nav-link dropdown-toggle text-white"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false">
-                              Learning
-                            </a>
-                          </Link>
 
-                          <ul className="dropdown-menu">
-                            <li>
-                              <Link href="/mambakkam-site/learning" legacyBehavior>
-                                <a className="dropdown-item">
-                                  Why VIKAS MANTRA PUBLIC SCHOOL
-                                </a>
-                              </Link>
-                            </li>
-
-                            <li>
-                              <Link href="/mambakkam-site/learning/curriculum" legacyBehavior>
-                                <a className="dropdown-item">Curriculum</a>
-                              </Link>
-                            </li>
-
-                            <li>
-                              <Link
-                                href="/mambakkam-site/learning/pre-primary-years"
-                                legacyBehavior>
-                                <a className="dropdown-item">
-                                  Pre-Primary Years
-                                </a>
-                              </Link>
-                            </li>
-
-                            <li>
-                              <Link
-                                href="/mambakkam-site/learning/curriculum-framework"
-                                legacyBehavior>
-                                <a className="dropdown-item">
-                                  Curriculum Framework
-                                </a>
-                              </Link>
-                            </li>
-
-                            <li>
-                              <Link
-                                legacyBehavior
-                                href="/mambakkam-site/learning/online-classes">
-                                <a className="dropdown-item">Online Classes</a>
-                              </Link>
-                            </li>
-
-                            <li
-                              className="dropdownSub "
-                              onMouseOver={showDropdownSub}
-                              onMouseOut={hideDropdownSub}>
-                              <Link legacyBehavior href="#">
-                                <a className="dropdown-item dropdown-toggle">
-                                  Newsletter
-                                </a>
-                              </Link>
-
-                              <ul className="sub-menu d-none" ref={dropdownSub}>
-                                <li>
-                                  <Link
-                                    href="/pdf/newsletter19-20-vol1.pdf"
-                                    legacyBehavior>
-                                    <a
-                                      className="dropdown-item"
-                                      target="_blank">
-                                      2019 - 2020 : Vol 1
-                                    </a>
-                                  </Link>
-                                </li>
-
-                                <li>
-                                  <Link
-                                    href="/pdf/newsletter19-20-vol2.pdf"
-                                    legacyBehavior>
-                                    <a
-                                      className="dropdown-item"
-                                      target="_blank">
-                                      2019 - 2020 : Vol 2
-                                    </a>
-                                  </Link>
-                                </li>
-
-                                <li>
-                                  <Link
-                                    href="/pdf/newsletter20-21-vol1.pdf"
-                                    legacyBehavior>
-                                    <a
-                                      className="dropdown-item"
-                                      target="_blank">
-                                      2020 - 2021 : Vol 1
-                                    </a>
-                                  </Link>
-                                </li>
-
-                                <li>
-                                  <Link
-                                    href="/pdf/newsletter20-21-vol2.pdf"
-                                    legacyBehavior>
-                                    <a
-                                      className="dropdown-item"
-                                      target="_blank">
-                                      2020 - 2021 : Vol 2
-                                    </a>
-                                  </Link>
-                                </li>
-
-                                <li>
-                                  <Link
-                                    href="/pdf/newsletter21-22-vol1.pdf"
-                                    legacyBehavior>
-                                    <a
-                                      className="dropdown-item"
-                                      target="_blank">
-                                      2021 - 2022 : Vol 1
-                                    </a>
-                                  </Link>
-                                </li>
-
-                                <li>
-                                  <Link
-                                    href="/pdf/newsletter21-22-vol2.pdf"
-                                    legacyBehavior>
-                                    <a
-                                      className="dropdown-item"
-                                      target="_blank">
-                                      2021 - 2022 : Vol 2
-                                    </a>
-                                  </Link>
-                                </li>
-
-                                <li>
-                                  <Link
-                                    href="/pdf/newsletter22-23-vol-1.pdf"
-                                    legacyBehavior>
-                                    <a
-                                      className="dropdown-item"
-                                      target="_blank">
-                                      2022 - 2023 : Vol 1
-                                    </a>
-                                  </Link>
-                                </li>
-
-                                <li>
-                                  <Link
-                                    href="/pdf/newsletter22-23-vol-2.pdf"
-                                    legacyBehavior>
-                                    <a
-                                      className="dropdown-item"
-                                      target="_blank">
-                                      2022 - 2023 : Vol 2
-                                    </a>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li> */}
-
-                        <li
-                          className={
-                            pageName === 'enquiry-form'
-                              ? 'active nav-item'
-                              : 'nav-item'
-                          }
-                        >
-                          <Link legacyBehavior href="/mambakkam-site/events">
+                        <li className={isActive('mambakkam-site/events')}>
+                          <Link href="/mambakkam-site/events" legacyBehavior>
                             <a className="nav-link text-white">Gallery</a>
                           </Link>
                         </li>

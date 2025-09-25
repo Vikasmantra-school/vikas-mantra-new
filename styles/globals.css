@@ -2471,8 +2471,13 @@ input[type='number'] {
 }
 
 .mambakkam-menu.navbar-nav .nav-item:hover .nav-link {
-  text-decoration: underline;
-  transform: scale(1.02);
+  background: linear-gradient(
+    85.31deg,
+    #a11d2a -39.85%,
+    #e02d53 44.76%,
+    #f27d49 117.87%
+  );
+  border-radius: 4px;
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
 }
@@ -2507,5 +2512,15 @@ input[type='number'] {
   background: linear-gradient(90deg, #e02d53 0%, rgba(224, 45, 83, 0) 100%);
   /* display: block; */
   padding: 3px 8px !important;
+  border-radius: 4px;
   color: white !important;
+}
+
+.mambakkam-menu .nav-item .nav-link {
+  padding: 8px;
+}
+
+.mambakkam-menu .nav-item.active .nav-link {
+  background: linear-gradient(90deg, #a11d2a 0%, #ca2738 100%);
+  padding: 8px !important;
 }
