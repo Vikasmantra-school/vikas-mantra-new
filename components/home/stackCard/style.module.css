@@ -55,14 +55,26 @@
   height: 100%;
   object-fit: cover;
   display: block;
-
-   transition: transform 8s ease-in-out; 
+   transform: scale(1);
+   transition: transform 0.3s ease-in; 
 
 }
 .card:hover img{
-  transform: scale(1.2) translate(5%, 5%);
+  animation: kenburns 9s forwards;
   cursor: pointer;
   
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.15); /* quick 1s scale (10% of 9s = ~1s) */
+  }
+  100% {
+    transform: scale(1.25) translate(5%, 5%); /* slow Ken Burns */
+  }
 }
 
 .topleft {
