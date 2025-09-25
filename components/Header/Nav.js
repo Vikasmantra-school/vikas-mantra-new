@@ -450,7 +450,7 @@ const Nav = () => {
                               data-bs-toggle="dropdown"
                               aria-expanded="false"
                             >
-                              About Us
+                              About us
                               <CustomCaret color="white" />
                             </a>
                           </Link>
