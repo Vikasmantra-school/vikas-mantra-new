@@ -16,37 +16,37 @@ const JourneySwiper = () => {
   const containerRef = useRef(null);
   const arrowRef = useRef(null);
 
-  const handleMouseMove = (e) => {
-    if (e.target.closest(".childToIgnore")) return;
-    const container = containerRef.current;
-    const arrow = arrowRef.current;
-    if (!container || !arrow) return;
+  // const handleMouseMove = (e) => {
+  //   if (e.target.closest(".childToIgnore")) return;
+  //   const container = containerRef.current;
+  //   const arrow = arrowRef.current;
+  //   if (!container || !arrow) return;
 
-    const rect = container.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
+  //   const rect = container.getBoundingClientRect();
+  //   const centerX = rect.left + rect.width / 2;
+  //   const centerY = rect.top + rect.height / 2;
 
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    const angleRad = Math.atan2(mouseY - centerY, mouseX - centerX);
-    const angleDeg = angleRad * (180 / Math.PI);
+  //   const mouseX = e.clientX;
+  //   const mouseY = e.clientY;
+  //   const angleRad = Math.atan2(mouseY - centerY, mouseX - centerX);
+  //   const angleDeg = angleRad * (180 / Math.PI);
 
-    gsap.to(arrow, {
-      rotate: angleDeg,
-      duration: 0.3,
-      ease: "ease.inOut",
-      transformOrigin: "50% 50%",
-    });
-  };
+  //   gsap.to(arrow, {
+  //     rotate: angleDeg,
+  //     duration: 0.3,
+  //     ease: "ease.inOut",
+  //     transformOrigin: "50% 50%",
+  //   });
+  // };
 
-  const handleMouseLeave = () => {
-    gsap.to(arrowRef.current, {
-      rotate: 0,
-      duration: 0.5,
-      ease: "ease.inOut",
-      transformOrigin: "50% 50%",
-    });
-  };
+  // const handleMouseLeave = () => {
+  //   gsap.to(arrowRef.current, {
+  //     rotate: 0,
+  //     duration: 0.5,
+  //     ease: "ease.inOut",
+  //     transformOrigin: "50% 50%",
+  //   });
+  // };
 
   const slidesData = [
     {
@@ -82,15 +82,15 @@ const JourneySwiper = () => {
         className={
           styles.journeySwiper + " " + "mbkm-section-padding AnimeStarts"
         }>
-        <div>
+        <div className={styles.wrapper}>
           <div className="row g-0 w-100">
             <div className="col-lg-3 d-flex justify-content-start">
               <div className={styles.swiperLeftCont}>
                 <h2 className="AnimeElement">
                   Journey of <br /> education at VMPS
                   <div
-                    onMouseMove={handleMouseMove}
-                    onMouseLeave={handleMouseLeave}
+                    // onMouseMove={handleMouseMove}
+                    // onMouseLeave={handleMouseLeave}
                     className={styles.svgArrow}>
                     <svg
                       ref={arrowRef}
@@ -107,7 +107,7 @@ const JourneySwiper = () => {
                     </svg>
                   </div>
                 </h2>
-                <p className="AnimeElement">
+                <p className="AnimeElement mb-0">
                   There’s so many things that make our school unique
                 </p>
               </div>

@@ -1,4 +1,8 @@
 /* video section */
+.videoSection{
+
+  background-color: #fff;
+}
 .videoSection .videoContainer {
   position: relative;
 }
@@ -15,7 +19,7 @@
   position: absolute;
   bottom: 10px;
   left: 2rem;
-  background-color: #ffffffd9;
+  background-color: #fff;
   padding: 1.2rem 1.5rem;
   border-bottom: 4px solid #e02d53;
   width: 560px;

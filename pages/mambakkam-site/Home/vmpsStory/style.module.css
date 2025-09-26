@@ -1,4 +1,7 @@
 /* VMPS Story */
+.vmpsStory{
+  background-color: #fff;
+}
 .vmpsStory .desc {
   font-size: 0.875rem !important;
   font-family: "Golos Text", sans-serif;

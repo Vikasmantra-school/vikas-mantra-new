@@ -1,4 +1,12 @@
 /* Journey swiper */
+.wrapper{
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-block-end: 4rem;
+}
+.journeySwiper{
+  background-color: #fff;
+}
 .journeySwiper .swiperLeftCont {
   display: flex;
   flex-direction: column;
@@ -16,7 +24,7 @@
 }
 
 .journeySwiper .swiperLeftCont h2 {
-  font-family: 'Golos Text', sans-serif;
+  font-family: "Golos Text", sans-serif;
 
   position: relative;
   font-size: 1.5rem;
@@ -78,13 +86,15 @@
 }
 .swiperSlide .imgWrapper {
   overflow: hidden;
-
+  height: 250px;
+  object-position: center;
+  object-fit: cover;
   cursor: pointer;
+  border-bottom-right-radius: 12px;
 }
 .swiperSlide .slideCont img {
-  height: 250px;
-  border-bottom-right-radius: 12px;
   transition: transform 0.5s ease;
+  /* width: 100%; */
 }
 .swiperSlide .imgWrapper:hover img {
   transform: scale(1.1) !important;
@@ -149,14 +159,22 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .swiperLeftCont{
+    padding-block: 2rem;
+  }
   .swiperLeftCont .svgArrow {
-    top: -3rem;
+    top: -1.5rem;
     right: -6rem;
+    width: 80px;
+    height: 80px;
   }
   .journeySwiper .swiperSvg1 {
     right: -8rem;
     left: unset;
     top: -10rem;
+  }
+  .customNav{
+    bottom: -4rem;
   }
 }
 

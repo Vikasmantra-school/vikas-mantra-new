@@ -1,5 +1,8 @@
 /* blog section */
-
+.blogSection{
+  background:#fff;
+  padding-block: 1rem;
+}
 .blogSection .blogBlock {
   margin-block-end: 0;
   /* background-color: lightblue; */
@@ -135,7 +138,10 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .blogSection .cust_container {
+  /* .blogSection .cust_container {
     padding-top: 2rem;
-  }
+  } */
+   .blogTitle{
+    margin-block: 1rem;
+   }
 }
