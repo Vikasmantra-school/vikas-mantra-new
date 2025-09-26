@@ -18,7 +18,6 @@ const TabsHome = () => {
   const [playingIndex, setPlayingIndex] = useState(null);
 
   useEffect(() => {
-    // force mute videos on mount
     videoRefs.current.forEach((vdo) => {
       if (vdo) vdo.muted = true;
     });
@@ -29,7 +28,7 @@ const TabsHome = () => {
     if (!video) return;
 
     if (video.paused) {
-      video.muted = true; // always muted
+      video.muted = true;
       video.play();
       setPlayingIndex(index);
     } else {
@@ -47,7 +46,9 @@ const TabsHome = () => {
           </div>
 
           <div className={styles.rightContent}>
-            <h3 className={`${styles.rightHeading} AnimeElement`}>Shining the Spotlight</h3>
+            <h3 className={`${styles.rightHeading} AnimeElement`}>
+              Shining the Spotlight
+            </h3>
             <p className="AnimeElement">
               Celebrating the talents, achievements, and cultural spirit of our
               young Vikas Mantra stars.
@@ -63,27 +64,32 @@ const TabsHome = () => {
             {/* first tab */}
             <Tab
               className={styles.tab + " spotlightTabX"}
-              style={{
-                position: "relative",
-                top: "-30px",
-              }}
               eventKey="mahendra"
               title="Chengalpattu ">
               <Swiper
-              style={{
-                paddingBlock:'2rem'
-              }}
+                // style={{
+                //   paddingBlock:'2rem'
+                // }}
                 // ref={primaryRef}
-                modules={[Autoplay, Pagination]}
+                modules={[Autoplay, Pagination, Navigation]}
                 spaceBetween={20}
                 slidesPerView={2}
                 loop={true}
-                 loopedSlides={3} 
-                autoplay={{ delay: 6000 }}
-                pagination={{ clickable: true }}
+                loopedSlides={3}
+                // pagination={{ clickable: true }}
                 breakpoints={{
-                  0:{slidesPerView: 1},
+                  0: { slidesPerView: 1 },
                   768: { slidesPerView: 2 },
+                }}
+                navigation={{
+                  prevEl: ".swiper-prev-vdo-1",
+                  nextEl: ".swiper-next-vdo-1",
+                }}
+                onSwiper={(swiper) => {
+                  setTimeout(() => {
+                    // swiper.navigation.init();
+                    // swiper.navigation.update();
+                  });
                 }}>
                 {[0, 1, 2].map((idx) => (
                   <SwiperSlide key={idx}>
@@ -111,7 +117,7 @@ const TabsHome = () => {
                       </video>
 
                       <button
-                        onClick={() => handlePlayPause(0)}
+                        onClick={() => handlePlayPause(idx)}
                         className={styles.playBtn}>
                         {/* Play SVG */}
                         <svg
@@ -129,35 +135,67 @@ const TabsHome = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-               
               </Swiper>
+              <div className={`${styles.customNav} AnimeElement`}>
+                <button
+                  className={styles.customPrev + " " + "swiper-prev-vdo-1"}>
+                  <svg
+                    width="15"
+                    height="23"
+                    viewBox="0 0 15 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.3947 22.2324L0.674805 11.4882L12.3947 0.744049L14.3492 2.53454L4.58099 11.4882L14.3492 20.4419L12.3947 22.2324Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button
+                  className={styles.customNext + " " + "swiper-next-vdo-1"}>
+                  <svg
+                    width="15"
+                    height="23"
+                    viewBox="0 0 15 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.58279 22.2324L14.3027 11.4882L2.58279 0.744049L0.628316 2.53454L10.3965 11.4882L0.628316 20.4419L2.58279 22.2324Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
             </Tab>
 
             {/* second tab  */}
             <Tab
               className={styles.tab + " spotlightTabX"}
-              style={{
-                position: "relative",
-                top: "-30px",
-              }}
               eventKey="mambakkam"
               title="Mambakkam">
               <Swiper
-               style={{
-                paddingBlock:'2rem'
-              }}
-                modules={[Autoplay, Pagination]}
+                modules={[Autoplay, Pagination, Navigation]}
                 spaceBetween={20}
                 slidesPerView={2}
-                loop={true} loopedSlides={3} 
+                loop={true}
+                loopedSlides={3}
                 autoplay={{ delay: 6000 }}
-                pagination={{ clickable: true }}
+                // pagination={{ clickable: true }}
                 breakpoints={{
-                  0:{slidesPerView: 1},
+                  0: { slidesPerView: 1 },
                   768: { slidesPerView: 2 },
                 }}
-                >
-                {[ 3,4,5].map((idx) => (
+                navigation={{
+                  prevEl: ".swiper-prev-vdo-2",
+                  nextEl: ".swiper-next-vdo-2",
+                }}
+                onSwiper={(swiper) => {
+                  setTimeout(() => {
+                    // swiper.navigation.init();
+                    // swiper.navigation.update();
+                  });
+                }}>
+                {[3, 4, 5].map((idx) => (
                   <SwiperSlide key={idx}>
                     <div
                       className={styles.sliderContainer}
@@ -183,7 +221,7 @@ const TabsHome = () => {
                       </video>
 
                       <button
-                        onClick={() => handlePlayPause(2)}
+                        onClick={() => handlePlayPause(idx)}
                         className={styles.playBtn}>
                         <svg
                           width="78"
@@ -200,8 +238,37 @@ const TabsHome = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-               
               </Swiper>
+              <div className={`${styles.customNav} AnimeElement`}>
+                <button
+                  className={styles.customPrev + " " + "swiper-prev-vdo-2"}>
+                  <svg
+                    width="15"
+                    height="23"
+                    viewBox="0 0 15 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.3947 22.2324L0.674805 11.4882L12.3947 0.744049L14.3492 2.53454L4.58099 11.4882L14.3492 20.4419L12.3947 22.2324Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button
+                  className={styles.customNext + " " + "swiper-next-vdo-2"}>
+                  <svg
+                    width="15"
+                    height="23"
+                    viewBox="0 0 15 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.58279 22.2324L14.3027 11.4882L2.58279 0.744049L0.628316 2.53454L10.3965 11.4882L0.628316 20.4419L2.58279 22.2324Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
             </Tab>
           </Tabs>
         </div>

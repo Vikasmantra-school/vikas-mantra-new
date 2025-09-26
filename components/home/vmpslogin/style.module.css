@@ -64,4 +64,8 @@
     background: linear-gradient(to bottom, transparent 10%, rgb(10 10 10) 100%);
     z-index: 0;
   }
+  .vmpsloginButton{
+    font-size: 1rem;
+    padding: .7rem;
+  }
 }
