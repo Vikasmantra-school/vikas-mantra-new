@@ -1,6 +1,10 @@
 .testimonials {
   padding-block: 3rem;
   background-color: #f7f9fa;
+  overflow: hidden;
+}
+.testimonials :global(.swiper){
+  overflow: visible;
 }
 .swiperSvg {
   position: absolute;
@@ -132,7 +136,7 @@
 
 @media only screen and (max-width: 768px) {
   .tabContent .card {
-    max-width: 100%;
+    max-width: auto;
     margin: 1rem;
   }
   .swiperSvg{
@@ -141,4 +145,8 @@
   .cardTitle{
     width: 75%;
   }
+  .card{
+    max-width: 100%;
+  }
+  
 }

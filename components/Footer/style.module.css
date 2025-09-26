@@ -24,7 +24,7 @@
 .logoCol {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
 }
 .logoCol .logo{
@@ -88,8 +88,13 @@ input.formInput::placeholder {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
   margin-top: 1rem;
+}
+.hrLight{
+  width: 100%;
+  height: 1px;
+  background: #674A4A;
 }
 
 .socialRow a {

@@ -37,6 +37,43 @@ const Testimonials = () => {
       description:
         "It’s a very good opportunity to the students to enhance their extracurricular skills n to know about themselves where they are good at..!",
     },
+    {
+      id: 4,
+      image: "/images/test-vikas.png",
+      name: " Parent of  Kavitha",
+      role: "SR.KG",
+      // starRating: 4,
+      description:
+        "The event is very nice to bring up hidden talents of the kids and also helps to shed their shyness and inhibitions to face number of people. Keep up the good work.",
+    },
+    {
+      id: 5,
+      image: "/images/test-vikas.png",
+      name: "Parent of Anirudhi ",
+      role: "Grade – II",
+      starRating: 5,
+      description:
+        "It’s a very good platform for the students to show cast their ideas, thoughts and skills without any fear to elaborate themselves in front of all hands….",
+    },
+    {
+      id: 6,
+      image: "/images/test-vikas.png",
+      name: "Parent of Anirudhi ",
+      role: "Grade – II",
+      starRating: 5,
+      description:
+        "It’s a very good platform for the students to show cast their ideas, thoughts and skills without any fear to elaborate themselves in front of all hands….",
+    },
+    {
+      id: 7,
+      image: "/images/test-vikas.png",
+      name: "Parent of Riddhi",
+      role: "Grade – II",
+      starRating: 3,
+      description:
+        "It’s a very good opportunity to the students to enhance their extracurricular skills n to know about themselves where they are good at..!",
+    },
+    
   ];
 
   // Function to render the stars based on the rating
@@ -114,6 +151,7 @@ const Testimonials = () => {
                   disableOnInteraction:false
                 }
               }
+              // centeredSlides={true}
               slidesPerView={2}
               navigation={{
                 prevEl: ".swiper-prev-custom",
@@ -122,12 +160,12 @@ const Testimonials = () => {
               breakpoints={{
                 0: {
                   slidesPerView: 1,
-                  spaceBetween: 0,
+                  spaceBetween: 20,
                   centeredSlides: true,
                 },
                 576: {
                   slidesPerView: 2,
-                  spaceBetween: 0,
+                  spaceBetween: 20,
                   centeredSlides: true,
                 },
                 768: {
@@ -141,10 +179,14 @@ const Testimonials = () => {
                   centeredSlides: false,
                 },
                 1200: {
-                  slidesPerView: 3,
+                  slidesPerView: 3.5,
                   spaceBetween: 25,
                   centeredSlides: false,
                 },
+                1400:{
+                  slidesPerView:4.5,
+                  spaceBetween:30,
+                }
               }}>
               <div className={styles.testimonialSvg}>
                 <svg

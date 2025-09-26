@@ -103,9 +103,9 @@ export const Footer = () => {
       <div className={styles.section + " pt-5 m-0"} id="footer">
         <div className="container footer-container">
           <div
-            className="row py-4"
+            className="row g-0 pb-5"
             style={{ borderBottom: "1px solid #674A4A" }}>
-            <h3>Vikas Mantra, Mambakkam</h3>
+            <h3 className="mb-3">Vikas Mantra, Mambakkam</h3>
 
             <div className="col-md-3">
               <div className={styles.footerTags}>
@@ -142,8 +142,8 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="row py-4" style={{ borderBottom: "1px solid #fff" }}>
-            <h3>Vikas Mantra, Chengalpattu</h3>
+          <div className="row g-0 py-5" style={{ borderBottom: "1px solid #fff" }}>
+            <h3 className="mb-3">Vikas Mantra, Chengalpattu</h3>
 
             <div className="col-md-3">
               <div className={styles.footerTags}>
@@ -179,7 +179,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="row gx-5 py-4">
+          <div className="row gx-5 py-5">
             <div className="col-lg-4 col-md-12">
               <div className={styles.formCol}>
                 <div className="mb-3 mb-md-5">
@@ -244,7 +244,7 @@ export const Footer = () => {
                     <input
                       type="submit"
                       value={loading ? "Loading..." : "Send"}
-                      className={styles.sendBtn + " btn btn-light mt-4"}
+                      className={styles.sendBtn + " btn btn-light"}
                     />
                   </div>
                 </form>
@@ -256,9 +256,10 @@ export const Footer = () => {
             </div>
 
             <div className="col-lg-8 col-md-12">
-              <div className="row py-3 align-items-center">
+              <div className="row pb-3 align-items-center">
                 <div className={"col-md-12 "}>
                   <div className={styles.aboutCol}>
+                    <h6 style={{ opacity:"0", pointerEvents:"none"}}>VISIT THE SCHOOL</h6>
                     <h3>ABOUT</h3>
                     <p className="m-0">
                       Vikas Mantra Public School is established with a vision to
@@ -579,7 +580,7 @@ export const Footer = () => {
               )}
 
               <div className="row align-items-center py-4">
-                <div className="col-md-4">
+                <div className="col-md-3">
                   <h3 className="mb-0">QUICK LINKS</h3>
                 </div>
                 <div className={"col-md-8 "}>
