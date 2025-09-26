@@ -32,9 +32,13 @@ const MobileNav = ({}) => {
   useEffect(() => {
     const handleRouteChange = (url) => {
       let menu = document.getElementById('mobMenu');
+      let sMenu = document.getElementById('mobSubMenu');
       menu.classList.add('mob-menu-hdden');
+      sMenu.classList.add('mob-menu-hdden');
       let hamburger = document.getElementById('hamburger');
       hamburger.classList.remove('is-active');
+      let sHamburger = document.querySelector('.mobSubHamburger');
+      sHamburger.classList.remove('is-active');
     };
 
     router.events.on('routeChangeStart', handleRouteChange);
@@ -45,12 +49,14 @@ const MobileNav = ({}) => {
   }, [router.events]);
 
   function navLink(e) {
-    const sibling = e.target.nextSibling;
-    sibling.classList.add('is-active');
+     const submenu = e.currentTarget.nextElementSibling;
+  submenu.classList.add("is-active");
   }
 
   function subClose(e) {
-    e.target.parentElement.parentElement.classList.remove('is-active');
+   e.preventDefault();
+  const submenu = e.currentTarget.closest(".nav__sub");
+  submenu.classList.remove("is-active");
   }
 
   return (

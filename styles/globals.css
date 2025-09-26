@@ -801,11 +801,14 @@ p {
   position: relative;
   width: 100%;
   background-color: #452c2c;
-  height: calc(100vh - 77px);
-  /* height: fit-content; */
-  overflow-y: scroll;
+  /* height: calc(100vh - 77px); */
+  height: fit-content;
+  overflow-y: auto;
   overflow-x: hidden;
   display: flow-root;
+  max-height: 90vh;
+  transition: max-height 0.3s ease;
+  
 }
 
 .mob-menu.otherMob .nav {
@@ -842,6 +845,8 @@ p {
   height: 100%;
   background-color: #452c2c;
   opacity: 0;
+  max-height: 90vh;   
+  overflow-y: auto;
   visibility: hidden;
   transition: all 0.35s ease-in-out;
   transform: translateX(100%);
