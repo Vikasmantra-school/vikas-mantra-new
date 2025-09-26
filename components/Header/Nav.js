@@ -42,7 +42,7 @@ const Nav = () => {
     subMenu = {
       bg: "#45458A",
       color: "#fff",
-      headText: "Mambakkam",
+      headText: "Vikas Mantra, Mambakkam",
       afflNo: "1930634",
       enquiryBg: "#FFB800",
       enquiryTxt: "#1D1D1D",
@@ -51,7 +51,7 @@ const Nav = () => {
     subMenu = {
       bg: "#FFB800",
       color: "#1D1D1D",
-      headText: "Chengalpattu",
+      headText: "Vikas Mantra, Chengalpattu",
       afflNo: "1931307",
       enquiryBg: "#45458A",
       enquiryTxt: "#FFFFFF",
