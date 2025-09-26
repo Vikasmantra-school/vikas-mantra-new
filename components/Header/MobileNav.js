@@ -38,7 +38,7 @@ const MobileNav = ({}) => {
       let hamburger = document.getElementById('hamburger');
       hamburger.classList.remove('is-active');
       let sHamburger = document.querySelector('.mobSubHamburger');
-      sHamburger.classList.remove('is-active');
+      sHamburger?.classList.remove('is-active');
     };
 
     router.events.on('routeChangeStart', handleRouteChange);
