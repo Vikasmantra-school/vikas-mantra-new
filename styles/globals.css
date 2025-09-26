@@ -118,7 +118,9 @@ p {
 .mobileBanner h1 {
   font-size: 30px;
 }
-
+.mobileBanner h2{
+  font-size: 22px;
+}
 .VectorLogo {
   position: relative;
 }

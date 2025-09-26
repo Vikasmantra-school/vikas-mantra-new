@@ -65,7 +65,7 @@ function HomeSlider({ ref }) {
               <div className="container">
                 <div className="row mobileBanner">
                   <div className="col-md-12">
-                    <div className="AnimeStarts py-2 ">
+                    <div className="AnimeStarts py-4 ">
                       <h2 className="box AnimeElement">
                         Creating Confident Learners and Leaders.
                       </h2>
@@ -127,7 +127,7 @@ function HomeSlider({ ref }) {
               <div className="container">
                 <div className="row mobileBanner">
                   <div className="col-md-12">
-                    <div className="AnimeStarts py-2 ">
+                    <div className="AnimeStarts py-4 ">
                       <h2 className="box AnimeElement">
                         To educate young minds to be lifelong learners in this
                         dynamic world
