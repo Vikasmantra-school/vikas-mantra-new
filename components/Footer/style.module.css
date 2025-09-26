@@ -114,13 +114,13 @@ input.formInput::placeholder {
     padding: 10px;
   }
 
-  /* .contactUs,
+  .contactUs,
   .quickLinksCol,
   .aboutCol,
   .logoCol,
   .formCol {
-    padding: 15px 20px;
-  } */
+    padding-block: 15px;
+  }
 
   .bottomText {
     padding: 10px;

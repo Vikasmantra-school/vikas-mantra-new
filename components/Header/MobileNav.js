@@ -20,14 +20,14 @@ const MobileNav = ({}) => {
       afflNo: '1930634',
     };
   }
-  // else if (isChengalpattu) {
-  //   subMenu = {
-  //     bg: "#FFB800",
-  //     color: "#1D1D1D",
-  //     headText: "Chengalpattu",
-  //     afflNo: "1931307",
-  //   };
-  // }
+  else if (isChengalpattu) {
+    subMenu = {
+      bg: "#FFB800",
+      color: "#1D1D1D",
+      headText: "Chengalpattu",
+      afflNo: "1931307",
+    };
+  }
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -582,11 +582,16 @@ const MobileNav = ({}) => {
             </li>
           </ul>
         ) : isChengalpattu ? (
-          <ul className="nav">
+          <ul
+            className="nav chengalpattu-menu"
+            style={{
+              backgroundColor: subMenu?.bg || '#f5f5f5',
+            }}
+          >
             <li className="nav__item">
-              <Link href="/" legacyBehavior>
+              <Link href="/chengalpattu-site" legacyBehavior>
                 <a className="nav__link" aria-current="page">
-                  Home
+                  Our Campus
                 </a>
               </Link>
             </li>
@@ -610,7 +615,10 @@ const MobileNav = ({}) => {
                   />
                 </svg>
               </a>
-              <ul className="nav__sub">
+              <ul className="nav__sub"
+              style={{
+                  backgroundColor: subMenu?.bg || '#f5f5f5',
+                }}>
                 <li className="nav__item">
                   <a
                     onClick={(e) => subClose(e)}
@@ -687,13 +695,13 @@ const MobileNav = ({}) => {
                 </li>
               </ul>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <Link href="/chengalpattu-site/admissions" legacyBehavior>
                 <a className="nav__link" aria-current="page">
                   Admissions
                 </a>
               </Link>
-            </li>
+            </li> */}
             <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
                 Campus{' '}
@@ -714,7 +722,10 @@ const MobileNav = ({}) => {
                   />
                 </svg>
               </a>
-              <ul className="nav__sub">
+              <ul className="nav__sub"
+              style={{
+                  backgroundColor: subMenu?.bg || '#f5f5f5',
+                }}>
                 <li className="nav__item">
                   <a
                     onClick={(e) => subClose(e)}
@@ -815,7 +826,7 @@ const MobileNav = ({}) => {
                 </li>
               </ul>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
                 Learning{' '}
                 <svg
@@ -835,7 +846,10 @@ const MobileNav = ({}) => {
                   />
                 </svg>
               </a>
-              <ul className="nav__sub">
+              <ul className="nav__sub"
+              style={{
+                  backgroundColor: subMenu?.bg || '#f5f5f5',
+                }}>
                 <li className="nav__item">
                   <a
                     onClick={(e) => subClose(e)}
@@ -902,7 +916,7 @@ const MobileNav = ({}) => {
                   </Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li className="nav__item">
               <Link href="/chengalpattu-site/enquiry-form" legacyBehavior>
                 <a className="nav__link" aria-current="page">
@@ -927,7 +941,7 @@ const MobileNav = ({}) => {
                 </a>
               </Link>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <Link href="/chengalpattu-site/contact" legacyBehavior>
                 <a className="nav__link" aria-current="page">
                   Contact Us
@@ -940,188 +954,194 @@ const MobileNav = ({}) => {
                   Career
                 </a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         ) : (
-          <ul className="nav">
-            <li className="nav__item">
-              <Link href="/" legacyBehavior>
-                <a className="nav__link" aria-current="page">
-                  Home
-                </a>
-              </Link>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                About{' '}
-                <svg
-                  width="29px"
-                  height="27px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </a>
-              <ul className="nav__sub">
-                <li className="nav__item">
-                  <a
-                    onClick={(e) => subClose(e)}
-                    className="nav__link sub__close hasDropdown"
-                    href="#"
-                  >
-                    Back
-                    <svg
-                      width="29px"
-                      height="27px"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li className="nav__item">
-                  <Link href="/about" legacyBehavior>
-                    <a className="nav__link">About Vikas Mantra</a>
-                  </Link>
-                </li>
-                <li className="nav__item">
-                  <Link href="/about/vision-and-philosophy" legacyBehavior>
-                    <a className="nav__link">Our Vision & Philosophy</a>
-                  </Link>
-                </li>
+          ""
+          // <ul className="nav">
+          //   <li className="nav__item">
+          //     <Link href="/" legacyBehavior>
+          //       <a className="nav__link" aria-current="page">
+          //         Home
+          //       </a>
+          //     </Link>
+          //   </li>
+          //   <li className="nav__item">
+          //     <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
+          //       About{' '}
+          //       <svg
+          //         width="29px"
+          //         height="27px"
+          //         xmlns="http://www.w3.org/2000/svg"
+          //         fill="none"
+          //         viewBox="0 0 24 24"
+          //         strokeWidth={1.5}
+          //         stroke="currentColor"
+          //         className="w-6 h-6"
+          //       >
+          //         <path
+          //           strokeLinecap="round"
+          //           strokeLinejoin="round"
+          //           d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          //         />
+          //       </svg>
+          //     </a>
+          //     <ul className="nav__sub"
+          // style={{
+                  // backgroundColor: subMenu?.bg || '#f5f5f5',
+                // }}>
+          //       <li className="nav__item">
+          //         <a
+          //           onClick={(e) => subClose(e)}
+          //           className="nav__link sub__close hasDropdown"
+          //           href="#"
+          //         >
+          //           Back
+          //           <svg
+          //             width="29px"
+          //             height="27px"
+          //             xmlns="http://www.w3.org/2000/svg"
+          //             fill="none"
+          //             viewBox="0 0 24 24"
+          //             strokeWidth={1.5}
+          //             stroke="currentColor"
+          //             className="w-6 h-6"
+          //           >
+          //             <path
+          //               strokeLinecap="round"
+          //               strokeLinejoin="round"
+          //               d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+          //             />
+          //           </svg>
+          //         </a>
+          //       </li>
+          //       <li className="nav__item">
+          //         <Link href="/about" legacyBehavior>
+          //           <a className="nav__link">About Vikas Mantra</a>
+          //         </Link>
+          //       </li>
+          //       <li className="nav__item">
+          //         <Link href="/about/vision-and-philosophy" legacyBehavior>
+          //           <a className="nav__link">Our Vision & Philosophy</a>
+          //         </Link>
+          //       </li>
 
-                <li className="nav__item">
-                  <Link href="/about/message-from-chairman" legacyBehavior>
-                    <a className="nav__link">Chairman’s Message</a>
-                  </Link>
-                </li>
+          //       <li className="nav__item">
+          //         <Link href="/about/message-from-chairman" legacyBehavior>
+          //           <a className="nav__link">Chairman’s Message</a>
+          //         </Link>
+          //       </li>
 
-                <li className="nav__item">
-                  <Link href="/about/message-from-advisor" legacyBehavior>
-                    <a className="nav__link"> Our Advisor</a>
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav__item">
-              <Link href="/admissions" legacyBehavior>
-                <a className="nav__link" aria-current="page">
-                  Admissions
-                </a>
-              </Link>
-            </li>
+          //       <li className="nav__item">
+          //         <Link href="/about/message-from-advisor" legacyBehavior>
+          //           <a className="nav__link"> Our Advisor</a>
+          //         </Link>
+          //       </li>
+          //     </ul>
+          //   </li>
+          //   <li className="nav__item">
+          //     <Link href="/admissions" legacyBehavior>
+          //       <a className="nav__link" aria-current="page">
+          //         Admissions
+          //       </a>
+          //     </Link>
+          //   </li>
 
-            <li className="nav__item">
-              <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                Learning{' '}
-                <svg
-                  width="29px"
-                  height="27px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </a>
-              <ul className="nav__sub">
-                <li className="nav__item">
-                  <a
-                    onClick={(e) => subClose(e)}
-                    className="nav__link sub__close hasDropdown"
-                    href="#"
-                  >
-                    Back
-                    <svg
-                      width="29px"
-                      height="27px"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li className="nav__item">
-                  <Link href="/learning" legacyBehavior>
-                    <a className="nav__link">Why VIKAS MANTRA PUBLIC SCHOOL</a>
-                  </Link>
-                </li>
-                <li className="nav__item">
-                  <Link href="/learning/curriculum" legacyBehavior>
-                    <a className="nav__link">Curriculum</a>
-                  </Link>
-                </li>
+          //   <li className="nav__item">
+          //     <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
+          //       Learning{' '}
+          //       <svg
+          //         width="29px"
+          //         height="27px"
+          //         xmlns="http://www.w3.org/2000/svg"
+          //         fill="none"
+          //         viewBox="0 0 24 24"
+          //         strokeWidth={1.5}
+          //         stroke="currentColor"
+          //         className="w-6 h-6"
+          //       >
+          //         <path
+          //           strokeLinecap="round"
+          //           strokeLinejoin="round"
+          //           d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          //         />
+          //       </svg>
+          //     </a>
+          //     <ul className="nav__sub" style={{
+                  // backgroundColor: subMenu?.bg || '#f5f5f5',
+                // }}>
+          //       <li className="nav__item">
+          //         <a
+          //           onClick={(e) => subClose(e)}
+          //           className="nav__link sub__close hasDropdown"
+          //           href="#"
+          //         >
+          //           Back
+          //           <svg
+          //             width="29px"
+          //             height="27px"
+          //             xmlns="http://www.w3.org/2000/svg"
+          //             fill="none"
+          //             viewBox="0 0 24 24"
+          //             strokeWidth={1.5}
+          //             stroke="currentColor"
+          //             className="w-6 h-6"
+          //           >
+          //             <path
+          //               strokeLinecap="round"
+          //               strokeLinejoin="round"
+          //               d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+          //             />
+          //           </svg>
+          //         </a>
+          //       </li>
+          //       <li className="nav__item">
+          //         <Link href="/learning" legacyBehavior>
+          //           <a className="nav__link">Why VIKAS MANTRA PUBLIC SCHOOL</a>
+          //         </Link>
+          //       </li>
+          //       <li className="nav__item">
+          //         <Link href="/learning/curriculum" legacyBehavior>
+          //           <a className="nav__link">Curriculum</a>
+          //         </Link>
+          //       </li>
 
-                <li className="nav__item">
-                  <Link href="/learning/pre-primary-years" legacyBehavior>
-                    <a className="nav__link">Pre-Primary Years</a>
-                  </Link>
-                </li>
+          //       <li className="nav__item">
+          //         <Link href="/learning/pre-primary-years" legacyBehavior>
+          //           <a className="nav__link">Pre-Primary Years</a>
+          //         </Link>
+          //       </li>
 
-                <li className="nav__item">
-                  <Link href="/learning/curriculum-framework" legacyBehavior>
-                    <a className="nav__link">Curriculum Framework</a>
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav__item">
-              <Link href="https://www.parentsalarmapp.com/" legacyBehavior>
-                <a className="nav__link" target="_blank" aria-current="page">
-                  VMPS Login
-                </a>
-              </Link>
-            </li>
+          //       <li className="nav__item">
+          //         <Link href="/learning/curriculum-framework" legacyBehavior>
+          //           <a className="nav__link">Curriculum Framework</a>
+          //         </Link>
+          //       </li>
+          //     </ul>
+          //   </li>
+          //   <li className="nav__item">
+          //     <Link href="https://www.parentsalarmapp.com/" legacyBehavior>
+          //       <a className="nav__link" target="_blank" aria-current="page">
+          //         VMPS Login
+          //       </a>
+          //     </Link>
+          //   </li>
 
-            <li className="nav__item">
-              <Link href="/contact" legacyBehavior>
-                <a className="nav__link" aria-current="page">
-                  Contact Us
-                </a>
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link href="/careers" legacyBehavior>
-                <a className="nav__link" aria-current="page">
-                  Career
-                </a>
-              </Link>
-            </li>
-          </ul>
+          //   <li className="nav__item">
+          //     <Link href="/contact" legacyBehavior>
+          //       <a className="nav__link" aria-current="page">
+          //         Contact Us
+          //       </a>
+          //     </Link>
+          //   </li>
+          //   <li className="nav__item">
+          //     <Link href="/careers" legacyBehavior>
+          //       <a className="nav__link" aria-current="page">
+          //         Career
+          //       </a>
+          //     </Link>
+          //   </li>
+          // </ul>
         )}
       </div>
     </>

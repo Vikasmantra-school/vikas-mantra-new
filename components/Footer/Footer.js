@@ -514,7 +514,7 @@ export const Footer = () => {
                     </div>
 
                     <div
-                      className={`${styles.contactUs} footer-col-bl col-md-5 ps-4`}>
+                      className={`${styles.contactUs} footer-col-bl col-md-5 ps-md-4`}>
                       <h5>Chengalpattu</h5>
                       <p> S.No:168,168/3,</p>
                       <p> Off Mahindra World City, </p>
@@ -672,10 +672,7 @@ export const Footer = () => {
           </div>
 
           <div
-            className="fixed-cta"
-            style={{
-              bottom: isMambakkam || isChengalpattu ? " 1rem " : "5rem",
-            }}>
+            className={`fixed-cta ${isMambakkam || isChengalpattu ? 'btm' : ""}`}>
             {isMambakkam ? (
               <Link
                 href="https://api.whatsapp.com/send?phone=7448450450"

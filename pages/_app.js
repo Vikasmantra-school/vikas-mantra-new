@@ -192,9 +192,9 @@ function MyApp({ Component, pageProps }) {
 
 
       let NavComponent = Nav;
-      if(router.pathname.startsWith("/chengalpattu-site")){
-        NavComponent = ChengalpattuNav;
-      }
+      // if(router.pathname.startsWith("/chengalpattu-site")){
+      //   NavComponent = ChengalpattuNav;
+      // }
 
 
 

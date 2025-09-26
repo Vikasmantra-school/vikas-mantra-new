@@ -187,24 +187,30 @@ const Contact = () => {
                 <div className="ContactAnimeStarts">
                   <p className="m-0 AnimeElement1">Tamil Nadu 600127</p>
                 </div>
-                <div className="ContactAnimeStarts">
+                <div className="ContactAnimeStarts" style={{ opacity: "0" }}>
                   <p className="m-0 AnimeElement1">
-                    Landline: <a href="tel:+914427471689">044-2747-1689</a>
+                    S.No:168,168/3, Off Mahindra World City,
                   </p>
                 </div>
 
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1">
-                    Mobile: <a href="tel:+917448450450">7448 450 450</a>
-                  </p>
-                </div>
+                <div className="d-block d-md-none">
+                  <h5>Chengalpattu</h5>
 
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1">
-                    <a href="mailto:admissions.mambakkam@vikasmantra.org ">
-                      admissions.mambakkam@vikasmantra.org
-                    </a>
-                  </p>
+                  <div className="ContactAnimeStarts">
+                    <p className="m-0 AnimeElement1"></p>
+                  </div>
+
+                  <div className="ContactAnimeStarts">
+                    <p className="m-0 AnimeElement1">
+                      S.No:168,168/3, Off Mahindra World City,
+                    </p>
+                  </div>
+
+                  <div className="ContactAnimeStarts">
+                    <p className="m-0 AnimeElement1">
+                      Anjur 603204, Chengalpattu
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -242,9 +248,31 @@ const Contact = () => {
                     </a>
                   </p>
                 </div>
-               
 
-               
+                <div className="d-block d-md-none">
+
+                  <br/>
+                  <h5> Chengalpattu</h5>
+                  <div className="ContactAnimeStarts">
+                    <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
+                  </div>
+
+                  <div className="ContactAnimeStarts">
+                    <p className="m-0 AnimeElement1">
+                      <a href="mailto:info.mambakkam@vikasmantra.org ">
+                        info.mambakkam@vikasmantra.org
+                      </a>
+                    </p>
+                  </div>
+
+                  <div className="ContactAnimeStarts" style={{ opacity: "0" }}>
+                    <p className="m-0 AnimeElement1">
+                      <a href="mailto:admissions.mambakkam@vikasmantra.org ">
+                        admissions.mambakkam@vikasmantra.org
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -284,7 +312,10 @@ const Contact = () => {
             </div>
             {/*  */}
 
-            <div className={"col-md-4 " + " " + styles.mobColPdng}>
+            <div
+              className={
+                "col-md-4 mt-4 d-none d-md-block" + " " + styles.mobColPdng
+              }>
               <div className={styles.paraAlign}>
                 <h5>Chengalpattu</h5>
 
@@ -304,6 +335,26 @@ const Contact = () => {
                   </p>
                 </div>
 
+                {/* <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
+                </div>
+
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">
+                    <a href="mailto:info.mambakkam@vikasmantra.org ">
+                      info.mambakkam@vikasmantra.org
+                    </a>
+                  </p>
+                </div> */}
+              </div>
+            </div>
+
+            <div
+              className={
+                "col-md-4 mt-4 d-none d-md-block" + " " + styles.mobColPdng
+              }>
+              <div className={styles.paraAlign}>
+                <h5> Chengalpattu</h5>
                 <div className="ContactAnimeStarts">
                   <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
                 </div>
@@ -315,20 +366,11 @@ const Contact = () => {
                     </a>
                   </p>
                 </div>
-              </div>
-            </div>
 
-            <div className={"col-md-4 " + " " + styles.mobColPdng}>
-              <div className={styles.paraAlign}>
-                <h5> Chengalpattu</h5>
-                <div className="ContactAnimeStarts">
-                  <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
-                </div>
-
-                <div className="ContactAnimeStarts">
+                <div className="ContactAnimeStarts" style={{ opacity: "0" }}>
                   <p className="m-0 AnimeElement1">
-                    <a href="mailto:info.mambakkam@vikasmantra.org ">
-                      info.mambakkam@vikasmantra.org
+                    <a href="mailto:admissions.mambakkam@vikasmantra.org ">
+                      admissions.mambakkam@vikasmantra.org
                     </a>
                   </p>
                 </div>

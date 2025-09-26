@@ -124,11 +124,11 @@
 
 .announcementPatch{
     padding: 5px 18px;
-    color: #1D1D1D;
+    
     font-weight: 800;
     font-size: 14px;
     border-radius: 0;
-    background-color: #FFB800;
+    
 }
 .announcementPatch:hover{
     color: black;

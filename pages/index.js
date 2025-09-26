@@ -165,7 +165,7 @@ function Home() {
                           alt="Image 1"
                         />
                       </div>
-                      <div className={styles.sliderContentWrapper}>
+                      {/* <div className={styles.sliderContentWrapper}>
                         <h2>
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
@@ -177,7 +177,7 @@ function Home() {
                             color: "black",
                           }}
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </SplideSlide>
                   <SplideSlide>
@@ -189,7 +189,7 @@ function Home() {
                           alt="Image 1"
                         />
                       </div>
-                      <div className={styles.sliderContentWrapper}>
+                      {/* <div className={styles.sliderContentWrapper}>
                         <h2>
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
@@ -201,7 +201,7 @@ function Home() {
                             color: "black",
                           }}
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </SplideSlide>
                 </Splide>
@@ -300,7 +300,7 @@ function Home() {
                           alt="Image 1"
                         />
                       </div>
-                      <div className={styles.sliderContentWrapper}>
+                      {/* <div className={styles.sliderContentWrapper}>
                         <h2>
                           Every child’s growth is guided with meaning and
                           momentum.
@@ -313,7 +313,7 @@ function Home() {
                             color: "white",
                           }}
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </SplideSlide>
                   <SplideSlide>
@@ -325,7 +325,7 @@ function Home() {
                           alt="Image 1"
                         />
                       </div>
-                      <div className={styles.sliderContentWrapper}>
+                      {/* <div className={styles.sliderContentWrapper}>
                         <h2>
                           Every child’s growth is guided with meaning and
                           momentum.
@@ -338,7 +338,7 @@ function Home() {
                             color: "white",
                           }}
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </SplideSlide>
                 </Splide>
