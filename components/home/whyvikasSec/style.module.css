@@ -140,4 +140,9 @@
     /* display: none; */
     height: 1px;
   }
+
+  .gridTitle,
+  .gridDesc {
+    width: 100%;
+  }
 }
