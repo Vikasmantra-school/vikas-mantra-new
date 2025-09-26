@@ -57,6 +57,48 @@ const Nav = () => {
       enquiryTxt: "#FFFFFF",
     };
   }
+
+  const showSubmenu = !!subMenu;
+  const mainHeaderRef = useRef(null);
+  const [headerHeight, setHeaderHeight] = useState(0);
+
+  const [showCommonHeader, setShowCommonHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  // header heigh measuring
+  useEffect(() => {
+    const updateHeight = () => {
+      if (mainHeaderRef.current) {
+        setHeaderHeight(mainHeaderRef.current.offsetHeight);
+      }
+    };
+    updateHeight();
+
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
+
+  useEffect(() => {
+    if (!showSubmenu) return;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < 30) {
+        setShowCommonHeader(true);
+      } else if (currentScrollY < lastScrollY) {
+        setShowCommonHeader(true); // scroll up → show main header
+      } else {
+        setShowCommonHeader(false); // scroll down → hide main header
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [showSubmenu, lastScrollY]);
+
   function hamburgerMenu(e) {
     let menu = document.getElementById("mobMenu");
     let hamburgerMenu = document.getElementById("hamburger");
@@ -110,12 +152,13 @@ const Nav = () => {
   return (
     <>
       <header
-        className={
-          "homeheader stickyHeader" +
-          " " +
-          pageName +
-          ` ${pageName === "" ? "home" : "position-relative"}`
-        }>
+      ref={mainHeaderRef}
+        className={"homeheader common-header sticky"}
+        style={{
+         transform: showCommonHeader ? "translateY(0)" : `translateY(-${headerHeight}px)`,
+          transition: "transform 0.3s ease",
+          zIndex: 51,
+        }}>
         <nav
           className={styles.navTransparent + " navbar-expand-lg py-2 py-md-0"}>
           <div className="container">
@@ -373,8 +416,14 @@ const Nav = () => {
             </div>
           </div>
         </nav>
-
-        {subMenu && (
+      </header>
+      {subMenu && (
+        <header
+          className={"homeheader submenu-header sticky"}
+          style={{
+             top: showCommonHeader ? `${headerHeight}px` : "0",
+            transition: "top 0.3s ease",
+          }}>
           <nav
             style={{
               backgroundColor: subMenu.bg,
@@ -644,7 +693,7 @@ const Nav = () => {
                           </ul>
                         </li> */}
 
-                         <li
+                        <li
                           className={`nav-item dropdown ${
                             pageName.startsWith("chengalpattu-site/campus")
                               ? "active"
@@ -738,12 +787,17 @@ const Nav = () => {
                             </li>
                           </ul>
                         </li>
-                        <li className={isActive("chengalpattu-site/enquiry-form")}>
-                          <Link href="/chengalpattu-site/enquiry-form" legacyBehavior>
+                        <li
+                          className={isActive(
+                            "chengalpattu-site/enquiry-form"
+                          )}>
+                          <Link
+                            href="/chengalpattu-site/enquiry-form"
+                            legacyBehavior>
                             <a className="nav-link">Enquiry Form</a>
                           </Link>
                         </li>
-                         {/* <li className={isActive("chengalpattu-site/mandatory-public-disclosures")}>
+                        {/* <li className={isActive("chengalpattu-site/mandatory-public-disclosures")}>
                           <Link href="/chengalpattu-site/mandatory-public-disclosures" legacyBehavior>
                             <a className="nav-link">Mandatory Public Disclosures</a>
                           </Link>
@@ -788,8 +842,8 @@ const Nav = () => {
               </div>
             </div>
           </nav>
-        )}
-      </header>
+        </header>
+      )}
     </>
   );
 };
