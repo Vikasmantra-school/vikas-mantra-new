@@ -46,6 +46,7 @@
   position: relative;
   z-index: 1;
   color: white;
+  padding-bottom: 2rem;
 }
 
 .sliderContentWrapper h2 {
@@ -161,5 +162,8 @@
   .sliderContentWrapper h2 {
     width: auto;
     font-size: 28px;
+  }
+  .mobBannerSlider :global(.splide__pagination){
+    bottom: 1.5rem;
   }
 }

@@ -346,7 +346,7 @@ function Home() {
             </Col>
 
             <Col xs={12} className="d-block d-md-none">
-              <div className="overflow-hidden">
+              <div className={`${styles.mobBannerSlider} overflow-hidden`}>
                 <Splide
                   options={{
                     spacing: 0,
