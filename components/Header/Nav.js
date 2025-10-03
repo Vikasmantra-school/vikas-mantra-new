@@ -477,7 +477,7 @@ const Nav = () => {
                               role="button"
                               data-bs-toggle="dropdown"
                               aria-expanded="false">
-                              About us
+                              About Us
                               <CustomCaret color="white" />
                             </a>
                           </Link>
@@ -598,7 +598,7 @@ const Nav = () => {
                               role="button"
                               data-bs-toggle="dropdown"
                               aria-expanded="false">
-                              About us
+                              About Us
                               <CustomCaret color="black" />
                             </a>
                           </Link>

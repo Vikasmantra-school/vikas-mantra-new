@@ -603,7 +603,7 @@ const MobileNav = ({}) => {
             </li>
             <li className="nav__item">
               <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
-                About{' '}
+                About Us
                 <svg
                   width="29px"
                   height="27px"
@@ -930,7 +930,7 @@ const MobileNav = ({}) => {
                 </a>
               </Link>
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <Link
                 href="/chengalpattu-site/mandatory-public-disclosures"
                 legacyBehavior
@@ -939,7 +939,7 @@ const MobileNav = ({}) => {
                   Mandatory Public Disclosures
                 </a>
               </Link>
-            </li>
+            </li> */}
             <li className="nav__item">
               <Link href="/chengalpattu-site/events" legacyBehavior>
                 <a className="nav__link" aria-current="page">
