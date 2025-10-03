@@ -57,7 +57,7 @@ const Laboratory = () => {
 
                             <div className='imgBgColor2 pastelSkyBlue AnimeStarts'>
 
-                                <img src='/assets/campus/lab1.png' alt='image' className={styles.labImg1 + ' AnimeElement'} />
+                                <img src='/assets/campus/phy-lab.jpeg' alt='image' className={styles.labImg1 + ' AnimeElement'} />
 
                             </div>
 
@@ -119,7 +119,7 @@ const Laboratory = () => {
 
                             <div className='imgBgColor2 pastelGold AnimeStarts'>
 
-                                <img src='/assets/campus/biology-lab.JPG' alt='image' className={styles.labImg3 + ' AnimeElement'
+                                <img src='/assets/campus/biology-lab.jpeg' alt='image' className={styles.labImg3 + ' AnimeElement'
                                 } />
 
                             </div>

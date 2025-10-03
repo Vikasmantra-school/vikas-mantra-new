@@ -650,7 +650,7 @@ const MobileNav = ({}) => {
                     </svg>
                   </a>
                 </li>
-                <li className="nav__item">
+                {/* <li className="nav__item">
                   <Link href="/chengalpattu-site/about" legacyBehavior>
                     <a className="nav__link">About Vikas Mantra</a>
                   </Link>
@@ -680,7 +680,7 @@ const MobileNav = ({}) => {
                   >
                     <a className="nav__link"> Our Advisor</a>
                   </Link>
-                </li>
+                </li> */}
 
                 <li className="nav__item">
                   <Link href="/about/message-from-principal" legacyBehavior>
@@ -688,11 +688,11 @@ const MobileNav = ({}) => {
                   </Link>
                 </li>
 
-                <li className="nav__item">
+                {/* <li className="nav__item">
                   <Link href="/chengalpattu-site/about/our-team" legacyBehavior>
                     <a className="nav__link">Our Team</a>
                   </Link>
-                </li>
+                </li> */}
 
                 <li className="nav__item">
                   <Link href="/chengalpattu-site/about/blog" legacyBehavior>

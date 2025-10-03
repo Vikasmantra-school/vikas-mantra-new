@@ -2224,7 +2224,7 @@ tr {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  z-index: 4;
+  z-index: 11;
   border: none;
   outline: none;
   display: flex;

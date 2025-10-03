@@ -197,7 +197,7 @@ const SpecialityRoom = () => {
                     </div>
                     <div
                       className={`${styles.card} ${styles.bottomright} ${styles.right}`}>
-                      <img src="/images/spitcardImages/g4.png" alt="Library" />
+                      <img src="/assets/campus/library2.jpeg" alt="Library" />
                       <div className={styles.caption}>Library</div>
                     </div>
                   </div>
@@ -299,7 +299,7 @@ const SpecialityRoom = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className={`${styles.card} `}>
-                  <img src="/images/spitcardImages/g4.png" alt="Library" />
+                  <img src="/assets/campus/library2.jpeg" alt="Library" />
                   <div className={styles.caption}>Library</div>
                 </div>
               </SwiperSlide>

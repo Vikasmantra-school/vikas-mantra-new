@@ -220,7 +220,7 @@ function Home() {
                   <Link href="/chengalpattu-site" passHref>
                     <a className={`${styles.innerBtn1} AnimeElement`}>
                       <span className={styles.txt}>
-                        Visit Mahendran World City Campus
+                        Visit Chengalpattu Campus
                       </span>
                       <span className={styles.arrow}>
                         <svg

@@ -25,6 +25,7 @@ export const Footer = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const currentYear = new Date().getFullYear();
 
   useEffect(() => {
     //checking if running locally or server
@@ -721,7 +722,7 @@ export const Footer = () => {
 
         <hr className={styles.hrLine} />
         <p className={"text-center py-3 m-0" + " " + styles.bottomText}>
-          Vikas Mantra Public School © 2023 | All Rights Reserved | Coded by{" "}
+          Vikas Mantra Public School © {currentYear} | All Rights Reserved | Coded by{" "}
           <Link href="https://benfy.co/">
             <a target="_blank" rel="noopener noreferrer">
               Benfy
