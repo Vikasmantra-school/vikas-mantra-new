@@ -505,7 +505,7 @@ function Home() {
           </a>
         </Link>
 
-        <Link href="#footer" legacyBehavior>
+        <Link href="#footerForm" legacyBehavior>
           <a className="" rel="noopener noreferrer">
             <svg
               width="40"

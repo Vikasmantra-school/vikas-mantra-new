@@ -179,8 +179,8 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="row gx-5 py-5">
-            <div className="col-lg-4 col-md-12">
+          <div className="row gx-5 py-5" id="footerForm" >
+            <div className="col-lg-4 col-md-12" >
               <div className={styles.formCol}>
                 <div className="mb-3 mb-md-5">
                   <h6>VISIT THE SCHOOL</h6>

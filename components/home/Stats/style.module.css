@@ -200,7 +200,7 @@
   background-color: #a4efff;
   background: url(/images/bgs/cardbg.svg) no-repeat center center;
   background-size: contain;
-  min-height: 200px;
+  min-height: 165px;
   padding: 20px;
   /* mask-size: contain;
   mask-position: center;
@@ -227,6 +227,9 @@
   font-weight: bold;
   font-size: 34px;
   margin-bottom: 0;
+}
+.statCard small{
+  font-size: 0.75rem;
 }
 
 .statsIcon {
