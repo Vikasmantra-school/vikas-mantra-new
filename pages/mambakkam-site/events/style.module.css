@@ -21,6 +21,7 @@
 }
 .eventCard{
     overflow: hidden;
+    height: 100%;
     border: none;
     transition: transform 0.3s ease;
 }

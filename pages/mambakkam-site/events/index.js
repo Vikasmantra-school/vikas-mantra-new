@@ -14,6 +14,8 @@ import "photoswipe/style.css";
 
 export async function getServerSideProps() {
   const res = await fetch("https://vikasmantra.edu.in/api/eventsData");
+  // const res = await fetch("http://localhost:3000/api/eventsData"); for dev
+
   const data = await res.json();
 
   return {
@@ -150,9 +152,7 @@ const Events = ({ todos }) => {
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">{event.title} </h5>
-                    <p>year:{event.year}</p>
-
-                    <p className={styles.clickToView}>Click here to View</p>
+                   <p className={styles.clickToView}>Click here to View</p>
                   </div>
 
                   {/* Hidden gallery for PhotoSwipe */}

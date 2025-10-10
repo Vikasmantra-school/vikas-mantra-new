@@ -113,13 +113,27 @@ const Contact = () => {
 
       <section className={"whitebg VectorYellowHalfSpiral" + " " + "pt60"}>
         <div className="container">
+           
           <div className="row">
-            <div className="col-md-6"></div>
+            <div className="col-lg-6 col-md-12">
+              <div
+                className={
+                  "imgUpNew pastelGreen ContactAnimeStarts3 ContactImgBgColor " +
+                  " " +
+                  styles.careerImg
+                }>
+                <img
+                  src="/assets/campus/school-building3.png"
+                  alt="image"
+                  className="img-fluid AnimeElement3"
+                />
+              </div>
+            </div>
 
             <div className="col-lg-6 col-md-12">
               <div
                 className={
-                  "imgUp pastelGreen2 ContactAnimeStarts3 ContactImgBgColor " +
+                  "imgUpNew pastelGreen2 ContactAnimeStarts3 ContactImgBgColor " +
                   " " +
                   styles.careerImg
                 }>
@@ -250,8 +264,7 @@ const Contact = () => {
                 </div>
 
                 <div className="d-block d-md-none">
-
-                  <br/>
+                  <br />
                   <h5> Chengalpattu</h5>
                   <div className="ContactAnimeStarts">
                     <p className="m-0 AnimeElement1">info@vikasmantra.org</p>

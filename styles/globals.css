@@ -654,6 +654,9 @@ p {
 .imgUp img {
   top: -165px;
 }
+.imgUpNew img {
+  top: -110px;
+}
 
 .bglogo {
   position: relative;
@@ -1712,6 +1715,10 @@ tr {
   .imgUp img {
     margin-top: 0;
   }
+  .imgUpNew img {
+    top: -30px;
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (max-width: 990px) {
@@ -1805,6 +1812,10 @@ tr {
 @media screen and (min-width: 661px) and (max-width: 990px) {
   .imgUp img {
     top: 0;
+  }
+  .imgUpNew img {
+    top: -30px;
+    margin-bottom: 2rem;
   }
 
   .imgBgColor::after {
@@ -2443,6 +2454,10 @@ input[type="number"] {
     color: #1d1d1d;
     padding-inline: 10px;
     font-size: 1.125rem !important;
+  }
+  .imgUpNew img {
+    top: 13px;
+    margin-bottom: 2rem;
   }
 }
 
