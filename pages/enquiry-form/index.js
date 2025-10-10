@@ -184,12 +184,14 @@ const EnquiryForm = () => {
                       <div className={styles.formPb}>
                         <div className="AnimeStarts">
                           <h5 className="mb-5 AnimeElement">
-                            Parent Information : Father
+                            Parent Information
                           </h5>
                         </div>
 
                         <Form.Group className="mb-5 AnimeStarts">
-                          <Form.Label className="AnimeElement">Name</Form.Label>
+                          <Form.Label className="AnimeElement">
+                            Name (Father / Mother)
+                          </Form.Label>
                           <Form.Control
                             required
                             name="Father Name"
@@ -235,11 +237,48 @@ const EnquiryForm = () => {
                                 }
                               />
                             </Form.Group>
+                            <Form.Group className="mb-5 AnimeStarts">
+                              <Form.Label className="mb-2 AnimeElement">
+                                Location and Pincode
+                              </Form.Label>
+                              <Form.Control
+                                required
+                                name="Admission Of Communication"
+                                className={styles.formText}
+                                type="text"
+                                value={admissionCommunication}
+                                onChange={(event) =>
+                                  setAdmissionCommunication(event.target.value)
+                                }
+                              />
+                            </Form.Group>
+                            <div className="col">
+                              <Form.Group className="mb-5 AnimeStarts">
+                                <Form.Label className=" AnimeElement">
+                                  Campus
+                                </Form.Label>
+                                <Form.Select
+                                  required
+                                  name="campus"
+                                  className={styles.formText}
+                                  value={campus}
+                                  onChange={(event) =>
+                                    setCampus(event.target.value)
+                                  }>
+                                  <option value="" disabled>
+                                    -- Select Campus --
+                                  </option>
+                                  <option value="Mambakkam">Mambakkam</option>
+                                  <option value="Chengalpattu">
+                                    Chengalpattu
+                                  </option>
+                                </Form.Select>
+                              </Form.Group>
+                            </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div className="AnimeStarts">
+                        {/* <div className="AnimeStarts">
                         <h5 className="mb-5 AnimeElement">
                           Parent Information : Mother
                         </h5>
@@ -292,46 +331,11 @@ const EnquiryForm = () => {
                             </Form.Group>
                           </div>
                         </div>
+                      </div> */}
                       </div>
                     </div>
 
-                    <div className="col-md-5">
-                      <Form.Group className="mb-5 AnimeStarts">
-                        {/* <Form.Label className=" AnimeElement">
-                          Campus
-                        </Form.Label> */}
-                        <Form.Select
-                          required
-                          name="campus"
-                          className={styles.formText}
-                          value={campus}
-                          onChange={(event) => setCampus(event.target.value)}>
-                          <option value="" disabled>
-                            -- Select Campus --
-                          </option>
-                          <option value="Mambakkam">Mambakkam</option>
-                          <option value="Chengalpattu">Chengalpattu</option>
-                        </Form.Select>
-                      </Form.Group>
-                    </div>
-
                     <div className="col-md-11">
-                      <Form.Group className="mb-5 AnimeStarts">
-                        <Form.Label className="mb-5 AnimeElement">
-                          Address for Communication
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          name="Admission Of Communication"
-                          className={styles.formText}
-                          type="text"
-                          value={admissionCommunication}
-                          onChange={(event) =>
-                            setAdmissionCommunication(event.target.value)
-                          }
-                        />
-                      </Form.Group>
-
                       <a href="#">
                         <input
                           type="submit"

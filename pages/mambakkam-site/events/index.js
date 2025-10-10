@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./style.module.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -8,6 +8,9 @@ import { EventsNav } from "/components/EventsNav";
 // import { events } from '/data/events'
 import { gsap, Power2 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+import PhotoSwipeLightbox from "photoswipe/lightbox";
+import "photoswipe/style.css";
 
 export async function getServerSideProps() {
   const res = await fetch("https://vikasmantra.edu.in/api/eventsData");
@@ -20,15 +23,33 @@ export async function getServerSideProps() {
   };
 }
 
-function chunkArray(array, size) {
-  return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
-    array.slice(i * size, i * size + size)
-  );
-}
 const Events = ({ todos }) => {
   gsap.registerPlugin(ScrollTrigger);
-
+  const lightboxRef = useRef(null);
+  const [selectedYear, setSelectedYear] = useState("all");
   const pageTitle = "Events";
+  //
+  useEffect(() => {
+    // Initialize PhotoSwipeLightbox
+    lightboxRef.current = new PhotoSwipeLightbox({
+      gallery: ".event-gallery",
+      children: "a",
+      pswpModule: () => import("photoswipe"),
+    });
+    lightboxRef.current.init();
+
+    return () => lightboxRef.current.destroy();
+  }, []);
+
+  // Get unique years from your events
+  const years = Array.from(new Set(todos.map((event) => event.year))).sort(
+    (a, b) => b - a
+  );
+
+  const filteredEvents =
+    selectedYear === "all"
+      ? todos
+      : todos.filter((event) => event.year === selectedYear);
 
   //animation-for-text
   useEffect(() => {
@@ -85,121 +106,71 @@ const Events = ({ todos }) => {
     ScrollTrigger.refresh();
   }, []);
 
-  console.log(todos, "apii");
-
   return (
     <>
       <Breadcrumb pageName={pageTitle} />
 
-      {/* 
-            {todos?.map((data) => (
-                <div key={data.id}>
+      <section className="pt60">
+        <div className="container">
+          {/* Year Dropdown */}
+          <div className="mb-4">
+            <select
+              className="form-select w-auto"
+              value={selectedYear}
+              onChange={(e) => setSelectedYear(e.target.value)}>
+              <option value="all">All Years</option>
+              {years.map((year) => (
+                <option key={year} value={year}>
+                  {year}
+                </option>
+              ))}
+            </select>
+          </div>
 
-                    <p>{data.id + ' id'}</p>
-                    <p>{data.title}</p>
-                    <p>{data.dropdown}</p>
+          <div className="row">
+            {filteredEvents.map((event) => (
+              <div key={event.id} className="col-md-3 mb-4">
+                <div
+                  className={`card ${styles.eventCard}`}
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => {
+                    const gallery =
+                      e.currentTarget.querySelector(".event-gallery");
+                    if (gallery) {
+                      const firstLink = gallery.querySelector("a");
+                      if (firstLink) firstLink.click();
+                    }
+                  }}>
+                  <div className={styles.imgWrapper}>
+                    <img
+                      src={event.mainImage}
+                      className="card-img-top"
+                      alt={event.title}
+                    />
+                  </div>
+                  <div className="card-body">
+                    <h5 className="card-title">{event.title} </h5>
+                    <p>year:{event.year}</p>
 
+                    <p className={styles.clickToView}>Click here to View</p>
+                  </div>
+
+                  {/* Hidden gallery for PhotoSwipe */}
+                  <div className="event-gallery d-none">
+                    {event.gallery.map((img, idx) => (
+                      <a
+                        key={idx}
+                        href={img}
+                        data-pswp-width="1200"
+                        data-pswp-height="900">
+                        <img src={img} alt={event.title} />
+                      </a>
+                    ))}
+                  </div>
                 </div>
-
-            ))
-            } */}
-
-      <section className="pt60 ">
-        <div className={"container-fluid" + " " + styles.tabSpace}>
-          <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-            <div className="row pt-5">
-              <div className={"col-md-5" + " " + styles.eventText}>
-                <h2 className="bottomToTop">Gallery</h2>
-                <EventsNav events={todos} />
               </div>
-            </div>
-
-            {todos.map((data, index) => {
-              return (
-                <Tab.Content key={index}>
-                  <Tab.Pane eventKey={data.id}>
-                    <section
-                      id={data.id}
-                      className="whitebg pt60 pb60 parentAnimeStarts ">
-                      <div className="container">
-                        <div className="row">
-                          <div className="col-md-6">
-                            {/* <h2 className="ulineRed bottomToTop ">
-                              {data.title}
-                            </h2>
-
-                            <p className="pt-4 bottomToTop ">{data.desc}</p> */}
-                          </div>
-
-                          <div className="col-md-6">
-                            <div className="imgUp imgBgColor pastelDarkBlue">
-                              <img
-                                src={data.mainImage}
-                                alt="image"
-                                className="img-fluid bottomToTop"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-
-                    <section
-                      className={
-                        "greybg  VectorSpiralPink pt80 pb80 parentAnimeStarts2 " +
-                        styles.eventGallery +
-                        " " +
-                        styles.eventSectionPdng
-                      }>
-                      <div className="container">
-                        <div className="row vmpsslide">
-                          <div className="col-md-12">
-                            <Splide
-                              options={{
-                                rewind: true,
-                                gap: "10rem",
-                                perPage: 1,
-                                autoplay: true,
-                                pagination: false,
-                                arrows: true,
-                                breakpoints: {
-                                  660: {
-                                    perPage: 1,
-                                  },
-                                },
-                              }}>
-                              {chunkArray(data.gallery || [], 6).map(
-                                (group, slideIndex) => {
-                                  return (
-                                    <SplideSlide
-                                      className="eventGallery "
-                                      key={slideIndex}>
-                                      <div className="row">
-                                        {group.map((img, i) => (
-                                            <div key={i} className="col-6 col-md-4 mb-3">
-
-                                          <img
-                                            src={img}
-                                            alt="image"
-                                            className="img-fluid  leftToRight "
-                                            />
-                                            </div>
-                                        ))}
-                                      </div>
-                                    </SplideSlide>
-                                  );
-                                }
-                              )}
-                            </Splide>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                  </Tab.Pane>
-                </Tab.Content>
-              );
-            })}
-          </Tab.Container>
+            ))}
+          </div>
         </div>
       </section>
     </>

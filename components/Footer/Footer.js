@@ -7,10 +7,10 @@ import Modal from "react-bootstrap/Modal";
 import PopupImageOld from "../../public/assets/Popups/Vikas-Social-Ad-2.png";
 // import PopupImageNew from '../../public/assets/Popups/popup-creative.png'
 import PopupImageNew from "../../public/assets/Popups/Admission-Open-Popup.png";
-import InstaLogo from "../../public/assets/icons/InstaLogo.png";
-import FbLogo from "../../public/assets/icons/FbLogo.png";
-import YtLogo from "../../public/assets/icons/YtLogo.png";
-import LinkedInLogo from "../../public/assets/icons/LinkedInLogo.png";
+import InstaLogo from "../../public/assets/icons/InstaLogo.svg";
+import FbLogo from "../../public/assets/icons/FbLogo.svg";
+import YtLogo from "../../public/assets/icons/YtLogo.svg";
+import LinkedInLogo from "../../public/assets/icons/LinkedInLogo.svg";
 import { useRouter } from "next/router";
 import { useCampus } from "../../hooks/useCampus";
 
@@ -143,7 +143,9 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="row g-0 py-5" style={{ borderBottom: "1px solid #fff" }}>
+          <div
+            className="row g-0 py-5"
+            style={{ borderBottom: "1px solid #fff" }}>
             <h3 className="mb-3">Vikas Mantra, Chengalpattu</h3>
 
             <div className="col-md-3">
@@ -180,8 +182,8 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="row gx-5 py-5" id="footerForm" >
-            <div className="col-lg-4 col-md-12" >
+          <div className="row gx-5 py-5" id="footerForm">
+            <div className="col-lg-4 col-md-12">
               <div className={styles.formCol}>
                 <div className="mb-3 mb-md-5">
                   <h6>VISIT THE SCHOOL</h6>
@@ -260,7 +262,9 @@ export const Footer = () => {
               <div className="row pb-3 align-items-center">
                 <div className={"col-md-12 "}>
                   <div className={styles.aboutCol}>
-                    <h6 style={{ opacity:"0", pointerEvents:"none"}}>VISIT THE SCHOOL</h6>
+                    <h6 style={{ opacity: "0", pointerEvents: "none" }}>
+                      VISIT THE SCHOOL
+                    </h6>
                     <h3>ABOUT</h3>
                     <p className="m-0">
                       Vikas Mantra Public School is established with a vision to
@@ -355,9 +359,7 @@ export const Footer = () => {
                 </>
               ) : isChengalpattu ? (
                 <>
-                  <div className="row py-3 align-items-center">
-                    
-                  </div>
+                  <div className="row py-3 align-items-center"></div>
                   <div className="row align-items-end">
                     <div className={"col-md-5"}>
                       <div className={styles.logoCol}>
@@ -370,10 +372,16 @@ export const Footer = () => {
                       </div>
                     </div>
                     <div className={`${styles.contactUs} col-md-5`}>
-                       <h3>CONTACT US</h3>
+                      <h3>CONTACT US</h3>
                       <p> S.No:168,168/3,</p>
                       <p> Off Mahindra World City, </p>
                       <p> Anjur 603204, Chengalpattu</p>
+                      <p>
+                        Landline: <a href="tel:8148 143 834">8148 143 834</a>
+                      </p>
+                      <p>
+                        Mobile: <a href="tel:+917092450450">7092 450 450</a>
+                      </p>
                       <p> info@vikasmantra.org</p>
 
                       <p>
@@ -453,7 +461,8 @@ export const Footer = () => {
                       <h5>Mambakkam</h5>
 
                       <p> Vandalur to Kelambakkam Road, </p>
-                      <p> Mambakkam, Chennai, Tamil Nadu 600127</p>
+                      <p> Mambakkam, Chennai,</p>
+                      <p> Tamil Nadu 600127</p>
                       <p>
                         Landline: <a href="tel:+914427471689">044-2747-1689</a>
                       </p>
@@ -521,6 +530,12 @@ export const Footer = () => {
                       <p> S.No:168,168/3,</p>
                       <p> Off Mahindra World City, </p>
                       <p> Anjur 603204, Chengalpattu</p>
+                      <p>
+                        Landline: <a href="tel:8148 143 834">8148 143 834</a>
+                      </p>
+                      <p>
+                        Mobile: <a href="tel:+917092450450">7092 450 450</a>
+                      </p>
                       <p> info@vikasmantra.org</p>
                       {/* <p>mathu</p> */}
 
@@ -674,7 +689,9 @@ export const Footer = () => {
           </div>
 
           <div
-            className={`fixed-cta ${isMambakkam || isChengalpattu ? 'btm' : ""}`}>
+            className={`fixed-cta ${
+              isMambakkam || isChengalpattu ? "btm" : ""
+            }`}>
             {isMambakkam ? (
               <Link
                 href="https://api.whatsapp.com/send?phone=7448450450"
@@ -706,7 +723,20 @@ export const Footer = () => {
                 </a>
               </Link>
             ) : (
-              ""
+               <Link
+                href="https://api.whatsapp.com/send?phone=7092450450"
+                passHref>
+                <a
+                  className="whatsapp-cta"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    className="whatsappImg"
+                    src="/assets/icons/whatsapp.png"
+                    alt="whatsapp-icon"
+                  />
+                </a>
+              </Link>
             )}
 
             <Link href="/enquiry-form" legacyBehavior passHref>
@@ -722,7 +752,8 @@ export const Footer = () => {
 
         <hr className={styles.hrLine} />
         <p className={"text-center py-3 m-0" + " " + styles.bottomText}>
-          Vikas Mantra Public School © {currentYear} | All Rights Reserved | Coded by{" "}
+          Vikas Mantra Public School © {currentYear} | All Rights Reserved |
+          Coded by{" "}
           <Link href="https://benfy.co/">
             <a target="_blank" rel="noopener noreferrer">
               Benfy

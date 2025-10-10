@@ -102,6 +102,7 @@ input.formInput::placeholder {
   align-items: center;
   justify-content: center;
   transition: transform 0.2s ease, opacity 0.2s ease;
+  width:25px;
 }
 
 .socialRow a:hover {

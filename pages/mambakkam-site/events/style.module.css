@@ -19,7 +19,51 @@
 .eventSectionPdng{
     padding: 120px 0;
 }
+.eventCard{
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease;
+}
+.eventCard img {
+  transition: transform 0.5s ease;
+  transform-origin: center center;
+}
+.eventCard .clickToView{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(69, 69, 138);
+}
+.eventCard .imgWrapper{
+    position: relative;
+    overflow: hidden;
+}
+.eventCard:hover img {
+  transform: scale(1.1);
+}
 
+.eventCard:hover {
+ 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.eventCard .imgWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0); /* invisible initially */
+  transition: background 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+.eventCard:hover .imgWrapper::after {
+  background: rgba(0, 0, 0, 0.199); /* dark tint */
+}
+
+
+/* Keep text above the tint */
+.eventCard .card-body {
+  position: relative;
+  z-index: 2;
+}
 
 @media only screen and (max-width: 660px) {
 

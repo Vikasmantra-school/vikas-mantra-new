@@ -25,7 +25,7 @@ export const stats = [
     id: 3,
     value:1,
     suffix:":16",
-    caption: "Teacher–Student Ratio(Primary to Senior Secondary)",
+    caption: "Teacher–Student Ratio (Kindergarten)",
     icon: "/images/icon/homepage/safety_divider.png",
   },
   {
@@ -37,8 +37,8 @@ export const stats = [
   },
   {
     id: 6,
-    value:2,
-    suffix:"",
+    value:4,
+     suffix:"+",
     caption: "Acres Campus",
     icon: "/images/icon/homepage/ink_selection.png",
   },

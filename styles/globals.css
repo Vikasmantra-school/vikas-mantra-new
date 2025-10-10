@@ -2366,7 +2366,7 @@ tr {
 .spotlightTabs .nav-tabs .nav-link {
   color: #1d1d1d;
   padding-inline: 10px;
-  font-size: 1.125rem !important;
+  font-size: 22px !important;
 }
 
 .spotlightTabs .nav-tabs .nav-link.active {
@@ -2438,6 +2438,11 @@ input[type="number"] {
 @media only screen and (max-width: 576px) {
   .mbkm-section-padding {
     padding-block: 1.5rem;
+  }
+  .spotlightTabs .nav-tabs .nav-link {
+    color: #1d1d1d;
+    padding-inline: 10px;
+    font-size: 1.125rem !important;
   }
 }
 

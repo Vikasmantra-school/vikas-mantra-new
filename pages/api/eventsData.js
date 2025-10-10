@@ -4,8 +4,9 @@ export default function eventsData(req, res) {
   res.status(200).json([
     {
       id: "first",
-      dropdown: "Beach Day for Kg",
-      title: "Beach Day for Kg",
+      year:"2023",
+      dropdown: "Beach Day for Kg  mm",
+      title: "Beach Day for Kg  ss"  ,
       desc: "We the tiny n happy fishes in the marine world.Today at Vikas Mantra Public School organized The Beach Day as a part of monthly concept. Children learnt the concept of going to beach in summer. Underwater creatures were taught through songs.",
       mainImage: "/assets/events/beach-day/1.jpg",
       gallery: [
@@ -30,6 +31,7 @@ export default function eventsData(req, res) {
 
     {
       id: "second",
+      year:"2022",
       dropdown: "Launch of BE THE CHANGE",
       title: "Launch of BE THE CHANGE",
       desc: "Oct 8, 2019 marked a historic day in the school's calendar by launching BE THE CHANGE – an initiative by the school joining hands with BE THE CHANGE to inculcate social responsibilities among children to bring out their innate talents. Chief Guest of the day – Actor and Celebrity Jeeva Ravi.",
@@ -50,6 +52,7 @@ export default function eventsData(req, res) {
 
     {
       id: "third",
+      year:"2022",
       dropdown: "Best Emerging School Award",
       title: "Best Emerging School Award",
       desc: "We are happy to announce that our school Vikas Mantra Public school received the Indian icon of the year awards for Best Emerging School ( Holistic) of the year 2021 😀",
@@ -63,6 +66,7 @@ export default function eventsData(req, res) {
 
     {
       id: "forth",
+      year:"2022",
       dropdown: "Children's Day at Raj Nivas",
       title: "Children's Day at Raj Nivas",
       desc: "On the eve of Childrens Day as a part of our Be The Change initiative the students of Vikas Mantra Public School were invited to Raj Nivas Puducherry to meet Lieutenant governor Dr Kiran Bedi. She encouraged the children and interacted with them. Indeed a memorable day in the life of students of VMPS.",
@@ -83,6 +87,7 @@ export default function eventsData(req, res) {
 
     {
       id: "fifth",
+      year:"2022",
       dropdown: "Friendship Day Celebration",
       title: "Friendship Day Celebration",
       desc: "Students of VMPS celebrated Friendship Day in school to show love and respect to their friends. They were engaged in the card making activity. The entire concept was to inculcate the value of friendship not only to school mates but also a special card was asked to be made to be given to their teacher or mother or father or even a helper at home.",
@@ -101,6 +106,7 @@ export default function eventsData(req, res) {
 
     {
       id: "six",
+      year:"2022",
       dropdown: "Girl Child Protection Day",
       title: "Girl Child Protection Day",
       desc: "Girl child protection Day awarness at vikasmantra ",
@@ -119,6 +125,7 @@ export default function eventsData(req, res) {
 
     {
       id: "seven",
+      year:"2022",
       dropdown: "Independence Day Celebrations",
       title: "Independence Day Celebrations",
       desc: "Independence day celebrations at vikasmantra",
@@ -137,6 +144,7 @@ export default function eventsData(req, res) {
 
     {
       id: "eight",
+      year:"2022",
       dropdown: "International Yoga Day",
       title: "International Yoga Day Celebration @ VMPS",
       desc: "Mrs.Kavitha highlighted the  benefits of few ashanas. Made children understand yoga is a mental, physical and spiritual practice that needs to be carried every day.Children got the chance to know how yoga embodies unity of mind and body.",
@@ -155,6 +163,7 @@ export default function eventsData(req, res) {
 
     {
       id: "nine",
+      year:"2022",
       dropdown: "Investiture Ceremony",
       title: "Investiture Ceremony",
       desc: "Investiture ceremony at vikasmantra",
@@ -251,6 +260,7 @@ export default function eventsData(req, res) {
 
     {
       id: "ten",
+      year:"2022",
       dropdown: "Janmashtami celebrations",
       title: "Janmashtami celebrations",
       desc: "Janmashtami celebrations at vikasmantra",
@@ -268,6 +278,7 @@ export default function eventsData(req, res) {
 
     {
       id: "eleven",
+      year:"2022",
       dropdown: "KG Graduation",
       title: "KG Graduation",
       desc: "KG graduation at vikasmantra",
@@ -292,6 +303,7 @@ export default function eventsData(req, res) {
 
     {
       id: "twevle",
+      year:"2022",
       dropdown: "National Sports Day",
       title: "National Sports Day",
       desc: "Students of VMPS celebrated the Indian National Sports day on 29th August 2019 to mark the birth anniversary of Indian hockey wizard Major Dhyan Chand. To commemorate the event HOUSE COMPETITION was held on Tableau to create interest and awareness of sports.",
@@ -312,6 +324,7 @@ export default function eventsData(req, res) {
 
     {
       id: "thirteen",
+      year:"2022",
       dropdown: "Newspaper feature article",
       title: "Newspaper feature article",
       desc: "Newspaper feature article of our vikasmantra",
@@ -325,6 +338,7 @@ export default function eventsData(req, res) {
 
     {
       id: "forteen",
+      year:"2022",
       dropdown: "Science Expo",
       title: "Science Expo",
       desc: "Science expo at vikasmantra ",
@@ -345,6 +359,7 @@ export default function eventsData(req, res) {
 
     {
       id: "fifteen",
+      year:"2022",
       dropdown: "Sense Booth",
       title: "Sense Booth",
       desc: "The staff and students of Vikas Mantra Public School displayed the Sense Booth activity on July 19, 2019. The concept depicted the five senses of the body which is the integral aspect and the theme SPICE projected the 5 elements of the Happy Tots curriculum – SOCIAL, PHYSICAL, INTELLECTUAL, CREATIVE AND EMOTIONAL. The event was a huge success and parents were overjoyed to be a part of this learning.",
@@ -368,6 +383,7 @@ export default function eventsData(req, res) {
 
     {
       id: "sixteen",
+      year:"2022",
       dropdown: "Skating Competition",
       title: "Winners - Skating Competition",
       desc: "VMPS are very happy to share that Master. Adwaith of Grade 6 participated in the state level skating champions and won 2 gold medals and a trophy in 500M fancy inline and 1000M respectively.VMPS is proud to share another winner from Grade 1 Sec B Miss Akshara who won Bronze medal in State level 400Mts Skating Competition.    ",
@@ -382,6 +398,7 @@ export default function eventsData(req, res) {
 
     {
       id: "seventeen",
+      year:"2022",
       dropdown: "Student Excursion",
       title: "Student Excursion",
       desc: "A week without walls for students at VMPS.Field trips expand children’s learning through hands on experience with rich resources of local community. Educational tours increases student knowledge and understanding of the subject and adds realism to the topic of study.Our children were taken to Bay of Life Kovalam to experience and explore the ocean world.Everyone loves to fly, and flying underwater is even better than flying in air because there are things around you.The sea should be enjoyed, the animals in it.Exactly the children from Vikas mantra school at Marine world had a great exposure to life underneath water. Students saw a school of fish gathering and moving together and exclaimed “This is architecture”. ",
@@ -429,6 +446,7 @@ export default function eventsData(req, res) {
 
     {
       id: "nineteen",
+      year:"2022",
       dropdown: "This Schools Got Talent 2019",
       title: "This Schools Got Talent 2019",
       desc: "A Multi-Talent Event was organised at Vikas Mantra Public School on July 19, 2019. The whole campus hummed with action ,children gave dynamic performances in all categories. The students, dressed in colourful attires, they were enthusiastic and filled with confidence towards their performances. The competition included following categories: On Stage Events – Story Telling, Dance and Vocals.Off Stage Events – Art, Best Out of Waste, Vegetable Carving.  Students displayed their talents and left the audience spellbound. The main reason behind organizing this competition was to nurture the intrinsic qualities of students and remove the stage fear, which eventually helped in their personality development .",
@@ -454,6 +472,7 @@ export default function eventsData(req, res) {
 
     {
       id: "twenty",
+      year:"2022",
       dropdown: "KG - Yellow Day",
       title: "KG - Yellow Day",
       desc: "KG - Yellow Day at vikasmantra",
@@ -471,6 +490,7 @@ export default function eventsData(req, res) {
 
     {
       id: "twenty-one",
+      year:"2022",
       dropdown: "Young Leaders Awards",
       title: "Young Leaders Awards",
       desc: "Our students got awarded in the recent Young Leaders Awards which happened in Chennai.",
@@ -489,6 +509,7 @@ export default function eventsData(req, res) {
 
     {
       id: "twenty-two",
+      year:"2022",
       dropdown: "Investiture Ceremony 2021 - 22",
       title: "Investiture Ceremony 2021 - 22",
       desc: "Investiture Ceremony at vikas",
@@ -511,6 +532,7 @@ export default function eventsData(req, res) {
     },
     {
       id: "twenty-three",
+      year:"2022",
       dropdown: "Pongal day",
       title: "Pongal day",
       desc: "Pongal day Celebration at vikas",
@@ -542,6 +564,7 @@ export default function eventsData(req, res) {
 
     {
       id: "twenty-four",
+      year:"2022",
       dropdown: "Sports day",
       title: "Sports day",
       desc: "Sports day Celebration at vikas",
@@ -572,6 +595,7 @@ export default function eventsData(req, res) {
     },
     {
       id: "twenty-five",
+      year:"2022",
       dropdown: "Sports day for kids",
       title: "Sports day for kids",
       desc: "Sports day Celebration for kids at vikas",
@@ -600,6 +624,7 @@ export default function eventsData(req, res) {
     },
     {
       id: "twenty-six",
+      year:"2022",
       dropdown: "KG Convocation",
       title: "KG Convocation",
       desc: "KG Convocation at vikas",
@@ -614,6 +639,7 @@ export default function eventsData(req, res) {
     },
     {
       id: "twenty-seven",
+      year:"2022",
       dropdown: "Chocolate Day 2023",
       title: "Chocolate Day",
       desc: "Chocolate Day at vikas",
@@ -632,6 +658,7 @@ export default function eventsData(req, res) {
     },
     {
       id: "twenty-eight",
+      year:"2022",
       dropdown: "Independence Day Celebration 2023",
       title: "Independence Day",
       desc: "Independece Day at vikas",
@@ -660,6 +687,7 @@ export default function eventsData(req, res) {
     },
     {
       id: "twenty-nine",
+      year:"2022",
       dropdown: "International Yoga Day",
       title: "International Yoga Day",
       desc: "International Yoga Day at vikas",
@@ -676,6 +704,7 @@ export default function eventsData(req, res) {
     },
     {
       id: "thirty",
+      year:"2023",
       dropdown: "Investiture Ceremony 2023",
       title: "Investiture Ceremony ",
       desc: "Investiture Ceremony  at vikas",
@@ -700,6 +729,7 @@ export default function eventsData(req, res) {
 
     {
       id: 'thirty-one',
+      year:"2023",
       dropdown: "KG School's Got Talent",
       title: "KG School's Got Talent",
       desc: "Tiny stars illuminated the stage with their sparkling talents at KG School's Got Talent, a delightful showcase of our little performers.",
@@ -754,6 +784,7 @@ export default function eventsData(req, res) {
 
     {
       id: 'thirty-two',
+      year:"2023",
       dropdown: "School's Got Talent 2023",
       title: "School's Got Talent 2023",
       desc: "A spectacular display of creativity and flair, School's Got Talent 2023 brought forth the extraordinary skills of our students, making hearts applaud with pride.",
@@ -804,6 +835,7 @@ export default function eventsData(req, res) {
 
     {
       id: 'thirty-three',
+      year:"2023",
       dropdown: 'Diwali Celebration',
       title: 'Diwali Celebration',
       desc: 'The festival of lights came alive at Vikas Mantra Public School, where students radiated joy and warmth in a vibrant Diwali celebration, spreading happiness throughout the school.',
@@ -839,6 +871,7 @@ export default function eventsData(req, res) {
     },
     {
       id: 'thirty-four',
+      year:"2023",
       dropdown: 'Library Week 2023',
       title: 'Library Week 2023',
       desc: 'Pages came to life during Library Week 2023, as students immersed themselves in the world of books, discovering the magic and knowledge hidden within the shelves.',
@@ -875,6 +908,7 @@ export default function eventsData(req, res) {
     },
     {
       id: 'thirty-five',
+      year:"2023",
       dropdown: 'Sports Day 2023',
       title: 'Sports Day 2023',
       desc: 'In the spirit of camaraderie and athleticism, Sports Day 2023 saw our students sprinting, jumping, and cheering, creating memories of teamwork and healthy competition.',
@@ -914,6 +948,7 @@ export default function eventsData(req, res) {
     },
     {
       id: 'thirty-six',
+      year:"2023",
       dropdown: 'VMPS Christmas 2023',
       title: 'VMPS Christmas 2023',
       desc: 'Memorable and joyous Christmas celebration at Vikas Mantra campus, where students and teachers came together, creating wonderful year-end memories.',
@@ -943,6 +978,7 @@ export default function eventsData(req, res) {
     },
     {
       id: 'thirty-seven',
+      year:"2023",
       dropdown: 'VMPS 2024 Pongal Celebration Highlights',
       title: 'VMPS 2024 Pongal Celebration Highlights',
       desc: 'Vikas Mantra Public School came together to celebrate Pongal with vibrant traditions and festive unity!',
@@ -969,6 +1005,7 @@ export default function eventsData(req, res) {
     },
     {
       id: 'thirty-eight',
+      year:"2023",
       dropdown: 'VMPS 2024 Annual Day Celebration',
       title: 'Vikas Mantra Public School Annual Day Celebration 2024',
       desc: 'Join us in celebrating a year of achievements, talents and memories at our Annual Day Celebration!',
