@@ -111,15 +111,15 @@ const MessageFromPrincipal = () => {
               </div>
                <div
                 className={
-                  "imgBgColor pastelBrown3 imgUp AnimeStarts d-block d-md-none" +
+                  "imgBgColor pastelBrown3 imgUp AnimeStarts d-block d-md-none" +" "+
                   styles.ImgMargin
                 }
               >
-                {/* <img
+                <img
                   src="/assets/banners/Principal-mambakkam-mob.jpeg"
                   alt="image"
                   className={styles.PrincipalImg + " AnimeElement"}
-                /> */}
+                />
               </div>
 
               <img
