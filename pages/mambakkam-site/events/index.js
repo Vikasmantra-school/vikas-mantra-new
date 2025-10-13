@@ -31,17 +31,20 @@ const Events = ({ todos }) => {
   const [selectedYear, setSelectedYear] = useState("all");
   const pageTitle = "Events";
   //
-  useEffect(() => {
-    // Initialize PhotoSwipeLightbox
-    lightboxRef.current = new PhotoSwipeLightbox({
-      gallery: ".event-gallery",
-      children: "a",
-      pswpModule: () => import("photoswipe"),
-    });
-    lightboxRef.current.init();
+useEffect(() => {
+  const preload = import("photoswipe"); // trigger loading early
 
-    return () => lightboxRef.current.destroy();
-  }, []);
+  lightboxRef.current = new PhotoSwipeLightbox({
+    gallery: ".event-gallery",
+    children: "a",
+    pswpModule: () => preload, // use the same promise
+  });
+
+  lightboxRef.current.init();
+
+  return () => lightboxRef.current.destroy();
+}, []);
+
 
   // Get unique years from your events
   const years = Array.from(new Set(todos.map((event) => event.year))).sort(
