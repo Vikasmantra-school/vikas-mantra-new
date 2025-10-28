@@ -74,7 +74,7 @@ const Classrooms = () => {
               <div className={styles.classroomImgDiv + ' imgBgColor imgUp pastelPurple AnimeStarts'}>
 
                 <img
-                  src='/assets/campus/classroom.png'
+                  src='/assets/campus/classroom-new.png'
                   alt='image'
                   className={styles.classroomImg + ' AnimeElement'}
                 />

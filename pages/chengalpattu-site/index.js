@@ -495,7 +495,7 @@ function Home() {
             playsInline
             className="bottomToTop">
             <source
-              src="/assets/videos/school-video-new.mp4"
+              src="/assets/videos/school-video-latest.mp4"
               type="video/mp4"
             />
           </video>
