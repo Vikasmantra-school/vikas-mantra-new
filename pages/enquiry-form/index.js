@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Breadcrumb } from "../../components/Breadcrumb/Breadcrumb";
 import { useState, useRef } from "react";
+import VmpsLogin from "../../components/home/vmpslogin";
 
 const EnquiryForm = () => {
   const pageTitle = "Enquiry Form";
@@ -350,6 +351,9 @@ const EnquiryForm = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className={styles.loginBanner}>
+          <VmpsLogin />
         </div>
       </section>
     </>

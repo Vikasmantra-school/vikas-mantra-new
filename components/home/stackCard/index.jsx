@@ -76,8 +76,8 @@ export default function SplitCards() {
                   </div>
                   <div
                     className={`${styles.card} ${styles.bottomright} ${styles.right}`}>
-                    <img src="/assets/campus/library2.jpeg" alt="Library" />
-                    <div className={styles.caption}>Infirmary in our facilities</div>
+                    <img src="/images/spitcardImages/Infirmary.jpeg" alt="Library" />
+                    <div className={styles.caption}>Infirmary</div>
                   </div>
                 </div>
               </div>

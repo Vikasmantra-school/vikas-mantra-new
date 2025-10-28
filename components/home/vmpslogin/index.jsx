@@ -17,7 +17,7 @@ const VmpsLogin = () => {
               <a
                 style={{ textDecoration: "none", color: "inherit" }}
                 target="_blank">
-                <button className={styles.vmpsloginButton}>Apply Now</button>
+                <button className={styles.vmpsloginButton}>Login</button>
               </a>
             </Link>
           </div>

@@ -12,7 +12,7 @@ const VmpsStory = () => {
             <div className="mb-5 col-lg-6 col-md-12 col-sm-12 AnimeStarts ">
               <img
                 className={`${styles.vmpsBanner} AnimeElement`}
-                src="/images/banner/vmps-stoy-banner.png"
+                src="/assets/banners/homebannernew3.jpeg"
                 alt="banner"
               />
             </div>

@@ -78,8 +78,8 @@ const TabsHome = () => {
                 loopedSlides={3}
                 // pagination={{ clickable: true }}
                 breakpoints={{
-                  0: { slidesPerView: 1 },
-                  768: { slidesPerView: 2 },
+                  0: { slidesPerView: 2 },
+                  768: { slidesPerView: 4 },
                 }}
                 navigation={{
                   prevEl: ".swiper-prev-vdo-1",
@@ -91,7 +91,7 @@ const TabsHome = () => {
                     // swiper.navigation.update();
                   });
                 }}>
-                {[0, 1, 2].map((idx) => (
+                {[0, 1, 2, 3, 4].map((idx) => (
                   <SwiperSlide key={idx}>
                     <div
                       className={styles.sliderContainer}
@@ -182,8 +182,8 @@ const TabsHome = () => {
                 autoplay={{ delay: 6000 }}
                 // pagination={{ clickable: true }}
                 breakpoints={{
-                  0: { slidesPerView: 1 },
-                  768: { slidesPerView: 2 },
+                  0: { slidesPerView: 2 },
+                  768: { slidesPerView: 4 },
                 }}
                 navigation={{
                   prevEl: ".swiper-prev-vdo-2",
@@ -195,7 +195,7 @@ const TabsHome = () => {
                     // swiper.navigation.update();
                   });
                 }}>
-                {[3, 4, 5].map((idx) => (
+                {[3, 4, 5,6,7,8].map((idx) => (
                   <SwiperSlide key={idx}>
                     <div
                       className={styles.sliderContainer}

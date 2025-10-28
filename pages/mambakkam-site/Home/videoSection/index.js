@@ -4,28 +4,28 @@ import styles from "./style.module.css";
 
 const VideoSection = () => {
   const videoRef = useRef(null);
-    const [isPlaying, setIsPlaying] = useState(true);
-    const togglePlayPause = () => {
-      if (!videoRef.current) return;
-  
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    };
-  
-   
-  
+  const [isPlaying, setIsPlaying] = useState(true);
+  const togglePlayPause = () => {
+    if (!videoRef.current) return;
+
+    if (isPlaying) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <>
       <section
         className={
-          `${styles.videoSection} parentAnimeStarts` + " " + "mbkm-section-padding"
+          `${styles.videoSection} parentAnimeStarts` +
+          " " +
+          "mbkm-section-padding"
         }>
         <div className="videoContainer" style={{ position: "relative" }}>
-          <video
+          {/* <video
             ref={videoRef}
             width="100%"
             height="auto"
@@ -57,7 +57,13 @@ const VideoSection = () => {
               type="video/mp4"
               media="(min-width: 768px)"
             />
-          </video>
+          </video> */}
+          <img
+            style={{ width: "100%" }}
+            className={`${styles.vmpsBanner} AnimeElement`}
+            src="/assets/banners/Admission-Open.png"
+            alt="banner"
+          />
 
           <div className={styles.videoOverlayCont}>
             <h2>
@@ -72,7 +78,7 @@ const VideoSection = () => {
             </p>
           </div>
 
-          <button onClick={togglePlayPause} className={styles.playPauseBtn}>
+          {/* <button onClick={togglePlayPause} className={styles.playPauseBtn}>
             {isPlaying ? (
               ""
             ) : (
@@ -88,7 +94,7 @@ const VideoSection = () => {
                 />
               </svg>
             )}
-          </button>
+          </button> */}
         </div>
       </section>
     </>

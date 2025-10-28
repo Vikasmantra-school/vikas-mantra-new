@@ -152,10 +152,12 @@ const Nav = () => {
   return (
     <>
       <header
-      ref={mainHeaderRef}
+        ref={mainHeaderRef}
         className={"homeheader common-header sticky"}
         style={{
-         transform: showCommonHeader ? "translateY(0)" : `translateY(-${headerHeight}px)`,
+          transform: showCommonHeader
+            ? "translateY(0)"
+            : `translateY(-${headerHeight}px)`,
           transition: "transform 0.3s ease",
           zIndex: 51,
         }}>
@@ -265,13 +267,52 @@ const Nav = () => {
                       </li>
                       <li
                         className={
-                          pageName === "admissions"
-                            ? "active nav-item"
-                            : "nav-item"
+                          pageName.startsWith("admissions")
+                            ? "active nav-item dropdown"
+                            : "nav-item dropdown"
                         }>
                         <Link legacyBehavior href="/admissions">
-                          <a className="nav-link">Admissions</a>
+                          <a
+                            className="nav-link dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Admissions
+                            <CustomCaret color="black" />
+                          </a>
                         </Link>
+                        <ul className="dropdown-menu">
+                          <li>
+                            <Link href="/admissions#overview" legacyBehavior>
+                              <a className="dropdown-item">
+                                Admission Overview
+                              </a>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/admissions#timeline" legacyBehavior>
+                              <a className="dropdown-item">
+                                Admission Timeline
+                              </a>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/admissions#procedure" legacyBehavior>
+                              <a className="dropdown-item">
+                                Admission Procedure
+                              </a>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/enquiry-form" legacyBehavior>
+                              <a className="dropdown-item">
+                                Enquiry Form
+                              </a>
+                            </Link>
+                          </li>
+                          
+                          
+                        </ul>
                       </li>
 
                       <li
@@ -342,13 +383,34 @@ const Nav = () => {
 
                       <li
                         className={
-                          pageName === "contact"
-                            ? "active nav-item"
-                            : "nav-item"
+                          pageName.startsWith("contact")
+                            ? "active nav-item dropdown"
+                            : " nav-item dropdown"
                         }>
                         <Link legacyBehavior href="/contact">
-                          <a className="nav-link">Contact Us</a>
+                          <a
+                            className="nav-link dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact
+                            <CustomCaret color="black" />
+                          </a>
                         </Link>
+                        <ul className="dropdown-menu">
+                          <li>
+                            <Link href="/contact" legacyBehavior>
+                              <a className="dropdown-item">Contact Us</a>
+                            </Link>
+                          </li>
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              href="tel:+917448450450">
+                              +91 7448450450
+                            </a>
+                          </li>
+                        </ul>
                       </li>
                       <li
                         className={
@@ -421,7 +483,7 @@ const Nav = () => {
         <header
           className={"homeheader submenu-header sticky"}
           style={{
-             top: showCommonHeader ? `${headerHeight}px` : "0",
+            top: showCommonHeader ? `${headerHeight}px` : "0",
             transition: "top 0.3s ease",
           }}>
           <nav

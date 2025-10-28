@@ -308,6 +308,11 @@ export const Footer = () => {
                           admissions.mambakkam@vikasmantra.org
                         </a>
                       </p>
+                      <p>
+                        <a href="mailto: info.mambakkam@vikasmantra.org">
+                           info.mambakkam@vikasmantra.org
+                        </a>
+                      </p>
                       <div className={`${styles.socialRow}`}>
                         <a
                           href="https://www.instagram.com/vikasmantra_publicschool/"
@@ -473,6 +478,11 @@ export const Footer = () => {
                       <p>
                         <a href="mailto:admissions.mambakkam@vikasmantra.org ">
                           admissions.mambakkam@vikasmantra.org
+                        </a>
+                      </p>
+                      <p>
+                        <a href="mailto: info.mambakkam@vikasmantra.org ">
+                           info.mambakkam@vikasmantra.org
                         </a>
                       </p>
 
