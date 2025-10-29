@@ -60,7 +60,7 @@ const JourneySwiper = () => {
 
     {
       id: 2,
-      image: "/images/journeyswiper.png",
+      image: "/images/journeyswiper-2.JPG",
       title: "Middle Year",
       description: "(Grades VI – VIII)",
       message:
@@ -68,7 +68,7 @@ const JourneySwiper = () => {
     },
     {
       id: 3,
-      image: "/images/journeyswiper.png",
+      image: "/images/journeyswiper-3.JPG",
       title: "Secondary",
       description: "(Grade X)",
       message:

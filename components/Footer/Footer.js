@@ -389,11 +389,11 @@ export const Footer = () => {
                       </p>
                       <p> info@vikasmantra.org</p>
 
-                      <p>
+                      {/* <p>
                         <a href="mailto:info.mambakkam@vikasmantra.org ">
                           info.mambakkam@vikasmantra.org
                         </a>
-                      </p>
+                      </p> */}
                       <div className={`${styles.socialRow}`}>
                         <a
                           href="https://www.instagram.com/vikasmantra_public_school/"
@@ -549,11 +549,11 @@ export const Footer = () => {
                       <p> info@vikasmantra.org</p>
                       {/* <p>mathu</p> */}
 
-                      <p>
+                      {/* <p>
                         <a href="mailto:info.mambakkam@vikasmantra.org ">
                           info.mambakkam@vikasmantra.org
                         </a>
-                      </p>
+                      </p> */}
                       <div className={`${styles.socialRow}`}>
                         <a
                           href="https://www.instagram.com/vikasmantra_public_school/"
