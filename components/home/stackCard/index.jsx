@@ -40,7 +40,7 @@ export default function SplitCards() {
                       alt="Co-Curricular Activities"
                     />
                     <div className={styles.caption}>
-                      Co-Curricular Activities
+                      Co-Curricular Activities (Tie-Chie)
                     </div>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ export default function SplitCards() {
                 <div className={styles.Cardxcontainer}>
                   <div className={`${styles.card} ${styles.bottomleft}`}>
                     <img
-                      src="/images/spitcardImages/g3.png"
+                      src="/assets/campus/classroom-new.png"
                       alt="Transportation"
                     />
                     <div className={styles.caption}>AC classrooms </div>
@@ -114,7 +114,7 @@ export default function SplitCards() {
                   src="/images/spitcardImages/g2.png"
                   alt="Co-Curricular Activities"
                 />
-                <div className={styles.caption}>Co-Curricular Activities</div>
+                <div className={styles.caption}>Co-Curricular Activities (Tie-Chie)</div>
               </div>
             </SplideSlide>
 
@@ -132,7 +132,7 @@ export default function SplitCards() {
             </SplideSlide>
              <SplideSlide>
               <div className={`${styles.card} `}>
-                <img src="/assets/campus/library2.jpeg" alt="Library" />
+                <img src="/assets/campus/classroom-new.png" alt="Library" />
                 <div className={styles.caption}>AC classrooms </div>
               </div>
             </SplideSlide>
