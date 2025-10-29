@@ -7,6 +7,7 @@ import "photoswipe/style.css";
 
 export async function getServerSideProps() {
   const res = await fetch("https://vikasmantra.edu.in/api/eventsData");
+  // const res = await fetch("http://localhost:3000/api/eventsData");
   const data = await res.json();
 
   return {
@@ -111,7 +112,7 @@ const Events = ({ todos }) => {
                       loading="lazy"
                     />
                   </div>
-                  <div className="card-body">
+                  <div className={`card-body ${styles.cardBody}`}>
                     <h5 className="card-title">{event.title}</h5>
                     <p className={styles.clickToView}>Click here to View</p>
                   </div>

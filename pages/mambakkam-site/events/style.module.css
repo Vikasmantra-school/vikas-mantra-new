@@ -25,9 +25,18 @@
     border: none;
     transition: transform 0.3s ease;
 }
+
+.eventCard .cardBody{
+  flex: 0.3;
+}
+.eventCard .cardBody h5{
+  font-size: 18px;
+}
 .eventCard img {
   transition: transform 0.5s ease;
   transform-origin: center center;
+  object-fit: cover;
+  height: 100%;
 }
 .eventCard .clickToView{
     font-size: 18px;
@@ -37,6 +46,8 @@
 .eventCard .imgWrapper{
     position: relative;
     overflow: hidden;
+    flex:0.7;
+    max-height: 180px;
 }
 .eventCard:hover img {
   transform: scale(1.1);
@@ -61,7 +72,7 @@
 
 
 /* Keep text above the tint */
-.eventCard .card-body {
+.eventCard .cardBody {
   position: relative;
   z-index: 2;
 }
