@@ -198,24 +198,24 @@ const MobileNav = ({}) => {
                 </a>
               </li>
               <li className="nav__item">
-                <Link href="/admissions" legacyBehavior>
+                <Link href="/admissions#v-pills-home" legacyBehavior>
                   <a className="nav__link">Admission Overview</a>
                 </Link>
               </li>
               <li className="nav__item">
-                <Link href="/admissions" legacyBehavior>
+                <Link href="/admissions#admission-timeline" legacyBehavior>
                   <a className="nav__link">Admission Timeline</a>
                 </Link>
               </li>
 
               <li className="nav__item">
-                <Link href="/admissions" legacyBehavior>
+                <Link href="/admissions#v-pills-messages" legacyBehavior>
                   <a className="nav__link">Admission Procedure</a>
                 </Link>
               </li>
 
               <li className="nav__item">
-                <Link href="/admissions" legacyBehavior>
+                <Link href="/enquiry-form" legacyBehavior>
                   <a className="nav__link"> Enquiry Form</a>
                 </Link>
               </li>

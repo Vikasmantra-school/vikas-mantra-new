@@ -1,3 +1,4 @@
+'use client';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
 import Nav from "../components/Header/Nav";
@@ -176,10 +177,16 @@ function MyApp({ Component, pageProps }) {
   }
 
   useEffect(() => {
-    Anime();
+  Anime();
 
-    import("../node_modules/bootstrap/dist/js/bootstrap");
-  }, [Anime]);
+  // ✅ only import Bootstrap on client side
+  if (typeof window !== "undefined") {
+    import("bootstrap/dist/js/bootstrap.bundle.min.js")
+      .then(() => console.log("✅ Bootstrap loaded safely"))
+      .catch((err) => console.error("❌ Bootstrap load failed", err));
+  }
+}, []);
+
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(CSSRulePlugin);
 

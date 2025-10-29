@@ -283,21 +283,21 @@ const Nav = () => {
                         </Link>
                         <ul className="dropdown-menu">
                           <li>
-                            <Link href="/admissions#overview" legacyBehavior>
+                            <Link href="/admissions#v-pills-home" legacyBehavior>
                               <a className="dropdown-item">
                                 Admission Overview
                               </a>
                             </Link>
                           </li>
                           <li>
-                            <Link href="/admissions#timeline" legacyBehavior>
+                            <Link href="/admissions#admission-timeline" legacyBehavior>
                               <a className="dropdown-item">
                                 Admission Timeline
                               </a>
                             </Link>
                           </li>
                           <li>
-                            <Link href="/admissions#procedure" legacyBehavior>
+                            <Link href="/admissions#v-pills-messages" legacyBehavior>
                               <a className="dropdown-item">
                                 Admission Procedure
                               </a>
