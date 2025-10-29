@@ -198,6 +198,10 @@ const TabsHome = () => {
     <div className={`${styles.tabSection} AnimeStarts`}>
       <Container>
         <div className={styles.upperContainer}>
+          <div className={styles.shapes}>
+            <img src="/images/bgs/topTabNew.png" alt="image" />
+          </div>
+
           <div className={styles.rightContent}>
             <h3 className={`${styles.rightHeading} AnimeElement`}>
               Shining the Spotlight
@@ -208,6 +212,7 @@ const TabsHome = () => {
             </p>
           </div>
         </div>
+        
 
         <div className={styles.bottomContainer + " spotlightTabs"}>
           <Tabs
