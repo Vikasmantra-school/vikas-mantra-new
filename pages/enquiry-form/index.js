@@ -13,7 +13,7 @@ const EnquiryForm = () => {
 
   const [name, setName] = useState("");
   const [dob, setDob] = useState("");
-  const [campus, setCampus] = useState("");
+  const [campusValue, setCampusValue] = useState("");
   const [lastClass, setLastClass] = useState("");
   const [currentSchool, setCurrentSchool] = useState("");
   const [admissionSeeking, setAdmissionSeeking] = useState("");
@@ -27,20 +27,33 @@ const EnquiryForm = () => {
 
   //form-sheet-integration
   const formRef = useRef(null);
-  const scriptUrl =
+  const scriptUrlChengalpattu =
     "https://script.google.com/macros/s/AKfycbyVhNnoCfhBoJ1CCHftf23kN8E_ltUnH-aifTnzT0_0D8KOy4tWx0_EIoGCC9oDAMSiIA/exec";
   // above is matheen
-  // "https://script.google.com/macros/s/AKfycbx03T_Gd3qn7GKJ99OrxmuXC4JkQ-hNbfJBpC3iuukhSvwI90YyscbgN4ZCrnRK72JRRQ/exec"; original
+
+  const scriptUrlMambakkam =
+    "https://script.google.com/macros/s/AKfycby_uRrxbR6OmaARPxn4F2ofLjk3PwZHhBYE0B2ECJVfvjIRNcaggH_CxMh-y_GrO5TY/exec";
+  // above is admissions.mambakkam@vikasmantra.org
+
+  // "https://script.google.com/macros/s/AKfycbx03T_Gd3qn7GKJ99OrxmuXC4JkQ-hNbfJBpC3iuukhSvwI90YyscbgN4ZCrnRK72JRRQ/exec";
+  // above is original
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
+    let scriptUrl = scriptUrlChengalpattu;
+    if (campusValue === "Chengalpattu") {
+      scriptUrl = scriptUrlChengalpattu;
+    } else if (campusValue === "Mambakkam") {
+      scriptUrl = scriptUrlMambakkam;
+    }
+
     //form-data-clear-after-submit
     setName("");
     setDob("");
-    setCampus("");
+    setCampusValue("");
     setLastClass("");
     setCurrentSchool("");
     setAdmissionSeeking("");
@@ -262,9 +275,9 @@ const EnquiryForm = () => {
                                   required
                                   name="campus"
                                   className={styles.formText}
-                                  value={campus}
+                                  value={campusValue}
                                   onChange={(event) =>
-                                    setCampus(event.target.value)
+                                    setCampusValue(event.target.value)
                                   }>
                                   <option value="" disabled>
                                     -- Select Campus --

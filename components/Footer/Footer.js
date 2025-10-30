@@ -54,26 +54,34 @@ export const Footer = () => {
   const [name, setName] = useState("");
   const [mail, setEmail] = useState("");
   const [number, setNumber] = useState("");
-  const [dropdownValue, setDropdownValue] = useState("");
+ 
+  const [campusValue, setCampusValue] = useState("");
 
   //form-sheet-integration
 
   const formRef = useRef(null);
-  const scriptUrl =
-  "https://script.google.com/macros/s/AKfycbwC0RnSSOM94vWsI55wvD0PZ36ibAE068w1OVBKg5zgKP5pGnpGiFJ5l-qGiqZ1OMDyKQ/exec";
-    // "https://script.google.com/macros/s/AKfycbxyDMEsVuTZ1UI_Q0IR5OC8C6dr-AqjYrclp364Df-170anM0Z8RSEvkYBs5a6okfJc3w/exec";
+  const scriptUrlMambakkam =
+    "https://script.google.com/macros/s/AKfycbwC0RnSSOM94vWsI55wvD0PZ36ibAE068w1OVBKg5zgKP5pGnpGiFJ5l-qGiqZ1OMDyKQ/exec";
+  // above is admissions.mambakkam@vikasmantra.org
+
+  const scriptUrlChengalpattu =
+    "https://script.google.com/macros/s/AKfycbxyDMEsVuTZ1UI_Q0IR5OC8C6dr-AqjYrclp364Df-170anM0Z8RSEvkYBs5a6okfJc3w/exec";
   // above is matheen
-  // "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec"; original
+
+  // "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec";
+  // above is original
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    setName("");
-    setEmail("");
-    setNumber("");
-    setDropdownValue("");
+    let scriptUrl = scriptUrlChengalpattu;
+    if (campusValue === "Chengalpattu") {
+      scriptUrl = scriptUrlChengalpattu;
+    } else if (campusValue === "Mambakkam") {
+      scriptUrl = scriptUrlMambakkam;
+    }
 
     fetch(scriptUrl, {
       method: "POST",
@@ -82,6 +90,11 @@ export const Footer = () => {
       .then((res) => {
         alert("Our admission officer will contact you shortly");
         setLoading(false);
+        setName("");
+        setEmail("");
+        setNumber("");
+        
+        setCampusValue("");
       })
       .catch((err) => console.log(err));
   };
@@ -234,8 +247,8 @@ export const Footer = () => {
                       className={styles.formInput + " form-control"}
                       required
                       name="Campus"
-                      onChange={(event) => setDropdownValue(event.target.value)}
-                      value={dropdownValue}>
+                      onChange={(event) => setCampusValue(event.target.value)}
+                      value={campusValue}>
                       <option value="" disabled>
                         Select Campus
                       </option>
@@ -311,7 +324,7 @@ export const Footer = () => {
                       </p>
                       <p>
                         <a href="mailto: info.mambakkam@vikasmantra.org">
-                           info.mambakkam@vikasmantra.org
+                          info.mambakkam@vikasmantra.org
                         </a>
                       </p>
                       <div className={`${styles.socialRow}`}>
@@ -483,7 +496,7 @@ export const Footer = () => {
                       </p>
                       <p>
                         <a href="mailto: info.mambakkam@vikasmantra.org ">
-                           info.mambakkam@vikasmantra.org
+                          info.mambakkam@vikasmantra.org
                         </a>
                       </p>
 
@@ -734,7 +747,7 @@ export const Footer = () => {
                 </a>
               </Link>
             ) : (
-               <Link
+              <Link
                 href="https://api.whatsapp.com/send?phone=7092450450"
                 passHref>
                 <a

@@ -19,7 +19,7 @@ function Career() {
   };
 
   const [jobOpening, setJobOpening] = useState(getInitialState);
-  const [campus, setCampus] = useState("")
+  const [campusValue, setCampusValue] = useState("");
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [address, setAddress] = useState("");
@@ -44,10 +44,15 @@ function Career() {
   //form-sheet-integration
 
   const formRef = useRef(null);
-  const scriptUrl =
-  "https://script.google.com/macros/s/AKfycbwSQ-HDhi9718SFb6L0Yxeqv0rvytpsnRxCb9q7NdXVvi6BsaVUbKxLRJ2CsEtZ8WJx/exec";
-  // above is matheen 
-    // "https://script.google.com/macros/s/AKfycbw3cVmLmrjniePfI9yHuKwUil6I7y8mSoDK7GLbD5_QL4JQz9wfpXVXKnYJtRJWJiPF4g/exec"; original
+  const scriptUrlChengalpattu =
+    "https://script.google.com/macros/s/AKfycbwSQ-HDhi9718SFb6L0Yxeqv0rvytpsnRxCb9q7NdXVvi6BsaVUbKxLRJ2CsEtZ8WJx/exec";
+  // above is matheen
+
+  const scriptUrlMambakkam =
+    "https://script.google.com/macros/s/AKfycbyFKnIOsJIlv47Xx0TYV2jbJqQrOGZLW5LRLQPmgu0S0NONJeYuZplefMAU4SiKiYo/exec";
+
+  // "https://script.google.com/macros/s/AKfycbw3cVmLmrjniePfI9yHuKwUil6I7y8mSoDK7GLbD5_QL4JQz9wfpXVXKnYJtRJWJiPF4g/exec";
+  // above is original
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
@@ -55,7 +60,13 @@ function Career() {
     e.preventDefault();
     setLoading(true);
 
-    setCampus("");
+    let scriptUrl = scriptUrlChengalpattu;
+    if (campusValue === "Chengalpattu") {
+      scriptUrl = scriptUrlChengalpattu;
+    } else if (campusValue === "Mambakkam") {
+      scriptUrl = scriptUrlMambakkam;
+    }
+    setCampusValue("");
     setName("");
     setAddress("");
     setNumber("");
@@ -133,52 +144,54 @@ function Career() {
                   <Tab.Pane eventKey="tab1">
                     <div className="AnimeStarts">
                       <p className={styles.textBold + " AnimeElement"}>
-                        Vikas Mantra Public School - Mahindra City is looking for qualified, dedicated and learner centric EDUCATORS to join our team in the following positions :
+                        Vikas Mantra Public School - Mahindra City is looking
+                        for qualified, dedicated and learner centric EDUCATORS
+                        to join our team in the following positions :
                       </p>
                     </div>
-                    
-                      <div className={styles.tableContainer}>
-                        <Table
-                          bordered
-                          className={"mt-4" + " " + styles.tableborder}>
-                          <tbody className="AnimeStarts">
-                            <tr>
-                              <th className="AnimeElement fw-bold">POSITION</th>
-                              {/* <th className='AnimeElement fw-bold'>REQUIREMENTS</th> */}
-                              <style jsx>
-                                {`
-                                  th {
-                                    background-color: #aa182c;
-                                    color: #fff;
-                                  }
-                                `}
-                              </style>
-                            </tr>
 
-                            <tr>
-                              <td className="AnimeElement">PGT- ENGLISH</td>
-                              {/* <td className='AnimeElement'>
+                    <div className={styles.tableContainer}>
+                      <Table
+                        bordered
+                        className={"mt-4" + " " + styles.tableborder}>
+                        <tbody className="AnimeStarts">
+                          <tr>
+                            <th className="AnimeElement fw-bold">POSITION</th>
+                            {/* <th className='AnimeElement fw-bold'>REQUIREMENTS</th> */}
+                            <style jsx>
+                              {`
+                                th {
+                                  background-color: #aa182c;
+                                  color: #fff;
+                                }
+                              `}
+                            </style>
+                          </tr>
+
+                          <tr>
+                            <td className="AnimeElement">PGT- ENGLISH</td>
+                            {/* <td className='AnimeElement'>
                       ART</td> */}
-                              {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
-                            </tr>
-                            <tr>
-                              <td className="AnimeElement">
-                                PSYCHOLOGIST- STUDENT COUNSELOR
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="AnimeElement">TGT- CHEMISTRY</td>
-                            </tr>
-                            <tr>
-                              <td className="AnimeElement">
-                                NTT- KG COORDINATOR
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="AnimeElement">PET/YOGA TEACHER</td>
-                            </tr>
+                            {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">
+                              PSYCHOLOGIST- STUDENT COUNSELOR
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">TGT- CHEMISTRY</td>
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">
+                              NTT- KG COORDINATOR
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">PET/YOGA TEACHER</td>
+                          </tr>
 
-                            {/* 
+                          {/* 
                     <tr><td>PRT & TGT- HINDI</td></tr>
                     <tr><td>TGT – ENGLISH</td></tr>
                     <tr><td>PRT – ENGLISH</td></tr>
@@ -192,60 +205,61 @@ function Career() {
                     <tr><td>SPECIAL EDUCATOR</td></tr>
                     <tr><td>LAB ATTENDANT <span className={styles.add_color}>(BIOLOGY, CHEMISTRY,PHYSICS)</span></td></tr>
                     */}
-                          </tbody>
-                        </Table>
-                      </div>
-                    
+                        </tbody>
+                      </Table>
+                    </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="tab2">
                     <div className="AnimeStarts">
                       <p className={styles.textBold + " AnimeElement"}>
-                        Vikas Mantra Public School - Mambakkam is looking for qualified, dedicated and learner centric EDUCATORS to join our team in the following positions :
+                        Vikas Mantra Public School - Mambakkam is looking for
+                        qualified, dedicated and learner centric EDUCATORS to
+                        join our team in the following positions :
                       </p>
                     </div>
-                    
-                      <div className={styles.tableContainer}>
-                        <Table
-                          bordered
-                          className={"mt-4" + " " + styles.tableborder}>
-                          <tbody className="AnimeStarts">
-                            <tr>
-                              <th className="AnimeElement fw-bold">POSITION</th>
-                              {/* <th className='AnimeElement fw-bold'>REQUIREMENTS</th> */}
-                              <style jsx>
-                                {`
-                                  th {
-                                    background-color: #aa182c;
-                                    color: #fff;
-                                  }
-                                `}
-                              </style>
-                            </tr>
 
-                            <tr>
-                              <td className="AnimeElement">PGT- ENGLISH</td>
-                              {/* <td className='AnimeElement'>
+                    <div className={styles.tableContainer}>
+                      <Table
+                        bordered
+                        className={"mt-4" + " " + styles.tableborder}>
+                        <tbody className="AnimeStarts">
+                          <tr>
+                            <th className="AnimeElement fw-bold">POSITION</th>
+                            {/* <th className='AnimeElement fw-bold'>REQUIREMENTS</th> */}
+                            <style jsx>
+                              {`
+                                th {
+                                  background-color: #aa182c;
+                                  color: #fff;
+                                }
+                              `}
+                            </style>
+                          </tr>
+
+                          <tr>
+                            <td className="AnimeElement">PGT- ENGLISH</td>
+                            {/* <td className='AnimeElement'>
                       ART</td> */}
-                              {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
-                            </tr>
-                            <tr>
-                              <td className="AnimeElement">
-                                PSYCHOLOGIST- STUDENT COUNSELOR
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="AnimeElement">TGT- CHEMISTRY</td>
-                            </tr>
-                            <tr>
-                              <td className="AnimeElement">
-                                NTT- KG COORDINATOR
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="AnimeElement">PET/YOGA TEACHER</td>
-                            </tr>
+                            {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">
+                              PSYCHOLOGIST- STUDENT COUNSELOR
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">TGT- CHEMISTRY</td>
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">
+                              NTT- KG COORDINATOR
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">PET/YOGA TEACHER</td>
+                          </tr>
 
-                            {/* 
+                          {/* 
                     <tr><td>PRT & TGT- HINDI</td></tr>
                     <tr><td>TGT – ENGLISH</td></tr>
                     <tr><td>PRT – ENGLISH</td></tr>
@@ -259,9 +273,9 @@ function Career() {
                     <tr><td>SPECIAL EDUCATOR</td></tr>
                     <tr><td>LAB ATTENDANT <span className={styles.add_color}>(BIOLOGY, CHEMISTRY,PHYSICS)</span></td></tr>
                     */}
-                          </tbody>
-                        </Table>
-                      </div>
+                        </tbody>
+                      </Table>
+                    </div>
                   </Tab.Pane>
                 </Tab.Content>
               </Tab.Container>
@@ -375,7 +389,6 @@ function Career() {
 
                     <div className="col-md-12 col-lg-8 col-sm-12">
                       <div className={styles.formPb}>
-                        
                         <div className="mb-md-5 AnimeStarts">
                           <label className="AnimeElement">Job Opening</label>
 
@@ -418,23 +431,20 @@ function Career() {
                           </Form.Select>
                         </div>
                         <div className={styles.campusInput}>
-
                           <Form.Select
                             aria-label="Default select example"
                             name="Campus"
-                            value={campus}
-                            onChange={(event) =>
-                              setCampus(event.target.value)
-                            }
+                            value={campusValue}
+                            onChange={(event) => setCampusValue(event.target.value)}
                             className={
                               styles.formText + " AnimeElement form-select "
                             }>
-                              <option  value="" disabled hidden> Campus</option>
-                            <option value="CHENGALPATTU">Chengalpattu</option>
-                            <option value="MAMBAKKAM">
-                              Mambakkam
+                            <option value="" disabled hidden>
+                              {" "}
+                              Campus
                             </option>
-                           
+                            <option value="Chengalpattu">Chengalpattu</option>
+                            <option value="Mambakkam">Mambakkam</option>
                           </Form.Select>
                         </div>
                       </div>
