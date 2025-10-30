@@ -69,7 +69,7 @@ export default function SplitCards() {
                 <div className={styles.Cardxcontainer}>
                   <div className={`${styles.card} ${styles.bottomleft}`}>
                     <img
-                      src="/assets/campus/classroom-new.png"
+                      src="/assets/campus/classroom-new.jpeg"
                       alt="Transportation"
                     />
                     <div className={styles.caption}>AC classrooms </div>
@@ -132,7 +132,7 @@ export default function SplitCards() {
             </SplideSlide>
              <SplideSlide>
               <div className={`${styles.card} `}>
-                <img src="/assets/campus/classroom-new.png" alt="Library" />
+                <img src="/assets/campus/classroom-new.jpeg" alt="Library" />
                 <div className={styles.caption}>AC classrooms </div>
               </div>
             </SplideSlide>
