@@ -58,12 +58,18 @@ const VideoSection = () => {
               media="(min-width: 768px)"
             />
           </video> */}
-          <img
-            style={{ width: "100%" }}
-            className={`${styles.vmpsBanner} AnimeElement`}
-            src="/assets/banners/Admission-Open.png"
-            alt="banner"
-          />
+
+          <div className={styles.wrapper}>
+            <div className={styles.collage}>
+              <img
+                src="/images/whyvikas/g1.png"
+                alt="Large image"
+                className={styles.item1}
+              />
+              <img src="/images/whyvikas/g2.png" alt="Top small image" />
+              <img src="/images/whyvikas/gg2.png" alt="Bottom small image" />
+            </div>
+          </div>
 
           <div className={styles.videoOverlayCont}>
             <h2>
