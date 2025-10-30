@@ -67,6 +67,7 @@
   border-top-left-radius: 0;
   overflow: visible;
   padding-bottom: 0;
+  position: relative;
 }
 .bottomContainer :global(.swiper) {
   padding-block: 0rem 2.5rem;
@@ -177,12 +178,9 @@
   transition: background 0.3s ease;
 }
 
-
-
 .muteBtn svg {
   pointer-events: none;
 }
-
 
 @media only screen and (max-width: 576px) {
   .upperContainer {
@@ -193,7 +191,7 @@
     padding: 1.5rem 1rem 0;
   }
   .bottomContainer :global(.swiper) {
-    padding-block: 0rem 2.5rem;
+    padding-block: 0rem 3rem;
   }
   .bottomContainer .tab {
     position: relative;
@@ -224,6 +222,15 @@
   }
   .rightContent p {
     margin: 0;
+  }
+  .customPrev,
+  .customNext {
+    width: 35px;
+    height: 35px;
+  }
+  .customNav {
+    bottom: 8px;
+    right: 16px;
   }
 }
 

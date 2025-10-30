@@ -46,7 +46,7 @@
   position: relative;
   flex: 1;
   border-radius: 8px;
-
+  height: 100%;
   overflow: hidden;
 }
 
@@ -55,16 +55,14 @@
   height: 100%;
   object-fit: cover;
   display: block;
-   transform: scale(1);
-   transition: transform 5s ease-in; 
-   max-height: 370px;
-
+  transform: scale(1);
+  transition: transform 5s ease-in;
+  max-height: 370px;
 }
-.card:hover img{
-   transform: scale(1.21) translate(8%, 8%); 
+.card:hover img {
+  transform: scale(1.21) translate(8%, 8%);
   /* animation: kenburns 9s forwards; */
   cursor: pointer;
-  
 }
 
 @keyframes kenburns {
@@ -72,10 +70,10 @@
     transform: scale(1);
   }
   10% {
-    transform: scale(1.15); 
+    transform: scale(1.15);
   }
   100% {
-    transform: scale(1.25) translate(5%, 5%); 
+    transform: scale(1.25) translate(5%, 5%);
   }
 }
 
@@ -115,7 +113,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: #E02D53;
+  background: #e02d53;
   padding: 10px 1rem;
   font-weight: bold;
   font-size: 1.5rem;
@@ -127,7 +125,7 @@
   .mainContent {
     padding-block: 1.3rem 0;
   }
-  .caption{
+  .caption {
     font-size: 1rem;
     padding: 5px 10px;
   }

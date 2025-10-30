@@ -64,9 +64,9 @@
   border-bottom-left-radius: 30px;
 }
 
-.swiperWrapper .swiperSlide {
+/* .swiperWrapper .swiperSlide {
   flex: 1;
-}
+} */
 .swiperWrapper .swiperSlide .slideCont {
   display: flex;
   flex-direction: column;

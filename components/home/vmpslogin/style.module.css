@@ -70,6 +70,7 @@
   }
   .vmpsloginButton {
     font-size: 1rem;
-    padding: 0.7rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 20px;
   }
 }

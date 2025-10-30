@@ -162,11 +162,11 @@ const JourneySwiper = () => {
                       spaceBetween: 20,
                     },
                     992: {
-                      slidesPerView: 4.2,
+                      slidesPerView: 3.2,
                       spaceBetween: 20,
                     },
                     1200: {
-                      slidesPerView: 5.2,
+                      slidesPerView: 3.2,
                       spaceBetween: 25,
                     },
                   }}
