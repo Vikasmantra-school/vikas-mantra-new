@@ -71,7 +71,7 @@ const VideoSection = () => {
             </div>
           </div>
 
-          <div className={styles.videoOverlayCont}>
+          {/* <div className={styles.videoOverlayCont}>
             <h2>
               Welcome to <br />
               Vikas Mantra Public School
@@ -82,7 +82,7 @@ const VideoSection = () => {
               acres in the serene Mambakkam away from the hustle and bustle of
               Chennai.
             </p>
-          </div>
+          </div> */}
 
           {/* <button onClick={togglePlayPause} className={styles.playPauseBtn}>
             {isPlaying ? (
