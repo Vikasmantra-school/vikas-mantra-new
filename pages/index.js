@@ -161,7 +161,7 @@ function Home() {
                       <div className={styles.sliderImagesWrapper}>
                         <img
                           className={styles.sliderImageduo}
-                          src="/assets/banners/homeBannerChengal.jpg"
+                          src="/assets/banners/homeBannerChengalNew.jpg"
                           alt="Image 1"
                         />
                       </div>
@@ -364,7 +364,7 @@ function Home() {
                       <div className={styles.sliderImagesWrapper}>
                         <img
                           className={styles.sliderImageduo}
-                          src="/assets/banners/homeBannerChengal.jpg"
+                          src="/assets/banners/homeBannerChengalNew.jpg"
                           alt="Image 1"
                         />
                       </div>
