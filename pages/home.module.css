@@ -1,4 +1,4 @@
-.centerSvg{
+.centerSvg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6,7 +6,7 @@
   width: fit-content;
 }
 .swiperCont {
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   overflow: hidden;
   height: 100vh;
   height: calc(100dvh - 5.15rem);
@@ -46,7 +46,6 @@
   position: relative;
   z-index: 1;
   color: white;
-  padding-bottom: 2rem;
 }
 
 .sliderContentWrapper h2 {
@@ -97,15 +96,15 @@
   display: flex;
   align-items: center;
 }
-.innercont{
+.innercont {
   padding-inline: 4rem;
 }
-.innercont h2{
+.innercont h2 {
   font-size: 3rem;
   font-weight: 700;
-  color: #1D1D1D;
+  color: #1d1d1d;
 }
-.bannerSideWrapper a{
+.bannerSideWrapper a {
   font-weight: 800;
   font-size: 1.25rem;
   border: none;
@@ -115,23 +114,23 @@
   display: flex;
   align-items: center;
 }
-.bannerSideWrapper span{
+.bannerSideWrapper span {
   padding: 0.3125rem 1rem;
 }
-.bannerSideWrapper .innerBtn1 .txt{
-  background-color: #FFB800;
-  color: #1D1D1D;
+.bannerSideWrapper .innerBtn1 .txt {
+  background-color: #ffb800;
+  color: #1d1d1d;
 }
-.bannerSideWrapper .innerBtn1 .arrow{
-  background-color: #FFD79AE5;
+.bannerSideWrapper .innerBtn1 .arrow {
+  background-color: #ffd79ae5;
 }
 
-.bannerSideWrapper .innerBtn2 .txt{
-  background-color: #45458A;
-  color: #FFFFFF;
+.bannerSideWrapper .innerBtn2 .txt {
+  background-color: #45458a;
+  color: #ffffff;
 }
-.bannerSideWrapper .innerBtn2 .arrow{
-  background-color: #7272C3;
+.bannerSideWrapper .innerBtn2 .arrow {
+  background-color: #7272c3;
 }
 @media only screen and (max-width: 768px) {
   .floatingLinks {
@@ -158,12 +157,14 @@
     padding: 2rem 1rem;
     height: calc(100dvh - 9rem);
   }
-
+  .sliderContentWrapper {
+    padding-bottom: 2rem;
+  }
   .sliderContentWrapper h2 {
     width: auto;
     font-size: 28px;
   }
-  .mobBannerSlider :global(.splide__pagination){
+  .mobBannerSlider :global(.splide__pagination) {
     bottom: 1.5rem;
   }
 }

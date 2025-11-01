@@ -165,7 +165,7 @@ function Home() {
                           alt="Image 1"
                         />
                       </div>
-                      {/* <div className={styles.sliderContentWrapper}>
+                      <div className={styles.sliderContentWrapper}>
                         <h2>
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
@@ -177,7 +177,7 @@ function Home() {
                             color: "black",
                           }}
                         />
-                      </div> */}
+                      </div>
                     </div>
                   </SplideSlide>
                   <SplideSlide>
@@ -189,7 +189,7 @@ function Home() {
                           alt="Image 1"
                         />
                       </div>
-                      {/* <div className={styles.sliderContentWrapper}>
+                      <div className={styles.sliderContentWrapper}>
                         <h2>
                           Success in wanted Steps,Excellence in Every Lesson
                         </h2>
@@ -201,14 +201,14 @@ function Home() {
                             color: "black",
                           }}
                         />
-                      </div> */}
+                      </div>
                     </div>
                   </SplideSlide>
                 </Splide>
               </div>
             </Col>
 
-            <Col className="d-none d-md-block" md={6}>
+            {/* <Col className="d-none d-md-block" md={6}>
               <div
                 className={styles.bannerSideWrapper}
                 style={{ backgroundColor: "#FFEBEB" }}>
@@ -239,9 +239,9 @@ function Home() {
                   </Link>
                 </div>
               </div>
-            </Col>
+            </Col> */}
 
-            <Col className="d-none d-md-block" md={6}>
+            {/* <Col className="d-none d-md-block" md={6}>
               <div
                 className={styles.bannerSideWrapper}
                 style={{
@@ -272,7 +272,8 @@ function Home() {
                   </Link>
                 </div>
               </div>
-            </Col>
+            </Col> */}
+
             <Col md={6} className="d-none d-md-block">
               <div className="overflow-hidden">
                 <Splide
@@ -284,7 +285,7 @@ function Home() {
                     // pauseOnFocus: false,
                     pagination: true,
                     arrows: false,
-                    autoplay: true,
+                    autoplay: false,
                     interval: 6000,
                     loop: true,
                     lazyLoad: "nearby",
@@ -300,7 +301,7 @@ function Home() {
                           alt="Image 1"
                         />
                       </div>
-                      {/* <div className={styles.sliderContentWrapper}>
+                      <div className={styles.sliderContentWrapper}>
                         <h2>
                           Every child’s growth is guided with meaning and
                           momentum.
@@ -313,7 +314,7 @@ function Home() {
                             color: "white",
                           }}
                         />
-                      </div> */}
+                      </div>
                     </div>
                   </SplideSlide>
                   <SplideSlide>
@@ -325,7 +326,7 @@ function Home() {
                           alt="Image 1"
                         />
                       </div>
-                      {/* <div className={styles.sliderContentWrapper}>
+                      <div className={styles.sliderContentWrapper}>
                         <h2>
                           Every child’s growth is guided with meaning and
                           momentum.
@@ -338,7 +339,7 @@ function Home() {
                             color: "white",
                           }}
                         />
-                      </div> */}
+                      </div>
                     </div>
                   </SplideSlide>
                 </Splide>
