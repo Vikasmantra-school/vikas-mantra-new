@@ -113,7 +113,6 @@ const Contact = () => {
 
       <section className={"whitebg VectorYellowHalfSpiral" + " " + "pt60"}>
         <div className="container">
-           
           <div className="row">
             <div className="col-lg-6 col-md-12">
               <div
@@ -267,6 +266,17 @@ const Contact = () => {
                   <br />
                   <h5> Chengalpattu</h5>
                   <div className="ContactAnimeStarts">
+                    <p className="m-0 AnimeElement1">
+                      Landline: <a href="tel:+918148143834">8148143834</a>
+                    </p>
+                  </div>
+
+                  <div className="ContactAnimeStarts">
+                    <p className="m-0 AnimeElement1">
+                      Mobile: <a href="tel:+917092450450">7092 450 450</a>
+                    </p>
+                  </div>
+                  <div className="ContactAnimeStarts">
                     <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
                   </div>
 
@@ -368,6 +378,17 @@ const Contact = () => {
               }>
               <div className={styles.paraAlign}>
                 <h5> Chengalpattu</h5>
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">
+                    Landline: <a href="tel:+918148143834">8148 143 834</a>
+                  </p>
+                </div>
+
+                <div className="ContactAnimeStarts">
+                  <p className="m-0 AnimeElement1">
+                    Mobile: <a href="tel:+917092450450">7092 450 450</a>
+                  </p>
+                </div>
                 <div className="ContactAnimeStarts">
                   <p className="m-0 AnimeElement1">info@vikasmantra.org</p>
                 </div>
