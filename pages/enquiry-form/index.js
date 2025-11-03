@@ -28,7 +28,10 @@ const EnquiryForm = () => {
   //form-sheet-integration
   const formRef = useRef(null);
   const scriptUrlChengalpattu =
-    "https://script.google.com/macros/s/AKfycbyVhNnoCfhBoJ1CCHftf23kN8E_ltUnH-aifTnzT0_0D8KOy4tWx0_EIoGCC9oDAMSiIA/exec";
+    "https://script.google.com/macros/s/AKfycbxTmGsy9dKetRzE4P9M7WCr2H9b6UEzSQSMiYp1vzIrm8fKsZcO5KmZdrT3ydI4CCgZ/exec";
+  // above is admissions@vikasmantra.org
+
+  // "https://script.google.com/macros/s/AKfycbyVhNnoCfhBoJ1CCHftf23kN8E_ltUnH-aifTnzT0_0D8KOy4tWx0_EIoGCC9oDAMSiIA/exec";
   // above is matheen
 
   const scriptUrlMambakkam =

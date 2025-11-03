@@ -45,7 +45,11 @@ function Career() {
 
   const formRef = useRef(null);
   const scriptUrlChengalpattu =
-    "https://script.google.com/macros/s/AKfycbwSQ-HDhi9718SFb6L0Yxeqv0rvytpsnRxCb9q7NdXVvi6BsaVUbKxLRJ2CsEtZ8WJx/exec";
+  "https://script.google.com/macros/s/AKfycbzDjIcQGDYjyNbnHp_khtw9L_xP8paJVikqhDapNGHr3nCiuxN44-auFTWH0UrOh07sYw/exec";
+  // above is admissions@vikasmantra.org
+
+
+    // "https://script.google.com/macros/s/AKfycbwSQ-HDhi9718SFb6L0Yxeqv0rvytpsnRxCb9q7NdXVvi6BsaVUbKxLRJ2CsEtZ8WJx/exec";
   // above is matheen
 
   const scriptUrlMambakkam =

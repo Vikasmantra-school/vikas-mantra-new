@@ -65,7 +65,10 @@ export const Footer = () => {
   // above is admissions.mambakkam@vikasmantra.org
 
   const scriptUrlChengalpattu =
-    "https://script.google.com/macros/s/AKfycbxyDMEsVuTZ1UI_Q0IR5OC8C6dr-AqjYrclp364Df-170anM0Z8RSEvkYBs5a6okfJc3w/exec";
+  "https://script.google.com/macros/s/AKfycbz0OUTNqOIYPu3n6jZmmi4tGcw9AAq83Xmnw0RQrN48YwUJ7DA5gjaOq9WS8Nr6_9GFlw/exec";
+  // above is admissions@vikasmantra.org
+
+    // "https://script.google.com/macros/s/AKfycbxyDMEsVuTZ1UI_Q0IR5OC8C6dr-AqjYrclp364Df-170anM0Z8RSEvkYBs5a6okfJc3w/exec";
   // above is matheen
 
   // "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec";
