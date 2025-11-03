@@ -298,7 +298,7 @@ const Admissions = () => {
                       <div className="AdmissionAnimeStarts AnimeStarts">
                         <h6 className="card-text pt-5 AdmissionScrollAnimeElement AnimeElement">
                           At VIKAS MANTRA PUBLIC SCHOOL, admissions are open for
-                          the academic year 2025-26 from classes Lower KG to
+                          the academic year 2026-27 from classes Lower KG to
                           Grade 12. Each grade will have 3 divisions with class
                           strength of no more than 30 students. At VMPS, We aim
                           to create a personalized education experience for each
@@ -402,7 +402,7 @@ const Admissions = () => {
                   />
                   <div className="AdmissionAnimeStarts">
                     <h2 className="ulineRed AdmissionScrollAnimeElement mobile-heading-size">
-                      Timelines and key milestones for the academic year 2025-26
+                      Timelines and key milestones for the academic year 2026-27
                       VIKAS MANTRA PUBLIC SCHOOL admissions process
                     </h2>
                   </div>
@@ -419,7 +419,7 @@ const Admissions = () => {
                             Admissions Open
                           </td>
                           <td className="AdmissionScrollAnimeElement">
-                            20th November 2024
+                            1st November
                           </td>
                         </tr>
 
@@ -428,7 +428,7 @@ const Admissions = () => {
                             Application forms available from
                           </td>
                           <td className="AdmissionScrollAnimeElement">
-                            20th November 2024
+                            1st November
                           </td>
                         </tr>
 
@@ -437,7 +437,7 @@ const Admissions = () => {
                             Rolling-admissions start date
                           </td>
                           <td className="AdmissionScrollAnimeElement">
-                            20th November 2024
+                            1st November
                           </td>
                         </tr>
 
@@ -446,7 +446,7 @@ const Admissions = () => {
                             Admissions open till
                           </td>
                           <td className="AdmissionScrollAnimeElement">
-                            30th June 2025
+                            30th June
                           </td>
                         </tr>
                       </tbody>
@@ -456,9 +456,9 @@ const Admissions = () => {
                   <div className="AdmissionAnimeStarts">
                     <p className=" pt-3 AdmissionScrollAnimeElement">
                       Please note that Admissions for the new academic year
-                      2025-26 at VIKAS MANTRA PUBLIC SCHOOL will commence from
-                      20th November 2024 and the admissions for this academic
-                      year will be closed on 30th June 2025.
+                      2026-27 at VIKAS MANTRA PUBLIC SCHOOL will commence from
+                      20th November 2025 and the admissions for this academic
+                      year will be closed on 30th June 2026.
                     </p>
                   </div>
                 </div>
