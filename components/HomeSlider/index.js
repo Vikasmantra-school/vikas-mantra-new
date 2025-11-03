@@ -52,7 +52,7 @@ function HomeSlider({ ref }) {
                       </p> */}
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>
@@ -76,7 +76,7 @@ function HomeSlider({ ref }) {
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>
@@ -114,7 +114,7 @@ function HomeSlider({ ref }) {
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>
@@ -139,7 +139,7 @@ function HomeSlider({ ref }) {
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>
@@ -176,7 +176,7 @@ function HomeSlider({ ref }) {
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={`${styles.bannerCta} mt-3`}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>
@@ -201,7 +201,7 @@ function HomeSlider({ ref }) {
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>
@@ -233,7 +233,7 @@ function HomeSlider({ ref }) {
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>
@@ -256,7 +256,7 @@ function HomeSlider({ ref }) {
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>
@@ -289,7 +289,7 @@ function HomeSlider({ ref }) {
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>
@@ -313,7 +313,7 @@ function HomeSlider({ ref }) {
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
-                          Admissions Open 2025-26.
+                          Admissions Open 2026-27.
                         </a>
                       </Link>
                     </div>

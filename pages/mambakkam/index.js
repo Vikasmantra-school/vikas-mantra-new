@@ -45,7 +45,7 @@ const Mambakkam = () => {
                     We are thrilled to announce the launch of our brand-new
                     campus at Mambakkam, bringing world-class education closer
                     to your neighborhood! Admissions are now open for KG to
-                    Grade 8 for the Academic Year 2025-26.
+                    Grade 8 for the Academic Year 2026-27.
                   </p>
                 </div>
 

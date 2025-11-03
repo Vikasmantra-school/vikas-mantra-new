@@ -430,7 +430,7 @@ const Nav = () => {
               <div className="col-7 col-lg-2 d-flex align-items-center justify-content-end">
                 <ul className="navbar-nav mb-lg-0 justify-content-end align-items-center w-100">
                   {/* <div className={styles.announcementPatch}>
-                    Admission Open 2025 - 2026
+                    Admission Open 2026 - 2027
                   </div>
                   <div>
                     <button className={styles.callBtn}>
@@ -884,7 +884,7 @@ const Nav = () => {
                         backgroundColor: subMenu.enquiryBg,
                         color: subMenu.enquiryTxt,
                       }}>
-                      Admission Open 2025 - 2026
+                      Admission Open 2026 - 2027
                     </a>
                   </Link>
                   <div

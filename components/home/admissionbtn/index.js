@@ -4,7 +4,7 @@ const AdmissionsBtnWrapper = ({
   schoolName,
   bgStyles,
   buttonlink = "/",
-  buttonInfo = "Admission Open  2025 - 2026",
+  buttonInfo = "Admission Open  2026 - 2027",
   fontSize =""
 }) => {
   return (

@@ -32,7 +32,7 @@ const HeroBanner = () => {
                 </h1>
                 <div className={`${styles.admissionTag} AnimeElement`}>
                   <Link href="/admissions" passHref>
-                    <a>Admissions Open for 2025 - 2026</a>
+                    <a>Admissions Open for 2026 - 2027</a>
                   </Link>
                 </div>
               </div>
