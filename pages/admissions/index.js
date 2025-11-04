@@ -455,10 +455,7 @@ const Admissions = () => {
 
                   <div className="AdmissionAnimeStarts">
                     <p className=" pt-3 AdmissionScrollAnimeElement">
-                      Please note that Admissions for the new academic year
-                      2026-27 at VIKAS MANTRA PUBLIC SCHOOL will commence from
-                      20th November 2025 and the admissions for this academic
-                      year will be closed on 30th June 2026.
+                      Please note that Admissions for the new academic year 2026-27 at VIKAS MANTRA PUBLIC SCHOOL will commence from 1st November 2025.
                     </p>
                   </div>
                 </div>
