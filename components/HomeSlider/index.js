@@ -110,7 +110,7 @@ function HomeSlider({ ref }) {
 
                       <p className="box AnimeElement">
                         Vikas Mantra Public School offers CBSE Curriculum and
-                        was launched in the academic year 2019-22.
+                        was launched in the academic year 2019.
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>
@@ -135,7 +135,7 @@ function HomeSlider({ ref }) {
 
                       <p className="box AnimeElement">
                         Vikas Mantra Public School offers CBSE Curriculum and
-                        was launched in the academic year 2019-22.
+                        was launched in the academic year 2019.
                       </p>
                       <Link href="/enquiry-form" passHref>
                         <a className={styles.bannerCta}>

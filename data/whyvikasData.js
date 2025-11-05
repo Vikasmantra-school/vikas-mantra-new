@@ -28,7 +28,7 @@ export const vikasdataGrid2 = [
   {
     id: 2,
     title: "21st Century Ready Infrastructure",
-    desc: "The campus at VIKAS MANTRA PUBLIC SCHOOL is spread over 2 acres of open space in Anjur Village",
+    desc: "The campus at VIKAS MANTRA PUBLIC SCHOOL is spread over 4 acres of open space in Anjur Village",
     imgUrl: "/images/whyvikas/gg2.png",
   },
   {

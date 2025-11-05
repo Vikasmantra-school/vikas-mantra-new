@@ -82,6 +82,24 @@ export default function SplitCards() {
                 </div>
               </div>
             </SplideSlide>
+            <SplideSlide>
+              <div className={styles.gridCardContent}>
+                <div className={styles.Cardxcontainer}>
+                  <div className={`${styles.card} ${styles.bottomleft}`}>
+                    <img
+                      src="/images/spitcardImages/ICT.JPG"
+                      alt="ict"
+                    />
+                    <div className={styles.caption}>ICT 360 </div>
+                  </div>
+                  <div
+                    className={`${styles.card} ${styles.bottomright} ${styles.right}`}>
+                    <img src="/images/spitcardImages/Steam.jpg" alt="steam" />
+                    <div className={styles.caption}>Steam</div>
+                  </div>
+                </div>
+              </div>
+            </SplideSlide>
           </Splide>
         </div>
 
@@ -139,7 +157,19 @@ export default function SplitCards() {
              <SplideSlide>
               <div className={`${styles.card} `}>
                 <img src="/assets/campus/library2.jpeg" alt="Library" />
-                <div className={styles.caption}>Infirmary in our facilities.</div>
+                <div className={styles.caption}>Infirmary</div>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className={`${styles.card} `}>
+                <img src="/images/spitcardImages/ICT.JPG" alt="ict" />
+                <div className={styles.caption}>ICT 360</div>
+              </div>
+            </SplideSlide>
+             <SplideSlide>
+              <div className={`${styles.card} `}>
+                <img src="/images/spitcardImages/Steam.jpg" alt="steam" />
+                <div className={styles.caption}>Steam</div>
               </div>
             </SplideSlide>
 

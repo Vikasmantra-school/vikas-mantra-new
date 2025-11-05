@@ -46,6 +46,7 @@ const Nav = () => {
       afflNo: "1930634",
       enquiryBg: "#FFB800",
       enquiryTxt: "#1D1D1D",
+      mob: 7448450450,
     };
   } else if (isChengalpattu) {
     subMenu = {
@@ -55,6 +56,7 @@ const Nav = () => {
       afflNo: "1931307",
       enquiryBg: "#45458A",
       enquiryTxt: "#FFFFFF",
+      mob: 7092450450,
     };
   }
 
@@ -283,21 +285,27 @@ const Nav = () => {
                         </Link>
                         <ul className="dropdown-menu">
                           <li>
-                            <Link href="/admissions#v-pills-home" legacyBehavior>
+                            <Link
+                              href="/admissions#v-pills-home"
+                              legacyBehavior>
                               <a className="dropdown-item">
                                 Admission Overview
                               </a>
                             </Link>
                           </li>
                           <li>
-                            <Link href="/admissions#admission-timeline" legacyBehavior>
+                            <Link
+                              href="/admissions#admission-timeline"
+                              legacyBehavior>
                               <a className="dropdown-item">
                                 Admission Timeline
                               </a>
                             </Link>
                           </li>
                           <li>
-                            <Link href="/admissions#v-pills-messages" legacyBehavior>
+                            <Link
+                              href="/admissions#v-pills-messages"
+                              legacyBehavior>
                               <a className="dropdown-item">
                                 Admission Procedure
                               </a>
@@ -305,13 +313,9 @@ const Nav = () => {
                           </li>
                           <li>
                             <Link href="/enquiry-form" legacyBehavior>
-                              <a className="dropdown-item">
-                                Enquiry Form
-                              </a>
+                              <a className="dropdown-item">Enquiry Form</a>
                             </Link>
                           </li>
-                          
-                          
                         </ul>
                       </li>
 
@@ -877,14 +881,16 @@ const Nav = () => {
                 </div>
 
                 <div className="col-6 col-lg-3 d-flex align-items-center justify-content-end">
-                  <Link href="/enquiry-form">
+                  <Link href={`tel:+91${subMenu.mob}`}>
+                   
                     <a
                       className={`${styles.announcementPatch} d-none d-lg-block`}
                       style={{
                         backgroundColor: subMenu.enquiryBg,
                         color: subMenu.enquiryTxt,
                       }}>
-                      Admission Open 2026 - 2027
+                      +91{subMenu.mob}
+                      {/* Admission Open 2026 - 2027 */}
                     </a>
                   </Link>
                   <div

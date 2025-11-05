@@ -18,7 +18,7 @@ export const learning = [
   {
     id: 'century',
     title: '21st Century Ready Infrastructure',
-    desc: 'The campus at VIKAS MANTRA PUBLIC SCHOOL is spread over 2 acres of open space in Anjur Village. The infrastructure is designed on the principles of free movement within campus to encourage collaboration and group learning. The labs are equipped with the latest equipment; classrooms are large and designed to foster an engaging and fun learning environment.',
+    desc: 'The campus at VIKAS MANTRA PUBLIC SCHOOL is spread over 4 acres of open space in Anjur Village. The infrastructure is designed on the principles of free movement within campus to encourage collaboration and group learning. The labs are equipped with the latest equipment; classrooms are large and designed to foster an engaging and fun learning environment.',
   },
 
   {

@@ -122,7 +122,7 @@ const Contact = () => {
                   styles.careerImg
                 }>
                 <img
-                  src="/assets/campus/school-building3.png"
+                  src="/assets/banners/homeBannerChengalNew.JPG"
                   alt="image"
                   className="img-fluid AnimeElement3"
                 />

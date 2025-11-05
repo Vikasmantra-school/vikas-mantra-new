@@ -11,7 +11,7 @@ const BannerAdsVikasCommon = () => {
           <div className={styles.mainContentAdsVikas}>
             <h3 className="AnimeElement">
               <span>Admissions Open for the Academic Year 2026-27</span>
-              <span className={styles.cribes}>Pre-KG to XI</span>
+              <span className={styles.cribes}>Pre-KG to XII</span>
             </h3>
             {/* <AdmissionsBtnWrapper
               schoolName="Enroll Now"
