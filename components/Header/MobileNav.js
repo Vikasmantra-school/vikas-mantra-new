@@ -998,13 +998,13 @@ const MobileNav = ({}) => {
                 </li>
               </ul>
             </li> */}
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <Link href="/chengalpattu-site/enquiry-form" legacyBehavior>
                 <a className="nav__link" aria-current="page">
                   Enquiry Form
                 </a>
               </Link>
-            </li>
+            </li> */}
             {/* <li className="nav__item">
               <Link
                 href="/chengalpattu-site/mandatory-public-disclosures"

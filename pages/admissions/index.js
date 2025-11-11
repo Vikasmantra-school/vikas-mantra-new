@@ -455,7 +455,9 @@ const Admissions = () => {
 
                   <div className="AdmissionAnimeStarts">
                     <p className=" pt-3 AdmissionScrollAnimeElement">
-                      Please note that Admissions for the new academic year 2026-27 at VIKAS MANTRA PUBLIC SCHOOL will commence from 1st November 2025.
+                      Please note that Admissions for the new academic year
+                      2026-27 at VIKAS MANTRA PUBLIC SCHOOL will commence from
+                      1st November 2025.
                     </p>
                   </div>
                 </div>
@@ -592,12 +594,15 @@ const Admissions = () => {
                     <div className="card-wrapper two">
                       <div className="card-header AdmissionAnimeStarts">
                         <h1 className="card-header-text2 AdmissionScrollAnimeElement">
-                          Submit Application
+                          Interaction and Interview
                         </h1>
                         <p className="card-header-text3 AdmissionScrollAnimeElement">
-                          Submit the completed Application Form and all
-                          supporting documents as per instructions and wait to
-                          be called for a personal interview.
+                          Diagnostic tests in Math & Science and Tests of
+                          fluency in English will be conducted for students
+                          applying from Grade I. Then, personal interviews will
+                          be conducted to understand their skills. For
+                          Kindergarten classes, interactions will be held for
+                          both children and parents.
                         </p>
                       </div>
                       <div className="card-footer">
@@ -619,15 +624,12 @@ const Admissions = () => {
                     <div className="card-wrapper one">
                       <div className="card-header AdmissionAnimeStarts">
                         <h1 className="card-header-text2 AdmissionScrollAnimeElement">
-                          Interaction and Interview
+                          Submit Application
                         </h1>
                         <p className="card-header-text3 AdmissionScrollAnimeElement">
-                          Diagnostic tests in Math & Science and Tests of
-                          fluency in English will be conducted for students
-                          applying from Grade I. Then, personal interviews will
-                          be conducted to understand their skills. For
-                          Kindergarten classes, interactions will be held for
-                          both children and parents.
+                          Submit the completed Application Form and all
+                          supporting documents as per instructions and wait to
+                          be called for a personal interview.
                         </p>
                       </div>
                       <div className="card-footer">

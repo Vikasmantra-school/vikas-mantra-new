@@ -853,7 +853,7 @@ const Nav = () => {
                             </li>
                           </ul>
                         </li>
-                        <li
+                        {/* <li
                           className={isActive(
                             "chengalpattu-site/enquiry-form"
                           )}>
@@ -862,7 +862,7 @@ const Nav = () => {
                             legacyBehavior>
                             <a className="nav-link">Enquiry Form</a>
                           </Link>
-                        </li>
+                        </li> */}
                         {/* <li className={isActive("chengalpattu-site/mandatory-public-disclosures")}>
                           <Link href="/chengalpattu-site/mandatory-public-disclosures" legacyBehavior>
                             <a className="nav-link">Mandatory Public Disclosures</a>
