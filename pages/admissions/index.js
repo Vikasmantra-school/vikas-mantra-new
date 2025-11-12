@@ -678,13 +678,12 @@ const Admissions = () => {
                     <div className="card-wrapper one">
                       <div className="card-header AdmissionAnimeStarts">
                         <h1 className="card-header-text2 AdmissionScrollAnimeElement">
-                          Admission Fee
+                          Admission confirmation 
                         </h1>
                         <p className="card-header-text3 AdmissionScrollAnimeElement">
                           Upon receipt of Confirmation Letter, payment of a
                           one-time non-refundable Admission Fee* within 15 days
-                          to be paid along with the first term and school
-                          essentials fee.
+                          to be paid along with the first term.
                         </p>
                       </div>
                       <div className="card-footer">
