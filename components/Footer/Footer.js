@@ -751,7 +751,7 @@ export const Footer = () => {
               </Link>
             ) : (
               <Link
-                href="https://api.whatsapp.com/send?phone=7092450450"
+                href="https://api.whatsapp.com/send?phone=7448450450"
                 passHref>
                 <a
                   className="whatsapp-cta"
