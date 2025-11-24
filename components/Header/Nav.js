@@ -269,7 +269,7 @@ const Nav = () => {
                       </li>
                       <li
                         className={
-                          pageName.startsWith("admissions")
+                          pageName.startsWith("admissions") || pageName.startsWith("enquiry-form")
                             ? "active nav-item dropdown"
                             : "nav-item dropdown"
                         }>
@@ -369,7 +369,7 @@ const Nav = () => {
 
                       <li
                         className={
-                          pageName === "enquiry-form"
+                          pageName === "enquiry-form-x"
                             ? "active nav-item"
                             : "nav-item"
                         }>
