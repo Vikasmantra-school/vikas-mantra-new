@@ -484,14 +484,6 @@ p {
   position: absolute;
 } */
 
-.homeheader {
-  width: 100%;
-}
-
-.homeheader {
-  z-index: 5;
-  position: relative;
-}
 
 @media only screen and (min-width: 768px) {
   .chengalpattu-unique.home {
@@ -499,15 +491,6 @@ p {
     position: absolute !important;
   }
 }
-
-/* .homeheader.home {
-  z-index: 2;
-  position: absolute;
-}
-
-.home .navbar-expand-lg .navbar-nav .nav-link {
-  color: #fff;
-} */
 
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #1d1d1d;
@@ -1901,10 +1884,7 @@ tr {
     display: block;
   }
 
-  .homeheader.home {
-    z-index: 10000;
-    position: unset;
-  }
+
 
   .VideoContainer {
     display: none;
@@ -2604,15 +2584,12 @@ input[type="number"] {
 header.sticky {
   position: sticky;
   top: 0;
-  box-shadow: 0px 4px 8.5px rgba(0, 0, 0, 0.16);
+  /* box-shadow: 0px 4px 8.5px rgba(0, 0, 0, 0.16); */
   background-color: #fff;
-
+  z-index: 5;
   width: 100%;
 }
-.common-header {
-  background-color: #fff;
-  box-shadow: 0px 4px 8.5px rgba(0, 0, 0, 0.16);
-}
+
 .submenu-header {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }

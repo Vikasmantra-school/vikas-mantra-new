@@ -86,7 +86,7 @@ const Nav = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY < 30) {
+      if (currentScrollY < 80) {
         setShowCommonHeader(true);
       } else if (currentScrollY < lastScrollY) {
         setShowCommonHeader(true); // scroll up → show main header
@@ -143,25 +143,21 @@ const Nav = () => {
     }
   }
 
-  function showDropdownSub() {
-    dropdownSub.current.classList.remove("d-none");
-  }
-
-  function hideDropdownSub() {
-    dropdownSub.current.classList.add("d-none");
-  }
-
   return (
     <>
       <header
         ref={mainHeaderRef}
-        className={"homeheader common-header sticky"}
+        className={"sticky"}
         style={{
-          transform: showCommonHeader
-            ? "translateY(0)"
-            : `translateY(-${headerHeight}px)`,
-          transition: "transform 0.3s ease",
+          // transform: showCommonHeader
+          //   ? "translateY(0)"
+          //   : `translateY(-${headerHeight}px)`,
+          // transition: "transform 0.15s ease",
+
+          top: showCommonHeader ? 0 : `-${headerHeight}px`,
+          transition: "top 150ms ease",
           zIndex: 51,
+          boxShadow : isMambakkam ? 'none' : isChengalpattu ? 'none' : "0px 4px 8.5px rgba(0, 0, 0, 0.16)"
         }}>
         <nav
           className={styles.navTransparent + " navbar-expand-lg py-2 py-md-0"}>
@@ -269,7 +265,8 @@ const Nav = () => {
                       </li>
                       <li
                         className={
-                          pageName.startsWith("admissions") || pageName.startsWith("enquiry-form")
+                          pageName.startsWith("admissions") ||
+                          pageName.startsWith("enquiry-form")
                             ? "active nav-item dropdown"
                             : "nav-item dropdown"
                         }>
@@ -485,10 +482,10 @@ const Nav = () => {
       </header>
       {subMenu && (
         <header
-          className={"homeheader submenu-header sticky"}
+          className={"submenu-header sticky"}
           style={{
             top: showCommonHeader ? `${headerHeight}px` : "0",
-            transition: "top 0.3s ease",
+            transition: "top 0.1s ease",
           }}>
           <nav
             style={{
@@ -882,7 +879,6 @@ const Nav = () => {
 
                 <div className="col-6 col-lg-3 d-flex align-items-center justify-content-end">
                   <Link href={`tel:+91${subMenu.mob}`}>
-                   
                     <a
                       className={`${styles.announcementPatch} d-none d-lg-block`}
                       style={{
