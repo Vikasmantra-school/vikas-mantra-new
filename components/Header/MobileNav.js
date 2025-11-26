@@ -11,6 +11,18 @@ const MobileNav = ({}) => {
 
   const { campus, isMambakkam, isChengalpattu } = useCampus();
 
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(()=>{
+    const handleScroll = ()=>{
+      setScrollY(window.scrollY);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return ()=> window.removeEventListener("scroll", handleScroll)
+  })
+
+
   let subMenu = null;
   if (isMambakkam) {
     subMenu = {
@@ -154,7 +166,7 @@ const MobileNav = ({}) => {
                 </li> */}
             </ul>
           </li>
-           <li className="nav__item">
+          <li className="nav__item">
             <a className="nav__link hasDropdown" onClick={(e) => navLink(e)}>
               Admissions{" "}
               <svg
@@ -219,8 +231,6 @@ const MobileNav = ({}) => {
                   <a className="nav__link"> Enquiry Form</a>
                 </Link>
               </li>
-
-              
             </ul>
           </li>
           {/* <li className="nav__item">
@@ -487,7 +497,10 @@ const MobileNav = ({}) => {
 
       <div
         id="mobSubMenu"
-        className="mob-menu otherMob mob-submenu mob-menu-hdden">
+        className="mob-menu otherMob mob-submenu mob-menu-hdden"
+        style={{
+          top: scrollY > 80 ? "60px" : "132px",
+        }}>
         {isMambakkam ? (
           <ul
             className="nav"
