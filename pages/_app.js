@@ -13,6 +13,8 @@ import PopupModal from "../components/Popup/PopupModal";
 import { Router } from "react-router-dom";
 import ChengalpattuNav from "../components/Header/ChengalpattuNav";
 
+import { GoogleTagManager } from "@next/third-parties/google";
+
 gsap.registerPlugin(CSSRulePlugin);
 function MyApp({ Component, pageProps }) {
   function Anime() {
@@ -191,6 +193,9 @@ function MyApp({ Component, pageProps }) {
   gsap.registerPlugin(CSSRulePlugin);
 
   const router = useRouter();
+
+  const isMambakkamPage = router.asPath.startsWith("/mambakkam-site");
+  const isRouterReady = router.isReady;
   const showHeader =
     router.pathname === "/campaign" || router.pathname === "/thankyou"
       ? false
@@ -218,6 +223,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {/* <PopupModal /> */}
+      {  isMambakkamPage && (
+        <GoogleTagManager gtmId="G-9K3MZFRQVM"/>
+      ) }
 
       {showHeader && <NavComponent />}
 

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 
 export function useCampus() {
-  const { asPath } = useRouter();
+  const { asPath, isReady } = useRouter();
   const isMambakkam = asPath.startsWith("/mambakkam-site");
   const isChengalpattu = asPath.startsWith("/chengalpattu-site");
 
