@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
 import Nav from "../components/Header/Nav";
@@ -13,7 +13,9 @@ import PopupModal from "../components/Popup/PopupModal";
 import { Router } from "react-router-dom";
 import ChengalpattuNav from "../components/Header/ChengalpattuNav";
 
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
+
+import Script from "next/script";
 
 gsap.registerPlugin(CSSRulePlugin);
 function MyApp({ Component, pageProps }) {
@@ -179,15 +181,15 @@ function MyApp({ Component, pageProps }) {
   }
 
   useEffect(() => {
-  Anime();
+    Anime();
 
-  // ✅ only import Bootstrap on client side
-  if (typeof window !== "undefined") {
-    import("bootstrap/dist/js/bootstrap.bundle.min.js")
-      .then(() => console.log("✅ Bootstrap loaded safely"))
-      .catch((err) => console.error("❌ Bootstrap load failed", err));
-  }
-}, []);
+    // ✅ only import Bootstrap on client side
+    if (typeof window !== "undefined") {
+      import("bootstrap/dist/js/bootstrap.bundle.min.js")
+        .then(() => console.log("✅ Bootstrap loaded safely"))
+        .catch((err) => console.error("❌ Bootstrap load failed", err));
+    }
+  }, []);
 
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(CSSRulePlugin);
@@ -201,31 +203,44 @@ function MyApp({ Component, pageProps }) {
       ? false
       : true;
 
+  let NavComponent = Nav;
+  // if(router.pathname.startsWith("/chengalpattu-site")){
+  //   NavComponent = ChengalpattuNav;
+  // }
 
+  useEffect(() => {
+    const handleRouteChange = () => {
+      document.body.style.overflow = "";
+    };
+    router.events.on("routeChangeStart", handleRouteChange);
 
-      let NavComponent = Nav;
-      // if(router.pathname.startsWith("/chengalpattu-site")){
-      //   NavComponent = ChengalpattuNav;
-      // }
-
-
-
-      useEffect(() =>{
-        const handleRouteChange = () => {
-          document.body.style.overflow="";
-        }
-        router.events.on("routeChangeStart", handleRouteChange);
-
-        return ()=>{
-          router.events.off("routeChangeStart", handleRouteChange)
-        }
-      },[router.events])
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, [router.events]);
   return (
     <>
       {/* <PopupModal /> */}
-      {  isMambakkamPage && (
-        <GoogleTagManager gtmId="G-9K3MZFRQVM"/>
-      ) }
+      {isMambakkamPage && (
+        <>
+          <Script
+            id="gtm-script"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+          (function(w,d,s,l,i){w[l]=w[l]||[];
+          w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+          var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+          j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+          f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','G-9K3MZFRQVM');
+        `,
+            }}
+          />
+        </>
+      )}
 
       {showHeader && <NavComponent />}
 
