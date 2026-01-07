@@ -295,20 +295,20 @@ function Career() {
                         </tbody>
                       </Table>
                       <div class="contact-info">
-  <p>
-    Send your CV to: &nbsp;
-    <a href="mailto:info.mambakkam@vikasmantra.org">
-      info.mambakkam@vikasmantra.org
-    </a>
-  </p>
+                            <p>
+                              Send your CV to: &nbsp;
+                              <a href="mailto:info.mambakkam@vikasmantra.org">
+                                info.mambakkam@vikasmantra.org
+                              </a>
+                            </p>
 
-  <p>
-     Contact: &nbsp;
-    <a href="tel:7448450450">
-      7448-450-450
-    </a>
-  </p>
-</div>
+                            <p>
+                              Contact: &nbsp;
+                              <a href="tel:7448450450">
+                                7448-450-450
+                              </a>
+                            </p>
+                          </div>
 
                     </div>
                   </Tab.Pane>
