@@ -241,26 +241,41 @@ function Career() {
                           </tr>
 
                           <tr>
-                            <td className="AnimeElement">PGT- ENGLISH</td>
+                            <td className="AnimeElement">PGT (All subjects-Post graduation with B.ED)</td>
                             {/* <td className='AnimeElement'>
                       ART</td> */}
                             {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
                           </tr>
                           <tr>
                             <td className="AnimeElement">
-                              PSYCHOLOGIST- STUDENT COUNSELOR
+                              TGT (All subjects-Graduation with B.ED)
                             </td>
                           </tr>
                           <tr>
-                            <td className="AnimeElement">TGT- CHEMISTRY</td>
+                            <td className="AnimeElement">PRT (All subjects- Graduation with D.Ed)</td>
                           </tr>
                           <tr>
                             <td className="AnimeElement">
-                              NTT- KG COORDINATOR
+                              NTT (Graduation with Early Childhood Education)
                             </td>
                           </tr>
                           <tr>
-                            <td className="AnimeElement">PET/YOGA TEACHER</td>
+                            <td className="AnimeElement">Art, Dance & Music Teachers</td>
+                          </tr>
+                           <tr>
+                            <td className="AnimeElement">Language Teachers(Tamil, English & Hindi)</td>
+                          </tr>
+                           <tr>
+                            <td className="AnimeElement">Librarian</td>
+                          </tr>
+                           <tr>
+                            <td className="AnimeElement">Lab Assistant (Science Graduate)</td>
+                          </tr>
+                           <tr>
+                            <td className="AnimeElement">Tech-Support</td>
+                          </tr>
+                           <tr>
+                            <td className="AnimeElement">Staff Nurse</td>
                           </tr>
 
                           {/* 
@@ -279,6 +294,22 @@ function Career() {
                     */}
                         </tbody>
                       </Table>
+                      <div class="contact-info">
+  <p>
+    Send your CV to: &nbsp;
+    <a href="mailto:info.mambakkam@vikasmantra.org">
+      info.mambakkam@vikasmantra.org
+    </a>
+  </p>
+
+  <p>
+     Contact: &nbsp;
+    <a href="tel:7448450450">
+      7448-450-450
+    </a>
+  </p>
+</div>
+
                     </div>
                   </Tab.Pane>
                 </Tab.Content>
