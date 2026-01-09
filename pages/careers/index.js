@@ -45,11 +45,10 @@ function Career() {
 
   const formRef = useRef(null);
   const scriptUrlChengalpattu =
-  "https://script.google.com/macros/s/AKfycbzDjIcQGDYjyNbnHp_khtw9L_xP8paJVikqhDapNGHr3nCiuxN44-auFTWH0UrOh07sYw/exec";
+    "https://script.google.com/macros/s/AKfycbzDjIcQGDYjyNbnHp_khtw9L_xP8paJVikqhDapNGHr3nCiuxN44-auFTWH0UrOh07sYw/exec";
   // above is admissions@vikasmantra.org
 
-
-    // "https://script.google.com/macros/s/AKfycbwSQ-HDhi9718SFb6L0Yxeqv0rvytpsnRxCb9q7NdXVvi6BsaVUbKxLRJ2CsEtZ8WJx/exec";
+  // "https://script.google.com/macros/s/AKfycbwSQ-HDhi9718SFb6L0Yxeqv0rvytpsnRxCb9q7NdXVvi6BsaVUbKxLRJ2CsEtZ8WJx/exec";
   // above is matheen
 
   const scriptUrlMambakkam =
@@ -173,27 +172,27 @@ function Career() {
                           </tr>
 
                           <tr>
-                            <td className="AnimeElement">PGT- ENGLISH</td>
+                            <td className="AnimeElement"> PGT-MATHEMATICS</td>
                             {/* <td className='AnimeElement'>
                       ART</td> */}
                             {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
                           </tr>
                           <tr>
-                            <td className="AnimeElement">
-                              PSYCHOLOGIST- STUDENT COUNSELOR
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="AnimeElement">TGT- CHEMISTRY</td>
+                            <td className="AnimeElement">PRT-ENGLISH</td>
                           </tr>
                           <tr>
                             <td className="AnimeElement">
-                              NTT- KG COORDINATOR
+                              PRT-HOME ROOM TEACHER
                             </td>
                           </tr>
                           <tr>
+                            <td className="AnimeElement">
+                              PARENT RELATION OFFICER
+                            </td>
+                          </tr>
+                          {/* <tr>
                             <td className="AnimeElement">PET/YOGA TEACHER</td>
-                          </tr>
+                          </tr> */}
 
                           {/* 
                     <tr><td>PRT & TGT- HINDI</td></tr>
@@ -211,6 +210,29 @@ function Career() {
                     */}
                         </tbody>
                       </Table>
+                      <div class="contact-info">
+                        <p>
+                          Send your CV to: &nbsp;
+                          <a href="mailto:hr@vikasmantra.org">
+                            hr@vikasmantra.org
+                          </a>
+                        </p>
+
+                        <p>
+                          Contact: &nbsp;
+                          <a href="tel:7092450450">7092-450-450</a>
+                        </p>
+                      </div>
+                       <div className="AnimeStarts">
+                <p className="AnimeElement">
+                  Salary will not be a limiting factor for the right candidate.{" "}
+                </p>
+
+                <p className="AnimeElement">
+                  Apply with your resume and a passport size photo through our
+                  website or Email hr@vikasmantra.org
+                </p>
+              </div>
                     </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="tab2">
@@ -241,7 +263,9 @@ function Career() {
                           </tr>
 
                           <tr>
-                            <td className="AnimeElement">PGT (All subjects-Post graduation with B.ED)</td>
+                            <td className="AnimeElement">
+                              PGT (All subjects-Post graduation with B.ED)
+                            </td>
                             {/* <td className='AnimeElement'>
                       ART</td> */}
                             {/* <td className='AnimeElement'>PG B.ed with 3-5years Experience</td> */}
@@ -252,7 +276,9 @@ function Career() {
                             </td>
                           </tr>
                           <tr>
-                            <td className="AnimeElement">PRT (All subjects- Graduation with D.Ed)</td>
+                            <td className="AnimeElement">
+                              PRT (All subjects- Graduation with D.Ed)
+                            </td>
                           </tr>
                           <tr>
                             <td className="AnimeElement">
@@ -260,21 +286,27 @@ function Career() {
                             </td>
                           </tr>
                           <tr>
-                            <td className="AnimeElement">Art, Dance & Music Teachers</td>
+                            <td className="AnimeElement">
+                              Art, Dance & Music Teachers
+                            </td>
                           </tr>
-                           <tr>
-                            <td className="AnimeElement">Language Teachers(Tamil, English & Hindi)</td>
+                          <tr>
+                            <td className="AnimeElement">
+                              Language Teachers(Tamil, English & Hindi)
+                            </td>
                           </tr>
-                           <tr>
+                          <tr>
                             <td className="AnimeElement">Librarian</td>
                           </tr>
-                           <tr>
-                            <td className="AnimeElement">Lab Assistant (Science Graduate)</td>
+                          <tr>
+                            <td className="AnimeElement">
+                              Lab Assistant (Science Graduate)
+                            </td>
                           </tr>
-                           <tr>
+                          <tr>
                             <td className="AnimeElement">Tech-Support</td>
                           </tr>
-                           <tr>
+                          <tr>
                             <td className="AnimeElement">Staff Nurse</td>
                           </tr>
 
@@ -295,41 +327,35 @@ function Career() {
                         </tbody>
                       </Table>
                       <div class="contact-info">
-                            <p>
-                              Send your CV to: &nbsp;
-                              <a href="mailto:info.mambakkam@vikasmantra.org">
-                                info.mambakkam@vikasmantra.org
-                              </a>
-                            </p>
+                        <p>
+                          Send your CV to: &nbsp;
+                          <a href="mailto:info.mambakkam@vikasmantra.org">
+                            info.mambakkam@vikasmantra.org
+                          </a>
+                        </p>
 
-                            <p>
-                              Contact: &nbsp;
-                              <a href="tel:7448450450">
-                                7448-450-450
-                              </a>
-                            </p>
-                          </div>
+                        <p>
+                          Contact: &nbsp;
+                          <a href="tel:7448450450">7448-450-450</a>
+                        </p>
+                      </div>
 
+                      <div className="AnimeStarts">
+                        <p className="AnimeElement">
+                          Salary will not be a limiting factor for the right
+                          candidate.{" "}
+                        </p>
+
+                        <p className="AnimeElement">
+                          Apply with your resume and a passport size photo
+                          through our website or Email
+                          info.mambakkam@vikasmantra.org
+                        </p>
+                      </div>
                     </div>
                   </Tab.Pane>
                 </Tab.Content>
               </Tab.Container>
-              <div className="AnimeStarts">
-                <p className="AnimeElement">
-                  Salary will not be a limiting factor for the right candidate.{" "}
-                </p>
-
-                <p className="AnimeElement">
-                  Apply with your resume and a passport size photo through our
-                  website or Email hr@vikasmantra.org
-                </p>
-
-                {/* <p className="AnimeElement">
-                  For more details, Call :
-                  <a className={styles.tel} href="tel:+917092450450"> +91 7092450450</a>,
-                  <a className={styles.tel} href="tel:+917330098765">+91 7330098765</a>
-                </p> */}
-              </div>
             </div>
 
             <div className="col-md-6">
@@ -470,7 +496,9 @@ function Career() {
                             aria-label="Default select example"
                             name="Campus"
                             value={campusValue}
-                            onChange={(event) => setCampusValue(event.target.value)}
+                            onChange={(event) =>
+                              setCampusValue(event.target.value)
+                            }
                             className={
                               styles.formText + " AnimeElement form-select "
                             }>
