@@ -244,10 +244,10 @@ const TabsHome = () => {
               {renderSwiper(
                 "mahendra",
                 [
-                  "/assets/videos/shine-the-spotlight/chengal-1.mp4",
+                  "/assets/videos/shine-the-spotlight/cmn.mp4",
                   "/assets/videos/shine-the-spotlight/chengal-2.mp4",
                   "/assets/videos/shine-the-spotlight/chengal-1.mp4",
-                  "/assets/videos/shine-the-spotlight/cmn.mp4",
+                  "/assets/videos/shine-the-spotlight/chengal-2.mp4",
                 ],
                 "vdo-1"
               )}
@@ -257,10 +257,10 @@ const TabsHome = () => {
               {renderSwiper(
                 "mambakkam",
                 [
+                  "/assets/videos/shine-the-spotlight/cmn.mp4",
                   "/assets/videos/shine-the-spotlight/mamba-1.mp4",
                   "/assets/videos/shine-the-spotlight/mamba-2.mp4",
                   "/assets/videos/shine-the-spotlight/mamba-1.mp4",
-                  "/assets/videos/shine-the-spotlight/cmn.mp4",
                 ],
                 "vdo-2"
               )}
