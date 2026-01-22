@@ -190,6 +190,28 @@ function Career() {
                               PARENT RELATION OFFICER
                             </td>
                           </tr>
+
+
+                          <tr>
+                            <td className="AnimeElement">
+                              PRT-HINDI
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">
+                              PET
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">
+                              STUDENT COUNSELOR
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="AnimeElement">
+                              SPECIAL EDUCATOR
+                            </td>
+                          </tr>
                           {/* <tr>
                             <td className="AnimeElement">PET/YOGA TEACHER</td>
                           </tr> */}
