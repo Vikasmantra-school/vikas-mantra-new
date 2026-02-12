@@ -247,7 +247,7 @@ const TabsHome = () => {
                   "/assets/videos/shine-the-spotlight/cmn.mp4",
                   "/assets/videos/shine-the-spotlight/chengal-2.mp4",
                   "/assets/videos/shine-the-spotlight/chengal-1.mp4",
-                  "/assets/videos/shine-the-spotlight/chengal-2.mp4",
+                  "/assets/videos/shine-the-spotlight/chengal-2-new.mp4",
                 ],
                 "vdo-1"
               )}
