@@ -293,7 +293,7 @@ function MandatoryScreen() {
                   </tr> */}
 
                   <tr>
-                    <td>5</td>
+                    <td>4</td>
                     <td>
                       LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER
                       APPLICABILITY
