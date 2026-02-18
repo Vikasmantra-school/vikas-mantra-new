@@ -282,7 +282,7 @@ function MandatoryScreen() {
                     </td>
                   </tr>
 
-                  <tr>
+                  {/* <tr>
                     <td>4</td>
                     <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS*</td>
                     <td>
@@ -290,7 +290,7 @@ function MandatoryScreen() {
                         Annexure 12
                       </a>
                     </td>
-                  </tr>
+                  </tr> */}
 
                   <tr>
                     <td>5</td>
@@ -299,7 +299,7 @@ function MandatoryScreen() {
                       APPLICABILITY
                     </td>
                     <td>
-                      <a href='/pdf/last-three-year-result-of-the-board-examination-as-per-applicability.pdf' target='_blank'>Annexure 13</a>
+                      <a href='/pdf/last-three-year-result-of-the-board-examination-as-per-applicability.pdf' target='_blank'>Annexure 12</a>
                     </td>
                   </tr>
                 </tbody>
