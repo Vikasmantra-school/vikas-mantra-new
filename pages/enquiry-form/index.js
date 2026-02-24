@@ -5,9 +5,12 @@ import Form from "react-bootstrap/Form";
 import { Breadcrumb } from "../../components/Breadcrumb/Breadcrumb";
 import { useState, useRef } from "react";
 import VmpsLogin from "../../components/home/vmpslogin";
+import { useRouter } from "next/router";
 
 const EnquiryForm = () => {
   const pageTitle = "Enquiry Form";
+
+  const router = useRouter()
 
   //form-data-clear-after-submit
 
@@ -73,7 +76,17 @@ const EnquiryForm = () => {
       body: new FormData(formRef.current),
     })
       .then((res) => {
-        alert("Thank You :) Our admission officer will contact you shortly");
+        // alert("Thank You :) Our admission officer will contact you shortly");
+        if(campusValue == "Chengalpattu"){
+          
+          router.push('/chengalpattu-site/thankyou');
+        } else if(campusValue == "Mambakkam"){
+          router.push('/mambakkam-site/thankyou')
+        }
+        else  {
+
+          alert("Our admission officer will contact you shortly");
+        }
         setLoading(false);
       })
       .catch((err) => console.log(err));

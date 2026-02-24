@@ -5,11 +5,14 @@ import Form from "react-bootstrap/Form";
 import { Breadcrumb } from "../../components/Breadcrumb/Breadcrumb";
 import { useState, useRef } from "react";
 import { Nav, Tab } from "react-bootstrap";
+import { useRouter } from "next/router";
 
 function Career() {
   const [activeKey, setActiveKey] = useState("tab1");
   const namecheck = useRef();
   const pageTitle = "Career";
+
+  const router = useRouter();
 
   //form-data-clear-after-submit
 
@@ -81,8 +84,20 @@ function Career() {
       body: new FormData(formRef.current),
     })
       .then((res) => {
-        alert("SUCCESSFULLY SUBMITTED");
+        // alert("SUCCESSFULLY SUBMITTED");
         setLoading(false);
+
+        if(campusValue == "Chengalpattu"){
+          
+          router.push('/chengalpattu-site/thankyou');
+        } else if(campusValue == "Mambakkam"){
+          router.push('/mambakkam-site/thankyou')
+        }
+        else  {
+
+          alert("Our admission officer will contact you shortly");
+        }
+
       })
       .catch((err) => console.log(err));
   };

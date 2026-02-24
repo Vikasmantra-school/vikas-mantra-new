@@ -217,7 +217,7 @@ function MandatoryScreen() {
                     </td>
                     <td>
                       <a
-                        href='/pdf/copies-of-valid-water-health-and-sanitation-certificates.pdf'
+                        href='/pdf/sanitary-certificate.pdf'
                         target='_blank'>
                         Annexure 8
                       </a>

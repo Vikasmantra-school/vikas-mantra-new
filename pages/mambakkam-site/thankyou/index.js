@@ -2,8 +2,8 @@ import style from "./style.module.css";
 import Link from "next/link";
 
 const ThankYou = () => {
-
   const year = new Date().getFullYear();
+
   return (
     <>
       <section className={style.formSection}>

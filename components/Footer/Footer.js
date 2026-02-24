@@ -15,7 +15,9 @@ import { useRouter } from "next/router";
 import { useCampus } from "../../hooks/useCampus";
 
 export const Footer = () => {
-  const { asPath } = useRouter();
+  const router = useRouter();
+  const { asPath } = router;
+  
 
   const { campus, isMambakkam, isChengalpattu } = useCampus();
 
@@ -91,13 +93,25 @@ export const Footer = () => {
       body: new FormData(formRef.current),
     })
       .then((res) => {
-        alert("Our admission officer will contact you shortly");
         setLoading(false);
         setName("");
         setEmail("");
         setNumber("");
         
         setCampusValue("");
+        
+        if(campusValue == "Chengalpattu"){
+          
+          router.push('/chengalpattu-site/thankyou');
+        } else if(campusValue == "Mambakkam"){
+          router.push('/mambakkam-site/thankyou')
+        }
+        else  {
+
+          alert("Our admission officer will contact you shortly");
+        }
+
+
       })
       .catch((err) => console.log(err));
   };

@@ -251,16 +251,16 @@ const Nav = () => {
                               </a>
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link
                               href="/about/message-from-advisor"
                               legacyBehavior>
-                              {/* <a className="dropdown-item">Our Advisor </a> */}
+                              <a className="dropdown-item">Our Advisor </a>
                               <a className="dropdown-item">
                                 Advisor&apos;s Message{" "}
                               </a>
                             </Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
                       <li
