@@ -221,7 +221,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {/* <PopupModal /> */}
-      {isMambakkamPage && (
+      {/* {isMambakkamPage && (
         <>
           <Script
             id="gtm-script"
@@ -240,7 +240,7 @@ function MyApp({ Component, pageProps }) {
             }}
           />
         </>
-      )}
+      )} */}
 
       {showHeader && <NavComponent />}
 
