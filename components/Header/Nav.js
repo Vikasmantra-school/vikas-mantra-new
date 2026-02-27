@@ -247,7 +247,7 @@ const Nav = () => {
                               href="/about/message-from-chairman"
                               legacyBehavior>
                               <a className="dropdown-item">
-                                Chairman's Message
+                                Chairman&apos;s Message
                               </a>
                             </Link>
                           </li>
