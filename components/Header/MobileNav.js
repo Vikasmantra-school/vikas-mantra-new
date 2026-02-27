@@ -137,7 +137,7 @@ const MobileNav = ({}) => {
 
               <li className="nav__item">
                 <Link href="/about/message-from-chairman" legacyBehavior>
-                  <a className="nav__link">Chairman’s Message</a>
+                  <a className="nav__link">Chairman's Message</a>
                 </Link>
               </li>
 
@@ -571,6 +571,11 @@ const MobileNav = ({}) => {
                 <li className="nav__item">
                   <Link href="/mambakkam-site/about/blog" legacyBehavior>
                     <a className="nav__link">Blog</a>
+                  </Link>
+                </li>
+                <li className="nav__item">
+                  <Link href="/mambakkam-site/mandatory-public-disclosures" legacyBehavior>
+                    <a className="nav__link">Mandatory Public Disclosures</a>
                   </Link>
                 </li>
               </ul>
