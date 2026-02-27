@@ -291,6 +291,11 @@ const ChengalpattuNav = () => {
                         <a className="dropdown-item">Blog</a>
                       </Link>
                     </li>
+                    <li>
+                      <Link href="/chengalpattu-site/mandatory-public-disclosures" legacyBehavior>
+                        <a className="dropdown-item">Mandatory Public Disclosures</a>
+                      </Link>
+                    </li>
                   </ul>
                 </li>
 

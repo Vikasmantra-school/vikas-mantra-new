@@ -802,6 +802,11 @@ const MobileNav = ({}) => {
                     <a className="nav__link">Blog</a>
                   </Link>
                 </li>
+                <li className="nav__item">
+                  <Link href="/chengalpattu-site/mandatory-public-disclosures" legacyBehavior>
+                    <a className="nav__link">Mandatory Public Disclosures</a>
+                  </Link>
+                </li>
               </ul>
             </li>
             {/* <li className="nav__item">
