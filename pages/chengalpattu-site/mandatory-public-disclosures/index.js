@@ -151,7 +151,9 @@ function MandatoryScreen() {
                       APPLICABLE, BY THE STATE GOVT./UT*
                     </td>
                     <td>
-                      <a href='/pdf/copy-of-no-objection-certificate-noc-issued-if-applicable-by-the-state-govt-ut.pdf' target='_blank'>
+                      <a
+                        href='/pdf/copy-of-no-objection-certificate-noc-issued-if-applicable-by-the-state-govt-ut.pdf'
+                        target='_blank'>
                         Annexure 3
                       </a>
                     </td>
@@ -164,7 +166,9 @@ function MandatoryScreen() {
                       IT&apos;S RENEWAL IF APPLICABLE*
                     </td>
                     <td>
-                      <a href='/pdf/copies-of-recognition-certificate-under-rte-act-2009-and-its-renewal-if-applicable.pdf' target='_blank'>
+                      <a
+                        href='/pdf/copies-of-recognition-certificate-under-rte-act-2009-and-its-renewal-if-applicable.pdf'
+                        target='_blank'>
                         Annexure 4
                       </a>
                     </td>
@@ -177,7 +181,9 @@ function MandatoryScreen() {
                       NATIONAL BUILDING CODE*
                     </td>
                     <td>
-                      <a href='/pdf/copy-of-valid-building-safety-certificate-as-per-the-national-building-code.pdf' target='_blank'>
+                      <a
+                        href='/pdf/copy-of-valid-building-safety-certificate-as-per-the-national-building-code.pdf'
+                        target='_blank'>
                         Annexure 5
                       </a>
                     </td>
@@ -190,7 +196,9 @@ function MandatoryScreen() {
                       COMPETENT AUTHORITY*
                     </td>
                     <td>
-                      <a href='/pdf/copy-of-valid-fire-safety-certificate-issued-by-the-competent-authority.pdf' target='_blank'>
+                      <a
+                        href='/pdf/copy-of-valid-fire-safety-certificate-issued-by-the-competent-authority.pdf'
+                        target='_blank'>
                         Annexure 6
                       </a>
                     </td>
@@ -204,7 +212,9 @@ function MandatoryScreen() {
                       CERTIFICATION BY SCHOOL*
                     </td>
                     <td>
-                      <a href='/pdf/copy-of-the-deo-certificate-submitted-by-the-school-for-affiliation-upgradation-extension-of-affiliation-or-self-certification-by-school.pdf' target='_blank'>
+                      <a
+                        href='/pdf/copy-of-the-deo-certificate-submitted-by-the-school-for-affiliation-upgradation-extension-of-affiliation-or-self-certification-by-school.pdf'
+                        target='_blank'>
                         Annexure 7
                       </a>
                     </td>
@@ -216,9 +226,7 @@ function MandatoryScreen() {
                       COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES
                     </td>
                     <td>
-                      <a
-                        href='/pdf/sanitary-certificate.pdf'
-                        target='_blank'>
+                      <a href='/pdf/sanitary-certificate.pdf' target='_blank'>
                         Annexure 8
                       </a>
                     </td>
@@ -254,7 +262,9 @@ function MandatoryScreen() {
                     <td>1</td>
                     <td>FEE STRUCTURE OF THE SCHOOL*</td>
                     <td>
-                      <a href='/pdf/fee-structure-of-the-school.jpg' target='_blank'>
+                      <a
+                        href='/pdf/fee-structure-of-the-school.jpg'
+                        target='_blank'>
                         Annexure 9
                       </a>
                     </td>
@@ -264,7 +274,9 @@ function MandatoryScreen() {
                     <td>2</td>
                     <td>ANNUAL ACADEMIC CALENDAR* </td>
                     <td>
-                      <a href='/pdf/annual-academic-calendar.pdf' target='_blank'>
+                      <a
+                        href='/pdf/annual-academic-calendar.pdf'
+                        target='_blank'>
                         Annexure 10
                       </a>
                     </td>
@@ -299,7 +311,11 @@ function MandatoryScreen() {
                       APPLICABILITY
                     </td>
                     <td>
-                      <a href='/pdf/last-three-year-result-of-the-board-examination-as-per-applicability.pdf' target='_blank'>Annexure 12</a>
+                      <a
+                        href='/pdf/last-three-year-result-of-the-board-examination-as-per-applicability.pdf'
+                        target='_blank'>
+                        Annexure 12
+                      </a>
                     </td>
                   </tr>
                 </tbody>
@@ -349,7 +365,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>3</td>
                     <td>TEACHERS SECTION RATIO*</td>
-                    <td>1:35</td>
+                    <td>1:1.5</td>
                   </tr>
 
                   <tr>
@@ -382,7 +398,7 @@ function MandatoryScreen() {
                     <td>1</td>
                   </tr>
 
-                  <tr>
+                  {/* <tr>
                     <td>9</td>
                     <td>PHYSICAL DIRECTOR</td>
                     <td>1</td>
@@ -403,8 +419,7 @@ function MandatoryScreen() {
                     <td>12</td>
                     <td>WELLNESS TEACHER*</td>
                     <td>1</td>
-                  </tr>
-                  
+                  </tr> */}
 
                   <tr>
                     <td></td>
@@ -444,7 +459,7 @@ function MandatoryScreen() {
                     <td>18</td>
                     <td>100%</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>3</td>
                     <td>2025</td>
                     <td>25</td>
@@ -503,7 +518,7 @@ function MandatoryScreen() {
                   <tr>
                     <td>2</td>
                     <td>NO. AND SIZE OF THE CLASS ROOMS (IN SQ MTR)*</td>
-                    <td>40 and  (50.160)sq/m</td>
+                    <td>40 and (50.160)sq/m</td>
                   </tr>
 
                   <tr>
@@ -512,7 +527,7 @@ function MandatoryScreen() {
                       NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN
                       SQ MTR)*{' '}
                     </td>
-                    <td>7(65) sq/m</td>
+                    <td>8 (55.71) sq/m</td>
                   </tr>
 
                   <tr>
@@ -524,13 +539,13 @@ function MandatoryScreen() {
                   <tr>
                     <td>5</td>
                     <td>NO. OF GIRLS TOILETS*</td>
-                    <td>30</td>
+                    <td>36</td>
                   </tr>
 
                   <tr>
                     <td>6</td>
-                    <td>NO. OF BOYS TOILETS*</td>
-                    <td>30</td>
+                    <td>NO. OF BOYS TOILETS AND URINALS*</td>
+                    <td>63</td>
                   </tr>
 
                   <tr>
