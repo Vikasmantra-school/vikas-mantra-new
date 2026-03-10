@@ -122,7 +122,7 @@ function MandatoryScreen() {
                     </td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/affiliation-upgradation.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/Affiliation-26.pdf'
                         target='_blank'>
                         Annexure 1
                       </a>
@@ -137,7 +137,7 @@ function MandatoryScreen() {
                     </td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/trust-registration.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/Trust-26.pdf'
                         target='_blank'>
                         Annexure 2
                       </a>
@@ -152,7 +152,7 @@ function MandatoryScreen() {
                     </td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/noc.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/NOC-26.pdf'
                         target='_blank'>
                         Annexure 3
                       </a>
@@ -167,7 +167,7 @@ function MandatoryScreen() {
                     </td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/rte-recognition.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/Recoginition-26.pdf'
                         target='_blank'>
                         Annexure 4
                       </a>
@@ -182,7 +182,7 @@ function MandatoryScreen() {
                     </td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/building-safety.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/Building-safety-26.pdf'
                         target='_blank'>
                         Annexure 5
                       </a>
@@ -197,7 +197,7 @@ function MandatoryScreen() {
                     </td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/fire-safety.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/Fire-26.pdf'
                         target='_blank'>
                         Annexure 6
                       </a>
@@ -227,7 +227,7 @@ function MandatoryScreen() {
                     </td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/water-health-sanitation.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/Sanitary-26.pdf'
                         target='_blank'>
                         Annexure 8
                       </a>
@@ -278,7 +278,7 @@ function MandatoryScreen() {
                     <td>ANNUAL ACADEMIC CALENDER</td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/academic-calendar.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/Annual-Calendar-26.pdf'
                         target='_blank'>
                         Annexure 10
                       </a>
@@ -290,7 +290,7 @@ function MandatoryScreen() {
                     <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/smc.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/SMC-26.pdf'
                         target='_blank'>
                         Annexure 11
                       </a>
@@ -302,7 +302,7 @@ function MandatoryScreen() {
                     <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/pta.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/PTA-26.pdf'
                         target='_blank'>
                         Annexure 12
                       </a>
@@ -317,7 +317,7 @@ function MandatoryScreen() {
                     </td>
                     <td>
                       <a
-                        href='/mambakkam/mandatory-public-disclosures/pdf/board-results.pdf'
+                        href='/mambakkam/mandatory-public-disclosures/pdf/Board-result-26.pdf'
                         target='_blank'>
                         Annexure 13
                       </a>
