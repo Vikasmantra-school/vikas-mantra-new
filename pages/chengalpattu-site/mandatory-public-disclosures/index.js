@@ -170,6 +170,11 @@ function MandatoryScreen() {
                         href='/pdf/copies-of-recognition-certificate-under-rte-act-2009-and-its-renewal-if-applicable.pdf'
                         target='_blank'>
                         Annexure 4
+                      </a>,
+                      <a
+                        href='/pdf/chengalpattu-vikas-recognition.pdf'
+                        target='_blank'>
+                        Annexure 4.1
                       </a>
                     </td>
                   </tr>
@@ -294,18 +299,18 @@ function MandatoryScreen() {
                     </td>
                   </tr>
 
-                  {/* <tr>
+                  <tr>
                     <td>4</td>
                     <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS*</td>
                     <td>
-                      <a href='/pdf/pta-2022.pdf' target='_blank'>
+                      <a href='/pdf/Parent-teachers-commitee.pdf' target='_blank'>
                         Annexure 12
                       </a>
                     </td>
-                  </tr> */}
+                  </tr>
 
                   <tr>
-                    <td>4</td>
+                    <td>5</td>
                     <td>
                       LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER
                       APPLICABILITY
@@ -314,7 +319,7 @@ function MandatoryScreen() {
                       <a
                         href='/pdf/last-three-year-result-of-the-board-examination-as-per-applicability.pdf'
                         target='_blank'>
-                        Annexure 12
+                        Annexure 13
                       </a>
                     </td>
                   </tr>
@@ -332,12 +337,14 @@ function MandatoryScreen() {
                   <tr className={styles.tableBorderColor}>
                     <td>S.No</td>
                     <td>INFORMATION</td>
-                    <td>DETAILS</td>
+                    <td>NUMBER / STRENGTH</td>
+                    <td>NAME AND QUALIFICATIONS</td>
                   </tr>
 
                   <tr>
                     <td>1</td>
                     <td>PRINCIPAL*</td>
+                    <td>1</td>
                     <td>Ms. C. S Mahalakshmi B.sc, M.C.A, B.Ed.,</td>
                   </tr>
 
@@ -345,70 +352,114 @@ function MandatoryScreen() {
                     <td rowSpan='4'>2</td>
                     <td>NTT*</td>
                     <td>6</td>
+                    <td><a
+                        href='/pdf/ntt-list.pdf'
+                        target='_blank'>
+                        Annexure 14
+                      </a></td>
                   </tr>
 
                   <tr>
                     <td>PRT*</td>
                     <td>10</td>
+                    <td><a
+                        href='/pdf/prt-list.pdf'
+                        target='_blank'>
+                        Annexure 15
+                      </a></td>
+
                   </tr>
 
                   <tr>
                     <td>TGT*</td>
                     <td>12</td>
+                    <td><a
+                        href='/pdf/tgt-list.pdf'
+                        target='_blank'>
+                        Annexure 16
+                      </a></td>
+
                   </tr>
 
                   <tr>
                     <td>PGT*</td>
                     <td>28</td>
+                    <td><a
+                        href='/pdf/pgt-list.pdf'
+                        target='_blank'>
+                        Annexure 17
+                      </a></td>
+
                   </tr>
 
                   <tr>
                     <td>3</td>
                     <td>TEACHERS SECTION RATIO*</td>
                     <td>1:1.5</td>
+                    <td>-</td>
+
                   </tr>
 
                   <tr>
                     <td>4</td>
                     <td>LIBRARIAN</td>
                     <td>1</td>
+                    <td>-</td>
+
                   </tr>
 
                   <tr>
                     <td>5</td>
                     <td>DANCE</td>
                     <td>1</td>
+                    <td>-</td>
+
                   </tr>
 
                   <tr>
                     <td>6</td>
                     <td>ART</td>
                     <td>2</td>
+
+                    <td>-</td>
+
                   </tr>
 
                   <tr>
                     <td>7</td>
                     <td>PET</td>
                     <td>3</td>
+                    <td>-</td>
+
                   </tr>
 
                   <tr>
                     <td>8</td>
                     <td>MUSIC</td>
                     <td>1</td>
+                    <td>-</td>
+
                   </tr>
 
-                  {/* <tr>
+                   <tr>
                     <td>9</td>
-                    <td>PHYSICAL DIRECTOR</td>
+                    <td>SPECIAL EDUCATOR
+</td>
                     <td>1</td>
+                    <td>
+                      Ms. Shekina
+                    </td>
                   </tr>
 
                   <tr>
                     <td>10</td>
-                    <td>SPECIAL EDUCATOR*</td>
+                    <td>COUNSELLOR & WELLNESS
+TEACHER
+</td>
                     <td>1</td>
+                    <td>Ms. Shainish Sneha</td>
                   </tr>
+                  {/*
 
                   <tr>
                     <td>11</td>
@@ -425,6 +476,12 @@ function MandatoryScreen() {
                     <td></td>
                     <td>TOTAL NO. OF TEACHERS* </td>
                     <td>56</td>
+                    <td><a
+                        href='/pdf/teachers-list.pdf'
+                        target='_blank'>
+                        Annexure 18
+                      </a></td>
+
                   </tr>
                 </tbody>
               </Table>
@@ -548,8 +605,20 @@ function MandatoryScreen() {
                     <td>63</td>
                   </tr>
 
+                
+
                   <tr>
                     <td>7</td>
+                    <td>
+                      NO. OF CWSN TOILETS
+                    </td>
+                    <td>
+                      6
+
+                    </td>
+                  </tr>
+                    <tr>
+                    <td>8</td>
                     <td>
                       LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING
                       THE INFRASTRUCTURE OF THE SCHOOL
