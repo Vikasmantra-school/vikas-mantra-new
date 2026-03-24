@@ -351,7 +351,7 @@ function MandatoryScreen() {
                   <tr>
                     <td rowSpan='4'>2</td>
                     <td>NTT*</td>
-                    <td>6</td>
+                    <td>7</td>
                     <td><a
                         href='/pdf/ntt-list.pdf'
                         target='_blank'>
@@ -361,7 +361,7 @@ function MandatoryScreen() {
 
                   <tr>
                     <td>PRT*</td>
-                    <td>10</td>
+                    <td>26</td>
                     <td><a
                         href='/pdf/prt-list.pdf'
                         target='_blank'>
@@ -372,7 +372,7 @@ function MandatoryScreen() {
 
                   <tr>
                     <td>TGT*</td>
-                    <td>12</td>
+                    <td>23</td>
                     <td><a
                         href='/pdf/tgt-list.pdf'
                         target='_blank'>
@@ -383,7 +383,7 @@ function MandatoryScreen() {
 
                   <tr>
                     <td>PGT*</td>
-                    <td>28</td>
+                    <td>10</td>
                     <td><a
                         href='/pdf/pgt-list.pdf'
                         target='_blank'>
@@ -475,7 +475,7 @@ TEACHER
                   <tr>
                     <td></td>
                     <td>TOTAL NO. OF TEACHERS* </td>
-                    <td>56</td>
+                    <td>66</td>
                     <td><a
                         href='/pdf/teachers-list.pdf'
                         target='_blank'>
