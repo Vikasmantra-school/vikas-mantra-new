@@ -488,7 +488,7 @@ const MobileNav = ({}) => {
           <li className="nav__item">
             <Link href="/careers" legacyBehavior>
               <a className="nav__link" aria-current="page">
-                Career
+                Careers
               </a>
             </Link>
           </li>

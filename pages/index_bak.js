@@ -221,7 +221,7 @@ function Home() {
               <p className='bottomToTop'>
                 Learning is not only limited to books and classroom at Vikas
                 Mantra Public School, our students are encouraged to pursue
-                their interests and are given sufficien opportunities to exhibit
+                their interests and are given sufficient opportunities to exhibit
                 their talents through numerous co-curricular activities that are
                 conducted frequently.
               </p>

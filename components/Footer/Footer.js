@@ -139,7 +139,7 @@ export const Footer = () => {
             style={{ borderBottom: "1px solid #674A4A" }}>
             <h3 className="mb-3">Vikas Mantra, Mambakkam</h3>
 
-            <div className="col-md-3">
+            <div className="col-md-6 col-xl-3">
               <div className={styles.footerTags}>
                 <p>Best CBSE Schools in Mambakkam</p>
                 <p>CBSE Schools Near Ponmar</p>
@@ -148,7 +148,7 @@ export const Footer = () => {
               </div>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-md-6 col-xl-3">
               <div className={styles.footerTags}>
                 <p>CBSE Schools Near Mambakkam</p>
                 <p>CBSE Schools Near Ponmar</p>
@@ -156,7 +156,8 @@ export const Footer = () => {
                 <p>CBSE Schools Near Tambaram</p>
               </div>
             </div>
-            <div className="col-md-3">
+
+            <div className="col-md-6 col-xl-3">
               <div className={styles.footerTags}>
                 <p>Best CBSE Schools Near Vandalur</p>
                 <p>Best CBSE Schools Near Sholinganallur</p>
@@ -164,7 +165,7 @@ export const Footer = () => {
                 <p>CBSE Schools Near Padur</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6 col-xl-3">
               <div className={styles.footerTags}>
                 <p>Best CBSE Schools Near Vandalur</p>
                 <p>Best CBSE Schools Near Sholinganallur</p>
@@ -179,7 +180,7 @@ export const Footer = () => {
             style={{ borderBottom: "1px solid #fff" }}>
             <h3 className="mb-3">Vikas Mantra, Chengalpattu</h3>
 
-            <div className="col-md-3">
+            <div className="col-md-6 col-xl-3">
               <div className={styles.footerTags}>
                 <p>Best CBSE Schools in Mambakkam</p>
                 <p>CBSE Schools Near Ponmar</p>
@@ -188,7 +189,7 @@ export const Footer = () => {
               </div>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-md-6 col-xl-3">
               <div className={styles.footerTags}>
                 <p>CBSE Schools Near Mambakkam</p>
                 <p>CBSE Schools Near Ponmar</p>
@@ -196,7 +197,7 @@ export const Footer = () => {
                 <p>CBSE Schools Near Tambaram</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6 col-xl-3">
               <div className={styles.footerTags}>
                 <p>Best CBSE Schools Near Vandalur</p>
                 <p>Best CBSE Schools Near Sholinganallur</p>
@@ -204,7 +205,7 @@ export const Footer = () => {
                 <p>CBSE Schools Near Padur</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6 col-xl-3">
               <div className={styles.footerTags}>
                 <p>Best CBSE Schools Near Vandalur</p>
                 <p>Best CBSE Schools Near Sholinganallur</p>

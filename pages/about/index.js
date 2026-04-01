@@ -71,7 +71,7 @@ const About = () => {
                                 <div className='AnimeStarts'>
                                     <p className={styles.pLineHeight + ' AnimeElement'}>Learning is not only limited to books and classroom at Vikas Mantra
                                         Public School, our students are encouraged to pursue their interests
-                                        and are given sufficien opportunities to exhibit their talents through
+                                        and are given sufficient opportunities to exhibit their talents through
                                         numerous co-curricular activities that are conducted frequently.
                                     </p>
                                 </div>

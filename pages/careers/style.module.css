@@ -22,7 +22,7 @@
 
 .form {
   text-align: left;
-  padding: 70px 0px 70px 70px;
+  padding: 55px;
   background: #fff;
 }
 
@@ -114,7 +114,7 @@
 
 @media only screen and (max-width: 660px) {
   .form {
-    padding: 70px 0px 70px;
+    padding: 70px 20px;
   }
   .tableContainer {
     width: 300px;
