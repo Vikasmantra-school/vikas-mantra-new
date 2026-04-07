@@ -21,35 +21,9 @@ export const Footer = () => {
 
   const { campus, isMambakkam, isChengalpattu } = useCampus();
 
-  //popup-integration
-
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+ 
   const currentYear = new Date().getFullYear();
 
-  useEffect(() => {
-    //checking if running locally or server
-
-    const isLocalhost = Boolean(
-      window.location.hostname === "localhost" ||
-        // [::1] is the IPv6 localhost address.
-        window.location.hostname === "[::1]" ||
-        // 127.0.0.1/8 is considered localhost for IPv4.
-        window.location.hostname.match(
-          /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
-        )
-    );
-    // console.log(isLocalhost);
-
-    if (isLocalhost == true) {
-      console.log("popup-hidden");
-    } else {
-      // handleShow()
-      console.log("");
-    }
-  }, []);
 
   //form-data-clear-after-submit
 
@@ -117,20 +91,6 @@ export const Footer = () => {
   };
   return (
     <>
-      <Modal show={show} onHide={handleClose} animation={true} centered>
-        <Modal.Header closeButton></Modal.Header>
-
-        <Modal.Body>
-          <div>
-            <Image
-              src={PopupImageNew}
-              alt="popup"
-              priority
-              className={styles.sectionOut}
-            />
-          </div>
-        </Modal.Body>
-      </Modal>
 
       <div className={styles.section + " pt-5 m-0"} id="footer">
         <div className="container footer-container">

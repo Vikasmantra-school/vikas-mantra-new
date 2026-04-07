@@ -21,6 +21,9 @@
 }
 .customContent{
 }
+.popupClickable{
+    cursor: pointer;
+}
 .fade.modal.show{
     padding: 0;
 }

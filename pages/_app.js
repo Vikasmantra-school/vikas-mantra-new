@@ -16,6 +16,8 @@ import ChengalpattuNav from "../components/Header/ChengalpattuNav";
 // import { GoogleTagManager } from "@next/third-parties/google";
 
 import Script from "next/script";
+import ScrollToTop from "../components/scrollToTop/ScrollToTop";
+import PopupSingleModal from "../components/Popup/PopupSingleModal";
 
 gsap.registerPlugin(CSSRulePlugin);
 function MyApp({ Component, pageProps }) {
@@ -221,6 +223,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {/* <PopupModal /> */}
+      <PopupSingleModal />
       {/* {isMambakkamPage && (
         <>
           <Script
@@ -247,6 +250,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
 
       {showHeader && <Footer />}
+      <ScrollToTop />
 
       {/* <Analytics /> */}
     </>

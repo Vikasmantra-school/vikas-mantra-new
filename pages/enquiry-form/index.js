@@ -1,32 +1,73 @@
-import React from "react";
+"use client";
 import styles from "./style.module.css";
-import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Breadcrumb } from "../../components/Breadcrumb/Breadcrumb";
 import { useState, useRef } from "react";
 import VmpsLogin from "../../components/home/vmpslogin";
 import { useRouter } from "next/router";
 
+import Select from "react-select";
+
+const classOptions = [
+  "LKG",
+  "UKG",
+  "1st",
+  "2nd",
+  "3rd",
+  "4th",
+  "5th",
+  "6th",
+  "7th",
+  "8th",
+  "9th",
+  "10th",
+  "11th",
+  "12th",
+].map((cls) => ({ value: cls, label: cls }));
+
+const campusOptions = [
+  { value: "Mambakkam", label: "Mambakkam" },
+  { value: "Chengalpattu", label: "Chengalpattu" },
+];
+const groupOptions = [
+  {
+    value: "Group-1",
+    label:
+      "Group 1- Science: Physics, Chemistry, Mathematics/Psychology, Biology + AI",
+  },
+  {
+    value: "Group-2",
+    label:
+      "Group 2- Computer Science: Physics, Chemistry, Mathematics, Computer Science + AI",
+  },
+  {
+    value: "Group-3",
+    label:
+      "Group 3 - Commerce: Accountancy, Commerce, Economics, Maths/IP/Psychology + AI",
+  },
+];
+
 const EnquiryForm = () => {
   const pageTitle = "Enquiry Form";
 
-  const router = useRouter()
-
-  //form-data-clear-after-submit
+  const router = useRouter();
+  // React-Select states
+  const [classOption, setClassOption] = useState(null);
+  const [campusOption, setCampusOption] = useState(null);
+  const [groupOption, setGroupOption] = useState(null);
 
   const [name, setName] = useState("");
   const [dob, setDob] = useState("");
-  const [campusValue, setCampusValue] = useState("");
   const [lastClass, setLastClass] = useState("");
   const [currentSchool, setCurrentSchool] = useState("");
-  const [admissionSeeking, setAdmissionSeeking] = useState("");
   const [fatherName, setFatherName] = useState("");
   const [fatherEmail, setFatherEmail] = useState("");
   const [fatherNumber, setFatherNumber] = useState("");
-  const [motherName, setMotherName] = useState("");
-  const [motherEmail, setMotherEmail] = useState("");
-  const [motherNumber, setMotherNumber] = useState("");
   const [admissionCommunication, setAdmissionCommunication] = useState("");
+
+  const [campusValue, setCampusValue] = useState("");
+  const [standard, setStandard] = useState("");
+  const [group, setGroup] = useState("");
 
   //form-sheet-integration
   const formRef = useRef(null);
@@ -38,6 +79,8 @@ const EnquiryForm = () => {
   // above is matheen
 
   const scriptUrlMambakkam =
+    // "https://script.google.com/macros/s/AKfycbwa06PaU7zhvjhvroNN43k5rMtlrHtCxY46Mad79jjc74OU0q-Ce7VlkS2OnZYKi0kzcA/exec";
+    // above test
     "https://script.google.com/macros/s/AKfycby_uRrxbR6OmaARPxn4F2ofLjk3PwZHhBYE0B2ECJVfvjIRNcaggH_CxMh-y_GrO5TY/exec";
   // above is admissions.mambakkam@vikasmantra.org
 
@@ -47,6 +90,21 @@ const EnquiryForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!standard) {
+      alert("Please select the class");
+      return;
+    }
+
+    if (!campusValue) {
+      alert("Please select the campus");
+      return;
+    }
+
+    if (standard === "11th" && !group) {
+      alert("Please select the group");
+      return;
+    }
     setLoading(true);
 
     let scriptUrl = scriptUrlChengalpattu;
@@ -57,19 +115,23 @@ const EnquiryForm = () => {
     }
 
     //form-data-clear-after-submit
+
     setName("");
     setDob("");
-    setCampusValue("");
     setLastClass("");
     setCurrentSchool("");
-    setAdmissionSeeking("");
     setFatherEmail("");
     setFatherName("");
     setFatherNumber("");
-    setMotherName("");
-    setMotherEmail("");
-    setMotherNumber("");
     setAdmissionCommunication("");
+
+    setClassOption(null);
+    setCampusOption(null);
+    setGroupOption(null);
+
+    setStandard("");
+    setCampusValue("");
+    setGroup("");
 
     fetch(scriptUrl, {
       method: "POST",
@@ -77,14 +139,11 @@ const EnquiryForm = () => {
     })
       .then((res) => {
         // alert("Thank You :) Our admission officer will contact you shortly");
-        if(campusValue == "Chengalpattu"){
-          
-          router.push('/chengalpattu-site/thankyou');
-        } else if(campusValue == "Mambakkam"){
-          router.push('/mambakkam-site/thankyou')
-        }
-        else  {
-
+        if (campusValue == "Chengalpattu") {
+          router.push("/chengalpattu-site/thankyou");
+        } else if (campusValue == "Mambakkam") {
+          router.push("/mambakkam-site/thankyou");
+        } else {
           alert("Our admission officer will contact you shortly");
         }
         setLoading(false);
@@ -197,17 +256,50 @@ const EnquiryForm = () => {
                         <Form.Label className="AnimeElement">
                           Admission seeking for
                         </Form.Label>
-                        <Form.Control
-                          required
+                        <Select
+                          options={classOptions}
+                          value={classOption}
+                          onChange={(selected) => {
+                            setClassOption(selected);
+                            setStandard(selected?.value || "");
+                            setGroup("");
+                            setGroupOption(null);
+                          }}
+                          placeholder="-- Select Class --"
+                          classNamePrefix="rs"
+                          className={styles.reactSelect}
+                        />
+                        <input
+                          type="hidden"
                           name="Admission Seeking For"
-                          className={styles.formText}
-                          type="text"
-                          value={admissionSeeking}
-                          onChange={(event) =>
-                            setAdmissionSeeking(event.target.value)
-                          }
+                          value={standard}
                         />
                       </Form.Group>
+
+                      {standard === "11th" && (
+                        <Form.Group className="mb-5 AnimeStarts">
+                          <Form.Label>Select Group</Form.Label>
+
+                          <Select
+                            options={groupOptions}
+                            value={groupOption}
+                            onChange={(selected) => {
+                              setGroupOption(selected);
+                              setGroup(selected?.value || "");
+                            }}
+                            placeholder="-- Select Group --"
+                            isSearchable={false}
+                            classNamePrefix="rs"
+                            className={styles.reactSelect}
+                          />
+
+                          <input
+                            type="hidden"
+                            name="11th Group"
+                            value={group}
+                          />
+                        </Form.Group>
+                      )}
                     </div>
 
                     <div className="col-md-5 offset-md-1">
@@ -287,93 +379,36 @@ const EnquiryForm = () => {
                                 <Form.Label className=" AnimeElement">
                                   Campus
                                 </Form.Label>
-                                <Form.Select
-                                  required
+                                <Select
+                                  options={campusOptions}
+                                  value={campusOption}
+                                  onChange={(selected) => {
+                                    setCampusOption(selected);
+                                    setCampusValue(selected?.value || "");
+                                  }}
+                                  placeholder="-- Select Campus --"
+                                  classNamePrefix="rs"
+                                  className={styles.reactSelect}
+                                />
+                                <input
+                                  type="hidden"
                                   name="campus"
-                                  className={styles.formText}
                                   value={campusValue}
-                                  onChange={(event) =>
-                                    setCampusValue(event.target.value)
-                                  }>
-                                  <option value="" disabled>
-                                    -- Select Campus --
-                                  </option>
-                                  <option value="Mambakkam">Mambakkam</option>
-                                  <option value="Chengalpattu">
-                                    Chengalpattu
-                                  </option>
-                                </Form.Select>
+                                />
                               </Form.Group>
                             </div>
                           </div>
                         </div>
-
-                        {/* <div className="AnimeStarts">
-                        <h5 className="mb-5 AnimeElement">
-                          Parent Information : Mother
-                        </h5>
-                        <Form.Group className="mb-5">
-                          <Form.Label className="AnimeElement">Name</Form.Label>
-                          <Form.Control
-                            required
-                            name="Mother Name"
-                            className={styles.formText}
-                            type="text"
-                            value={motherName}
-                            onChange={(event) =>
-                              setMotherName(event.target.value)
-                            }
-                          />
-                        </Form.Group>
-
-                        <div className="mb-5">
-                          <div className="row">
-                            <Form.Group className="col-md-6 mb-5 AnimeStarts">
-                              <Form.Label className="AnimeElement">
-                                Phone Number
-                              </Form.Label>
-                              <Form.Control
-                                required
-                                name="Mother Number"
-                                className={styles.formText}
-                                type="number"
-                                value={motherNumber}
-                                onChange={(event) =>
-                                  setMotherNumber(event.target.value)
-                                }
-                              />
-                            </Form.Group>
-
-                            <Form.Group className="col-md-6 mb-5 AnimeStarts">
-                              <Form.Label className="AnimeElement">
-                                Email
-                              </Form.Label>
-                              <Form.Control
-                                required
-                                name="Mother Email"
-                                className={styles.formText}
-                                type="email"
-                                value={motherEmail}
-                                onChange={(event) =>
-                                  setMotherEmail(event.target.value)
-                                }
-                              />
-                            </Form.Group>
-                          </div>
-                        </div>
-                      </div> */}
                       </div>
                     </div>
 
                     <div className="col-md-11">
-                      <a href="#">
-                        <input
-                          type="submit"
-                          className={"brownBtn " + styles.submitBtn}
-                          value={loading ? "Loading..." : "Submit"}
-                        />
-                        {/* < className={'brownBtn'} type="submit" value={loading ? "Loading..." : "Send"}>Submit</Button> */}
-                      </a>
+                      <button
+                        type="submit"
+                        className={"brownBtn " + styles.submitBtn}
+                        disabled={loading}>
+                        {loading ? "Loading..." : "Submit"}
+                      </button>
                     </div>
                   </div>
                 </Form>
