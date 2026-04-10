@@ -45,13 +45,8 @@ const About = () => {
                                 </div>
 
                                 <div className='AnimeStarts'>
-                                    <p className={'pt-5 AnimeElement ' + styles.pLineHeight}>VIKAS MANTRA PUBLIC SCHOOL, a CBSE School in Chengalpattu Kanchipuram
-                                        is building a distinctive educational platform through a mix of
-                                        international learning techniques, experienced academicians and
-                                        modern facilities. By blending 21st century learning methodologies
-                                        and traditional Indian values, we equip our students to think freely,
-                                        dream big and pursue their passions, yet remain firmly connected to
-                                        ground realities.
+                                    <p className={'pt-5 AnimeElement ' + styles.pLineHeight}>Vikas Mantra Public School, established in 2019, is an institution affiliated with the Central Board of Secondary Education (CBSE), New Delhi. The school is promoted by the M.R. Educational and Social Trust under the esteemed chairmanship of Dr. V. Shanmugaprabhu.
+Envisioned as a center of academic excellence, the school was founded at Mahindra World City with the aim of nurturing individuals equipped with essential life skills and employability competencies for the future. Since its inception, the institution has been committed to delivering a holistic and progressive learning environment.
                                     </p>
                                 </div>
 
@@ -69,10 +64,7 @@ const About = () => {
                                 </div>
 
                                 <div className='AnimeStarts'>
-                                    <p className={styles.pLineHeight + ' AnimeElement'}>Learning is not only limited to books and classroom at Vikas Mantra
-                                        Public School, our students are encouraged to pursue their interests
-                                        and are given sufficient opportunities to exhibit their talents through
-                                        numerous co-curricular activities that are conducted frequently.
+                                    <p className={styles.pLineHeight + ' AnimeElement'}>The school’s educational philosophy focuses on providing a unique and enriching learning experience through intellectual stimulation, a balanced blend of curricular and co-curricular activities, active community engagement, and exposure to national and global perspectives. Vikas Mantra Public School adopts a student-centric approach, fostering individual talents by addressing each child’s strengths, developmental needs, and interests.
                                     </p>
                                 </div>
 
