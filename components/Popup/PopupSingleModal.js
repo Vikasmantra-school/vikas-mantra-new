@@ -4,8 +4,8 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "./style.module.css";
 
-import PopupImage from "../../public/assets/Popups/grade-11-mobile-1.png";
-import PopupImageDesktop from "../../public/assets/Popups/grade-11-desktop.png";
+import PopupImage from "../../public/assets/Popups/grade-11-mobile-2.png";
+import PopupImageDesktop from "../../public/assets/Popups/grade-11-desktop-2.png";
 import { useCampus } from "../../hooks/useCampus";
 
 const PopupSingleModal = () => {
