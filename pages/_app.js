@@ -223,7 +223,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {/* <PopupModal /> */}
-      <PopupSingleModal />
+      {/* <PopupSingleModal /> */}
       {/* {isMambakkamPage && (
         <>
           <Script

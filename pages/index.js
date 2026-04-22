@@ -17,6 +17,7 @@ import VmpsLogin from "../components/home/vmpslogin";
 import SplitCards from "../components/home/stackCard";
 import Testimonials from "../components/home/testimonialSlider";
 import TabsHome from "../components/home/tabsHome";
+import PopupModal from "../components/Popup/PopupModal";
 // import PopupModal from "../components/Popup/PopupModal";
 
 function Home() {
@@ -115,6 +116,8 @@ function Home() {
 
   return (
     <>
+      <PopupModal />
+
       <Head>
         <title>Home | Vikasmantra Public School</title>
         <meta
