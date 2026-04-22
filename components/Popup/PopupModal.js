@@ -20,23 +20,21 @@ const PopupModal = () => {
   useEffect(() => {
     if (isExcluded) return;
     
-    // Always show the first modal on mount or path change
+    
     setShowFirst(true);
   }, [router.pathname, isExcluded]);
 
   const handleCloseFirst = () => {
     setShowFirst(false);
-    // We set a trigger here instead of showing the modal immediately
     setTriggerSecond(true);
   };
 
   const handleOnExitedFirst = () => {
-    // This runs AFTER the first modal animation finishes
     if (triggerSecond) {
       setTimeout(() => {
         setShowSecond(true);
         setTriggerSecond(false);
-      }, 1000); // Your requested 1-second delay
+      }, 100); 
     }
   };
 
@@ -56,7 +54,7 @@ const PopupModal = () => {
       <Modal
         show={showFirst}
         onHide={handleCloseFirst}
-        onExited={handleOnExitedFirst} // Crucial for preventing scroll-lock glitches
+        onExited={handleOnExitedFirst} 
         animation={true}
         dialogClassName={styles.customDialog}
         contentClassName={styles.customContent}
@@ -69,7 +67,7 @@ const PopupModal = () => {
                 className={styles.deskimg}
                 src={PopupImageDesktop}
                 alt="popup-desktop"
-                priority // Better for LCP
+                priority 
               />
             </div>
             <div className={styles.mobileImage}>
