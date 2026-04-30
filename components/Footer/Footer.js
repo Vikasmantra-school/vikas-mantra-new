@@ -17,20 +17,17 @@ import { useCampus } from "../../hooks/useCampus";
 export const Footer = () => {
   const router = useRouter();
   const { asPath } = router;
-  
 
   const { campus, isMambakkam, isChengalpattu } = useCampus();
 
- 
   const currentYear = new Date().getFullYear();
-
 
   //form-data-clear-after-submit
 
   const [name, setName] = useState("");
   const [mail, setEmail] = useState("");
   const [number, setNumber] = useState("");
- 
+
   const [campusValue, setCampusValue] = useState("");
 
   //form-sheet-integration
@@ -41,10 +38,10 @@ export const Footer = () => {
   // above is admissions.mambakkam@vikasmantra.org
 
   const scriptUrlChengalpattu =
-  "https://script.google.com/macros/s/AKfycbz0OUTNqOIYPu3n6jZmmi4tGcw9AAq83Xmnw0RQrN48YwUJ7DA5gjaOq9WS8Nr6_9GFlw/exec";
+    "https://script.google.com/macros/s/AKfycbz0OUTNqOIYPu3n6jZmmi4tGcw9AAq83Xmnw0RQrN48YwUJ7DA5gjaOq9WS8Nr6_9GFlw/exec";
   // above is admissions@vikasmantra.org
 
-    // "https://script.google.com/macros/s/AKfycbxyDMEsVuTZ1UI_Q0IR5OC8C6dr-AqjYrclp364Df-170anM0Z8RSEvkYBs5a6okfJc3w/exec";
+  // "https://script.google.com/macros/s/AKfycbxyDMEsVuTZ1UI_Q0IR5OC8C6dr-AqjYrclp364Df-170anM0Z8RSEvkYBs5a6okfJc3w/exec";
   // above is matheen
 
   // "https://script.google.com/macros/s/AKfycbzx3dMf1Pp-SqClOxBO0UnERO_cqNBB6kNuLV5y6q84At15I5NwelXIpxuWiB44A2rY/exec";
@@ -71,27 +68,21 @@ export const Footer = () => {
         setName("");
         setEmail("");
         setNumber("");
-        
-        setCampusValue("");
-        
-        if(campusValue == "Chengalpattu"){
-          
-          router.push('/chengalpattu-site/thankyou');
-        } else if(campusValue == "Mambakkam"){
-          router.push('/mambakkam-site/thankyou')
-        }
-        else  {
 
+        setCampusValue("");
+
+        if (campusValue == "Chengalpattu") {
+          router.push("/chengalpattu-site/thankyou");
+        } else if (campusValue == "Mambakkam") {
+          router.push("/mambakkam-site/thankyou");
+        } else {
           alert("Our admission officer will contact you shortly");
         }
-
-
       })
       .catch((err) => console.log(err));
   };
   return (
     <>
-
       <div className={styles.section + " pt-5 m-0"} id="footer">
         <div className="container footer-container">
           <div
@@ -604,9 +595,12 @@ export const Footer = () => {
                 <div className={"col-md-8 "}>
                   <div className={styles.quickLinksCol}>
                     <div className={styles.quickLink + " row d-none d-md-flex"}>
-                      <div className="col-3 col-md-3">
+                      <div className="col-3 col-md-4">
                         <Link href="/about" legacyBehavior>
                           <a className="nav-link">About Us</a>
+                        </Link>
+                        <Link href="/terms-and-conditions" legacyBehavior>
+                          <a className="nav-link">Terms and Conditions</a>
                         </Link>
 
                         <Link href="/campus/classrooms" legacyBehavior>
@@ -614,10 +608,7 @@ export const Footer = () => {
                         </Link>
                       </div>
 
-                      <div className="col-3 col-md-3">
-                        {/* <Link href="/enquiry-form" legacyBehavior>
-                          <a className="nav-link">EnquiryForm</a>
-                        </Link> */}
+                      <div className="col-3 col-md-4">
                         <Link href="/about/our-team" legacyBehavior>
                           <a className="nav-link">Faculty</a>
                         </Link>
@@ -625,18 +616,15 @@ export const Footer = () => {
                         <Link href="/events" legacyBehavior>
                           <a className="nav-link">Gallery</a>
                         </Link>
-                      </div>
 
-                      <div className="col-3 col-md-3">
                         <Link href="/careers" legacyBehavior>
                           <a className="nav-link">Careers</a>
                         </Link>
-
+                      </div>
+                      <div className="col-3 col-md-4">
                         <Link href="/contact" legacyBehavior>
                           <a className="nav-link">Contact</a>
                         </Link>
-                      </div>
-                      <div className="col-3 col-md-3">
                         <Link href="/learning" legacyBehavior>
                           <a className="nav-link">Learning</a>
                         </Link>
@@ -667,6 +655,9 @@ export const Footer = () => {
                       </div>
 
                       <div className="col-6 col-md-4 col-lg-4 col-sm-4">
+                        <Link href="/terms-and-conditions" legacyBehavior>
+                          <a className="nav-link">Terms and Conditions</a>
+                        </Link>
                         <Link href="/admissions" legacyBehavior>
                           <a className="nav-link">Admissions</a>
                         </Link>

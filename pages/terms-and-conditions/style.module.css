@@ -1,0 +1,22 @@
+.mainCont ul {
+  margin-inline-start: 2rem;
+}
+.mainCont p,
+.mainCont ul li {
+  margin-inline-start: 2rem;
+  margin-bottom: 8px;
+
+  font-size: 1rem !important;
+}
+@media only screen and (max-width: 768px) {
+  .mainCont ul {
+    margin-inline-start: 1rem;
+  }
+  .mainCont p,
+  .mainCont ul li {
+    margin-inline-start: 1rem;
+    margin-bottom: 8px;
+
+    font-size: 1rem !important;
+  }
+}
