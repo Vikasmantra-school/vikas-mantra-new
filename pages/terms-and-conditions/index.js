@@ -151,7 +151,7 @@ function TermsAndConditions() {
                 You confirm that you are the authorized holder of the credit
                 card or debit card or the original account holder used in the
                 transactions you make using the site and that you alone use the
-                "id" and "password" you have created on the site. VIKAS MANTRA
+                &quot;id&quot; and &quot;password&quot; you have created on the site. VIKAS MANTRA
                 will not be responsible for any financial loss, inconvenience or
                 mental agony resulting from misuse of your ID/password/credit
                 card number/debit card number/account details for payment on
@@ -309,8 +309,8 @@ function TermsAndConditions() {
                 proprietary information, intellectual property, trade secrets
                 and/or know-how. Parents agree that all such information,
                 whether oral, written, or recorded/electronic, and regardless of
-                the manner in which it is furnished is known as "Proprietary
-                Information." The term "Proprietary Information" shall also
+                the manner in which it is furnished is known as &quot;Proprietary
+                Information.&quot; The term &quot;Proprietary Information&quot; shall also
                 include all reports, summaries, compilations, analyses, notes or
                 other information. Parents agree not to disclose the Proprietary
                 Information to any third parties and agree to not divert or
@@ -346,7 +346,7 @@ function TermsAndConditions() {
               the accuracy of such information given on our website and reserve
               the right to amend and vary the contents of this web site from
               time to time without notice. The VIKAS MANTRA Sites/Services may
-              contain links to third-party websites ("Linked Sites"). The Linked
+              contain links to third-party websites (&quot;Linked Sites&quot;). The Linked
               Sites are not under the control of Vikas Mantra, and VIKAS MANTRA
               is not responsible for the contents of any Linked Site, including
               without limitation any link contained in a Linked Site, or any
