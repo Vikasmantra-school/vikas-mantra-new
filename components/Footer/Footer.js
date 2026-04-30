@@ -653,7 +653,6 @@ export const Footer = () => {
                           <a className="nav-link">Gallery</a>
                         </Link>
                       </div>
-
                       <div className="col-6 col-md-4 col-lg-4 col-sm-4">
                         <Link href="/terms-and-conditions" legacyBehavior>
                           <a className="nav-link">Terms and Conditions</a>
