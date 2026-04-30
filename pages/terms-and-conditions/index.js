@@ -58,7 +58,7 @@ function TermsAndConditions() {
               this website indicate that you are deemed to have agreed to the
               terms and conditions set forth below. If you do not agree with all
               these terms and conditions, you must not transact on this website.
-              Once you have clicked the 'I Agree' button at the bottom of these
+              Once you have clicked the &#39;I Agree&#39; button at the bottom of these
               Terms and Conditions you have entered into a formal agreement with
               VIKAS MANTRA for the purpose of all transactions as set out herein
               on this website. This agreement constitutes the entire agreement
@@ -415,7 +415,7 @@ function TermsAndConditions() {
               approved and settled credit card or net banking purchase
               transaction(s) which are at any time refused, debited or charged
               back to merchant account (and shall also include similar debits to
-              Payment Service Provider's accounts, if any) by the acquiring bank
+              Payment Service Provider&#39;s accounts, if any) by the acquiring bank
               or credit card company for any reason whatsoever, together with
               the bank fees, penalties and other charges incidental thereto.
               Refunds, if applicable, are at the sole discretion of the
@@ -519,7 +519,7 @@ function TermsAndConditions() {
               </li>
               <li>
                 Parents of students who commence the academic year are liable to
-                pay the full year's fees, and therefore this becomes a “due” at
+                pay the full year&#39;s fees, and therefore this becomes a “due” at
                 the beginning of the academic year.
               </li>
               <li>
@@ -563,7 +563,7 @@ function TermsAndConditions() {
               </li>
               <li>
                 Any TC request made on or after 1st April will entail payment of
-                the full year's fees of the next academic year.
+                the full year&#39;s fees of the next academic year.
               </li>
               <li>
                 Parents who wish to discontinue and take TC in the middle of the
