@@ -47,7 +47,7 @@ function TermsAndConditions() {
               herein.
             </p>
           </div>
-          <div className={"row pt60"}>
+          <div className={"row"}>
             <h4>1. Terms & Conditions of Service</h4>
             <p>
               VIKAS MANTRA rules and regulations apply to all transactions along
