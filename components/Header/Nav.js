@@ -251,6 +251,15 @@ const Nav = () => {
                               </a>
                             </Link>
                           </li>
+                          <li>
+                            <Link
+                              href="/terms-and-conditions"
+                              legacyBehavior>
+                              <a className="dropdown-item">
+                                Terms and Conditions
+                              </a>
+                            </Link>
+                          </li>
                           {/* <li>
                             <Link
                               href="/about/message-from-advisor"

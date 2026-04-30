@@ -1,6 +1,10 @@
 .mainCont ul {
   margin-inline-start: 2rem;
 }
+.mainCont h4,
+.mainCont h3{
+  margin-top: 20px;
+}
 .mainCont p,
 .mainCont ul li {
   margin-inline-start: 2rem;
